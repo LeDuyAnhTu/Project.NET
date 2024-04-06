@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\Project.NET.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\Project.NET.csproj|solutionrelative:project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\project.net\\project.net\\dal\\qlbhxdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\qlbhxdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\Project.NET.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\project.net\\project.net\\project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\project.net\\project.net\\dal\\nhanvien_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\nhanvien_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\project.net\\project.net\\project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\Project.NET.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\Project.NET.csproj|solutionrelative:project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -22,36 +30,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs",
-              "RelativeDocumentMoniker": "Project.NET\\Form1.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs",
-              "RelativeToolTip": "Project.NET\\Form1.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwCMAAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "NhanVien_DAL.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\NhanVien_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\NhanVien_DAL.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\NhanVien_DAL.cs",
+              "RelativeToolTip": "DAL\\NhanVien_DAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T08:05:06.786Z",
+              "WhenOpened": "2024-04-06T14:34:38.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "QLBHXDatabase.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\QLBHXDatabase.cs",
+              "RelativeDocumentMoniker": "DAL\\QLBHXDatabase.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\QLBHXDatabase.cs",
+              "RelativeToolTip": "DAL\\QLBHXDatabase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T14:31:49.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs",
               "RelativeDocumentMoniker": "Project.NET\\Form1.cs",
               "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs [Design]",
               "RelativeToolTip": "Project.NET\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T13:33:34.951Z",
+              "WhenOpened": "2024-04-06T14:29:30.828Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs",
+              "RelativeDocumentMoniker": "Project.NET\\Form1.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs [Design]",
+              "RelativeToolTip": "Project.NET\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T13:33:34.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Project.NET\\Form1.Designer.cs",

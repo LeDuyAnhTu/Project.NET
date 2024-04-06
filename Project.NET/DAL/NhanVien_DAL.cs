@@ -8,10 +8,10 @@ namespace DAL
 {
     public class NhanVien_DAL
     {
-        private static QLBHXDataContext db = new QLBHXDataContext();
+        private static QLBHXDatabase db = new QLBHXDatabase();
         public IQueryable LayDanhSach()
         {
-            IQueryable ds = from nv in db.NhanViens
+            IQueryable ds = from nv in db.DB.NhanViens
                             select nv;
             return ds;
         }
