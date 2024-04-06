@@ -1,0 +1,6 @@
+D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DTO\bin\Debug\DTO.dll
+D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DTO\bin\Debug\DTO.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DTO\obj\Debug\DTO.dll
+D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DTO\obj\Debug\DTO.pdb

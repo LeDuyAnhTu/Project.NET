@@ -36,16 +36,17 @@
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.employeesTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.customersTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.employeesLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.customersNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.customersLabelControl = new DevExpress.XtraEditors.LabelControl();
-            this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.dgvDSNhanVien = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.employeesNavigationPage.SuspendLayout();
             this.customersNavigationPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // tileBar
@@ -63,18 +64,18 @@
             this.tileBar.IndentBetweenItems = 10;
             this.tileBar.ItemPadding = new System.Windows.Forms.Padding(8, 6, 12, 6);
             this.tileBar.Location = new System.Drawing.Point(0, 0);
-            this.tileBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tileBar.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tileBar.MaxId = 4;
-            this.tileBar.MaximumSize = new System.Drawing.Size(0, 110);
-            this.tileBar.MinimumSize = new System.Drawing.Size(100, 110);
+            this.tileBar.MaximumSize = new System.Drawing.Size(0, 135);
+            this.tileBar.MinimumSize = new System.Drawing.Size(117, 135);
             this.tileBar.Name = "tileBar";
-            this.tileBar.Padding = new System.Windows.Forms.Padding(29, 11, 29, 11);
+            this.tileBar.Padding = new System.Windows.Forms.Padding(34, 14, 34, 14);
             this.tileBar.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
             this.tileBar.SelectedItem = this.employeesTileBarItem;
             this.tileBar.SelectionBorderWidth = 2;
             this.tileBar.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
             this.tileBar.ShowGroupText = false;
-            this.tileBar.Size = new System.Drawing.Size(784, 110);
+            this.tileBar.Size = new System.Drawing.Size(927, 135);
             this.tileBar.TabIndex = 1;
             this.tileBar.Text = "tileBar";
             this.tileBar.WideTileWidth = 150;
@@ -108,52 +109,47 @@
             this.customersTileBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.customersTileBarItem.Name = "customersTileBarItem";
             // 
+            // tileBarItem1
+            // 
+            this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement3.ImageOptions.ImageUri.Uri = "Cube;Size32x32;GrayScaled";
+            tileItemElement3.Text = "Sell";
+            this.tileBarItem1.Elements.Add(tileItemElement3);
+            this.tileBarItem1.Id = 3;
+            this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.tileBarItem1.Name = "tileBarItem1";
+            // 
             // navigationFrame
             // 
             this.navigationFrame.Controls.Add(this.employeesNavigationPage);
             this.navigationFrame.Controls.Add(this.customersNavigationPage);
             this.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationFrame.Location = new System.Drawing.Point(0, 110);
-            this.navigationFrame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.navigationFrame.Location = new System.Drawing.Point(0, 135);
+            this.navigationFrame.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.navigationFrame.Name = "navigationFrame";
             this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.employeesNavigationPage,
             this.customersNavigationPage});
             this.navigationFrame.SelectedPage = this.employeesNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(784, 451);
+            this.navigationFrame.Size = new System.Drawing.Size(927, 555);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
             // employeesNavigationPage
             // 
             this.employeesNavigationPage.Caption = "employeesNavigationPage";
-            this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
+            this.employeesNavigationPage.Controls.Add(this.dgvDSNhanVien);
+            this.employeesNavigationPage.Margin = new System.Windows.Forms.Padding(4);
             this.employeesNavigationPage.Name = "employeesNavigationPage";
-            this.employeesNavigationPage.Size = new System.Drawing.Size(784, 451);
-            // 
-            // employeesLabelControl
-            // 
-            this.employeesLabelControl.Appearance.Font = new System.Drawing.Font("Tahoma", 25.25F);
-            this.employeesLabelControl.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.employeesLabelControl.Appearance.Options.UseFont = true;
-            this.employeesLabelControl.Appearance.Options.UseForeColor = true;
-            this.employeesLabelControl.Appearance.Options.UseTextOptions = true;
-            this.employeesLabelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.employeesLabelControl.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.employeesLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.employeesLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeesLabelControl.Location = new System.Drawing.Point(0, 0);
-            this.employeesLabelControl.Name = "employeesLabelControl";
-            this.employeesLabelControl.Size = new System.Drawing.Size(784, 451);
-            this.employeesLabelControl.TabIndex = 2;
-            this.employeesLabelControl.Text = "Employees";
+            this.employeesNavigationPage.Size = new System.Drawing.Size(927, 555);
             // 
             // customersNavigationPage
             // 
             this.customersNavigationPage.Caption = "customersNavigationPage";
             this.customersNavigationPage.Controls.Add(this.customersLabelControl);
+            this.customersNavigationPage.Margin = new System.Windows.Forms.Padding(4);
             this.customersNavigationPage.Name = "customersNavigationPage";
-            this.customersNavigationPage.Size = new System.Drawing.Size(784, 451);
+            this.customersNavigationPage.Size = new System.Drawing.Size(927, 555);
             // 
             // customersLabelControl
             // 
@@ -167,35 +163,43 @@
             this.customersLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.customersLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customersLabelControl.Location = new System.Drawing.Point(0, 0);
+            this.customersLabelControl.Margin = new System.Windows.Forms.Padding(4);
             this.customersLabelControl.Name = "customersLabelControl";
-            this.customersLabelControl.Size = new System.Drawing.Size(784, 451);
+            this.customersLabelControl.Size = new System.Drawing.Size(927, 555);
             this.customersLabelControl.TabIndex = 2;
             this.customersLabelControl.Text = "Customers";
             // 
-            // tileBarItem1
+            // dgvDSNhanVien
             // 
-            this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement3.ImageOptions.ImageUri.Uri = "Cube;Size32x32;GrayScaled";
-            tileItemElement3.Text = "Sell";
-            this.tileBarItem1.Elements.Add(tileItemElement3);
-            this.tileBarItem1.Id = 3;
-            this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.tileBarItem1.Name = "tileBarItem1";
+            this.dgvDSNhanVien.AllowUserToAddRows = false;
+            this.dgvDSNhanVien.AllowUserToDeleteRows = false;
+            this.dgvDSNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDSNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSNhanVien.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvDSNhanVien.Location = new System.Drawing.Point(0, 316);
+            this.dgvDSNhanVien.Name = "dgvDSNhanVien";
+            this.dgvDSNhanVien.RowHeadersWidth = 51;
+            this.dgvDSNhanVien.RowTemplate.Height = 24;
+            this.dgvDSNhanVien.Size = new System.Drawing.Size(927, 239);
+            this.dgvDSNhanVien.TabIndex = 0;
             // 
             // Form1
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(927, 690);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.tileBar);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
             this.employeesNavigationPage.ResumeLayout(false);
             this.customersNavigationPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSNhanVien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,8 +213,8 @@
         private DevExpress.XtraBars.Navigation.TileBarItem customersTileBarItem;
         private DevExpress.XtraBars.Navigation.NavigationPage employeesNavigationPage;
         private DevExpress.XtraBars.Navigation.NavigationPage customersNavigationPage;
-        private DevExpress.XtraEditors.LabelControl employeesLabelControl;
         private DevExpress.XtraEditors.LabelControl customersLabelControl;
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem1;
+        private System.Windows.Forms.DataGridView dgvDSNhanVien;
     }
 }
