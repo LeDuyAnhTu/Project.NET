@@ -54,7 +54,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLBHX.dbml</DependentUpon>
     </Compile>
-    <Compile Include="QLBHXDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

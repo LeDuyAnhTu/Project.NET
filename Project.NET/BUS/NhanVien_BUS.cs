@@ -12,7 +12,14 @@ namespace BUS
         private static NhanVien_DAL nv = new NhanVien_DAL();
         public IQueryable LayDanhSach()
         {
-            return nv.LayDanhSach();
+            try
+            {
+                return nv.LayDanhSach();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

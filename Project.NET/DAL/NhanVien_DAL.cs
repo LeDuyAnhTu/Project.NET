@@ -8,12 +8,23 @@ namespace DAL
 {
     public class NhanVien_DAL
     {
-        private static QLBHXDatabase db = new QLBHXDatabase();
+        private static QLBHXDataContext db = new QLBHXDataContext();
         public IQueryable LayDanhSach()
         {
-            IQueryable ds = from nv in db.DB.NhanViens
-                            select nv;
-            return ds;
+            try
+            {
+                IQueryable ds = from nv in db.NhanViens
+                                select new
+                                {
+                                    Mã_NV = nv.maNV,
+                                    Họ_Tên_NV = 
+                                };
+                return ds;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

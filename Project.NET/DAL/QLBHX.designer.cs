@@ -22,8 +22,7 @@ namespace DAL
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="D:\\SCHOOL\\HK4\\ADO.NET\\CODE\\PROJ\\PROJECT.NET\\PROJECT.NET\\PROJECT.NET\\BIN\\DEBUG\\DB\\" +
-		"QLBHX.MDF")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLBHX")]
 	public partial class QLBHXDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -73,7 +72,7 @@ namespace DAL
     #endregion
 		
 		public QLBHXDataContext() : 
-				base(global::DAL.Properties.Settings.Default.D__SCHOOL_HK4_ADO_NET_CODE_PROJ_PROJECT_NET_PROJECT_NET_PROJECT_NET_BIN_DEBUG_DB_QLBHX_MDFConnectionString, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QLBHXConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

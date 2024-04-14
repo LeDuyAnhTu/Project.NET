@@ -41,6 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHD.cs" />
+    <Compile Include="ChiTietKM.cs" />
+    <Compile Include="TaiKhoan.cs" />
+    <Compile Include="SanPham.cs" />
+    <Compile Include="QuyenTruyCap.cs" />
+    <Compile Include="PhanCong.cs" />
+    <Compile Include="NhaSanXuat.cs" />
+    <Compile Include="LoaiSP.cs" />
+    <Compile Include="KhuyenMai.cs" />
+    <Compile Include="KhuVuc.cs" />
+    <Compile Include="KhoCN.cs" />
+    <Compile Include="KhachHang.cs" />
+    <Compile Include="HoaDon.cs" />
+    <Compile Include="ChiTietCC.cs" />
+    <Compile Include="CaLam.cs" />
+    <Compile Include="ChiNhanh.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
