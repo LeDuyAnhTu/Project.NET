@@ -11,14 +11,14 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class HoaDon
+    public class HoaDon_DTO
     {
         private string maHD;
         private DateTime ngayLap;
         private string maNV, maKH;
         private int diemDung, thanhTien;
 
-        public HoaDon(string maHD, DateTime ngayLap, string maNV, string maKH, int diemDung, int thanhTien)
+        public HoaDon_DTO(string maHD, DateTime ngayLap, string maNV, string maKH, int diemDung, int thanhTien)
         {
             MaHD = maHD;
             NgayLap = ngayLap;

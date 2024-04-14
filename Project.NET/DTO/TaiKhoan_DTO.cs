@@ -13,11 +13,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class TaiKhoan
+    public class TaiKhoan_DTO
     {
         private string tenTK, matKhau, maNV, maQTC;
 
-        public TaiKhoan(string tenTK, string matKhau, string maNV, string maQTC)
+        public TaiKhoan_DTO(string tenTK, string matKhau, string maNV, string maQTC)
         {
             TenTK = tenTK;
             MatKhau = matKhau;

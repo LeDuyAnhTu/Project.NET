@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class CaLam
+    public class CaLam_DTO
     {
         private string maCa, tenCa, gioBD, gioKT;
 
-        public CaLam(string maCa, string tenCa, string gioBD, string gioKT)
+        public CaLam_DTO(string maCa, string tenCa, string gioBD, string gioKT)
         {
             MaCa = maCa;
             TenCa = tenCa;

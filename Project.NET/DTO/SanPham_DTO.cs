@@ -11,14 +11,14 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class SanPham
+    public class SanPham_DTO
     {
         private string maSP, tenSP;
         private DateTime hSD;
         private int donGia, soLuongConLai;
         private string maLoai, maNSX;
 
-        public SanPham(string maSP, string tenSP, DateTime hSD, int donGia, int soLuongConLai, string maLoai, string maNSX)
+        public SanPham_DTO(string maSP, string tenSP, DateTime hSD, int donGia, int soLuongConLai, string maLoai, string maNSX)
         {
             MaSP = maSP;
             TenSP = tenSP;

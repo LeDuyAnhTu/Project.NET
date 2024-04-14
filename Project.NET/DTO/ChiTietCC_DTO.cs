@@ -11,13 +11,13 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class ChiTietCC
+    public class ChiTietCC_DTO
     {
         private string maCC, maNSX, maSP;
         private int soLuong;
         private DateTime ngayCC;
 
-        public ChiTietCC(string maCC, string maNSX, string maSP, int soLuong, DateTime ngayCC)
+        public ChiTietCC_DTO(string maCC, string maNSX, string maSP, int soLuong, DateTime ngayCC)
         {
             MaCC = maCC;
             MaNSX = maNSX;

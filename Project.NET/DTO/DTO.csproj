@@ -41,23 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiTietHD.cs" />
-    <Compile Include="ChiTietKM.cs" />
-    <Compile Include="TaiKhoan.cs" />
-    <Compile Include="SanPham.cs" />
-    <Compile Include="QuyenTruyCap.cs" />
-    <Compile Include="PhanCong.cs" />
-    <Compile Include="NhaSanXuat.cs" />
-    <Compile Include="LoaiSP.cs" />
-    <Compile Include="KhuyenMai.cs" />
-    <Compile Include="KhuVuc.cs" />
-    <Compile Include="KhoCN.cs" />
-    <Compile Include="KhachHang.cs" />
-    <Compile Include="HoaDon.cs" />
-    <Compile Include="ChiTietCC.cs" />
-    <Compile Include="CaLam.cs" />
-    <Compile Include="ChiNhanh.cs" />
-    <Compile Include="NhanVien.cs" />
+    <Compile Include="ChiTietHD_DTO.cs" />
+    <Compile Include="ChiTietKM_DTO.cs" />
+    <Compile Include="TaiKhoan_DTO.cs" />
+    <Compile Include="SanPham_DTO.cs" />
+    <Compile Include="QuyenTruyCap_DTO.cs" />
+    <Compile Include="PhanCong_DTO.cs" />
+    <Compile Include="NhaSanXuat_DTO.cs" />
+    <Compile Include="LoaiSP_DTO.cs" />
+    <Compile Include="KhuyenMai_DTO.cs" />
+    <Compile Include="KhuVuc_DTO.cs" />
+    <Compile Include="KhoCN_DTO.cs" />
+    <Compile Include="KhachHang_DTO.cs" />
+    <Compile Include="HoaDon_DTO.cs" />
+    <Compile Include="ChiTietCC_DTO.cs" />
+    <Compile Include="CaLam_DTO.cs" />
+    <Compile Include="ChiNhanh_DTO.cs" />
+    <Compile Include="NhanVien_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

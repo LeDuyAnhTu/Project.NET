@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class ChiNhanh
+    public class ChiNhanh_DTO
     {
         private string maCN, tenCN, diaChi, maKV, maQL;
 
-        public ChiNhanh(string maCN, string tenCN, string diaChi, string maKV, string maQL)
+        public ChiNhanh_DTO(string maCN, string tenCN, string diaChi, string maKV, string maQL)
         {
             MaCN = maCN;
             TenCN = tenCN;

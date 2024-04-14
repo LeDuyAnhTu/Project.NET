@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class LoaiSP
+    public class LoaiSP_DTO
     {
         private string maLoai, tenLoai;
 
-        public LoaiSP(string maLoai, string tenLoai)
+        public LoaiSP_DTO(string maLoai, string tenLoai)
         {
             MaLoai = maLoai;
             TenLoai = tenLoai;

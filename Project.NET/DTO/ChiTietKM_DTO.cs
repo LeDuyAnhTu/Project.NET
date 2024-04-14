@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class ChiTietKM
+    public class ChiTietKM_DTO
     {
         private string maKM, maSP;
         private int soLuong;
 
-        public ChiTietKM(string maKM, string maSP, int soLuong)
+        public ChiTietKM_DTO(string maKM, string maSP, int soLuong)
         {
             MaKM = maKM;
             MaSP = maSP;

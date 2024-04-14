@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class KhuyenMai
+    public class KhuyenMai_DTO
     {
         private string maKM, ghiChu;
 
-        public KhuyenMai(string maKM, string ghiChu)
+        public KhuyenMai_DTO(string maKM, string ghiChu)
         {
             MaKM = maKM;
             GhiChu = ghiChu;

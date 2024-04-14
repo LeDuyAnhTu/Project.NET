@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class PhanCong
+    public class PhanCong_DTO
     {
         private string maNV, ngayDiLam, maCa;
 
-        public PhanCong(string maNV, string ngayDiLam, string maCa)
+        public PhanCong_DTO(string maNV, string ngayDiLam, string maCa)
         {
             MaNV = maNV;
             NgayDiLam = ngayDiLam;

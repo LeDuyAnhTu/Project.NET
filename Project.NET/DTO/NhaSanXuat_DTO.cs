@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class NhaSanXuat
+    public class NhaSanXuat_DTO
     {
         private string maNSX, tenNSX, sDTNSX, diaChi;
 
-        public NhaSanXuat(string maNSX, string tenNSX, string sDTNSX, string diaChi)
+        public NhaSanXuat_DTO(string maNSX, string tenNSX, string sDTNSX, string diaChi)
         {
             MaNSX = maNSX;
             TenNSX = tenNSX;

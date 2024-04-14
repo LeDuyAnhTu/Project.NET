@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class QuyenTruyCap
+    public class QuyenTruyCap_DTO
     {
         private string maQTC, tenQTC;
 
-        public QuyenTruyCap(string maQTC, string tenQTC)
+        public QuyenTruyCap_DTO(string maQTC, string tenQTC)
         {
             MaQTC = maQTC;
             TenQTC = tenQTC;

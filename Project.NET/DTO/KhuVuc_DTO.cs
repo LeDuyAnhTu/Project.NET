@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class KhuVuc
+    public class KhuVuc_DTO
     {
         private string maKV, tenKV;
 
-        public KhuVuc(string maKV, string tenKV)
+        public KhuVuc_DTO(string maKV, string tenKV)
         {
             MaKV = maKV;
             TenKV = tenKV;

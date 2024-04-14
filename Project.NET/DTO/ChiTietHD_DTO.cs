@@ -11,19 +11,19 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class KhoCN
+    public class ChiTietHD_DTO
     {
-        private string maCN, maSP;
+        private string maHD, maSP;
         private int soLuong;
 
-        public KhoCN(string maCN, string maSP, int soLuong)
+        public ChiTietHD_DTO(string maHD, string maSP, int soLuong)
         {
-            MaCN = maCN;
+            MaHD = maHD;
             MaSP = maSP;
             SoLuong = soLuong;
         }
 
-        public string MaCN { get => maCN; set => maCN = value; }
+        public string MaHD { get => maHD; set => maHD = value; }
         public string MaSP { get => maSP; set => maSP = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
     }
