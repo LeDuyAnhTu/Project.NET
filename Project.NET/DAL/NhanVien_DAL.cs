@@ -17,7 +17,7 @@ namespace DAL
                                 select new
                                 {
                                     Mã_NV = nv.maNV,
-                                    Họ_Tên_NV = 
+                                    Họ_Tên_NV = nv.tenNV 
                                 };
                 return ds;
             }
