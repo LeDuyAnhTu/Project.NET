@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicMethod.cs" />
     <Compile Include="CaLam_DAL.cs" />
+    <Compile Include="ChiNhanh_DAL.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="NhanVien_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

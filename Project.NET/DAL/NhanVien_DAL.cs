@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class NhanVien_DAL
+    public class NhanVien_DAL : BasicMethod<NhanVien_DTO>
     {
-        private static Database db = new Database();
-        public IQueryable LayDanhSach()
+        public override IQueryable LayDanhSach()
         {
             try
             {
@@ -27,7 +26,7 @@ namespace DAL
                 throw ex;
             }
         }
-        public bool Them(NhanVien_DTO nv)
+        public override bool Them(NhanVien_DTO nv)
         {
             bool result = false;
             try
@@ -43,11 +42,59 @@ namespace DAL
                     luong = nv.Luong,
 
                 };
+
+                db.DBO.NhanViens.InsertOnSubmit(temp);
+                db.DBO.SubmitChanges();
+
+                result = true;
                 return result;
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
         }
+        public override bool Sua(NhanVien_DTO nv)
+        {
+            bool result = false;
+            try
+            {
+                NhanVien temp = db.DBO.NhanViens.Single(d => d.maNV == nv.MaNV);
+                temp.tenNV = nv.TenNV;
+                temp.gioiTinh = nv.GioiTinh;
+                temp.ngaySinh = nv.NgaySinh;
+                temp.SDT = nv.SDT;
+                temp.CCCD = nv.CCCD;
+                temp.luong = nv.Luong;
+
+                db.DBO.SubmitChanges();
+
+                result = true;
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public override bool Xoa(string maNV)
+        {
+            bool result = false;
+            try
+            {
+                NhanVien temp = db.DBO.NhanViens.Single(d => d.maNV == maNV);
+                
+                db.DBO.NhanViens.DeleteOnSubmit(temp);
+                db.DBO.SubmitChanges();
+
+                result = true;
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
