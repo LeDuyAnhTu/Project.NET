@@ -21,7 +21,41 @@ namespace DTO
             TenQTC = tenQTC;
         }
 
-        public string MaQTC { get => maQTC; set => maQTC = value; }
-        public string TenQTC { get => tenQTC; set => tenQTC = value; }
+        public string MaQTC
+        {
+            get => maQTC; set
+            {
+                if (value != null && value.Length > 10)
+                {
+                    throw new Exception("Mã QTC tối đa 10 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã QTC !");
+                }
+                else
+                {
+                    maQTC = value;
+                }
+            }
+        }
+        public string TenQTC
+        {
+            get => tenQTC; set
+            {
+                if (value != null && value.Length > 30)
+                {
+                    throw new Exception("Tên QTC tối đa 30 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập Tên QTC !");
+                }
+                else
+                {
+                    tenQTC = value;
+                }
+            }
+        }
     }
 }

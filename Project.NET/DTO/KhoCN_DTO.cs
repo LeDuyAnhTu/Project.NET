@@ -23,8 +23,60 @@ namespace DTO
             SoLuong = soLuong;
         }
 
-        public string MaCN { get => maCN; set => maCN = value; }
-        public string MaSP { get => maSP; set => maSP = value; }
-        public int SoLuong { get => soLuong; set => soLuong = value; }
+        public string MaCN
+        {
+            get => maCN;
+            set
+            {
+                if (value != null && value.Length > 10)
+                {
+                    throw new Exception("Mã CN tối đa 10 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã CN !");
+                }
+                else
+                {
+                    maCN = value;
+                }
+            }
+        }
+
+
+        public string MaSP
+        {
+            get => maSP;
+            set
+            {
+                if (value != null && value.Length > 10)
+                {
+                    throw new Exception("Mã SP tối đa 10 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã SP !");
+                }
+                else
+                {
+                    maSP = value;
+                }
+            }
+        }
+
+
+        public int SoLuong
+        {
+            get => soLuong;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentOutOfRangeException("Số lượng không thể nhỏ hơn 0!");
+                }
+                soLuong = value;
+            }
+        }
+
     }
 }

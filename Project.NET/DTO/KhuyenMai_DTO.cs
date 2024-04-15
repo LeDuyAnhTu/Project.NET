@@ -21,7 +21,47 @@ namespace DTO
             GhiChu = ghiChu;
         }
 
-        public string MaKM { get => maKM; set => maKM = value; }
-        public string GhiChu { get => ghiChu; set => ghiChu = value; }
+
+        public string MaKM
+        {
+            get => maKM;
+            set
+            {
+                if (value != null && value.Length > 10)
+                {
+                    throw new Exception("Mã KM tối đa 10 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã KM !");
+                }
+                else
+                {
+                    maKM = value;
+                }
+            }
+        }
+
+
+        public string GhiChu
+        {
+            get => ghiChu;
+            set
+            {
+                if (value != null && value.Length > 250)
+                {
+                    throw new Exception("Ghi chú tối đa 250 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập ghi chú !");
+                }
+                else
+                {
+                    ghiChu = value;
+                }
+            }
+        }
+
     }
 }

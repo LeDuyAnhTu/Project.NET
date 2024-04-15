@@ -25,7 +25,7 @@ namespace DTO
             MaQTC = maQTC;
         }
 
-        public string TenTK { get => tenTK; set => tenTK = value; }
+       
         public string MatKhau { 
             get => matKhau; 
             set
@@ -43,12 +43,61 @@ namespace DTO
                 }
             }
         }
-        public string MaNV { get => maNV;
+        public string TenTK
+        {
+            get => tenTK;
             set
             {
-                maNV = value;
+                if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập tên TK !");
+                }
+                else
+                {
+                    tenTK = value;
+                }
             }
         }
-        public string MaQTC { get => maQTC; set => maQTC = value; }
+
+        public string MaNV
+        {
+            get => maNV;
+            set
+            {
+                if (value != null && value.Length > 10)
+                {
+                    throw new Exception("Mã NV tối đa 10 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã NV !");
+                }
+                else
+                {
+                    maNV = value;
+                }
+            }
+        }
+
+        public string MaQTC
+        {
+            get => maQTC;
+            set
+            {
+                if (value != null && value.Length > 10)
+                {
+                    throw new Exception("Mã QTC tối đa 10 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã QTC !");
+                }
+                else
+                {
+                    maQTC = value;
+                }
+            }
+        }
+
     }
 }

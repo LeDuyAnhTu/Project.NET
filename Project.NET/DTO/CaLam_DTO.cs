@@ -14,7 +14,7 @@ namespace DTO
     public class CaLam_DTO
     {
         private string maCa, tenCa, gioBD, gioKT;
-
+        
         public CaLam_DTO(string maCa, string tenCa, string gioBD, string gioKT)
         {
             MaCa = maCa;
@@ -23,13 +23,16 @@ namespace DTO
             GioKT = gioKT;
         }
 
-        public string MaCa { get => maCa;
+        public string MaCa
+        {
+            get => maCa;
             set
             {
-                if(value != null && value.Length > 10)
+                if (value != null && value.Length > 10)
                 {
                     throw new Exception("Mã ca tối đa 10 ký tự !");
-                }else if(value == null)
+                }
+                else if (value == null)
                 {
                     throw new Exception("Vui lòng nhập mã ca !");
                 }
@@ -39,7 +42,9 @@ namespace DTO
                 }
             }
         }
-        public string TenCa { get => tenCa;
+        public string TenCa
+        {
+            get => tenCa;
             set
             {
                 if (value != null && value.Length > 10)
@@ -56,22 +61,27 @@ namespace DTO
                 }
             }
         }
-        public string GioBD { get => gioBD;
+        public string GioBD
+        {
+            get => gioBD;
             set
             {
-                if(value != null)
+                if (value != null)
                 {
-                    if(!checkTimeFormat(value))
+                    if (!checkTimeFormat(value))
                     {
                         throw new Exception("Giờ bắt đầu không hợp lệ (ví dụ: 16:00 hoặc 1600) ");
-                    }else
+                    }
+                    else
                     {
                         gioBD = toTimeFormat(value);
                     }
                 }
             }
         }
-        public string GioKT { get => gioKT;
+        public string GioKT
+        {
+            get => gioKT;
             set
             {
                 if (value != null)
@@ -93,13 +103,13 @@ namespace DTO
         private bool checkTimeFormat(string time)
         {
             bool isTime = true;
-            if(time.Length == 5)
+            if (time.Length == 5)
             {
-                for(int i = 0; i < time.Length; i++)
+                for (int i = 0; i < time.Length; i++)
                 {
-                    if(i == 2 )
+                    if (i == 2)
                     {
-                        if(time[i] == ':')
+                        if (time[i] == ':')
                         {
                             continue;
                         }
@@ -115,11 +125,12 @@ namespace DTO
                         break;
                     }
                 }
-            }else if(time.Length == 4)
+            }
+            else if (time.Length == 4)
             {
-                foreach(char item in time)
+                foreach (char item in time)
                 {
-                    if(!char.IsDigit(item))
+                    if (!char.IsDigit(item))
                     {
                         isTime = false;
                         break;
@@ -134,11 +145,11 @@ namespace DTO
         }
         private string toTimeFormat(string value)
         {
-            if(checkTimeFormat(value))
+            if (checkTimeFormat(value))
             {
-                if(value.Length == 4)
+                if (value.Length == 4)
                 {
-                    return value.Substring(0, 2) + ":" + value.Substring(2,2);
+                    return value.Substring(0, 2) + ":" + value.Substring(2, 2);
                 }
                 return value;
             }

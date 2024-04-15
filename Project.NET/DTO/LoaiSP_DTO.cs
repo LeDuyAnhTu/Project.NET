@@ -21,7 +21,41 @@ namespace DTO
             TenLoai = tenLoai;
         }
 
-        public string MaLoai { get => maLoai; set => maLoai = value; }
-        public string TenLoai { get => tenLoai; set => tenLoai = value; }
+        public string MaLoai
+        {
+            get => maLoai; set
+            {
+                if (value != null && value.Length > 10)
+                {
+                    throw new Exception("Mã loại sản phẩm tối đa 10 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã loại sản phẩm !");
+                }
+                else
+                {
+                    maLoai = value;
+                }
+            }
+        }
+        public string TenLoai
+        {
+            get => tenLoai; set
+            {
+                if (value != null && value.Length > 30)
+                {
+                    throw new Exception("Tên loại sản phẩm tối đa 30 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập Tên loại sản phẩm !");
+                }
+                else
+                {
+                    tenLoai = value;
+                }
+            }
+        }
     }
 }

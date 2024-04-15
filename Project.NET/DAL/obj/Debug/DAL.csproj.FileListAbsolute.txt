@@ -8,3 +8,13 @@ D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj
 D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DAL\obj\Debug\DAL.dll
 D:\School\HK4\ADO.Net\Code\PROJ\Project.NET\Project.NET\DAL\obj\Debug\DAL.pdb
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DAL.dll.config
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DAL.dll
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DAL.pdb
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DTO.dll
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DTO.pdb
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.Up2Date
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.dll
+F:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.pdb

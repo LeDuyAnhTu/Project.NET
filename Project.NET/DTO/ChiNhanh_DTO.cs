@@ -19,10 +19,40 @@ namespace DTO
             MaQL = maQL;
         }
 
-        public string MaCN { get => maCN; set => maCN = value; }
-        public string TenCN { get => tenCN; set => tenCN = value; }
-        public string DiaChi { get => diaChi; set => diaChi = value; }
-        public string MaKV { get => maKV; set => maKV = value; }
-        public string MaQL { get => maQL; set => maQL = value; }
+        public string MaCN
+        {
+            get => maCN; set
+            {
+                maCN = value;
+            }
+        }
+        public string TenCN
+        {
+            get => tenCN; set
+            {
+                tenCN = value;
+            }
+        }
+        public string DiaChi
+        {
+            get => diaChi; set
+            {
+                diaChi = value;
+            }
+        }
+        public string MaKV
+        {
+            get => maKV; set
+            {
+                maKV = value;
+            }
+        }
+        public string MaQL
+        {
+            get => maQL; set
+            {
+                maQL = value;
+            }
+        }
     }
 }

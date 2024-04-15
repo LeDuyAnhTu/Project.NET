@@ -21,16 +21,42 @@ namespace DTO
             TenKV = tenKV;
         }
 
-        public string MaKV { get => maKV;
+        public string MaKV
+        {
+            get => maKV;
             set
             {
-                if(value != null &&  value.Length > 10)
+                if (value != null && value.Length > 10)
                 {
-
+                    throw new Exception("Mã KV tối đa 10 ký tự !");
                 }
-                maKV = value;
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập mã KV !");
+                }
+                else
+                {
+                    maKV = value;
+                }
             }
         }
-        public string TenKV { get => tenKV; set => tenKV = value; }
+        public string TenKV
+        {
+            get => tenKV; set
+            {
+                if (value != null && value.Length > 50)
+                {
+                    throw new Exception("Tên KV tối đa 50 ký tự !");
+                }
+                else if (value == null)
+                {
+                    throw new Exception("Vui lòng nhập tên KV !");
+                }
+                else
+                {
+                    tenKV = value;
+                }
+            }
+        }
     }
 }
