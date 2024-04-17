@@ -15,6 +15,10 @@ namespace DTO
 {
     public class CaLam_DAL : BasicMethod<CaLam_DTO>
     {
+        /// <summary>
+        /// Lấy danh sách ca làm
+        /// </summary>
+        /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
             try
@@ -28,7 +32,11 @@ namespace DTO
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Sửa thông tin ca làm
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Sua(CaLam_DTO obj)
         {
             try
@@ -49,7 +57,11 @@ namespace DTO
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Thêm ca làm mới
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Them(CaLam_DTO obj)
         {
             try
@@ -75,7 +87,11 @@ namespace DTO
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Xóa thông tin ca làm
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Xoa(string obj)
         {
             try

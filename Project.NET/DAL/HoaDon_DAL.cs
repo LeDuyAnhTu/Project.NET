@@ -2,110 +2,113 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ChiNhanh_DAL : BasicMethod<ChiNhanh_DTO>
+    public class HoaDon_DAL : BasicMethod<HoaDon_DTO>
     {
         /// <summary>
-        /// Lấy danh sách các chi nhánh
+        /// Lấy danh sách hóa đơn
         /// </summary>
         /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
+            IQueryable ds = null;
             try
             {
-                IQueryable ds = from cn in db.DBO.ChiNhanhs
-                                select cn;
-                return ds;
+                ds = from hd in db.DBO.HoaDons
+                     select hd;
             }catch(Exception ex)
             {
                 throw ex;
             }
+            return ds;
         }
+
         /// <summary>
-        /// Sửa thông tin của 1 chi nhánh
+        /// Sửa thông tin hóa đơn
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Sua(ChiNhanh_DTO obj)
+        public override bool Sua(HoaDon_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d => d.maCN == obj.MaCN);
-                temp.tenCN = obj.TenCN;
-                temp.diaChi = obj.DiaChi;
-                temp.maKV = obj.MaKV;
-                temp.maQL = obj.MaQL;
+                HoaDon temp = db.DBO.HoaDons.Single(d => d.maHD == obj.MaHD);
+                temp.maHD = obj.MaHD;
+                temp.ngayLap = obj.NgayLap;
+                temp.maNV = obj.MaNV;
+                temp.maKH = obj.MaKH;
+                temp.diemDung = obj.DiemDung;
+                temp.thanhTien = obj.ThanhTien;
 
                 db.DBO.SubmitChanges();
 
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Thêm chi nhánh mới
+        /// Thêm hóa đơn mới
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Them(ChiNhanh_DTO obj)
+        public override bool Them(HoaDon_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = new ChiNhanh()
+                HoaDon temp = new HoaDon()
                 {
-                    maCN = obj.MaCN,
-                    tenCN = obj.TenCN,
-                    diaChi = obj.DiaChi,
-                    maKV = obj.MaKV,
-                    maQL = obj.MaQL,
+                    maHD=  obj.MaHD,
+                    ngayLap = obj.NgayLap,
+                    maNV = obj.MaNV,
+                    maKH = obj.MaKH,
+                    diemDung = obj.DiemDung,
+                    thanhTien = obj.ThanhTien,
                 };
 
-                db.DBO.ChiNhanhs.InsertOnSubmit(temp);
+                db.DBO.HoaDons.InsertOnSubmit(temp);
                 db.DBO.SubmitChanges();
 
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Xóa thông tin của 1 chi nhánh
+        /// Xóa thông tin của 1 hóa đơn theo mã hd
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
         public override bool Xoa(string obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
+                HoaDon temp = db.DBO.HoaDons.Single(d => d.maHD == obj);
 
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d=>d.maCN == obj);
-
-                db.DBO.ChiNhanhs.DeleteOnSubmit(temp);
+                db.DBO.HoaDons.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
 
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
     }
 }

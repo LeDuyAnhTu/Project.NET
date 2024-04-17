@@ -2,110 +2,108 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ChiNhanh_DAL : BasicMethod<ChiNhanh_DTO>
+    public class ChiTietCC_DAL : BasicMethod<ChiTietCC_DTO>
     {
         /// <summary>
-        /// Lấy danh sách các chi nhánh
+        /// Lấy danh sách chi tiết cung cấp
         /// </summary>
         /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
+            IQueryable ds = null;
             try
             {
-                IQueryable ds = from cn in db.DBO.ChiNhanhs
-                                select cn;
-                return ds;
-            }catch(Exception ex)
+                ds = from ctcc in db.DBO.ChiTietCCs
+                                select ctcc;
+
+            }catch (Exception ex)
             {
                 throw ex;
             }
+            return ds;
         }
         /// <summary>
-        /// Sửa thông tin của 1 chi nhánh
+        /// Sửa thông tin chi tiết cung cấp
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Sua(ChiNhanh_DTO obj)
+        public override bool Sua(ChiTietCC_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d => d.maCN == obj.MaCN);
-                temp.tenCN = obj.TenCN;
-                temp.diaChi = obj.DiaChi;
-                temp.maKV = obj.MaKV;
-                temp.maQL = obj.MaQL;
+                ChiTietCC temp = db.DBO.ChiTietCCs.Single(d => d.maCC == obj.MaCC);
+                temp.maSP = obj.MaSP;
+                temp.maNSX = obj.MaNSX;
+                temp.soLuong = obj.SoLuong;
 
                 db.DBO.SubmitChanges();
 
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Thêm chi nhánh mới
+        /// Thêm chi tiết cung cấp mới
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Them(ChiNhanh_DTO obj)
+        public override bool Them(ChiTietCC_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = new ChiNhanh()
+                ChiTietCC temp = new ChiTietCC()
                 {
-                    maCN = obj.MaCN,
-                    tenCN = obj.TenCN,
-                    diaChi = obj.DiaChi,
-                    maKV = obj.MaKV,
-                    maQL = obj.MaQL,
+                    maCC = obj.MaCC,
+                    maNSX = obj.MaNSX,
+                    maSP = obj.MaSP,
+                    soLuong = obj.SoLuong,
                 };
 
-                db.DBO.ChiNhanhs.InsertOnSubmit(temp);
+                db.DBO.ChiTietCCs.InsertOnSubmit(temp);
                 db.DBO.SubmitChanges();
 
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Xóa thông tin của 1 chi nhánh
+        /// Xóa thông tin chi tiết cung cấp
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
         public override bool Xoa(string obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
+                ChiTietCC temp = db.DBO.ChiTietCCs.Single(d => d.maCC == obj);
 
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d=>d.maCN == obj);
-
-                db.DBO.ChiNhanhs.DeleteOnSubmit(temp);
+                db.DBO.ChiTietCCs.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
 
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
     }
 }

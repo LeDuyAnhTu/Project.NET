@@ -7,105 +7,94 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ChiNhanh_DAL : BasicMethod<ChiNhanh_DTO>
+    public class KhuVuc_DAL : BasicMethod<KhuVuc_DTO>
     {
         /// <summary>
-        /// Lấy danh sách các chi nhánh
+        /// Lấy danh sách các khu vực
         /// </summary>
         /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
+            IQueryable ds = null;
             try
             {
-                IQueryable ds = from cn in db.DBO.ChiNhanhs
-                                select cn;
-                return ds;
+                ds = from kv in db.DBO.KhuVucs
+                     select kv;
             }catch(Exception ex)
             {
                 throw ex;
             }
+            return ds;
         }
         /// <summary>
-        /// Sửa thông tin của 1 chi nhánh
+        /// Sửa thông tin của 1 khu vực
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Sua(ChiNhanh_DTO obj)
+        public override bool Sua(KhuVuc_DTO obj)
         {
+            bool result = false;
+
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d => d.maCN == obj.MaCN);
-                temp.tenCN = obj.TenCN;
-                temp.diaChi = obj.DiaChi;
-                temp.maKV = obj.MaKV;
-                temp.maQL = obj.MaQL;
-
+                KhuVuc temp = db.DBO.KhuVucs.Single(d => d.maKV == obj.MaKV);
+                temp.tenKV = obj.TenKV;
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Thêm chi nhánh mới
+        /// Thêm khu vực mới
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Them(ChiNhanh_DTO obj)
+        public override bool Them(KhuVuc_DTO obj)
         {
+            bool result = false;
+
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = new ChiNhanh()
+                KhuVuc temp = new KhuVuc()
                 {
-                    maCN = obj.MaCN,
-                    tenCN = obj.TenCN,
-                    diaChi = obj.DiaChi,
                     maKV = obj.MaKV,
-                    maQL = obj.MaQL,
+                    tenKV = obj.TenKV,
                 };
-
-                db.DBO.ChiNhanhs.InsertOnSubmit(temp);
+                db.DBO.KhuVucs.InsertOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Xóa thông tin của 1 chi nhánh
+        /// Xóa 1 khu vực khỏi hệ thống
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
         public override bool Xoa(string obj)
         {
+            bool result = false;
+
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d=>d.maCN == obj);
-
-                db.DBO.ChiNhanhs.DeleteOnSubmit(temp);
+                KhuVuc temp = db.DBO.KhuVucs.Single(d => d.maKV == obj);
+                db.DBO.KhuVucs.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
     }
 }

@@ -7,105 +7,91 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ChiNhanh_DAL : BasicMethod<ChiNhanh_DTO>
+    public class LoaiSP_DAL : BasicMethod<LoaiSP_DTO>
     {
         /// <summary>
-        /// Lấy danh sách các chi nhánh
+        /// Lấy danh sách các loại sản phẩm
         /// </summary>
         /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
+            IQueryable ds = null;
             try
             {
-                IQueryable ds = from cn in db.DBO.ChiNhanhs
-                                select cn;
-                return ds;
-            }catch(Exception ex)
+                ds = from loai in db.DBO.LoaiSPs
+                     select loai;
+            }catch (Exception ex)
             {
                 throw ex;
             }
+            return ds;
         }
         /// <summary>
-        /// Sửa thông tin của 1 chi nhánh
+        /// Sửa thông tin của 1 loại sản phẩm
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Sua(ChiNhanh_DTO obj)
+        public override bool Sua(LoaiSP_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d => d.maCN == obj.MaCN);
-                temp.tenCN = obj.TenCN;
-                temp.diaChi = obj.DiaChi;
-                temp.maKV = obj.MaKV;
-                temp.maQL = obj.MaQL;
-
+                LoaiSP temp = db.DBO.LoaiSPs.Single(d => d.maLoai == obj.MaLoai);
+                temp.tenLoai = obj.TenLoai;
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Thêm chi nhánh mới
+        /// Thêm loại sản phẩm mới
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Them(ChiNhanh_DTO obj)
+        public override bool Them(LoaiSP_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = new ChiNhanh()
+                LoaiSP temp = new LoaiSP()
                 {
-                    maCN = obj.MaCN,
-                    tenCN = obj.TenCN,
-                    diaChi = obj.DiaChi,
-                    maKV = obj.MaKV,
-                    maQL = obj.MaQL,
+                    maLoai = obj.MaLoai,
+                    tenLoai = obj.TenLoai,
                 };
-
-                db.DBO.ChiNhanhs.InsertOnSubmit(temp);
+                db.DBO.LoaiSPs.InsertOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Xóa thông tin của 1 chi nhánh
+        /// Xóa thông tin của 1 loại sản phẩm
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
         public override bool Xoa(string obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d=>d.maCN == obj);
-
-                db.DBO.ChiNhanhs.DeleteOnSubmit(temp);
+                LoaiSP temp = db.DBO.LoaiSPs.Single(d => d.maLoai == obj);
+                db.DBO.LoaiSPs.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
     }
 }

@@ -7,105 +7,95 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ChiNhanh_DAL : BasicMethod<ChiNhanh_DTO>
+    public class NhaSanXuat_DAL : BasicMethod<NhaSanXuat_DTO>
     {
         /// <summary>
-        /// Lấy danh sách các chi nhánh
+        /// Lấy danh sách các nhà sản xuất
         /// </summary>
         /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
+            IQueryable ds = null;
             try
             {
-                IQueryable ds = from cn in db.DBO.ChiNhanhs
-                                select cn;
-                return ds;
-            }catch(Exception ex)
+                ds = from nsx in db.DBO.NhaSanXuats
+                     select nsx;
+            }catch (Exception ex)
             {
                 throw ex;
             }
+            return ds;
         }
         /// <summary>
-        /// Sửa thông tin của 1 chi nhánh
+        /// Sửa thông tin của 1 nhà sản xuất
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Sua(ChiNhanh_DTO obj)
+        public override bool Sua(NhaSanXuat_DTO obj)
         {
+            bool re = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d => d.maCN == obj.MaCN);
-                temp.tenCN = obj.TenCN;
+                NhaSanXuat temp = db.DBO.NhaSanXuats.Single(d=>d.maNSX==obj.MaNSX);
+                temp.tenNSX = obj.TenNSX;
+                temp.SDTNSX = obj.SDTNSX;
                 temp.diaChi = obj.DiaChi;
-                temp.maKV = obj.MaKV;
-                temp.maQL = obj.MaQL;
-
                 db.DBO.SubmitChanges();
-
-                result = true;
-                return result;
+                re = true;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return re;
         }
         /// <summary>
-        /// Thêm chi nhánh mới
+        /// Thêm nhà sản xuất mới
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Them(ChiNhanh_DTO obj)
+        public override bool Them(NhaSanXuat_DTO obj)
         {
+            bool re = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = new ChiNhanh()
+                NhaSanXuat temp = new NhaSanXuat()
                 {
-                    maCN = obj.MaCN,
-                    tenCN = obj.TenCN,
+                    maNSX = obj.MaNSX,
+                    tenNSX = obj.TenNSX,
+                    SDTNSX = obj.SDTNSX,
                     diaChi = obj.DiaChi,
-                    maKV = obj.MaKV,
-                    maQL = obj.MaQL,
                 };
-
-                db.DBO.ChiNhanhs.InsertOnSubmit(temp);
+                db.DBO.NhaSanXuats.InsertOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
-                result = true;
-                return result;
+                re = true;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return re;
         }
         /// <summary>
-        /// Xóa thông tin của 1 chi nhánh
+        /// Xóa 1 nhà sản xuất khỏi hệ thống
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
         public override bool Xoa(string obj)
         {
+            bool re = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d=>d.maCN == obj);
-
-                db.DBO.ChiNhanhs.DeleteOnSubmit(temp);
+                NhaSanXuat temp = db.DBO.NhaSanXuats.Single(d => d.maNSX == obj);
+                db.DBO.NhaSanXuats.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
-                result = true;
-                return result;
+                re = true;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return re;
         }
     }
 }

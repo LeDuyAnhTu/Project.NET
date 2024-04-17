@@ -7,105 +7,99 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ChiNhanh_DAL : BasicMethod<ChiNhanh_DTO>
+    public class KhachHang_DAL : BasicMethod<KhachHang_DTO>
     {
         /// <summary>
-        /// Lấy danh sách các chi nhánh
+        /// Lấy danh sách khách hàng
         /// </summary>
         /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
+            IQueryable ds = null;
             try
             {
-                IQueryable ds = from cn in db.DBO.ChiNhanhs
-                                select cn;
-                return ds;
-            }catch(Exception ex)
+                ds = from kh in db.DBO.KhachHangs
+                     select kh;
+            }catch (Exception ex)
             {
                 throw ex;
             }
+            return ds;
         }
         /// <summary>
-        /// Sửa thông tin của 1 chi nhánh
+        /// Sửa thông tin khách hàng
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Sua(ChiNhanh_DTO obj)
+        public override bool Sua(KhachHang_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d => d.maCN == obj.MaCN);
-                temp.tenCN = obj.TenCN;
-                temp.diaChi = obj.DiaChi;
-                temp.maKV = obj.MaKV;
-                temp.maQL = obj.MaQL;
+                KhachHang temp = db.DBO.KhachHangs.Single(d => d.maKH == obj.MaKH);
+                temp.tenKH = obj.TenKH;
+                temp.SDT = obj.SDT;
+                temp.ngaySinh = obj.NgaySinh;
+                temp.diemTichLuy = obj.DiemTichLuy;
 
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Thêm chi nhánh mới
+        /// Thêm khách hàng mới
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override bool Them(ChiNhanh_DTO obj)
+        public override bool Them(KhachHang_DTO obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = new ChiNhanh()
+                KhachHang temp = new KhachHang()
                 {
-                    maCN = obj.MaCN,
-                    tenCN = obj.TenCN,
-                    diaChi = obj.DiaChi,
-                    maKV = obj.MaKV,
-                    maQL = obj.MaQL,
+                    maKH = obj.MaKH,
+                    tenKH = obj.TenKH,
+                    SDT = obj.SDT,
+                    ngaySinh = obj.NgaySinh,
+                    diemTichLuy = obj.DiemTichLuy,
                 };
 
-                db.DBO.ChiNhanhs.InsertOnSubmit(temp);
+                db.DBO.KhachHangs.InsertOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
         /// <summary>
-        /// Xóa thông tin của 1 chi nhánh
+        /// Xóa thông tin của 1 khách hàng
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
         public override bool Xoa(string obj)
         {
+            bool result = false;
             try
             {
-                bool result = false;
-
-                ChiNhanh temp = db.DBO.ChiNhanhs.Single(d=>d.maCN == obj);
-
-                db.DBO.ChiNhanhs.DeleteOnSubmit(temp);
+                KhachHang temp = db.DBO.KhachHangs.Single(d => d.maKH == obj);
+                db.DBO.KhachHangs.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
-
                 result = true;
-                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            return result;
         }
     }
 }

@@ -9,6 +9,10 @@ namespace DAL
 {
     public class NhanVien_DAL : BasicMethod<NhanVien_DTO>
     {
+        /// <summary>
+        /// Lấy danh sách các nhân viên
+        /// </summary>
+        /// <returns></returns>
         public override IQueryable LayDanhSach()
         {
             try
@@ -26,6 +30,11 @@ namespace DAL
                 throw ex;
             }
         }
+        /// <summary>
+        /// Thêm nhân viên mới
+        /// </summary>
+        /// <param name="nv"></param>
+        /// <returns></returns>
         public override bool Them(NhanVien_DTO nv)
         {
             bool result = false;
@@ -54,6 +63,11 @@ namespace DAL
                 throw ex;
             }
         }
+        /// <summary>
+        /// Sửa thông tin nhân viên
+        /// </summary>
+        /// <param name="nv"></param>
+        /// <returns></returns>
         public override bool Sua(NhanVien_DTO nv)
         {
             bool result = false;
@@ -77,6 +91,11 @@ namespace DAL
                 throw ex;
             }
         }
+        /// <summary>
+        /// Xóa nhân viên khỏi hệ thống
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
         public override bool Xoa(string maNV)
         {
             bool result = false;
