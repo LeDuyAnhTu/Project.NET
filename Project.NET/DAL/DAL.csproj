@@ -69,9 +69,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLBHX.dbml</DependentUpon>
     </Compile>
-    <Compile Include="QuyenTruyCap_DAL.cs" />
     <Compile Include="SanPham_DAL.cs" />
     <Compile Include="TaiKhoan_DAL.cs" />
+    <Compile Include="ViTri_DAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

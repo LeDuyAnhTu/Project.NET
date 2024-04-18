@@ -49,7 +49,8 @@ namespace DAL
                     SDT = nv.SDT,
                     CCCD = nv.CCCD,
                     luong = nv.Luong,
-
+                    maVT = nv.MaVT,
+                    maCN = nv.MaCN,
                 };
 
                 db.DBO.NhanViens.InsertOnSubmit(temp);
@@ -80,6 +81,8 @@ namespace DAL
                 temp.SDT = nv.SDT;
                 temp.CCCD = nv.CCCD;
                 temp.luong = nv.Luong;
+                temp.maVT = nv.MaVT;
+                temp.maCN = nv.MaCN;
 
                 db.DBO.SubmitChanges();
 

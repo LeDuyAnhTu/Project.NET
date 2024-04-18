@@ -12,20 +12,20 @@ namespace DTO
         private DateTime ngaySinh;
         private string soDT, cCCD;
         private int luong;
-        private string maCN;
+        private string maVT, maCN;
 
-        public NhanVien_DTO(string maNV, string tenNV, string gioiTinh, DateTime ngaySinh, string soDT, string cCCD, int luong, string maCN)
+        public NhanVien_DTO(string maNV, string tenNV, string gioiTinh, DateTime ngaySinh, string sDT, string cCCD, int luong, string maVT, string maCN)
         {
             MaNV = maNV;
             TenNV = tenNV;
             GioiTinh = gioiTinh;
             NgaySinh = ngaySinh;
-            SDT = soDT;
+            SDT = sDT;
             CCCD = cCCD;
             Luong = luong;
             MaCN = maCN;
+            MaVT = maVT;
         }
-
 
         public string MaNV
         {
@@ -190,5 +190,6 @@ namespace DTO
             }
         }
 
+        public string MaVT { get => maVT; set => maVT = value; }
     }
 }
