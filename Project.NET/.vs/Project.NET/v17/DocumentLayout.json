@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\project.net\\project.net\\dal\\chitiethd_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\chitiethd_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\project.net\\project.net\\dal\\chinhanh_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\chinhanh_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\project.net\\project.net\\dal\\nhasanxuat_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\nhasanxuat_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\project.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs",
               "RelativeDocumentMoniker": "Project.NET\\Form1.cs",
@@ -38,11 +34,12 @@
               "RelativeToolTip": "Project.NET\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T04:49:37.557Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\Project.NET\\Form1.cs",
               "RelativeDocumentMoniker": "Project.NET\\Form1.cs",
@@ -51,19 +48,20 @@
               "ViewState": "AQIAAB4AAAAAAAAAAAAawCsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T02:49:06.851Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChiTietHD_DAL.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\ChiTietHD_DAL.cs",
-              "RelativeDocumentMoniker": "DAL\\ChiTietHD_DAL.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\ChiTietHD_DAL.cs",
-              "RelativeToolTip": "DAL\\ChiTietHD_DAL.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABQAAAANAAAA",
+              "Title": "NhaSanXuat_DAL.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\NhaSanXuat_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\NhaSanXuat_DAL.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\NhaSanXuat_DAL.cs",
+              "RelativeToolTip": "DAL\\NhaSanXuat_DAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:56:39.158Z",
+              "WhenOpened": "2024-04-17T09:29:47.971Z",
               "EditorCaption": ""
             },
             {
@@ -77,19 +75,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChiNhanh_DAL.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\ChiNhanh_DAL.cs",
-              "RelativeDocumentMoniker": "DAL\\ChiNhanh_DAL.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Project.NET\\Project.NET\\DAL\\ChiNhanh_DAL.cs",
-              "RelativeToolTip": "DAL\\ChiNhanh_DAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T12:19:57.571Z",
-              "EditorCaption": ""
             }
           ]
         }
