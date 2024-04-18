@@ -40,7 +40,6 @@ namespace DAL
                 TaiKhoan temp = db.DBO.TaiKhoans.Single(d => d.tenTK.Equals(obj.TenTK));
                 temp.matKhau = obj.MatKhau;
                 temp.maNV = obj.MaNV;
-                temp.maQTC = obj.MaQTC;
 
                 db.DBO.SubmitChanges();
 
@@ -66,7 +65,6 @@ namespace DAL
                 {
                     tenTK = obj.TenTK,
                     maNV = obj.MaNV,
-                    maQTC = obj.MaQTC,
                     matKhau = obj.MatKhau,
                 };
 
@@ -103,6 +101,17 @@ namespace DAL
                 throw ex;
             }
             return result;
+        }
+
+        public TaiKhoan TimTaiKhoan_MaNV(string maNV)
+        {
+            try
+            {
+                return db.DBO.TaiKhoans.Single(d=>d.maNV.Equals(maNV));
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

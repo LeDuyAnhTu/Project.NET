@@ -27,6 +27,11 @@ namespace BUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Thêm nhân viên mới vào hệ thống và tạo tài khoản mới cho nhân viên đó
+        /// </summary>
+        /// <param name="nhanVien"></param>
+        /// <returns></returns>
         public bool Them(NhanVien_DTO nhanVien)
         {
             bool result = false;
@@ -44,6 +49,44 @@ namespace BUS
                 string tenTK = nhanVien.MaNV;
                 result = tk.Them(new TaiKhoan_DTO(tenTK,"123456",nhanVien.MaNV,"2"));
             }catch(Exception ex)
+            {
+                throw ex;
+            }
+            return result;
+        }
+        /// <summary>
+        /// Sửa thông tin nhân viên có trong hệ thống
+        /// </summary>
+        /// <param name="nhanVien"></param>
+        /// <returns></returns>
+        public bool Sua(NhanVien_DTO nhanVien)
+        {
+            bool result = false;
+            //Thêm nhân viên
+            try
+            {
+                result = nv.Sua(nhanVien);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return result;
+        }
+        /// <summary>
+        /// Xóa nhân viên theo mã nhân viên
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
+        public bool Xoa(string maNV)
+        {
+            bool result = false;
+            //Thêm nhân viên
+            try
+            {
+                result = nv.Xoa(maNV);
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
