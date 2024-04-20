@@ -16,10 +16,35 @@ namespace Project.NET
         public frmMain()
         {
             InitializeComponent();
-            //MessageBox.Show("Form:\nwidth: " + this.Width + "; height: " + this.Height);
-            MessageBox.Show("Navigation Frame:\nwidth: " + this.napLogin.Width + "; height: " + this.napLogin.Height);
-            int padding_vertical = (int)(napLogin.Height - 400) / 2;
+            //
+            //navigation page
+            //
+            this.napLogin.Width = this.nafMain.Width;
+            this.napLogin.Height = this.nafMain.Height;
+            //
+            // pictureBox1
+            //
+            int padding_vertical = (int)(napLogin.Height - this.pictureBox1.Height);
             this.pictureBox1.Location = new System.Drawing.Point(20, padding_vertical);
+            //
+            // panelControl1
+            //
+            this.panelControl1.Padding = new System.Windows.Forms.Padding(12, 25, 12, 0);
+            int panel_Height = (this.panelControl1.Padding.Top * 2) 
+                + txtTenDangNhap.Size.Height 
+                + txtTenDangNhap.Margin.Bottom 
+                + txtMatKhau.Size.Height
+                + txtMatKhau.Margin.Bottom
+                + btnDangNhap.Size.Height;
+            int panel_Width = (this.panelControl1.Padding.Left * 2)
+                + lblTenDangNhap.Size.Width
+                + lblTenDangNhap.Margin.Right 
+                + txtTenDangNhap.Size.Width;
+            int panel_X = (int)(napLogin.Height - this.panelControl1.Height)/2;
+            int panel_Y = this.napLogin.Width - (panel_Width + this.napLogin.Padding.Right);
+            this.panelControl1.Size = new System.Drawing.Size(panel_Width, panel_Height);
+            this.panelControl1.Location = new System.Drawing.Point(panel_Y, panel_X);
+
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
