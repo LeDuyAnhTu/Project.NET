@@ -76,3 +76,44 @@ F:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csp
 F:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.Up2Date
 F:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
 F:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\Project.NET.exe.config
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\Project.NET.exe
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\Project.NET.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\BUS.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.BonusSkins.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Data.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Drawing.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Images.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Utils.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraBars.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DTO.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\BUS.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DTO.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Data.v22.2.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraBars.v22.2.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll.config
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.AssemblyReference.cache
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Form1.resources
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmMain.resources
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Properties.Resources.resources
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.GenerateResource.cache
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.CoreCompileInputs.cache
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.Up2Date
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe.licenses
