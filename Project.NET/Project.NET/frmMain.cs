@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 
 namespace Project.NET
 {
@@ -17,34 +17,36 @@ namespace Project.NET
         {
             InitializeComponent();
             //
-            //navigation page
+            // frmMain
             //
-            this.napLogin.Width = this.nafMain.Width;
-            this.napLogin.Height = this.nafMain.Height;
-            //
-            // pictureBox1
-            //
-            int padding_vertical = (int)(napLogin.Height - this.pictureBox1.Height);
-            this.pictureBox1.Location = new System.Drawing.Point(20, padding_vertical);
-            //
-            // panelControl1
-            //
-            this.panelControl1.Padding = new System.Windows.Forms.Padding(12, 25, 12, 0);
-            int panel_Height = (this.panelControl1.Padding.Top * 2) 
-                + txtTenDangNhap.Size.Height 
-                + txtTenDangNhap.Margin.Bottom 
-                + txtMatKhau.Size.Height
-                + txtMatKhau.Margin.Bottom
-                + btnDangNhap.Size.Height;
-            int panel_Width = (this.panelControl1.Padding.Left * 2)
-                + lblTenDangNhap.Size.Width
-                + lblTenDangNhap.Margin.Right 
-                + txtTenDangNhap.Size.Width;
-            int panel_X = (int)(napLogin.Height - this.panelControl1.Height)/2;
-            int panel_Y = this.napLogin.Width - (panel_Width + this.napLogin.Padding.Right);
-            this.panelControl1.Size = new System.Drawing.Size(panel_Width, panel_Height);
-            this.panelControl1.Location = new System.Drawing.Point(panel_Y, panel_X);
+            Rectangle rect = new Rectangle(int.MaxValue, int.MaxValue, int.MinValue, int.MinValue);
 
+            foreach (Screen screen in Screen.AllScreens)
+                rect = Rectangle.Union(rect, screen.Bounds);
+            this.Width = rect.Width;
+            this.Height = rect.Height;
+            
+            //
+            // txtTenDangNhap, txtMatKhau
+            //
+            int txt_Margin_Vertical = (int)Math.Ceiling(((this.hinh.Size.Height * 0.3) - txtTenDangNhap.Size.Height) / 2);
+
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(0, txt_Margin_Vertical, 10, txt_Margin_Vertical);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(0, txt_Margin_Vertical, 10, txt_Margin_Vertical);
+
+            //
+            // lblTenDangNhap, lblMatKhau
+            //
+            int lbl_Width = (int)Math.Ceiling(this.hinh.Size.Width * 0.35);
+            int lbl_Height = (int)Math.Ceiling(this.hinh.Size.Height * 0.3);
+            int lbl_Margin_Vertical = (int)Math.Ceiling(((this.hinh.Size.Height * 0.3) - lblTenDangNhap.Size.Height) / 2);
+
+            lblTenDangNhap.Size = new Size(lbl_Width, lbl_Height);
+            lblMatKhau.Size = lblTenDangNhap.Size;
+            lblTenDangNhap.Margin = new Padding(0, lbl_Margin_Vertical, 10, 0);
+            lblMatKhau.Margin = new Padding(0, lbl_Margin_Vertical, 10, 0);
+
+            
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -58,6 +60,21 @@ namespace Project.NET
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            //Kết quả đăng nhập
+            bool result = true;
+
+            if(result)
+            {
+                nafMain.SelectedPage = napMain;
+            }
+            else
+            {
+                //Nhập sai thì thông báo lỗi
+            }
         }
     }
 }

@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nafMain = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.napLogin = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.hinh = new System.Windows.Forms.TableLayoutPanel();
             this.lblMatKhau = new DevExpress.XtraEditors.LabelControl();
-            this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.lblTenDangNhap = new DevExpress.XtraEditors.LabelControl();
-            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.napMain = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.nafContent = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -55,6 +55,10 @@
             this.navigationPage5 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tileBar1 = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroup3 = new DevExpress.XtraBars.Navigation.TileBarGroup();
+            this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
+            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.tbiDangNhap = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tbiNhanVien = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tbiChiNhanh = new DevExpress.XtraBars.Navigation.TileBarItem();
@@ -64,14 +68,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.nafMain)).BeginInit();
             this.nafMain.SuspendLayout();
             this.napLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
+            this.tablePanel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.hinh.SuspendLayout();
             this.napMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nafContent)).BeginInit();
             this.nafContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -82,7 +90,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1452, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1782, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -112,32 +120,123 @@
             this.napLogin,
             this.napMain});
             this.nafMain.SelectedPage = this.napLogin;
-            this.nafMain.Size = new System.Drawing.Size(1452, 751);
+            this.nafMain.Size = new System.Drawing.Size(1782, 751);
             this.nafMain.TabIndex = 2;
             this.nafMain.Text = "navigationFrame1";
+            this.nafMain.TransitionAnimationProperties.FrameCount = 0;
+            this.nafMain.TransitionAnimationProperties.FrameInterval = 0;
+            this.nafMain.TransitionType = DevExpress.Utils.Animation.Transitions.Push;
             // 
             // napLogin
             // 
-            this.napLogin.Controls.Add(this.panelControl1);
-            this.napLogin.Controls.Add(this.pictureBox1);
+            this.napLogin.Caption = "napLogin";
+            this.napLogin.Controls.Add(this.tablePanel1);
             this.napLogin.Margin = new System.Windows.Forms.Padding(4);
             this.napLogin.Name = "napLogin";
-            this.napLogin.Padding = new System.Windows.Forms.Padding(23, 185, 23, 185);
-            this.napLogin.Size = new System.Drawing.Size(1452, 751);
+            this.napLogin.Size = new System.Drawing.Size(1782, 751);
+            // 
+            // tablePanel1
+            // 
+            this.tablePanel1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.tablePanel1.Appearance.Options.UseBackColor = true;
+            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 62.58F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 37.42F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10F)});
+            this.tablePanel1.Controls.Add(this.tableLayoutPanel1);
+            this.tablePanel1.Controls.Add(this.pictureBox1);
+            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel1.Location = new System.Drawing.Point(0, 0);
+            this.tablePanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tablePanel1.Name = "tablePanel1";
+            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 490.4F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F)});
+            this.tablePanel1.Size = new System.Drawing.Size(1782, 751);
+            this.tablePanel1.TabIndex = 0;
+            this.tablePanel1.UseSkinIndents = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tablePanel1.SetColumn(this.tableLayoutPanel1, 2);
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.panelControl1, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(1075, 130);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tablePanel1.SetRow(this.tableLayoutPanel1, 1);
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(548, 490);
+            this.tableLayoutPanel1.TabIndex = 5;
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.btnDangNhap);
-            this.panelControl1.Controls.Add(this.lblMatKhau);
-            this.panelControl1.Controls.Add(this.txtMatKhau);
-            this.panelControl1.Controls.Add(this.lblTenDangNhap);
-            this.panelControl1.Controls.Add(this.txtTenDangNhap);
-            this.panelControl1.Location = new System.Drawing.Point(880, 327);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.panelControl1.Controls.Add(this.hinh);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(0, 98);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Padding = new System.Windows.Forms.Padding(12, 25, 12, 0);
-            this.panelControl1.Size = new System.Drawing.Size(532, 234);
-            this.panelControl1.TabIndex = 1;
+            this.panelControl1.Size = new System.Drawing.Size(548, 294);
+            this.panelControl1.TabIndex = 0;
+            // 
+            // hinh
+            // 
+            this.hinh.ColumnCount = 2;
+            this.hinh.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.hinh.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.hinh.Controls.Add(this.txtMatKhau, 1, 1);
+            this.hinh.Controls.Add(this.lblMatKhau, 0, 1);
+            this.hinh.Controls.Add(this.lblTenDangNhap, 0, 0);
+            this.hinh.Controls.Add(this.txtTenDangNhap, 1, 0);
+            this.hinh.Controls.Add(this.btnDangNhap, 1, 2);
+            this.hinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hinh.Location = new System.Drawing.Point(2, 2);
+            this.hinh.Margin = new System.Windows.Forms.Padding(0);
+            this.hinh.Name = "hinh";
+            this.hinh.RowCount = 3;
+            this.hinh.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.58621F));
+            this.hinh.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.17241F));
+            this.hinh.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.7931F));
+            this.hinh.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.hinh.Size = new System.Drawing.Size(544, 290);
+            this.hinh.TabIndex = 0;
+            // 
+            // lblMatKhau
+            // 
+            this.lblMatKhau.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatKhau.Appearance.Options.UseFont = true;
+            this.lblMatKhau.Appearance.Options.UseTextOptions = true;
+            this.lblMatKhau.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.lblMatKhau.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMatKhau.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMatKhau.Location = new System.Drawing.Point(0, 80);
+            this.lblMatKhau.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.lblMatKhau.Name = "lblMatKhau";
+            this.lblMatKhau.Size = new System.Drawing.Size(171, 35);
+            this.lblMatKhau.TabIndex = 13;
+            this.lblMatKhau.Text = "Mật khẩu:";
+            // 
+            // lblTenDangNhap
+            // 
+            this.lblTenDangNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenDangNhap.Appearance.Options.UseFont = true;
+            this.lblTenDangNhap.Appearance.Options.UseTextOptions = true;
+            this.lblTenDangNhap.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.lblTenDangNhap.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblTenDangNhap.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblTenDangNhap.Location = new System.Drawing.Point(0, 0);
+            this.lblTenDangNhap.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.lblTenDangNhap.Name = "lblTenDangNhap";
+            this.lblTenDangNhap.Size = new System.Drawing.Size(178, 35);
+            this.lblTenDangNhap.TabIndex = 11;
+            this.lblTenDangNhap.Text = "Tên đăng nhập:";
             // 
             // btnDangNhap
             // 
@@ -153,85 +252,24 @@
             this.btnDangNhap.AppearanceHovered.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnDangNhap.AppearanceHovered.Options.UseBackColor = true;
             this.btnDangNhap.AppearanceHovered.Options.UseForeColor = true;
-            this.btnDangNhap.Location = new System.Drawing.Point(18, 151);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
+            this.hinh.SetColumnSpan(this.btnDangNhap, 2);
+            this.btnDangNhap.Location = new System.Drawing.Point(5, 198);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(5);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(498, 43);
-            this.btnDangNhap.TabIndex = 4;
+            this.btnDangNhap.Size = new System.Drawing.Size(534, 87);
+            this.btnDangNhap.TabIndex = 14;
             this.btnDangNhap.Text = "Đăng nhập";
-            // 
-            // lblMatKhau
-            // 
-            this.lblMatKhau.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatKhau.Appearance.Options.UseFont = true;
-            this.lblMatKhau.Appearance.Options.UseTextOptions = true;
-            this.lblMatKhau.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lblMatKhau.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.lblMatKhau.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblMatKhau.Location = new System.Drawing.Point(32, 75);
-            this.lblMatKhau.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new System.Drawing.Size(180, 35);
-            this.lblMatKhau.TabIndex = 3;
-            this.lblMatKhau.Text = "Mật khẩu:";
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMatKhau.Location = new System.Drawing.Point(224, 74);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(0, 0, 0, 37);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(291, 36);
-            this.txtMatKhau.TabIndex = 2;
-            // 
-            // lblTenDangNhap
-            // 
-            this.lblTenDangNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenDangNhap.Appearance.Options.UseFont = true;
-            this.lblTenDangNhap.Appearance.Options.UseTextOptions = true;
-            this.lblTenDangNhap.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lblTenDangNhap.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.lblTenDangNhap.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblTenDangNhap.Location = new System.Drawing.Point(32, 32);
-            this.lblTenDangNhap.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(180, 35);
-            this.lblTenDangNhap.TabIndex = 1;
-            this.lblTenDangNhap.Text = "Tên đăng nhập:";
-            // 
-            // txtTenDangNhap
-            // 
-            this.txtTenDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(224, 31);
-            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
-            this.txtTenDangNhap.Size = new System.Drawing.Size(291, 36);
-            this.txtTenDangNhap.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 197);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(933, 492);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // napMain
             // 
             this.napMain.Caption = "napMain";
+            this.napMain.Controls.Add(this.simpleButton1);
             this.napMain.Controls.Add(this.nafContent);
             this.napMain.Controls.Add(this.tileBar1);
             this.napMain.Margin = new System.Windows.Forms.Padding(4);
             this.napMain.Name = "napMain";
-            this.napMain.Size = new System.Drawing.Size(1452, 751);
+            this.napMain.Size = new System.Drawing.Size(1782, 751);
             // 
             // nafContent
             // 
@@ -250,7 +288,7 @@
             this.navigationPage4,
             this.navigationPage5});
             this.nafContent.SelectedPage = this.navigationPage5;
-            this.nafContent.Size = new System.Drawing.Size(1212, 751);
+            this.nafContent.Size = new System.Drawing.Size(1542, 751);
             this.nafContent.TabIndex = 5;
             this.nafContent.Text = "navigationFrame1";
             // 
@@ -266,28 +304,28 @@
             this.navigationPage2.Caption = "navigationPage2";
             this.navigationPage2.Margin = new System.Windows.Forms.Padding(4);
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(1212, 751);
+            this.navigationPage2.Size = new System.Drawing.Size(1542, 751);
             // 
             // navigationPage3
             // 
             this.navigationPage3.Caption = "navigationPage3";
             this.navigationPage3.Margin = new System.Windows.Forms.Padding(4);
             this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(1212, 751);
+            this.navigationPage3.Size = new System.Drawing.Size(1542, 751);
             // 
             // navigationPage4
             // 
             this.navigationPage4.Caption = "navigationPage4";
             this.navigationPage4.Margin = new System.Windows.Forms.Padding(4);
             this.navigationPage4.Name = "navigationPage4";
-            this.navigationPage4.Size = new System.Drawing.Size(1212, 751);
+            this.navigationPage4.Size = new System.Drawing.Size(1542, 751);
             // 
             // navigationPage5
             // 
             this.navigationPage5.Caption = "navigationPage5";
             this.navigationPage5.Margin = new System.Windows.Forms.Padding(4);
             this.navigationPage5.Name = "navigationPage5";
-            this.navigationPage5.Size = new System.Drawing.Size(1212, 751);
+            this.navigationPage5.Size = new System.Drawing.Size(1542, 751);
             // 
             // tileBar1
             // 
@@ -317,12 +355,61 @@
             this.tileBarGroup3.Items.Add(this.tbiThongKe);
             this.tileBarGroup3.Name = "tileBarGroup3";
             // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMatKhau.Location = new System.Drawing.Point(190, 80);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(0, 0, 0, 37);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.txtMatKhau.Size = new System.Drawing.Size(354, 36);
+            this.txtMatKhau.TabIndex = 12;
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(190, 0);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(0);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
+            this.txtTenDangNhap.Size = new System.Drawing.Size(354, 36);
+            this.txtTenDangNhap.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.tablePanel1.SetColumn(this.pictureBox1, 1);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(163, 134);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.tablePanel1.SetRow(this.pictureBox1, 1);
+            this.pictureBox1.Size = new System.Drawing.Size(908, 482);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ImageOptions.Image = global::Project.NET.Properties.Resources.column2_32x32;
+            this.simpleButton1.Location = new System.Drawing.Point(12, 422);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(173, 75);
+            this.simpleButton1.TabIndex = 6;
+            this.simpleButton1.Text = "Báo cáo";
+            // 
             // tbiDangNhap
             // 
             this.tbiDangNhap.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement6.ImageOptions.Image = global::Project.NET.Properties.Resources.assignto_32x32;
-            tileItemElement6.Text = "Đăng nhập";
-            this.tbiDangNhap.Elements.Add(tileItemElement6);
+            tileItemElement1.ImageOptions.Image = global::Project.NET.Properties.Resources.assignto_32x32;
+            tileItemElement1.Text = "Đăng nhập";
+            this.tbiDangNhap.Elements.Add(tileItemElement1);
             this.tbiDangNhap.Id = 2;
             this.tbiDangNhap.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiDangNhap.Name = "tbiDangNhap";
@@ -330,9 +417,9 @@
             // tbiNhanVien
             // 
             this.tbiNhanVien.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement7.ImageOptions.Image = global::Project.NET.Properties.Resources.usergroup_32x32;
-            tileItemElement7.Text = "Nhân viên";
-            this.tbiNhanVien.Elements.Add(tileItemElement7);
+            tileItemElement2.ImageOptions.Image = global::Project.NET.Properties.Resources.usergroup_32x32;
+            tileItemElement2.Text = "Nhân viên";
+            this.tbiNhanVien.Elements.Add(tileItemElement2);
             this.tbiNhanVien.Id = 3;
             this.tbiNhanVien.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiNhanVien.Name = "tbiNhanVien";
@@ -340,9 +427,9 @@
             // tbiChiNhanh
             // 
             this.tbiChiNhanh.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement8.ImageOptions.Image = global::Project.NET.Properties.Resources.home_32x32;
-            tileItemElement8.Text = "Chi nhánh";
-            this.tbiChiNhanh.Elements.Add(tileItemElement8);
+            tileItemElement3.ImageOptions.Image = global::Project.NET.Properties.Resources.home_32x32;
+            tileItemElement3.Text = "Chi nhánh";
+            this.tbiChiNhanh.Elements.Add(tileItemElement3);
             this.tbiChiNhanh.Id = 6;
             this.tbiChiNhanh.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiChiNhanh.Name = "tbiChiNhanh";
@@ -350,9 +437,9 @@
             // tbiKho
             // 
             this.tbiKho.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement9.ImageOptions.Image = global::Project.NET.Properties.Resources.boproductgroup_32x32;
-            tileItemElement9.Text = "Kho";
-            this.tbiKho.Elements.Add(tileItemElement9);
+            tileItemElement4.ImageOptions.Image = global::Project.NET.Properties.Resources.boproductgroup_32x32;
+            tileItemElement4.Text = "Kho";
+            this.tbiKho.Elements.Add(tileItemElement4);
             this.tbiKho.Id = 4;
             this.tbiKho.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiKho.Name = "tbiKho";
@@ -360,9 +447,9 @@
             // tbiThongKe
             // 
             this.tbiThongKe.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement10.ImageOptions.Image = global::Project.NET.Properties.Resources.horizontalgridlinesminor_32x32;
-            tileItemElement10.Text = "Thống kê";
-            this.tbiThongKe.Elements.Add(tileItemElement10);
+            tileItemElement5.ImageOptions.Image = global::Project.NET.Properties.Resources.horizontalgridlinesminor_32x32;
+            tileItemElement5.Text = "Thống kê";
+            this.tbiThongKe.Elements.Add(tileItemElement5);
             this.tbiThongKe.Id = 5;
             this.tbiThongKe.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiThongKe.Name = "tbiThongKe";
@@ -373,7 +460,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1452, 779);
+            this.ClientSize = new System.Drawing.Size(1782, 779);
             this.Controls.Add(this.nafMain);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -389,14 +476,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.nafMain)).EndInit();
             this.nafMain.ResumeLayout(false);
             this.napLogin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
+            this.tablePanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.hinh.ResumeLayout(false);
+            this.hinh.PerformLayout();
             this.napMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nafContent)).EndInit();
             this.nafContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,12 +515,16 @@
         private DevExpress.XtraBars.Navigation.TileBarItem tbiKho;
         private DevExpress.XtraBars.Navigation.TileBarItem tbiThongKe;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.Utils.Layout.TablePanel tablePanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
-        private DevExpress.XtraEditors.LabelControl lblMatKhau;
+        private System.Windows.Forms.TableLayoutPanel hinh;
         private DevExpress.XtraEditors.TextEdit txtMatKhau;
+        private DevExpress.XtraEditors.LabelControl lblMatKhau;
         private DevExpress.XtraEditors.LabelControl lblTenDangNhap;
+        private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
