@@ -149,7 +149,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll.conf
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.AssemblyReference.cache
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Form1.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmMain.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Properties.Resources.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.GenerateResource.cache
