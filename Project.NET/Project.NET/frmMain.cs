@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms; 
+using System.Windows.Forms;
 
 namespace Project.NET
 {
@@ -55,7 +55,7 @@ namespace Project.NET
             //    rect = Rectangle.Union(rect, screen.Bounds);
             //this.Width = rect.Width;
             //this.Height = rect.Height;
-            
+
             //
             // txtTenDangNhap, txtMatKhau
             //
@@ -108,7 +108,7 @@ namespace Project.NET
             //Kết quả đăng nhập
             bool result = true;
 
-            if(result)
+            if (result)
             {
                 nafMain.SelectedPage = napMain;
             }
@@ -118,5 +118,59 @@ namespace Project.NET
             }
         }
 
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navThongKe;
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navBaoCao;
+        }
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navTaiKhoan;
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navNhanVien;
+        }
+
+        private void btnKho_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navKho;
+        }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navSanPham;
+        }
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navKhuyenMai;
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navKhachHang;
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navHoaDon;
+        }
+
+        private void btnChiNhanh_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navChiNhanh;
+        }
+
+        private void btnNhaCungCap_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navNhaCungCap;
+        }
     }
 }
