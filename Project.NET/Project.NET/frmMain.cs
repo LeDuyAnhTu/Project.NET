@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
+using Project.NET.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -173,6 +175,13 @@ namespace Project.NET
         private void btnNhaCungCap_Click(object sender, EventArgs e)
         {
             nafContent.SelectedPage = navNhaCungCap;
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
+            ReportPrintTool printTool = new ReportPrintTool(new XtraReport1());
+            printTool.ShowRibbonPreview();
         }
     }
 }

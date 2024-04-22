@@ -107,6 +107,9 @@
             this.navBaoCao = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabBaoCao = new DevExpress.XtraTab.XtraTabControl();
             this.tabNhapTTBaoCao = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.navTaiKhoan = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabTaiKhoan = new DevExpress.XtraTab.XtraTabControl();
             this.tabSuaTTTaiKhoan = new DevExpress.XtraTab.XtraTabPage();
@@ -253,6 +256,7 @@
             this.navBaoCao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabBaoCao)).BeginInit();
             this.tabBaoCao.SuspendLayout();
+            this.tabNhapTTBaoCao.SuspendLayout();
             this.navTaiKhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabTaiKhoan)).BeginInit();
             this.tabTaiKhoan.SuspendLayout();
@@ -558,7 +562,6 @@
             // 
             // napMain
             // 
-            this.napMain.Caption = "napMain";
             this.napMain.Controls.Add(this.tablePanel4);
             this.napMain.Margin = new System.Windows.Forms.Padding(0);
             this.napMain.Name = "napMain";
@@ -1297,7 +1300,7 @@
             this.tabPageDoanhThuYear.Controls.Add(this.chartyear);
             this.tabPageDoanhThuYear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("tabPageDoanhThuYear.ImageOptions.SvgImage")));
             this.tabPageDoanhThuYear.Name = "tabPageDoanhThuYear";
-            this.tabPageDoanhThuYear.Size = new System.Drawing.Size(1104, 502);
+            this.tabPageDoanhThuYear.Size = new System.Drawing.Size(1068, 502);
             this.tabPageDoanhThuYear.Text = "Doanh thu năm";
             // 
             // chartyear
@@ -1317,7 +1320,7 @@
             // 
             this.chartyear.Panel2.Controls.Add(this.chartDoanhThuNam);
             this.chartyear.Panel2.Text = "Panel2";
-            this.chartyear.Size = new System.Drawing.Size(1104, 502);
+            this.chartyear.Size = new System.Drawing.Size(1068, 502);
             this.chartyear.SplitterPosition = 494;
             this.chartyear.TabIndex = 3;
             // 
@@ -1476,7 +1479,7 @@
             series2.View = lineSeriesView1;
             this.chartDoanhThuNam.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-            this.chartDoanhThuNam.Size = new System.Drawing.Size(600, 502);
+            this.chartDoanhThuNam.Size = new System.Drawing.Size(564, 502);
             this.chartDoanhThuNam.TabIndex = 0;
             // 
             // navBaoCao
@@ -1499,10 +1502,38 @@
             // 
             // tabNhapTTBaoCao
             // 
+            this.tabNhapTTBaoCao.Controls.Add(this.simpleButton3);
+            this.tabNhapTTBaoCao.Controls.Add(this.simpleButton2);
+            this.tabNhapTTBaoCao.Controls.Add(this.simpleButton1);
             this.tabNhapTTBaoCao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTBaoCao.ImageOptions.Image")));
             this.tabNhapTTBaoCao.Name = "tabNhapTTBaoCao";
             this.tabNhapTTBaoCao.Size = new System.Drawing.Size(1068, 502);
             this.tabNhapTTBaoCao.Text = "Nhập thông tin báo cáo";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(43, 118);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(215, 41);
+            this.simpleButton3.TabIndex = 0;
+            this.simpleButton3.Text = "Xuất báo cáo bán hàng hàng tháng";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(43, 70);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(215, 41);
+            this.simpleButton2.TabIndex = 0;
+            this.simpleButton2.Text = "Xuất báo cáo doanh thu theo tháng";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(43, 22);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(215, 41);
+            this.simpleButton1.TabIndex = 0;
+            this.simpleButton1.Text = "Xuất báo cáo doanh thu";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // navTaiKhoan
             // 
@@ -1561,21 +1592,21 @@
             // 
             this.tabNhapTTCaLam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTCaLam.ImageOptions.Image")));
             this.tabNhapTTCaLam.Name = "tabNhapTTCaLam";
-            this.tabNhapTTCaLam.Size = new System.Drawing.Size(1104, 544);
+            this.tabNhapTTCaLam.Size = new System.Drawing.Size(1068, 544);
             this.tabNhapTTCaLam.Text = "Nhập thông tin ca làm";
             // 
             // tabNhapTTPhanCong
             // 
             this.tabNhapTTPhanCong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTPhanCong.ImageOptions.Image")));
             this.tabNhapTTPhanCong.Name = "tabNhapTTPhanCong";
-            this.tabNhapTTPhanCong.Size = new System.Drawing.Size(1104, 544);
+            this.tabNhapTTPhanCong.Size = new System.Drawing.Size(1068, 544);
             this.tabNhapTTPhanCong.Text = "Nhập thông tin phân công";
             // 
             // tabXemTTTaiKhoanNhanVien
             // 
             this.tabXemTTTaiKhoanNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabXemTTTaiKhoanNhanVien.ImageOptions.Image")));
             this.tabXemTTTaiKhoanNhanVien.Name = "tabXemTTTaiKhoanNhanVien";
-            this.tabXemTTTaiKhoanNhanVien.Size = new System.Drawing.Size(1104, 544);
+            this.tabXemTTTaiKhoanNhanVien.Size = new System.Drawing.Size(1068, 544);
             this.tabXemTTTaiKhoanNhanVien.Text = "Xem Tài khoản nhân viên";
             // 
             // navKho
@@ -1608,7 +1639,7 @@
             // 
             this.tabXemTTSanPhamTheoKhoCN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabXemTTSanPhamTheoKhoCN.ImageOptions.Image")));
             this.tabXemTTSanPhamTheoKhoCN.Name = "tabXemTTSanPhamTheoKhoCN";
-            this.tabXemTTSanPhamTheoKhoCN.Size = new System.Drawing.Size(1104, 544);
+            this.tabXemTTSanPhamTheoKhoCN.Size = new System.Drawing.Size(1068, 544);
             this.tabXemTTSanPhamTheoKhoCN.Text = "Thống kê sản phẩm theo kho của từng chi nhánh (Kho cửa hàng)";
             // 
             // navSanPham
@@ -1642,14 +1673,14 @@
             // 
             this.tabNhapTTLoaiSP.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTLoaiSP.ImageOptions.Image")));
             this.tabNhapTTLoaiSP.Name = "tabNhapTTLoaiSP";
-            this.tabNhapTTLoaiSP.Size = new System.Drawing.Size(1104, 544);
+            this.tabNhapTTLoaiSP.Size = new System.Drawing.Size(1068, 544);
             this.tabNhapTTLoaiSP.Text = "Nhập thông tin chi tiết khuyến mãi";
             // 
             // tabXemDSSPTheoLoai
             // 
             this.tabXemDSSPTheoLoai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabXemDSSPTheoLoai.ImageOptions.Image")));
             this.tabXemDSSPTheoLoai.Name = "tabXemDSSPTheoLoai";
-            this.tabXemDSSPTheoLoai.Size = new System.Drawing.Size(1104, 544);
+            this.tabXemDSSPTheoLoai.Size = new System.Drawing.Size(1068, 544);
             this.tabXemDSSPTheoLoai.Text = "Xem sản phẩm theo loại";
             // 
             // navKhuyenMai
@@ -1683,14 +1714,14 @@
             // 
             this.tabNhapTTChiTietKM.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTChiTietKM.ImageOptions.Image")));
             this.tabNhapTTChiTietKM.Name = "tabNhapTTChiTietKM";
-            this.tabNhapTTChiTietKM.Size = new System.Drawing.Size(1104, 544);
+            this.tabNhapTTChiTietKM.Size = new System.Drawing.Size(1068, 544);
             this.tabNhapTTChiTietKM.Text = "Nhập thông tin chi tiết khuyến mãi";
             // 
             // tabXemSanPhamKM
             // 
             this.tabXemSanPhamKM.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabXemSanPhamKM.ImageOptions.Image")));
             this.tabXemSanPhamKM.Name = "tabXemSanPhamKM";
-            this.tabXemSanPhamKM.Size = new System.Drawing.Size(1104, 544);
+            this.tabXemSanPhamKM.Size = new System.Drawing.Size(1068, 544);
             this.tabXemSanPhamKM.Text = "Xem sản phẩm khuyến mãi";
             // 
             // navKhachHang
@@ -1723,7 +1754,7 @@
             // 
             this.tabXemLichSuMuaHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabXemLichSuMuaHang.ImageOptions.Image")));
             this.tabXemLichSuMuaHang.Name = "tabXemLichSuMuaHang";
-            this.tabXemLichSuMuaHang.Size = new System.Drawing.Size(1104, 544);
+            this.tabXemLichSuMuaHang.Size = new System.Drawing.Size(1068, 544);
             this.tabXemLichSuMuaHang.Text = "Xem lịch sử mua hàng";
             // 
             // navHoaDon
@@ -1757,14 +1788,14 @@
             // 
             this.tabNhapTTHDChiTtiet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTHDChiTtiet.ImageOptions.Image")));
             this.tabNhapTTHDChiTtiet.Name = "tabNhapTTHDChiTtiet";
-            this.tabNhapTTHDChiTtiet.Size = new System.Drawing.Size(1104, 544);
+            this.tabNhapTTHDChiTtiet.Size = new System.Drawing.Size(1068, 544);
             this.tabNhapTTHDChiTtiet.Text = "Nhập thông tin hóa đơn chi tiết";
             // 
             // tabXemTKHDTheoNgay
             // 
             this.tabXemTKHDTheoNgay.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabXemTKHDTheoNgay.ImageOptions.Image")));
             this.tabXemTKHDTheoNgay.Name = "tabXemTKHDTheoNgay";
-            this.tabXemTKHDTheoNgay.Size = new System.Drawing.Size(1104, 544);
+            this.tabXemTKHDTheoNgay.Size = new System.Drawing.Size(1068, 544);
             this.tabXemTKHDTheoNgay.Text = "Xem thống kê hóa đơn theo ngày";
             // 
             // navChiNhanh
@@ -1798,14 +1829,14 @@
             // 
             this.tabNhapTTViTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTViTri.ImageOptions.Image")));
             this.tabNhapTTViTri.Name = "tabNhapTTViTri";
-            this.tabNhapTTViTri.Size = new System.Drawing.Size(1104, 544);
+            this.tabNhapTTViTri.Size = new System.Drawing.Size(1068, 544);
             this.tabNhapTTViTri.Text = "Nhập thông tin vị trí cửa hàng";
             // 
             // tabNhapTTKhuVuc
             // 
             this.tabNhapTTKhuVuc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTKhuVuc.ImageOptions.Image")));
             this.tabNhapTTKhuVuc.Name = "tabNhapTTKhuVuc";
-            this.tabNhapTTKhuVuc.Size = new System.Drawing.Size(1104, 544);
+            this.tabNhapTTKhuVuc.Size = new System.Drawing.Size(1068, 544);
             this.tabNhapTTKhuVuc.Text = "Nhập thông tin Khu vực";
             // 
             // navNhaCungCap
@@ -1838,7 +1869,7 @@
             // 
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1104, 544);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1068, 544);
             this.xtraTabPage2.Text = "Xem Chi tiết cung cấp SP - Kho Chi nhánh";
             // 
             // tileBarGroup3
@@ -2120,6 +2151,7 @@
             this.navBaoCao.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabBaoCao)).EndInit();
             this.tabBaoCao.ResumeLayout(false);
+            this.tabNhapTTBaoCao.ResumeLayout(false);
             this.navTaiKhoan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabTaiKhoan)).EndInit();
             this.tabTaiKhoan.ResumeLayout(false);
@@ -2285,5 +2317,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraEditors.SpinEdit txtHoaDonTheoNam;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
