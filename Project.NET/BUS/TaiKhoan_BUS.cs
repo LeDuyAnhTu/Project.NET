@@ -11,7 +11,10 @@ namespace BUS
     public class TaiKhoan_BUS
     {
         private static TaiKhoan_DAL db = new TaiKhoan_DAL();
-
+        /// <summary>
+        /// Lấy danh sách các tài khoản
+        /// </summary>
+        /// <returns></returns>
         public IQueryable LayDanhSach()
         {
             try
@@ -23,14 +26,18 @@ namespace BUS
                 throw ex;
             }
         }
-
-        public bool Them(TaiKhoan_DTO o)
+        /// <summary>
+        /// Thêm tài khoản mới
+        /// </summary>
+        /// <param name="taiKhoan"></param>
+        /// <returns></returns>
+        public bool Them(TaiKhoan_DTO taiKhoan)
         {
             bool result = false;
 
             try
             {
-                result = db.Them(o);
+                result = db.Them(taiKhoan);
             }
             catch (Exception ex)
             {
@@ -39,14 +46,18 @@ namespace BUS
 
             return result;
         }
-
-        public bool Sua(TaiKhoan_DTO o)
+        /// <summary>
+        /// Sửa thông tin tài khoản
+        /// </summary>
+        /// <param name="taiKhoan"></param>
+        /// <returns></returns>
+        public bool Sua(TaiKhoan_DTO taiKhoan)
         {
             bool result = false;
 
             try
             {
-                result = db.Sua(o);
+                result = db.Sua(taiKhoan);
             }
             catch (Exception ex)
             {
@@ -54,14 +65,18 @@ namespace BUS
             }
             return result;
         }
-
-        public bool Xoa(string id)
+        /// <summary>
+        /// Xóa tài khoản
+        /// </summary>
+        /// <param name="tenTaiKhoan"></param>
+        /// <returns></returns>
+        public bool Xoa(string tenTaiKhoan)
         {
             bool result = false;
 
             try
             {
-                result = db.Xoa(id);
+                result = db.Xoa(tenTaiKhoan);
             }
             catch (Exception ex)
             {

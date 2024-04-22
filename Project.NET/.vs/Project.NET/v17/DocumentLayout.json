@@ -1,74 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\",
+  "WorkspaceRootPath": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\vitri_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\vitri_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\taikhoan_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\taikhoan_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\sanpham_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\sanpham_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\phancong_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\phancong_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\nhasanxuat_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\nhasanxuat_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\nhanvien_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\nhanvien_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\loaisp_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\loaisp_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\khuyenmai_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\khuyenmai_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\khuvuc_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\khuvuc_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\khocn_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\khocn_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\khachhang_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\khachhang_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\hoadon_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\hoadon_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\chitietkm_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\chitietkm_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\chitiethd_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\chitiethd_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\chitietcc_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\chitietcc_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\chinhanh_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\bus\\chinhanh_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\chinhanh_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\calam_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\calam_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\bus\\taikhoan_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\taikhoan_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\bus\\nhanvien_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\nhanvien_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,8 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NhanVien_BUS.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\NhanVien_BUS.cs",
+              "RelativeDocumentMoniker": "BUS\\NhanVien_BUS.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\NhanVien_BUS.cs",
+              "RelativeToolTip": "BUS\\NhanVien_BUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:38:47.551Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChiNhanh_BUS.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\ChiNhanh_BUS.cs",
+              "RelativeDocumentMoniker": "BUS\\ChiNhanh_BUS.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\ChiNhanh_BUS.cs",
+              "RelativeToolTip": "BUS\\ChiNhanh_BUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T09:39:38.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaiKhoan_BUS.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\TaiKhoan_BUS.cs",
+              "RelativeDocumentMoniker": "BUS\\TaiKhoan_BUS.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\TaiKhoan_BUS.cs",
+              "RelativeToolTip": "BUS\\TaiKhoan_BUS.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAEgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T09:34:44.061Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -91,227 +75,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NhanVien_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\NhanVien_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\NhanVien_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\NhanVien_BUS.cs",
-              "RelativeToolTip": "BUS\\NhanVien_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:38:47.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NhaSanXuat_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\NhaSanXuat_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\NhaSanXuat_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\NhaSanXuat_BUS.cs",
-              "RelativeToolTip": "BUS\\NhaSanXuat_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:48:08.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PhanCong_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\PhanCong_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\PhanCong_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\PhanCong_BUS.cs",
-              "RelativeToolTip": "BUS\\PhanCong_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:49:46.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SanPham_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\SanPham_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\SanPham_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\SanPham_BUS.cs",
-              "RelativeToolTip": "BUS\\SanPham_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:50:11.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaiKhoan_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\TaiKhoan_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\TaiKhoan_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\TaiKhoan_BUS.cs",
-              "RelativeToolTip": "BUS\\TaiKhoan_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:50:59.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ViTri_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ViTri_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\ViTri_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ViTri_BUS.cs",
-              "RelativeToolTip": "BUS\\ViTri_BUS.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:51:21.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoaiSP_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\LoaiSP_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\LoaiSP_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\LoaiSP_BUS.cs",
-              "RelativeToolTip": "BUS\\LoaiSP_BUS.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:39:12.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "KhuyenMai_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhuyenMai_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\KhuyenMai_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhuyenMai_BUS.cs",
-              "RelativeToolTip": "BUS\\KhuyenMai_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:39:14.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "KhuVuc_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhuVuc_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\KhuVuc_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhuVuc_BUS.cs",
-              "RelativeToolTip": "BUS\\KhuVuc_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:39:39.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "KhoCN_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhoCN_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\KhoCN_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhoCN_BUS.cs",
-              "RelativeToolTip": "BUS\\KhoCN_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:32:32.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "KhachHang_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhachHang_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\KhachHang_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\KhachHang_BUS.cs",
-              "RelativeToolTip": "BUS\\KhachHang_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:32:27.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HoaDon_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\HoaDon_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\HoaDon_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\HoaDon_BUS.cs",
-              "RelativeToolTip": "BUS\\HoaDon_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:55:53.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ChiTietKM_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiTietKM_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\ChiTietKM_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiTietKM_BUS.cs",
-              "RelativeToolTip": "BUS\\ChiTietKM_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:55:51.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ChiTietHD_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiTietHD_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\ChiTietHD_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiTietHD_BUS.cs",
-              "RelativeToolTip": "BUS\\ChiTietHD_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:55:48.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ChiTietCC_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiTietCC_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\ChiTietCC_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiTietCC_BUS.cs",
-              "RelativeToolTip": "BUS\\ChiTietCC_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:55:43.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ChiNhanh_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiNhanh_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\ChiNhanh_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ChiNhanh_BUS.cs",
-              "RelativeToolTip": "BUS\\ChiNhanh_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:55:42.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CaLam_BUS.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\CaLam_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\CaLam_BUS.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\CaLam_BUS.cs",
-              "RelativeToolTip": "BUS\\CaLam_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:55:23.233Z",
-              "EditorCaption": ""
             }
           ]
         }

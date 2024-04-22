@@ -27,7 +27,11 @@ namespace BUS
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Thêm ca làm mới
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Them(CaLam_DTO o)
         {
             bool result = false;
@@ -44,7 +48,7 @@ namespace BUS
             return result;
         }
         /// <summary>
-        /// 
+        /// Sửa thông tin ca làm
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
@@ -63,7 +67,7 @@ namespace BUS
             return result;
         }
         /// <summary>
-        /// Xoa ca lam
+        /// Xóa ca làm
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
