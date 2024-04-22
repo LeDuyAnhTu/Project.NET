@@ -59,22 +59,22 @@ namespace Project.NET
             //
             // txtTenDangNhap, txtMatKhau
             //
-            int txt_Margin_Vertical = (int)Math.Ceiling(((this.hinh.Size.Height * 0.3) - txtTenDangNhap.Size.Height) / 2);
+            //int txt_Margin_Vertical = (int)Math.Ceiling(((this.hinh.Size.Height * 0.3) - txtTenDangNhap.Size.Height) / 2);
 
-            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(0, txt_Margin_Vertical, 10, txt_Margin_Vertical);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(0, txt_Margin_Vertical, 10, txt_Margin_Vertical);
+            //this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(0, txt_Margin_Vertical, 10, txt_Margin_Vertical);
+            //this.txtMatKhau.Margin = new System.Windows.Forms.Padding(0, txt_Margin_Vertical, 10, txt_Margin_Vertical);
 
             //
             // lblTenDangNhap, lblMatKhau
             //
-            int lbl_Width = (int)Math.Ceiling(this.hinh.Size.Width * 0.35);
-            int lbl_Height = (int)Math.Ceiling(this.hinh.Size.Height * 0.3);
-            int lbl_Margin_Vertical = (int)Math.Ceiling(((this.hinh.Size.Height * 0.3) - lblTenDangNhap.Size.Height) / 2);
+            //int lbl_Width = (int)Math.Ceiling(this.hinh.Size.Width * 0.35);
+            //int lbl_Height = (int)Math.Ceiling(this.hinh.Size.Height * 0.3);
+            //int lbl_Margin_Vertical = (int)Math.Ceiling(((this.hinh.Size.Height * 0.3) - lblTenDangNhap.Size.Height) / 2);
 
-            lblTenDangNhap.Size = new Size(lbl_Width, lbl_Height);
-            lblMatKhau.Size = lblTenDangNhap.Size;
-            lblTenDangNhap.Margin = new Padding(0, lbl_Margin_Vertical, 10, 0);
-            lblMatKhau.Margin = new Padding(0, lbl_Margin_Vertical, 10, 0);
+            //lblTenDangNhap.Size = new Size(lbl_Width, lbl_Height);
+            //lblMatKhau.Size = lblTenDangNhap.Size;
+            //lblTenDangNhap.Margin = new Padding(0, lbl_Margin_Vertical, 10, 0);
+            //lblMatKhau.Margin = new Padding(0, lbl_Margin_Vertical, 10, 0);
 
         }
         /// <summary>
