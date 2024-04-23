@@ -1018,41 +1018,7 @@
   <metadata name="tileNavHeThong.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="DevExpress.Data.v22.2" name="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="navMenuHeThong.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOUFAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjMycHgiIGhl
-        aWdodD0iMzJweCIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
-        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNMzIgMTZDMzIgMjQuODM2NiAyNC44MzY2IDMy
-        IDE2IDMyQzcuOTMyODkgMzIgMS4yNjAyIDI2LjAyOTggMC4xNTkzMTcgMTguMjY2N0MxLjc0NTEzIDE4
-        Ljc2NzcgMy40MzM0OSAxOS4wMzggNS4xODQ5NyAxOS4wMzhDMTEuMzcwNSAxOS4wMzggMTYuNzY4NyAx
-        NS42NjczIDE5LjY0MzEgMTAuNjYyNUMxNy41OTM2IDkuMjc0NTEgMTUuMTIxMyA4LjQ2Mzc4IDEyLjQ1
-        OTYgOC40NjM3OEM2LjU3MzAzIDguNDYzNzggMS42MTI2MiAxMi40MjkzIDAuMTA0MDQyIDE3LjgzNDdD
-        MC4wMzUzMTQxIDE3LjIzMjYgMCAxNi42MjA0IDAgMTZDMCA3LjE2MzQ0IDcuMTYzNDQgMCAxNiAwQzI0
-        LjgzNjYgMCAzMiA3LjE2MzQ0IDMyIDE2Wk0yOS44ODAyIDE1LjIwNTdDMjkuODgwMiAyMi4yODk2IDI0
-        LjEzNzYgMjguMDMyMiAxNy4wNTM3IDI4LjAzMjJDMTIuNjgxMyAyOC4wMzIyIDguODE5OTEgMjUuODQ0
-        MyA2LjUwNDQ4IDIyLjUwMzdDOC44MDE3MyAyMi41NjI0IDExLjE0MzIgMjIuMDA0NSAxMy4yNzQ4IDIw
-        Ljc2MzFDMTYuOTU0NiAxOC42MiAxOS4xNzEyIDE0LjkyNzYgMTkuNTc5NiAxMC45OTMzTDE5LjQ4Nzgg
-        MTAuOTg2NkMyMC41NzAyIDEwLjEzMSAyMS41MDk1IDkuMTA1NjggMjIuMjY3MSA3Ljk1MzA5QzE5LjQ5
-        NTkgNi4yMzk0MiAxNi4xOTQ3IDUuMzE5MDMgMTIuNjk0NCA1LjQ5MTg0QzEwLjg5NDYgNS41ODA2OSA5
-        LjE3NTY3IDUuOTUxOTYgNy41NzgzNCA2LjU2MDY1QzkuOTIzOTEgMy45OTEyNSAxMy4zMDA2IDIuMzc5
-        MjYgMTcuMDUzNyAyLjM3OTI2QzI0LjEzNzYgMi4zNzkyNiAyOS44ODAyIDguMTIxODYgMjkuODgwMiAx
-        NS4yMDU3WiIgZmlsbD0iI0ZGN0EwMCIgY2xpcC1ydWxlPSJldmVuT2RkIiBmaWxsLXJ1bGU9ImV2ZW5P
-        ZGQiIC8+DQogIDxwYXRoIGQ9Ik01LjI3NzYgMTkuMzA1MkMxMS40NjM4IDE5LjMwNTIgMTYuODYyNiAx
-        NS43NjUxIDE5LjczNjcgMTAuNTA5MUMxNy42ODYzIDkuMDQ5NjIgMTUuMjEyMiA4LjE5NzAyIDEyLjU0
-        ODUgOC4xOTcwMkM3LjU0NjUxIDguMTk3MDIgMy4yMTMyOCAxMS4yMDM0IDEuMDk4MzEgMTUuNTg5MUMy
-        Ljk2ODA5IDEyLjM2NzggNi43NzM4NyA5LjkwMjA2IDExLjM5NjEgOS4zMzY0NEMxNC4wMzk3IDkuMDEy
-        OTQgMTYuNTc0MSA5LjM1NzA2IDE4Ljc0NDEgMTAuMjExNUMxNi4zNzc4IDE0LjUzNTYgMTEuMzQ2NSAx
-        Ny44Njg3IDUuMjA2MDIgMTguNjIwMUMzLjc0MzAxIDE4Ljc5OTEgMi4zMDU3OCAxOC44MjA4IDAuOTE5
-        OTIyIDE4LjcwMDhDMi4zMDg5NCAxOS4wOTQ5IDMuNzY5ODggMTkuMzA1MiA1LjI3NzYgMTkuMzA1Mloi
-        IGZpbGw9IiNFMEI3MjYiIGNsaXAtcnVsZT0iZXZlbk9kZCIgZmlsbC1ydWxlPSJldmVuT2RkIiAvPg0K
-        PC9zdmc+Cw==
-</value>
-  </data>
-  <metadata name="tablePanel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="DanhMucHeThong.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="btnNhaCungCap.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1549,6 +1515,10 @@
         9JtXaa66WTagqQQb4S/wnGngFbwWXlTa4O/xc3h6+Q/Ps/QARP8DdLpmR3nkCmQAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="groupLocKetqua.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v22.2" name="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="btnThongKeThang.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi4z
@@ -2640,9 +2610,6 @@
         vEpWbXyVrNr46gDzDwm9y+evWey0AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>32</value>
   </metadata>

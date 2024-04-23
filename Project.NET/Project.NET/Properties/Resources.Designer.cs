@@ -143,6 +143,16 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap taikhoannhanvien_white {
+            get {
+                object obj = ResourceManager.GetObject("taikhoannhanvien_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap usergroup_32x32 {
             get {
                 object obj = ResourceManager.GetObject("usergroup_32x32", resourceCulture);
