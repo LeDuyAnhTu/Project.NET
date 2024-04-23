@@ -100,6 +100,7 @@ namespace Project.NET
         /// <param name="e"></param>
         private void frmMain_Load(object sender, EventArgs e)
         {
+             
         }
         /// <summary>
         /// Nút đăng nhập
