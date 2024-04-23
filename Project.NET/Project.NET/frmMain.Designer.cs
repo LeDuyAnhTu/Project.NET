@@ -318,7 +318,6 @@
             // 
             this.napLogin.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.napLogin.Appearance.Options.UseBackColor = true;
-            this.napLogin.Caption = "napLogin";
             this.napLogin.Controls.Add(this.tablePanel1);
             this.napLogin.Margin = new System.Windows.Forms.Padding(0);
             this.napLogin.Name = "napLogin";
@@ -562,6 +561,7 @@
             // 
             // napMain
             // 
+            this.napMain.Caption = "napMain";
             this.napMain.Controls.Add(this.tablePanel4);
             this.napMain.Margin = new System.Windows.Forms.Padding(0);
             this.napMain.Name = "napMain";
@@ -700,10 +700,10 @@
             this.tablePanel2.SetColumn(this.btnNhaCungCap, 0);
             this.btnNhaCungCap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNhaCungCap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNhaCungCap.ImageOptions.Image")));
-            this.btnNhaCungCap.Location = new System.Drawing.Point(11, 490);
+            this.btnNhaCungCap.Location = new System.Drawing.Point(11, 394);
             this.btnNhaCungCap.Margin = new System.Windows.Forms.Padding(0);
             this.btnNhaCungCap.Name = "btnNhaCungCap";
-            this.tablePanel2.SetRow(this.btnNhaCungCap, 10);
+            this.tablePanel2.SetRow(this.btnNhaCungCap, 8);
             this.btnNhaCungCap.Size = new System.Drawing.Size(160, 48);
             this.btnNhaCungCap.TabIndex = 11;
             this.btnNhaCungCap.Text = "Nhà cung cấp";
@@ -730,10 +730,10 @@
             this.tablePanel2.SetColumn(this.btnChiNhanh, 0);
             this.btnChiNhanh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnChiNhanh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnChiNhanh.ImageOptions.Image")));
-            this.btnChiNhanh.Location = new System.Drawing.Point(11, 442);
+            this.btnChiNhanh.Location = new System.Drawing.Point(11, 346);
             this.btnChiNhanh.Margin = new System.Windows.Forms.Padding(0);
             this.btnChiNhanh.Name = "btnChiNhanh";
-            this.tablePanel2.SetRow(this.btnChiNhanh, 9);
+            this.tablePanel2.SetRow(this.btnChiNhanh, 7);
             this.btnChiNhanh.Size = new System.Drawing.Size(160, 48);
             this.btnChiNhanh.TabIndex = 10;
             this.btnChiNhanh.Text = "Chi Nhánh";
@@ -760,10 +760,10 @@
             this.tablePanel2.SetColumn(this.btnHoaDon, 0);
             this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHoaDon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHoaDon.ImageOptions.Image")));
-            this.btnHoaDon.Location = new System.Drawing.Point(11, 394);
+            this.btnHoaDon.Location = new System.Drawing.Point(11, 298);
             this.btnHoaDon.Margin = new System.Windows.Forms.Padding(0);
             this.btnHoaDon.Name = "btnHoaDon";
-            this.tablePanel2.SetRow(this.btnHoaDon, 8);
+            this.tablePanel2.SetRow(this.btnHoaDon, 6);
             this.btnHoaDon.Size = new System.Drawing.Size(160, 48);
             this.btnHoaDon.TabIndex = 9;
             this.btnHoaDon.Text = "Hóa đơn";
@@ -790,10 +790,10 @@
             this.tablePanel2.SetColumn(this.btnKhachHang, 0);
             this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnKhachHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.ImageOptions.Image")));
-            this.btnKhachHang.Location = new System.Drawing.Point(11, 346);
+            this.btnKhachHang.Location = new System.Drawing.Point(11, 250);
             this.btnKhachHang.Margin = new System.Windows.Forms.Padding(0);
             this.btnKhachHang.Name = "btnKhachHang";
-            this.tablePanel2.SetRow(this.btnKhachHang, 7);
+            this.tablePanel2.SetRow(this.btnKhachHang, 5);
             this.btnKhachHang.Size = new System.Drawing.Size(160, 48);
             this.btnKhachHang.TabIndex = 8;
             this.btnKhachHang.Text = "Khách hàng";
@@ -820,10 +820,10 @@
             this.tablePanel2.SetColumn(this.btnKhuyenMai, 0);
             this.btnKhuyenMai.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnKhuyenMai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKhuyenMai.ImageOptions.Image")));
-            this.btnKhuyenMai.Location = new System.Drawing.Point(11, 298);
+            this.btnKhuyenMai.Location = new System.Drawing.Point(11, 202);
             this.btnKhuyenMai.Margin = new System.Windows.Forms.Padding(0);
             this.btnKhuyenMai.Name = "btnKhuyenMai";
-            this.tablePanel2.SetRow(this.btnKhuyenMai, 6);
+            this.tablePanel2.SetRow(this.btnKhuyenMai, 4);
             this.btnKhuyenMai.Size = new System.Drawing.Size(160, 48);
             this.btnKhuyenMai.TabIndex = 7;
             this.btnKhuyenMai.Text = "Khuyến mãi";
@@ -850,10 +850,10 @@
             this.tablePanel2.SetColumn(this.btnSanPham, 0);
             this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSanPham.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.ImageOptions.Image")));
-            this.btnSanPham.Location = new System.Drawing.Point(11, 250);
+            this.btnSanPham.Location = new System.Drawing.Point(11, 154);
             this.btnSanPham.Margin = new System.Windows.Forms.Padding(0);
             this.btnSanPham.Name = "btnSanPham";
-            this.tablePanel2.SetRow(this.btnSanPham, 5);
+            this.tablePanel2.SetRow(this.btnSanPham, 3);
             this.btnSanPham.Size = new System.Drawing.Size(160, 48);
             this.btnSanPham.TabIndex = 6;
             this.btnSanPham.Text = "Sản phẩm";
@@ -880,10 +880,10 @@
             this.tablePanel2.SetColumn(this.btnKho, 0);
             this.btnKho.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKho.ImageOptions.Image")));
-            this.btnKho.Location = new System.Drawing.Point(11, 202);
+            this.btnKho.Location = new System.Drawing.Point(11, 106);
             this.btnKho.Margin = new System.Windows.Forms.Padding(0);
             this.btnKho.Name = "btnKho";
-            this.tablePanel2.SetRow(this.btnKho, 4);
+            this.tablePanel2.SetRow(this.btnKho, 2);
             this.btnKho.Size = new System.Drawing.Size(160, 48);
             this.btnKho.TabIndex = 5;
             this.btnKho.Text = "Kho";
@@ -910,10 +910,10 @@
             this.tablePanel2.SetColumn(this.btnTaiKhoan, 0);
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTaiKhoan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.ImageOptions.Image")));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(11, 106);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(11, 10);
             this.btnTaiKhoan.Margin = new System.Windows.Forms.Padding(0);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.tablePanel2.SetRow(this.btnTaiKhoan, 2);
+            this.tablePanel2.SetRow(this.btnTaiKhoan, 0);
             this.btnTaiKhoan.Size = new System.Drawing.Size(160, 48);
             this.btnTaiKhoan.TabIndex = 4;
             this.btnTaiKhoan.Text = "Tài khoản";
@@ -940,10 +940,10 @@
             this.tablePanel2.SetColumn(this.btnNhanVien, 0);
             this.btnNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.ImageOptions.Image")));
-            this.btnNhanVien.Location = new System.Drawing.Point(11, 154);
+            this.btnNhanVien.Location = new System.Drawing.Point(11, 58);
             this.btnNhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.tablePanel2.SetRow(this.btnNhanVien, 3);
+            this.tablePanel2.SetRow(this.btnNhanVien, 1);
             this.btnNhanVien.Size = new System.Drawing.Size(160, 48);
             this.btnNhanVien.TabIndex = 3;
             this.btnNhanVien.Text = "Nhân viên";
@@ -979,10 +979,10 @@
             this.tablePanel2.SetColumn(this.btnThongKe, 0);
             this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThongKe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.ImageOptions.Image")));
-            this.btnThongKe.Location = new System.Drawing.Point(11, 10);
+            this.btnThongKe.Location = new System.Drawing.Point(11, 490);
             this.btnThongKe.Margin = new System.Windows.Forms.Padding(0);
             this.btnThongKe.Name = "btnThongKe";
-            this.tablePanel2.SetRow(this.btnThongKe, 0);
+            this.tablePanel2.SetRow(this.btnThongKe, 10);
             this.btnThongKe.Size = new System.Drawing.Size(160, 48);
             this.btnThongKe.TabIndex = 2;
             this.btnThongKe.Text = "Thống kê";
@@ -1009,10 +1009,10 @@
             this.tablePanel2.SetColumn(this.btnBaoCao, 0);
             this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBaoCao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCao.ImageOptions.Image")));
-            this.btnBaoCao.Location = new System.Drawing.Point(11, 58);
+            this.btnBaoCao.Location = new System.Drawing.Point(11, 442);
             this.btnBaoCao.Margin = new System.Windows.Forms.Padding(0);
             this.btnBaoCao.Name = "btnBaoCao";
-            this.tablePanel2.SetRow(this.btnBaoCao, 1);
+            this.tablePanel2.SetRow(this.btnBaoCao, 9);
             this.btnBaoCao.Size = new System.Drawing.Size(160, 48);
             this.btnBaoCao.TabIndex = 1;
             this.btnBaoCao.Text = "Báo cáo";
