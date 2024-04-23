@@ -1,6 +1,6 @@
 ﻿namespace Project.NET.Forms
 {
-    partial class UCTaiKhoan
+    partial class TaiKhoan_UC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTaiKhoan));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaiKhoan_UC));
             DevExpress.XtraEditors.CheckedComboBoxEdit cboChiNhanh;
             this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.layoutNhanVien = new DevExpress.XtraDataLayout.DataLayoutControl();
@@ -561,13 +561,13 @@
             cboChiNhanh.StyleController = this.layoutNhanVien;
             cboChiNhanh.TabIndex = 10;
             // 
-            // UCTaiKhoan
+            // UCTaiKhoanUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.layoutNhanVien);
             this.Controls.Add(this.labelControl);
-            this.Name = "UCTaiKhoan";
+            this.Name = "UCTaiKhoanUpdate";
             this.Size = new System.Drawing.Size(711, 789);
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).EndInit();
             this.layoutNhanVien.ResumeLayout(false);

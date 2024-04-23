@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Project.NET.Forms
 {
-    public partial class UCTaiKhoan : DevExpress.XtraEditors.XtraUserControl
+    public partial class TaiKhoan_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        public UCTaiKhoan()
+        public TaiKhoan_UC()
         {
             InitializeComponent();
         }

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Project.NET.Forms
 {
-    public partial class UCNhanVienUpdate : DevExpress.XtraEditors.XtraUserControl
+    public partial class NhanVien_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        public UCNhanVienUpdate()
+        public NhanVien_UC()
         {
             InitializeComponent();
         }

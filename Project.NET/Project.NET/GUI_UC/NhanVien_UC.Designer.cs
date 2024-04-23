@@ -1,6 +1,6 @@
 ﻿namespace Project.NET.Forms
 {
-    partial class UCNhanVienUpdate
+    partial class NhanVien_UC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCNhanVienUpdate));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVien_UC));
             this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.layoutNhanVien = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.txtHoTen = new DevExpress.XtraEditors.TextEdit();

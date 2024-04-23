@@ -101,17 +101,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\UCNhanVienUpdate.cs">
+    <Compile Include="GUI_UC\NhanVien_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UCNhanVienUpdate.Designer.cs">
-      <DependentUpon>UCNhanVienUpdate.cs</DependentUpon>
+    <Compile Include="GUI_UC\NhanVien_UC.Designer.cs">
+      <DependentUpon>NhanVien_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UCTaiKhoan.cs">
+    <Compile Include="GUI_UC\TaiKhoan_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UCTaiKhoan.Designer.cs">
-      <DependentUpon>UCTaiKhoan.cs</DependentUpon>
+    <Compile Include="GUI_UC\TaiKhoan_UC.Designer.cs">
+      <DependentUpon>TaiKhoan_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -121,11 +121,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\UCNhanVienUpdate.resx">
-      <DependentUpon>UCNhanVienUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_UC\NhanVien_UC.resx">
+      <DependentUpon>NhanVien_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCTaiKhoan.resx">
-      <DependentUpon>UCTaiKhoan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_UC\TaiKhoan_UC.resx">
+      <DependentUpon>TaiKhoan_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

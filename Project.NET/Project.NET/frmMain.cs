@@ -65,8 +65,8 @@ namespace Project.NET
             btnBaoCao.Click += btnBaoCao_Click;
             btnThongKe.Click += btnThongKe_Click;
         }
-        private UCNhanVienUpdate uCNhanVienUpdate;
-       
+        private NhanVien_UC nhanvien_uc;
+        private TaiKhoan_UC taikhoan_uc;
 
         /// <summary>
         /// Trước khi đóng form
@@ -88,8 +88,30 @@ namespace Project.NET
         /// <param name="e"></param>
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            loadingFirstOrDeFaultNavbarMenuButton();
         }
+
+        /// <summary>
+        /// Tải mặc định menu đầu tiên là menu tài khoản
+        /// </summary>
+        private void loadingFirstOrDeFaultNavbarMenuButton()
+        {
+            // Loading default tài khoản tab
+            if (taikhoan_uc == null)
+            {
+                taikhoan_uc = new TaiKhoan_UC();
+                taikhoan_uc.Dock = DockStyle.Fill;
+                editFormTaiKhoan.Controls.Add(taikhoan_uc);
+                //editFormNhanVien.Dock = DockStyle.Fill;
+            }
+
+            // Kiểm tra xem EditFormUserControl đã được tạo chưa
+            if (editFormTaiKhoan == null)
+            {
+                tabSuaTTTaiKhoan.Controls.Add(editFormTaiKhoan);
+            }
+        }
+
         /// <summary>
         /// Nút đăng nhập
         /// </summary>
@@ -123,17 +145,35 @@ namespace Project.NET
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
             nafContent.SelectedPage = navTaiKhoan;
+            // Kiểm tra xem UserControl đã được tạo chưa
+            if (taikhoan_uc == null)
+            {
+                taikhoan_uc = new TaiKhoan_UC();
+                taikhoan_uc.Dock = DockStyle.Fill;
+                editFormTaiKhoan.Controls.Add(taikhoan_uc);
+                //editFormNhanVien.Dock = DockStyle.Fill;
+            }
+
+            // Kiểm tra xem EditFormUserControl đã được tạo chưa
+            if (editFormTaiKhoan == null)
+            {
+
+                tabSuaTTTaiKhoan.Controls.Add(editFormTaiKhoan);
+            }
+
+            // Cập nhật thông tin trên UserControl và EditFormUserControl nếu cần
+            // ...
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             nafContent.SelectedPage = navNhanVien;
             // Kiểm tra xem UserControl đã được tạo chưa
-            if (uCNhanVienUpdate == null)
+            if (nhanvien_uc == null)
             {
-                uCNhanVienUpdate = new UCNhanVienUpdate();
-                uCNhanVienUpdate.Dock = DockStyle.Fill;
-                editFormNhanVien.Controls.Add(uCNhanVienUpdate);
+                nhanvien_uc = new NhanVien_UC();
+                nhanvien_uc.Dock = DockStyle.Fill;
+                editFormNhanVien.Controls.Add(nhanvien_uc);
                 //editFormNhanVien.Dock = DockStyle.Fill;
             }
 
