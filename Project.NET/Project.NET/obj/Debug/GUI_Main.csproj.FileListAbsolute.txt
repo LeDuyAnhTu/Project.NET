@@ -195,7 +195,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csp
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.Up2Date
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Reports.XtraReport1.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.RichEdit.v22.2.Export.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraGauges.v22.2.Core.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.dll
