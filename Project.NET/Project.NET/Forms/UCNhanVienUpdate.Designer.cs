@@ -160,11 +160,11 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Enabled = false;
             this.txtMaNV.Location = new System.Drawing.Point(142, 58);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNV.Properties.Appearance.Options.UseFont = true;
+            this.txtMaNV.Properties.ReadOnly = true;
             this.txtMaNV.Size = new System.Drawing.Size(644, 26);
             this.txtMaNV.StyleController = this.layoutNhanVien;
             this.txtMaNV.TabIndex = 5;
