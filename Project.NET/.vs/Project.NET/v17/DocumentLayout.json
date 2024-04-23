@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\bus\\chinhanh_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\chinhanh_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\bus\\taikhoan_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\taikhoan_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\dal\\basicmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\basicmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\bus\\nhanvien_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\nhanvien_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\bus\\project.net\\project.net\\bus\\thongke_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\thongke_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NhanVien_BUS.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\NhanVien_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\NhanVien_BUS.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\NhanVien_BUS.cs",
-              "RelativeToolTip": "BUS\\NhanVien_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "DocumentIndex": 1,
+              "Title": "BasicMethod.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\DAL\\BasicMethod.cs",
+              "RelativeDocumentMoniker": "DAL\\BasicMethod.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\DAL\\BasicMethod.cs",
+              "RelativeToolTip": "DAL\\BasicMethod.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:38:47.551Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-04-22T11:37:58.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\DAL\\Database.cs",
+              "RelativeDocumentMoniker": "DAL\\Database.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\DAL\\Database.cs",
+              "RelativeToolTip": "DAL\\Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:37:50.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChiNhanh_BUS.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\ChiNhanh_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\ChiNhanh_BUS.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\ChiNhanh_BUS.cs",
-              "RelativeToolTip": "BUS\\ChiNhanh_BUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "ThongKe_DAL.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\DAL\\ThongKe_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ThongKe_DAL.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\DAL\\ThongKe_DAL.cs",
+              "RelativeToolTip": "DAL\\ThongKe_DAL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T09:39:38.534Z",
+              "WhenOpened": "2024-04-22T11:37:16.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaiKhoan_BUS.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\TaiKhoan_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\TaiKhoan_BUS.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\TaiKhoan_BUS.cs",
-              "RelativeToolTip": "BUS\\TaiKhoan_BUS.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAEgAAAAnAAAA",
+              "DocumentIndex": 3,
+              "Title": "ThongKe_BUS.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\ThongKe_BUS.cs",
+              "RelativeDocumentMoniker": "BUS\\ThongKe_BUS.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\BUS\\Project.NET\\Project.NET\\BUS\\ThongKe_BUS.cs",
+              "RelativeToolTip": "BUS\\ThongKe_BUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T09:34:44.061Z",
+              "WhenOpened": "2024-04-22T11:19:42.256Z",
               "EditorCaption": ""
             },
             {

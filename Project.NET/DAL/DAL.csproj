@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="SanPham_DAL.cs" />
     <Compile Include="TaiKhoan_DAL.cs" />
+    <Compile Include="ThongKe_DAL.cs" />
     <Compile Include="ViTri_DAL.cs" />
   </ItemGroup>
   <ItemGroup>
