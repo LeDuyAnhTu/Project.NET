@@ -175,9 +175,10 @@
             this.btnSoGioDMVSTheoTG.AppearancePressed.Options.UseBorderColor = true;
             this.btnSoGioDMVSTheoTG.AppearancePressed.Options.UseFont = true;
             this.btnSoGioDMVSTheoTG.AppearancePressed.Options.UseForeColor = true;
-            this.btnSoGioDMVSTheoTG.Location = new System.Drawing.Point(12, 12);
+            this.btnSoGioDMVSTheoTG.Location = new System.Drawing.Point(14, 14);
+            this.btnSoGioDMVSTheoTG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSoGioDMVSTheoTG.Name = "btnSoGioDMVSTheoTG";
-            this.btnSoGioDMVSTheoTG.Size = new System.Drawing.Size(219, 22);
+            this.btnSoGioDMVSTheoTG.Size = new System.Drawing.Size(255, 27);
             this.btnSoGioDMVSTheoTG.StyleController = this.layoutControl1;
             this.btnSoGioDMVSTheoTG.TabIndex = 0;
             this.btnSoGioDMVSTheoTG.Text = "Số giờ đi muộn về sớm theo Thời gian";
@@ -196,12 +197,13 @@
             this.layoutControl1.Controls.Add(this.btnTongNVTheoPB);
             this.layoutControl1.Controls.Add(this.btnCoCauSoGioDMVS);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(13, 12);
+            this.layoutControl1.Location = new System.Drawing.Point(17, 16);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(381, 527, 650, 400);
             this.layoutControl1.Root = this.Root;
             this.tableTKNV.SetRow(this.layoutControl1, 0);
-            this.layoutControl1.Size = new System.Drawing.Size(690, 100);
+            this.layoutControl1.Size = new System.Drawing.Size(801, 120);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -232,9 +234,10 @@
             this.btnCoCauTanSuatDMVS.AppearancePressed.Options.UseBorderColor = true;
             this.btnCoCauTanSuatDMVS.AppearancePressed.Options.UseFont = true;
             this.btnCoCauTanSuatDMVS.AppearancePressed.Options.UseForeColor = true;
-            this.btnCoCauTanSuatDMVS.Location = new System.Drawing.Point(458, 38);
+            this.btnCoCauTanSuatDMVS.Location = new System.Drawing.Point(531, 45);
+            this.btnCoCauTanSuatDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCoCauTanSuatDMVS.Name = "btnCoCauTanSuatDMVS";
-            this.btnCoCauTanSuatDMVS.Size = new System.Drawing.Size(220, 22);
+            this.btnCoCauTanSuatDMVS.Size = new System.Drawing.Size(256, 27);
             this.btnCoCauTanSuatDMVS.StyleController = this.layoutControl1;
             this.btnCoCauTanSuatDMVS.TabIndex = 0;
             this.btnCoCauTanSuatDMVS.Text = "Cơ Cấu tần xuất đi muộn về sớm";
@@ -267,9 +270,10 @@
             this.btnCoCauNhanVienTheoChucVu.AppearancePressed.Options.UseBorderColor = true;
             this.btnCoCauNhanVienTheoChucVu.AppearancePressed.Options.UseFont = true;
             this.btnCoCauNhanVienTheoChucVu.AppearancePressed.Options.UseForeColor = true;
-            this.btnCoCauNhanVienTheoChucVu.Location = new System.Drawing.Point(235, 64);
+            this.btnCoCauNhanVienTheoChucVu.Location = new System.Drawing.Point(273, 76);
+            this.btnCoCauNhanVienTheoChucVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCoCauNhanVienTheoChucVu.Name = "btnCoCauNhanVienTheoChucVu";
-            this.btnCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(219, 22);
+            this.btnCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(254, 27);
             this.btnCoCauNhanVienTheoChucVu.StyleController = this.layoutControl1;
             this.btnCoCauNhanVienTheoChucVu.TabIndex = 0;
             this.btnCoCauNhanVienTheoChucVu.Text = "Cơ Cấu nhân viên theo chức vụ";
@@ -302,9 +306,10 @@
             this.btnTongNhanVienTheoChucVu.AppearancePressed.Options.UseBorderColor = true;
             this.btnTongNhanVienTheoChucVu.AppearancePressed.Options.UseFont = true;
             this.btnTongNhanVienTheoChucVu.AppearancePressed.Options.UseForeColor = true;
-            this.btnTongNhanVienTheoChucVu.Location = new System.Drawing.Point(12, 64);
+            this.btnTongNhanVienTheoChucVu.Location = new System.Drawing.Point(14, 76);
+            this.btnTongNhanVienTheoChucVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTongNhanVienTheoChucVu.Name = "btnTongNhanVienTheoChucVu";
-            this.btnTongNhanVienTheoChucVu.Size = new System.Drawing.Size(219, 22);
+            this.btnTongNhanVienTheoChucVu.Size = new System.Drawing.Size(255, 27);
             this.btnTongNhanVienTheoChucVu.StyleController = this.layoutControl1;
             this.btnTongNhanVienTheoChucVu.TabIndex = 0;
             this.btnTongNhanVienTheoChucVu.Text = "Tổng nhân viên theo chức vụ";
@@ -337,9 +342,10 @@
             this.btnTanSuatDMVS.AppearancePressed.Options.UseBorderColor = true;
             this.btnTanSuatDMVS.AppearancePressed.Options.UseFont = true;
             this.btnTanSuatDMVS.AppearancePressed.Options.UseForeColor = true;
-            this.btnTanSuatDMVS.Location = new System.Drawing.Point(458, 64);
+            this.btnTanSuatDMVS.Location = new System.Drawing.Point(531, 76);
+            this.btnTanSuatDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTanSuatDMVS.Name = "btnTanSuatDMVS";
-            this.btnTanSuatDMVS.Size = new System.Drawing.Size(220, 22);
+            this.btnTanSuatDMVS.Size = new System.Drawing.Size(256, 27);
             this.btnTanSuatDMVS.StyleController = this.layoutControl1;
             this.btnTanSuatDMVS.TabIndex = 0;
             this.btnTanSuatDMVS.Text = "Tần Xuất đi muộn về sớm";
@@ -372,9 +378,10 @@
             this.btnCoCauNVTheoPB.AppearancePressed.Options.UseBorderColor = true;
             this.btnCoCauNVTheoPB.AppearancePressed.Options.UseFont = true;
             this.btnCoCauNVTheoPB.AppearancePressed.Options.UseForeColor = true;
-            this.btnCoCauNVTheoPB.Location = new System.Drawing.Point(235, 38);
+            this.btnCoCauNVTheoPB.Location = new System.Drawing.Point(273, 45);
+            this.btnCoCauNVTheoPB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCoCauNVTheoPB.Name = "btnCoCauNVTheoPB";
-            this.btnCoCauNVTheoPB.Size = new System.Drawing.Size(219, 22);
+            this.btnCoCauNVTheoPB.Size = new System.Drawing.Size(254, 27);
             this.btnCoCauNVTheoPB.StyleController = this.layoutControl1;
             this.btnCoCauNVTheoPB.TabIndex = 0;
             this.btnCoCauNVTheoPB.Text = "Cơ cấu nhân viên theo phòng ban";
@@ -407,9 +414,10 @@
             this.btnSoGioDMVS.AppearancePressed.Options.UseBorderColor = true;
             this.btnSoGioDMVS.AppearancePressed.Options.UseFont = true;
             this.btnSoGioDMVS.AppearancePressed.Options.UseForeColor = true;
-            this.btnSoGioDMVS.Location = new System.Drawing.Point(235, 12);
+            this.btnSoGioDMVS.Location = new System.Drawing.Point(273, 14);
+            this.btnSoGioDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSoGioDMVS.Name = "btnSoGioDMVS";
-            this.btnSoGioDMVS.Size = new System.Drawing.Size(219, 22);
+            this.btnSoGioDMVS.Size = new System.Drawing.Size(254, 27);
             this.btnSoGioDMVS.StyleController = this.layoutControl1;
             this.btnSoGioDMVS.TabIndex = 0;
             this.btnSoGioDMVS.Text = "Số giờ đi muộn về sớm";
@@ -442,9 +450,10 @@
             this.btnTongNVTheoPB.AppearancePressed.Options.UseBorderColor = true;
             this.btnTongNVTheoPB.AppearancePressed.Options.UseFont = true;
             this.btnTongNVTheoPB.AppearancePressed.Options.UseForeColor = true;
-            this.btnTongNVTheoPB.Location = new System.Drawing.Point(12, 38);
+            this.btnTongNVTheoPB.Location = new System.Drawing.Point(14, 45);
+            this.btnTongNVTheoPB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTongNVTheoPB.Name = "btnTongNVTheoPB";
-            this.btnTongNVTheoPB.Size = new System.Drawing.Size(219, 22);
+            this.btnTongNVTheoPB.Size = new System.Drawing.Size(255, 27);
             this.btnTongNVTheoPB.StyleController = this.layoutControl1;
             this.btnTongNVTheoPB.TabIndex = 0;
             this.btnTongNVTheoPB.Text = "Tổng NV Theo Phòng Ban";
@@ -477,9 +486,10 @@
             this.btnCoCauSoGioDMVS.AppearancePressed.Options.UseBorderColor = true;
             this.btnCoCauSoGioDMVS.AppearancePressed.Options.UseFont = true;
             this.btnCoCauSoGioDMVS.AppearancePressed.Options.UseForeColor = true;
-            this.btnCoCauSoGioDMVS.Location = new System.Drawing.Point(458, 12);
+            this.btnCoCauSoGioDMVS.Location = new System.Drawing.Point(531, 14);
+            this.btnCoCauSoGioDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCoCauSoGioDMVS.Name = "btnCoCauSoGioDMVS";
-            this.btnCoCauSoGioDMVS.Size = new System.Drawing.Size(220, 22);
+            this.btnCoCauSoGioDMVS.Size = new System.Drawing.Size(256, 27);
             this.btnCoCauSoGioDMVS.StyleController = this.layoutControl1;
             this.btnCoCauSoGioDMVS.TabIndex = 0;
             this.btnCoCauSoGioDMVS.Text = "Cơ cấu Số giờ đi muộn về sớm";
@@ -500,7 +510,7 @@
             this.layoutCoCauNhanVienTheoChucVu,
             this.layoutCoCauTanSuatDMVS});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(690, 100);
+            this.Root.Size = new System.Drawing.Size(801, 120);
             this.Root.TextVisible = false;
             // 
             // layoutSoGioDMVSTheoTG
@@ -508,91 +518,91 @@
             this.layoutSoGioDMVSTheoTG.Control = this.btnSoGioDMVSTheoTG;
             this.layoutSoGioDMVSTheoTG.Location = new System.Drawing.Point(0, 0);
             this.layoutSoGioDMVSTheoTG.Name = "layoutSoGioDMVSTheoTG";
-            this.layoutSoGioDMVSTheoTG.Size = new System.Drawing.Size(223, 26);
+            this.layoutSoGioDMVSTheoTG.Size = new System.Drawing.Size(259, 31);
             this.layoutSoGioDMVSTheoTG.TextSize = new System.Drawing.Size(0, 0);
             this.layoutSoGioDMVSTheoTG.TextVisible = false;
             // 
             // layoutSoGioDMVS
             // 
             this.layoutSoGioDMVS.Control = this.btnSoGioDMVS;
-            this.layoutSoGioDMVS.Location = new System.Drawing.Point(223, 0);
+            this.layoutSoGioDMVS.Location = new System.Drawing.Point(259, 0);
             this.layoutSoGioDMVS.Name = "layoutSoGioDMVS";
             this.layoutSoGioDMVS.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutSoGioDMVS.Size = new System.Drawing.Size(223, 26);
+            this.layoutSoGioDMVS.Size = new System.Drawing.Size(258, 31);
             this.layoutSoGioDMVS.TextSize = new System.Drawing.Size(0, 0);
             this.layoutSoGioDMVS.TextVisible = false;
             // 
             // layoutCoCauSoGioDMVS
             // 
             this.layoutCoCauSoGioDMVS.Control = this.btnCoCauSoGioDMVS;
-            this.layoutCoCauSoGioDMVS.Location = new System.Drawing.Point(446, 0);
+            this.layoutCoCauSoGioDMVS.Location = new System.Drawing.Point(517, 0);
             this.layoutCoCauSoGioDMVS.Name = "layoutCoCauSoGioDMVS";
             this.layoutCoCauSoGioDMVS.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutCoCauSoGioDMVS.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutCoCauSoGioDMVS.Size = new System.Drawing.Size(224, 26);
+            this.layoutCoCauSoGioDMVS.Size = new System.Drawing.Size(260, 31);
             this.layoutCoCauSoGioDMVS.TextSize = new System.Drawing.Size(0, 0);
             this.layoutCoCauSoGioDMVS.TextVisible = false;
             // 
             // layoutTongNhanVienTheoPhongBan
             // 
             this.layoutTongNhanVienTheoPhongBan.Control = this.btnTongNVTheoPB;
-            this.layoutTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 26);
+            this.layoutTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 31);
             this.layoutTongNhanVienTheoPhongBan.Name = "layoutTongNhanVienTheoPhongBan";
             this.layoutTongNhanVienTheoPhongBan.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(223, 26);
+            this.layoutTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(259, 31);
             this.layoutTongNhanVienTheoPhongBan.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTongNhanVienTheoPhongBan.TextVisible = false;
             // 
             // layoutCoCauNhanVienTheoPhongBan
             // 
             this.layoutCoCauNhanVienTheoPhongBan.Control = this.btnCoCauNVTheoPB;
-            this.layoutCoCauNhanVienTheoPhongBan.Location = new System.Drawing.Point(223, 26);
+            this.layoutCoCauNhanVienTheoPhongBan.Location = new System.Drawing.Point(259, 31);
             this.layoutCoCauNhanVienTheoPhongBan.Name = "layoutCoCauNhanVienTheoPhongBan";
             this.layoutCoCauNhanVienTheoPhongBan.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutCoCauNhanVienTheoPhongBan.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(223, 26);
+            this.layoutCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(258, 31);
             this.layoutCoCauNhanVienTheoPhongBan.TextSize = new System.Drawing.Size(0, 0);
             this.layoutCoCauNhanVienTheoPhongBan.TextVisible = false;
             // 
             // layoutTanSuatDMVS
             // 
             this.layoutTanSuatDMVS.Control = this.btnTanSuatDMVS;
-            this.layoutTanSuatDMVS.Location = new System.Drawing.Point(446, 52);
+            this.layoutTanSuatDMVS.Location = new System.Drawing.Point(517, 62);
             this.layoutTanSuatDMVS.Name = "layoutTanSuatDMVS";
             this.layoutTanSuatDMVS.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutTanSuatDMVS.Size = new System.Drawing.Size(224, 28);
+            this.layoutTanSuatDMVS.Size = new System.Drawing.Size(260, 34);
             this.layoutTanSuatDMVS.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTanSuatDMVS.TextVisible = false;
             // 
             // layoutTongNhanVienTheoChucVu
             // 
             this.layoutTongNhanVienTheoChucVu.Control = this.btnTongNhanVienTheoChucVu;
-            this.layoutTongNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 52);
+            this.layoutTongNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 62);
             this.layoutTongNhanVienTheoChucVu.Name = "layoutTongNhanVienTheoChucVu";
             this.layoutTongNhanVienTheoChucVu.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutTongNhanVienTheoChucVu.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutTongNhanVienTheoChucVu.Size = new System.Drawing.Size(223, 28);
+            this.layoutTongNhanVienTheoChucVu.Size = new System.Drawing.Size(259, 34);
             this.layoutTongNhanVienTheoChucVu.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTongNhanVienTheoChucVu.TextVisible = false;
             // 
             // layoutCoCauNhanVienTheoChucVu
             // 
             this.layoutCoCauNhanVienTheoChucVu.Control = this.btnCoCauNhanVienTheoChucVu;
-            this.layoutCoCauNhanVienTheoChucVu.Location = new System.Drawing.Point(223, 52);
+            this.layoutCoCauNhanVienTheoChucVu.Location = new System.Drawing.Point(259, 62);
             this.layoutCoCauNhanVienTheoChucVu.Name = "layoutCoCauNhanVienTheoChucVu";
             this.layoutCoCauNhanVienTheoChucVu.OptionsTableLayoutItem.RowIndex = 4;
-            this.layoutCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(223, 28);
+            this.layoutCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(258, 34);
             this.layoutCoCauNhanVienTheoChucVu.TextSize = new System.Drawing.Size(0, 0);
             this.layoutCoCauNhanVienTheoChucVu.TextVisible = false;
             // 
             // layoutCoCauTanSuatDMVS
             // 
             this.layoutCoCauTanSuatDMVS.Control = this.btnCoCauTanSuatDMVS;
-            this.layoutCoCauTanSuatDMVS.Location = new System.Drawing.Point(446, 26);
+            this.layoutCoCauTanSuatDMVS.Location = new System.Drawing.Point(517, 31);
             this.layoutCoCauTanSuatDMVS.Name = "layoutCoCauTanSuatDMVS";
             this.layoutCoCauTanSuatDMVS.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutCoCauTanSuatDMVS.OptionsTableLayoutItem.RowIndex = 4;
-            this.layoutCoCauTanSuatDMVS.Size = new System.Drawing.Size(224, 26);
+            this.layoutCoCauTanSuatDMVS.Size = new System.Drawing.Size(260, 31);
             this.layoutCoCauTanSuatDMVS.TextSize = new System.Drawing.Size(0, 0);
             this.layoutCoCauTanSuatDMVS.TextVisible = false;
             // 
@@ -604,11 +614,12 @@
             this.tableTKNV.Controls.Add(this.layoutControl1);
             this.tableTKNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableTKNV.Location = new System.Drawing.Point(0, 0);
+            this.tableTKNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableTKNV.Name = "tableTKNV";
             this.tableTKNV.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 104F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tableTKNV.Size = new System.Drawing.Size(716, 709);
+            this.tableTKNV.Size = new System.Drawing.Size(835, 873);
             this.tableTKNV.TabIndex = 1;
             this.tableTKNV.UseSkinIndents = true;
             // 
@@ -617,12 +628,13 @@
             this.tableTKNV.SetColumn(this.dataLayoutControl1, 0);
             this.dataLayoutControl1.Controls.Add(this.navFrameTKNhanVien);
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(13, 116);
+            this.dataLayoutControl1.Location = new System.Drawing.Point(17, 144);
+            this.dataLayoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(993, 414, 650, 400);
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
             this.tableTKNV.SetRow(this.dataLayoutControl1, 1);
-            this.dataLayoutControl1.Size = new System.Drawing.Size(690, 580);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(801, 712);
             this.dataLayoutControl1.TabIndex = 1;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
@@ -637,7 +649,8 @@
             this.navFrameTKNhanVien.Controls.Add(this.navPageTongNhanVienTheoChucVu);
             this.navFrameTKNhanVien.Controls.Add(this.navPageCoCauNhanVienTheoChucVu);
             this.navFrameTKNhanVien.Controls.Add(this.navPageCoCauTanSuatDMVS);
-            this.navFrameTKNhanVien.Location = new System.Drawing.Point(12, 12);
+            this.navFrameTKNhanVien.Location = new System.Drawing.Point(14, 14);
+            this.navFrameTKNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navFrameTKNhanVien.Name = "navFrameTKNhanVien";
             this.navFrameTKNhanVien.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navPageSoGioDMVSTheoTG,
@@ -650,17 +663,17 @@
             this.navPageCoCauNhanVienTheoChucVu,
             this.navPageCoCauTanSuatDMVS});
             this.navFrameTKNhanVien.SelectedPage = this.navPageTongNhanVienTheoPhongBan;
-            this.navFrameTKNhanVien.Size = new System.Drawing.Size(666, 556);
+            this.navFrameTKNhanVien.Size = new System.Drawing.Size(773, 684);
             this.navFrameTKNhanVien.TabIndex = 4;
             this.navFrameTKNhanVien.Text = "navFrameTKNhanVien";
             // 
             // navPageSoGioDMVSTheoTG
             // 
-            this.navPageSoGioDMVSTheoTG.Caption = "navPageSoGioDMVSTheoTG";
             this.navPageSoGioDMVSTheoTG.Controls.Add(this.chart3);
             this.navPageSoGioDMVSTheoTG.Controls.Add(this.labelControl1);
+            this.navPageSoGioDMVSTheoTG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageSoGioDMVSTheoTG.Name = "navPageSoGioDMVSTheoTG";
-            this.navPageSoGioDMVSTheoTG.Size = new System.Drawing.Size(666, 556);
+            this.navPageSoGioDMVSTheoTG.Size = new System.Drawing.Size(773, 684);
             // 
             // chart3
             // 
@@ -668,13 +681,14 @@
             this.chart3.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart3.Legends.Add(legend1);
-            this.chart3.Location = new System.Drawing.Point(67, 74);
+            this.chart3.Location = new System.Drawing.Point(78, 91);
+            this.chart3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart3.Name = "chart3";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart3.Series.Add(series1);
-            this.chart3.Size = new System.Drawing.Size(532, 409);
+            this.chart3.Size = new System.Drawing.Size(621, 503);
             this.chart3.TabIndex = 5;
             this.chart3.Text = "chart1";
             // 
@@ -688,18 +702,19 @@
             this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl1.Location = new System.Drawing.Point(0, 0);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(315, 25);
+            this.labelControl1.Size = new System.Drawing.Size(407, 32);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Số giờ đi muộn về sớm theo thời gian";
             // 
             // navPageSoGioDMVS
             // 
-            this.navPageSoGioDMVS.Caption = "navPageSoGioDMVS";
             this.navPageSoGioDMVS.Controls.Add(this.chart1);
             this.navPageSoGioDMVS.Controls.Add(this.labelControl2);
+            this.navPageSoGioDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageSoGioDMVS.Name = "navPageSoGioDMVS";
-            this.navPageSoGioDMVS.Size = new System.Drawing.Size(666, 556);
+            this.navPageSoGioDMVS.Size = new System.Drawing.Size(773, 684);
             // 
             // chart1
             // 
@@ -707,13 +722,14 @@
             this.chart1.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(67, 74);
+            this.chart1.Location = new System.Drawing.Point(78, 91);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart1.Name = "chart1";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(532, 409);
+            this.chart1.Size = new System.Drawing.Size(621, 503);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";
             // 
@@ -727,18 +743,19 @@
             this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl2.Location = new System.Drawing.Point(0, 0);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(253, 25);
+            this.labelControl2.Size = new System.Drawing.Size(326, 32);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "Cơ cấu số giờ đi muộn về sớm";
             // 
             // navPageCoCauSoGioDMVS
             // 
-            this.navPageCoCauSoGioDMVS.Caption = "navPageCoCauSoGioDMVS";
             this.navPageCoCauSoGioDMVS.Controls.Add(this.chart2);
             this.navPageCoCauSoGioDMVS.Controls.Add(this.labelControl3);
+            this.navPageCoCauSoGioDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageCoCauSoGioDMVS.Name = "navPageCoCauSoGioDMVS";
-            this.navPageCoCauSoGioDMVS.Size = new System.Drawing.Size(666, 556);
+            this.navPageCoCauSoGioDMVS.Size = new System.Drawing.Size(773, 684);
             // 
             // chart2
             // 
@@ -746,13 +763,14 @@
             this.chart2.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart2.Legends.Add(legend3);
-            this.chart2.Location = new System.Drawing.Point(67, 74);
+            this.chart2.Location = new System.Drawing.Point(78, 91);
+            this.chart2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart2.Name = "chart2";
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chart2.Series.Add(series3);
-            this.chart2.Size = new System.Drawing.Size(532, 409);
+            this.chart2.Size = new System.Drawing.Size(621, 503);
             this.chart2.TabIndex = 5;
             this.chart2.Text = "chart1";
             // 
@@ -766,8 +784,9 @@
             this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl3.Location = new System.Drawing.Point(0, 0);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(192, 25);
+            this.labelControl3.Size = new System.Drawing.Size(249, 32);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "Số giờ đi muộn về sớm";
             // 
@@ -775,8 +794,9 @@
             // 
             this.navPageTongNhanVienTheoPhongBan.Controls.Add(this.chartTongNhanVienTheoPhongBan);
             this.navPageTongNhanVienTheoPhongBan.Controls.Add(this.labelControl4);
+            this.navPageTongNhanVienTheoPhongBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageTongNhanVienTheoPhongBan.Name = "navPageTongNhanVienTheoPhongBan";
-            this.navPageTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(666, 556);
+            this.navPageTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(773, 684);
             // 
             // chartTongNhanVienTheoPhongBan
             // 
@@ -784,12 +804,13 @@
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartTongNhanVienTheoPhongBan.Diagram = xyDiagram1;
             this.chartTongNhanVienTheoPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 25);
+            this.chartTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 32);
+            this.chartTongNhanVienTheoPhongBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chartTongNhanVienTheoPhongBan.Name = "chartTongNhanVienTheoPhongBan";
             series4.Name = "Series 1";
             this.chartTongNhanVienTheoPhongBan.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series4};
-            this.chartTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(666, 531);
+            this.chartTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(773, 652);
             this.chartTongNhanVienTheoPhongBan.TabIndex = 5;
             // 
             // labelControl4
@@ -802,18 +823,19 @@
             this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl4.Location = new System.Drawing.Point(0, 0);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(271, 25);
+            this.labelControl4.Size = new System.Drawing.Size(348, 32);
             this.labelControl4.TabIndex = 2;
             this.labelControl4.Text = "Tổng nhân viên theo phòng ban";
             // 
             // navPageCoCauNhanVienTheoPhongBan
             // 
-            this.navPageCoCauNhanVienTheoPhongBan.Caption = "navPageCoCauNhanVienTheoPhongBan";
             this.navPageCoCauNhanVienTheoPhongBan.Controls.Add(this.chart4);
             this.navPageCoCauNhanVienTheoPhongBan.Controls.Add(this.labelControl5);
+            this.navPageCoCauNhanVienTheoPhongBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageCoCauNhanVienTheoPhongBan.Name = "navPageCoCauNhanVienTheoPhongBan";
-            this.navPageCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(666, 556);
+            this.navPageCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(773, 684);
             // 
             // chart4
             // 
@@ -821,13 +843,14 @@
             this.chart4.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chart4.Legends.Add(legend4);
-            this.chart4.Location = new System.Drawing.Point(67, 74);
+            this.chart4.Location = new System.Drawing.Point(78, 91);
+            this.chart4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart4.Name = "chart4";
             series5.ChartArea = "ChartArea1";
             series5.Legend = "Legend1";
             series5.Name = "Series1";
             this.chart4.Series.Add(series5);
-            this.chart4.Size = new System.Drawing.Size(532, 409);
+            this.chart4.Size = new System.Drawing.Size(621, 503);
             this.chart4.TabIndex = 5;
             this.chart4.Text = "chart1";
             // 
@@ -841,18 +864,19 @@
             this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl5.Location = new System.Drawing.Point(0, 0);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(286, 25);
+            this.labelControl5.Size = new System.Drawing.Size(366, 32);
             this.labelControl5.TabIndex = 2;
             this.labelControl5.Text = "Cơ cấu nhân viên theo phòng ban";
             // 
             // navPageTanSuatDMVS
             // 
-            this.navPageTanSuatDMVS.Caption = "navPageTanSuatDMVS";
             this.navPageTanSuatDMVS.Controls.Add(this.chart5);
             this.navPageTanSuatDMVS.Controls.Add(this.labelControl6);
+            this.navPageTanSuatDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageTanSuatDMVS.Name = "navPageTanSuatDMVS";
-            this.navPageTanSuatDMVS.Size = new System.Drawing.Size(666, 556);
+            this.navPageTanSuatDMVS.Size = new System.Drawing.Size(773, 684);
             // 
             // chart5
             // 
@@ -860,13 +884,14 @@
             this.chart5.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chart5.Legends.Add(legend5);
-            this.chart5.Location = new System.Drawing.Point(67, 74);
+            this.chart5.Location = new System.Drawing.Point(78, 91);
+            this.chart5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart5.Name = "chart5";
             series6.ChartArea = "ChartArea1";
             series6.Legend = "Legend1";
             series6.Name = "Series1";
             this.chart5.Series.Add(series6);
-            this.chart5.Size = new System.Drawing.Size(532, 409);
+            this.chart5.Size = new System.Drawing.Size(621, 503);
             this.chart5.TabIndex = 5;
             this.chart5.Text = "chart1";
             // 
@@ -880,18 +905,19 @@
             this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl6.Location = new System.Drawing.Point(0, 0);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(210, 25);
+            this.labelControl6.Size = new System.Drawing.Size(271, 32);
             this.labelControl6.TabIndex = 2;
             this.labelControl6.Text = "Tần suất đi muộn về sớm";
             // 
             // navPageTongNhanVienTheoChucVu
             // 
-            this.navPageTongNhanVienTheoChucVu.Caption = "navPageTongNhanVienTheoChucVu";
             this.navPageTongNhanVienTheoChucVu.Controls.Add(this.chart6);
             this.navPageTongNhanVienTheoChucVu.Controls.Add(this.labelControl7);
+            this.navPageTongNhanVienTheoChucVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageTongNhanVienTheoChucVu.Name = "navPageTongNhanVienTheoChucVu";
-            this.navPageTongNhanVienTheoChucVu.Size = new System.Drawing.Size(666, 556);
+            this.navPageTongNhanVienTheoChucVu.Size = new System.Drawing.Size(773, 684);
             // 
             // chart6
             // 
@@ -899,13 +925,14 @@
             this.chart6.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.chart6.Legends.Add(legend6);
-            this.chart6.Location = new System.Drawing.Point(67, 74);
+            this.chart6.Location = new System.Drawing.Point(78, 91);
+            this.chart6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart6.Name = "chart6";
             series7.ChartArea = "ChartArea1";
             series7.Legend = "Legend1";
             series7.Name = "Series1";
             this.chart6.Series.Add(series7);
-            this.chart6.Size = new System.Drawing.Size(532, 409);
+            this.chart6.Size = new System.Drawing.Size(621, 503);
             this.chart6.TabIndex = 5;
             this.chart6.Text = "chart1";
             // 
@@ -919,18 +946,19 @@
             this.labelControl7.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl7.Location = new System.Drawing.Point(0, 0);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(244, 25);
+            this.labelControl7.Size = new System.Drawing.Size(314, 32);
             this.labelControl7.TabIndex = 2;
             this.labelControl7.Text = "Tổng nhân viên theo chức vụ";
             // 
             // navPageCoCauNhanVienTheoChucVu
             // 
-            this.navPageCoCauNhanVienTheoChucVu.Caption = "navPageCoCauNhanVienTheoChucVu";
             this.navPageCoCauNhanVienTheoChucVu.Controls.Add(this.chart7);
             this.navPageCoCauNhanVienTheoChucVu.Controls.Add(this.labelControl8);
+            this.navPageCoCauNhanVienTheoChucVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageCoCauNhanVienTheoChucVu.Name = "navPageCoCauNhanVienTheoChucVu";
-            this.navPageCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(666, 556);
+            this.navPageCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(773, 684);
             // 
             // chart7
             // 
@@ -938,13 +966,14 @@
             this.chart7.ChartAreas.Add(chartArea7);
             legend7.Name = "Legend1";
             this.chart7.Legends.Add(legend7);
-            this.chart7.Location = new System.Drawing.Point(67, 74);
+            this.chart7.Location = new System.Drawing.Point(78, 91);
+            this.chart7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart7.Name = "chart7";
             series8.ChartArea = "ChartArea1";
             series8.Legend = "Legend1";
             series8.Name = "Series1";
             this.chart7.Series.Add(series8);
-            this.chart7.Size = new System.Drawing.Size(532, 409);
+            this.chart7.Size = new System.Drawing.Size(621, 503);
             this.chart7.TabIndex = 5;
             this.chart7.Text = "chart1";
             // 
@@ -958,18 +987,19 @@
             this.labelControl8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl8.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl8.Location = new System.Drawing.Point(0, 0);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(259, 25);
+            this.labelControl8.Size = new System.Drawing.Size(332, 32);
             this.labelControl8.TabIndex = 2;
             this.labelControl8.Text = "Cơ cấu nhân viên theo chức vụ";
             // 
             // navPageCoCauTanSuatDMVS
             // 
-            this.navPageCoCauTanSuatDMVS.Caption = "navPageCoCauTanSuatDMVS";
             this.navPageCoCauTanSuatDMVS.Controls.Add(this.chart8);
             this.navPageCoCauTanSuatDMVS.Controls.Add(this.labelControl9);
+            this.navPageCoCauTanSuatDMVS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navPageCoCauTanSuatDMVS.Name = "navPageCoCauTanSuatDMVS";
-            this.navPageCoCauTanSuatDMVS.Size = new System.Drawing.Size(666, 556);
+            this.navPageCoCauTanSuatDMVS.Size = new System.Drawing.Size(773, 684);
             // 
             // chart8
             // 
@@ -977,13 +1007,14 @@
             this.chart8.ChartAreas.Add(chartArea8);
             legend8.Name = "Legend1";
             this.chart8.Legends.Add(legend8);
-            this.chart8.Location = new System.Drawing.Point(67, 74);
+            this.chart8.Location = new System.Drawing.Point(78, 91);
+            this.chart8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart8.Name = "chart8";
             series9.ChartArea = "ChartArea1";
             series9.Legend = "Legend1";
             series9.Name = "Series1";
             this.chart8.Series.Add(series9);
-            this.chart8.Size = new System.Drawing.Size(532, 409);
+            this.chart8.Size = new System.Drawing.Size(621, 503);
             this.chart8.TabIndex = 5;
             this.chart8.Text = "chart1";
             // 
@@ -997,8 +1028,9 @@
             this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.labelControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl9.Location = new System.Drawing.Point(0, 0);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(269, 25);
+            this.labelControl9.Size = new System.Drawing.Size(346, 32);
             this.labelControl9.TabIndex = 2;
             this.labelControl9.Text = "Cơ cấu tần suất đi muộn về sớm";
             // 
@@ -1009,7 +1041,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem10});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(690, 580);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(801, 712);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem10
@@ -1017,17 +1049,18 @@
             this.layoutControlItem10.Control = this.navFrameTKNhanVien;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(670, 560);
+            this.layoutControlItem10.Size = new System.Drawing.Size(777, 688);
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
             // ThongKeNhanVien_UC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableTKNV);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ThongKeNhanVien_UC";
-            this.Size = new System.Drawing.Size(716, 709);
+            this.Size = new System.Drawing.Size(835, 873);
             this.Load += new System.EventHandler(this.ThongKeNhanVien_UC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

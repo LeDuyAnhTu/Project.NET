@@ -431,7 +431,7 @@
             this.editFormThongKeYear.SetBoundPropertyName(this.txtGiuDangNhap, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.txtGiuDangNhap, "");
             this.editFormPhanCong.SetBoundPropertyName(this.txtGiuDangNhap, "");
-            this.txtGiuDangNhap.Location = new System.Drawing.Point(12, 116);
+            this.txtGiuDangNhap.Location = new System.Drawing.Point(12, 134);
             this.txtGiuDangNhap.Name = "txtGiuDangNhap";
             this.txtGiuDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiuDangNhap.Properties.Appearance.Options.UseFont = true;
@@ -477,7 +477,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.btnDangNhap, "");
             this.editFormBaoCao.SetBoundPropertyName(this.btnDangNhap, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnDangNhap, "");
-            this.btnDangNhap.Location = new System.Drawing.Point(12, 143);
+            this.btnDangNhap.Location = new System.Drawing.Point(12, 166);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(355, 38);
             this.btnDangNhap.StyleController = this.controlsLogin;
@@ -1207,7 +1207,7 @@
             this.navBaoCao,
             this.navThongKe});
             this.nafContent.SelectedPage = this.navTaiKhoan;
-            this.nafContent.Size = new System.Drawing.Size(1104, 588);
+            this.nafContent.Size = new System.Drawing.Size(1098, 579);
             this.nafContent.TabIndex = 6;
             this.nafContent.Text = "navFrameTKNhanVien";
             // 
@@ -1272,8 +1272,9 @@
             this.editFormCaLam.SetBoundPropertyName(this.editFormThongKeMonth, "");
             this.editFormThongKeMonth.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormThongKeMonth.Location = new System.Drawing.Point(0, 0);
+            this.editFormThongKeMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormThongKeMonth.Name = "editFormThongKeMonth";
-            this.editFormThongKeMonth.Size = new System.Drawing.Size(1102, 544);
+            this.editFormThongKeMonth.Size = new System.Drawing.Size(1096, 525);
             this.editFormThongKeMonth.TabIndex = 0;
             // 
             // tabPageDoanhThuYear
@@ -1303,8 +1304,9 @@
             this.editFormCaLam.SetBoundPropertyName(this.editFormThongKeYear, "");
             this.editFormThongKeYear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormThongKeYear.Location = new System.Drawing.Point(0, 0);
+            this.editFormThongKeYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormThongKeYear.Name = "editFormThongKeYear";
-            this.editFormThongKeYear.Size = new System.Drawing.Size(1102, 544);
+            this.editFormThongKeYear.Size = new System.Drawing.Size(1096, 525);
             this.editFormThongKeYear.TabIndex = 1;
             // 
             // navBaoCao
@@ -1323,7 +1325,6 @@
             // 
             // tabBaoCao
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabBaoCao, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabBaoCao, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabBaoCao, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabBaoCao, "");
@@ -1336,7 +1337,7 @@
             this.tabBaoCao.Location = new System.Drawing.Point(0, 0);
             this.tabBaoCao.Name = "tabBaoCao";
             this.tabBaoCao.SelectedTabPage = this.tabPageBaoCao;
-            this.tabBaoCao.Size = new System.Drawing.Size(1104, 588);
+            this.tabBaoCao.Size = new System.Drawing.Size(1098, 579);
             this.tabBaoCao.TabIndex = 7;
             this.tabBaoCao.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPageBaoCao});
@@ -1354,7 +1355,7 @@
             this.tabPageBaoCao.Controls.Add(this.editFormBaoCao);
             this.tabPageBaoCao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabPageBaoCao.ImageOptions.Image")));
             this.tabPageBaoCao.Name = "tabPageBaoCao";
-            this.tabPageBaoCao.Size = new System.Drawing.Size(1102, 544);
+            this.tabPageBaoCao.Size = new System.Drawing.Size(1096, 533);
             this.tabPageBaoCao.Text = "Nhập thông tin báo cáo";
             // 
             // editFormBaoCao
@@ -1367,6 +1368,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormBaoCao, "");
             this.editFormCaLam.SetBoundPropertyName(this.editFormBaoCao, "");
             this.editFormBaoCao.Location = new System.Drawing.Point(254, 259);
+            this.editFormBaoCao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormBaoCao.Name = "editFormBaoCao";
             this.editFormBaoCao.Size = new System.Drawing.Size(928, 395);
             this.editFormBaoCao.TabIndex = 1;
@@ -1387,7 +1389,6 @@
             // 
             // tabTaiKhoan
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabTaiKhoan, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabTaiKhoan, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabTaiKhoan, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabTaiKhoan, "");
@@ -1432,8 +1433,9 @@
             this.editFormCaLam.SetBoundPropertyName(this.editFormTaiKhoan, "");
             this.editFormTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormTaiKhoan.Location = new System.Drawing.Point(0, 0);
+            this.editFormTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormTaiKhoan.Name = "editFormTaiKhoan";
-            this.editFormTaiKhoan.Size = new System.Drawing.Size(1102, 544);
+            this.editFormTaiKhoan.Size = new System.Drawing.Size(1096, 533);
             this.editFormTaiKhoan.TabIndex = 1;
             // 
             // tileNavPane1
@@ -1598,7 +1600,6 @@
             // 
             // tabNhanVien
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabNhanVien, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhanVien, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabNhanVien, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabNhanVien, "");
@@ -1632,7 +1633,7 @@
             this.tabNhapTTNhanVien.Controls.Add(this.editFormNhanVien);
             this.tabNhapTTNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTNhanVien.ImageOptions.Image")));
             this.tabNhapTTNhanVien.Name = "tabNhapTTNhanVien";
-            this.tabNhapTTNhanVien.Size = new System.Drawing.Size(1096, 533);
+            this.tabNhapTTNhanVien.Size = new System.Drawing.Size(1096, 525);
             this.tabNhapTTNhanVien.Text = "Nhập thông tin nhân viên";
             // 
             // editFormNhanVien
@@ -1646,8 +1647,9 @@
             this.editFormCaLam.SetBoundPropertyName(this.editFormNhanVien, "");
             this.editFormNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.editFormNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormNhanVien.Name = "editFormNhanVien";
-            this.editFormNhanVien.Size = new System.Drawing.Size(1102, 544);
+            this.editFormNhanVien.Size = new System.Drawing.Size(1096, 525);
             this.editFormNhanVien.TabIndex = 1;
             // 
             // tabNhapTTCaLam
@@ -1663,7 +1665,7 @@
             this.tabNhapTTCaLam.Controls.Add(this.editFormCaLam);
             this.tabNhapTTCaLam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTCaLam.ImageOptions.Image")));
             this.tabNhapTTCaLam.Name = "tabNhapTTCaLam";
-            this.tabNhapTTCaLam.Size = new System.Drawing.Size(1096, 533);
+            this.tabNhapTTCaLam.Size = new System.Drawing.Size(1096, 525);
             this.tabNhapTTCaLam.Text = "Nhập thông tin ca làm";
             // 
             // editFormCaLam
@@ -1677,8 +1679,9 @@
             this.editFormNhanVien.SetBoundPropertyName(this.editFormCaLam, "");
             this.editFormCaLam.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormCaLam.Location = new System.Drawing.Point(0, 0);
+            this.editFormCaLam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormCaLam.Name = "editFormCaLam";
-            this.editFormCaLam.Size = new System.Drawing.Size(1102, 544);
+            this.editFormCaLam.Size = new System.Drawing.Size(1096, 525);
             this.editFormCaLam.TabIndex = 2;
             // 
             // tabNhapTTPhanCong
@@ -1694,7 +1697,7 @@
             this.tabNhapTTPhanCong.Controls.Add(this.editFormPhanCong);
             this.tabNhapTTPhanCong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTPhanCong.ImageOptions.Image")));
             this.tabNhapTTPhanCong.Name = "tabNhapTTPhanCong";
-            this.tabNhapTTPhanCong.Size = new System.Drawing.Size(1096, 533);
+            this.tabNhapTTPhanCong.Size = new System.Drawing.Size(1096, 525);
             this.tabNhapTTPhanCong.Text = "Nhập thông tin phân công";
             // 
             // editFormPhanCong
@@ -1708,8 +1711,9 @@
             this.editFormNhanVien.SetBoundPropertyName(this.editFormPhanCong, "");
             this.editFormPhanCong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormPhanCong.Location = new System.Drawing.Point(0, 0);
+            this.editFormPhanCong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormPhanCong.Name = "editFormPhanCong";
-            this.editFormPhanCong.Size = new System.Drawing.Size(1102, 544);
+            this.editFormPhanCong.Size = new System.Drawing.Size(1096, 525);
             this.editFormPhanCong.TabIndex = 2;
             // 
             // tabThongKeNhanVien
@@ -1725,7 +1729,7 @@
             this.tabThongKeNhanVien.Controls.Add(this.editFormThongKeNhanVien);
             this.tabThongKeNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("tabThongKeNhanVien.ImageOptions.SvgImage")));
             this.tabThongKeNhanVien.Name = "tabThongKeNhanVien";
-            this.tabThongKeNhanVien.Size = new System.Drawing.Size(1102, 544);
+            this.tabThongKeNhanVien.Size = new System.Drawing.Size(1096, 525);
             this.tabThongKeNhanVien.Text = "Thống kê nhân viên";
             // 
             // editFormThongKeNhanVien
@@ -1739,8 +1743,9 @@
             this.editFormNhanVien.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
             this.editFormThongKeNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormThongKeNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.editFormThongKeNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editFormThongKeNhanVien.Name = "editFormThongKeNhanVien";
-            this.editFormThongKeNhanVien.Size = new System.Drawing.Size(1102, 544);
+            this.editFormThongKeNhanVien.Size = new System.Drawing.Size(1096, 525);
             this.editFormThongKeNhanVien.TabIndex = 2;
             // 
             // navKho
@@ -1759,7 +1764,6 @@
             // 
             // tabKho
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabKho, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabKho, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabKho, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabKho, "");
@@ -1824,7 +1828,6 @@
             // 
             // tabSanPham
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabSanPham, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabSanPham, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabSanPham, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabSanPham, "");
@@ -1905,7 +1908,6 @@
             // 
             // tabKhuyenMai
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabKhuyenMai, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabKhuyenMai, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabKhuyenMai, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabKhuyenMai, "");
@@ -1986,7 +1988,6 @@
             // 
             // tabKhachHang
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabKhachHang, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabKhachHang, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabKhachHang, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabKhachHang, "");
@@ -2051,7 +2052,6 @@
             // 
             // tabHoaDon
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabHoaDon, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabHoaDon, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabHoaDon, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabHoaDon, "");
@@ -2132,7 +2132,6 @@
             // 
             // tabChiNhanh
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabChiNhanh, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabChiNhanh, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabChiNhanh, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabChiNhanh, "");
@@ -2213,7 +2212,6 @@
             // 
             // tabNhaCungCap
             // 
-            this.editFormTaiKhoanNhanVien.SetBoundPropertyName(this.tabNhaCungCap, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhaCungCap, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tabNhaCungCap, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabNhaCungCap, "");
