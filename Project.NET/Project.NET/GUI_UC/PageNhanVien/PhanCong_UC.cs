@@ -9,18 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project.NET.Forms
+namespace Project.NET.GUI_UC
 {
-    public partial class UCNhanVienUpdate : DevExpress.XtraEditors.XtraUserControl
+    public partial class PhanCong_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        public UCNhanVienUpdate()
+        public PhanCong_UC()
         {
             InitializeComponent();
-        }
-
-        private void simpleButton5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
