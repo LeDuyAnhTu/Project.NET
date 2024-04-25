@@ -1409,7 +1409,7 @@
             this.tabPageDoanhThuYear.Controls.Add(this.chartyear);
             this.tabPageDoanhThuYear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("tabPageDoanhThuYear.ImageOptions.SvgImage")));
             this.tabPageDoanhThuYear.Name = "tabPageDoanhThuYear";
-            this.tabPageDoanhThuYear.Size = new System.Drawing.Size(1102, 534);
+            this.tabPageDoanhThuYear.Size = new System.Drawing.Size(1096, 525);
             this.tabPageDoanhThuYear.Text = "Doanh thu năm";
             // 
             // chartyear
@@ -1431,7 +1431,7 @@
             // 
             this.chartyear.Panel2.Controls.Add(this.chartDoanhThuNam);
             this.chartyear.Panel2.Text = "Panel2";
-            this.chartyear.Size = new System.Drawing.Size(1102, 534);
+            this.chartyear.Size = new System.Drawing.Size(1096, 525);
             this.chartyear.SplitterPosition = 494;
             this.chartyear.TabIndex = 3;
             // 
@@ -1443,7 +1443,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(494, 534);
+            this.groupControl1.Size = new System.Drawing.Size(494, 525);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Lọc kết quả tìm kiếm";
             // 
@@ -1461,7 +1461,7 @@
             this.tablePanel6.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 122F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel6.Size = new System.Drawing.Size(490, 504);
+            this.tablePanel6.Size = new System.Drawing.Size(490, 495);
             this.tablePanel6.TabIndex = 1;
             this.tablePanel6.UseSkinIndents = true;
             // 
@@ -1587,7 +1587,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.tablePanel6.SetRow(this.dataGridView1, 1);
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(460, 353);
+            this.dataGridView1.Size = new System.Drawing.Size(460, 344);
             this.dataGridView1.TabIndex = 0;
             // 
             // chartDoanhThuNam
@@ -1605,7 +1605,7 @@
             series2.View = lineSeriesView1;
             this.chartDoanhThuNam.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-            this.chartDoanhThuNam.Size = new System.Drawing.Size(596, 534);
+            this.chartDoanhThuNam.Size = new System.Drawing.Size(590, 525);
             this.chartDoanhThuNam.TabIndex = 0;
             // 
             // navBaoCao
