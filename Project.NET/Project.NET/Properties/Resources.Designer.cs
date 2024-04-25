@@ -81,6 +81,16 @@ namespace Project.NET.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage card_logo {
+            get {
+                object obj = ResourceManager.GetObject("card_logo", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap column2_32x32 {
@@ -106,6 +116,16 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap horizontalgridlinesminor_32x32 {
             get {
                 object obj = ResourceManager.GetObject("horizontalgridlinesminor_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loading_logo {
+            get {
+                object obj = ResourceManager.GetObject("loading_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
