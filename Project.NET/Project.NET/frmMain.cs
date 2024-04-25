@@ -6,6 +6,7 @@ using DevExpress.XtraTab;
 using DevExpress.XtraWaitForm;
 using Project.NET.Forms;
 using Project.NET.GUI_UC;
+using Project.NET.GUI_UC.PageKho;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,7 +50,7 @@ namespace Project.NET
         private BaoCao_UC baoCao_UC = null;
         private PhanCong_UC phanCong_UC = null;
         private CaLam_UC caLam_UC = null;
-
+        private Kho_UC kho_UC = null;
         /// <summary>
         /// Tải form
         /// </summary>
@@ -123,7 +124,7 @@ namespace Project.NET
                         break;
                     case "btnKho":
                         nafContent.SelectedPage = navKho;
-                        //LoadUserControl(kho_UC, typeof(Kho_UC), editFormKho);
+                        LoadUserControl(kho_UC, typeof(Kho_UC), editFormKho);
                         //LoadUserControl(thongKeKho_UC, typeof(ThongKeKho_UC), editFormThongKeKho);
                         break;
                     case "btnSanPham":
@@ -179,6 +180,7 @@ namespace Project.NET
             {
                 userControl = (UserControl)Activator.CreateInstance(type);
                 userControl.Dock = DockStyle.Fill;
+                container.Dock = DockStyle.Fill;
                 container.Controls.Add(userControl);
             }
         }

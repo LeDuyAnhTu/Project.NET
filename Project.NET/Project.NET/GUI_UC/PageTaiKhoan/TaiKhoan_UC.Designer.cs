@@ -40,6 +40,10 @@
             this.cboKhuVuc = new DevExpress.XtraEditors.LookUpEdit();
             this.cboChiNhanh = new DevExpress.XtraEditors.LookUpEdit();
             this.cboNhanVien = new DevExpress.XtraEditors.LookUpEdit();
+            this.btnThem1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCapNhat1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLamMoi1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXoa1 = new DevExpress.XtraEditors.SimpleButton();
             this.groupLayoutNhanVien = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutTxtHoTen = new DevExpress.XtraLayout.LayoutControlItem();
@@ -51,16 +55,12 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.labelControl = new DevExpress.XtraEditors.LabelControl();
-            this.btnXoa1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThem1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnLamMoi1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCapNhat1 = new DevExpress.XtraEditors.SimpleButton();
             this.layoutGroupThaoTacCSDL1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.labelControl = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).BeginInit();
@@ -229,6 +229,146 @@
             this.cboNhanVien.StyleController = this.layoutNhanVien;
             this.cboNhanVien.TabIndex = 14;
             // 
+            // btnThem1
+            // 
+            this.btnThem1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThem1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnThem1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThem1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnThem1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnThem1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnThem1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnThem1.AppearanceDisabled.Options.UseFont = true;
+            this.btnThem1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnThem1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThem1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThem1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThem1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnThem1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnThem1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnThem1.AppearanceHovered.Options.UseFont = true;
+            this.btnThem1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnThem1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThem1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThem1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnThem1.AppearancePressed.Options.UseBackColor = true;
+            this.btnThem1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnThem1.AppearancePressed.Options.UseFont = true;
+            this.btnThem1.AppearancePressed.Options.UseForeColor = true;
+            this.btnThem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem1.ImageOptions.Image")));
+            this.btnThem1.Location = new System.Drawing.Point(36, 357);
+            this.btnThem1.Name = "btnThem1";
+            this.btnThem1.Size = new System.Drawing.Size(317, 36);
+            this.btnThem1.StyleController = this.layoutNhanVien;
+            this.btnThem1.TabIndex = 16;
+            this.btnThem1.Text = "Thêm";
+            // 
+            // btnCapNhat1
+            // 
+            this.btnCapNhat1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCapNhat1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCapNhat1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCapNhat1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnCapNhat1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseFont = true;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnCapNhat1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCapNhat1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCapNhat1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCapNhat1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnCapNhat1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnCapNhat1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnCapNhat1.AppearanceHovered.Options.UseFont = true;
+            this.btnCapNhat1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnCapNhat1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCapNhat1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCapNhat1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCapNhat1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnCapNhat1.AppearancePressed.Options.UseBackColor = true;
+            this.btnCapNhat1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnCapNhat1.AppearancePressed.Options.UseFont = true;
+            this.btnCapNhat1.AppearancePressed.Options.UseForeColor = true;
+            this.btnCapNhat1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat1.ImageOptions.Image")));
+            this.btnCapNhat1.Location = new System.Drawing.Point(357, 357);
+            this.btnCapNhat1.Name = "btnCapNhat1";
+            this.btnCapNhat1.Size = new System.Drawing.Size(318, 36);
+            this.btnCapNhat1.StyleController = this.layoutNhanVien;
+            this.btnCapNhat1.TabIndex = 17;
+            this.btnCapNhat1.Text = "Cập nhật";
+            // 
+            // btnLamMoi1
+            // 
+            this.btnLamMoi1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLamMoi1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnLamMoi1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLamMoi1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnLamMoi1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseFont = true;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnLamMoi1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLamMoi1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLamMoi1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLamMoi1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnLamMoi1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnLamMoi1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnLamMoi1.AppearanceHovered.Options.UseFont = true;
+            this.btnLamMoi1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnLamMoi1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLamMoi1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLamMoi1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLamMoi1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnLamMoi1.AppearancePressed.Options.UseBackColor = true;
+            this.btnLamMoi1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnLamMoi1.AppearancePressed.Options.UseFont = true;
+            this.btnLamMoi1.AppearancePressed.Options.UseForeColor = true;
+            this.btnLamMoi1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi1.ImageOptions.Image")));
+            this.btnLamMoi1.Location = new System.Drawing.Point(36, 397);
+            this.btnLamMoi1.Name = "btnLamMoi1";
+            this.btnLamMoi1.Size = new System.Drawing.Size(317, 36);
+            this.btnLamMoi1.StyleController = this.layoutNhanVien;
+            this.btnLamMoi1.TabIndex = 19;
+            this.btnLamMoi1.Text = "Làm Mới";
+            // 
+            // btnXoa1
+            // 
+            this.btnXoa1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoa1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnXoa1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXoa1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnXoa1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnXoa1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnXoa1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnXoa1.AppearanceDisabled.Options.UseFont = true;
+            this.btnXoa1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnXoa1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoa1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnXoa1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXoa1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnXoa1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnXoa1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnXoa1.AppearanceHovered.Options.UseFont = true;
+            this.btnXoa1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnXoa1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoa1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnXoa1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXoa1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnXoa1.AppearancePressed.Options.UseBackColor = true;
+            this.btnXoa1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnXoa1.AppearancePressed.Options.UseFont = true;
+            this.btnXoa1.AppearancePressed.Options.UseForeColor = true;
+            this.btnXoa1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa1.ImageOptions.Image")));
+            this.btnXoa1.Location = new System.Drawing.Point(357, 397);
+            this.btnXoa1.Name = "btnXoa1";
+            this.btnXoa1.Size = new System.Drawing.Size(318, 36);
+            this.btnXoa1.StyleController = this.layoutNhanVien;
+            this.btnXoa1.TabIndex = 20;
+            this.btnXoa1.Text = "Xóa";
+            // 
             // groupLayoutNhanVien
             // 
             this.groupLayoutNhanVien.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupLayoutNhanVien.CaptionImageOptions.Image")));
@@ -352,168 +492,6 @@
             this.layoutControlItem2.Text = "Khu Vực:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(112, 32);
             // 
-            // labelControl
-            // 
-            this.labelControl.AllowHtmlString = true;
-            this.labelControl.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.labelControl.Appearance.Options.UseFont = true;
-            this.labelControl.Appearance.Options.UseForeColor = true;
-            this.labelControl.Appearance.Options.UseTextOptions = true;
-            this.labelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
-            this.labelControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
-            this.labelControl.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.labelControl.LineVisible = true;
-            this.labelControl.Location = new System.Drawing.Point(0, 0);
-            this.labelControl.Name = "labelControl";
-            this.labelControl.Padding = new System.Windows.Forms.Padding(10, 5, 0, 0);
-            this.labelControl.Size = new System.Drawing.Size(711, 33);
-            this.labelControl.TabIndex = 5;
-            this.labelControl.Text = "Tài khoản";
-            // 
-            // btnXoa1
-            // 
-            this.btnXoa1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnXoa1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnXoa1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnXoa1.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnXoa1.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnXoa1.AppearanceDisabled.Options.UseFont = true;
-            this.btnXoa1.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnXoa1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnXoa1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnXoa1.AppearanceHovered.Options.UseBackColor = true;
-            this.btnXoa1.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnXoa1.AppearanceHovered.Options.UseFont = true;
-            this.btnXoa1.AppearanceHovered.Options.UseForeColor = true;
-            this.btnXoa1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnXoa1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnXoa1.AppearancePressed.Options.UseBackColor = true;
-            this.btnXoa1.AppearancePressed.Options.UseBorderColor = true;
-            this.btnXoa1.AppearancePressed.Options.UseFont = true;
-            this.btnXoa1.AppearancePressed.Options.UseForeColor = true;
-            this.btnXoa1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image3")));
-            this.btnXoa1.Location = new System.Drawing.Point(357, 397);
-            this.btnXoa1.Name = "btnXoa1";
-            this.btnXoa1.Size = new System.Drawing.Size(318, 36);
-            this.btnXoa1.StyleController = this.layoutNhanVien;
-            this.btnXoa1.TabIndex = 20;
-            this.btnXoa1.Text = "Xóa";
-            // 
-            // btnThem1
-            // 
-            this.btnThem1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThem1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnThem1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnThem1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnThem1.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnThem1.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnThem1.AppearanceDisabled.Options.UseFont = true;
-            this.btnThem1.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnThem1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnThem1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnThem1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnThem1.AppearanceHovered.Options.UseBackColor = true;
-            this.btnThem1.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnThem1.AppearanceHovered.Options.UseFont = true;
-            this.btnThem1.AppearanceHovered.Options.UseForeColor = true;
-            this.btnThem1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnThem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnThem1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnThem1.AppearancePressed.Options.UseBackColor = true;
-            this.btnThem1.AppearancePressed.Options.UseBorderColor = true;
-            this.btnThem1.AppearancePressed.Options.UseFont = true;
-            this.btnThem1.AppearancePressed.Options.UseForeColor = true;
-            this.btnThem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnThem1.Location = new System.Drawing.Point(36, 357);
-            this.btnThem1.Name = "btnThem1";
-            this.btnThem1.Size = new System.Drawing.Size(317, 36);
-            this.btnThem1.StyleController = this.layoutNhanVien;
-            this.btnThem1.TabIndex = 16;
-            this.btnThem1.Text = "Thêm";
-            // 
-            // btnLamMoi1
-            // 
-            this.btnLamMoi1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnLamMoi1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnLamMoi1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnLamMoi1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnLamMoi1.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnLamMoi1.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnLamMoi1.AppearanceDisabled.Options.UseFont = true;
-            this.btnLamMoi1.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnLamMoi1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnLamMoi1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLamMoi1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnLamMoi1.AppearanceHovered.Options.UseBackColor = true;
-            this.btnLamMoi1.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnLamMoi1.AppearanceHovered.Options.UseFont = true;
-            this.btnLamMoi1.AppearanceHovered.Options.UseForeColor = true;
-            this.btnLamMoi1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnLamMoi1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLamMoi1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnLamMoi1.AppearancePressed.Options.UseBackColor = true;
-            this.btnLamMoi1.AppearancePressed.Options.UseBorderColor = true;
-            this.btnLamMoi1.AppearancePressed.Options.UseFont = true;
-            this.btnLamMoi1.AppearancePressed.Options.UseForeColor = true;
-            this.btnLamMoi1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image2")));
-            this.btnLamMoi1.Location = new System.Drawing.Point(36, 397);
-            this.btnLamMoi1.Name = "btnLamMoi1";
-            this.btnLamMoi1.Size = new System.Drawing.Size(317, 36);
-            this.btnLamMoi1.StyleController = this.layoutNhanVien;
-            this.btnLamMoi1.TabIndex = 19;
-            this.btnLamMoi1.Text = "Làm Mới";
-            // 
-            // btnCapNhat1
-            // 
-            this.btnCapNhat1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCapNhat1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnCapNhat1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnCapNhat1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnCapNhat1.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnCapNhat1.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnCapNhat1.AppearanceDisabled.Options.UseFont = true;
-            this.btnCapNhat1.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnCapNhat1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCapNhat1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCapNhat1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnCapNhat1.AppearanceHovered.Options.UseBackColor = true;
-            this.btnCapNhat1.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnCapNhat1.AppearanceHovered.Options.UseFont = true;
-            this.btnCapNhat1.AppearanceHovered.Options.UseForeColor = true;
-            this.btnCapNhat1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCapNhat1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCapNhat1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnCapNhat1.AppearancePressed.Options.UseBackColor = true;
-            this.btnCapNhat1.AppearancePressed.Options.UseBorderColor = true;
-            this.btnCapNhat1.AppearancePressed.Options.UseFont = true;
-            this.btnCapNhat1.AppearancePressed.Options.UseForeColor = true;
-            this.btnCapNhat1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image1")));
-            this.btnCapNhat1.Location = new System.Drawing.Point(357, 357);
-            this.btnCapNhat1.Name = "btnCapNhat1";
-            this.btnCapNhat1.Size = new System.Drawing.Size(318, 36);
-            this.btnCapNhat1.StyleController = this.layoutNhanVien;
-            this.btnCapNhat1.TabIndex = 17;
-            this.btnCapNhat1.Text = "Cập nhật";
-            // 
             // layoutGroupThaoTacCSDL1
             // 
             this.layoutGroupThaoTacCSDL1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutGroupThaoTacCSDL1.CaptionImageOptions.Image")));
@@ -579,6 +557,28 @@
             this.layoutControlItem15.Text = "layoutControlItem14";
             this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem15.TextVisible = false;
+            // 
+            // labelControl
+            // 
+            this.labelControl.AllowHtmlString = true;
+            this.labelControl.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.labelControl.Appearance.Options.UseFont = true;
+            this.labelControl.Appearance.Options.UseForeColor = true;
+            this.labelControl.Appearance.Options.UseTextOptions = true;
+            this.labelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.labelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.labelControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelControl.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.labelControl.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.labelControl.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.labelControl.LineVisible = true;
+            this.labelControl.Location = new System.Drawing.Point(0, 0);
+            this.labelControl.Name = "labelControl";
+            this.labelControl.Padding = new System.Windows.Forms.Padding(10, 5, 0, 0);
+            this.labelControl.Size = new System.Drawing.Size(711, 33);
+            this.labelControl.TabIndex = 5;
+            this.labelControl.Text = "Tài Khoản";
             // 
             // TaiKhoan_UC
             // 
