@@ -115,6 +115,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI_UC\PageKho\Kho_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageKho\Kho_UC.Designer.cs">
+      <DependentUpon>Kho_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageNhanVien\CaLam_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\Loading_UC.resx">
       <DependentUpon>Loading_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKho\Kho_UC.resx">
+      <DependentUpon>Kho_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\CaLam_UC.resx">
       <DependentUpon>CaLam_UC.cs</DependentUpon>
@@ -289,6 +298,7 @@
   <ItemGroup>
     <None Include="Resources\loading_logo.gif" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -38,14 +38,11 @@
             this.txtNgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.txtSoDienThoai = new DevExpress.XtraEditors.TextEdit();
             this.txtCCCD = new DevExpress.XtraEditors.TextEdit();
-            this.cboChiNhanh = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.btnCapNhat = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
-            this.cboNhanVien = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtTenViTriChucVuNhanVien = new DevExpress.XtraEditors.TextEdit();
-            this.cboCaLamViec = new DevExpress.XtraEditors.ComboBoxEdit();
             this.chThuNam = new DevExpress.XtraEditors.CheckEdit();
             this.ckThuHai = new DevExpress.XtraEditors.CheckEdit();
             this.ckThuBa = new DevExpress.XtraEditors.CheckEdit();
@@ -85,6 +82,9 @@
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cboCaLamViec = new DevExpress.XtraEditors.LookUpEdit();
+            this.cboNhanVien = new DevExpress.XtraEditors.LookUpEdit();
+            this.cboChiNhanh = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhMucPCCLNV)).BeginInit();
@@ -97,10 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDienThoai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCCCD.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenViTriChucVuNhanVien.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chThuNam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuHai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuBa.Properties)).BeginInit();
@@ -140,6 +137,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -151,14 +151,11 @@
             this.layoutNhanVien.Controls.Add(this.txtNgaySinh);
             this.layoutNhanVien.Controls.Add(this.txtSoDienThoai);
             this.layoutNhanVien.Controls.Add(this.txtCCCD);
-            this.layoutNhanVien.Controls.Add(this.cboChiNhanh);
             this.layoutNhanVien.Controls.Add(this.btnThem);
             this.layoutNhanVien.Controls.Add(this.btnCapNhat);
             this.layoutNhanVien.Controls.Add(this.btnXoa);
             this.layoutNhanVien.Controls.Add(this.btnLamMoi);
-            this.layoutNhanVien.Controls.Add(this.cboNhanVien);
             this.layoutNhanVien.Controls.Add(this.txtTenViTriChucVuNhanVien);
-            this.layoutNhanVien.Controls.Add(this.cboCaLamViec);
             this.layoutNhanVien.Controls.Add(this.chThuNam);
             this.layoutNhanVien.Controls.Add(this.ckThuHai);
             this.layoutNhanVien.Controls.Add(this.ckThuBa);
@@ -168,6 +165,9 @@
             this.layoutNhanVien.Controls.Add(this.ckChuNhat);
             this.layoutNhanVien.Controls.Add(this.txtGioBD);
             this.layoutNhanVien.Controls.Add(this.txtGioKT);
+            this.layoutNhanVien.Controls.Add(this.cboCaLamViec);
+            this.layoutNhanVien.Controls.Add(this.cboNhanVien);
+            this.layoutNhanVien.Controls.Add(this.cboChiNhanh);
             this.layoutNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutNhanVien.Location = new System.Drawing.Point(0, 0);
             this.layoutNhanVien.Name = "layoutNhanVien";
@@ -264,32 +264,6 @@
             this.txtCCCD.Size = new System.Drawing.Size(310, 26);
             this.txtCCCD.StyleController = this.layoutNhanVien;
             this.txtCCCD.TabIndex = 11;
-            // 
-            // cboChiNhanh
-            // 
-            this.cboChiNhanh.Location = new System.Drawing.Point(173, 104);
-            this.cboChiNhanh.Name = "cboChiNhanh";
-            this.cboChiNhanh.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.Appearance.Options.UseFont = true;
-            this.cboChiNhanh.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cboChiNhanh.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cboChiNhanh.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cboChiNhanh.Properties.AppearanceItemDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.AppearanceItemDisabled.Options.UseFont = true;
-            this.cboChiNhanh.Properties.AppearanceItemHighlight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.AppearanceItemHighlight.Options.UseFont = true;
-            this.cboChiNhanh.Properties.AppearanceItemSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.AppearanceItemSelected.Options.UseFont = true;
-            this.cboChiNhanh.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboChiNhanh.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cboChiNhanh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboChiNhanh.Size = new System.Drawing.Size(310, 26);
-            this.cboChiNhanh.StyleController = this.layoutNhanVien;
-            this.cboChiNhanh.TabIndex = 13;
             // 
             // btnThem
             // 
@@ -427,32 +401,6 @@
             this.btnLamMoi.TabIndex = 19;
             this.btnLamMoi.Text = "Làm Mới";
             // 
-            // cboNhanVien
-            // 
-            this.cboNhanVien.Location = new System.Drawing.Point(173, 140);
-            this.cboNhanVien.Name = "cboNhanVien";
-            this.cboNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.Appearance.Options.UseFont = true;
-            this.cboNhanVien.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cboNhanVien.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cboNhanVien.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cboNhanVien.Properties.AppearanceItemDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.AppearanceItemDisabled.Options.UseFont = true;
-            this.cboNhanVien.Properties.AppearanceItemHighlight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.AppearanceItemHighlight.Options.UseFont = true;
-            this.cboNhanVien.Properties.AppearanceItemSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.AppearanceItemSelected.Options.UseFont = true;
-            this.cboNhanVien.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cboNhanVien.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cboNhanVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboNhanVien.Size = new System.Drawing.Size(310, 26);
-            this.cboNhanVien.StyleController = this.layoutNhanVien;
-            this.cboNhanVien.TabIndex = 5;
-            // 
             // txtTenViTriChucVuNhanVien
             // 
             this.txtTenViTriChucVuNhanVien.Location = new System.Drawing.Point(173, 176);
@@ -463,32 +411,6 @@
             this.txtTenViTriChucVuNhanVien.Size = new System.Drawing.Size(310, 26);
             this.txtTenViTriChucVuNhanVien.StyleController = this.layoutNhanVien;
             this.txtTenViTriChucVuNhanVien.TabIndex = 14;
-            // 
-            // cboCaLamViec
-            // 
-            this.cboCaLamViec.Location = new System.Drawing.Point(648, 104);
-            this.cboCaLamViec.Name = "cboCaLamViec";
-            this.cboCaLamViec.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.Appearance.Options.UseFont = true;
-            this.cboCaLamViec.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.cboCaLamViec.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.cboCaLamViec.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cboCaLamViec.Properties.AppearanceItemDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.AppearanceItemDisabled.Options.UseFont = true;
-            this.cboCaLamViec.Properties.AppearanceItemHighlight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.AppearanceItemHighlight.Options.UseFont = true;
-            this.cboCaLamViec.Properties.AppearanceItemSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.AppearanceItemSelected.Options.UseFont = true;
-            this.cboCaLamViec.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCaLamViec.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.cboCaLamViec.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboCaLamViec.Size = new System.Drawing.Size(311, 26);
-            this.cboCaLamViec.StyleController = this.layoutNhanVien;
-            this.cboCaLamViec.TabIndex = 23;
             // 
             // chThuNam
             // 
@@ -573,8 +495,11 @@
             this.txtGioBD.Properties.EditFormat.FormatString = "d";
             this.txtGioBD.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtGioBD.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtGioBD.Properties.MaskSettings.Set("mask", "t");
+            this.txtGioBD.Properties.MaskSettings.Set("mask", "hh:mm tt");
+            this.txtGioBD.Properties.MaskSettings.Set("useAdvancingCaret", false);
+            this.txtGioBD.Properties.MaskSettings.Set("spinWithCarry", false);
             this.txtGioBD.Properties.ReadOnly = true;
+            this.txtGioBD.Properties.UseMaskAsDisplayFormat = true;
             this.txtGioBD.Size = new System.Drawing.Size(311, 26);
             this.txtGioBD.StyleController = this.layoutNhanVien;
             this.txtGioBD.TabIndex = 25;
@@ -599,7 +524,7 @@
             this.txtGioKT.Properties.EditFormat.FormatString = "d";
             this.txtGioKT.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtGioKT.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtGioKT.Properties.MaskSettings.Set("mask", "t");
+            this.txtGioKT.Properties.MaskSettings.Set("mask", "hh:mm tt");
             this.txtGioKT.Properties.ReadOnly = true;
             this.txtGioKT.Size = new System.Drawing.Size(311, 26);
             this.txtGioKT.StyleController = this.layoutNhanVien;
@@ -937,6 +862,72 @@
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem14.TextVisible = false;
             // 
+            // cboCaLamViec
+            // 
+            this.cboCaLamViec.Location = new System.Drawing.Point(648, 104);
+            this.cboCaLamViec.Name = "cboCaLamViec";
+            this.cboCaLamViec.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCaLamViec.Properties.Appearance.Options.UseFont = true;
+            this.cboCaLamViec.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCaLamViec.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cboCaLamViec.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCaLamViec.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cboCaLamViec.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCaLamViec.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cboCaLamViec.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCaLamViec.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cboCaLamViec.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboCaLamViec.Properties.NullText = "";
+            this.cboCaLamViec.Properties.PopupSizeable = false;
+            this.cboCaLamViec.Size = new System.Drawing.Size(311, 26);
+            this.cboCaLamViec.StyleController = this.layoutNhanVien;
+            this.cboCaLamViec.TabIndex = 23;
+            // 
+            // cboNhanVien
+            // 
+            this.cboNhanVien.Location = new System.Drawing.Point(173, 140);
+            this.cboNhanVien.Name = "cboNhanVien";
+            this.cboNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboNhanVien.Properties.Appearance.Options.UseFont = true;
+            this.cboNhanVien.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboNhanVien.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cboNhanVien.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboNhanVien.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cboNhanVien.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboNhanVien.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cboNhanVien.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboNhanVien.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cboNhanVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboNhanVien.Properties.NullText = "";
+            this.cboNhanVien.Properties.PopupSizeable = false;
+            this.cboNhanVien.Size = new System.Drawing.Size(310, 26);
+            this.cboNhanVien.StyleController = this.layoutNhanVien;
+            this.cboNhanVien.TabIndex = 5;
+            // 
+            // cboChiNhanh
+            // 
+            this.cboChiNhanh.Location = new System.Drawing.Point(173, 104);
+            this.cboChiNhanh.Name = "cboChiNhanh";
+            this.cboChiNhanh.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboChiNhanh.Properties.Appearance.Options.UseFont = true;
+            this.cboChiNhanh.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboChiNhanh.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cboChiNhanh.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboChiNhanh.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.cboChiNhanh.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboChiNhanh.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cboChiNhanh.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboChiNhanh.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cboChiNhanh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboChiNhanh.Properties.NullText = "";
+            this.cboChiNhanh.Properties.PopupSizeable = false;
+            this.cboChiNhanh.Size = new System.Drawing.Size(310, 26);
+            this.cboChiNhanh.StyleController = this.layoutNhanVien;
+            this.cboChiNhanh.TabIndex = 13;
+            // 
             // PhanCong_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -956,10 +947,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDienThoai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCCCD.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenViTriChucVuNhanVien.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chThuNam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuHai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuBa.Properties)).EndInit();
@@ -999,6 +987,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1014,7 +1005,6 @@
         private DevExpress.XtraEditors.DateEdit txtNgaySinh;
         private DevExpress.XtraEditors.TextEdit txtSoDienThoai;
         private DevExpress.XtraEditors.TextEdit txtCCCD;
-        private DevExpress.XtraEditors.ComboBoxEdit cboChiNhanh;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.SimpleButton btnCapNhat;
         private DevExpress.XtraEditors.SimpleButton btnXoa;
@@ -1035,10 +1025,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraEditors.ComboBoxEdit cboNhanVien;
         private DevExpress.XtraEditors.TextEdit txtTenViTriChucVuNhanVien;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.ComboBoxEdit cboCaLamViec;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
@@ -1061,5 +1049,8 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraEditors.TimeEdit txtGioBD;
         private DevExpress.XtraEditors.TimeEdit txtGioKT;
+        private DevExpress.XtraEditors.LookUpEdit cboCaLamViec;
+        private DevExpress.XtraEditors.LookUpEdit cboNhanVien;
+        private DevExpress.XtraEditors.LookUpEdit cboChiNhanh;
     }
 }
