@@ -1289,7 +1289,7 @@
             this.tabPageDoanhThuYear.Controls.Add(this.editFormThongKeYear);
             this.tabPageDoanhThuYear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("tabPageDoanhThuYear.ImageOptions.SvgImage")));
             this.tabPageDoanhThuYear.Name = "tabPageDoanhThuYear";
-            this.tabPageDoanhThuYear.Size = new System.Drawing.Size(1096, 535);
+            this.tabPageDoanhThuYear.Size = new System.Drawing.Size(1102, 544);
             this.tabPageDoanhThuYear.Text = "Doanh thu năm";
             // 
             // editFormThongKeYear
@@ -1304,7 +1304,7 @@
             this.editFormThongKeYear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormThongKeYear.Location = new System.Drawing.Point(0, 0);
             this.editFormThongKeYear.Name = "editFormThongKeYear";
-            this.editFormThongKeYear.Size = new System.Drawing.Size(1096, 535);
+            this.editFormThongKeYear.Size = new System.Drawing.Size(1102, 544);
             this.editFormThongKeYear.TabIndex = 1;
             // 
             // navBaoCao

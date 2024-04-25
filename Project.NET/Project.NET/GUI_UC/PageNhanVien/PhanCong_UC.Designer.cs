@@ -46,8 +46,6 @@
             this.cboNhanVien = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtTenViTriChucVuNhanVien = new DevExpress.XtraEditors.TextEdit();
             this.cboCaLamViec = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.txtGioBD = new DevExpress.XtraEditors.TextEdit();
-            this.txtGioKT = new DevExpress.XtraEditors.TextEdit();
             this.chThuNam = new DevExpress.XtraEditors.CheckEdit();
             this.ckThuHai = new DevExpress.XtraEditors.CheckEdit();
             this.ckThuBa = new DevExpress.XtraEditors.CheckEdit();
@@ -55,6 +53,8 @@
             this.ckThuNam = new DevExpress.XtraEditors.CheckEdit();
             this.chThuBay = new DevExpress.XtraEditors.CheckEdit();
             this.ckChuNhat = new DevExpress.XtraEditors.CheckEdit();
+            this.txtGioBD = new DevExpress.XtraEditors.TimeEdit();
+            this.txtGioKT = new DevExpress.XtraEditors.TimeEdit();
             this.groupLayoutNhanVien = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -101,8 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenViTriChucVuNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chThuNam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuHai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuBa.Properties)).BeginInit();
@@ -110,6 +108,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ckThuNam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chThuBay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckChuNhat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
@@ -159,8 +159,6 @@
             this.layoutNhanVien.Controls.Add(this.cboNhanVien);
             this.layoutNhanVien.Controls.Add(this.txtTenViTriChucVuNhanVien);
             this.layoutNhanVien.Controls.Add(this.cboCaLamViec);
-            this.layoutNhanVien.Controls.Add(this.txtGioBD);
-            this.layoutNhanVien.Controls.Add(this.txtGioKT);
             this.layoutNhanVien.Controls.Add(this.chThuNam);
             this.layoutNhanVien.Controls.Add(this.ckThuHai);
             this.layoutNhanVien.Controls.Add(this.ckThuBa);
@@ -168,6 +166,8 @@
             this.layoutNhanVien.Controls.Add(this.ckThuNam);
             this.layoutNhanVien.Controls.Add(this.chThuBay);
             this.layoutNhanVien.Controls.Add(this.ckChuNhat);
+            this.layoutNhanVien.Controls.Add(this.txtGioBD);
+            this.layoutNhanVien.Controls.Add(this.txtGioKT);
             this.layoutNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutNhanVien.Location = new System.Drawing.Point(0, 0);
             this.layoutNhanVien.Name = "layoutNhanVien";
@@ -490,52 +490,6 @@
             this.cboCaLamViec.StyleController = this.layoutNhanVien;
             this.cboCaLamViec.TabIndex = 23;
             // 
-            // txtGioBD
-            // 
-            this.txtGioBD.Location = new System.Drawing.Point(648, 140);
-            this.txtGioBD.Name = "txtGioBD";
-            this.txtGioBD.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.Appearance.Options.UseFont = true;
-            this.txtGioBD.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.txtGioBD.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.AppearanceFocused.Options.UseFont = true;
-            this.txtGioBD.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.txtGioBD.Properties.DisplayFormat.FormatString = "d";
-            this.txtGioBD.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioBD.Properties.EditFormat.FormatString = "d";
-            this.txtGioBD.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioBD.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtGioBD.Properties.MaskSettings.Set("mask", "t");
-            this.txtGioBD.Properties.ReadOnly = true;
-            this.txtGioBD.Size = new System.Drawing.Size(311, 26);
-            this.txtGioBD.StyleController = this.layoutNhanVien;
-            this.txtGioBD.TabIndex = 25;
-            // 
-            // txtGioKT
-            // 
-            this.txtGioKT.Location = new System.Drawing.Point(648, 176);
-            this.txtGioKT.Name = "txtGioKT";
-            this.txtGioKT.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.Appearance.Options.UseFont = true;
-            this.txtGioKT.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.txtGioKT.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.AppearanceFocused.Options.UseFont = true;
-            this.txtGioKT.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.txtGioKT.Properties.DisplayFormat.FormatString = "d";
-            this.txtGioKT.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioKT.Properties.EditFormat.FormatString = "d";
-            this.txtGioKT.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioKT.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtGioKT.Properties.MaskSettings.Set("mask", "t");
-            this.txtGioKT.Properties.ReadOnly = true;
-            this.txtGioKT.Size = new System.Drawing.Size(311, 26);
-            this.txtGioKT.StyleController = this.layoutNhanVien;
-            this.txtGioKT.TabIndex = 24;
-            // 
             // chThuNam
             // 
             this.chThuNam.Location = new System.Drawing.Point(736, 282);
@@ -598,6 +552,58 @@
             this.ckChuNhat.Size = new System.Drawing.Size(211, 20);
             this.ckChuNhat.StyleController = this.layoutNhanVien;
             this.ckChuNhat.TabIndex = 33;
+            // 
+            // txtGioBD
+            // 
+            this.txtGioBD.EditValue = null;
+            this.txtGioBD.Location = new System.Drawing.Point(648, 140);
+            this.txtGioBD.Name = "txtGioBD";
+            this.txtGioBD.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.Appearance.Options.UseFont = true;
+            this.txtGioBD.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.txtGioBD.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtGioBD.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.txtGioBD.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtGioBD.Properties.DisplayFormat.FormatString = "d";
+            this.txtGioBD.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioBD.Properties.EditFormat.FormatString = "d";
+            this.txtGioBD.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioBD.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtGioBD.Properties.MaskSettings.Set("mask", "t");
+            this.txtGioBD.Properties.ReadOnly = true;
+            this.txtGioBD.Size = new System.Drawing.Size(311, 26);
+            this.txtGioBD.StyleController = this.layoutNhanVien;
+            this.txtGioBD.TabIndex = 25;
+            // 
+            // txtGioKT
+            // 
+            this.txtGioKT.EditValue = null;
+            this.txtGioKT.Location = new System.Drawing.Point(648, 176);
+            this.txtGioKT.Name = "txtGioKT";
+            this.txtGioKT.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.Appearance.Options.UseFont = true;
+            this.txtGioKT.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.txtGioKT.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtGioKT.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.txtGioKT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtGioKT.Properties.DisplayFormat.FormatString = "d";
+            this.txtGioKT.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioKT.Properties.EditFormat.FormatString = "d";
+            this.txtGioKT.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioKT.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtGioKT.Properties.MaskSettings.Set("mask", "t");
+            this.txtGioKT.Properties.ReadOnly = true;
+            this.txtGioKT.Size = new System.Drawing.Size(311, 26);
+            this.txtGioKT.StyleController = this.layoutNhanVien;
+            this.txtGioKT.TabIndex = 24;
             // 
             // groupLayoutNhanVien
             // 
@@ -954,8 +960,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenViTriChucVuNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chThuNam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuHai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuBa.Properties)).EndInit();
@@ -963,6 +967,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ckThuNam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chThuBay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckChuNhat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
@@ -1037,8 +1043,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
-        private DevExpress.XtraEditors.TextEdit txtGioBD;
-        private DevExpress.XtraEditors.TextEdit txtGioKT;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraEditors.CheckEdit chThuNam;
         private DevExpress.XtraEditors.CheckEdit ckThuHai;
@@ -1055,5 +1059,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem22;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraEditors.TimeEdit txtGioBD;
+        private DevExpress.XtraEditors.TimeEdit txtGioKT;
     }
 }
