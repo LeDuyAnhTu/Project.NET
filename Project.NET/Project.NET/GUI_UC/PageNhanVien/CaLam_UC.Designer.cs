@@ -288,6 +288,9 @@
             this.cboCaLamViec.Properties.AppearanceFocused.Options.UseFont = true;
             this.cboCaLamViec.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaLamViec.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cboCaLamViec.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.cboCaLamViec.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.cboCaLamViec.Properties.MaskSettings.Set("mask", "\\w+");
             this.cboCaLamViec.Size = new System.Drawing.Size(640, 26);
             this.cboCaLamViec.StyleController = this.layoutNhanVien;
             this.cboCaLamViec.TabIndex = 23;
@@ -312,8 +315,7 @@
             this.txtGioBD.Properties.EditFormat.FormatString = "d";
             this.txtGioBD.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtGioBD.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtGioBD.Properties.Mask.EditMask = "d";
-            this.txtGioBD.Properties.MaskSettings.Set("mask", "d");
+            this.txtGioBD.Properties.MaskSettings.Set("mask", "t");
             this.txtGioBD.Size = new System.Drawing.Size(640, 26);
             this.txtGioBD.StyleController = this.layoutNhanVien;
             this.txtGioBD.TabIndex = 25;
@@ -338,7 +340,7 @@
             this.txtGioKT.Properties.EditFormat.FormatString = "d";
             this.txtGioKT.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtGioKT.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtGioKT.Properties.MaskSettings.Set("mask", "d");
+            this.txtGioKT.Properties.MaskSettings.Set("mask", "t");
             this.txtGioKT.Properties.UseReadOnlyAppearance = false;
             this.txtGioKT.Size = new System.Drawing.Size(640, 26);
             this.txtGioKT.StyleController = this.layoutNhanVien;
