@@ -222,3 +222,4 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PhanCong_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.CaLam_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.Kho_UC.resources
