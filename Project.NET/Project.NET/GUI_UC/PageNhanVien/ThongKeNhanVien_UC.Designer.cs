@@ -773,7 +773,6 @@
             // 
             // navPageTongNhanVienTheoPhongBan
             // 
-            this.navPageTongNhanVienTheoPhongBan.Caption = "navPageTongNhanVienTheoPhongBan";
             this.navPageTongNhanVienTheoPhongBan.Controls.Add(this.chartTongNhanVienTheoPhongBan);
             this.navPageTongNhanVienTheoPhongBan.Controls.Add(this.labelControl4);
             this.navPageTongNhanVienTheoPhongBan.Name = "navPageTongNhanVienTheoPhongBan";
