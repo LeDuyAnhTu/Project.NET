@@ -40,13 +40,15 @@ namespace Project.NET
             btnBaoCao.Click += Button_Click;
             btnThongKe.Click += Button_Click;
         }
+        private UserControl currentControl = null;
         private NhanVien_UC nhanVien_UC = null;
         private ThongKeNhanVien_UC thongKeNhanVien_UC = null;
         private TaiKhoan_UC taiKhoan_UC = null;
         private ThongKeMonth_UC thongKeMonth_UC = null;
         private ThongKeYear_UC thongKeYear_UC = null;
         private BaoCao_UC baoCao_UC = null;
-        private UserControl currentControl = null;
+        private PhanCong_UC phanCong_UC = null;
+        private CaLam_UC caLam_UC = null;
 
         /// <summary>
         /// Tải form
@@ -116,8 +118,8 @@ namespace Project.NET
                         nafContent.SelectedPage = navNhanVien;
                         LoadUserControl(nhanVien_UC, typeof(NhanVien_UC), editFormNhanVien);
                         LoadUserControl(thongKeNhanVien_UC, typeof(ThongKeNhanVien_UC), editFormThongKeNhanVien);
-                        //LoadUserControl(caLam_UC, typeof(CaLam_UC), editFormCaLam);
-                        //LoadUserControl(phanCong_UC, typeof(PhanCong_UC), editFormPhanCong);
+                        LoadUserControl(caLam_UC, typeof(CaLam_UC), editFormCaLam);
+                        LoadUserControl(phanCong_UC, typeof(PhanCong_UC), editFormPhanCong);
                         break;
                     case "btnKho":
                         nafContent.SelectedPage = navKho;
