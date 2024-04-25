@@ -104,7 +104,7 @@
             this.tabNhapTTKho = new DevExpress.XtraTab.XtraTabPage();
             this.editFormKho = new DevExpress.XtraGrid.Views.Grid.EditFormUserControl();
             this.tabXemTTSanPhamTheoKhoCN = new DevExpress.XtraTab.XtraTabPage();
-            this.editFormKhoThongKe = new DevExpress.XtraGrid.Views.Grid.EditFormUserControl();
+            this.editFormThongKeKho = new DevExpress.XtraGrid.Views.Grid.EditFormUserControl();
             this.navSanPham = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabSanPham = new DevExpress.XtraTab.XtraTabControl();
             this.tabNhapTTSanPham = new DevExpress.XtraTab.XtraTabPage();
@@ -235,7 +235,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.nafMain, "");
             this.editFormNhanVien.SetBoundPropertyName(this.nafMain, "");
             this.editFormCaLam.SetBoundPropertyName(this.nafMain, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.nafMain, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.nafMain, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.nafMain, "");
             this.editFormKho.SetBoundPropertyName(this.nafMain, "");
             this.editFormPhanCong.SetBoundPropertyName(this.nafMain, "");
@@ -271,7 +271,7 @@
             this.editFormKho.SetBoundPropertyName(this.napLogin, "");
             this.editFormPhanCong.SetBoundPropertyName(this.napLogin, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.napLogin, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.napLogin, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.napLogin, "");
             this.napLogin.Controls.Add(this.tableLogin);
             this.napLogin.Margin = new System.Windows.Forms.Padding(0);
             this.napLogin.Name = "napLogin";
@@ -288,7 +288,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.tableLogin, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tableLogin, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tableLogin, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tableLogin, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tableLogin, "");
             this.editFormKho.SetBoundPropertyName(this.tableLogin, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tableLogin, "");
             this.tableLogin.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
@@ -315,7 +315,7 @@
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.layoutLogin, "");
             this.editFormPhanCong.SetBoundPropertyName(this.layoutLogin, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.layoutLogin, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.layoutLogin, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.layoutLogin, "");
             this.editFormKho.SetBoundPropertyName(this.layoutLogin, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.layoutLogin, "");
             this.editFormNhanVien.SetBoundPropertyName(this.layoutLogin, "");
@@ -353,7 +353,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.groupDangNhap, "");
             this.editFormCaLam.SetBoundPropertyName(this.groupDangNhap, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.groupDangNhap, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.groupDangNhap, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.groupDangNhap, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.groupDangNhap, "");
             this.editFormKho.SetBoundPropertyName(this.groupDangNhap, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.groupDangNhap, "");
@@ -373,7 +373,7 @@
             // 
             // controlsLogin
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.controlsLogin, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.controlsLogin, "");
             this.editFormKho.SetBoundPropertyName(this.controlsLogin, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.controlsLogin, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.controlsLogin, "");
@@ -406,7 +406,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.txtTenDangNhap, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.txtTenDangNhap, "");
             this.editFormPhanCong.SetBoundPropertyName(this.txtTenDangNhap, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.txtTenDangNhap, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.txtTenDangNhap, "");
             this.editFormKho.SetBoundPropertyName(this.txtTenDangNhap, "");
             this.txtTenDangNhap.EditValue = "";
             this.txtTenDangNhap.Location = new System.Drawing.Point(12, 34);
@@ -428,7 +428,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.txtMatKhau, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.txtMatKhau, "");
             this.editFormPhanCong.SetBoundPropertyName(this.txtMatKhau, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.txtMatKhau, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.txtMatKhau, "");
             this.editFormKho.SetBoundPropertyName(this.txtMatKhau, "");
             this.txtMatKhau.EditValue = "";
             this.txtMatKhau.Location = new System.Drawing.Point(12, 86);
@@ -444,7 +444,7 @@
             // txtGiuDangNhap
             // 
             this.editFormKho.SetBoundPropertyName(this.txtGiuDangNhap, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.txtGiuDangNhap, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.txtGiuDangNhap, "");
             this.editFormPhanCong.SetBoundPropertyName(this.txtGiuDangNhap, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.txtGiuDangNhap, "");
             this.editFormCaLam.SetBoundPropertyName(this.txtGiuDangNhap, "");
@@ -495,7 +495,7 @@
             this.editFormPhanCong.SetBoundPropertyName(this.btnDangNhap, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.btnDangNhap, "");
             this.editFormKho.SetBoundPropertyName(this.btnDangNhap, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnDangNhap, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnDangNhap, "");
             this.editFormBaoCao.SetBoundPropertyName(this.btnDangNhap, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnDangNhap, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.btnDangNhap, "");
@@ -590,7 +590,7 @@
             this.editFormThongKeYear.SetBoundPropertyName(this.pictureBox1, "");
             this.editFormPhanCong.SetBoundPropertyName(this.pictureBox1, "");
             this.editFormNhanVien.SetBoundPropertyName(this.pictureBox1, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.pictureBox1, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.pictureBox1, "");
             this.editFormKho.SetBoundPropertyName(this.pictureBox1, "");
             this.tableLogin.SetColumn(this.pictureBox1, 1);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -614,7 +614,7 @@
             this.editFormKho.SetBoundPropertyName(this.napMain, "");
             this.editFormPhanCong.SetBoundPropertyName(this.napMain, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.napMain, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.napMain, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.napMain, "");
             this.napMain.Controls.Add(this.tablePanel4);
             this.napMain.Margin = new System.Windows.Forms.Padding(0);
             this.napMain.Name = "napMain";
@@ -631,7 +631,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.tablePanel4, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tablePanel4, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tablePanel4, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tablePanel4, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tablePanel4, "");
             this.editFormKho.SetBoundPropertyName(this.tablePanel4, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tablePanel4, "");
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
@@ -655,7 +655,7 @@
             this.editFormPhanCong.SetBoundPropertyName(this.tileNavHeThong, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.tileNavHeThong, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tileNavHeThong, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tileNavHeThong, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tileNavHeThong, "");
             this.editFormCaLam.SetBoundPropertyName(this.tileNavHeThong, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tileNavHeThong, "");
             this.editFormBaoCao.SetBoundPropertyName(this.tileNavHeThong, "");
@@ -696,7 +696,7 @@
             this.editFormPhanCong.SetBoundPropertyName(this.DanhMucHeThong, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.DanhMucHeThong, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.DanhMucHeThong, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.DanhMucHeThong, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.DanhMucHeThong, "");
             this.editFormKho.SetBoundPropertyName(this.DanhMucHeThong, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.DanhMucHeThong, "");
             this.editFormNhanVien.SetBoundPropertyName(this.DanhMucHeThong, "");
@@ -736,7 +736,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.tableButtonsNavbar, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tableButtonsNavbar, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tableButtonsNavbar, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tableButtonsNavbar, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tableButtonsNavbar, "");
             this.editFormKho.SetBoundPropertyName(this.tableButtonsNavbar, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tableButtonsNavbar, "");
             this.tableButtonsNavbar.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
@@ -800,7 +800,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnNhaCungCap, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnNhaCungCap, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnNhaCungCap, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnNhaCungCap, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnNhaCungCap, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnNhaCungCap, "");
             this.tableButtonsNavbar.SetColumn(this.btnNhaCungCap, 0);
             this.btnNhaCungCap.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -840,7 +840,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnChiNhanh, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnChiNhanh, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnChiNhanh, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnChiNhanh, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnChiNhanh, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnChiNhanh, "");
             this.tableButtonsNavbar.SetColumn(this.btnChiNhanh, 0);
             this.btnChiNhanh.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -880,7 +880,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnHoaDon, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnHoaDon, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnHoaDon, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnHoaDon, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnHoaDon, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnHoaDon, "");
             this.tableButtonsNavbar.SetColumn(this.btnHoaDon, 0);
             this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -920,7 +920,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnKhachHang, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnKhachHang, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnKhachHang, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnKhachHang, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnKhachHang, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnKhachHang, "");
             this.tableButtonsNavbar.SetColumn(this.btnKhachHang, 0);
             this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -960,7 +960,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnKhuyenMai, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnKhuyenMai, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnKhuyenMai, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnKhuyenMai, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnKhuyenMai, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnKhuyenMai, "");
             this.tableButtonsNavbar.SetColumn(this.btnKhuyenMai, 0);
             this.btnKhuyenMai.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1000,7 +1000,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnSanPham, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnSanPham, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnSanPham, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnSanPham, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnSanPham, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnSanPham, "");
             this.tableButtonsNavbar.SetColumn(this.btnSanPham, 0);
             this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1041,7 +1041,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnKho, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnKho, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnKho, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnKho, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnKho, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnKho, "");
             this.tableButtonsNavbar.SetColumn(this.btnKho, 0);
             this.btnKho.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1082,7 +1082,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnTaiKhoan, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnTaiKhoan, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnTaiKhoan, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnTaiKhoan, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnTaiKhoan, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnTaiKhoan, "");
             this.tableButtonsNavbar.SetColumn(this.btnTaiKhoan, 0);
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1123,7 +1123,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnNhanVien, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnNhanVien, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnNhanVien, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnNhanVien, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnNhanVien, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnNhanVien, "");
             this.tableButtonsNavbar.SetColumn(this.btnNhanVien, 0);
             this.btnNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1173,7 +1173,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnThongKe, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnThongKe, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnThongKe, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnThongKe, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnThongKe, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnThongKe, "");
             this.tableButtonsNavbar.SetColumn(this.btnThongKe, 0);
             this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1214,7 +1214,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.btnBaoCao, "");
             this.editFormNhanVien.SetBoundPropertyName(this.btnBaoCao, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.btnBaoCao, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.btnBaoCao, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.btnBaoCao, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnBaoCao, "");
             this.tableButtonsNavbar.SetColumn(this.btnBaoCao, 0);
             this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1234,7 +1234,7 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.nafContent, "");
             this.editFormNhanVien.SetBoundPropertyName(this.nafContent, "");
             this.editFormCaLam.SetBoundPropertyName(this.nafContent, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.nafContent, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.nafContent, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.nafContent, "");
             this.editFormKho.SetBoundPropertyName(this.nafContent, "");
             this.editFormPhanCong.SetBoundPropertyName(this.nafContent, "");
@@ -1282,14 +1282,14 @@
             this.editFormKho.SetBoundPropertyName(this.navThongKe, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navThongKe, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navThongKe, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navThongKe, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navThongKe, "");
             this.navThongKe.Controls.Add(this.tabThongKe);
             this.navThongKe.Name = "navThongKe";
             this.navThongKe.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabThongKe
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabThongKe, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabThongKe, "");
             this.editFormKho.SetBoundPropertyName(this.tabThongKe, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabThongKe, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabThongKe, "");
@@ -1312,7 +1312,7 @@
             // tabPageDoanhThuMonth
             // 
             this.editFormKho.SetBoundPropertyName(this.tabPageDoanhThuMonth, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabPageDoanhThuMonth, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabPageDoanhThuMonth, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabPageDoanhThuMonth, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabPageDoanhThuMonth, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabPageDoanhThuMonth, "");
@@ -1331,7 +1331,7 @@
             // 
             this.editFormPhanCong.SetBoundPropertyName(this.editFormThongKeMonth, "");
             this.editFormNhanVien.SetBoundPropertyName(this.editFormThongKeMonth, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormThongKeMonth, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormThongKeMonth, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormThongKeMonth, "");
             this.editFormKho.SetBoundPropertyName(this.editFormThongKeMonth, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.editFormThongKeMonth, "");
@@ -1347,7 +1347,7 @@
             // tabPageDoanhThuYear
             // 
             this.editFormKho.SetBoundPropertyName(this.tabPageDoanhThuYear, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabPageDoanhThuYear, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabPageDoanhThuYear, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabPageDoanhThuYear, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabPageDoanhThuYear, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabPageDoanhThuYear, "");
@@ -1366,7 +1366,7 @@
             // 
             this.editFormPhanCong.SetBoundPropertyName(this.editFormThongKeYear, "");
             this.editFormNhanVien.SetBoundPropertyName(this.editFormThongKeYear, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormThongKeYear, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormThongKeYear, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormThongKeYear, "");
             this.editFormKho.SetBoundPropertyName(this.editFormThongKeYear, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormThongKeYear, "");
@@ -1390,14 +1390,14 @@
             this.editFormKho.SetBoundPropertyName(this.navBaoCao, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navBaoCao, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navBaoCao, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navBaoCao, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navBaoCao, "");
             this.navBaoCao.Controls.Add(this.tabBaoCao);
             this.navBaoCao.Name = "navBaoCao";
             this.navBaoCao.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabBaoCao
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabBaoCao, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabBaoCao, "");
             this.editFormKho.SetBoundPropertyName(this.tabBaoCao, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabBaoCao, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabBaoCao, "");
@@ -1419,7 +1419,7 @@
             // tabPageBaoCao
             // 
             this.editFormKho.SetBoundPropertyName(this.tabPageBaoCao, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabPageBaoCao, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabPageBaoCao, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabPageBaoCao, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabPageBaoCao, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabPageBaoCao, "");
@@ -1438,7 +1438,7 @@
             // 
             this.editFormPhanCong.SetBoundPropertyName(this.editFormBaoCao, "");
             this.editFormNhanVien.SetBoundPropertyName(this.editFormBaoCao, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormBaoCao, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormBaoCao, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormBaoCao, "");
             this.editFormKho.SetBoundPropertyName(this.editFormBaoCao, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormBaoCao, "");
@@ -1461,14 +1461,14 @@
             this.editFormKho.SetBoundPropertyName(this.navTaiKhoan, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navTaiKhoan, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navTaiKhoan, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navTaiKhoan, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navTaiKhoan, "");
             this.navTaiKhoan.Controls.Add(this.tabTaiKhoan);
             this.navTaiKhoan.Name = "navTaiKhoan";
             this.navTaiKhoan.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabTaiKhoan
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabTaiKhoan, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabTaiKhoan, "");
             this.editFormKho.SetBoundPropertyName(this.tabTaiKhoan, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabTaiKhoan, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabTaiKhoan, "");
@@ -1490,7 +1490,7 @@
             // tabSuaTTTaiKhoan
             // 
             this.editFormKho.SetBoundPropertyName(this.tabSuaTTTaiKhoan, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabSuaTTTaiKhoan, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabSuaTTTaiKhoan, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabSuaTTTaiKhoan, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabSuaTTTaiKhoan, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabSuaTTTaiKhoan, "");
@@ -1509,7 +1509,7 @@
             // 
             this.editFormPhanCong.SetBoundPropertyName(this.editFormTaiKhoan, "");
             this.editFormNhanVien.SetBoundPropertyName(this.editFormTaiKhoan, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormTaiKhoan, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormTaiKhoan, "");
             this.editFormBaoCao.SetBoundPropertyName(this.editFormTaiKhoan, "");
             this.editFormKho.SetBoundPropertyName(this.editFormTaiKhoan, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormTaiKhoan, "");
@@ -1528,7 +1528,7 @@
             this.editFormThongKeYear.SetBoundPropertyName(this.tileNavPane1, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tileNavPane1, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tileNavPane1, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tileNavPane1, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tileNavPane1, "");
             this.editFormCaLam.SetBoundPropertyName(this.tileNavPane1, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tileNavPane1, "");
             this.editFormBaoCao.SetBoundPropertyName(this.tileNavPane1, "");
@@ -1553,7 +1553,7 @@
             this.editFormThongKeYear.SetBoundPropertyName(this.tileNavPane2, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tileNavPane2, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tileNavPane2, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tileNavPane2, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tileNavPane2, "");
             this.editFormCaLam.SetBoundPropertyName(this.tileNavPane2, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tileNavPane2, "");
             this.editFormBaoCao.SetBoundPropertyName(this.tileNavPane2, "");
@@ -1578,7 +1578,7 @@
             this.editFormThongKeYear.SetBoundPropertyName(this.tileNavPane3, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tileNavPane3, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tileNavPane3, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tileNavPane3, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tileNavPane3, "");
             this.editFormCaLam.SetBoundPropertyName(this.tileNavPane3, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tileNavPane3, "");
             this.editFormBaoCao.SetBoundPropertyName(this.tileNavPane3, "");
@@ -1606,7 +1606,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.tablePanel3, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tablePanel3, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tablePanel3, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tablePanel3, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tablePanel3, "");
             this.editFormKho.SetBoundPropertyName(this.tablePanel3, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.tablePanel3, "");
             this.tablePanel3.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
@@ -1624,7 +1624,7 @@
             this.editFormPhanCong.SetBoundPropertyName(this.simpleButton11, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.simpleButton11, "");
             this.editFormKho.SetBoundPropertyName(this.simpleButton11, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.simpleButton11, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.simpleButton11, "");
             this.editFormBaoCao.SetBoundPropertyName(this.simpleButton11, "");
             this.editFormCaLam.SetBoundPropertyName(this.simpleButton11, "");
             this.editFormThongKeYear.SetBoundPropertyName(this.simpleButton11, "");
@@ -1647,7 +1647,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.textEdit11, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.textEdit11, "");
             this.editFormPhanCong.SetBoundPropertyName(this.textEdit11, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.textEdit11, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.textEdit11, "");
             this.editFormKho.SetBoundPropertyName(this.textEdit11, "");
             this.textEdit11.EditValue = "";
             this.textEdit11.Location = new System.Drawing.Point(12, 12);
@@ -1669,7 +1669,7 @@
             this.editFormNhanVien.SetBoundPropertyName(this.textEdit2, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.textEdit2, "");
             this.editFormPhanCong.SetBoundPropertyName(this.textEdit2, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.textEdit2, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.textEdit2, "");
             this.editFormKho.SetBoundPropertyName(this.textEdit2, "");
             this.textEdit2.EditValue = "";
             this.textEdit2.Location = new System.Drawing.Point(12, 42);
@@ -1693,14 +1693,14 @@
             this.editFormKho.SetBoundPropertyName(this.navNhanVien, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navNhanVien, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navNhanVien, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navNhanVien, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navNhanVien, "");
             this.navNhanVien.Controls.Add(this.tabNhanVien);
             this.navNhanVien.Name = "navNhanVien";
             this.navNhanVien.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabNhanVien
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhanVien, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhanVien, "");
             this.editFormKho.SetBoundPropertyName(this.tabNhanVien, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabNhanVien, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhanVien, "");
@@ -1725,7 +1725,7 @@
             // tabNhapTTNhanVien
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTNhanVien, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTNhanVien, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTNhanVien, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTNhanVien, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTNhanVien, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTNhanVien, "");
@@ -1744,7 +1744,7 @@
             // 
             this.editFormPhanCong.SetBoundPropertyName(this.editFormNhanVien, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormNhanVien, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormNhanVien, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormNhanVien, "");
             this.editFormBaoCao.SetBoundPropertyName(this.editFormNhanVien, "");
             this.editFormKho.SetBoundPropertyName(this.editFormNhanVien, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormNhanVien, "");
@@ -1760,7 +1760,7 @@
             // tabNhapTTCaLam
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTCaLam, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTCaLam, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTCaLam, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTCaLam, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTCaLam, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTCaLam, "");
@@ -1779,7 +1779,7 @@
             // 
             this.editFormPhanCong.SetBoundPropertyName(this.editFormCaLam, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormCaLam, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormCaLam, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormCaLam, "");
             this.editFormBaoCao.SetBoundPropertyName(this.editFormCaLam, "");
             this.editFormKho.SetBoundPropertyName(this.editFormCaLam, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormCaLam, "");
@@ -1795,7 +1795,7 @@
             // tabNhapTTPhanCong
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTPhanCong, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTPhanCong, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTPhanCong, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTPhanCong, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTPhanCong, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTPhanCong, "");
@@ -1814,7 +1814,7 @@
             // 
             this.editFormCaLam.SetBoundPropertyName(this.editFormPhanCong, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormPhanCong, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormPhanCong, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormPhanCong, "");
             this.editFormBaoCao.SetBoundPropertyName(this.editFormPhanCong, "");
             this.editFormKho.SetBoundPropertyName(this.editFormPhanCong, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormPhanCong, "");
@@ -1830,7 +1830,7 @@
             // tabThongKeNhanVien
             // 
             this.editFormKho.SetBoundPropertyName(this.tabThongKeNhanVien, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabThongKeNhanVien, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabThongKeNhanVien, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabThongKeNhanVien, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabThongKeNhanVien, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabThongKeNhanVien, "");
@@ -1849,7 +1849,7 @@
             // 
             this.editFormCaLam.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
             this.editFormBaoCao.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
             this.editFormKho.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormThongKeNhanVien, "");
@@ -1873,14 +1873,14 @@
             this.editFormKho.SetBoundPropertyName(this.navKho, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navKho, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navKho, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navKho, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navKho, "");
             this.navKho.Controls.Add(this.tabKho);
             this.navKho.Name = "navKho";
             this.navKho.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabKho
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabKho, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabKho, "");
             this.editFormKho.SetBoundPropertyName(this.tabKho, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabKho, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabKho, "");
@@ -1903,7 +1903,7 @@
             // tabNhapTTKho
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTKho, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTKho, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTKho, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTKho, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTKho, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTKho, "");
@@ -1922,7 +1922,7 @@
             // 
             this.editFormCaLam.SetBoundPropertyName(this.editFormKho, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.editFormKho, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.editFormKho, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.editFormKho, "");
             this.editFormBaoCao.SetBoundPropertyName(this.editFormKho, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.editFormKho, "");
             this.editFormThongKeMonth.SetBoundPropertyName(this.editFormKho, "");
@@ -1938,7 +1938,7 @@
             // tabXemTTSanPhamTheoKhoCN
             // 
             this.editFormKho.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
@@ -1947,27 +1947,27 @@
             this.editFormThongKeMonth.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
             this.editFormBaoCao.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.tabXemTTSanPhamTheoKhoCN, "");
-            this.tabXemTTSanPhamTheoKhoCN.Controls.Add(this.editFormKhoThongKe);
+            this.tabXemTTSanPhamTheoKhoCN.Controls.Add(this.editFormThongKeKho);
             this.tabXemTTSanPhamTheoKhoCN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabXemTTSanPhamTheoKhoCN.ImageOptions.Image")));
             this.tabXemTTSanPhamTheoKhoCN.Name = "tabXemTTSanPhamTheoKhoCN";
             this.tabXemTTSanPhamTheoKhoCN.Size = new System.Drawing.Size(1102, 544);
             this.tabXemTTSanPhamTheoKhoCN.Text = "Thống kê sản phẩm theo kho của từng chi nhánh (Kho cửa hàng)";
             // 
-            // editFormKhoThongKe
+            // editFormThongKeKho
             // 
-            this.editFormCaLam.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormTaiKhoan.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormKho.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormBaoCao.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormThongKeNhanVien.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormThongKeMonth.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormNhanVien.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormThongKeYear.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormPhanCong.SetBoundPropertyName(this.editFormKhoThongKe, "");
-            this.editFormKhoThongKe.Location = new System.Drawing.Point(87, 75);
-            this.editFormKhoThongKe.Name = "editFormKhoThongKe";
-            this.editFormKhoThongKe.Size = new System.Drawing.Size(928, 395);
-            this.editFormKhoThongKe.TabIndex = 3;
+            this.editFormCaLam.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormTaiKhoan.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormKho.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormBaoCao.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormThongKeNhanVien.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormThongKeMonth.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormNhanVien.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormThongKeYear.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormPhanCong.SetBoundPropertyName(this.editFormThongKeKho, "");
+            this.editFormThongKeKho.Location = new System.Drawing.Point(87, 75);
+            this.editFormThongKeKho.Name = "editFormThongKeKho";
+            this.editFormThongKeKho.Size = new System.Drawing.Size(928, 395);
+            this.editFormThongKeKho.TabIndex = 3;
             // 
             // navSanPham
             // 
@@ -1980,14 +1980,14 @@
             this.editFormKho.SetBoundPropertyName(this.navSanPham, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navSanPham, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navSanPham, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navSanPham, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navSanPham, "");
             this.navSanPham.Controls.Add(this.tabSanPham);
             this.navSanPham.Name = "navSanPham";
             this.navSanPham.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabSanPham
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabSanPham, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabSanPham, "");
             this.editFormKho.SetBoundPropertyName(this.tabSanPham, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabSanPham, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabSanPham, "");
@@ -2011,7 +2011,7 @@
             // tabNhapTTSanPham
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTSanPham, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTSanPham, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTSanPham, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTSanPham, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTSanPham, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTSanPham, "");
@@ -2028,7 +2028,7 @@
             // tabNhapTTLoaiSP
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTLoaiSP, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTLoaiSP, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTLoaiSP, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTLoaiSP, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTLoaiSP, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTLoaiSP, "");
@@ -2045,7 +2045,7 @@
             // tabXemDSSPTheoLoai
             // 
             this.editFormKho.SetBoundPropertyName(this.tabXemDSSPTheoLoai, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabXemDSSPTheoLoai, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabXemDSSPTheoLoai, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabXemDSSPTheoLoai, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabXemDSSPTheoLoai, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabXemDSSPTheoLoai, "");
@@ -2070,14 +2070,14 @@
             this.editFormKho.SetBoundPropertyName(this.navKhuyenMai, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navKhuyenMai, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navKhuyenMai, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navKhuyenMai, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navKhuyenMai, "");
             this.navKhuyenMai.Controls.Add(this.tabKhuyenMai);
             this.navKhuyenMai.Name = "navKhuyenMai";
             this.navKhuyenMai.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabKhuyenMai
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabKhuyenMai, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabKhuyenMai, "");
             this.editFormKho.SetBoundPropertyName(this.tabKhuyenMai, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabKhuyenMai, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabKhuyenMai, "");
@@ -2101,7 +2101,7 @@
             // tabNhapTTKhuyenMai
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTKhuyenMai, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTKhuyenMai, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTKhuyenMai, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTKhuyenMai, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTKhuyenMai, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTKhuyenMai, "");
@@ -2118,7 +2118,7 @@
             // tabNhapTTChiTietKM
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTChiTietKM, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTChiTietKM, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTChiTietKM, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTChiTietKM, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTChiTietKM, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTChiTietKM, "");
@@ -2135,7 +2135,7 @@
             // tabXemSanPhamKM
             // 
             this.editFormKho.SetBoundPropertyName(this.tabXemSanPhamKM, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabXemSanPhamKM, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabXemSanPhamKM, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabXemSanPhamKM, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabXemSanPhamKM, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabXemSanPhamKM, "");
@@ -2160,14 +2160,14 @@
             this.editFormKho.SetBoundPropertyName(this.navKhachHang, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navKhachHang, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navKhachHang, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navKhachHang, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navKhachHang, "");
             this.navKhachHang.Controls.Add(this.tabKhachHang);
             this.navKhachHang.Name = "navKhachHang";
             this.navKhachHang.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabKhachHang
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabKhachHang, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabKhachHang, "");
             this.editFormKho.SetBoundPropertyName(this.tabKhachHang, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabKhachHang, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabKhachHang, "");
@@ -2190,7 +2190,7 @@
             // tabNhapTTKhachHang
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTKhachHang, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTKhachHang, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTKhachHang, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTKhachHang, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTKhachHang, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTKhachHang, "");
@@ -2207,7 +2207,7 @@
             // tabXemLichSuMuaHang
             // 
             this.editFormKho.SetBoundPropertyName(this.tabXemLichSuMuaHang, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabXemLichSuMuaHang, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabXemLichSuMuaHang, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabXemLichSuMuaHang, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabXemLichSuMuaHang, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabXemLichSuMuaHang, "");
@@ -2232,14 +2232,14 @@
             this.editFormKho.SetBoundPropertyName(this.navHoaDon, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navHoaDon, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navHoaDon, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navHoaDon, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navHoaDon, "");
             this.navHoaDon.Controls.Add(this.tabHoaDon);
             this.navHoaDon.Name = "navHoaDon";
             this.navHoaDon.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabHoaDon
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabHoaDon, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabHoaDon, "");
             this.editFormKho.SetBoundPropertyName(this.tabHoaDon, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabHoaDon, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabHoaDon, "");
@@ -2263,7 +2263,7 @@
             // tabNhapTTHoaDon
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTHoaDon, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTHoaDon, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTHoaDon, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTHoaDon, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTHoaDon, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTHoaDon, "");
@@ -2280,7 +2280,7 @@
             // tabNhapTTHDChiTtiet
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTHDChiTtiet, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTHDChiTtiet, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTHDChiTtiet, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTHDChiTtiet, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTHDChiTtiet, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTHDChiTtiet, "");
@@ -2297,7 +2297,7 @@
             // tabXemTKHDTheoNgay
             // 
             this.editFormKho.SetBoundPropertyName(this.tabXemTKHDTheoNgay, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabXemTKHDTheoNgay, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabXemTKHDTheoNgay, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabXemTKHDTheoNgay, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabXemTKHDTheoNgay, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabXemTKHDTheoNgay, "");
@@ -2322,14 +2322,14 @@
             this.editFormKho.SetBoundPropertyName(this.navChiNhanh, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navChiNhanh, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navChiNhanh, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navChiNhanh, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navChiNhanh, "");
             this.navChiNhanh.Controls.Add(this.tabChiNhanh);
             this.navChiNhanh.Name = "navChiNhanh";
             this.navChiNhanh.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabChiNhanh
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabChiNhanh, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabChiNhanh, "");
             this.editFormKho.SetBoundPropertyName(this.tabChiNhanh, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabChiNhanh, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabChiNhanh, "");
@@ -2353,7 +2353,7 @@
             // tabNhapTTChiNhanh
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTChiNhanh, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTChiNhanh, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTChiNhanh, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTChiNhanh, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTChiNhanh, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTChiNhanh, "");
@@ -2370,7 +2370,7 @@
             // tabNhapTTViTri
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTViTri, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTViTri, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTViTri, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTViTri, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTViTri, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTViTri, "");
@@ -2387,7 +2387,7 @@
             // tabNhapTTKhuVuc
             // 
             this.editFormKho.SetBoundPropertyName(this.tabNhapTTKhuVuc, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhapTTKhuVuc, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhapTTKhuVuc, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhapTTKhuVuc, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.tabNhapTTKhuVuc, "");
             this.editFormNhanVien.SetBoundPropertyName(this.tabNhapTTKhuVuc, "");
@@ -2412,14 +2412,14 @@
             this.editFormKho.SetBoundPropertyName(this.navNhaCungCap, "");
             this.editFormPhanCong.SetBoundPropertyName(this.navNhaCungCap, "");
             this.editFormTaiKhoan.SetBoundPropertyName(this.navNhaCungCap, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.navNhaCungCap, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.navNhaCungCap, "");
             this.navNhaCungCap.Controls.Add(this.tabNhaCungCap);
             this.navNhaCungCap.Name = "navNhaCungCap";
             this.navNhaCungCap.Size = new System.Drawing.Size(1104, 588);
             // 
             // tabNhaCungCap
             // 
-            this.editFormKhoThongKe.SetBoundPropertyName(this.tabNhaCungCap, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.tabNhaCungCap, "");
             this.editFormKho.SetBoundPropertyName(this.tabNhaCungCap, "");
             this.editFormCaLam.SetBoundPropertyName(this.tabNhaCungCap, "");
             this.editFormPhanCong.SetBoundPropertyName(this.tabNhaCungCap, "");
@@ -2442,7 +2442,7 @@
             // xtraTabPage1
             // 
             this.editFormKho.SetBoundPropertyName(this.xtraTabPage1, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.xtraTabPage1, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.xtraTabPage1, "");
             this.editFormPhanCong.SetBoundPropertyName(this.xtraTabPage1, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.xtraTabPage1, "");
             this.editFormNhanVien.SetBoundPropertyName(this.xtraTabPage1, "");
@@ -2459,7 +2459,7 @@
             // xtraTabPage2
             // 
             this.editFormKho.SetBoundPropertyName(this.xtraTabPage2, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this.xtraTabPage2, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this.xtraTabPage2, "");
             this.editFormPhanCong.SetBoundPropertyName(this.xtraTabPage2, "");
             this.editFormThongKeNhanVien.SetBoundPropertyName(this.xtraTabPage2, "");
             this.editFormNhanVien.SetBoundPropertyName(this.xtraTabPage2, "");
@@ -2560,7 +2560,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.editFormThongKeNhanVien.SetBoundPropertyName(this, "");
             this.editFormPhanCong.SetBoundPropertyName(this, "");
-            this.editFormKhoThongKe.SetBoundPropertyName(this, "");
+            this.editFormThongKeKho.SetBoundPropertyName(this, "");
             this.editFormKho.SetBoundPropertyName(this, "");
             this.editFormNhanVien.SetBoundPropertyName(this, "");
             this.editFormThongKeYear.SetBoundPropertyName(this, "");
@@ -2780,6 +2780,6 @@
         private DevExpress.XtraGrid.Views.Grid.EditFormUserControl editFormPhanCong;
         private DevExpress.XtraGrid.Views.Grid.EditFormUserControl editFormCaLam;
         private DevExpress.XtraGrid.Views.Grid.EditFormUserControl editFormKho;
-        private DevExpress.XtraGrid.Views.Grid.EditFormUserControl editFormKhoThongKe;
+        private DevExpress.XtraGrid.Views.Grid.EditFormUserControl editFormThongKeKho;
     }
 }

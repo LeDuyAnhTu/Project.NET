@@ -51,6 +51,7 @@ namespace Project.NET
         private PhanCong_UC phanCong_UC = null;
         private CaLam_UC caLam_UC = null;
         private Kho_UC kho_UC = null;
+        private ThongKeKho_UC thongKeKho_UC = null;
         /// <summary>
         /// Tải form
         /// </summary>
@@ -125,34 +126,34 @@ namespace Project.NET
                     case "btnKho":
                         nafContent.SelectedPage = navKho;
                         LoadUserControl(kho_UC, typeof(Kho_UC), editFormKho);
-                        //LoadUserControl(thongKeKho_UC, typeof(ThongKeKho_UC), editFormThongKeKho);
+                        LoadUserControl(thongKeKho_UC, typeof(ThongKeKho_UC), editFormThongKeKho);
                         break;
                     case "btnSanPham":
-                        nafContent.SelectedPage = navNhanVien;
+                        nafContent.SelectedPage = navSanPham;
 
                         break;
                     case "btnKhuyenMai":
-                        nafContent.SelectedPage = navNhanVien;
+                        nafContent.SelectedPage = navKhuyenMai;
 
 
                         break;
                     case "btnKhachHang":
-                        nafContent.SelectedPage = navNhanVien;
+                        nafContent.SelectedPage = navKhachHang;
 
 
                         break;
                     case "btnHoaDon":
-                        nafContent.SelectedPage = navNhanVien;
+                        nafContent.SelectedPage = navHoaDon;
 
 
                         break;
                     case "btnChiNhanh":
-                        nafContent.SelectedPage = navNhanVien;
+                        nafContent.SelectedPage = navChiNhanh;
 
 
                         break;
                     case "btnNhaCungCap":
-                        nafContent.SelectedPage = navNhanVien;
+                        nafContent.SelectedPage = navNhaCungCap;
 
 
                         break;
