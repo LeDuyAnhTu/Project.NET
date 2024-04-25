@@ -93,6 +93,10 @@ namespace BUS
             }
             return result;
         }
+        public string taoMaMoi()
+        {
+            return nv.taoMaNVMoi();
+        }
     }
 
 }
