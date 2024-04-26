@@ -15,14 +15,13 @@ namespace DTO
 {
     public class TaiKhoan_DTO
     {
-        private string tenTK, matKhau, maNV, maQTC;
+        private string tenTK, matKhau, maNV;
 
-        public TaiKhoan_DTO(string tenTK, string matKhau, string maNV, string maQTC)
+        public TaiKhoan_DTO(string tenTK, string matKhau, string maNV)
         {
             TenTK = tenTK;
             MatKhau = matKhau;
             MaNV = maNV;
-            MaQTC = maQTC;
         }
 
        
@@ -58,7 +57,6 @@ namespace DTO
                 }
             }
         }
-
         public string MaNV
         {
             get => maNV;
@@ -75,26 +73,6 @@ namespace DTO
                 else
                 {
                     maNV = value;
-                }
-            }
-        }
-
-        public string MaQTC
-        {
-            get => maQTC;
-            set
-            {
-                if (value != null && value.Length > 10)
-                {
-                    throw new Exception("Mã QTC tối đa 10 ký tự !");
-                }
-                else if (value == null)
-                {
-                    throw new Exception("Vui lòng nhập mã QTC !");
-                }
-                else
-                {
-                    maQTC = value;
                 }
             }
         }

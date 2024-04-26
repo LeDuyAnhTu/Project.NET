@@ -47,7 +47,8 @@ namespace BUS
             try
             {
                 string tenTK = nhanVien.MaNV;
-                result = tk.Them(new TaiKhoan_DTO(tenTK,"123456",nhanVien.MaNV,"2"));
+                // Tài khoản mặc định có tên tài khoản là msNV, mật khẩu là 123456
+                result = tk.Them(new TaiKhoan_DTO(tenTK,"123456",nhanVien.MaNV));
             }catch(Exception ex)
             {
                 throw ex;

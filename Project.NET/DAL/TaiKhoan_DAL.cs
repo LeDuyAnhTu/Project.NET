@@ -102,7 +102,11 @@ namespace DAL
             }
             return result;
         }
-
+        /// <summary>
+        /// Tìm tài khoản theo mã số nhân viên
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
         public TaiKhoan TimTaiKhoan_MaNV(string maNV)
         {
             try
