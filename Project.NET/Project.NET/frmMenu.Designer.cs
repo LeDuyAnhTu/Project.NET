@@ -310,6 +310,7 @@
             this.btnNhaCungCap.Size = new System.Drawing.Size(126, 48);
             this.btnNhaCungCap.TabIndex = 11;
             this.btnNhaCungCap.Text = "Nhà cung cấp";
+            this.btnNhaCungCap.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnChiNhanh
             // 
@@ -350,6 +351,7 @@
             this.btnChiNhanh.Size = new System.Drawing.Size(126, 48);
             this.btnChiNhanh.TabIndex = 10;
             this.btnChiNhanh.Text = "Chi Nhánh";
+            this.btnChiNhanh.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnHoaDon
             // 
@@ -390,6 +392,7 @@
             this.btnHoaDon.Size = new System.Drawing.Size(126, 48);
             this.btnHoaDon.TabIndex = 9;
             this.btnHoaDon.Text = "Hóa đơn";
+            this.btnHoaDon.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnKhachHang
             // 
@@ -430,6 +433,7 @@
             this.btnKhachHang.Size = new System.Drawing.Size(126, 48);
             this.btnKhachHang.TabIndex = 8;
             this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnKhuyenMai
             // 
@@ -470,6 +474,7 @@
             this.btnKhuyenMai.Size = new System.Drawing.Size(126, 48);
             this.btnKhuyenMai.TabIndex = 7;
             this.btnKhuyenMai.Text = "Khuyến mãi";
+            this.btnKhuyenMai.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnSanPham
             // 
@@ -510,6 +515,7 @@
             this.btnSanPham.Size = new System.Drawing.Size(126, 48);
             this.btnSanPham.TabIndex = 6;
             this.btnSanPham.Text = "Sản phẩm";
+            this.btnSanPham.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnKho
             // 
@@ -550,6 +556,7 @@
             this.btnKho.Size = new System.Drawing.Size(126, 48);
             this.btnKho.TabIndex = 5;
             this.btnKho.Text = "Kho";
+            this.btnKho.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnTaiKhoan
             // 
@@ -590,6 +597,7 @@
             this.btnTaiKhoan.Size = new System.Drawing.Size(126, 48);
             this.btnTaiKhoan.TabIndex = 4;
             this.btnTaiKhoan.Text = "Tài khoản";
+            this.btnTaiKhoan.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnNhanVien
             // 
@@ -630,6 +638,7 @@
             this.btnNhanVien.Size = new System.Drawing.Size(126, 48);
             this.btnNhanVien.TabIndex = 3;
             this.btnNhanVien.Text = "Nhân viên";
+            this.btnNhanVien.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnThongKe
             // 
@@ -679,6 +688,7 @@
             this.btnThongKe.Size = new System.Drawing.Size(126, 48);
             this.btnThongKe.TabIndex = 2;
             this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnBaoCao
             // 
@@ -719,6 +729,7 @@
             this.btnBaoCao.Size = new System.Drawing.Size(126, 48);
             this.btnBaoCao.TabIndex = 1;
             this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.Click += new System.EventHandler(this.Button_Click);
             // 
             // nafContent
             // 
