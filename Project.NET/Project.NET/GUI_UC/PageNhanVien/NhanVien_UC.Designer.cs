@@ -168,7 +168,6 @@
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.dgvNhanVien.Click += new System.EventHandler(this.dgvNhanVien_Click);
             // 
             // gridView1
             // 
