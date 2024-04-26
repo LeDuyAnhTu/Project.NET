@@ -37,13 +37,13 @@
             this.tablePanel6 = new DevExpress.Utils.Layout.TablePanel();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             this.btnThongKeNam = new DevExpress.XtraEditors.SimpleButton();
-            this.txtHoaDonTheoNam = new DevExpress.XtraEditors.SpinEdit();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.chartDoanhThuNam = new DevExpress.XtraCharts.ChartControl();
+            this.txtHoaDonTheoNam = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.chartyear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartyear.Panel1)).BeginInit();
             this.chartyear.Panel1.SuspendLayout();
@@ -56,7 +56,6 @@
             this.tablePanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
             this.layoutControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHoaDonTheoNam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
@@ -66,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHoaDonTheoNam.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // chartyear
@@ -164,23 +164,6 @@
             this.btnThongKeNam.TabIndex = 8;
             this.btnThongKeNam.Text = "Xem thống kê";
             // 
-            // txtHoaDonTheoNam
-            // 
-            this.txtHoaDonTheoNam.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.txtHoaDonTheoNam.Location = new System.Drawing.Point(12, 28);
-            this.txtHoaDonTheoNam.Name = "txtHoaDonTheoNam";
-            this.txtHoaDonTheoNam.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoaDonTheoNam.Properties.Appearance.Options.UseFont = true;
-            this.txtHoaDonTheoNam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtHoaDonTheoNam.Size = new System.Drawing.Size(440, 26);
-            this.txtHoaDonTheoNam.StyleController = this.layoutControl3;
-            this.txtHoaDonTheoNam.TabIndex = 9;
-            // 
             // layoutControlGroup2
             // 
             this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -247,6 +230,26 @@
             this.chartDoanhThuNam.Size = new System.Drawing.Size(272, 725);
             this.chartDoanhThuNam.TabIndex = 0;
             // 
+            // txtHoaDonTheoNam
+            // 
+            this.txtHoaDonTheoNam.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtHoaDonTheoNam.Location = new System.Drawing.Point(12, 28);
+            this.txtHoaDonTheoNam.Name = "txtHoaDonTheoNam";
+            this.txtHoaDonTheoNam.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoaDonTheoNam.Properties.Appearance.Options.UseFont = true;
+            this.txtHoaDonTheoNam.Properties.BeepOnError = true;
+            this.txtHoaDonTheoNam.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered;
+            this.txtHoaDonTheoNam.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
+            this.txtHoaDonTheoNam.Properties.MaskSettings.Set("mask", "yyyy");
+            this.txtHoaDonTheoNam.Properties.UseMaskAsDisplayFormat = true;
+            this.txtHoaDonTheoNam.Size = new System.Drawing.Size(440, 26);
+            this.txtHoaDonTheoNam.StyleController = this.layoutControl3;
+            this.txtHoaDonTheoNam.TabIndex = 9;
+            // 
             // ThongKeYear_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,7 +269,6 @@
             this.tablePanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
             this.layoutControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtHoaDonTheoNam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
@@ -276,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThuNam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHoaDonTheoNam.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,12 +290,12 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel6;
         private DevExpress.XtraLayout.LayoutControl layoutControl3;
         private DevExpress.XtraEditors.SimpleButton btnThongKeNam;
-        private DevExpress.XtraEditors.SpinEdit txtHoaDonTheoNam;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DevExpress.XtraCharts.ChartControl chartDoanhThuNam;
+        private DevExpress.XtraEditors.TextEdit txtHoaDonTheoNam;
     }
 }

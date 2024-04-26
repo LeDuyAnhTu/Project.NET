@@ -46,23 +46,23 @@ namespace Project.NET.GUI_UC
         private void btnTongNVTheoPB_Click(object sender, EventArgs e)
         {
             navFrameTKNhanVien.SelectedPage = navPageTongNhanVienTheoPhongBan;
-            
+
             //var result = from nv in db.NhanViens
             //             group nv by nv.maCN into g
             //             join vt in db.ChiNhanhs on g.Key equals vt.maCN
             //             select new { StoreName = vt.tenCN, EmployeeCount = g.Count() };
-            
+
             //// xóa tất cả danh sách cột
             //chartTongNhanVienTheoPhongBan.Series.Clear();
 
             //Series series = new Series("Tổng nhân viên theo Phòng ban", ViewType.Bar);
-            
+
             //foreach (var item in result)
             //{
             //    series.Points.Add(new SeriesPoint(item.StoreName, item.EmployeeCount));
             //}
 
-            //chartTongNhanVienTheoPhongBan.Series.Add(series); 
+            //chartTongNhanVienTheoPhongBan.Series.Add(series);
         }
 
         private void btnCoCauNVTheoPB_Click(object sender, EventArgs e)

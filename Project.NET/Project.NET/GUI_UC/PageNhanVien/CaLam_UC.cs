@@ -17,5 +17,10 @@ namespace Project.NET.GUI_UC
         {
             InitializeComponent();
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ten ca lam" + txtTenCaLam.Text +"Gio bat dau" + txtGioBD.Text +"Gio ket thuc"+txtGioKT.Text);
+        }
     }
 }
