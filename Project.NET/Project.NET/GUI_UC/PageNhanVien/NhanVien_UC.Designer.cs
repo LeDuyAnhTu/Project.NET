@@ -565,6 +565,7 @@
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.cboViTriChucVuNhanVien;
+            this.layoutControlItem8.CustomizationFormText = "Vị trí (Chức Vụ)";
             this.layoutControlItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem8.ImageOptions.Image")));
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 290);
             this.layoutControlItem8.Name = "layoutControlItem8";
