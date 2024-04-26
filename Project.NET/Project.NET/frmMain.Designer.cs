@@ -49,8 +49,6 @@
             this.tileNavCategory1 = new DevExpress.XtraBars.Navigation.TileNavCategory();
             this.tileNavCategory3 = new DevExpress.XtraBars.Navigation.TileNavCategory();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
-            this.tileNavHeThong = new DevExpress.XtraBars.Navigation.TileNavPane();
-            this.navMenuHeThong = new DevExpress.XtraBars.Navigation.NavButton();
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane3)).BeginInit();
@@ -58,7 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileNavHeThong)).BeginInit();
             this.SuspendLayout();
             // 
             // tileNavPane1
@@ -226,34 +223,6 @@
             this.simpleLabelItem1.Size = new System.Drawing.Size(433, 17);
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(50, 20);
             // 
-            // tileNavHeThong
-            // 
-            this.tileNavHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.tileNavHeThong.Buttons.Add(this.navMenuHeThong);
-            // 
-            // tileNavCategory6
-            // 
-            this.tileNavHeThong.DefaultCategory.Name = "tileNavCategory6";
-            // 
-            // 
-            // 
-            this.tileNavHeThong.DefaultCategory.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            this.tileNavHeThong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tileNavHeThong.Location = new System.Drawing.Point(0, 0);
-            this.tileNavHeThong.Margin = new System.Windows.Forms.Padding(0);
-            this.tileNavHeThong.Name = "tileNavHeThong";
-            this.tileNavHeThong.Size = new System.Drawing.Size(960, 60);
-            this.tileNavHeThong.TabIndex = 8;
-            this.tileNavHeThong.Text = "tileNavPane4";
-            // 
-            // navMenuHeThong
-            // 
-            this.navMenuHeThong.Alignment = DevExpress.XtraBars.Navigation.NavButtonAlignment.Left;
-            this.navMenuHeThong.Caption = "Hệ thống";
-            this.navMenuHeThong.ImageOptions.SvgImage = global::Project.NET.Properties.Resources.logosvg32_32;
-            this.navMenuHeThong.IsMain = true;
-            this.navMenuHeThong.Name = "navMenuHeThong";
-            // 
             // frmMain
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
@@ -262,11 +231,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 564);
-            this.Controls.Add(this.tileNavHeThong);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IconOptions.SvgImage = global::Project.NET.Properties.Resources.logosvg;
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "frmMain";
@@ -282,7 +249,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileNavHeThong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,7 +270,5 @@
         private DevExpress.XtraEditors.TextEdit textEdit11;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
-        private DevExpress.XtraBars.Navigation.TileNavPane tileNavHeThong;
-        private DevExpress.XtraBars.Navigation.NavButton navMenuHeThong;
     }
 }
