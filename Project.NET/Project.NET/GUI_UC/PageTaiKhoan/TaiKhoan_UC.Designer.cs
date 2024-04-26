@@ -37,30 +37,30 @@
             this.txtTenTK = new DevExpress.XtraEditors.TextEdit();
             this.txtSoDienThoai = new DevExpress.XtraEditors.TextEdit();
             this.txtViTriCuaHang = new DevExpress.XtraEditors.TextEdit();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCapNhat = new DevExpress.XtraEditors.SimpleButton();
-            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
+            this.cboKhuVuc = new DevExpress.XtraEditors.LookUpEdit();
+            this.cboChiNhanh = new DevExpress.XtraEditors.LookUpEdit();
+            this.cboNhanVien = new DevExpress.XtraEditors.LookUpEdit();
+            this.btnThem1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCapNhat1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLamMoi1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXoa1 = new DevExpress.XtraEditors.SimpleButton();
             this.groupLayoutNhanVien = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutTxtHoTen = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.layoutGroupThaoTacCSDL = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutGroupThaoTacCSDL1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.labelControl = new DevExpress.XtraEditors.LabelControl();
-            this.cboKhuVuc = new DevExpress.XtraEditors.LookUpEdit();
-            this.cboChiNhanh = new DevExpress.XtraEditors.LookUpEdit();
-            this.cboNhanVien = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).BeginInit();
@@ -71,25 +71,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTenTK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDienThoai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtViTriCuaHang.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboKhuVuc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboKhuVuc.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -100,13 +100,13 @@
             this.layoutNhanVien.Controls.Add(this.txtTenTK);
             this.layoutNhanVien.Controls.Add(this.txtSoDienThoai);
             this.layoutNhanVien.Controls.Add(this.txtViTriCuaHang);
-            this.layoutNhanVien.Controls.Add(this.btnThem);
-            this.layoutNhanVien.Controls.Add(this.btnCapNhat);
-            this.layoutNhanVien.Controls.Add(this.btnXoa);
-            this.layoutNhanVien.Controls.Add(this.btnLamMoi);
             this.layoutNhanVien.Controls.Add(this.cboKhuVuc);
             this.layoutNhanVien.Controls.Add(this.cboChiNhanh);
             this.layoutNhanVien.Controls.Add(this.cboNhanVien);
+            this.layoutNhanVien.Controls.Add(this.btnThem1);
+            this.layoutNhanVien.Controls.Add(this.btnCapNhat1);
+            this.layoutNhanVien.Controls.Add(this.btnLamMoi1);
+            this.layoutNhanVien.Controls.Add(this.btnXoa1);
             this.layoutNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutNhanVien.Location = new System.Drawing.Point(0, 33);
             this.layoutNhanVien.Name = "layoutNhanVien";
@@ -119,9 +119,9 @@
             // 
             this.groupDanhSachNhanVien.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupDanhSachNhanVien.CaptionImageOptions.Image")));
             this.groupDanhSachNhanVien.Controls.Add(this.dgvTaiKhoanNhanVien);
-            this.groupDanhSachNhanVien.Location = new System.Drawing.Point(24, 421);
+            this.groupDanhSachNhanVien.Location = new System.Drawing.Point(24, 449);
             this.groupDanhSachNhanVien.Name = "groupDanhSachNhanVien";
-            this.groupDanhSachNhanVien.Size = new System.Drawing.Size(663, 311);
+            this.groupDanhSachNhanVien.Size = new System.Drawing.Size(663, 283);
             this.groupDanhSachNhanVien.TabIndex = 22;
             this.groupDanhSachNhanVien.Text = "Danh mục tài khoản nhân viên";
             // 
@@ -131,7 +131,7 @@
             this.dgvTaiKhoanNhanVien.Location = new System.Drawing.Point(2, 33);
             this.dgvTaiKhoanNhanVien.MainView = this.gridView1;
             this.dgvTaiKhoanNhanVien.Name = "dgvTaiKhoanNhanVien";
-            this.dgvTaiKhoanNhanVien.Size = new System.Drawing.Size(659, 276);
+            this.dgvTaiKhoanNhanVien.Size = new System.Drawing.Size(659, 248);
             this.dgvTaiKhoanNhanVien.TabIndex = 0;
             this.dgvTaiKhoanNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -184,141 +184,190 @@
             this.txtViTriCuaHang.StyleController = this.layoutNhanVien;
             this.txtViTriCuaHang.TabIndex = 11;
             // 
-            // btnThem
+            // cboKhuVuc
             // 
-            this.btnThem.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThem.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnThem.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnThem.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnThem.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnThem.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnThem.AppearanceDisabled.Options.UseFont = true;
-            this.btnThem.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnThem.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnThem.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnThem.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnThem.AppearanceHovered.Options.UseBackColor = true;
-            this.btnThem.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnThem.AppearanceHovered.Options.UseFont = true;
-            this.btnThem.AppearanceHovered.Options.UseForeColor = true;
-            this.btnThem.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnThem.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnThem.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnThem.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnThem.AppearancePressed.Options.UseBackColor = true;
-            this.btnThem.AppearancePressed.Options.UseBorderColor = true;
-            this.btnThem.AppearancePressed.Options.UseFont = true;
-            this.btnThem.AppearancePressed.Options.UseForeColor = true;
-            this.btnThem.Location = new System.Drawing.Point(36, 357);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(317, 22);
-            this.btnThem.StyleController = this.layoutNhanVien;
-            this.btnThem.TabIndex = 16;
-            this.btnThem.Text = "Thêm";
+            this.cboKhuVuc.Location = new System.Drawing.Point(148, 130);
+            this.cboKhuVuc.Name = "cboKhuVuc";
+            this.cboKhuVuc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboKhuVuc.Properties.Appearance.Options.UseFont = true;
+            this.cboKhuVuc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboKhuVuc.Properties.NullText = "";
+            this.cboKhuVuc.Properties.PopupSizeable = false;
+            this.cboKhuVuc.Size = new System.Drawing.Size(539, 26);
+            this.cboKhuVuc.StyleController = this.layoutNhanVien;
+            this.cboKhuVuc.TabIndex = 6;
             // 
-            // btnCapNhat
+            // cboChiNhanh
             // 
-            this.btnCapNhat.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCapNhat.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnCapNhat.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnCapNhat.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnCapNhat.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnCapNhat.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnCapNhat.AppearanceDisabled.Options.UseFont = true;
-            this.btnCapNhat.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnCapNhat.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCapNhat.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCapNhat.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnCapNhat.AppearanceHovered.Options.UseBackColor = true;
-            this.btnCapNhat.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnCapNhat.AppearanceHovered.Options.UseFont = true;
-            this.btnCapNhat.AppearanceHovered.Options.UseForeColor = true;
-            this.btnCapNhat.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCapNhat.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCapNhat.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnCapNhat.AppearancePressed.Options.UseBackColor = true;
-            this.btnCapNhat.AppearancePressed.Options.UseBorderColor = true;
-            this.btnCapNhat.AppearancePressed.Options.UseFont = true;
-            this.btnCapNhat.AppearancePressed.Options.UseForeColor = true;
-            this.btnCapNhat.Location = new System.Drawing.Point(357, 357);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(318, 22);
-            this.btnCapNhat.StyleController = this.layoutNhanVien;
-            this.btnCapNhat.TabIndex = 17;
-            this.btnCapNhat.Text = "Cập nhật";
+            this.cboChiNhanh.Location = new System.Drawing.Point(148, 166);
+            this.cboChiNhanh.Name = "cboChiNhanh";
+            this.cboChiNhanh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboChiNhanh.Properties.Appearance.Options.UseFont = true;
+            this.cboChiNhanh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboChiNhanh.Properties.DisplayFormat.FormatString = "d";
+            this.cboChiNhanh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cboChiNhanh.Properties.EditFormat.FormatString = "d";
+            this.cboChiNhanh.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cboChiNhanh.Properties.NullText = "";
+            this.cboChiNhanh.Size = new System.Drawing.Size(539, 26);
+            this.cboChiNhanh.StyleController = this.layoutNhanVien;
+            this.cboChiNhanh.TabIndex = 10;
             // 
-            // btnXoa
+            // cboNhanVien
             // 
-            this.btnXoa.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnXoa.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnXoa.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnXoa.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnXoa.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnXoa.AppearanceDisabled.Options.UseFont = true;
-            this.btnXoa.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnXoa.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnXoa.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnXoa.AppearanceHovered.Options.UseBackColor = true;
-            this.btnXoa.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnXoa.AppearanceHovered.Options.UseFont = true;
-            this.btnXoa.AppearanceHovered.Options.UseForeColor = true;
-            this.btnXoa.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnXoa.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnXoa.AppearancePressed.Options.UseBackColor = true;
-            this.btnXoa.AppearancePressed.Options.UseBorderColor = true;
-            this.btnXoa.AppearancePressed.Options.UseFont = true;
-            this.btnXoa.AppearancePressed.Options.UseForeColor = true;
-            this.btnXoa.Location = new System.Drawing.Point(357, 383);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(318, 22);
-            this.btnXoa.StyleController = this.layoutNhanVien;
-            this.btnXoa.TabIndex = 20;
-            this.btnXoa.Text = "Xóa";
+            this.cboNhanVien.Location = new System.Drawing.Point(148, 202);
+            this.cboNhanVien.Name = "cboNhanVien";
+            this.cboNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboNhanVien.Properties.Appearance.Options.UseFont = true;
+            this.cboNhanVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboNhanVien.Properties.NullText = "";
+            this.cboNhanVien.Properties.PopupSizeable = false;
+            this.cboNhanVien.Size = new System.Drawing.Size(539, 26);
+            this.cboNhanVien.StyleController = this.layoutNhanVien;
+            this.cboNhanVien.TabIndex = 14;
             // 
-            // btnLamMoi
+            // btnThem1
             // 
-            this.btnLamMoi.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnLamMoi.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnLamMoi.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnLamMoi.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnLamMoi.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnLamMoi.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnLamMoi.AppearanceDisabled.Options.UseFont = true;
-            this.btnLamMoi.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnLamMoi.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnLamMoi.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLamMoi.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnLamMoi.AppearanceHovered.Options.UseBackColor = true;
-            this.btnLamMoi.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnLamMoi.AppearanceHovered.Options.UseFont = true;
-            this.btnLamMoi.AppearanceHovered.Options.UseForeColor = true;
-            this.btnLamMoi.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnLamMoi.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLamMoi.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnLamMoi.AppearancePressed.Options.UseBackColor = true;
-            this.btnLamMoi.AppearancePressed.Options.UseBorderColor = true;
-            this.btnLamMoi.AppearancePressed.Options.UseFont = true;
-            this.btnLamMoi.AppearancePressed.Options.UseForeColor = true;
-            this.btnLamMoi.Location = new System.Drawing.Point(36, 383);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(317, 22);
-            this.btnLamMoi.StyleController = this.layoutNhanVien;
-            this.btnLamMoi.TabIndex = 19;
-            this.btnLamMoi.Text = "Làm Mới";
+            this.btnThem1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThem1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnThem1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThem1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnThem1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnThem1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnThem1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnThem1.AppearanceDisabled.Options.UseFont = true;
+            this.btnThem1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnThem1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThem1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThem1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThem1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnThem1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnThem1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnThem1.AppearanceHovered.Options.UseFont = true;
+            this.btnThem1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnThem1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThem1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThem1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThem1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnThem1.AppearancePressed.Options.UseBackColor = true;
+            this.btnThem1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnThem1.AppearancePressed.Options.UseFont = true;
+            this.btnThem1.AppearancePressed.Options.UseForeColor = true;
+            this.btnThem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem1.ImageOptions.Image")));
+            this.btnThem1.Location = new System.Drawing.Point(36, 357);
+            this.btnThem1.Name = "btnThem1";
+            this.btnThem1.Size = new System.Drawing.Size(317, 36);
+            this.btnThem1.StyleController = this.layoutNhanVien;
+            this.btnThem1.TabIndex = 16;
+            this.btnThem1.Text = "Thêm";
+            // 
+            // btnCapNhat1
+            // 
+            this.btnCapNhat1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCapNhat1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCapNhat1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCapNhat1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnCapNhat1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseFont = true;
+            this.btnCapNhat1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnCapNhat1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCapNhat1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCapNhat1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCapNhat1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnCapNhat1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnCapNhat1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnCapNhat1.AppearanceHovered.Options.UseFont = true;
+            this.btnCapNhat1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnCapNhat1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCapNhat1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCapNhat1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCapNhat1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnCapNhat1.AppearancePressed.Options.UseBackColor = true;
+            this.btnCapNhat1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnCapNhat1.AppearancePressed.Options.UseFont = true;
+            this.btnCapNhat1.AppearancePressed.Options.UseForeColor = true;
+            this.btnCapNhat1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat1.ImageOptions.Image")));
+            this.btnCapNhat1.Location = new System.Drawing.Point(357, 357);
+            this.btnCapNhat1.Name = "btnCapNhat1";
+            this.btnCapNhat1.Size = new System.Drawing.Size(318, 36);
+            this.btnCapNhat1.StyleController = this.layoutNhanVien;
+            this.btnCapNhat1.TabIndex = 17;
+            this.btnCapNhat1.Text = "Cập nhật";
+            // 
+            // btnLamMoi1
+            // 
+            this.btnLamMoi1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLamMoi1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnLamMoi1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLamMoi1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnLamMoi1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseFont = true;
+            this.btnLamMoi1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnLamMoi1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLamMoi1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLamMoi1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLamMoi1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnLamMoi1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnLamMoi1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnLamMoi1.AppearanceHovered.Options.UseFont = true;
+            this.btnLamMoi1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnLamMoi1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLamMoi1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLamMoi1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLamMoi1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnLamMoi1.AppearancePressed.Options.UseBackColor = true;
+            this.btnLamMoi1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnLamMoi1.AppearancePressed.Options.UseFont = true;
+            this.btnLamMoi1.AppearancePressed.Options.UseForeColor = true;
+            this.btnLamMoi1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi1.ImageOptions.Image")));
+            this.btnLamMoi1.Location = new System.Drawing.Point(36, 397);
+            this.btnLamMoi1.Name = "btnLamMoi1";
+            this.btnLamMoi1.Size = new System.Drawing.Size(317, 36);
+            this.btnLamMoi1.StyleController = this.layoutNhanVien;
+            this.btnLamMoi1.TabIndex = 19;
+            this.btnLamMoi1.Text = "Làm Mới";
+            // 
+            // btnXoa1
+            // 
+            this.btnXoa1.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoa1.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnXoa1.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXoa1.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnXoa1.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnXoa1.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnXoa1.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnXoa1.AppearanceDisabled.Options.UseFont = true;
+            this.btnXoa1.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnXoa1.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoa1.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnXoa1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXoa1.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnXoa1.AppearanceHovered.Options.UseBackColor = true;
+            this.btnXoa1.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnXoa1.AppearanceHovered.Options.UseFont = true;
+            this.btnXoa1.AppearanceHovered.Options.UseForeColor = true;
+            this.btnXoa1.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoa1.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnXoa1.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXoa1.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnXoa1.AppearancePressed.Options.UseBackColor = true;
+            this.btnXoa1.AppearancePressed.Options.UseBorderColor = true;
+            this.btnXoa1.AppearancePressed.Options.UseFont = true;
+            this.btnXoa1.AppearancePressed.Options.UseForeColor = true;
+            this.btnXoa1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa1.ImageOptions.Image")));
+            this.btnXoa1.Location = new System.Drawing.Point(357, 397);
+            this.btnXoa1.Name = "btnXoa1";
+            this.btnXoa1.Size = new System.Drawing.Size(318, 36);
+            this.btnXoa1.StyleController = this.layoutNhanVien;
+            this.btnXoa1.TabIndex = 20;
+            this.btnXoa1.Text = "Xóa";
             // 
             // groupLayoutNhanVien
             // 
@@ -342,12 +391,12 @@
             this.layoutControlItem5,
             this.layoutControlItem1,
             this.simpleSeparator1,
-            this.layoutGroupThaoTacCSDL,
             this.layoutControlItem9,
             this.layoutControlItem8,
             this.layoutControlItem4,
             this.layoutControlItem3,
-            this.layoutControlItem2});
+            this.layoutControlItem2,
+            this.layoutGroupThaoTacCSDL1});
             this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup6.Name = "layoutControlGroup6";
             this.layoutControlGroup6.OptionsItemText.TextToControlDistance = 3;
@@ -394,65 +443,12 @@
             this.simpleSeparator1.Name = "simpleSeparator1";
             this.simpleSeparator1.Size = new System.Drawing.Size(667, 1);
             // 
-            // layoutGroupThaoTacCSDL
-            // 
-            this.layoutGroupThaoTacCSDL.BackgroundImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutGroupThaoTacCSDL.BackgroundImageOptions.Image")));
-            this.layoutGroupThaoTacCSDL.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutGroupThaoTacCSDL.CaptionImageOptions.Image")));
-            this.layoutGroupThaoTacCSDL.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem10,
-            this.layoutControlItem11,
-            this.layoutControlItem13,
-            this.layoutControlItem14});
-            this.layoutGroupThaoTacCSDL.Location = new System.Drawing.Point(0, 253);
-            this.layoutGroupThaoTacCSDL.Name = "layoutGroupThaoTacCSDL";
-            this.layoutGroupThaoTacCSDL.Size = new System.Drawing.Size(667, 110);
-            this.layoutGroupThaoTacCSDL.Text = "Thao tác Cơ Sở Dữ Liệu";
-            // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.btnThem;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(321, 26);
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem10.TextVisible = false;
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.Control = this.btnCapNhat;
-            this.layoutControlItem11.Location = new System.Drawing.Point(321, 0);
-            this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem11.Size = new System.Drawing.Size(322, 26);
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem11.TextVisible = false;
-            // 
-            // layoutControlItem13
-            // 
-            this.layoutControlItem13.Control = this.btnLamMoi;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 26);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem13.Size = new System.Drawing.Size(321, 26);
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem13.TextVisible = false;
-            // 
-            // layoutControlItem14
-            // 
-            this.layoutControlItem14.Control = this.btnXoa;
-            this.layoutControlItem14.Location = new System.Drawing.Point(321, 26);
-            this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.OptionsTableLayoutItem.RowIndex = 4;
-            this.layoutControlItem14.Size = new System.Drawing.Size(322, 26);
-            this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem14.TextVisible = false;
-            // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.groupDanhSachNhanVien;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 363);
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 391);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(667, 315);
+            this.layoutControlItem9.Size = new System.Drawing.Size(667, 287);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
@@ -496,6 +492,72 @@
             this.layoutControlItem2.Text = "Khu Vực:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(112, 32);
             // 
+            // layoutGroupThaoTacCSDL1
+            // 
+            this.layoutGroupThaoTacCSDL1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutGroupThaoTacCSDL1.CaptionImageOptions.Image")));
+            this.layoutGroupThaoTacCSDL1.CustomizationFormText = "Thao tác Cơ Sở Dữ Liệu";
+            this.layoutGroupThaoTacCSDL1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem6,
+            this.layoutControlItem7,
+            this.layoutControlItem12,
+            this.layoutControlItem15});
+            this.layoutGroupThaoTacCSDL1.Location = new System.Drawing.Point(0, 253);
+            this.layoutGroupThaoTacCSDL1.Name = "layoutGroupThaoTacCSDL1";
+            this.layoutGroupThaoTacCSDL1.OptionsItemText.TextToControlDistance = 3;
+            this.layoutGroupThaoTacCSDL1.Size = new System.Drawing.Size(667, 138);
+            this.layoutGroupThaoTacCSDL1.Text = "Thao tác Cơ Sở Dữ Liệu";
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.btnThem1;
+            this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem6.CustomizationFormText = "layoutControlItem10";
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(321, 40);
+            this.layoutControlItem6.Text = "layoutControlItem10";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem6.TextVisible = false;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.btnCapNhat1;
+            this.layoutControlItem7.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem7.CustomizationFormText = "layoutControlItem11";
+            this.layoutControlItem7.Location = new System.Drawing.Point(321, 0);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.OptionsTableLayoutItem.RowIndex = 2;
+            this.layoutControlItem7.Size = new System.Drawing.Size(322, 40);
+            this.layoutControlItem7.Text = "layoutControlItem11";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem7.TextVisible = false;
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.Control = this.btnLamMoi1;
+            this.layoutControlItem12.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem12.CustomizationFormText = "layoutControlItem13";
+            this.layoutControlItem12.Location = new System.Drawing.Point(0, 40);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 3;
+            this.layoutControlItem12.Size = new System.Drawing.Size(321, 40);
+            this.layoutControlItem12.Text = "layoutControlItem13";
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem12.TextVisible = false;
+            // 
+            // layoutControlItem15
+            // 
+            this.layoutControlItem15.Control = this.btnXoa1;
+            this.layoutControlItem15.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem15.CustomizationFormText = "layoutControlItem14";
+            this.layoutControlItem15.Location = new System.Drawing.Point(321, 40);
+            this.layoutControlItem15.Name = "layoutControlItem15";
+            this.layoutControlItem15.OptionsTableLayoutItem.RowIndex = 4;
+            this.layoutControlItem15.Size = new System.Drawing.Size(322, 40);
+            this.layoutControlItem15.Text = "layoutControlItem14";
+            this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem15.TextVisible = false;
+            // 
             // labelControl
             // 
             this.labelControl.AllowHtmlString = true;
@@ -516,52 +578,7 @@
             this.labelControl.Padding = new System.Windows.Forms.Padding(10, 5, 0, 0);
             this.labelControl.Size = new System.Drawing.Size(711, 33);
             this.labelControl.TabIndex = 5;
-            this.labelControl.Text = "Tài khoản";
-            // 
-            // cboKhuVuc
-            // 
-            this.cboKhuVuc.Location = new System.Drawing.Point(148, 130);
-            this.cboKhuVuc.Name = "cboKhuVuc";
-            this.cboKhuVuc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboKhuVuc.Properties.Appearance.Options.UseFont = true;
-            this.cboKhuVuc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboKhuVuc.Properties.NullText = "";
-            this.cboKhuVuc.Properties.PopupSizeable = false;
-            this.cboKhuVuc.Size = new System.Drawing.Size(539, 26);
-            this.cboKhuVuc.StyleController = this.layoutNhanVien;
-            this.cboKhuVuc.TabIndex = 6;
-            // 
-            // cboChiNhanh
-            // 
-            this.cboChiNhanh.Location = new System.Drawing.Point(148, 166);
-            this.cboChiNhanh.Name = "cboChiNhanh";
-            this.cboChiNhanh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboChiNhanh.Properties.Appearance.Options.UseFont = true;
-            this.cboChiNhanh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboChiNhanh.Properties.DisplayFormat.FormatString = "d";
-            this.cboChiNhanh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.cboChiNhanh.Properties.EditFormat.FormatString = "d";
-            this.cboChiNhanh.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.cboChiNhanh.Properties.NullText = "";
-            this.cboChiNhanh.Size = new System.Drawing.Size(539, 26);
-            this.cboChiNhanh.StyleController = this.layoutNhanVien;
-            this.cboChiNhanh.TabIndex = 10;
-            // 
-            // cboNhanVien
-            // 
-            this.cboNhanVien.Location = new System.Drawing.Point(148, 202);
-            this.cboNhanVien.Name = "cboNhanVien";
-            this.cboNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboNhanVien.Properties.Appearance.Options.UseFont = true;
-            this.cboNhanVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboNhanVien.Properties.NullText = "";
-            this.cboNhanVien.Properties.PopupSizeable = false;
-            this.cboNhanVien.Size = new System.Drawing.Size(539, 26);
-            this.cboNhanVien.StyleController = this.layoutNhanVien;
-            this.cboNhanVien.TabIndex = 14;
+            this.labelControl.Text = "Tài Khoản";
             // 
             // TaiKhoan_UC
             // 
@@ -581,25 +598,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTenTK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDienThoai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtViTriCuaHang.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboKhuVuc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboKhuVuc.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -615,10 +632,6 @@
         private DevExpress.XtraEditors.TextEdit txtTenTK;
         private DevExpress.XtraEditors.TextEdit txtSoDienThoai;
         private DevExpress.XtraEditors.TextEdit txtViTriCuaHang;
-        private DevExpress.XtraEditors.SimpleButton btnThem;
-        private DevExpress.XtraEditors.SimpleButton btnCapNhat;
-        private DevExpress.XtraEditors.SimpleButton btnXoa;
-        private DevExpress.XtraEditors.SimpleButton btnLamMoi;
         private DevExpress.XtraLayout.LayoutControlGroup groupLayoutNhanVien;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup6;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtHoTen;
@@ -629,14 +642,18 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutGroupThaoTacCSDL;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraEditors.LookUpEdit cboKhuVuc;
         private DevExpress.XtraEditors.LookUpEdit cboChiNhanh;
         private DevExpress.XtraEditors.LookUpEdit cboNhanVien;
+        private DevExpress.XtraEditors.SimpleButton btnThem1;
+        private DevExpress.XtraEditors.SimpleButton btnCapNhat1;
+        private DevExpress.XtraEditors.SimpleButton btnLamMoi1;
+        private DevExpress.XtraEditors.SimpleButton btnXoa1;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutGroupThaoTacCSDL1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
     }
 }
