@@ -35,12 +35,10 @@
             this.controlsLogin = new DevExpress.XtraLayout.LayoutControl();
             this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
             this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
-            this.txtGiuDangNhap = new DevExpress.XtraEditors.CheckEdit();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutTxtTenDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtMatKhau = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutGiuToiDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutBtnDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tableLogin)).BeginInit();
@@ -52,11 +50,9 @@
             this.controlsLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGiuDangNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutGiuToiDangNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -96,9 +92,9 @@
             this.layoutLogin.Name = "layoutLogin";
             this.tableLogin.SetRow(this.layoutLogin, 1);
             this.layoutLogin.RowCount = 3;
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.69792F));
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.6875F));
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.35417F));
+            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.34375F));
+            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.35417F));
+            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.5625F));
             this.layoutLogin.Size = new System.Drawing.Size(360, 384);
             this.layoutLogin.TabIndex = 5;
             // 
@@ -118,10 +114,10 @@
             this.groupDangNhap.Controls.Add(this.controlsLogin);
             this.groupDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupDangNhap.GroupStyle = DevExpress.Utils.GroupStyle.Card;
-            this.groupDangNhap.Location = new System.Drawing.Point(3, 94);
+            this.groupDangNhap.Location = new System.Drawing.Point(3, 107);
             this.groupDangNhap.Name = "groupDangNhap";
             this.groupDangNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.groupDangNhap.Size = new System.Drawing.Size(354, 204);
+            this.groupDangNhap.Size = new System.Drawing.Size(354, 171);
             this.groupDangNhap.TabIndex = 0;
             this.groupDangNhap.Text = "Đăng nhập";
             // 
@@ -129,14 +125,13 @@
             // 
             this.controlsLogin.Controls.Add(this.txtTenDangNhap);
             this.controlsLogin.Controls.Add(this.txtMatKhau);
-            this.controlsLogin.Controls.Add(this.txtGiuDangNhap);
             this.controlsLogin.Controls.Add(this.btnDangNhap);
             this.controlsLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlsLogin.Location = new System.Drawing.Point(5, 36);
             this.controlsLogin.Name = "controlsLogin";
             this.controlsLogin.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1270, 184, 650, 400);
             this.controlsLogin.Root = this.Root;
-            this.controlsLogin.Size = new System.Drawing.Size(344, 163);
+            this.controlsLogin.Size = new System.Drawing.Size(344, 130);
             this.controlsLogin.TabIndex = 0;
             this.controlsLogin.Text = "layoutControl1";
             // 
@@ -179,17 +174,6 @@
             this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.ToolTipTitle = "Mật khẩu";
             // 
-            // txtGiuDangNhap
-            // 
-            this.txtGiuDangNhap.Location = new System.Drawing.Point(12, 84);
-            this.txtGiuDangNhap.Name = "txtGiuDangNhap";
-            this.txtGiuDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiuDangNhap.Properties.Appearance.Options.UseFont = true;
-            this.txtGiuDangNhap.Properties.Caption = "Giữ đăng nhập";
-            this.txtGiuDangNhap.Size = new System.Drawing.Size(320, 23);
-            this.txtGiuDangNhap.StyleController = this.controlsLogin;
-            this.txtGiuDangNhap.TabIndex = 6;
-            // 
             // btnDangNhap
             // 
             this.btnDangNhap.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,9 +203,9 @@
             this.btnDangNhap.AppearancePressed.Options.UseBorderColor = true;
             this.btnDangNhap.AppearancePressed.Options.UseFont = true;
             this.btnDangNhap.AppearancePressed.Options.UseForeColor = true;
-            this.btnDangNhap.Location = new System.Drawing.Point(12, 111);
+            this.btnDangNhap.Location = new System.Drawing.Point(12, 84);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(320, 40);
+            this.btnDangNhap.Size = new System.Drawing.Size(320, 34);
             this.btnDangNhap.StyleController = this.controlsLogin;
             this.btnDangNhap.TabIndex = 7;
             this.btnDangNhap.Text = "Đăng nhập";
@@ -238,10 +222,9 @@
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutTxtTenDangNhap,
             this.layoutTxtMatKhau,
-            this.layoutGiuToiDangNhap,
             this.layoutBtnDangNhap});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(344, 163);
+            this.Root.Size = new System.Drawing.Size(344, 130);
             this.Root.TextVisible = false;
             // 
             // layoutTxtTenDangNhap
@@ -273,28 +256,16 @@
             this.layoutTxtMatKhau.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutTxtMatKhau.TextSize = new System.Drawing.Size(144, 32);
             // 
-            // layoutGiuToiDangNhap
-            // 
-            this.layoutGiuToiDangNhap.Control = this.txtGiuDangNhap;
-            this.layoutGiuToiDangNhap.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutGiuToiDangNhap.CustomizationFormText = "Giữ Đăng nhập";
-            this.layoutGiuToiDangNhap.Location = new System.Drawing.Point(0, 72);
-            this.layoutGiuToiDangNhap.Name = "layoutGiuToiDangNhap";
-            this.layoutGiuToiDangNhap.Size = new System.Drawing.Size(324, 27);
-            this.layoutGiuToiDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutGiuToiDangNhap.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutGiuToiDangNhap.TextVisible = false;
-            // 
             // layoutBtnDangNhap
             // 
             this.layoutBtnDangNhap.Control = this.btnDangNhap;
             this.layoutBtnDangNhap.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutBtnDangNhap.CustomizationFormText = "Nút đăng nhập";
             this.layoutBtnDangNhap.ImageOptions.Image = global::Project.NET.Properties.Resources.logo;
-            this.layoutBtnDangNhap.Location = new System.Drawing.Point(0, 99);
+            this.layoutBtnDangNhap.Location = new System.Drawing.Point(0, 72);
             this.layoutBtnDangNhap.MinSize = new System.Drawing.Size(88, 28);
             this.layoutBtnDangNhap.Name = "layoutBtnDangNhap";
-            this.layoutBtnDangNhap.Size = new System.Drawing.Size(324, 44);
+            this.layoutBtnDangNhap.Size = new System.Drawing.Size(324, 38);
             this.layoutBtnDangNhap.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutBtnDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutBtnDangNhap.TextSize = new System.Drawing.Size(0, 0);
@@ -338,11 +309,9 @@
             this.controlsLogin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGiuDangNhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutGiuToiDangNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -358,12 +327,10 @@
         private DevExpress.XtraEditors.GroupControl groupDangNhap;
         private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
         private DevExpress.XtraEditors.TextEdit txtMatKhau;
-        private DevExpress.XtraEditors.CheckEdit txtGiuDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtTenDangNhap;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtMatKhau;
-        private DevExpress.XtraLayout.LayoutControlItem layoutGiuToiDangNhap;
         private DevExpress.XtraLayout.LayoutControlItem layoutBtnDangNhap;
     }
 }
