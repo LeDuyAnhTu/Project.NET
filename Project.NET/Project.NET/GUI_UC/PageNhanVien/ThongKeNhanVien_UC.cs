@@ -17,7 +17,7 @@ namespace Project.NET.GUI_UC
     {
          
 
-        Loading_UC loading_UC;
+        Loading_UC loading_UC = null;
 
 
         public ThongKeNhanVien_UC()
