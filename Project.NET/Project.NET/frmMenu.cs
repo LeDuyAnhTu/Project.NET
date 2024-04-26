@@ -37,19 +37,7 @@ namespace Project.NET
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            loadingFirstOrDeFaultNavbarMenuButton();
-
-            btnTaiKhoan.Click += Button_Click;
-            btnNhanVien.Click += Button_Click;
-            btnKho.Click += Button_Click;
-            btnSanPham.Click += Button_Click;
-            btnKhuyenMai.Click += Button_Click;
-            btnKhachHang.Click += Button_Click;
-            btnHoaDon.Click += Button_Click;
-            btnChiNhanh.Click += Button_Click;
-            btnNhaCungCap.Click += Button_Click;
-            btnBaoCao.Click += Button_Click;
-            btnThongKe.Click += Button_Click;
+            loadingFirstOrDeFaultNavbarMenuButton(); 
         }
 
         /// <summary>

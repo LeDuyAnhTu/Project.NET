@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement17 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement18 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement19 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement20 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
             this.tileNavPane1 = new DevExpress.XtraBars.Navigation.TileNavPane();
             this.tileNavPane2 = new DevExpress.XtraBars.Navigation.TileNavPane();
             this.tileNavPane3 = new DevExpress.XtraBars.Navigation.TileNavPane();
@@ -49,8 +49,6 @@
             this.tileNavCategory1 = new DevExpress.XtraBars.Navigation.TileNavCategory();
             this.tileNavCategory3 = new DevExpress.XtraBars.Navigation.TileNavCategory();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
-            this.tileNavHeThong = new DevExpress.XtraBars.Navigation.TileNavPane();
-            this.navMenuHeThong = new DevExpress.XtraBars.Navigation.NavButton();
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane3)).BeginInit();
@@ -58,7 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileNavHeThong)).BeginInit();
             this.SuspendLayout();
             // 
             // tileNavPane1
@@ -155,9 +152,9 @@
             // tbiThongKe
             // 
             this.tbiThongKe.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement16.ImageOptions.Image = global::Project.NET.Properties.Resources.horizontalgridlinesminor_32x32;
-            tileItemElement16.Text = "Thống kê";
-            this.tbiThongKe.Elements.Add(tileItemElement16);
+            tileItemElement1.ImageOptions.Image = global::Project.NET.Properties.Resources.horizontalgridlinesminor_32x32;
+            tileItemElement1.Text = "Thống kê";
+            this.tbiThongKe.Elements.Add(tileItemElement1);
             this.tbiThongKe.Id = 5;
             this.tbiThongKe.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiThongKe.Name = "tbiThongKe";
@@ -165,9 +162,9 @@
             // tbiKho
             // 
             this.tbiKho.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement17.ImageOptions.Image = global::Project.NET.Properties.Resources.boproductgroup_32x32;
-            tileItemElement17.Text = "Kho";
-            this.tbiKho.Elements.Add(tileItemElement17);
+            tileItemElement2.ImageOptions.Image = global::Project.NET.Properties.Resources.boproductgroup_32x32;
+            tileItemElement2.Text = "Kho";
+            this.tbiKho.Elements.Add(tileItemElement2);
             this.tbiKho.Id = 4;
             this.tbiKho.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiKho.Name = "tbiKho";
@@ -175,9 +172,9 @@
             // tbiChiNhanh
             // 
             this.tbiChiNhanh.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement18.ImageOptions.Image = global::Project.NET.Properties.Resources.home_32x32;
-            tileItemElement18.Text = "Chi nhánh";
-            this.tbiChiNhanh.Elements.Add(tileItemElement18);
+            tileItemElement3.ImageOptions.Image = global::Project.NET.Properties.Resources.home_32x32;
+            tileItemElement3.Text = "Chi nhánh";
+            this.tbiChiNhanh.Elements.Add(tileItemElement3);
             this.tbiChiNhanh.Id = 6;
             this.tbiChiNhanh.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiChiNhanh.Name = "tbiChiNhanh";
@@ -185,9 +182,9 @@
             // tbiNhanVien
             // 
             this.tbiNhanVien.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement19.ImageOptions.Image = global::Project.NET.Properties.Resources.usergroup_32x32;
-            tileItemElement19.Text = "Nhân viên";
-            this.tbiNhanVien.Elements.Add(tileItemElement19);
+            tileItemElement4.ImageOptions.Image = global::Project.NET.Properties.Resources.usergroup_32x32;
+            tileItemElement4.Text = "Nhân viên";
+            this.tbiNhanVien.Elements.Add(tileItemElement4);
             this.tbiNhanVien.Id = 3;
             this.tbiNhanVien.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiNhanVien.Name = "tbiNhanVien";
@@ -195,9 +192,9 @@
             // tbiDangNhap
             // 
             this.tbiDangNhap.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement20.ImageOptions.Image = global::Project.NET.Properties.Resources.assignto_32x32;
-            tileItemElement20.Text = "Đăng nhập";
-            this.tbiDangNhap.Elements.Add(tileItemElement20);
+            tileItemElement5.ImageOptions.Image = global::Project.NET.Properties.Resources.assignto_32x32;
+            tileItemElement5.Text = "Đăng nhập";
+            this.tbiDangNhap.Elements.Add(tileItemElement5);
             this.tbiDangNhap.Id = 2;
             this.tbiDangNhap.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.tbiDangNhap.Name = "tbiDangNhap";
@@ -226,34 +223,6 @@
             this.simpleLabelItem1.Size = new System.Drawing.Size(433, 17);
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(50, 20);
             // 
-            // tileNavHeThong
-            // 
-            this.tileNavHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.tileNavHeThong.Buttons.Add(this.navMenuHeThong);
-            // 
-            // tileNavCategory6
-            // 
-            this.tileNavHeThong.DefaultCategory.Name = "tileNavCategory6";
-            // 
-            // 
-            // 
-            this.tileNavHeThong.DefaultCategory.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            this.tileNavHeThong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tileNavHeThong.Location = new System.Drawing.Point(0, 0);
-            this.tileNavHeThong.Margin = new System.Windows.Forms.Padding(0);
-            this.tileNavHeThong.Name = "tileNavHeThong";
-            this.tileNavHeThong.Size = new System.Drawing.Size(565, 60);
-            this.tileNavHeThong.TabIndex = 8;
-            this.tileNavHeThong.Text = "tileNavPane4";
-            // 
-            // navMenuHeThong
-            // 
-            this.navMenuHeThong.Alignment = DevExpress.XtraBars.Navigation.NavButtonAlignment.Left;
-            this.navMenuHeThong.Caption = "Hệ thống";
-            this.navMenuHeThong.ImageOptions.SvgImage = global::Project.NET.Properties.Resources.logosvg32_32;
-            this.navMenuHeThong.IsMain = true;
-            this.navMenuHeThong.Name = "navMenuHeThong";
-            // 
             // frmMain
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
@@ -261,12 +230,10 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 407);
-            this.Controls.Add(this.tileNavHeThong);
+            this.ClientSize = new System.Drawing.Size(960, 564);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IconOptions.SvgImage = global::Project.NET.Properties.Resources.logosvg;
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "frmMain";
@@ -282,7 +249,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileNavHeThong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,7 +270,5 @@
         private DevExpress.XtraEditors.TextEdit textEdit11;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
-        private DevExpress.XtraBars.Navigation.TileNavPane tileNavHeThong;
-        private DevExpress.XtraBars.Navigation.NavButton navMenuHeThong;
     }
 }
