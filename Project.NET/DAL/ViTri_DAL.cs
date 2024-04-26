@@ -18,8 +18,13 @@ namespace DAL
             IQueryable ds = null;
             try
             {
-                ds = from qtc in db.DBO.ViTris
-                     select qtc;
+                ds = from vt in db.DBO.ViTris
+                     where vt.maVT != "VT00"
+                     select new
+                     {
+                         vt.maVT,
+                         vt.tenVT
+                     };
             }catch(Exception ex)
             {
                 throw ex;

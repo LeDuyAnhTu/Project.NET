@@ -199,7 +199,6 @@
     <Compile Include="GUI_UC\PageThongKe\ThongKeYear_UC.Designer.cs">
       <DependentUpon>ThongKeYear_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="LayoutConfig\LayoutConfig.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
