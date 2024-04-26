@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Project.NET.GUI_UC;
+using System;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project.NET
 {
     public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
-
+        
+        frmLogin frmLogin = null;
         /// <summary>
         /// Khởi tạo form
         /// </summary>
@@ -21,19 +24,12 @@ namespace Project.NET
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void frmMain_Load(object sender, EventArgs e)
-        {
-            frmLogin frm = Application.OpenForms.OfType<frmLogin>().FirstOrDefault();
-            if (frm != null)
-            {
-                frm.Activate();
-            }
-            else
-            {
-                frm = new frmLogin();
-                frm.MdiParent = this;
-                frm.Dock = DockStyle.Fill;
-                frm.Show();
-            }
+        {  
+            // Tạo và hiển thị frmLogin 
+            frmLogin = new frmLogin();
+            frmLogin.MdiParent = this;
+            frmLogin.Dock = DockStyle.Fill;
+            frmLogin.Show();
         }
 
         /// <summary>

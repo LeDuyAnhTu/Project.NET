@@ -127,6 +127,12 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\Loading_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\Loading_UC.Designer.cs">
+      <DependentUpon>Loading_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageKho\ThongKeKho_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,12 +150,6 @@
     </Compile>
     <Compile Include="GUI_UC\PageNhanVien\CaLam_UC.Designer.cs">
       <DependentUpon>CaLam_UC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI_UC\Loading_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI_UC\Loading_UC.Designer.cs">
-      <DependentUpon>Loading_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_UC\PageBaoCao\BaoCao_UC.cs">
       <SubType>UserControl</SubType>
@@ -199,7 +199,6 @@
     <Compile Include="GUI_UC\PageThongKe\ThongKeYear_UC.Designer.cs">
       <DependentUpon>ThongKeYear_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="LayoutConfig\LayoutConfig.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
@@ -208,11 +207,11 @@
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
-      <DependentUpon>BaoCao_UC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\Loading_UC.resx">
       <DependentUpon>Loading_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
+      <DependentUpon>BaoCao_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKho\Kho_UC.resx">
       <DependentUpon>Kho_UC.cs</DependentUpon>
@@ -326,7 +325,24 @@
   <ItemGroup>
     <None Include="Resources\loading_logo.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svg_card_logo.svg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
