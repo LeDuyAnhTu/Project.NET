@@ -29,37 +29,28 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.svgImageBox1 = new DevExpress.XtraEditors.SvgImageBox();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.svgImageBox1);
+            this.layoutControl1.BackColor = System.Drawing.Color.Transparent;
+            this.layoutControl1.Controls.Add(this.pictureEdit1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(883, 0, 650, 400);
             this.layoutControl1.Root = this.Root;
             this.layoutControl1.Size = new System.Drawing.Size(436, 276);
-            this.layoutControl1.TabIndex = 0;
+            this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // svgImageBox1
-            // 
-            this.svgImageBox1.Location = new System.Drawing.Point(12, 12);
-            this.svgImageBox1.Name = "svgImageBox1";
-            this.svgImageBox1.Size = new System.Drawing.Size(412, 252);
-            this.svgImageBox1.SizeMode = DevExpress.XtraEditors.SvgImageSizeMode.Stretch;
-            this.svgImageBox1.SvgImage = global::Project.NET.Properties.Resources.card_logo;
-            this.svgImageBox1.TabIndex = 4;
-            this.svgImageBox1.Text = "svgImageBox1";
             // 
             // Root
             // 
@@ -71,13 +62,23 @@
             this.Root.Size = new System.Drawing.Size(436, 276);
             this.Root.TextVisible = false;
             // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = global::Project.NET.Properties.Resources.svg_card_logo;
+            this.pictureEdit1.Location = new System.Drawing.Point(12, 12);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit1.Size = new System.Drawing.Size(412, 252);
+            this.pictureEdit1.StyleController = this.layoutControl1;
+            this.pictureEdit1.TabIndex = 4;
+            // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.svgImageBox1;
+            this.layoutControlItem1.Control = this.pictureEdit1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(416, 256);
-            this.layoutControlItem1.Text = "Hình ảnh bách hóa xanh";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -92,8 +93,8 @@
             this.Size = new System.Drawing.Size(436, 276);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
@@ -102,7 +103,7 @@
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.SvgImageBox svgImageBox1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }

@@ -103,6 +103,16 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap computer {
+            get {
+                object obj = ResourceManager.GetObject("computer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_32x32 {
             get {
                 object obj = ResourceManager.GetObject("home_32x32", resourceCulture);
@@ -116,6 +126,26 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap horizontalgridlinesminor_32x32 {
             get {
                 object obj = ResourceManager.GetObject("horizontalgridlinesminor_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap key16_16 {
+            get {
+                object obj = ResourceManager.GetObject("key16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap key32_32 {
+            get {
+                object obj = ResourceManager.GetObject("key32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,36 @@ namespace Project.NET.Properties {
         internal static DevExpress.Utils.Svg.SvgImage logosvg32_32 {
             get {
                 object obj = ResourceManager.GetObject("logosvg32_32", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pass16_16 {
+            get {
+                object obj = ResourceManager.GetObject("pass16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pass32_32 {
+            get {
+                object obj = ResourceManager.GetObject("pass32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage svg_card_logo {
+            get {
+                object obj = ResourceManager.GetObject("svg_card_logo", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
