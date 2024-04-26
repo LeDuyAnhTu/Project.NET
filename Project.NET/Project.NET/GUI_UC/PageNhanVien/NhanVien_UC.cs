@@ -111,9 +111,14 @@ namespace Project.NET.Forms
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void dgvNhanVien_Click(object sender, EventArgs e)
+        private void gridView1_Click(object sender, EventArgs e)
         {
-
+            int[] cacDong = gridView1.GetSelectedRows();
+            foreach (int i in cacDong)
+            {
+                DataRow data = gridView1.GetDataRow(i);
+                MessageBox.Show(data.ToString());
+            }
         }
     }
 }
