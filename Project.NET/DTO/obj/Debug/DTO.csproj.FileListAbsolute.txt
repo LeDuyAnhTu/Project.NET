@@ -16,15 +16,15 @@ D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\DTO\obj\Debug\DTO.cs
 D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\DTO\obj\Debug\DTO.dll
 D:\School\HK4\ADO.Net\Code\PROJ\GUI\Project.NET\Project.NET\DTO\obj\Debug\DTO.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\bin\Debug\DTO.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\bin\Debug\DTO.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.pdb
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DTO\bin\Debug\DTO.dll
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DTO\bin\Debug\DTO.pdb
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DTO\obj\Debug\DTO.dll
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DTO\obj\Debug\DTO.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\bin\Debug\DTO.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\bin\Debug\DTO.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTO\obj\Debug\DTO.pdb

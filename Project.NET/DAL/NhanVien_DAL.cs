@@ -153,6 +153,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return "NV00000001";
             }
         }
