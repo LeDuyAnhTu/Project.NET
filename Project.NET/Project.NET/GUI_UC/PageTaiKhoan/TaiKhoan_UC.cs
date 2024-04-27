@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BUS;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,24 @@ namespace Project.NET.Forms
 {
     public partial class TaiKhoan_UC : DevExpress.XtraEditors.XtraUserControl
     {
+        //Properties
+        private TaiKhoan_BUS db_TK = new TaiKhoan_BUS();
+
+        //Constructors
         public TaiKhoan_UC()
         {
             InitializeComponent();
+        }
+
+        //Methods
+        private void loadForm()
+        {
+            dgvTaiKhoanNhanVien.DataSource = db_TK.LayDanhSach();
+        }
+
+        private void TaiKhoan_UC_Load(object sender, EventArgs e)
+        {
+            dgvTaiKhoanNhanVien.DataSource = db_TK.LayDanhSach();
         }
     }
 }

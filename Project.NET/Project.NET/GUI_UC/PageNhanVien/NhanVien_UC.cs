@@ -115,12 +115,12 @@ namespace Project.NET.Forms
             taoIDMoi();
 
             //
-            //dgvNhanVien 
+            //Danh sách nhân viên
             //
             dgvNhanVien.DataSource = db_NV.LayDanhSach();
 
             //
-            //Combobox chi nhánh
+            //Chi nhánh
             //
             cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
             cboChiNhanh.Properties.ValueMember = "maCN";
@@ -128,7 +128,7 @@ namespace Project.NET.Forms
             cboChiNhanh.ItemIndex = 0; //Chọn chi nhánh mặc định
 
             //
-            //Combobox vị trí
+            //Vị trí
             //
             cboViTriChucVuNhanVien.Properties.DataSource = db_VT.LayDanhSach();
             cboViTriChucVuNhanVien.Properties.ValueMember = "maVT";
@@ -147,6 +147,11 @@ namespace Project.NET.Forms
             //
             txtNgaySinh.DateTime = DateTime.Now.AddYears(-18);
             txtNgaySinh.Properties.MaxValue = DateTime.Now.AddYears(-18);
+
+            //
+            //Giới tính
+            //
+            txtGioiTinh.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -229,6 +234,43 @@ namespace Project.NET.Forms
                     MessageBox.Show("Thêm nhân viên mới thành công !", "Thông báo");
                 loadForm();
             }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Thực hiện sửa thông tin của nhân viên đang chọn dựa theo dữ liệu vừa sửa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                NhanVien_DTO nv_Moi = layDuLieu();
+                if (db_NV.Sua(nv_Moi))
+                    MessageBox.Show("Sửa thông tin nhân viên thành công !", "Thông báo");
+                loadForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Thực hiện xóa thông tin nhân viên đang chọn và tài khoản của họ trong hệ thống
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (db_NV.Xoa(txtMaNV.Text))
+                    MessageBox.Show("Xóa thông tin nhân viên thành công !", "Thông báo");
+                loadForm();
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

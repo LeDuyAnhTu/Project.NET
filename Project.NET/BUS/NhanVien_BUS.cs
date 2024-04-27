@@ -63,7 +63,7 @@ namespace BUS
         public bool Sua(NhanVien_DTO nhanVien)
         {
             bool result = false;
-            //Thêm nhân viên
+            //Sửa thông tin nhân viên
             try
             {
                 result = nv.Sua(nhanVien);
@@ -82,7 +82,15 @@ namespace BUS
         public bool Xoa(string maNV)
         {
             bool result = false;
-            //Thêm nhân viên
+            //Xóa tài khoản của nhân viên
+            try
+            {
+                result = tk.Xoa(tk.TimTaiKhoan_MaNV(maNV).tenTK);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+            //Xóa nhân viên
             try
             {
                 result = nv.Xoa(maNV);
