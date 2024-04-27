@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVien_UC));
-            this.labelControl = new DevExpress.XtraEditors.LabelControl();
+            this.TieuDeUC = new DevExpress.XtraEditors.LabelControl();
             this.layoutNhanVien = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.groupDanhSachNhanVien = new DevExpress.XtraEditors.GroupControl();
             this.dgvNhanVien = new DevExpress.XtraGrid.GridControl();
@@ -51,19 +51,20 @@
             this.BUTTONS = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutTxtMaNV = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtHoTen = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutTxtNgaySinh = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtGioiTinh = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutCCCD = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutSDT = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutLuong = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutChiNhanh = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutViTri = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutTxtNgaySinh = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutLuong = new DevExpress.XtraLayout.LayoutControlItem();
             this.CRUD = new DevExpress.XtraLayout.LayoutControlGroup();
             this.Them = new DevExpress.XtraLayout.LayoutControlItem();
             this.CapNhat = new DevExpress.XtraLayout.LayoutControlItem();
             this.LamMoi = new DevExpress.XtraLayout.LayoutControlItem();
             this.Xoa = new DevExpress.XtraLayout.LayoutControlItem();
             this.LIST = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).BeginInit();
@@ -84,46 +85,48 @@
             ((System.ComponentModel.ISupportInitialize)(this.BUTTONS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMaNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutSDT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LamMoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelControl
+            // TieuDeUC
             // 
-            this.labelControl.AllowHtmlString = true;
-            this.labelControl.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.labelControl.Appearance.Options.UseFont = true;
-            this.labelControl.Appearance.Options.UseForeColor = true;
-            this.labelControl.Appearance.Options.UseTextOptions = true;
-            this.labelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
-            this.labelControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
-            this.labelControl.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.labelControl.LineVisible = true;
-            this.labelControl.Location = new System.Drawing.Point(0, 0);
-            this.labelControl.Name = "labelControl";
-            this.labelControl.Padding = new System.Windows.Forms.Padding(9, 4, 0, 0);
-            this.labelControl.Size = new System.Drawing.Size(923, 32);
-            this.labelControl.TabIndex = 2;
-            this.labelControl.Text = "Nhân viên";
+            this.TieuDeUC.AllowHtmlString = true;
+            this.TieuDeUC.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TieuDeUC.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.TieuDeUC.Appearance.Options.UseFont = true;
+            this.TieuDeUC.Appearance.Options.UseForeColor = true;
+            this.TieuDeUC.Appearance.Options.UseTextOptions = true;
+            this.TieuDeUC.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.TieuDeUC.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.TieuDeUC.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.TieuDeUC.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.TieuDeUC.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.TieuDeUC.LineVisible = true;
+            this.TieuDeUC.Location = new System.Drawing.Point(12, 12);
+            this.TieuDeUC.Name = "TieuDeUC";
+            this.TieuDeUC.Padding = new System.Windows.Forms.Padding(9, 4, 0, 0);
+            this.TieuDeUC.Size = new System.Drawing.Size(899, 32);
+            this.TieuDeUC.StyleController = this.layoutNhanVien;
+            this.TieuDeUC.TabIndex = 2;
+            this.TieuDeUC.Text = "Nhân viên";
             // 
             // layoutNhanVien
             // 
             this.layoutNhanVien.AllowCustomization = false;
+            this.layoutNhanVien.Controls.Add(this.TieuDeUC);
             this.layoutNhanVien.Controls.Add(this.groupDanhSachNhanVien);
             this.layoutNhanVien.Controls.Add(this.txtHoTen);
             this.layoutNhanVien.Controls.Add(this.txtNgaySinh);
@@ -139,21 +142,21 @@
             this.layoutNhanVien.Controls.Add(this.txtGioiTinh);
             this.layoutNhanVien.Controls.Add(this.txtMaNV);
             this.layoutNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutNhanVien.Location = new System.Drawing.Point(0, 32);
+            this.layoutNhanVien.Location = new System.Drawing.Point(0, 0);
             this.layoutNhanVien.Name = "layoutNhanVien";
             this.layoutNhanVien.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(945, 563, 650, 400);
             this.layoutNhanVien.Root = this.OUTLINE;
-            this.layoutNhanVien.Size = new System.Drawing.Size(923, 714);
+            this.layoutNhanVien.Size = new System.Drawing.Size(923, 746);
             this.layoutNhanVien.TabIndex = 3;
             // 
             // groupDanhSachNhanVien
             // 
             this.groupDanhSachNhanVien.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupDanhSachNhanVien.CaptionImageOptions.Image")));
             this.groupDanhSachNhanVien.Controls.Add(this.dgvNhanVien);
-            this.groupDanhSachNhanVien.Location = new System.Drawing.Point(12, 574);
+            this.groupDanhSachNhanVien.Location = new System.Drawing.Point(12, 610);
             this.groupDanhSachNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupDanhSachNhanVien.Name = "groupDanhSachNhanVien";
-            this.groupDanhSachNhanVien.Size = new System.Drawing.Size(899, 128);
+            this.groupDanhSachNhanVien.Size = new System.Drawing.Size(899, 124);
             this.groupDanhSachNhanVien.TabIndex = 22;
             this.groupDanhSachNhanVien.Text = "Danh sách nhân viên";
             // 
@@ -163,7 +166,7 @@
             this.dgvNhanVien.Location = new System.Drawing.Point(2, 33);
             this.dgvNhanVien.MainView = this.gridView1;
             this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.Size = new System.Drawing.Size(895, 93);
+            this.dgvNhanVien.Size = new System.Drawing.Size(895, 89);
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -175,7 +178,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(161, 94);
+            this.txtHoTen.Location = new System.Drawing.Point(161, 130);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Properties.Appearance.Options.UseFont = true;
@@ -191,7 +194,7 @@
             // txtNgaySinh
             // 
             this.txtNgaySinh.EditValue = null;
-            this.txtNgaySinh.Location = new System.Drawing.Point(161, 130);
+            this.txtNgaySinh.Location = new System.Drawing.Point(161, 166);
             this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,7 +212,7 @@
             // 
             // txtSoDienThoai
             // 
-            this.txtSoDienThoai.Location = new System.Drawing.Point(161, 280);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(161, 316);
             this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,7 +226,7 @@
             // 
             // txtCCCD
             // 
-            this.txtCCCD.Location = new System.Drawing.Point(161, 244);
+            this.txtCCCD.Location = new System.Drawing.Point(161, 280);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,7 +242,7 @@
             0,
             0,
             0});
-            this.txtLuongNV.Location = new System.Drawing.Point(161, 316);
+            this.txtLuongNV.Location = new System.Drawing.Point(161, 352);
             this.txtLuongNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLuongNV.Name = "txtLuongNV";
             this.txtLuongNV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -259,7 +262,7 @@
             // 
             // cboChiNhanh
             // 
-            this.cboChiNhanh.Location = new System.Drawing.Point(161, 352);
+            this.cboChiNhanh.Location = new System.Drawing.Point(161, 388);
             this.cboChiNhanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboChiNhanh.Name = "cboChiNhanh";
             this.cboChiNhanh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,7 +277,7 @@
             // 
             // cboViTriChucVuNhanVien
             // 
-            this.cboViTriChucVuNhanVien.Location = new System.Drawing.Point(161, 388);
+            this.cboViTriChucVuNhanVien.Location = new System.Drawing.Point(161, 424);
             this.cboViTriChucVuNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboViTriChucVuNhanVien.Name = "cboViTriChucVuNhanVien";
             this.cboViTriChucVuNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -314,8 +317,8 @@
             this.btnThem.AppearancePressed.Options.UseBorderColor = true;
             this.btnThem.AppearancePressed.Options.UseFont = true;
             this.btnThem.AppearancePressed.Options.UseForeColor = true;
-            this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem1.ImageOptions.Image")));
-            this.btnThem.Location = new System.Drawing.Point(24, 482);
+            this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
+            this.btnThem.Location = new System.Drawing.Point(24, 518);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(435, 36);
@@ -350,8 +353,8 @@
             this.btnCapNhat.AppearancePressed.Options.UseBorderColor = true;
             this.btnCapNhat.AppearancePressed.Options.UseFont = true;
             this.btnCapNhat.AppearancePressed.Options.UseForeColor = true;
-            this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat1.ImageOptions.Image")));
-            this.btnCapNhat.Location = new System.Drawing.Point(463, 482);
+            this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.ImageOptions.Image")));
+            this.btnCapNhat.Location = new System.Drawing.Point(463, 518);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(436, 36);
@@ -386,8 +389,8 @@
             this.btnLamMoi.AppearancePressed.Options.UseBorderColor = true;
             this.btnLamMoi.AppearancePressed.Options.UseFont = true;
             this.btnLamMoi.AppearancePressed.Options.UseForeColor = true;
-            this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi1.ImageOptions.Image")));
-            this.btnLamMoi.Location = new System.Drawing.Point(24, 522);
+            this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.ImageOptions.Image")));
+            this.btnLamMoi.Location = new System.Drawing.Point(24, 558);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(435, 36);
@@ -422,8 +425,8 @@
             this.btnXoa.AppearancePressed.Options.UseBorderColor = true;
             this.btnXoa.AppearancePressed.Options.UseFont = true;
             this.btnXoa.AppearancePressed.Options.UseForeColor = true;
-            this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa1.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(463, 522);
+            this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
+            this.btnXoa.Location = new System.Drawing.Point(463, 558);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(436, 36);
@@ -433,7 +436,7 @@
             // 
             // txtGioiTinh
             // 
-            this.txtGioiTinh.Location = new System.Drawing.Point(161, 166);
+            this.txtGioiTinh.Location = new System.Drawing.Point(161, 202);
             this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -448,7 +451,7 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(161, 58);
+            this.txtMaNV.Location = new System.Drawing.Point(161, 94);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMaNV.Properties.Appearance.Options.UseFont = true;
@@ -470,20 +473,21 @@
             // 
             // OUTLINE
             // 
-            this.OUTLINE.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupLayoutNhanVien.CaptionImageOptions.Image")));
+            this.OUTLINE.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("OUTLINE.CaptionImageOptions.Image")));
             this.OUTLINE.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.OUTLINE.GroupBordersVisible = false;
             this.OUTLINE.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.BUTTONS,
             this.CRUD,
-            this.LIST});
-            this.OUTLINE.Name = "OUTLINE";
-            this.OUTLINE.Size = new System.Drawing.Size(923, 714);
+            this.LIST,
+            this.layoutControlItem2});
+            this.OUTLINE.Name = "Root";
+            this.OUTLINE.Size = new System.Drawing.Size(923, 746);
             this.OUTLINE.TextVisible = false;
             // 
             // BUTTONS
             // 
-            this.BUTTONS.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlGroup6.CaptionImageOptions.Image")));
+            this.BUTTONS.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BUTTONS.CaptionImageOptions.Image")));
             this.BUTTONS.CustomizationFormText = "Thông tin nhân viên";
             this.BUTTONS.ExpandButtonVisible = true;
             this.BUTTONS.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -496,7 +500,7 @@
             this.layoutChiNhanh,
             this.layoutViTri,
             this.layoutLuong});
-            this.BUTTONS.Location = new System.Drawing.Point(0, 0);
+            this.BUTTONS.Location = new System.Drawing.Point(0, 36);
             this.BUTTONS.Name = "BUTTONS";
             this.BUTTONS.OptionsItemText.TextToControlDistance = 3;
             this.BUTTONS.Size = new System.Drawing.Size(903, 424);
@@ -524,10 +528,22 @@
             this.layoutTxtHoTen.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutTxtHoTen.TextSize = new System.Drawing.Size(125, 32);
             // 
+            // layoutTxtNgaySinh
+            // 
+            this.layoutTxtNgaySinh.Control = this.txtNgaySinh;
+            this.layoutTxtNgaySinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtNgaySinh.ImageOptions.Image")));
+            this.layoutTxtNgaySinh.Location = new System.Drawing.Point(0, 72);
+            this.layoutTxtNgaySinh.Name = "layoutTxtNgaySinh";
+            this.layoutTxtNgaySinh.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutTxtNgaySinh.OptionsTableLayoutItem.RowIndex = 3;
+            this.layoutTxtNgaySinh.Size = new System.Drawing.Size(879, 36);
+            this.layoutTxtNgaySinh.Text = "Ngày sinh:";
+            this.layoutTxtNgaySinh.TextSize = new System.Drawing.Size(125, 32);
+            // 
             // layoutTxtGioiTinh
             // 
             this.layoutTxtGioiTinh.Control = this.txtGioiTinh;
-            this.layoutTxtGioiTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem2.ImageOptions.Image")));
+            this.layoutTxtGioiTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtGioiTinh.ImageOptions.Image")));
             this.layoutTxtGioiTinh.Location = new System.Drawing.Point(0, 108);
             this.layoutTxtGioiTinh.MaxSize = new System.Drawing.Size(0, 78);
             this.layoutTxtGioiTinh.MinSize = new System.Drawing.Size(255, 78);
@@ -541,7 +557,7 @@
             // layoutCCCD
             // 
             this.layoutCCCD.Control = this.txtCCCD;
-            this.layoutCCCD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem4.ImageOptions.Image")));
+            this.layoutCCCD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutCCCD.ImageOptions.Image")));
             this.layoutCCCD.Location = new System.Drawing.Point(0, 186);
             this.layoutCCCD.Name = "layoutCCCD";
             this.layoutCCCD.OptionsTableLayoutItem.ColumnIndex = 1;
@@ -553,7 +569,7 @@
             // layoutSDT
             // 
             this.layoutSDT.Control = this.txtSoDienThoai;
-            this.layoutSDT.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem5.ImageOptions.Image")));
+            this.layoutSDT.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutSDT.ImageOptions.Image")));
             this.layoutSDT.Location = new System.Drawing.Point(0, 222);
             this.layoutSDT.Name = "layoutSDT";
             this.layoutSDT.OptionsTableLayoutItem.RowIndex = 1;
@@ -561,21 +577,10 @@
             this.layoutSDT.Text = "Số Điện thoại:";
             this.layoutSDT.TextSize = new System.Drawing.Size(125, 32);
             // 
-            // layoutLuong
-            // 
-            this.layoutLuong.Control = this.txtLuongNV;
-            this.layoutLuong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem6.ImageOptions.Image")));
-            this.layoutLuong.Location = new System.Drawing.Point(0, 258);
-            this.layoutLuong.Name = "layoutLuong";
-            this.layoutLuong.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutLuong.Size = new System.Drawing.Size(879, 36);
-            this.layoutLuong.Text = "Lương";
-            this.layoutLuong.TextSize = new System.Drawing.Size(125, 32);
-            // 
             // layoutChiNhanh
             // 
             this.layoutChiNhanh.Control = this.cboChiNhanh;
-            this.layoutChiNhanh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem7.ImageOptions.Image")));
+            this.layoutChiNhanh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutChiNhanh.ImageOptions.Image")));
             this.layoutChiNhanh.Location = new System.Drawing.Point(0, 294);
             this.layoutChiNhanh.Name = "layoutChiNhanh";
             this.layoutChiNhanh.OptionsTableLayoutItem.ColumnIndex = 1;
@@ -588,7 +593,7 @@
             // 
             this.layoutViTri.Control = this.cboViTriChucVuNhanVien;
             this.layoutViTri.CustomizationFormText = "Vị trí (Chức Vụ)";
-            this.layoutViTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem8.ImageOptions.Image")));
+            this.layoutViTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutViTri.ImageOptions.Image")));
             this.layoutViTri.Location = new System.Drawing.Point(0, 330);
             this.layoutViTri.Name = "layoutViTri";
             this.layoutViTri.OptionsTableLayoutItem.RowIndex = 3;
@@ -596,28 +601,27 @@
             this.layoutViTri.Text = "Vị trí (Chức vụ NV)";
             this.layoutViTri.TextSize = new System.Drawing.Size(125, 32);
             // 
-            // layoutTxtNgaySinh
+            // layoutLuong
             // 
-            this.layoutTxtNgaySinh.Control = this.txtNgaySinh;
-            this.layoutTxtNgaySinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem3.ImageOptions.Image")));
-            this.layoutTxtNgaySinh.Location = new System.Drawing.Point(0, 72);
-            this.layoutTxtNgaySinh.Name = "layoutTxtNgaySinh";
-            this.layoutTxtNgaySinh.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutTxtNgaySinh.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutTxtNgaySinh.Size = new System.Drawing.Size(879, 36);
-            this.layoutTxtNgaySinh.Text = "Ngày sinh:";
-            this.layoutTxtNgaySinh.TextSize = new System.Drawing.Size(125, 32);
+            this.layoutLuong.Control = this.txtLuongNV;
+            this.layoutLuong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutLuong.ImageOptions.Image")));
+            this.layoutLuong.Location = new System.Drawing.Point(0, 258);
+            this.layoutLuong.Name = "layoutLuong";
+            this.layoutLuong.OptionsTableLayoutItem.RowIndex = 2;
+            this.layoutLuong.Size = new System.Drawing.Size(879, 36);
+            this.layoutLuong.Text = "Lương";
+            this.layoutLuong.TextSize = new System.Drawing.Size(125, 32);
             // 
             // CRUD
             // 
-            this.CRUD.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutGroupThaoTacCSDL1.CaptionImageOptions.Image")));
+            this.CRUD.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CRUD.CaptionImageOptions.Image")));
             this.CRUD.CustomizationFormText = "Thao tác Cơ Sở Dữ Liệu";
             this.CRUD.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.Them,
             this.CapNhat,
             this.LamMoi,
             this.Xoa});
-            this.CRUD.Location = new System.Drawing.Point(0, 424);
+            this.CRUD.Location = new System.Drawing.Point(0, 460);
             this.CRUD.Name = "CRUD";
             this.CRUD.OptionsItemText.TextToControlDistance = 3;
             this.CRUD.Size = new System.Drawing.Size(903, 138);
@@ -677,19 +681,29 @@
             // LIST
             // 
             this.LIST.Control = this.groupDanhSachNhanVien;
-            this.LIST.Location = new System.Drawing.Point(0, 562);
+            this.LIST.Location = new System.Drawing.Point(0, 598);
             this.LIST.Name = "LIST";
-            this.LIST.Size = new System.Drawing.Size(903, 132);
+            this.LIST.Size = new System.Drawing.Size(903, 128);
             this.LIST.Text = "DGV Nhân Viên:";
             this.LIST.TextSize = new System.Drawing.Size(0, 0);
             this.LIST.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.TieuDeUC;
+            this.layoutControlItem2.CustomizationFormText = "Tiêu Đề UC";
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(903, 36);
+            this.layoutControlItem2.Text = "Tiêu Đề UC";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
             // 
             // NhanVien_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.layoutNhanVien);
-            this.Controls.Add(this.labelControl);
             this.Name = "NhanVien_UC";
             this.Size = new System.Drawing.Size(923, 746);
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).EndInit();
@@ -712,26 +726,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.BUTTONS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMaNV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutSDT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LamMoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.LabelControl labelControl;
+        private DevExpress.XtraEditors.LabelControl TieuDeUC;
         private DevExpress.XtraDataLayout.DataLayoutControl layoutNhanVien;
         private DevExpress.XtraEditors.TextEdit txtHoTen;
         private DevExpress.XtraEditors.DateEdit txtNgaySinh;
@@ -768,5 +783,6 @@
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
         private DevExpress.XtraEditors.TextEdit txtMaNV;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtMaNV;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
     }
 }
