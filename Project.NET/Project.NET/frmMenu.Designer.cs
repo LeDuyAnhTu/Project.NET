@@ -775,6 +775,7 @@
             this.nafContent.Text = "navFrameTKNhanVien";
             this.nafContent.TransitionAnimationProperties.FrameCount = 100;
             this.nafContent.TransitionAnimationProperties.FrameInterval = 1000;
+            this.nafContent.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
             // 
             // navThongKe
             // 
