@@ -104,6 +104,7 @@ namespace Project.NET.Forms
             //
             txtNgaySinh.DateTime = DateTime.Now.AddYears(-18);
             txtNgaySinh.Properties.MaxValue = DateTime.Now.AddYears(-18);
+
         }
 
         /// <summary>
@@ -116,9 +117,12 @@ namespace Project.NET.Forms
             int[] cacDong = gridView1.GetSelectedRows();
             foreach (int i in cacDong)
             {
-                DataRow data = gridView1.GetDataRow(i);
-                MessageBox.Show(data.ToString());
+                txtMaNV.Text = gridView1.GetRowCellValue(i,"maNV").ToString();
+                txtHoTen.Text = gridView1.GetRowCellValue(i, "tenNV").ToString();
+                txtSoDienThoai.Text = gridView1.GetRowCellValue(i, "SDT").ToString();
+                txtNgaySinh.Text = gridView1.GetRowCellValue(i, "ngaySinh").ToString();
             }
         }
+
     }
 }
