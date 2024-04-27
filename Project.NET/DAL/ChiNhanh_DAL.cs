@@ -18,7 +18,11 @@ namespace DAL
             try
             {
                 IQueryable ds = from cn in db.DBO.ChiNhanhs
-                                select cn;
+                                select new
+                                {
+                                    cn.maCN,
+                                    cn.tenCN
+                                };
                 return ds;
             }catch(Exception ex)
             {

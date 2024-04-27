@@ -18,10 +18,21 @@ namespace DAL
             try
             {
                 IQueryable ds = from nv in db.DBO.NhanViens
+                                join cn in db.DBO.ChiNhanhs on nv.maCN equals cn.maCN
+                                join vt in db.DBO.ViTris on nv.maVT equals vt.maVT
+                                where nv.maNV != "NV0"
+                                orderby nv.maNV ascending
                                 select new
                                 {
-                                    Mã_NV = nv.maNV,
-                                    Họ_Tên_NV = nv.tenNV
+                                    nv.maNV,
+                                    nv.tenNV,
+                                    nv.CCCD,
+                                    nv.SDT,
+                                    nv.gioiTinh,
+                                    nv.ngaySinh,
+                                    nv.luong,
+                                    cn.tenCN,
+                                    vt.tenVT
                                 };
                 return ds;
             }
@@ -117,6 +128,33 @@ namespace DAL
                 throw ex;
             }
         }
+        public string taoMaNVMoi()
+        {
+            try
+            {
+                //Lấy mã nhân viên cuối
+                IQueryable ds = (from nv in db.DBO.NhanViens
+                                orderby nv.maNV descending
+                                select nv.maNV).Take(1);
+                string msNV = "";
+                foreach(var item in ds)
+                {
+                    msNV = item.ToString();
+                }
 
+                //Lấy số tiếp theo msNV cuối
+                string maSo = msNV.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã NV mới
+                msNV = "NV" + String.Format("{0:D8}", soMoi);
+
+                return msNV;
+            }
+            catch (Exception ex)
+            {
+                return "NV00000001";
+            }
+        }
     }
 }
