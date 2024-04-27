@@ -36,9 +36,10 @@ namespace DTO
                 else
                 {
                     // Lấy hashCode loại SHA256 của mật khẩu
-                    byte[] buffer = Encoding.UTF8.GetBytes(value);
-                    byte[] hash = SHA256.Create().ComputeHash(buffer);
-                    matKhau = BitConverter.ToString(hash);
+                    //byte[] buffer = Encoding.UTF8.GetBytes(value);
+                    //byte[] hash = SHA256.Create().ComputeHash(buffer);
+                    //matKhau = BitConverter.ToString(hash);
+                    matKhau = value;
                 }
             }
         }

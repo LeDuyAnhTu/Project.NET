@@ -337,3 +337,5 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csp
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.LoaiSanPham_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.LoaiSanPham_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.SanPham_UC.resources

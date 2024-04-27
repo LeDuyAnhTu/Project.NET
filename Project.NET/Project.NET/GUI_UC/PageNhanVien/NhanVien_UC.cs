@@ -46,18 +46,59 @@ namespace Project.NET.Forms
                 return new NhanVien_DTO(
                     txtMaNV.Text
                     , txtHoTen.Text
-                    , txtGioiTinh.Text
+                    , txtGioiTinh.Properties.Items[txtGioiTinh.SelectedIndex].Description
                     , txtNgaySinh.DateTime
-                    , txtSoDienThoai.Text, txtCCCD.Text
+                    , txtSoDienThoai.Text.Length > 0 ? txtSoDienThoai.Text : null
+                    , txtCCCD.Text
                     , Convert.ToInt32(txtLuongNV.Value)
-                    , cboChiNhanh.SelectedText
-                    , cboChiNhanh.SelectedText) ;
+                    , cboViTriChucVuNhanVien.EditValue.ToString().Trim()
+                    , cboChiNhanh.EditValue.ToString().Trim());
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                throw ex;
             }
-            return null;
+        }
+        private void loadForm()
+        {
+            //Tạo ID cho nhân viên mới
+            taoIDMoi();
+
+            //
+            //Xóa dữ liệu trên các field
+            //
+            txtHoTen.Text = "";
+            txtCCCD.Text = "";
+            txtSoDienThoai.Text = "";
+            txtNgaySinh.DateTime = txtNgaySinh.Properties.MaxValue;
+
+
+            //
+            //dgvNhanVien 
+            //
+            dgvNhanVien.DataSource = db_NV.LayDanhSach();
+
+            //
+            //Combobox chi nhánh
+            //
+            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
+            cboChiNhanh.Properties.ValueMember = "maCN";
+            cboChiNhanh.Properties.DisplayMember = "tenCN";
+            cboChiNhanh.ItemIndex = 0; //Chọn chi nhánh mặc định
+
+            //
+            //Combobox vị trí
+            //
+            cboViTriChucVuNhanVien.Properties.DataSource = db_VT.LayDanhSach();
+            cboViTriChucVuNhanVien.Properties.ValueMember = "maVT";
+            cboViTriChucVuNhanVien.Properties.DisplayMember = "tenVT";
+            cboViTriChucVuNhanVien.ItemIndex = 1; //Chọn vị trí mặc định
+
+            //
+            //Mức lương
+            //
+            txtLuongNV.Value = 4000000;
+
         }
 
         //
@@ -85,6 +126,7 @@ namespace Project.NET.Forms
             cboChiNhanh.Properties.ValueMember = "maCN";
             cboChiNhanh.Properties.DisplayMember = "tenCN";
             cboChiNhanh.ItemIndex = 0; //Chọn chi nhánh mặc định
+
             //
             //Combobox vị trí
             //
@@ -98,6 +140,7 @@ namespace Project.NET.Forms
             //
             txtLuongNV.Properties.MinValue = 4000000;
             txtLuongNV.Properties.Increment = 500000;
+            txtLuongNV.Value = 4000000;
 
             //
             //Ngày sinh
@@ -111,13 +154,83 @@ namespace Project.NET.Forms
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void gridView1_Click(object sender, EventArgs e)
+        private void gridView1_RowCellClick(object sender, RowCellClickEventArgs e)
         {
             int[] cacDong = gridView1.GetSelectedRows();
             foreach (int i in cacDong)
             {
-                DataRow data = gridView1.GetDataRow(i);
-                MessageBox.Show(data.ToString());
+                if(i >= 0)
+                {
+                    txtMaNV.Text = gridView1.GetRowCellValue(i, "maNV").ToString();
+                    txtHoTen.Text = gridView1.GetRowCellValue(i, "tenNV").ToString();
+                    txtGioiTinh.SelectedIndex = txtGioiTinh.Properties.Items[0].Description == gridView1.GetRowCellValue(i, "gioiTinh").ToString() ? 0 : 1;
+                    txtCCCD.Text = gridView1.GetRowCellValue(i, "CCCD").ToString();
+                    txtLuongNV.Text = gridView1.GetRowCellValue(i, "luong").ToString();
+
+                        txtSoDienThoai.Text = Convert.ToString(gridView1.GetRowCellValue(i, "SDT"));
+
+                    txtNgaySinh.Text = Convert.ToDateTime(gridView1.GetRowCellValue(i, "ngaySinh").ToString()).ToShortDateString();
+                    
+                    //Lấy chi nhánh của nhân viên đang chọn
+                    try
+                    {
+                        int count = 0;
+                        while(count < db_CN.LayDanhSach().Count())
+                        {
+                            cboChiNhanh.ItemIndex = count;
+                            if (cboChiNhanh.Text == gridView1.GetRowCellValue(i, "tenCN").ToString())
+                                break;
+                            count++;
+                        }
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    //Lấy vị trí làm việc của nhân viên đang chọn
+                    try
+                    {
+                        int count = 0;
+                        while (count < db_VT.LayDanhSach().Count())
+                        {
+                            cboViTriChucVuNhanVien.ItemIndex = count;
+                            if (cboViTriChucVuNhanVien.Text == gridView1.GetRowCellValue(i, "tenVT").ToString())
+                                break;
+                            count++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+        }
+        /// <summary>
+        /// Nút làm mới danh sách dữ liệu đã nhập
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            loadForm();
+        }
+        /// <summary>
+        /// Thực hiện thêm nhân viên dựa theo dữ liệu đã nhập
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                NhanVien_DTO nv_Moi = layDuLieu();
+                if (db_NV.Them(nv_Moi))
+                    MessageBox.Show("Thêm nhân viên mới thành công !", "Thông báo");
+                loadForm();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

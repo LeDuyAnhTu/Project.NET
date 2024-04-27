@@ -175,18 +175,7 @@ namespace DTO
             get => maCN;
             set
             {
-                if (value != null && value.Length > 10)
-                {
-                    throw new Exception("Mã CN tối đa 10 ký tự !");
-                }
-                else if (value == null)
-                {
-                    throw new Exception("Vui lòng nhập mã CN !");
-                }
-                else
-                {
-                    maCN = value;
-                }
+                maCN = value;
             }
         }
 

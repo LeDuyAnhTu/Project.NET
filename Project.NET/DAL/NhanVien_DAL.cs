@@ -60,8 +60,8 @@ namespace DAL
                     SDT = nv.SDT,
                     CCCD = nv.CCCD,
                     luong = nv.Luong,
-                    maVT = nv.MaVT,
                     maCN = nv.MaCN,
+                    maVT = nv.MaVT,
                 };
 
                 db.DBO.NhanViens.InsertOnSubmit(temp);
