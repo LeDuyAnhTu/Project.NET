@@ -29,7 +29,7 @@ namespace Project.NET
         private Kho_UC kho_UC = null;
         private ThongKeKho_UC thongKeKho_UC = null;
         private SanPham_UC sanPham_UC = null;
-
+        private LoaiSanPham_UC loaiSanPham_UC = null;
         public frmMenu()
         {
             InitializeComponent();
@@ -96,6 +96,7 @@ namespace Project.NET
                     case "btnSanPham":
                         nafContent.SelectedPage = navSanPham;
                         LoadUserControl(sanPham_UC, typeof(SanPham_UC), editFormSanPham);
+                        LoadUserControl(loaiSanPham_UC, typeof(LoaiSanPham_UC), editFormLoaiSP);
                         break;
                     case "btnKhuyenMai":
                         nafContent.SelectedPage = navKhuyenMai;
