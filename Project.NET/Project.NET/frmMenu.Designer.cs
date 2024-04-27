@@ -773,6 +773,8 @@
             this.nafContent.Size = new System.Drawing.Size(934, 718);
             this.nafContent.TabIndex = 6;
             this.nafContent.Text = "navFrameTKNhanVien";
+            this.nafContent.TransitionAnimationProperties.FrameCount = 100;
+            this.nafContent.TransitionAnimationProperties.FrameInterval = 1000;
             // 
             // navThongKe
             // 
