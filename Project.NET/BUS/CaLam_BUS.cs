@@ -85,5 +85,15 @@ namespace BUS
             }
             return result;
         }
+        public string taoMaMoi()
+        {
+            try
+            {
+                return db.taoMaMoi();
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -34,8 +34,8 @@ values	('NV0', N'admin',N'Nam','1/1/1991','0000000000','00000000000', 'VT00',nul
 
 go
 insert into CaLam
-values	('CL01', N'Ca Sáng', '5h30', '14h30'),
-		('CL02', N'Ca Chiều', '14h30', '22h')
+values	('CL01', N'Ca Sáng', '5:30 SA', '14:30 CH'),
+		('CL02', N'Ca Chiều', '14:30 CH', '22:00 CH')
 
 go
 insert into PhanCong

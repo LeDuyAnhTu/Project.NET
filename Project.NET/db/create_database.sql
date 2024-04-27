@@ -239,6 +239,9 @@ add constraint uk_taikhoan unique (maNV)
 go
 alter table NhanVien
 add constraint uk_nhanvien unique (CCCD)
+go
+alter table CaLam
+add constraint uk_calam unique (gioBD,gioKT)
 
 ------------------------------CHECK KEYS------------------------------
 go

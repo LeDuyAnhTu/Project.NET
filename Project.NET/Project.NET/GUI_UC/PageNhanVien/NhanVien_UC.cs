@@ -17,25 +17,19 @@ namespace Project.NET.Forms
 {
     public partial class NhanVien_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //
         //Properies
-        //
         private NhanVien_BUS db_NV = new NhanVien_BUS();
         private ChiNhanh_BUS db_CN = new ChiNhanh_BUS();
         private ViTri_BUS db_VT = new ViTri_BUS();
 
-        //
         //Constructor
-        //
         public NhanVien_UC()
         {
             InitializeComponent();
         }
 
-        //
         //Methods
-        //
-        private void taoIDMoi()
+        public void taoIDMoi()
         {
             txtMaNV.Text = db_NV.taoMaMoi();
         }
@@ -59,7 +53,7 @@ namespace Project.NET.Forms
                 throw ex;
             }
         }
-        private void loadForm()
+        public void loadForm()
         {
             //Tạo ID cho nhân viên mới
             taoIDMoi();
@@ -101,9 +95,7 @@ namespace Project.NET.Forms
 
         }
 
-        //
         //Events
-        //
         /// <summary>
         /// Khi tải form
         /// </summary>
@@ -153,7 +145,6 @@ namespace Project.NET.Forms
             //
             txtGioiTinh.SelectedIndex = 0;
         }
-
         /// <summary>
         /// Click vào danh sách
         /// </summary>
@@ -164,7 +155,7 @@ namespace Project.NET.Forms
             int[] cacDong = gridView1.GetSelectedRows();
             foreach (int i in cacDong)
             {
-                if(i >= 0)
+                if (i >= 0)
                 {
                     txtMaNV.Text = gridView1.GetRowCellValue(i, "maNV").ToString();
                     txtHoTen.Text = gridView1.GetRowCellValue(i, "tenNV").ToString();
@@ -172,22 +163,23 @@ namespace Project.NET.Forms
                     txtCCCD.Text = gridView1.GetRowCellValue(i, "CCCD").ToString();
                     txtLuongNV.Text = gridView1.GetRowCellValue(i, "luong").ToString();
 
-                        txtSoDienThoai.Text = Convert.ToString(gridView1.GetRowCellValue(i, "SDT"));
+                    txtSoDienThoai.Text = Convert.ToString(gridView1.GetRowCellValue(i, "SDT"));
 
                     txtNgaySinh.Text = Convert.ToDateTime(gridView1.GetRowCellValue(i, "ngaySinh").ToString()).ToShortDateString();
-                    
+
                     //Lấy chi nhánh của nhân viên đang chọn
                     try
                     {
                         int count = 0;
-                        while(count < db_CN.LayDanhSach().Count())
+                        while (count < db_CN.LayDanhSach().Count())
                         {
                             cboChiNhanh.ItemIndex = count;
                             if (cboChiNhanh.Text == gridView1.GetRowCellValue(i, "tenCN").ToString())
                                 break;
                             count++;
                         }
-                    }catch(Exception ex)
+                    }
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
@@ -233,7 +225,8 @@ namespace Project.NET.Forms
                 if (db_NV.Them(nv_Moi))
                     MessageBox.Show("Thêm nhân viên mới thành công !", "Thông báo");
                 loadForm();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -266,9 +259,13 @@ namespace Project.NET.Forms
         {
             try
             {
-                if (db_NV.Xoa(txtMaNV.Text))
-                    MessageBox.Show("Xóa thông tin nhân viên thành công !", "Thông báo");
-                loadForm();
+                DialogResult luaChon = MessageBox.Show("Bạn có muốn xóa nhân viên " + txtMaNV.Text.Trim() + " ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (luaChon == DialogResult.Yes)
+                {
+                    if (db_NV.Xoa(txtMaNV.Text))
+                        MessageBox.Show("Xóa thông tin nhân viên thành công !", "Thông báo");
+                    loadForm();
+                }
             }
             catch (Exception ex)
             {

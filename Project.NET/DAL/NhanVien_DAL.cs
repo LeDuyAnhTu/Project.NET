@@ -128,6 +128,10 @@ namespace DAL
                 throw ex;
             }
         }
+        /// <summary>
+        /// Tạo mã ID tiếp theo ID cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
         public string taoMaNVMoi()
         {
             try
