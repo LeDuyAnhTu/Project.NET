@@ -3,6 +3,7 @@ using DevExpress.Data.Linq.Helpers;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using DTO;
+using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -29,7 +31,7 @@ namespace Project.NET.Forms
         //
         public NhanVien_UC()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         //
@@ -119,6 +121,12 @@ namespace Project.NET.Forms
                 DataRow data = gridView1.GetDataRow(i);
                 MessageBox.Show(data.ToString());
             }
+        }
+         
+        private void txtHoTen_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            TextEdit edit = sender as TextEdit;
+            edit.SupportVietnamese(30);
         }
     }
 }

@@ -183,13 +183,11 @@
             this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Properties.Appearance.Options.UseFont = true;
             this.txtHoTen.Properties.BeepOnError = true;
-            this.txtHoTen.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
-            this.txtHoTen.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtHoTen.Properties.MaskSettings.Set("mask", "[a-zA-Z\\s]+");
             this.txtHoTen.Properties.UseMaskAsDisplayFormat = true;
             this.txtHoTen.Size = new System.Drawing.Size(738, 26);
             this.txtHoTen.StyleController = this.layoutNhanVien;
-            this.txtHoTen.TabIndex = 4;
+            this.txtHoTen.TabIndex = 4; 
+            this.txtHoTen.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtHoTen_EditValueChanging);
             // 
             // txtNgaySinh
             // 

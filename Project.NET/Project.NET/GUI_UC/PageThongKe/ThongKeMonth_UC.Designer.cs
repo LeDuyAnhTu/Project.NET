@@ -146,9 +146,12 @@
             this.txtTKTenSP.Name = "txtTKTenSP";
             this.txtTKTenSP.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTKTenSP.Properties.Appearance.Options.UseFont = true;
+            this.txtTKTenSP.Properties.BeepOnError = true;
+            this.txtTKTenSP.Properties.UseMaskAsDisplayFormat = true;
             this.txtTKTenSP.Size = new System.Drawing.Size(416, 26);
             this.txtTKTenSP.StyleController = this.layoutGroupLocKQ;
             this.txtTKTenSP.TabIndex = 4;
+            this.txtTKTenSP.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTKTenSP_EditValueChanging);
             // 
             // txtNgayLapHoaDonTu
             // 

@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,12 @@ namespace Project.NET.GUI_UC
         private void btnThem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ten ca lam" + txtTenCaLam.Text +"Gio bat dau" + txtGioBD.Text +"Gio ket thuc"+txtGioKT.Text);
+        }
+
+        private void txtTenCaLam_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            TextEdit editText = sender as TextEdit;
+            editText.SupportVietnamese(30);
         }
     }
 }
