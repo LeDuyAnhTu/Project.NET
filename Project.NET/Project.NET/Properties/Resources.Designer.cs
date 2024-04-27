@@ -133,6 +133,26 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eyeClosed {
+            get {
+                object obj = ResourceManager.GetObject("eyeClosed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eyeOpen {
+            get {
+                object obj = ResourceManager.GetObject("eyeOpen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_32x32 {
             get {
                 object obj = ResourceManager.GetObject("home_32x32", resourceCulture);
