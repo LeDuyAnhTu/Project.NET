@@ -352,6 +352,21 @@
   <ItemGroup>
     <None Include="Resources\svg_card_logo.svg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\production32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dong-sign32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marketplace32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stand32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories32_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

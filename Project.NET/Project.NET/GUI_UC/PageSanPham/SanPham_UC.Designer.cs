@@ -467,7 +467,7 @@
             // 
             // BUTTONS
             // 
-            this.BUTTONS.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BUTTONS.CaptionImageOptions.Image")));
+            this.BUTTONS.CaptionImageOptions.Image = global::Project.NET.Properties.Resources.production32_32;
             this.BUTTONS.CustomizationFormText = "Thông tin nhân viên";
             this.BUTTONS.ExpandButtonVisible = true;
             this.BUTTONS.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -498,7 +498,7 @@
             // layoutTenSP
             // 
             this.layoutTenSP.Control = this.txtTenSP;
-            this.layoutTenSP.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTenSP.ImageOptions.Image")));
+            this.layoutTenSP.ImageOptions.Image = global::Project.NET.Properties.Resources.stand32_32;
             this.layoutTenSP.Location = new System.Drawing.Point(0, 36);
             this.layoutTenSP.Name = "layoutTenSP";
             this.layoutTenSP.Size = new System.Drawing.Size(668, 36);
@@ -521,7 +521,7 @@
             // layoutDonGia
             // 
             this.layoutDonGia.Control = this.txtDonGia;
-            this.layoutDonGia.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutDonGia.ImageOptions.Image")));
+            this.layoutDonGia.ImageOptions.Image = global::Project.NET.Properties.Resources.dong_sign32_32;
             this.layoutDonGia.Location = new System.Drawing.Point(0, 108);
             this.layoutDonGia.Name = "layoutDonGia";
             this.layoutDonGia.OptionsTableLayoutItem.RowIndex = 2;
@@ -532,7 +532,7 @@
             // layoutSLCL
             // 
             this.layoutSLCL.Control = this.txtSoLuongConLai;
-            this.layoutSLCL.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem2.ImageOptions.Image")));
+            this.layoutSLCL.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutSLCL.ImageOptions.Image")));
             this.layoutSLCL.Location = new System.Drawing.Point(0, 144);
             this.layoutSLCL.Name = "layoutSLCL";
             this.layoutSLCL.Size = new System.Drawing.Size(668, 36);
@@ -543,17 +543,17 @@
             // 
             this.layoutMaLoai.Control = this.cboMaLoaiSP;
             this.layoutMaLoai.CustomizationFormText = "Mã Loại SP:";
-            this.layoutMaLoai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem3.ImageOptions.Image")));
+            this.layoutMaLoai.ImageOptions.Image = global::Project.NET.Properties.Resources.categories32_32;
             this.layoutMaLoai.Location = new System.Drawing.Point(0, 180);
             this.layoutMaLoai.Name = "layoutMaLoai";
             this.layoutMaLoai.Size = new System.Drawing.Size(668, 36);
-            this.layoutMaLoai.Text = "Mã Loại SP:";
+            this.layoutMaLoai.Text = "Loại Sản Phẩm:";
             this.layoutMaLoai.TextSize = new System.Drawing.Size(124, 32);
             // 
             // layoutMaNSX
             // 
             this.layoutMaNSX.Control = this.cboMaNSX;
-            this.layoutMaNSX.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem4.ImageOptions.Image")));
+            this.layoutMaNSX.ImageOptions.Image = global::Project.NET.Properties.Resources.marketplace32_32;
             this.layoutMaNSX.Location = new System.Drawing.Point(0, 216);
             this.layoutMaNSX.Name = "layoutMaNSX";
             this.layoutMaNSX.Size = new System.Drawing.Size(668, 36);

@@ -93,6 +93,16 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap categories32_32 {
+            get {
+                object obj = ResourceManager.GetObject("categories32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap column2_32x32 {
             get {
                 object obj = ResourceManager.GetObject("column2_32x32", resourceCulture);
@@ -106,6 +116,16 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap computer {
             get {
                 object obj = ResourceManager.GetObject("computer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dong_sign32_32 {
+            get {
+                object obj = ResourceManager.GetObject("dong-sign32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +213,16 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap marketplace32_32 {
+            get {
+                object obj = ResourceManager.GetObject("marketplace32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pass16_16 {
             get {
                 object obj = ResourceManager.GetObject("pass16_16", resourceCulture);
@@ -206,6 +236,26 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap pass32_32 {
             get {
                 object obj = ResourceManager.GetObject("pass32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap production32_32 {
+            get {
+                object obj = ResourceManager.GetObject("production32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stand32_32 {
+            get {
+                object obj = ResourceManager.GetObject("stand32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
