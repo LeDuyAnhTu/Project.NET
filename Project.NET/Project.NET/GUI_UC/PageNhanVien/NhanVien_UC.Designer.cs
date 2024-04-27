@@ -758,8 +758,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtHoTen;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtGioiTinh;
         private DevExpress.XtraLayout.LayoutControlItem layoutSDT;
-        private DevExpress.XtraLayout.LayoutControlItem layoutTxtNgaySinh;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutTxtNgaySinh; 
         private DevExpress.XtraLayout.LayoutControlItem layoutCCCD;
         private DevExpress.XtraLayout.LayoutControlItem layoutLuong;
         private DevExpress.XtraLayout.LayoutControlItem layoutChiNhanh;
@@ -779,8 +778,7 @@
         private DevExpress.XtraLayout.LayoutControlItem CapNhat;
         private DevExpress.XtraLayout.LayoutControlItem LamMoi;
         private DevExpress.XtraLayout.LayoutControlItem Xoa;
-        private DevExpress.XtraEditors.RadioGroup txtGioiTinh;
-        private DevExpress.XtraLayout.SplitterItem splitterItem1;
+        private DevExpress.XtraEditors.RadioGroup txtGioiTinh; 
         private DevExpress.XtraEditors.TextEdit txtMaNV;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtMaNV;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
