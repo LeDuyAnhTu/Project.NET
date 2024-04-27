@@ -64,7 +64,7 @@
             this.LamMoi = new DevExpress.XtraLayout.LayoutControlItem();
             this.Xoa = new DevExpress.XtraLayout.LayoutControlItem();
             this.LIST = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.TITLE = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).BeginInit();
@@ -98,7 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LamMoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLE)).BeginInit();
             this.SuspendLayout();
             // 
             // TieuDeUC
@@ -480,7 +480,7 @@
             this.BUTTONS,
             this.CRUD,
             this.LIST,
-            this.layoutControlItem2});
+            this.TITLE});
             this.OUTLINE.Name = "Root";
             this.OUTLINE.Size = new System.Drawing.Size(923, 746);
             this.OUTLINE.TextVisible = false;
@@ -688,16 +688,16 @@
             this.LIST.TextSize = new System.Drawing.Size(0, 0);
             this.LIST.TextVisible = false;
             // 
-            // layoutControlItem2
+            // TITLE
             // 
-            this.layoutControlItem2.Control = this.TieuDeUC;
-            this.layoutControlItem2.CustomizationFormText = "Tiêu Đề UC";
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(903, 36);
-            this.layoutControlItem2.Text = "Tiêu Đề UC";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
+            this.TITLE.Control = this.TieuDeUC;
+            this.TITLE.CustomizationFormText = "Tiêu Đề UC";
+            this.TITLE.Location = new System.Drawing.Point(0, 0);
+            this.TITLE.Name = "TITLE";
+            this.TITLE.Size = new System.Drawing.Size(903, 36);
+            this.TITLE.Text = "Tiêu Đề UC";
+            this.TITLE.TextSize = new System.Drawing.Size(0, 0);
+            this.TITLE.TextVisible = false;
             // 
             // NhanVien_UC
             // 
@@ -739,7 +739,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LamMoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLE)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -781,6 +781,6 @@
         private DevExpress.XtraEditors.RadioGroup txtGioiTinh; 
         private DevExpress.XtraEditors.TextEdit txtMaNV;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtMaNV;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem TITLE;
     }
 }

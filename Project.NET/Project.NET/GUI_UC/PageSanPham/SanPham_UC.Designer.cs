@@ -60,7 +60,7 @@
             this.LamMoi = new DevExpress.XtraLayout.LayoutControlItem();
             this.Xoa = new DevExpress.XtraLayout.LayoutControlItem();
             this.LIST = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.TITLE = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayout)).BeginInit();
             this.dataLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGroup)).BeginInit();
@@ -90,7 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LamMoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLE)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayout
@@ -148,7 +148,7 @@
             this.dgvGroup.Name = "dgvGroup";
             this.dgvGroup.Size = new System.Drawing.Size(688, 197);
             this.dgvGroup.TabIndex = 22;
-            this.dgvGroup.Text = "Danh sách nhân viên";
+            this.dgvGroup.Text = "Danh sách Sản Phẩm";
             // 
             // dgvGrid
             // 
@@ -460,7 +460,7 @@
             this.BUTTONS,
             this.CRUD,
             this.LIST,
-            this.layoutControlItem1});
+            this.TITLE});
             this.OUTLINE.Name = "Root";
             this.OUTLINE.Size = new System.Drawing.Size(712, 705);
             this.OUTLINE.TextVisible = false;
@@ -636,16 +636,16 @@
             this.LIST.TextSize = new System.Drawing.Size(0, 0);
             this.LIST.TextVisible = false;
             // 
-            // layoutControlItem1
+            // TITLE
             // 
-            this.layoutControlItem1.Control = this.TieuDeUC;
-            this.layoutControlItem1.CustomizationFormText = "TieuDeUC";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(692, 36);
-            this.layoutControlItem1.Text = "TieuDeUC";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.TITLE.Control = this.TieuDeUC;
+            this.TITLE.CustomizationFormText = "TieuDeUC";
+            this.TITLE.Location = new System.Drawing.Point(0, 0);
+            this.TITLE.Name = "TITLE";
+            this.TITLE.Size = new System.Drawing.Size(692, 36);
+            this.TITLE.Text = "TieuDeUC";
+            this.TITLE.TextSize = new System.Drawing.Size(0, 0);
+            this.TITLE.TextVisible = false;
             // 
             // SanPham_UC
             // 
@@ -683,7 +683,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LamMoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TITLE)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -715,7 +715,7 @@
         private DevExpress.XtraLayout.LayoutControlItem Xoa;
         private DevExpress.XtraLayout.LayoutControlItem LIST;
         private DevExpress.XtraEditors.LabelControl TieuDeUC;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem TITLE;
         private DevExpress.XtraEditors.TextEdit txtSoLuongConLai;
         private DevExpress.XtraLayout.LayoutControlItem layoutSLCL;
         private DevExpress.XtraLayout.LayoutControlItem layoutMaLoai;

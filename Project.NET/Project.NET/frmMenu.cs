@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using Project.NET.GUI_UC.PageSanPham;
 
 namespace Project.NET
 {
@@ -27,7 +28,7 @@ namespace Project.NET
         private CaLam_UC caLam_UC = null;
         private Kho_UC kho_UC = null;
         private ThongKeKho_UC thongKeKho_UC = null;
-
+        private SanPham_UC sanPham_UC = null;
 
         public frmMenu()
         {
@@ -94,7 +95,7 @@ namespace Project.NET
                         break;
                     case "btnSanPham":
                         nafContent.SelectedPage = navSanPham;
-
+                        LoadUserControl(sanPham_UC, typeof(SanPham_UC), editFormSanPham);
                         break;
                     case "btnKhuyenMai":
                         nafContent.SelectedPage = navKhuyenMai;
