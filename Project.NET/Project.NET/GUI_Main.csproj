@@ -169,6 +169,18 @@
     <Compile Include="GUI_UC\PageNhanVien\PhanCong_UC.Designer.cs">
       <DependentUpon>PhanCong_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageSanPham\LoaiSanPham_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageSanPham\LoaiSanPham_UC.Designer.cs">
+      <DependentUpon>LoaiSanPham_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageSanPham\SanPham_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageSanPham\SanPham_UC.Designer.cs">
+      <DependentUpon>SanPham_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageTaiKhoan\TaiKhoan_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -227,6 +239,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\PhanCong_UC.resx">
       <DependentUpon>PhanCong_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageSanPham\LoaiSanPham_UC.resx">
+      <DependentUpon>LoaiSanPham_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageSanPham\SanPham_UC.resx">
+      <DependentUpon>SanPham_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageTaiKhoan\TaiKhoan_UC.resx">
       <DependentUpon>TaiKhoan_UC.cs</DependentUpon>
@@ -342,6 +360,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\svg_card_logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\production32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dong-sign32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marketplace32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stand32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
