@@ -123,6 +123,36 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coupon {
+            get {
+                object obj = ResourceManager.GetObject("coupon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coupon16_16 {
+            get {
+                object obj = ResourceManager.GetObject("coupon16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coupon32_32 {
+            get {
+                object obj = ResourceManager.GetObject("coupon32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dong_sign32_32 {
             get {
                 object obj = ResourceManager.GetObject("dong-sign32_32", resourceCulture);
@@ -296,6 +326,16 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap taikhoannhanvien_white {
             get {
                 object obj = ResourceManager.GetObject("taikhoannhanvien_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap updateKM32_32 {
+            get {
+                object obj = ResourceManager.GetObject("updateKM32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

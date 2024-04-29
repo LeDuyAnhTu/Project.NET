@@ -146,6 +146,18 @@
     <Compile Include="GUI_UC\PageKho\Kho_UC.Designer.cs">
       <DependentUpon>Kho_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageKhuyenMai\ChiTietKhuyenMai_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhuyenMai\ChiTietKhuyenMai_UC.Designer.cs">
+      <DependentUpon>ChiTietKhuyenMai_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhuyenMai\KhuyenMai_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhuyenMai\KhuyenMai_UC.Designer.cs">
+      <DependentUpon>KhuyenMai_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageNhanVien\CaLam_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -237,6 +249,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKho\ThongKeKho_UC.resx">
       <DependentUpon>ThongKeKho_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKhuyenMai\ChiTietKhuyenMai_UC.resx">
+      <DependentUpon>ChiTietKhuyenMai_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKhuyenMai\KhuyenMai_UC.resx">
+      <DependentUpon>KhuyenMai_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\CaLam_UC.resx">
       <DependentUpon>CaLam_UC.cs</DependentUpon>
@@ -391,6 +409,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eyeOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coupon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coupon32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coupon16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateKM32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

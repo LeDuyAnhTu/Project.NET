@@ -82,6 +82,25 @@ namespace Project.NET.ExtensionMethods
             };
             edit.Properties.PasswordChar = '*';
         }
-        
+
+        /// <summary>
+        /// Hỗ trợ nhập số lượng
+        /// </summary>
+        /// <param name="edit"></param>
+        public static void SupportSoLuong(this TextEdit edit)
+        {
+            // Sự kiện EditValueChanging để hạn chế nhập  
+            edit.EditValueChanging += (sender, e) =>
+            {
+                string pattern = @"^[0-9]{1,}$";
+                Regex regex = new Regex(pattern);
+
+                if (!regex.IsMatch(e.NewValue.ToString()))
+                {
+                    e.Cancel = true; // Hủy thay đổi nếu giá trị mới không khớp với biểu thức chính quy
+                }
+            };
+        }
+    }
 }
-}
+
