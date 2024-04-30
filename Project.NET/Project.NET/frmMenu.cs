@@ -14,6 +14,7 @@ using DevExpress.XtraEditors;
 using Project.NET.GUI_UC.PageSanPham;
 using Project.NET.GUI_UC.PageKhuyenMai;
 using BUS;
+using DevExpress.Utils;
 
 namespace Project.NET
 {
@@ -41,12 +42,12 @@ namespace Project.NET
         public frmMenu()
         {
             InitializeComponent();
-            
+
         }
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            loadingFirstOrDeFaultNavbarMenuButton(); 
+            loadingFirstOrDeFaultNavbarMenuButton();
         }
 
         /// <summary>
@@ -67,7 +68,7 @@ namespace Project.NET
                 tabSuaTTTaiKhoan.Controls.Add(editFormTaiKhoan);
             }
         }
-
+        SimpleButton lastClickButton = null;
         /// <summary>
         /// Xử lý sự kiện cho các nút bấm trên nav menu buttons
         /// </summary>
@@ -82,12 +83,33 @@ namespace Project.NET
                 SwitchTab(currentControl);
 
                 // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
-                SimpleButton clickedButton = (SimpleButton)sender;
-                switch (clickedButton.Name)
-                { 
+                SimpleButton currentButton = (SimpleButton)sender;
+                currentButton.Appearance.BackColor = Color.Orange;
+                currentButton.Appearance.BorderColor = Color.AliceBlue;
+                currentButton.Appearance.ForeColor = Color.White;
+                currentButton.Appearance.Font = new Font("Tahoma", 12, FontStyle.Bold);
+                currentButton.AppearanceHovered.ForeColor = Color.White;
+                //
+                // Nếu có nút đã được nhấn và không phải là nút hiện tại
+                //
+                if (lastClickButton != null && lastClickButton != currentButton)
+                {
+                    // Đặt lại trang thái mặc định cho nút nhấn cuối cùng
+                    lastClickButton.Appearance.Reset();
+                    lastClickButton.AppearanceHovered.Reset();
+                }
+                
+                //
+                // Cập nhật trạng thái cho nút đang được nhấn
+                //
+                lastClickButton = currentButton;
+
+                switch (currentButton.Name)
+                {
                     case "btnTaiKhoan":
                         nafContent.SelectedPage = navTaiKhoan;
                         LoadUserControl(taiKhoan_UC, typeof(TaiKhoan_UC), editFormTaiKhoan);
+
                         break;
                     case "btnNhanVien":
                         nafContent.SelectedPage = navNhanVien;
