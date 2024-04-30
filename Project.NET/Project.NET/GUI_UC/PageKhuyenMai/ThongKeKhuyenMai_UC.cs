@@ -85,5 +85,76 @@ namespace Project.NET.GUI_UC.PageKhuyenMai
             chartTKKhuyenMai.Series.Add(series);
             chartTKKhuyenMai.Series.Add(seriesSLConLaiSauKM);
         } 
+
+        public void sql()
+        {
+            /**
+             * -- 0lay danh sach thong ke khuyen mai
+SELECT 
+    ctkm.maSP AS MaSP,
+    COUNT(ctkm.maKM) AS SoLuongKM,
+    (sp.soLuongConLai - SUM(ctkm.soLuong)) AS SoLuongConLaiSauKM
+FROM 
+    ChiTietKM ctkm
+JOIN 
+    (SELECT maSP, soLuongConLai FROM SanPham) sp ON ctkm.maSP = sp.maSP
+GROUP BY 
+    ctkm.maSP, sp.soLuongConLai
+
+
+--delete from KhuyenMai
+--delete from ChiTietKM
+
+	-- Thêm vào bảng khuyenMai
+--INSERT INTO KhuyenMai(maKM, ghiChu)
+--VALUES ('KM01', N'Khuyến mãi cho sản phẩm SP00000001'),
+--       ('KM02', N'Khuyến mãi cho sản phẩm SP00000002'),
+--       ('KM03', N'Khuyến mãi cho sản phẩm SP00000003'),
+--       ('KM04', N'Khuyến mãi cho sản phẩm SP00000004');
+
+--select * from KhuyenMai
+
+
+---- Thêm vào bảng ChiTietKhuyenMai
+--INSERT INTO ChiTietKM(maKM, maSP, soLuong)
+--VALUES ('KM01', 'SP00000001', 50),
+--       ('KM02', 'SP00000002', 60),
+--       ('KM03', 'SP00000003', 70),
+--       ('KM04', 'SP00000004', 80);
+--select * from ChiTietKM
+
+-- select * from SanPham
+
+ --1Số lượng sản phẩm được khuyến mãi
+ SELECT COUNT(DISTINCT maSP) FROM ChiTietKM;
+
+ --2Số lượng khuyến mãi cho mỗi sản phẩm
+ SELECT maSP, COUNT(maKM) FROM ChiTietKM GROUP BY maSP;
+
+--3Số lượng sản phẩm còn lại sau khuyến mãi
+SELECT SP.tenSP, (SP.soLuongConLai - ISNULL(CTKM.soLuong, 0)) AS soLuongConLaiSauKM
+FROM SanPham SP LEFT JOIN ChiTietKM CTKM ON SP.maSP = CTKM.maSP;
+
+--4Sản phẩm được khuyến mãi nhiều nhất
+SELECT top 1 maSP, COUNT(maKM) AS soLuongKM
+FROM ChiTietKM
+GROUP BY maSP
+ORDER BY soLuongKM DESC
+ 
+--5Thông tin chi tiết về các khuyến mãi:
+SELECT
+	KM.maKM,
+	KM.ghiChu,
+	CTKM.maSP,
+	SP.tenSP,
+	CTKM.soLuong
+FROM
+	khuyenMai KM
+JOIN
+	ChiTietKM CTKM ON KM.maKM = CTKM.maKM
+JOIN
+	SanPham SP ON CTKM.maSP = SP.maSP;
+*/
+        }
     }
 }
