@@ -118,7 +118,7 @@
             this.TABLE_UC.Location = new System.Drawing.Point(0, 0);
             this.TABLE_UC.Name = "TABLE_UC";
             this.TABLE_UC.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 145F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 156F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
             this.TABLE_UC.Size = new System.Drawing.Size(660, 702);
             this.TABLE_UC.TabIndex = 2;
@@ -129,12 +129,12 @@
             this.TABLE_UC.SetColumn(this.CHARTS, 0);
             this.CHARTS.Controls.Add(this.nafContent);
             this.CHARTS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CHARTS.Location = new System.Drawing.Point(13, 157);
+            this.CHARTS.Location = new System.Drawing.Point(13, 168);
             this.CHARTS.Name = "CHARTS";
             this.CHARTS.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(993, 414, 650, 400);
             this.CHARTS.Root = this.groupFrame;
             this.TABLE_UC.SetRow(this.CHARTS, 1);
-            this.CHARTS.Size = new System.Drawing.Size(634, 532);
+            this.CHARTS.Size = new System.Drawing.Size(634, 521);
             this.CHARTS.TabIndex = 1;
             this.CHARTS.Text = "dataLayoutControl1";
             // 
@@ -154,20 +154,20 @@
             this.navPageTKDonGia,
             this.navPageTKSoLuongSpConLai});
             this.nafContent.SelectedPage = this.navPageTKLoaiSanPham;
-            this.nafContent.Size = new System.Drawing.Size(610, 508);
+            this.nafContent.Size = new System.Drawing.Size(610, 497);
             this.nafContent.TabIndex = 4;
             this.nafContent.Text = "navFrameTKNhanVien";
             this.nafContent.TransitionAnimationProperties.FrameCount = 100;
             this.nafContent.TransitionAnimationProperties.FrameInterval = 1000;
             this.nafContent.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
             // 
-            // navPageTKLoaiSanPham
+            // navPageTKKhuyenMai
             // 
-            this.navPageTKLoaiSanPham.Caption = "navPageTKLoaiSanPham";
+            this.navPageTKLoaiSanPham.Caption = "navPageTKKhuyenMai";
             this.navPageTKLoaiSanPham.Controls.Add(this.chartTKLoaiSanPham);
             this.navPageTKLoaiSanPham.Controls.Add(this.labelControl1);
-            this.navPageTKLoaiSanPham.Name = "navPageTKLoaiSanPham";
-            this.navPageTKLoaiSanPham.Size = new System.Drawing.Size(610, 508);
+            this.navPageTKLoaiSanPham.Name = "navPageTKKhuyenMai";
+            this.navPageTKLoaiSanPham.Size = new System.Drawing.Size(610, 497);
             // 
             // chartTKLoaiSanPham
             // 
@@ -180,7 +180,7 @@
             series1.Name = "Series 1";
             this.chartTKLoaiSanPham.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartTKLoaiSanPham.Size = new System.Drawing.Size(610, 483);
+            this.chartTKLoaiSanPham.Size = new System.Drawing.Size(610, 472);
             this.chartTKLoaiSanPham.TabIndex = 1;
             // 
             // labelControl1
@@ -204,7 +204,7 @@
             this.navPageTKNSX.Controls.Add(this.chartControl2);
             this.navPageTKNSX.Controls.Add(this.labelControl2);
             this.navPageTKNSX.Name = "navPageTKNSX";
-            this.navPageTKNSX.Size = new System.Drawing.Size(610, 508);
+            this.navPageTKNSX.Size = new System.Drawing.Size(610, 497);
             // 
             // chartControl2
             // 
@@ -217,7 +217,7 @@
             series2.Name = "Series 1";
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-            this.chartControl2.Size = new System.Drawing.Size(610, 483);
+            this.chartControl2.Size = new System.Drawing.Size(610, 472);
             this.chartControl2.TabIndex = 2;
             // 
             // labelControl2
@@ -241,7 +241,7 @@
             this.navPageTKHanSuDung.Controls.Add(this.chartControl3);
             this.navPageTKHanSuDung.Controls.Add(this.labelControl3);
             this.navPageTKHanSuDung.Name = "navPageTKHanSuDung";
-            this.navPageTKHanSuDung.Size = new System.Drawing.Size(610, 508);
+            this.navPageTKHanSuDung.Size = new System.Drawing.Size(610, 497);
             // 
             // chartControl3
             // 
@@ -254,7 +254,7 @@
             series3.Name = "Series 1";
             this.chartControl3.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series3};
-            this.chartControl3.Size = new System.Drawing.Size(610, 483);
+            this.chartControl3.Size = new System.Drawing.Size(610, 472);
             this.chartControl3.TabIndex = 2;
             // 
             // labelControl3
@@ -278,7 +278,7 @@
             this.navPageTKDonGia.Controls.Add(this.chartControl4);
             this.navPageTKDonGia.Controls.Add(this.labelControl4);
             this.navPageTKDonGia.Name = "navPageTKDonGia";
-            this.navPageTKDonGia.Size = new System.Drawing.Size(610, 508);
+            this.navPageTKDonGia.Size = new System.Drawing.Size(610, 497);
             // 
             // chartControl4
             // 
@@ -291,7 +291,7 @@
             series4.Name = "Series 1";
             this.chartControl4.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series4};
-            this.chartControl4.Size = new System.Drawing.Size(610, 483);
+            this.chartControl4.Size = new System.Drawing.Size(610, 472);
             this.chartControl4.TabIndex = 2;
             // 
             // labelControl4
@@ -315,7 +315,7 @@
             this.navPageTKSoLuongSpConLai.Controls.Add(this.chartControl5);
             this.navPageTKSoLuongSpConLai.Controls.Add(this.labelControl5);
             this.navPageTKSoLuongSpConLai.Name = "navPageTKSoLuongSpConLai";
-            this.navPageTKSoLuongSpConLai.Size = new System.Drawing.Size(610, 508);
+            this.navPageTKSoLuongSpConLai.Size = new System.Drawing.Size(610, 497);
             // 
             // chartControl5
             // 
@@ -328,7 +328,7 @@
             series5.Name = "Series 1";
             this.chartControl5.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series5};
-            this.chartControl5.Size = new System.Drawing.Size(610, 483);
+            this.chartControl5.Size = new System.Drawing.Size(610, 472);
             this.chartControl5.TabIndex = 2;
             // 
             // labelControl5
@@ -353,7 +353,7 @@
             this.groupFrame.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutChart});
             this.groupFrame.Name = "groupFrame";
-            this.groupFrame.Size = new System.Drawing.Size(634, 532);
+            this.groupFrame.Size = new System.Drawing.Size(634, 521);
             this.groupFrame.TextVisible = false;
             // 
             // layoutChart
@@ -361,7 +361,7 @@
             this.layoutChart.Control = this.nafContent;
             this.layoutChart.Location = new System.Drawing.Point(0, 0);
             this.layoutChart.Name = "layoutChart";
-            this.layoutChart.Size = new System.Drawing.Size(614, 512);
+            this.layoutChart.Size = new System.Drawing.Size(614, 501);
             this.layoutChart.TextSize = new System.Drawing.Size(0, 0);
             this.layoutChart.TextVisible = false;
             // 
@@ -379,7 +379,7 @@
             this.BUTTONS.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(381, 527, 650, 400);
             this.BUTTONS.Root = this.Root;
             this.TABLE_UC.SetRow(this.BUTTONS, 0);
-            this.BUTTONS.Size = new System.Drawing.Size(634, 141);
+            this.BUTTONS.Size = new System.Drawing.Size(634, 152);
             this.BUTTONS.TabIndex = 0;
             this.BUTTONS.Text = "layoutControl1";
             // 
@@ -412,7 +412,7 @@
             this.btnTKLoaiSanPham.AppearancePressed.Options.UseForeColor = true;
             this.btnTKLoaiSanPham.Location = new System.Drawing.Point(12, 90);
             this.btnTKLoaiSanPham.Name = "btnTKLoaiSanPham";
-            this.btnTKLoaiSanPham.Size = new System.Drawing.Size(593, 22);
+            this.btnTKLoaiSanPham.Size = new System.Drawing.Size(610, 22);
             this.btnTKLoaiSanPham.StyleController = this.BUTTONS;
             this.btnTKLoaiSanPham.TabIndex = 0;
             this.btnTKLoaiSanPham.Text = "Thống kê theo loại sản phẩm";
@@ -447,7 +447,7 @@
             this.btnTKNSX.AppearancePressed.Options.UseForeColor = true;
             this.btnTKNSX.Location = new System.Drawing.Point(12, 64);
             this.btnTKNSX.Name = "btnTKNSX";
-            this.btnTKNSX.Size = new System.Drawing.Size(593, 22);
+            this.btnTKNSX.Size = new System.Drawing.Size(610, 22);
             this.btnTKNSX.StyleController = this.BUTTONS;
             this.btnTKNSX.TabIndex = 0;
             this.btnTKNSX.Text = "Thống kê theo nhà sản xuất";
@@ -482,7 +482,7 @@
             this.btnTKHanSuDung.AppearancePressed.Options.UseForeColor = true;
             this.btnTKHanSuDung.Location = new System.Drawing.Point(12, 38);
             this.btnTKHanSuDung.Name = "btnTKHanSuDung";
-            this.btnTKHanSuDung.Size = new System.Drawing.Size(593, 22);
+            this.btnTKHanSuDung.Size = new System.Drawing.Size(610, 22);
             this.btnTKHanSuDung.StyleController = this.BUTTONS;
             this.btnTKHanSuDung.TabIndex = 0;
             this.btnTKHanSuDung.Text = "Thống kê theo hạn sử dụng";
@@ -517,7 +517,7 @@
             this.btnTKDonGia.AppearancePressed.Options.UseForeColor = true;
             this.btnTKDonGia.Location = new System.Drawing.Point(12, 12);
             this.btnTKDonGia.Name = "btnTKDonGia";
-            this.btnTKDonGia.Size = new System.Drawing.Size(593, 22);
+            this.btnTKDonGia.Size = new System.Drawing.Size(610, 22);
             this.btnTKDonGia.StyleController = this.BUTTONS;
             this.btnTKDonGia.TabIndex = 0;
             this.btnTKDonGia.Text = "Thống kê theo giá";
@@ -527,7 +527,7 @@
             // 
             this.btnTKSoLuongSpConLai.Location = new System.Drawing.Point(12, 116);
             this.btnTKSoLuongSpConLai.Name = "btnTKSoLuongSpConLai";
-            this.btnTKSoLuongSpConLai.Size = new System.Drawing.Size(593, 22);
+            this.btnTKSoLuongSpConLai.Size = new System.Drawing.Size(610, 22);
             this.btnTKSoLuongSpConLai.StyleController = this.BUTTONS;
             this.btnTKSoLuongSpConLai.TabIndex = 4;
             this.btnTKSoLuongSpConLai.Text = "Thống kê theo số lượng còn lại";
@@ -544,7 +544,7 @@
             this.layoutTKDonGia,
             this.layoutTKSoLuongSpConLai});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(617, 150);
+            this.Root.Size = new System.Drawing.Size(634, 152);
             this.Root.TextVisible = false;
             // 
             // layoutTKLoaiSanPham
@@ -554,7 +554,7 @@
             this.layoutTKLoaiSanPham.Name = "layoutTKLoaiSanPham";
             this.layoutTKLoaiSanPham.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutTKLoaiSanPham.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutTKLoaiSanPham.Size = new System.Drawing.Size(597, 26);
+            this.layoutTKLoaiSanPham.Size = new System.Drawing.Size(614, 26);
             this.layoutTKLoaiSanPham.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTKLoaiSanPham.TextVisible = false;
             // 
@@ -563,7 +563,7 @@
             this.layoutTKNSX.Control = this.btnTKDonGia;
             this.layoutTKNSX.Location = new System.Drawing.Point(0, 0);
             this.layoutTKNSX.Name = "layoutTKNSX";
-            this.layoutTKNSX.Size = new System.Drawing.Size(597, 26);
+            this.layoutTKNSX.Size = new System.Drawing.Size(614, 26);
             this.layoutTKNSX.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTKNSX.TextVisible = false;
             // 
@@ -573,7 +573,7 @@
             this.layoutTKHanSuDung.Location = new System.Drawing.Point(0, 52);
             this.layoutTKHanSuDung.Name = "layoutTKHanSuDung";
             this.layoutTKHanSuDung.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutTKHanSuDung.Size = new System.Drawing.Size(597, 26);
+            this.layoutTKHanSuDung.Size = new System.Drawing.Size(614, 26);
             this.layoutTKHanSuDung.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTKHanSuDung.TextVisible = false;
             // 
@@ -583,7 +583,7 @@
             this.layoutTKDonGia.Location = new System.Drawing.Point(0, 26);
             this.layoutTKDonGia.Name = "layoutTKDonGia";
             this.layoutTKDonGia.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutTKDonGia.Size = new System.Drawing.Size(597, 26);
+            this.layoutTKDonGia.Size = new System.Drawing.Size(614, 26);
             this.layoutTKDonGia.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTKDonGia.TextVisible = false;
             // 
@@ -592,7 +592,7 @@
             this.layoutTKSoLuongSpConLai.Control = this.btnTKSoLuongSpConLai;
             this.layoutTKSoLuongSpConLai.Location = new System.Drawing.Point(0, 104);
             this.layoutTKSoLuongSpConLai.Name = "layoutTKSoLuongSpConLai";
-            this.layoutTKSoLuongSpConLai.Size = new System.Drawing.Size(597, 26);
+            this.layoutTKSoLuongSpConLai.Size = new System.Drawing.Size(614, 28);
             this.layoutTKSoLuongSpConLai.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTKSoLuongSpConLai.TextVisible = false;
             // 

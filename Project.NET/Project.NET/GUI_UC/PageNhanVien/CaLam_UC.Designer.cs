@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CaLam_UC));
             this.layoutNhanVien = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.groupDanhMucPCCLNV = new DevExpress.XtraEditors.GroupControl();
             this.dgvPhanCongCaLamNhanVien = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -53,7 +54,6 @@
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
@@ -100,6 +100,28 @@
             this.layoutNhanVien.Root = this.groupLayoutNhanVien;
             this.layoutNhanVien.Size = new System.Drawing.Size(816, 575);
             this.layoutNhanVien.TabIndex = 5;
+            // 
+            // labelControl
+            // 
+            this.labelControl.AllowHtmlString = true;
+            this.labelControl.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.labelControl.Appearance.Options.UseFont = true;
+            this.labelControl.Appearance.Options.UseForeColor = true;
+            this.labelControl.Appearance.Options.UseTextOptions = true;
+            this.labelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.labelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.labelControl.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.labelControl.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
+            this.labelControl.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.labelControl.LineVisible = true;
+            this.labelControl.Location = new System.Drawing.Point(12, 12);
+            this.labelControl.Name = "labelControl";
+            this.labelControl.Padding = new System.Windows.Forms.Padding(10, 5, 0, 0);
+            this.labelControl.Size = new System.Drawing.Size(792, 33);
+            this.labelControl.StyleController = this.layoutNhanVien;
+            this.labelControl.TabIndex = 27;
+            this.labelControl.Text = "Ca Làm";
             // 
             // groupDanhMucPCCLNV
             // 
@@ -159,7 +181,7 @@
             this.txtTenCaLam.Properties.BeepOnError = true;
             this.txtTenCaLam.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtTenCaLam.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtTenCaLam.Properties.MaskSettings.Set("mask", "[a-zA-Z\\u00C0-\\u1EF9\\s]+");
+            this.txtTenCaLam.Properties.MaskSettings.Set("mask", "[a-zA-Z\\u00C0-\\u1EF9\\s]*");
             this.txtTenCaLam.Properties.MaskSettings.Set("culture", null);
             this.txtTenCaLam.Properties.MaskSettings.Set("ignoreMaskBlank", true);
             this.txtTenCaLam.Properties.MaskSettings.Set("saveLiterals", false);
@@ -167,6 +189,7 @@
             this.txtTenCaLam.Size = new System.Drawing.Size(640, 26);
             this.txtTenCaLam.StyleController = this.layoutNhanVien;
             this.txtTenCaLam.TabIndex = 23;
+            this.txtTenCaLam.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTenCaLam_EditValueChanging);
             // 
             // txtGioBD
             // 
@@ -515,28 +538,6 @@
             this.layoutControlItem14.Size = new System.Drawing.Size(386, 40);
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem14.TextVisible = false;
-            // 
-            // labelControl
-            // 
-            this.labelControl.AllowHtmlString = true;
-            this.labelControl.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.labelControl.Appearance.Options.UseFont = true;
-            this.labelControl.Appearance.Options.UseForeColor = true;
-            this.labelControl.Appearance.Options.UseTextOptions = true;
-            this.labelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
-            this.labelControl.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl.LineOrientation = DevExpress.XtraEditors.LabelLineOrientation.Horizontal;
-            this.labelControl.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.labelControl.LineVisible = true;
-            this.labelControl.Location = new System.Drawing.Point(12, 12);
-            this.labelControl.Name = "labelControl";
-            this.labelControl.Padding = new System.Windows.Forms.Padding(10, 5, 0, 0);
-            this.labelControl.Size = new System.Drawing.Size(792, 33);
-            this.labelControl.StyleController = this.layoutNhanVien;
-            this.labelControl.TabIndex = 27;
-            this.labelControl.Text = "Ca Làm";
             // 
             // layoutControlItem2
             // 

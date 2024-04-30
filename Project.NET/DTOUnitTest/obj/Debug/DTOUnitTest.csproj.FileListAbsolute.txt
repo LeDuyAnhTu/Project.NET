@@ -32,3 +32,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitT.3749FC66.Up2Date
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.dll.config

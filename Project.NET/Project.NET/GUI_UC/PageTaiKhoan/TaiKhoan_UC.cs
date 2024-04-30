@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,5 +18,19 @@ namespace Project.NET.Forms
         {
             InitializeComponent();
         }
+
+        private void txtTenTK_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            TextEdit edit = sender as TextEdit;
+            edit.SupportLoginName();
+        }
+
+        private void txtMatKhauTK_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            TextEdit edit = sender as TextEdit;
+            edit.SupportPassword();
+        }
+
+        
     }
 }

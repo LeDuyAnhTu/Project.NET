@@ -173,13 +173,11 @@
             this.txtTenSP.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenSP.Properties.Appearance.Options.UseFont = true;
             this.txtTenSP.Properties.BeepOnError = true;
-            this.txtTenSP.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
-            this.txtTenSP.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtTenSP.Properties.MaskSettings.Set("mask", "[a-zA-Z\\s]+");
             this.txtTenSP.Properties.UseMaskAsDisplayFormat = true;
             this.txtTenSP.Size = new System.Drawing.Size(528, 26);
             this.txtTenSP.StyleController = this.dataLayout;
             this.txtTenSP.TabIndex = 4;
+            this.txtTenSP.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTenSP_EditValueChanging);
             // 
             // txtHSD
             // 

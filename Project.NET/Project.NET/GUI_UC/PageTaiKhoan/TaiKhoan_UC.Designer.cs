@@ -35,7 +35,6 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtMatKhauTK = new DevExpress.XtraEditors.TextEdit();
             this.txtTenTK = new DevExpress.XtraEditors.TextEdit();
-            this.txtViTriCuaHang = new DevExpress.XtraEditors.TextEdit();
             this.cboNhanVien = new DevExpress.XtraEditors.LookUpEdit();
             this.btnCapNhat = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi = new DevExpress.XtraEditors.SimpleButton();
@@ -43,13 +42,14 @@
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutTxtHoTen = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtTenTK = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutDGVTaiKhoan = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutCboNhanVien = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtViTriChucVu = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutGroupThaoTacCSDL = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutDGVTaiKhoan = new DevExpress.XtraLayout.LayoutControlItem();
             this.labelControl = new DevExpress.XtraEditors.LabelControl();
+            this.txtViTriChucVu = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutDataNhanVien)).BeginInit();
             this.layoutDataNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).BeginInit();
@@ -58,18 +58,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauTK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenTK.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtViTriCuaHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenTK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutDGVTaiKhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCboNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtViTriChucVu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutDGVTaiKhoan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtViTriChucVu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutDataNhanVien
@@ -78,10 +78,10 @@
             this.layoutDataNhanVien.Controls.Add(this.groupDanhSachNhanVien);
             this.layoutDataNhanVien.Controls.Add(this.txtMatKhauTK);
             this.layoutDataNhanVien.Controls.Add(this.txtTenTK);
-            this.layoutDataNhanVien.Controls.Add(this.txtViTriCuaHang);
             this.layoutDataNhanVien.Controls.Add(this.cboNhanVien);
             this.layoutDataNhanVien.Controls.Add(this.btnCapNhat);
             this.layoutDataNhanVien.Controls.Add(this.btnLamMoi);
+            this.layoutDataNhanVien.Controls.Add(this.txtViTriChucVu);
             this.layoutDataNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutDataNhanVien.Location = new System.Drawing.Point(0, 33);
             this.layoutDataNhanVien.Name = "layoutDataNhanVien";
@@ -125,6 +125,7 @@
             this.txtMatKhauTK.Size = new System.Drawing.Size(536, 26);
             this.txtMatKhauTK.StyleController = this.layoutDataNhanVien;
             this.txtMatKhauTK.TabIndex = 4;
+            this.txtMatKhauTK.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtMatKhauTK_EditValueChanging);
             // 
             // txtTenTK
             // 
@@ -132,21 +133,16 @@
             this.txtTenTK.Name = "txtTenTK";
             this.txtTenTK.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenTK.Properties.Appearance.Options.UseFont = true;
+            this.txtTenTK.Properties.BeepOnError = true;
+            this.txtTenTK.Properties.MaskSettings.Set("mask", "[0-9a-zA-Z]{6,30}");
+            this.txtTenTK.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.txtTenTK.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtTenTK.Properties.ReadOnly = true;
+            this.txtTenTK.Properties.UseMaskAsDisplayFormat = true;
             this.txtTenTK.Size = new System.Drawing.Size(536, 26);
             this.txtTenTK.StyleController = this.layoutDataNhanVien;
             this.txtTenTK.TabIndex = 5;
-            // 
-            // txtViTriCuaHang
-            // 
-            this.txtViTriCuaHang.Location = new System.Drawing.Point(151, 166);
-            this.txtViTriCuaHang.Name = "txtViTriCuaHang";
-            this.txtViTriCuaHang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtViTriCuaHang.Properties.Appearance.Options.UseFont = true;
-            this.txtViTriCuaHang.Properties.ReadOnly = true;
-            this.txtViTriCuaHang.Size = new System.Drawing.Size(536, 26);
-            this.txtViTriCuaHang.StyleController = this.layoutDataNhanVien;
-            this.txtViTriCuaHang.TabIndex = 11;
+            this.txtTenTK.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTenTK_EditValueChanging);
             // 
             // cboNhanVien
             // 
@@ -189,7 +185,7 @@
             this.btnCapNhat.AppearancePressed.Options.UseBorderColor = true;
             this.btnCapNhat.AppearancePressed.Options.UseFont = true;
             this.btnCapNhat.AppearancePressed.Options.UseForeColor = true;
-            this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat1.ImageOptions.Image")));
+            this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.ImageOptions.Image")));
             this.btnCapNhat.Location = new System.Drawing.Point(24, 260);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(663, 36);
@@ -224,7 +220,7 @@
             this.btnLamMoi.AppearancePressed.Options.UseBorderColor = true;
             this.btnLamMoi.AppearancePressed.Options.UseFont = true;
             this.btnLamMoi.AppearancePressed.Options.UseForeColor = true;
-            this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi1.ImageOptions.Image")));
+            this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.ImageOptions.Image")));
             this.btnLamMoi.Location = new System.Drawing.Point(24, 300);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(663, 36);
@@ -277,7 +273,7 @@
             // layoutTxtTenTK
             // 
             this.layoutTxtTenTK.Control = this.txtTenTK;
-            this.layoutTxtTenTK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem1.ImageOptions.Image")));
+            this.layoutTxtTenTK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtTenTK.ImageOptions.Image")));
             this.layoutTxtTenTK.Location = new System.Drawing.Point(0, 0);
             this.layoutTxtTenTK.Name = "layoutTxtTenTK";
             this.layoutTxtTenTK.Size = new System.Drawing.Size(667, 36);
@@ -285,19 +281,10 @@
             this.layoutTxtTenTK.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutTxtTenTK.TextSize = new System.Drawing.Size(115, 32);
             // 
-            // layoutDGVTaiKhoan
-            // 
-            this.layoutDGVTaiKhoan.Control = this.groupDanhSachNhanVien;
-            this.layoutDGVTaiKhoan.Location = new System.Drawing.Point(0, 340);
-            this.layoutDGVTaiKhoan.Name = "layoutDGVTaiKhoan";
-            this.layoutDGVTaiKhoan.Size = new System.Drawing.Size(691, 396);
-            this.layoutDGVTaiKhoan.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutDGVTaiKhoan.TextVisible = false;
-            // 
             // layoutCboNhanVien
             // 
             this.layoutCboNhanVien.Control = this.cboNhanVien;
-            this.layoutCboNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem8.ImageOptions.Image")));
+            this.layoutCboNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutCboNhanVien.ImageOptions.Image")));
             this.layoutCboNhanVien.Location = new System.Drawing.Point(0, 72);
             this.layoutCboNhanVien.Name = "layoutCboNhanVien";
             this.layoutCboNhanVien.Size = new System.Drawing.Size(667, 36);
@@ -306,9 +293,9 @@
             // 
             // layoutTxtViTriChucVu
             // 
-            this.layoutTxtViTriChucVu.Control = this.txtViTriCuaHang;
+            this.layoutTxtViTriChucVu.Control = this.txtViTriChucVu;
             this.layoutTxtViTriChucVu.CustomizationFormText = "Vị Trí (Chức Vụ):";
-            this.layoutTxtViTriChucVu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlItem4.ImageOptions.Image")));
+            this.layoutTxtViTriChucVu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtViTriChucVu.ImageOptions.Image")));
             this.layoutTxtViTriChucVu.Location = new System.Drawing.Point(0, 108);
             this.layoutTxtViTriChucVu.Name = "layoutTxtViTriChucVu";
             this.layoutTxtViTriChucVu.Size = new System.Drawing.Size(667, 36);
@@ -317,7 +304,7 @@
             // 
             // layoutGroupThaoTacCSDL
             // 
-            this.layoutGroupThaoTacCSDL.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutGroupThaoTacCSDL1.CaptionImageOptions.Image")));
+            this.layoutGroupThaoTacCSDL.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutGroupThaoTacCSDL.CaptionImageOptions.Image")));
             this.layoutGroupThaoTacCSDL.CustomizationFormText = "Thao tác Cơ Sở Dữ Liệu";
             this.layoutGroupThaoTacCSDL.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem7,
@@ -354,6 +341,15 @@
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
+            // layoutDGVTaiKhoan
+            // 
+            this.layoutDGVTaiKhoan.Control = this.groupDanhSachNhanVien;
+            this.layoutDGVTaiKhoan.Location = new System.Drawing.Point(0, 340);
+            this.layoutDGVTaiKhoan.Name = "layoutDGVTaiKhoan";
+            this.layoutDGVTaiKhoan.Size = new System.Drawing.Size(691, 396);
+            this.layoutDGVTaiKhoan.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutDGVTaiKhoan.TextVisible = false;
+            // 
             // labelControl
             // 
             this.labelControl.AllowHtmlString = true;
@@ -376,6 +372,17 @@
             this.labelControl.TabIndex = 5;
             this.labelControl.Text = "Tài Khoản";
             // 
+            // txtViTriChucVu
+            // 
+            this.txtViTriChucVu.Location = new System.Drawing.Point(151, 166);
+            this.txtViTriChucVu.Name = "txtViTriChucVu";
+            this.txtViTriChucVu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtViTriChucVu.Properties.Appearance.Options.UseFont = true;
+            this.txtViTriChucVu.Properties.ReadOnly = true;
+            this.txtViTriChucVu.Size = new System.Drawing.Size(536, 26);
+            this.txtViTriChucVu.StyleController = this.layoutDataNhanVien;
+            this.txtViTriChucVu.TabIndex = 11;
+            // 
             // TaiKhoan_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,18 +399,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauTK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenTK.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtViTriCuaHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenTK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutDGVTaiKhoan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCboNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtViTriChucVu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutDGVTaiKhoan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtViTriChucVu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,7 +424,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.TextEdit txtMatKhauTK;
         private DevExpress.XtraEditors.TextEdit txtTenTK;
-        private DevExpress.XtraEditors.TextEdit txtViTriCuaHang;
         private DevExpress.XtraLayout.LayoutControlGroup groupLayoutNhanVien;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup6;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtHoTen;
@@ -431,5 +437,6 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutGroupThaoTacCSDL;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraEditors.TextEdit txtViTriChucVu;
     }
 }
