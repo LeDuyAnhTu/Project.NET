@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             this.TABLE_UC = new DevExpress.Utils.Layout.TablePanel();
             this.CHARTS = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.nafContent = new DevExpress.XtraBars.Navigation.NavigationFrame();
@@ -39,8 +39,8 @@
             this.groupFrame = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutChart = new DevExpress.XtraLayout.LayoutControlItem();
             this.BUTTONS = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.btnTKKhuyenMai = new DevExpress.XtraEditors.SimpleButton();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.TABLE_UC)).BeginInit();
             this.TABLE_UC.SuspendLayout();
@@ -50,8 +50,8 @@
             this.nafContent.SuspendLayout();
             this.navPageTKKhuyenMai.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKKhuyenMai)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupFrame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BUTTONS)).BeginInit();
@@ -115,15 +115,15 @@
             // 
             // chartTKKhuyenMai
             // 
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartTKKhuyenMai.Diagram = xyDiagram2;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartTKKhuyenMai.Diagram = xyDiagram1;
             this.chartTKKhuyenMai.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartTKKhuyenMai.Location = new System.Drawing.Point(0, 25);
             this.chartTKKhuyenMai.Name = "chartTKKhuyenMai";
-            series2.Name = "Series 1";
+            series1.Name = "Series 1";
             this.chartTKKhuyenMai.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
+        series1};
             this.chartTKKhuyenMai.Size = new System.Drawing.Size(678, 547);
             this.chartTKKhuyenMai.TabIndex = 1;
             // 
@@ -175,16 +175,6 @@
             this.BUTTONS.TabIndex = 0;
             this.BUTTONS.Text = "layoutControl1";
             // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(702, 48);
-            this.Root.TextVisible = false;
-            // 
             // btnTKKhuyenMai
             // 
             this.btnTKKhuyenMai.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
@@ -218,6 +208,17 @@
             this.btnTKKhuyenMai.StyleController = this.BUTTONS;
             this.btnTKKhuyenMai.TabIndex = 4;
             this.btnTKKhuyenMai.Text = "Thống kê Khuyến Mãi ";
+            this.btnTKKhuyenMai.Click += new System.EventHandler(this.Button_Click);
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(702, 48);
+            this.Root.TextVisible = false;
             // 
             // layoutControlItem1
             // 
@@ -243,8 +244,8 @@
             this.nafContent.ResumeLayout(false);
             this.navPageTKKhuyenMai.ResumeLayout(false);
             this.navPageTKKhuyenMai.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKKhuyenMai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupFrame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChart)).EndInit();
