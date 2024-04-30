@@ -35,6 +35,7 @@ namespace Project.NET
         private ThongKeSanPham_UC thongKeSanPham_UC = null;
         private KhuyenMai_UC khuyenMai_UC = null;
         private ChiTietKhuyenMai_UC chiTietKhuyenMai_UC = null;
+        private ThongKeKhuyenMai_UC thongKeKhuyenMai_UC = null;
 
 
         public frmMenu()
@@ -110,6 +111,7 @@ namespace Project.NET
                         nafContent.SelectedPage = navKhuyenMai;
                         LoadUserControl(khuyenMai_UC, typeof(KhuyenMai_UC), editFormKhuyenMai);
                         LoadUserControl(chiTietKhuyenMai_UC, typeof(ChiTietKhuyenMai_UC), editFormChiTietKhuyenMai);
+                        LoadUserControl(thongKeKhuyenMai_UC, typeof(ThongKeKhuyenMai_UC), editFormThongKeKhuyenMai);
                         break;
                     case "btnKhachHang":
                         nafContent.SelectedPage = navKhachHang;

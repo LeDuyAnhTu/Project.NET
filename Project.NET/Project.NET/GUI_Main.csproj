@@ -158,6 +158,12 @@
     <Compile Include="GUI_UC\PageKhuyenMai\KhuyenMai_UC.Designer.cs">
       <DependentUpon>KhuyenMai_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.Designer.cs">
+      <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageNhanVien\CaLam_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKhuyenMai\KhuyenMai_UC.resx">
       <DependentUpon>KhuyenMai_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.resx">
+      <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\CaLam_UC.resx">
       <DependentUpon>CaLam_UC.cs</DependentUpon>

@@ -161,12 +161,12 @@
             this.nafContent.TransitionAnimationProperties.FrameInterval = 1000;
             this.nafContent.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
             // 
-            // navPageTKLoaiSanPham
+            // navPageTKKhuyenMai
             // 
-            this.navPageTKLoaiSanPham.Caption = "navPageTKLoaiSanPham";
+            this.navPageTKLoaiSanPham.Caption = "navPageTKKhuyenMai";
             this.navPageTKLoaiSanPham.Controls.Add(this.chartTKLoaiSanPham);
             this.navPageTKLoaiSanPham.Controls.Add(this.labelControl1);
-            this.navPageTKLoaiSanPham.Name = "navPageTKLoaiSanPham";
+            this.navPageTKLoaiSanPham.Name = "navPageTKKhuyenMai";
             this.navPageTKLoaiSanPham.Size = new System.Drawing.Size(610, 497);
             // 
             // chartTKLoaiSanPham
