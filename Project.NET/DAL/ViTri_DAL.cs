@@ -100,5 +100,21 @@ namespace DAL
             }
             return result;
         }
+        /// <summary>
+        /// Tìm vị trí làm việc trong hệ thống theo mã vị trí
+        /// </summary>
+        /// <param name="maVT"></param>
+        /// <returns></returns>
+        public ViTri_DTO timTheoMa(string maVT)
+        {
+            try
+            {
+                ViTri vt = db.DBO.ViTris.Single(d=>d.maVT.Equals(maVT));
+                return new ViTri_DTO(vt.maVT, vt.tenVT);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -63,7 +63,7 @@ namespace BUS
         public bool Sua(NhanVien_DTO nhanVien)
         {
             bool result = false;
-            //Thêm nhân viên
+            //Sửa thông tin nhân viên
             try
             {
                 result = nv.Sua(nhanVien);
@@ -82,7 +82,15 @@ namespace BUS
         public bool Xoa(string maNV)
         {
             bool result = false;
-            //Thêm nhân viên
+            //Xóa tài khoản của nhân viên
+            try
+            {
+                result = tk.Xoa(tk.TimTaiKhoan_MaNV(maNV).tenTK);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+            //Xóa nhân viên
             try
             {
                 result = nv.Xoa(maNV);
@@ -93,9 +101,28 @@ namespace BUS
             }
             return result;
         }
+        /// <summary>
+        /// Tạo id mới cho nhân viên mới
+        /// </summary>
+        /// <returns></returns>
         public string taoMaMoi()
         {
             return nv.taoMaNVMoi();
+        }
+        /// <summary>
+        /// Tìm nhân viên trong hệ thống theo mã nhân viên
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
+        public NhanVien_DTO timTheoMa(string maNV)
+        {
+            try
+            {
+                return nv.timTheoMa(maNV);
+            }catch( Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 
