@@ -337,7 +337,7 @@
             // 
             // txtSDTNSX
             // 
-            this.txtSDTNSX.Location = new System.Drawing.Point(683, 157);
+            this.txtSDTNSX.Location = new System.Drawing.Point(694, 163);
             this.txtSDTNSX.Name = "txtSDTNSX";
             this.txtSDTNSX.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSDTNSX.Properties.Appearance.Options.UseFont = true;
@@ -348,27 +348,27 @@
             this.txtSDTNSX.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSDTNSX.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.txtSDTNSX.Properties.ReadOnly = true;
-            this.txtSDTNSX.Size = new System.Drawing.Size(307, 26);
+            this.txtSDTNSX.Size = new System.Drawing.Size(296, 26);
             this.txtSDTNSX.StyleController = this.dataLayout;
             this.txtSDTNSX.TabIndex = 25;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.EditValue = "";
-            this.txtDiaChi.Location = new System.Drawing.Point(683, 127);
+            this.txtDiaChi.Location = new System.Drawing.Point(694, 127);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
             this.txtDiaChi.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtDiaChi.Properties.ReadOnly = true;
-            this.txtDiaChi.Size = new System.Drawing.Size(307, 26);
+            this.txtDiaChi.Size = new System.Drawing.Size(296, 26);
             this.txtDiaChi.StyleController = this.dataLayout;
             this.txtDiaChi.TabIndex = 12;
             // 
             // txtMaNSX
             // 
-            this.txtMaNSX.Location = new System.Drawing.Point(184, 127);
+            this.txtMaNSX.Location = new System.Drawing.Point(195, 127);
             this.txtMaNSX.Name = "txtMaNSX";
             this.txtMaNSX.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMaNSX.Properties.Appearance.Options.UseFont = true;
@@ -382,13 +382,13 @@
             this.txtMaNSX.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtMaNSX.Properties.NullText = "";
-            this.txtMaNSX.Size = new System.Drawing.Size(313, 26);
+            this.txtMaNSX.Size = new System.Drawing.Size(302, 26);
             this.txtMaNSX.StyleController = this.dataLayout;
             this.txtMaNSX.TabIndex = 23;
             // 
             // txtMaSP
             // 
-            this.txtMaSP.Location = new System.Drawing.Point(184, 199);
+            this.txtMaSP.Location = new System.Drawing.Point(195, 199);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMaSP.Properties.Appearance.Options.UseFont = true;
@@ -402,14 +402,14 @@
             this.txtMaSP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtMaSP.Properties.NullText = "";
-            this.txtMaSP.Size = new System.Drawing.Size(313, 26);
+            this.txtMaSP.Size = new System.Drawing.Size(302, 26);
             this.txtMaSP.StyleController = this.dataLayout;
             this.txtMaSP.TabIndex = 23;
             // 
             // txtHSD
             // 
             this.txtHSD.EditValue = null;
-            this.txtHSD.Location = new System.Drawing.Point(184, 235);
+            this.txtHSD.Location = new System.Drawing.Point(195, 235);
             this.txtHSD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHSD.Name = "txtHSD";
             this.txtHSD.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -420,16 +420,15 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtHSD.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Vista;
             this.txtHSD.Properties.MaskSettings.Set("mask", "d");
-            this.txtHSD.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.txtHSD.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.True;
-            this.txtHSD.Size = new System.Drawing.Size(313, 26);
+            this.txtHSD.Size = new System.Drawing.Size(302, 26);
             this.txtHSD.StyleController = this.dataLayout;
             this.txtHSD.TabIndex = 10;
             // 
             // txtHSD1
             // 
             this.txtHSD1.EditValue = null;
-            this.txtHSD1.Location = new System.Drawing.Point(683, 187);
+            this.txtHSD1.Location = new System.Drawing.Point(694, 199);
             this.txtHSD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHSD1.Name = "txtHSD1";
             this.txtHSD1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -442,7 +441,7 @@
             this.txtHSD1.Properties.MaskSettings.Set("mask", "d");
             this.txtHSD1.Properties.ReadOnly = true;
             this.txtHSD1.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.txtHSD1.Size = new System.Drawing.Size(307, 26);
+            this.txtHSD1.Size = new System.Drawing.Size(296, 26);
             this.txtHSD1.StyleController = this.dataLayout;
             this.txtHSD1.TabIndex = 10;
             // 
@@ -453,7 +452,7 @@
             0,
             0,
             0});
-            this.txtDonGia.Location = new System.Drawing.Point(683, 217);
+            this.txtDonGia.Location = new System.Drawing.Point(694, 235);
             this.txtDonGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -468,13 +467,13 @@
             0});
             this.txtDonGia.Properties.MaskSettings.Set("mask", "c");
             this.txtDonGia.Properties.ReadOnly = true;
-            this.txtDonGia.Size = new System.Drawing.Size(307, 26);
+            this.txtDonGia.Size = new System.Drawing.Size(296, 26);
             this.txtDonGia.StyleController = this.dataLayout;
             this.txtDonGia.TabIndex = 12;
             // 
             // cboMaLoaiSP
             // 
-            this.cboMaLoaiSP.Location = new System.Drawing.Point(184, 163);
+            this.cboMaLoaiSP.Location = new System.Drawing.Point(195, 163);
             this.cboMaLoaiSP.Name = "cboMaLoaiSP";
             this.cboMaLoaiSP.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cboMaLoaiSP.Properties.Appearance.Options.UseFont = true;
@@ -490,7 +489,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboMaLoaiSP.Properties.NullText = "";
             this.cboMaLoaiSP.Properties.PopupSizeable = false;
-            this.cboMaLoaiSP.Size = new System.Drawing.Size(313, 26);
+            this.cboMaLoaiSP.Size = new System.Drawing.Size(302, 26);
             this.cboMaLoaiSP.StyleController = this.dataLayout;
             this.cboMaLoaiSP.TabIndex = 26;
             // 
@@ -501,7 +500,7 @@
             0,
             0,
             0});
-            this.txtSoLuongConLai.Location = new System.Drawing.Point(184, 271);
+            this.txtSoLuongConLai.Location = new System.Drawing.Point(195, 271);
             this.txtSoLuongConLai.Name = "txtSoLuongConLai";
             this.txtSoLuongConLai.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSoLuongConLai.Properties.Appearance.Options.UseFont = true;
@@ -515,7 +514,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtSoLuongConLai.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtSoLuongConLai.Properties.MaskSettings.Set("mask", "d");
-            this.txtSoLuongConLai.Size = new System.Drawing.Size(313, 26);
+            this.txtSoLuongConLai.Size = new System.Drawing.Size(302, 26);
             this.txtSoLuongConLai.StyleController = this.dataLayout;
             this.txtSoLuongConLai.TabIndex = 25;
             // 
@@ -526,7 +525,7 @@
             0,
             0,
             0});
-            this.txtSoLuongConLai1.Location = new System.Drawing.Point(683, 247);
+            this.txtSoLuongConLai1.Location = new System.Drawing.Point(694, 271);
             this.txtSoLuongConLai1.Name = "txtSoLuongConLai1";
             this.txtSoLuongConLai1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSoLuongConLai1.Properties.Appearance.Options.UseFont = true;
@@ -541,7 +540,7 @@
             this.txtSoLuongConLai1.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtSoLuongConLai1.Properties.MaskSettings.Set("mask", "d");
             this.txtSoLuongConLai1.Properties.ReadOnly = true;
-            this.txtSoLuongConLai1.Size = new System.Drawing.Size(307, 26);
+            this.txtSoLuongConLai1.Size = new System.Drawing.Size(296, 26);
             this.txtSoLuongConLai1.StyleController = this.dataLayout;
             this.txtSoLuongConLai1.TabIndex = 25;
             // 
@@ -598,7 +597,7 @@
             this.layoutMaHD.Size = new System.Drawing.Size(465, 36);
             this.layoutMaHD.Text = "Nhà Sản Xuất:";
             this.layoutMaHD.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutMaHD.TextSize = new System.Drawing.Size(136, 32);
+            this.layoutMaHD.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutSLCL
             // 
@@ -611,7 +610,7 @@
             this.layoutSLCL.Size = new System.Drawing.Size(465, 36);
             this.layoutSLCL.Text = "Số Lượng Cung Cấp:";
             this.layoutSLCL.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutSLCL.TextSize = new System.Drawing.Size(136, 32);
+            this.layoutSLCL.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutMaLoai
             // 
@@ -624,7 +623,7 @@
             this.layoutMaLoai.Size = new System.Drawing.Size(465, 36);
             this.layoutMaLoai.Text = "Loại Sản Phẩm:";
             this.layoutMaLoai.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutMaLoai.TextSize = new System.Drawing.Size(136, 32);
+            this.layoutMaLoai.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutMaSP
             // 
@@ -637,7 +636,7 @@
             this.layoutMaSP.Size = new System.Drawing.Size(465, 36);
             this.layoutMaSP.Text = "Sản Phẩm:";
             this.layoutMaSP.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutMaSP.TextSize = new System.Drawing.Size(136, 32);
+            this.layoutMaSP.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutHSD
             // 
@@ -652,7 +651,7 @@
             this.layoutHSD.Size = new System.Drawing.Size(465, 36);
             this.layoutHSD.Text = "Ngày Cung Cấp:";
             this.layoutHSD.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutHSD.TextSize = new System.Drawing.Size(136, 32);
+            this.layoutHSD.TextSize = new System.Drawing.Size(147, 32);
             // 
             // SP
             // 
@@ -676,63 +675,63 @@
             this.layoutThanhTien.Location = new System.Drawing.Point(0, 0);
             this.layoutThanhTien.Name = "layoutThanhTien";
             this.layoutThanhTien.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutThanhTien.Size = new System.Drawing.Size(459, 30);
+            this.layoutThanhTien.Size = new System.Drawing.Size(459, 36);
             this.layoutThanhTien.Text = "Địa Chỉ Nhà Cung Cấp:";
             this.layoutThanhTien.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutThanhTien.TextSize = new System.Drawing.Size(136, 16);
+            this.layoutThanhTien.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutDiemDung
             // 
             this.layoutDiemDung.Control = this.txtSDTNSX;
             this.layoutDiemDung.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutDiemDung.ImageOptions.Image")));
-            this.layoutDiemDung.Location = new System.Drawing.Point(0, 30);
+            this.layoutDiemDung.Location = new System.Drawing.Point(0, 36);
             this.layoutDiemDung.Name = "layoutDiemDung";
-            this.layoutDiemDung.Size = new System.Drawing.Size(459, 30);
+            this.layoutDiemDung.Size = new System.Drawing.Size(459, 36);
             this.layoutDiemDung.Text = "Số Điện Thoại:";
             this.layoutDiemDung.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutDiemDung.TextSize = new System.Drawing.Size(136, 16);
+            this.layoutDiemDung.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutSLCL1
             // 
             this.layoutSLCL1.Control = this.txtSoLuongConLai1;
             this.layoutSLCL1.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutSLCL1.CustomizationFormText = "Số Lượng SP Còn Lại:";
-            this.layoutSLCL1.ImageOptions.Image = global::Project.NET.Properties.Resources.numeric16_16;
-            this.layoutSLCL1.Location = new System.Drawing.Point(0, 120);
+            this.layoutSLCL1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutSLCL1.ImageOptions.Image")));
+            this.layoutSLCL1.Location = new System.Drawing.Point(0, 144);
             this.layoutSLCL1.Name = "layoutSLCL1";
-            this.layoutSLCL1.Size = new System.Drawing.Size(459, 60);
+            this.layoutSLCL1.Size = new System.Drawing.Size(459, 36);
             this.layoutSLCL1.Text = "Số Lượng SP Còn Lại:";
             this.layoutSLCL1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutSLCL1.TextSize = new System.Drawing.Size(136, 16);
+            this.layoutSLCL1.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutDonGia
             // 
             this.layoutDonGia.Control = this.txtDonGia;
             this.layoutDonGia.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutDonGia.CustomizationFormText = "Đơn giá:";
-            this.layoutDonGia.ImageOptions.Image = global::Project.NET.Properties.Resources.dong_sign16_16;
-            this.layoutDonGia.Location = new System.Drawing.Point(0, 90);
+            this.layoutDonGia.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutDonGia.ImageOptions.Image")));
+            this.layoutDonGia.Location = new System.Drawing.Point(0, 108);
             this.layoutDonGia.Name = "layoutDonGia";
             this.layoutDonGia.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutDonGia.Size = new System.Drawing.Size(459, 30);
+            this.layoutDonGia.Size = new System.Drawing.Size(459, 36);
             this.layoutDonGia.Text = "Đơn giá:";
             this.layoutDonGia.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutDonGia.TextSize = new System.Drawing.Size(136, 16);
+            this.layoutDonGia.TextSize = new System.Drawing.Size(147, 32);
             // 
             // layoutHSD1
             // 
             this.layoutHSD1.Control = this.txtHSD1;
             this.layoutHSD1.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutHSD1.CustomizationFormText = "Hạn Sử Dụng:";
-            this.layoutHSD1.ImageOptions.Image = global::Project.NET.Properties.Resources.calendar16_16;
-            this.layoutHSD1.Location = new System.Drawing.Point(0, 60);
+            this.layoutHSD1.ImageOptions.Image = global::Project.NET.Properties.Resources.calendar32_32;
+            this.layoutHSD1.Location = new System.Drawing.Point(0, 72);
             this.layoutHSD1.Name = "layoutHSD1";
             this.layoutHSD1.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutHSD1.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutHSD1.Size = new System.Drawing.Size(459, 30);
+            this.layoutHSD1.Size = new System.Drawing.Size(459, 36);
             this.layoutHSD1.Text = "Hạn Sử Dụng:";
             this.layoutHSD1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutHSD1.TextSize = new System.Drawing.Size(136, 16);
+            this.layoutHSD1.TextSize = new System.Drawing.Size(147, 32);
             // 
             // splitterItem1
             // 
