@@ -34,13 +34,13 @@
             this.groupDangNhap = new DevExpress.XtraEditors.GroupControl();
             this.controlsLogin = new DevExpress.XtraLayout.LayoutControl();
             this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
-            this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutTxtTenDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtMatKhau = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutBtnDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtMatKhau = new DevExpress.XtraEditors.ButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tableLogin)).BeginInit();
             this.tableLogin.SuspendLayout();
             this.layoutLogin.SuspendLayout();
@@ -49,12 +49,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.controlsLogin)).BeginInit();
             this.controlsLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLogin
@@ -124,8 +124,8 @@
             // controlsLogin
             // 
             this.controlsLogin.Controls.Add(this.txtTenDangNhap);
-            this.controlsLogin.Controls.Add(this.txtMatKhau);
             this.controlsLogin.Controls.Add(this.btnDangNhap);
+            this.controlsLogin.Controls.Add(this.txtMatKhau);
             this.controlsLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlsLogin.Location = new System.Drawing.Point(5, 36);
             this.controlsLogin.Name = "controlsLogin";
@@ -153,26 +153,6 @@
             this.txtTenDangNhap.StyleController = this.controlsLogin;
             this.txtTenDangNhap.TabIndex = 4;
             this.txtTenDangNhap.ToolTipTitle = "Tên đăng nhập";
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.EditValue = "";
-            this.txtMatKhau.Location = new System.Drawing.Point(168, 48);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
-            this.txtMatKhau.Properties.Appearance.Options.UseForeColor = true;
-            this.txtMatKhau.Properties.BeepOnError = true;
-            this.txtMatKhau.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
-            this.txtMatKhau.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtMatKhau.Properties.MaskSettings.Set("mask", "[a-zA-Z\\d@$!%*?&]{6,30}");
-            this.txtMatKhau.Properties.PasswordChar = '*';
-            this.txtMatKhau.Properties.UseMaskAsDisplayFormat = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(164, 26);
-            this.txtMatKhau.StyleController = this.controlsLogin;
-            this.txtMatKhau.TabIndex = 5;
-            this.txtMatKhau.ToolTipTitle = "Mật khẩu";
             // 
             // btnDangNhap
             // 
@@ -284,6 +264,32 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtMatKhau.Location = new System.Drawing.Point(168, 48);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
+            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.txtMatKhau.Properties.Appearance.Options.UseForeColor = true;
+            this.txtMatKhau.Properties.BeepOnError = true;
+            this.txtMatKhau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtMatKhau.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtMatKhau.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.txtMatKhau.Properties.MaskSettings.Set("mask", "[a-zA-Z\\d@$!%*?&]{6,30}");
+            this.txtMatKhau.Properties.PasswordChar = '*';
+            this.txtMatKhau.Properties.UseMaskAsDisplayFormat = true;
+            this.txtMatKhau.Size = new System.Drawing.Size(164, 26);
+            this.txtMatKhau.StyleController = this.controlsLogin;
+            this.txtMatKhau.TabIndex = 5;
+            this.txtMatKhau.ToolTipTitle = "Mật khẩu";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,12 +314,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.controlsLogin)).EndInit();
             this.controlsLogin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,11 +332,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.GroupControl groupDangNhap;
         private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
-        private DevExpress.XtraEditors.TextEdit txtMatKhau;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtTenDangNhap;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtMatKhau;
         private DevExpress.XtraLayout.LayoutControlItem layoutBtnDangNhap;
+        private DevExpress.XtraEditors.ButtonEdit txtMatKhau;
     }
 }

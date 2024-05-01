@@ -186,5 +186,11 @@ namespace Project.NET.GUI_UC
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void txtTenCaLam_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            TextEdit editText = sender as TextEdit;
+            editText.SupportVietnamese(30);
+        }
     }
 }

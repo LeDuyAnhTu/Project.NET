@@ -202,7 +202,8 @@
             this.txtHoTen.Properties.UseMaskAsDisplayFormat = true;
             this.txtHoTen.Size = new System.Drawing.Size(873, 30);
             this.txtHoTen.StyleController = this.layoutNhanVien;
-            this.txtHoTen.TabIndex = 4;
+            this.txtHoTen.TabIndex = 4; 
+            this.txtHoTen.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtHoTen_EditValueChanging);
             // 
             // txtNgaySinh
             // 

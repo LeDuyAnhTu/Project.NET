@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,12 @@ namespace Project.NET.GUI_UC.PageSanPham
         public SanPham_UC()
         {
             InitializeComponent();
+        }
+
+        private void txtTenSP_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            TextEdit editText = sender as TextEdit;
+            editText.SupportVietnamese(30);
         }
     }
 }
