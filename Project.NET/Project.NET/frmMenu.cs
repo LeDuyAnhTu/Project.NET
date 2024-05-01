@@ -51,7 +51,7 @@ namespace Project.NET
         private NhaCungCap_UC nhaCungCap_UC = null;
         private ViTriChucVuNV_UC viTriChucVuNV_UC = null;
         private HoaDonChiTiet_UC hoaDonChiTiet_UC = null;
-
+        private KhuVuc_UC khuVuc_UC = null;
         public frmMenu()
         {
             InitializeComponent();
@@ -189,7 +189,7 @@ namespace Project.NET
                     case "btnChiNhanh":
                         nafContent.SelectedPage = navChiNhanh;
                         LoadUserControl(chiNhanh_UC, typeof(ChiNhanh_UC), editFormChiNhanh);
-
+                        LoadUserControl(khuVuc_UC, typeof(KhuVuc_UC), editFormKhuVuc);
                         break;
                     case "btnNhaCungCap":
                         nafContent.SelectedPage = navNhaCungCap;

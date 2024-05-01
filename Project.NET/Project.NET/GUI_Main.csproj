@@ -304,6 +304,9 @@
     <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
       <DependentUpon>BaoCao_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.resx">
+      <DependentUpon>ChiNhanh_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageChiNhanh\KhuVuc_UC.resx">
       <DependentUpon>KhuVuc_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.resx">
       <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageNhaCungCap\NhaCungCap_UC.resx">
+      <DependentUpon>NhaCungCap_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\CaLam_UC.resx">
       <DependentUpon>CaLam_UC.cs</DependentUpon>
@@ -523,6 +529,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bill32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

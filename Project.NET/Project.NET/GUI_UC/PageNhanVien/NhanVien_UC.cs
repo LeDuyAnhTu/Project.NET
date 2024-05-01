@@ -278,7 +278,7 @@ namespace Project.NET.Forms
         private void txtHoTen_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
             TextEdit edit = sender as TextEdit;
-            edit.SupportVietnamese(30);
+            edit.SupportVietnamese();
         }
     }
 }
