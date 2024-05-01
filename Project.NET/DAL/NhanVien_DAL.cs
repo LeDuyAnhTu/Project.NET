@@ -60,8 +60,8 @@ namespace DAL
                     SDT = nv.SDT,
                     CCCD = nv.CCCD,
                     luong = nv.Luong,
-                    maVT = nv.MaVT,
                     maCN = nv.MaCN,
+                    maVT = nv.MaVT,
                 };
 
                 db.DBO.NhanViens.InsertOnSubmit(temp);
@@ -128,6 +128,10 @@ namespace DAL
                 throw ex;
             }
         }
+        /// <summary>
+        /// Tạo mã ID tiếp theo ID cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
         public string taoMaNVMoi()
         {
             try
@@ -155,6 +159,17 @@ namespace DAL
             {
                 Console.WriteLine(ex.Message);
                 return "NV00000001";
+            }
+        }
+        public NhanVien_DTO timTheoMa(string maNV)
+        {
+            try
+            {
+                NhanVien nv = db.DBO.NhanViens.Single(d=>d.maNV == maNV);
+                return new NhanVien_DTO(nv.maNV, nv.tenNV, nv.gioiTinh, nv.ngaySinh, nv.SDT, nv.CCCD, (int)nv.luong, nv.maVT, nv.maCN);
+            }catch(Exception ex)
+            {
+                throw ex;
             }
         }
     }
