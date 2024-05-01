@@ -194,7 +194,7 @@
             this.txtTenCaLam.Properties.BeepOnError = true;
             this.txtTenCaLam.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtTenCaLam.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtTenCaLam.Properties.MaskSettings.Set("mask", "[a-zA-Z\\u00C0-\\u1EF9\\s]+");
+            this.txtTenCaLam.Properties.MaskSettings.Set("mask", "[a-zA-Z\\u00C0-\\u1EF9\\s]*");
             this.txtTenCaLam.Properties.MaskSettings.Set("culture", null);
             this.txtTenCaLam.Properties.MaskSettings.Set("ignoreMaskBlank", true);
             this.txtTenCaLam.Properties.MaskSettings.Set("saveLiterals", false);
@@ -202,6 +202,7 @@
             this.txtTenCaLam.Size = new System.Drawing.Size(758, 32);
             this.txtTenCaLam.StyleController = this.layoutNhanVien;
             this.txtTenCaLam.TabIndex = 23;
+            this.txtTenCaLam.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTenCaLam_EditValueChanging);
             // 
             // txtGioBD
             // 

@@ -10,19 +10,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project.NET.GUI_UC
+namespace Project.NET.GUI_UC.PageKhuyenMai
 {
-    public partial class ThongKeMonth_UC : DevExpress.XtraEditors.XtraUserControl
+    public partial class ChiTietKhuyenMai_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        public ThongKeMonth_UC()
+        public ChiTietKhuyenMai_UC()
         {
             InitializeComponent();
         }
 
-        private void txtTKTenSP_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        private void txtSoLuong_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
-            TextEdit editText = sender as TextEdit;
-            editText.SupportVietnamese(30);
+            TextEdit editTExt = sender as TextEdit;
+             editTExt.SupportSoLuong();
         }
     }
 }

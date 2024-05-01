@@ -21,7 +21,7 @@ namespace Project.NET.GUI_UC.PageSanPham
     public partial class ThongKeSanPham_UC : DevExpress.XtraEditors.XtraUserControl
     {
         ThongKeSanPham_BUS db = new ThongKeSanPham_BUS();
-        
+
         public ThongKeSanPham_UC()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace Project.NET.GUI_UC.PageSanPham
         private void Button_Click(object sender, EventArgs e)
         {
             try
-            { 
+            {
                 // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
                 SimpleButton clickedButton = (SimpleButton)sender;
                 switch (clickedButton.Name)
@@ -101,8 +101,7 @@ GROUP BY tenLoai;
             {
                 series.Points.Add(new SeriesPoint(data.TenLoai, data.SoLuongSanPham));
             }
-            chartTKLoaiSanPham.Series.Add(series);
-
+            chartTKLoaiSanPham.Series.Add(series); 
         }
         /// <summary>
         /// Thống kê theo nhà sản xuất
@@ -116,7 +115,7 @@ GROUP BY maNSX;
             */
 
         }
-      
+
         /// <summary>
         /// Thống kê theo hạn sử dụng
         /// </summary>

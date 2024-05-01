@@ -10,19 +10,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project.NET.GUI_UC.PageSanPham
+namespace Project.NET.GUI_UC.PageKhuyenMai
 {
-    public partial class SanPham_UC : DevExpress.XtraEditors.XtraUserControl
+    public partial class KhuyenMai_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        public SanPham_UC()
+        public KhuyenMai_UC()
         {
             InitializeComponent();
+            txtGhiChu.Properties.LinesCount = 0;
         }
 
         private void txtTenSP_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
-            TextEdit editText = sender as TextEdit;
-            editText.SupportVietnamese(30);
+            TextEdit editTExt = sender as TextEdit;
+            editTExt.Properties.MaxLength = 250;
         }
     }
 }
