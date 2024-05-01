@@ -19,6 +19,7 @@ using Project.NET.GUI_UC.PageKhachHang;
 using Project.NET.GUI_UC.PageHoaDon;
 using Project.NET.GUI_UC.PageChiNhanh;
 using Project.NET.GUI_UC.PageNhaCungCap;
+using Project.NET.GUI_UC.PageNhanVien;
 
 namespace Project.NET
 {
@@ -48,6 +49,7 @@ namespace Project.NET
         private HoaDon_UC hoaDon_UC = null;
         private ChiNhanh_UC chiNhanh_UC = null;
         private NhaCungCap_UC nhaCungCap_UC = null;
+        private ViTriChucVuNV_UC viTriChucVuNV_UC = null;
         public frmMenu()
         {
             InitializeComponent();
@@ -153,6 +155,7 @@ namespace Project.NET
                         LoadUserControl(thongKeNhanVien_UC, typeof(ThongKeNhanVien_UC), editFormThongKeNhanVien);
                         LoadUserControl(caLam_UC, typeof(CaLam_UC), editFormCaLam);
                         LoadUserControl(phanCong_UC, typeof(PhanCong_UC), editFormPhanCong);
+                        LoadUserControl(viTriChucVuNV_UC, typeof(ViTriChucVuNV_UC), editFormViTriChucVuNV);
                         break;
                     case "btnKho":
                         nafContent.SelectedPage = navKho;
@@ -183,12 +186,12 @@ namespace Project.NET
                         break;
                     case "btnChiNhanh":
                         nafContent.SelectedPage = navChiNhanh;
-                        //LoadUserControl(chiNhanh_UC, typeof(ChiNhanh_UC), editFormChiNhanh);
+                        LoadUserControl(chiNhanh_UC, typeof(ChiNhanh_UC), editFormChiNhanh);
 
                         break;
                     case "btnNhaCungCap":
                         nafContent.SelectedPage = navNhaCungCap;
-                        //LoadUserControl(nhaCungCap_UC, typeof(NhaCungCap_UC), editFormNhaCungCap);
+                        LoadUserControl(nhaCungCap_UC, typeof(NhaCungCap_UC), editFormNhaCungCap);
 
                         break;
                     case "btnBaoCao":

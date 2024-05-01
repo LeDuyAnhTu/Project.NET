@@ -318,6 +318,8 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmMenu.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Loading_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.BaoCao_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageChiNhanh.KhuVuc_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDonChiTiet_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDon_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.KhachHang_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.ThongKeKhachHang_UC.resources

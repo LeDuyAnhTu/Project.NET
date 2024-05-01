@@ -140,6 +140,12 @@
     <Compile Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.Designer.cs">
       <DependentUpon>ChiNhanh_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageChiNhanh\KhuVuc_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageChiNhanh\KhuVuc_UC.Designer.cs">
+      <DependentUpon>KhuVuc_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageHoaDon\HoaDonChiTiet_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
       <DependentUpon>BaoCao_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageChiNhanh\KhuVuc_UC.resx">
+      <DependentUpon>KhuVuc_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageHoaDon\HoaDonChiTiet_UC.resx">
       <DependentUpon>HoaDonChiTiet_UC.cs</DependentUpon>
