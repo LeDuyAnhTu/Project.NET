@@ -134,6 +134,36 @@
     <Compile Include="GUI_UC\Loading_UC.Designer.cs">
       <DependentUpon>Loading_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.Designer.cs">
+      <DependentUpon>ChiNhanh_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageHoaDon\HoaDonChiTiet_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageHoaDon\HoaDonChiTiet_UC.Designer.cs">
+      <DependentUpon>HoaDonChiTiet_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageHoaDon\HoaDon_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageHoaDon\HoaDon_UC.Designer.cs">
+      <DependentUpon>HoaDon_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageHoaDon\ThongKeHoaDon_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageHoaDon\ThongKeHoaDon_UC.Designer.cs">
+      <DependentUpon>ThongKeHoaDon_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhachHang\KhachHang_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhachHang\KhachHang_UC.Designer.cs">
+      <DependentUpon>KhachHang_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageKho\ThongKeKho_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -164,6 +194,12 @@
     <Compile Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.Designer.cs">
       <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageNhaCungCap\NhaCungCap_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageNhaCungCap\NhaCungCap_UC.Designer.cs">
+      <DependentUpon>NhaCungCap_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageNhanVien\CaLam_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -187,6 +223,12 @@
     </Compile>
     <Compile Include="GUI_UC\PageNhanVien\PhanCong_UC.Designer.cs">
       <DependentUpon>PhanCong_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageNhanVien\ViTriChucVuNV_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageNhanVien\ViTriChucVuNV_UC.Designer.cs">
+      <DependentUpon>ViTriChucVuNV_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_UC\PageSanPham\LoaiSanPham_UC.cs">
       <SubType>UserControl</SubType>
@@ -273,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\PhanCong_UC.resx">
       <DependentUpon>PhanCong_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageNhanVien\ViTriChucVuNV_UC.resx">
+      <DependentUpon>ViTriChucVuNV_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageSanPham\LoaiSanPham_UC.resx">
       <DependentUpon>LoaiSanPham_UC.cs</DependentUpon>
