@@ -298,6 +298,9 @@
     <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
       <DependentUpon>BaoCao_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageHoaDon\HoaDon_UC.resx">
+      <DependentUpon>HoaDon_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKhachHang\KhachHang_UC.resx">
       <DependentUpon>KhachHang_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -496,6 +499,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\customerService32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\officeWorker32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

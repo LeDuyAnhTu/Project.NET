@@ -233,6 +233,16 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap invoice32_32 {
+            get {
+                object obj = ResourceManager.GetObject("invoice32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key16_16 {
             get {
                 object obj = ResourceManager.GetObject("key16_16", resourceCulture);
@@ -296,6 +306,16 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap marketplace32_32 {
             get {
                 object obj = ResourceManager.GetObject("marketplace32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap officeWorker32_32 {
+            get {
+                object obj = ResourceManager.GetObject("officeWorker32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

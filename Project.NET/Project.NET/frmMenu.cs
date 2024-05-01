@@ -16,6 +16,7 @@ using Project.NET.GUI_UC.PageKhuyenMai;
 using BUS;
 using DevExpress.Utils;
 using Project.NET.GUI_UC.PageKhachHang;
+using Project.NET.GUI_UC.PageHoaDon;
 
 namespace Project.NET
 {
@@ -39,6 +40,7 @@ namespace Project.NET
         private ChiTietKhuyenMai_UC chiTietKhuyenMai_UC = null;
         private ThongKeKhuyenMai_UC thongKeKhuyenMai_UC = null;
         private KhachHang_UC khachHang_UC = null;
+        private HoaDon_UC hoaDon_UC = null;
 
         public frmMenu()
         {
@@ -146,7 +148,7 @@ namespace Project.NET
                         break;
                     case "btnHoaDon":
                         nafContent.SelectedPage = navHoaDon;
-
+                        LoadUserControl(hoaDon_UC, typeof(HoaDon_UC), editFormHoaDon);
 
                         break;
                     case "btnChiNhanh":
