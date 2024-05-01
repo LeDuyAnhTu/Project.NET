@@ -121,9 +121,6 @@
   <data name="card_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\card_logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="horizontalgridlinesminor_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\horizontalgridlinesminor_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="coupon16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coupon16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,8 +136,8 @@
   <data name="boproductgroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boproductgroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pass16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pass16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="business-card32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business-card32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +151,11 @@
   <data name="key16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coupon32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coupon32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logosvg32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logosvg32_32.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="updateKM32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updateKM32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="svg_card_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\svg_card_logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -166,11 +166,17 @@
   <data name="taikhoannhanvien_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taikhoannhanvien_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="horizontalgridlinesminor_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\horizontalgridlinesminor_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerbirthday32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerbirthday32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logosvg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosvg.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="categories32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\categories32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stand32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stand32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,19 +196,22 @@
   <data name="column2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\column2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="key32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dong-sign32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dong-sign32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logosvg32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logosvg32_32.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="key32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="categories32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\categories32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coupon32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coupon32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="updateKM32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updateKM32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pass16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pass16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerService32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerService32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

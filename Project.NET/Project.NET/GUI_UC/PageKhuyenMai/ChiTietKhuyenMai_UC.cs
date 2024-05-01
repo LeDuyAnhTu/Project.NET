@@ -22,7 +22,7 @@ namespace Project.NET.GUI_UC.PageKhuyenMai
         private void txtSoLuong_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
             TextEdit editTExt = sender as TextEdit;
-             editTExt.SupportSoLuong();
+             editTExt.SupportNumeric();
         }
     }
 }

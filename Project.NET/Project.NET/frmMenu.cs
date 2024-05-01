@@ -15,6 +15,7 @@ using Project.NET.GUI_UC.PageSanPham;
 using Project.NET.GUI_UC.PageKhuyenMai;
 using BUS;
 using DevExpress.Utils;
+using Project.NET.GUI_UC.PageKhachHang;
 
 namespace Project.NET
 {
@@ -37,7 +38,7 @@ namespace Project.NET
         private KhuyenMai_UC khuyenMai_UC = null;
         private ChiTietKhuyenMai_UC chiTietKhuyenMai_UC = null;
         private ThongKeKhuyenMai_UC thongKeKhuyenMai_UC = null;
-
+        private KhachHang_UC khachHang_UC = null;
 
         public frmMenu()
         {
@@ -104,6 +105,9 @@ namespace Project.NET
                 //
                 lastClickButton = currentButton;
 
+                //
+                // Kiểm tra nút được nhấn là nút nào, chuyển tài nguyên tương ứng
+                //
                 switch (currentButton.Name)
                 {
                     case "btnTaiKhoan":
@@ -137,7 +141,7 @@ namespace Project.NET
                         break;
                     case "btnKhachHang":
                         nafContent.SelectedPage = navKhachHang;
-
+                        LoadUserControl(khachHang_UC, typeof(KhachHang_UC), editFormKhachHang);
 
                         break;
                     case "btnHoaDon":

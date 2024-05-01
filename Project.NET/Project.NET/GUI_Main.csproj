@@ -164,6 +164,12 @@
     <Compile Include="GUI_UC\PageKhachHang\KhachHang_UC.Designer.cs">
       <DependentUpon>KhachHang_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.Designer.cs">
+      <DependentUpon>ThongKeKhachHang_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageKho\ThongKeKho_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -291,6 +297,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
       <DependentUpon>BaoCao_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKhachHang\KhachHang_UC.resx">
+      <DependentUpon>KhachHang_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.resx">
+      <DependentUpon>ThongKeKhachHang_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKho\Kho_UC.resx">
       <DependentUpon>Kho_UC.cs</DependentUpon>
@@ -475,6 +487,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\updateKM32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-card32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerbirthday32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerService32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

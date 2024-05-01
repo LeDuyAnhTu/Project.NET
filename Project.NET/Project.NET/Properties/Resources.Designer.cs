@@ -81,6 +81,16 @@ namespace Project.NET.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap business_card32_32 {
+            get {
+                object obj = ResourceManager.GetObject("business-card32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage card_logo {
@@ -146,6 +156,26 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap coupon32_32 {
             get {
                 object obj = ResourceManager.GetObject("coupon32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap customerbirthday32_32 {
+            get {
+                object obj = ResourceManager.GetObject("customerbirthday32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap customerService32_32 {
+            get {
+                object obj = ResourceManager.GetObject("customerService32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
