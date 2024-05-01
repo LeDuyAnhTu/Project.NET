@@ -1,4 +1,6 @@
-﻿using Project.NET.GUI_UC;
+﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
+using Project.NET.GUI_UC;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Project.NET
 {
@@ -18,6 +21,36 @@ namespace Project.NET
         public frmLogin()
         {
             InitializeComponent();
+
+            // Tạo một TextEdit với PasswordChar là '*' 
+            txtMatKhau.Properties.PasswordChar = '*';
+            EditorButton customButton = new EditorButton();
+            customButton.Image = Properties.Resources.eyeOpen;
+
+            txtMatKhau.Properties.Buttons.RemoveAt(0);
+            txtMatKhau.Properties.Buttons.Add(customButton);
+
+            //// Đăng ký sự kiện ButtonClick
+            txtMatKhau.Properties.ButtonClick += (sender, e) =>
+            {
+                if (e.Button.Kind == ButtonPredefines.Ellipsis)
+                {
+                    // Nếu PasswordChar là '*', thì đặt nó thành '\0' để hiện mật khẩu
+                    // và thay đổi biểu tượng thành mắt đóng
+                    if (txtMatKhau.Properties.PasswordChar == '*')
+                    {
+                        txtMatKhau.Properties.PasswordChar = '\0';
+                        e.Button.Image = Properties.Resources.eyeClosed; // Biểu tượng mắt đóng
+                    }
+                    // Ngược lại, đặt PasswordChar thành '*' để ẩn mật khẩu
+                    // và thay đổi biểu tượng thành mắt mở
+                    else
+                    {
+                        txtMatKhau.Properties.PasswordChar = '*';
+                        e.Button.Image = Properties.Resources.eyeOpen; // Biểu tượng mắt mở
+                    }
+                }
+            };
         }
         /// <summary>
         /// Hiệu ứng fade cho việc đăng nhập
@@ -55,7 +88,7 @@ namespace Project.NET
                     frmMenuu = new frmMenu();// khởi tạo frmMenuu
 
                     frmMenuu.MdiParent = frmMainn;// gan frmMenuu vào frmMain
-                     
+
                     frmMenuu.Show();// hiển thị frmMenuu
                 }
             }

@@ -161,5 +161,16 @@ namespace DAL
                 return "NV00000001";
             }
         }
+        public NhanVien_DTO timTheoMa(string maNV)
+        {
+            try
+            {
+                NhanVien nv = db.DBO.NhanViens.Single(d=>d.maNV == maNV);
+                return new NhanVien_DTO(nv.maNV, nv.tenNV, nv.gioiTinh, nv.ngaySinh, nv.SDT, nv.CCCD, (int)nv.luong, nv.maVT, nv.maCN);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

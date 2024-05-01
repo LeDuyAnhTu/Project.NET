@@ -5,7 +5,7 @@ using System;
 namespace DTOUnitTest
 {
     [TestClass]
-    public class TestClass
+    public class CaLamTests
     {
         [TestMethod]
         public void TestMaCa()

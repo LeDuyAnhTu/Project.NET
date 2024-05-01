@@ -101,9 +101,28 @@ namespace BUS
             }
             return result;
         }
+        /// <summary>
+        /// Tạo id mới cho nhân viên mới
+        /// </summary>
+        /// <returns></returns>
         public string taoMaMoi()
         {
             return nv.taoMaNVMoi();
+        }
+        /// <summary>
+        /// Tìm nhân viên trong hệ thống theo mã nhân viên
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
+        public NhanVien_DTO timTheoMa(string maNV)
+        {
+            try
+            {
+                return nv.timTheoMa(maNV);
+            }catch( Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 
