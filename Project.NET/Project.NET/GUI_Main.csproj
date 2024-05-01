@@ -206,6 +206,12 @@
     <Compile Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.Designer.cs">
       <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageNhaCungCap\ChiTietCC_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageNhaCungCap\ChiTietCC_UC.Designer.cs">
+      <DependentUpon>ChiTietCC_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageNhaCungCap\NhaCungCap_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -336,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.resx">
       <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageNhaCungCap\ChiTietCC_UC.resx">
+      <DependentUpon>ChiTietCC_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhaCungCap\NhaCungCap_UC.resx">
       <DependentUpon>NhaCungCap_UC.cs</DependentUpon>
@@ -535,6 +544,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\manager32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply-chain16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply-chain32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeric16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeric32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dong-sign16_16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
