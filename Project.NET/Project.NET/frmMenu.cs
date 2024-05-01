@@ -17,11 +17,16 @@ using BUS;
 using DevExpress.Utils;
 using Project.NET.GUI_UC.PageKhachHang;
 using Project.NET.GUI_UC.PageHoaDon;
+using Project.NET.GUI_UC.PageChiNhanh;
+using Project.NET.GUI_UC.PageNhaCungCap;
 
 namespace Project.NET
 {
     public partial class frmMenu : Form
     {
+        // Nút bấm menu navbar cuối cùng được nhấn
+        private SimpleButton lastClickButton = null;
+        
         private UserControl currentControl = null;
         private NhanVien_UC nhanVien_UC = null;
         private ThongKeNhanVien_UC thongKeNhanVien_UC = null;
@@ -41,28 +46,52 @@ namespace Project.NET
         private ThongKeKhuyenMai_UC thongKeKhuyenMai_UC = null;
         private KhachHang_UC khachHang_UC = null;
         private HoaDon_UC hoaDon_UC = null;
-
+        private ChiNhanh_UC chiNhanh_UC = null;
+        private NhaCungCap_UC nhaCungCap_UC = null;
         public frmMenu()
         {
             InitializeComponent();
-
         }
 
         private void frmMenu_Load(object sender, EventArgs e)
-        {
+        { 
             loadingFirstOrDeFaultNavbarMenuButton();
         }
 
         /// <summary>
-        /// Tải mặc định menu đầu tiên là menu tài khoản
+        /// Tải mặc định menu đầu tiên là menu tài khoản và tô đậm nút tài khoản menu navbar
         /// </summary>
         private void loadingFirstOrDeFaultNavbarMenuButton()
         {
+            // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
+            SimpleButton currentButton = btnTaiKhoan;
+            currentButton.Appearance.BackColor = Color.Orange;
+            currentButton.Appearance.BorderColor = Color.AliceBlue;
+            currentButton.Appearance.ForeColor = Color.White;
+            currentButton.Appearance.Font = new Font("Tahoma", 12, FontStyle.Bold);
+            currentButton.AppearanceHovered.ForeColor = Color.White;
+
+            //
+            // Nếu có nút đã được nhấn và không phải là nút hiện tại
+            //
+            if (lastClickButton != null && lastClickButton != currentButton)
+            {
+                // Đặt lại trang thái mặc định cho nút nhấn cuối cùng
+                lastClickButton.Appearance.Reset();
+                lastClickButton.AppearanceHovered.ForeColor = Color.Orange;
+            }
+
+            //
+            // Cập nhật trạng thái cho nút đang được nhấn
+            //
+            lastClickButton = currentButton;
+
             // Loading default tài khoản tab
             if (taiKhoan_UC == null)
             {
                 taiKhoan_UC = new TaiKhoan_UC();
                 taiKhoan_UC.Dock = DockStyle.Fill;
+
                 editFormTaiKhoan.Controls.Add(taiKhoan_UC);
             }
 
@@ -71,7 +100,7 @@ namespace Project.NET
                 tabSuaTTTaiKhoan.Controls.Add(editFormTaiKhoan);
             }
         }
-        SimpleButton lastClickButton = null;
+        
         /// <summary>
         /// Xử lý sự kiện cho các nút bấm trên nav menu buttons
         /// </summary>
@@ -91,7 +120,8 @@ namespace Project.NET
                 currentButton.Appearance.BorderColor = Color.AliceBlue;
                 currentButton.Appearance.ForeColor = Color.White;
                 currentButton.Appearance.Font = new Font("Tahoma", 12, FontStyle.Bold);
-                currentButton.AppearanceHovered.ForeColor = Color.White;
+                currentButton.AppearanceHovered.ForeColor = Color.White; 
+
                 //
                 // Nếu có nút đã được nhấn và không phải là nút hiện tại
                 //
@@ -99,14 +129,14 @@ namespace Project.NET
                 {
                     // Đặt lại trang thái mặc định cho nút nhấn cuối cùng
                     lastClickButton.Appearance.Reset();
-                    lastClickButton.AppearanceHovered.Reset();
+                    lastClickButton.AppearanceHovered.ForeColor = Color.Orange;
                 }
-                
+
                 //
                 // Cập nhật trạng thái cho nút đang được nhấn
                 //
                 lastClickButton = currentButton;
-
+                
                 //
                 // Kiểm tra nút được nhấn là nút nào, chuyển tài nguyên tương ứng
                 //
@@ -153,12 +183,12 @@ namespace Project.NET
                         break;
                     case "btnChiNhanh":
                         nafContent.SelectedPage = navChiNhanh;
-
+                        //LoadUserControl(chiNhanh_UC, typeof(ChiNhanh_UC), editFormChiNhanh);
 
                         break;
                     case "btnNhaCungCap":
                         nafContent.SelectedPage = navNhaCungCap;
-
+                        //LoadUserControl(nhaCungCap_UC, typeof(NhaCungCap_UC), editFormNhaCungCap);
 
                         break;
                     case "btnBaoCao":

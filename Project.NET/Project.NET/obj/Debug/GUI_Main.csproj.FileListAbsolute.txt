@@ -318,6 +318,7 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmMenu.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Loading_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.BaoCao_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDon_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.KhachHang_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.ThongKeKhachHang_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.Kho_UC.resources
@@ -344,4 +345,3 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csp
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.Up2Date
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDon_UC.resources
