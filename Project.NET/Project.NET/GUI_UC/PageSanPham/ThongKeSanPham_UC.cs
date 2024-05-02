@@ -138,7 +138,7 @@ GROUP BY sp.HSD;
         /// </summary>
         private void btnClickTKHanSuDung(ChartControl chart, List<ThongKeSanPham_DTO> dataPoints)
         {
-            
+
             chart.CreateChart(dataPoints,
                           dp => dp.HSD,
                           dp => dp.SoLuongSanPham,
@@ -161,7 +161,7 @@ FROM SanPham;
         /// </summary>
         private void btnClickTKSoLuongSPTheoKhoangGia(ChartControl chart, List<ThongKeSanPham_DTO> dataPoints)
         {
-           
+
             chart.CreateChart(dataPoints,
                 dp => dp.KhoangGia,
                 dp => dp.SoLuongSanPham,
@@ -184,7 +184,7 @@ FROM SanPham;
         /// </summary>
         private void btnClickTKSoLuongSPConLai(ChartControl chart, List<ThongKeSanPham_DTO> dataPoints)
         {
-           
+
             chart.CreateChart(dataPoints,
                 dp => dp.SoLuongConLai,
                 dp => dp.SoLuongSanPham,
