@@ -52,7 +52,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(361, 123);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.UseWaitCursor = true;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // manHinhChoMotChut
             // 
