@@ -20,6 +20,7 @@ using Project.NET.GUI_UC.PageHoaDon;
 using Project.NET.GUI_UC.PageChiNhanh;
 using Project.NET.GUI_UC.PageNhaCungCap;
 using Project.NET.GUI_UC.PageNhanVien;
+using Project.NET.ExtensionMethods;
 
 namespace Project.NET
 {
@@ -70,22 +71,7 @@ namespace Project.NET
         {
             // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
             SimpleButton currentButton = btnTaiKhoan;
-            currentButton.Appearance.BackColor = Color.Orange;
-            currentButton.Appearance.BorderColor = Color.AliceBlue;
-            currentButton.Appearance.ForeColor = Color.White;
-            currentButton.Appearance.Font = new Font("Tahoma", 12, FontStyle.Bold);
-            currentButton.AppearanceHovered.ForeColor = Color.White;
-
-            //
-            // Nếu có nút đã được nhấn và không phải là nút hiện tại
-            //
-            if (lastClickButton != null && lastClickButton != currentButton)
-            {
-                // Đặt lại trang thái mặc định cho nút nhấn cuối cùng
-                lastClickButton.Appearance.Reset();
-                lastClickButton.AppearanceHovered.ForeColor = Color.Orange;
-            }
-
+            currentButton.UpdateButtonStyle(lastClickButton);
             //
             // Cập nhật trạng thái cho nút đang được nhấn
             //
@@ -124,21 +110,7 @@ namespace Project.NET
 
                     // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
                     SimpleButton currentButton = (SimpleButton)sender;
-                    currentButton.Appearance.BackColor = Color.Orange;
-                    currentButton.Appearance.BorderColor = Color.AliceBlue;
-                    currentButton.Appearance.ForeColor = Color.White;
-                    currentButton.Appearance.Font = new Font("Tahoma", 12, FontStyle.Bold);
-                    currentButton.AppearanceHovered.ForeColor = Color.White;
-
-                    //
-                    // Nếu có nút đã được nhấn và không phải là nút hiện tại
-                    //
-                    if (lastClickButton != null && lastClickButton != currentButton)
-                    {
-                        // Đặt lại trang thái mặc định cho nút nhấn cuối cùng
-                        lastClickButton.Appearance.Reset();
-                        lastClickButton.AppearanceHovered.ForeColor = Color.Orange;
-                    }
+                    currentButton.UpdateButtonStyle(lastClickButton);
 
                     //
                     // Cập nhật trạng thái cho nút đang được nhấn
