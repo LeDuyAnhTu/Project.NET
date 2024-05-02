@@ -333,9 +333,9 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap loading_logo {
+        internal static System.Drawing.Bitmap loading {
             get {
-                object obj = ResourceManager.GetObject("loading_logo", resourceCulture);
+                object obj = ResourceManager.GetObject("loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -526,6 +526,16 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap taikhoannhanvien_white {
             get {
                 object obj = ResourceManager.GetObject("taikhoannhanvien_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taikhoannhanvienpacico {
+            get {
+                object obj = ResourceManager.GetObject("taikhoannhanvienpacico", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

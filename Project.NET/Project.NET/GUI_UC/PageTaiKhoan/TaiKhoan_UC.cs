@@ -31,7 +31,7 @@ namespace Project.NET.Forms
 
         private void TaiKhoan_UC_Load(object sender, EventArgs e)
         {
-           // dgvTaiKhoanNhanVien.DataSource = db_TK.LayDanhSach();
+            dgvTaiKhoanNhanVien.DataSource = db_TK.LayDanhSach();
         }
     }
 }
