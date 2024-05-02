@@ -32,8 +32,8 @@
             this.TieuDeUC = new DevExpress.XtraEditors.LabelControl();
             this.layoutNhanVien = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.groupDanhSachNhanVien = new DevExpress.XtraEditors.GroupControl();
-            this.dgvNhanVien = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.dgvControl = new DevExpress.XtraGrid.GridControl();
+            this.dgvNhanVien = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.txtNgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.txtSoDienThoai = new DevExpress.XtraEditors.TextEdit();
@@ -52,12 +52,12 @@
             this.layoutTxtMaNV = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtHoTen = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtNgaySinh = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutTxtGioiTinh = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutCCCD = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutSDT = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutChiNhanh = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutViTri = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutLuong = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutTxtGioiTinh = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutCCCD = new DevExpress.XtraLayout.LayoutControlItem();
             this.CRUD = new DevExpress.XtraLayout.LayoutControlGroup();
             this.Them = new DevExpress.XtraLayout.LayoutControlItem();
             this.CapNhat = new DevExpress.XtraLayout.LayoutControlItem();
@@ -65,12 +65,15 @@
             this.Xoa = new DevExpress.XtraLayout.LayoutControlItem();
             this.LIST = new DevExpress.XtraLayout.LayoutControlItem();
             this.TITLE = new DevExpress.XtraLayout.LayoutControlItem();
+            this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
+            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
+            this.splitterItem3 = new DevExpress.XtraLayout.SplitterItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).BeginInit();
             this.groupDanhSachNhanVien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
@@ -86,12 +89,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMaNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutSDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).BeginInit();
@@ -99,6 +102,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TITLE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // TieuDeUC
@@ -152,35 +158,35 @@
             // groupDanhSachNhanVien
             // 
             this.groupDanhSachNhanVien.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupDanhSachNhanVien.CaptionImageOptions.Image")));
-            this.groupDanhSachNhanVien.Controls.Add(this.dgvNhanVien);
-            this.groupDanhSachNhanVien.Location = new System.Drawing.Point(6, 566);
+            this.groupDanhSachNhanVien.Controls.Add(this.dgvControl);
+            this.groupDanhSachNhanVien.Location = new System.Drawing.Point(6, 420);
             this.groupDanhSachNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupDanhSachNhanVien.Name = "groupDanhSachNhanVien";
-            this.groupDanhSachNhanVien.Size = new System.Drawing.Size(911, 174);
+            this.groupDanhSachNhanVien.Size = new System.Drawing.Size(911, 320);
             this.groupDanhSachNhanVien.TabIndex = 22;
             this.groupDanhSachNhanVien.Text = "Danh sách nhân viên";
             // 
+            // dgvControl
+            // 
+            this.dgvControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvControl.Location = new System.Drawing.Point(2, 35);
+            this.dgvControl.MainView = this.dgvNhanVien;
+            this.dgvControl.Name = "dgvControl";
+            this.dgvControl.Size = new System.Drawing.Size(907, 283);
+            this.dgvControl.TabIndex = 0;
+            this.dgvControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.dgvNhanVien});
+            // 
             // dgvNhanVien
             // 
-            this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvNhanVien.Location = new System.Drawing.Point(2, 35);
-            this.dgvNhanVien.MainView = this.gridView1;
+            this.dgvNhanVien.GridControl = this.dgvControl;
             this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.Size = new System.Drawing.Size(907, 137);
-            this.dgvNhanVien.TabIndex = 0;
-            this.dgvNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.dgvNhanVien;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
-            this.gridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
-            this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsBehavior.FocusLeaveOnTab = true;
-            this.gridView1.OptionsBehavior.ReadOnly = true;
-            this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
+            this.dgvNhanVien.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+            this.dgvNhanVien.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+            this.dgvNhanVien.OptionsBehavior.Editable = false;
+            this.dgvNhanVien.OptionsBehavior.FocusLeaveOnTab = true;
+            this.dgvNhanVien.OptionsBehavior.ReadOnly = true;
+            this.dgvNhanVien.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             // 
             // txtHoTen
             // 
@@ -214,32 +220,34 @@
             this.txtNgaySinh.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Classic;
             this.txtNgaySinh.Properties.MaskSettings.Set("mask", "d");
             this.txtNgaySinh.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.txtNgaySinh.Size = new System.Drawing.Size(770, 26);
+            this.txtNgaySinh.Size = new System.Drawing.Size(94, 26);
             this.txtNgaySinh.StyleController = this.layoutNhanVien;
             this.txtNgaySinh.TabIndex = 10;
             // 
             // txtSoDienThoai
             // 
-            this.txtSoDienThoai.Location = new System.Drawing.Point(141, 296);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(141, 184);
             this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoDienThoai.Properties.Appearance.Options.UseFont = true;
+            this.txtSoDienThoai.Properties.BeepOnError = true;
             this.txtSoDienThoai.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtSoDienThoai.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSoDienThoai.Properties.MaskSettings.Set("mask", "[\\s0-9]+");
+            this.txtSoDienThoai.Properties.MaskSettings.Set("mask", "[0-9]{0,10}");
+            this.txtSoDienThoai.Properties.UseMaskAsDisplayFormat = true;
             this.txtSoDienThoai.Size = new System.Drawing.Size(770, 26);
             this.txtSoDienThoai.StyleController = this.layoutNhanVien;
             this.txtSoDienThoai.TabIndex = 9;
             // 
             // txtCCCD
             // 
-            this.txtCCCD.Location = new System.Drawing.Point(141, 262);
+            this.txtCCCD.Location = new System.Drawing.Point(623, 150);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCCCD.Properties.Appearance.Options.UseFont = true;
-            this.txtCCCD.Size = new System.Drawing.Size(770, 26);
+            this.txtCCCD.Size = new System.Drawing.Size(78, 26);
             this.txtCCCD.StyleController = this.layoutNhanVien;
             this.txtCCCD.TabIndex = 11;
             // 
@@ -250,7 +258,7 @@
             0,
             0,
             0});
-            this.txtLuongNV.Location = new System.Drawing.Point(141, 330);
+            this.txtLuongNV.Location = new System.Drawing.Point(840, 150);
             this.txtLuongNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLuongNV.Name = "txtLuongNV";
             this.txtLuongNV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -266,13 +274,13 @@
             0});
             this.txtLuongNV.Properties.MaskSettings.Set("mask", "c");
             this.txtLuongNV.Properties.UseMaskAsDisplayFormat = true;
-            this.txtLuongNV.Size = new System.Drawing.Size(770, 26);
+            this.txtLuongNV.Size = new System.Drawing.Size(71, 26);
             this.txtLuongNV.StyleController = this.layoutNhanVien;
             this.txtLuongNV.TabIndex = 12;
             // 
             // cboChiNhanh
             // 
-            this.cboChiNhanh.Location = new System.Drawing.Point(141, 364);
+            this.cboChiNhanh.Location = new System.Drawing.Point(141, 218);
             this.cboChiNhanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboChiNhanh.Name = "cboChiNhanh";
             this.cboChiNhanh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -287,7 +295,7 @@
             // 
             // cboViTriChucVuNhanVien
             // 
-            this.cboViTriChucVuNhanVien.Location = new System.Drawing.Point(141, 398);
+            this.cboViTriChucVuNhanVien.Location = new System.Drawing.Point(141, 252);
             this.cboViTriChucVuNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboViTriChucVuNhanVien.Name = "cboViTriChucVuNhanVien";
             this.cboViTriChucVuNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -328,7 +336,7 @@
             this.btnThem.AppearancePressed.Options.UseFont = true;
             this.btnThem.AppearancePressed.Options.UseForeColor = true;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
-            this.btnThem.Location = new System.Drawing.Point(12, 480);
+            this.btnThem.Location = new System.Drawing.Point(12, 334);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(448, 38);
@@ -365,7 +373,7 @@
             this.btnCapNhat.AppearancePressed.Options.UseFont = true;
             this.btnCapNhat.AppearancePressed.Options.UseForeColor = true;
             this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.ImageOptions.Image")));
-            this.btnCapNhat.Location = new System.Drawing.Point(462, 480);
+            this.btnCapNhat.Location = new System.Drawing.Point(462, 334);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(449, 38);
@@ -402,7 +410,7 @@
             this.btnLamMoi.AppearancePressed.Options.UseFont = true;
             this.btnLamMoi.AppearancePressed.Options.UseForeColor = true;
             this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.ImageOptions.Image")));
-            this.btnLamMoi.Location = new System.Drawing.Point(12, 520);
+            this.btnLamMoi.Location = new System.Drawing.Point(12, 374);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(448, 38);
@@ -439,7 +447,7 @@
             this.btnXoa.AppearancePressed.Options.UseFont = true;
             this.btnXoa.AppearancePressed.Options.UseForeColor = true;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(462, 520);
+            this.btnXoa.Location = new System.Drawing.Point(462, 374);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(449, 38);
@@ -450,18 +458,25 @@
             // 
             // txtGioiTinh
             // 
-            this.txtGioiTinh.Location = new System.Drawing.Point(141, 184);
+            this.txtGioiTinh.Location = new System.Drawing.Point(374, 150);
             this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGioiTinh.Properties.Appearance.Options.UseFont = true;
+            this.txtGioiTinh.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtGioiTinh.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.txtGioiTinh.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtGioiTinh.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtGioiTinh.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtGioiTinh.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.txtGioiTinh.Properties.Columns = 2;
             this.txtGioiTinh.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Nam", "Nam", true, "Nam"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Nu", "Nữ", true, "Nu")});
-            this.txtGioiTinh.Size = new System.Drawing.Size(770, 76);
+            this.txtGioiTinh.Size = new System.Drawing.Size(110, 32);
             this.txtGioiTinh.StyleController = this.layoutNhanVien;
             this.txtGioiTinh.TabIndex = 6;
+            this.txtGioiTinh.SelectedIndexChanged += new System.EventHandler(this.txtGioiTinh_SelectedIndexChanged);
             // 
             // txtMaNV
             // 
@@ -508,16 +523,19 @@
             this.layoutTxtMaNV,
             this.layoutTxtHoTen,
             this.layoutTxtNgaySinh,
+            this.layoutSDT,
             this.layoutTxtGioiTinh,
             this.layoutCCCD,
-            this.layoutSDT,
+            this.layoutLuong,
+            this.splitterItem1,
+            this.splitterItem2,
             this.layoutChiNhanh,
             this.layoutViTri,
-            this.layoutLuong});
+            this.splitterItem3});
             this.BUTTONS.Location = new System.Drawing.Point(0, 34);
             this.BUTTONS.Name = "BUTTONS";
             this.BUTTONS.OptionsItemText.TextToControlDistance = 3;
-            this.BUTTONS.Size = new System.Drawing.Size(913, 398);
+            this.BUTTONS.Size = new System.Drawing.Size(913, 252);
             this.BUTTONS.Text = "Cập nhật thông tin nhân viên";
             // 
             // layoutTxtMaNV
@@ -550,41 +568,15 @@
             this.layoutTxtNgaySinh.Name = "layoutTxtNgaySinh";
             this.layoutTxtNgaySinh.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutTxtNgaySinh.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutTxtNgaySinh.Size = new System.Drawing.Size(901, 34);
+            this.layoutTxtNgaySinh.Size = new System.Drawing.Size(225, 34);
             this.layoutTxtNgaySinh.Text = "Ngày sinh:";
             this.layoutTxtNgaySinh.TextSize = new System.Drawing.Size(125, 32);
-            // 
-            // layoutTxtGioiTinh
-            // 
-            this.layoutTxtGioiTinh.Control = this.txtGioiTinh;
-            this.layoutTxtGioiTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtGioiTinh.ImageOptions.Image")));
-            this.layoutTxtGioiTinh.Location = new System.Drawing.Point(0, 102);
-            this.layoutTxtGioiTinh.MaxSize = new System.Drawing.Size(0, 78);
-            this.layoutTxtGioiTinh.MinSize = new System.Drawing.Size(255, 78);
-            this.layoutTxtGioiTinh.Name = "layoutTxtGioiTinh";
-            this.layoutTxtGioiTinh.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutTxtGioiTinh.Size = new System.Drawing.Size(901, 78);
-            this.layoutTxtGioiTinh.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutTxtGioiTinh.Text = "Giới tính:";
-            this.layoutTxtGioiTinh.TextSize = new System.Drawing.Size(125, 32);
-            // 
-            // layoutCCCD
-            // 
-            this.layoutCCCD.Control = this.txtCCCD;
-            this.layoutCCCD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutCCCD.ImageOptions.Image")));
-            this.layoutCCCD.Location = new System.Drawing.Point(0, 180);
-            this.layoutCCCD.Name = "layoutCCCD";
-            this.layoutCCCD.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutCCCD.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutCCCD.Size = new System.Drawing.Size(901, 34);
-            this.layoutCCCD.Text = "CCCD:";
-            this.layoutCCCD.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutSDT
             // 
             this.layoutSDT.Control = this.txtSoDienThoai;
             this.layoutSDT.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutSDT.ImageOptions.Image")));
-            this.layoutSDT.Location = new System.Drawing.Point(0, 214);
+            this.layoutSDT.Location = new System.Drawing.Point(0, 102);
             this.layoutSDT.Name = "layoutSDT";
             this.layoutSDT.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutSDT.Size = new System.Drawing.Size(901, 34);
@@ -595,7 +587,7 @@
             // 
             this.layoutChiNhanh.Control = this.cboChiNhanh;
             this.layoutChiNhanh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutChiNhanh.ImageOptions.Image")));
-            this.layoutChiNhanh.Location = new System.Drawing.Point(0, 282);
+            this.layoutChiNhanh.Location = new System.Drawing.Point(0, 136);
             this.layoutChiNhanh.Name = "layoutChiNhanh";
             this.layoutChiNhanh.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutChiNhanh.OptionsTableLayoutItem.RowIndex = 2;
@@ -608,7 +600,7 @@
             this.layoutViTri.Control = this.cboViTriChucVuNhanVien;
             this.layoutViTri.CustomizationFormText = "Vị trí (Chức Vụ)";
             this.layoutViTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutViTri.ImageOptions.Image")));
-            this.layoutViTri.Location = new System.Drawing.Point(0, 316);
+            this.layoutViTri.Location = new System.Drawing.Point(0, 170);
             this.layoutViTri.Name = "layoutViTri";
             this.layoutViTri.OptionsTableLayoutItem.RowIndex = 3;
             this.layoutViTri.Size = new System.Drawing.Size(901, 34);
@@ -619,12 +611,35 @@
             // 
             this.layoutLuong.Control = this.txtLuongNV;
             this.layoutLuong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutLuong.ImageOptions.Image")));
-            this.layoutLuong.Location = new System.Drawing.Point(0, 248);
+            this.layoutLuong.Location = new System.Drawing.Point(699, 68);
             this.layoutLuong.Name = "layoutLuong";
             this.layoutLuong.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutLuong.Size = new System.Drawing.Size(901, 34);
+            this.layoutLuong.Size = new System.Drawing.Size(202, 34);
             this.layoutLuong.Text = "Lương";
             this.layoutLuong.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // layoutTxtGioiTinh
+            // 
+            this.layoutTxtGioiTinh.Control = this.txtGioiTinh;
+            this.layoutTxtGioiTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtGioiTinh.ImageOptions.Image")));
+            this.layoutTxtGioiTinh.Location = new System.Drawing.Point(233, 68);
+            this.layoutTxtGioiTinh.Name = "layoutTxtGioiTinh";
+            this.layoutTxtGioiTinh.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutTxtGioiTinh.Size = new System.Drawing.Size(241, 34);
+            this.layoutTxtGioiTinh.Text = "Giới tính:";
+            this.layoutTxtGioiTinh.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // layoutCCCD
+            // 
+            this.layoutCCCD.Control = this.txtCCCD;
+            this.layoutCCCD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutCCCD.ImageOptions.Image")));
+            this.layoutCCCD.Location = new System.Drawing.Point(482, 68);
+            this.layoutCCCD.Name = "layoutCCCD";
+            this.layoutCCCD.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutCCCD.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutCCCD.Size = new System.Drawing.Size(209, 34);
+            this.layoutCCCD.Text = "CCCD:";
+            this.layoutCCCD.TextSize = new System.Drawing.Size(125, 32);
             // 
             // CRUD
             // 
@@ -635,7 +650,7 @@
             this.CapNhat,
             this.LamMoi,
             this.Xoa});
-            this.CRUD.Location = new System.Drawing.Point(0, 432);
+            this.CRUD.Location = new System.Drawing.Point(0, 286);
             this.CRUD.Name = "CRUD";
             this.CRUD.OptionsItemText.TextToControlDistance = 3;
             this.CRUD.Size = new System.Drawing.Size(913, 128);
@@ -695,9 +710,9 @@
             // LIST
             // 
             this.LIST.Control = this.groupDanhSachNhanVien;
-            this.LIST.Location = new System.Drawing.Point(0, 560);
+            this.LIST.Location = new System.Drawing.Point(0, 414);
             this.LIST.Name = "LIST";
-            this.LIST.Size = new System.Drawing.Size(913, 176);
+            this.LIST.Size = new System.Drawing.Size(913, 322);
             this.LIST.Text = "DGV Nhân Viên:";
             this.LIST.TextSize = new System.Drawing.Size(0, 0);
             this.LIST.TextVisible = false;
@@ -713,6 +728,27 @@
             this.TITLE.TextSize = new System.Drawing.Size(0, 0);
             this.TITLE.TextVisible = false;
             // 
+            // splitterItem1
+            // 
+            this.splitterItem1.AllowHotTrack = true;
+            this.splitterItem1.Location = new System.Drawing.Point(225, 68);
+            this.splitterItem1.Name = "splitterItem1";
+            this.splitterItem1.Size = new System.Drawing.Size(8, 34);
+            // 
+            // splitterItem2
+            // 
+            this.splitterItem2.AllowHotTrack = true;
+            this.splitterItem2.Location = new System.Drawing.Point(474, 68);
+            this.splitterItem2.Name = "splitterItem2";
+            this.splitterItem2.Size = new System.Drawing.Size(8, 34);
+            // 
+            // splitterItem3
+            // 
+            this.splitterItem3.AllowHotTrack = true;
+            this.splitterItem3.Location = new System.Drawing.Point(691, 68);
+            this.splitterItem3.Name = "splitterItem3";
+            this.splitterItem3.Size = new System.Drawing.Size(8, 34);
+            // 
             // NhanVien_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -725,8 +761,8 @@
             this.layoutNhanVien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).EndInit();
             this.groupDanhSachNhanVien.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).EndInit();
@@ -742,12 +778,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMaNV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutSDT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).EndInit();
@@ -755,6 +791,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TITLE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -779,8 +818,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutChiNhanh;
         private DevExpress.XtraLayout.LayoutControlItem layoutViTri;
         private DevExpress.XtraEditors.GroupControl groupDanhSachNhanVien;
-        private DevExpress.XtraGrid.GridControl dgvNhanVien;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl dgvControl;
+        private DevExpress.XtraGrid.Views.Grid.GridView dgvNhanVien;
         private DevExpress.XtraLayout.LayoutControlItem LIST;
         private DevExpress.XtraEditors.LookUpEdit cboChiNhanh;
         private DevExpress.XtraEditors.LookUpEdit cboViTriChucVuNhanVien;
@@ -797,5 +836,8 @@
         private DevExpress.XtraEditors.TextEdit txtMaNV;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtMaNV;
         private DevExpress.XtraLayout.LayoutControlItem TITLE;
+        private DevExpress.XtraLayout.SplitterItem splitterItem1;
+        private DevExpress.XtraLayout.SplitterItem splitterItem2;
+        private DevExpress.XtraLayout.SplitterItem splitterItem3;
     }
 }
