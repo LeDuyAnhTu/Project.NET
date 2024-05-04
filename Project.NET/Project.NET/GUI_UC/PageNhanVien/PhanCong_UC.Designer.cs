@@ -47,8 +47,6 @@
             this.ckThuSau = new DevExpress.XtraEditors.CheckEdit();
             this.ckThuBay = new DevExpress.XtraEditors.CheckEdit();
             this.ckChuNhat = new DevExpress.XtraEditors.CheckEdit();
-            this.txtGioBD = new DevExpress.XtraEditors.TimeEdit();
-            this.txtGioKT = new DevExpress.XtraEditors.TimeEdit();
             this.cboCaLamViec = new DevExpress.XtraEditors.LookUpEdit();
             this.cboNhanVien = new DevExpress.XtraEditors.LookUpEdit();
             this.cboChiNhanh = new DevExpress.XtraEditors.LookUpEdit();
@@ -56,6 +54,8 @@
             this.btnCapNhat1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnLamMoi1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa1 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtGioBD = new DevExpress.XtraEditors.TextEdit();
+            this.txtGioKT = new DevExpress.XtraEditors.TextEdit();
             this.groupLayoutNhanVien = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -107,11 +107,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ckThuSau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuBay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckChuNhat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
@@ -163,8 +163,6 @@
             this.layoutNhanVien.Controls.Add(this.ckThuSau);
             this.layoutNhanVien.Controls.Add(this.ckThuBay);
             this.layoutNhanVien.Controls.Add(this.ckChuNhat);
-            this.layoutNhanVien.Controls.Add(this.txtGioBD);
-            this.layoutNhanVien.Controls.Add(this.txtGioKT);
             this.layoutNhanVien.Controls.Add(this.cboCaLamViec);
             this.layoutNhanVien.Controls.Add(this.cboNhanVien);
             this.layoutNhanVien.Controls.Add(this.cboChiNhanh);
@@ -172,13 +170,14 @@
             this.layoutNhanVien.Controls.Add(this.btnCapNhat1);
             this.layoutNhanVien.Controls.Add(this.btnLamMoi1);
             this.layoutNhanVien.Controls.Add(this.btnXoa1);
+            this.layoutNhanVien.Controls.Add(this.txtGioBD);
+            this.layoutNhanVien.Controls.Add(this.txtGioKT);
             this.layoutNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutNhanVien.Location = new System.Drawing.Point(0, 0);
-            this.layoutNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.layoutNhanVien.Name = "layoutNhanVien";
             this.layoutNhanVien.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(842, 566, 650, 400);
             this.layoutNhanVien.Root = this.groupLayoutNhanVien;
-            this.layoutNhanVien.Size = new System.Drawing.Size(1161, 943);
+            this.layoutNhanVien.Size = new System.Drawing.Size(995, 766);
             this.layoutNhanVien.TabIndex = 4;
             // 
             // labelControl
@@ -221,7 +220,6 @@
             this.dgvPhanCongCaLamNhanVien.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPhanCongCaLamNhanVien.Location = new System.Drawing.Point(2, 37);
             this.dgvPhanCongCaLamNhanVien.MainView = this.gridView1;
-            this.dgvPhanCongCaLamNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPhanCongCaLamNhanVien.Name = "dgvPhanCongCaLamNhanVien";
             this.dgvPhanCongCaLamNhanVien.Size = new System.Drawing.Size(1145, 347);
             this.dgvPhanCongCaLamNhanVien.TabIndex = 0;
@@ -230,7 +228,6 @@
             // 
             // gridView1
             // 
-            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.dgvPhanCongCaLamNhanVien;
             this.gridView1.Name = "gridView1";
             // 
@@ -383,63 +380,6 @@
             this.ckChuNhat.Size = new System.Drawing.Size(274, 20);
             this.ckChuNhat.StyleController = this.layoutNhanVien;
             this.ckChuNhat.TabIndex = 33;
-            // 
-            // txtGioBD
-            // 
-            this.txtGioBD.EditValue = null;
-            this.txtGioBD.Location = new System.Drawing.Point(734, 171);
-            this.txtGioBD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGioBD.Name = "txtGioBD";
-            this.txtGioBD.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.Appearance.Options.UseFont = true;
-            this.txtGioBD.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.txtGioBD.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.AppearanceFocused.Options.UseFont = true;
-            this.txtGioBD.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioBD.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.txtGioBD.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtGioBD.Properties.DisplayFormat.FormatString = "d";
-            this.txtGioBD.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioBD.Properties.EditFormat.FormatString = "d";
-            this.txtGioBD.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioBD.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtGioBD.Properties.MaskSettings.Set("mask", "hh:mm tt");
-            this.txtGioBD.Properties.MaskSettings.Set("useAdvancingCaret", false);
-            this.txtGioBD.Properties.MaskSettings.Set("spinWithCarry", false);
-            this.txtGioBD.Properties.ReadOnly = true;
-            this.txtGioBD.Properties.UseMaskAsDisplayFormat = true;
-            this.txtGioBD.Size = new System.Drawing.Size(409, 32);
-            this.txtGioBD.StyleController = this.layoutNhanVien;
-            this.txtGioBD.TabIndex = 25;
-            // 
-            // txtGioKT
-            // 
-            this.txtGioKT.EditValue = null;
-            this.txtGioKT.Location = new System.Drawing.Point(734, 205);
-            this.txtGioKT.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGioKT.Name = "txtGioKT";
-            this.txtGioKT.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.Appearance.Options.UseFont = true;
-            this.txtGioKT.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.txtGioKT.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.AppearanceFocused.Options.UseFont = true;
-            this.txtGioKT.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtGioKT.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.txtGioKT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtGioKT.Properties.DisplayFormat.FormatString = "d";
-            this.txtGioKT.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioKT.Properties.EditFormat.FormatString = "d";
-            this.txtGioKT.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtGioKT.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.txtGioKT.Properties.MaskSettings.Set("mask", "hh:mm tt");
-            this.txtGioKT.Properties.ReadOnly = true;
-            this.txtGioKT.Size = new System.Drawing.Size(409, 32);
-            this.txtGioKT.StyleController = this.layoutNhanVien;
-            this.txtGioKT.TabIndex = 24;
             // 
             // cboCaLamViec
             // 
@@ -658,6 +598,50 @@
             this.btnXoa1.TabIndex = 20;
             this.btnXoa1.Text = "Xóa";
             // 
+            // txtGioBD
+            // 
+            this.txtGioBD.Location = new System.Drawing.Point(632, 159);
+            this.txtGioBD.Name = "txtGioBD";
+            this.txtGioBD.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.Appearance.Options.UseFont = true;
+            this.txtGioBD.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.txtGioBD.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtGioBD.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioBD.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.txtGioBD.Properties.DisplayFormat.FormatString = "d";
+            this.txtGioBD.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioBD.Properties.EditFormat.FormatString = "d";
+            this.txtGioBD.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioBD.Properties.ReadOnly = true;
+            this.txtGioBD.Properties.UseMaskAsDisplayFormat = true;
+            this.txtGioBD.Size = new System.Drawing.Size(345, 26);
+            this.txtGioBD.StyleController = this.layoutNhanVien;
+            this.txtGioBD.TabIndex = 25;
+            // 
+            // txtGioKT
+            // 
+            this.txtGioKT.Location = new System.Drawing.Point(632, 193);
+            this.txtGioKT.Name = "txtGioKT";
+            this.txtGioKT.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.Appearance.Options.UseFont = true;
+            this.txtGioKT.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.txtGioKT.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtGioKT.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtGioKT.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.txtGioKT.Properties.DisplayFormat.FormatString = "d";
+            this.txtGioKT.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioKT.Properties.EditFormat.FormatString = "d";
+            this.txtGioKT.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtGioKT.Properties.ReadOnly = true;
+            this.txtGioKT.Properties.UseMaskAsDisplayFormat = true;
+            this.txtGioKT.Size = new System.Drawing.Size(345, 26);
+            this.txtGioKT.StyleController = this.layoutNhanVien;
+            this.txtGioKT.TabIndex = 24;
+            // 
             // groupLayoutNhanVien
             // 
             this.groupLayoutNhanVien.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupLayoutNhanVien.CaptionImageOptions.Image")));
@@ -669,7 +653,7 @@
             this.layoutGroupThaoTacCSDL1,
             this.layoutControlItem10});
             this.groupLayoutNhanVien.Name = "Root";
-            this.groupLayoutNhanVien.Size = new System.Drawing.Size(1161, 943);
+            this.groupLayoutNhanVien.Size = new System.Drawing.Size(995, 766);
             this.groupLayoutNhanVien.TextVisible = false;
             // 
             // layoutControlGroup6
@@ -709,7 +693,7 @@
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(559, 34);
             this.layoutControlItem6.Text = "Chọn Ca làm việc:";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem15
             // 
@@ -720,7 +704,7 @@
             this.layoutControlItem15.Size = new System.Drawing.Size(559, 34);
             this.layoutControlItem15.Text = "Giờ bắt đầu:";
             this.layoutControlItem15.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem15.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem15.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem12
             // 
@@ -731,7 +715,7 @@
             this.layoutControlItem12.Size = new System.Drawing.Size(559, 34);
             this.layoutControlItem12.Text = "Giờ kết thúc:";
             this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlGroup3
             // 
@@ -854,7 +838,7 @@
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(556, 34);
             this.layoutControlItem7.Text = "Chi Nhánh";
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem1
             // 
@@ -865,7 +849,7 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(556, 34);
             this.layoutControlItem1.Text = "Nhân viên:";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem8
             // 
@@ -875,7 +859,7 @@
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(556, 34);
             this.layoutControlItem8.Text = "Vị trí (Chức vụ NV)";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutTxtHoTen
             // 
@@ -886,7 +870,7 @@
             this.layoutTxtHoTen.Size = new System.Drawing.Size(556, 34);
             this.layoutTxtHoTen.Text = "Họ tên:";
             this.layoutTxtHoTen.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutTxtHoTen.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutTxtHoTen.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem2
             // 
@@ -896,7 +880,7 @@
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(556, 34);
             this.layoutControlItem2.Text = "Giới tính:";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem3
             // 
@@ -906,7 +890,7 @@
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(556, 34);
             this.layoutControlItem3.Text = "Ngày sinh:";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem5
             // 
@@ -916,7 +900,7 @@
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(556, 34);
             this.layoutControlItem5.Text = "Số Điện thoại:";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem4
             // 
@@ -926,7 +910,7 @@
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(556, 34);
             this.layoutControlItem4.Text = "CCCD:";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(125, 32);
             // 
             // layoutControlItem9
             // 
@@ -1016,12 +1000,11 @@
             // 
             // PhanCong_UC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.layoutNhanVien);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PhanCong_UC";
-            this.Size = new System.Drawing.Size(1161, 943);
+            this.Size = new System.Drawing.Size(995, 766);
             this.Load += new System.EventHandler(this.PhanCong_UC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).EndInit();
             this.layoutNhanVien.ResumeLayout(false);
@@ -1043,11 +1026,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ckThuSau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckThuBay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckChuNhat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboCaLamViec.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboChiNhanh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioBD.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGioKT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupLayoutNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
@@ -1127,8 +1110,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem22;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraEditors.TimeEdit txtGioBD;
-        private DevExpress.XtraEditors.TimeEdit txtGioKT;
         private DevExpress.XtraEditors.LookUpEdit cboCaLamViec;
         private DevExpress.XtraEditors.LookUpEdit cboNhanVien;
         private DevExpress.XtraEditors.LookUpEdit cboChiNhanh;
@@ -1143,5 +1124,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem26;
         private DevExpress.XtraEditors.LabelControl labelControl;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraEditors.TextEdit txtGioBD;
+        private DevExpress.XtraEditors.TextEdit txtGioKT;
     }
 }
