@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagenhanvien\\phancong_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\bus\\phancong_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\phancong_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\dal\\phancong_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\phancong_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\project.net\\gui_uc\\pagenhanvien\\phancong_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagenhanvien\\phancong_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -60,7 +68,7 @@
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
               "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
               "RelativeToolTip": "Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAAAKQAAAAvAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwCgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T04:35:02.041Z",
               "EditorCaption": ""
@@ -68,6 +76,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PhanCong_BUS.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\BUS\\PhanCong_BUS.cs",
+              "RelativeDocumentMoniker": "BUS\\PhanCong_BUS.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\BUS\\PhanCong_BUS.cs",
+              "RelativeToolTip": "BUS\\PhanCong_BUS.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwKcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T10:43:02.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PhanCong_DAL.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DAL\\PhanCong_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\PhanCong_DAL.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DAL\\PhanCong_DAL.cs",
+              "RelativeToolTip": "DAL\\PhanCong_DAL.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAYwPEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T10:36:36.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PhanCong_UC.cs [Design]",
               "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
