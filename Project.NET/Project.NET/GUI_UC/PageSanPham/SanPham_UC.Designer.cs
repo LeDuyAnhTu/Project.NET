@@ -555,7 +555,7 @@
             this.layoutMaNSX.Location = new System.Drawing.Point(0, 216);
             this.layoutMaNSX.Name = "layoutMaNSX";
             this.layoutMaNSX.Size = new System.Drawing.Size(668, 36);
-            this.layoutMaNSX.Text = "Mã NSX: ";
+            this.layoutMaNSX.Text = "Nhà Sản Xuất:";
             this.layoutMaNSX.TextSize = new System.Drawing.Size(124, 32);
             // 
             // CRUD

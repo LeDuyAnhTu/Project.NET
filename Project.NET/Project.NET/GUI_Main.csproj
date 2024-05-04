@@ -115,7 +115,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtensionMethods\ChartControlExtensions.cs" />
     <Compile Include="ExtensionMethods\EditTextExtensions.cs" />
+    <Compile Include="ExtensionMethods\SimpleButtonExtensions.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +130,12 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaiting.Designer.cs">
+      <DependentUpon>frmWaiting.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\Loading_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +147,12 @@
     </Compile>
     <Compile Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.Designer.cs">
       <DependentUpon>ChiNhanh_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageChiNhanh\KhuVuc_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageChiNhanh\KhuVuc_UC.Designer.cs">
+      <DependentUpon>KhuVuc_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_UC\PageHoaDon\HoaDonChiTiet_UC.cs">
       <SubType>UserControl</SubType>
@@ -163,6 +177,12 @@
     </Compile>
     <Compile Include="GUI_UC\PageKhachHang\KhachHang_UC.Designer.cs">
       <DependentUpon>KhachHang_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.Designer.cs">
+      <DependentUpon>ThongKeKhachHang_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_UC\PageKho\ThongKeKho_UC.cs">
       <SubType>UserControl</SubType>
@@ -193,6 +213,12 @@
     </Compile>
     <Compile Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.Designer.cs">
       <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageNhaCungCap\ChiTietCC_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageNhaCungCap\ChiTietCC_UC.Designer.cs">
+      <DependentUpon>ChiTietCC_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_UC\PageNhaCungCap\NhaCungCap_UC.cs">
       <SubType>UserControl</SubType>
@@ -280,17 +306,39 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaitFormManager.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmWaiting.resx">
+      <DependentUpon>frmWaiting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\Loading_UC.resx">
       <DependentUpon>Loading_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
       <DependentUpon>BaoCao_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.resx">
+      <DependentUpon>ChiNhanh_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageChiNhanh\KhuVuc_UC.resx">
+      <DependentUpon>KhuVuc_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageHoaDon\HoaDonChiTiet_UC.resx">
+      <DependentUpon>HoaDonChiTiet_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageHoaDon\HoaDon_UC.resx">
+      <DependentUpon>HoaDon_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKhachHang\KhachHang_UC.resx">
+      <DependentUpon>KhachHang_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.resx">
+      <DependentUpon>ThongKeKhachHang_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKho\Kho_UC.resx">
       <DependentUpon>Kho_UC.cs</DependentUpon>
@@ -306,6 +354,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKhuyenMai\ThongKeKhuyenMai_UC.resx">
       <DependentUpon>ThongKeKhuyenMai_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageNhaCungCap\ChiTietCC_UC.resx">
+      <DependentUpon>ChiTietCC_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageNhaCungCap\NhaCungCap_UC.resx">
+      <DependentUpon>NhaCungCap_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\CaLam_UC.resx">
       <DependentUpon>CaLam_UC.cs</DependentUpon>
@@ -423,7 +477,7 @@
     <None Include="Resources\card_logo.svg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\loading_logo.gif" />
+    <None Include="Resources\loading.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\computer.png" />
@@ -475,6 +529,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\updateKM32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-card32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerbirthday32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerService32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\officeWorker32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-code16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply-chain16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply-chain32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeric16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeric32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dong-sign16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taikhoannhanvienpacico.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
