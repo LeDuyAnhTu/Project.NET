@@ -51,7 +51,7 @@ namespace DAL
             {
                 PhanCong temp = db.DBO.PhanCongs.Single(d => d.maNV == obj.MaNV);
                 temp.maCa = obj.MaCa;
-                temp.ngayDiLam = obj.NgayDiLam.ToShortDateString();
+                temp.ngayDiLam = obj.NgayDiLam;
 
                 db.DBO.SubmitChanges();
 
@@ -77,7 +77,7 @@ namespace DAL
                 {
                     maNV = obj.MaNV,
                     maCa = obj.MaCa,
-                    ngayDiLam = obj.NgayDiLam.ToShortDateString(),
+                    ngayDiLam = obj.NgayDiLam,
                 };
 
                 db.DBO.PhanCongs.InsertOnSubmit(temp);
@@ -125,6 +125,25 @@ namespace DAL
                 PhanCong temp = db.DBO.PhanCongs.Single(d => d.maNV == maNV && d.maCa == maCa);
                 db.DBO.PhanCongs.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return result;
+        }
+        public bool XoaLichLam(string maNV)
+        {
+            bool result = false;
+            try
+            {
+                PhanCong temp = db.DBO.PhanCongs.Single(d => d.maNV == maNV);
+                while(temp != null)
+                {
+                    Xoa(maNV);
+                    temp = db.DBO.PhanCongs.Single(d => d.maNV == maNV);
+                }
                 result = true;
             }
             catch (Exception ex)
