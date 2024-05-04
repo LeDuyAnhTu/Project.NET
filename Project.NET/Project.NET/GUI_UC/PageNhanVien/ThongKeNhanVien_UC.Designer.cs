@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.XYDiagram xyDiagram6 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.XYDiagram xyDiagram7 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.XYDiagram xyDiagram8 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.XYDiagram xyDiagram9 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.XYDiagram xyDiagram10 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.XYDiagram xyDiagram11 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series11 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.XYDiagram xyDiagram12 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series12 = new DevExpress.XtraCharts.Series();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnCoCauNhanVienTheoChucVu = new DevExpress.XtraEditors.SimpleButton();
             this.btnTongNhanVienTheoChucVu = new DevExpress.XtraEditors.SimpleButton();
@@ -78,20 +78,20 @@
             this.nafContent.SuspendLayout();
             this.navPageTongNhanVienTheoChiNhanh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoPhongBan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
             this.navPageCoCauNhanVienTheoChiNhanh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNhanVienTheoPhongBan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
             this.navPageTongNhanVienTheoChucVu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoChucVu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
             this.navPageCoCauNhanVienTheoChucVu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNhanVienTheoChucVu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             this.SuspendLayout();
@@ -215,7 +215,7 @@
             this.btnCoCauNVTheoCN.Size = new System.Drawing.Size(344, 22);
             this.btnCoCauNVTheoCN.StyleController = this.layoutControl1;
             this.btnCoCauNVTheoCN.TabIndex = 0;
-            this.btnCoCauNVTheoCN.Text = "Cơ cấu Nhân Viên theo Chi Nhánh";
+            this.btnCoCauNVTheoCN.Text = "S";
             this.btnCoCauNVTheoCN.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnTongNVTheoCN
@@ -364,15 +364,15 @@
             // 
             // chartTongNhanVienTheoPhongBan
             // 
-            xyDiagram5.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram5.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartTongNhanVienTheoPhongBan.Diagram = xyDiagram5;
+            xyDiagram9.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram9.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartTongNhanVienTheoPhongBan.Diagram = xyDiagram9;
             this.chartTongNhanVienTheoPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 25);
             this.chartTongNhanVienTheoPhongBan.Name = "chartTongNhanVienTheoPhongBan";
-            series5.Name = "Series 1";
+            series9.Name = "Series 1";
             this.chartTongNhanVienTheoPhongBan.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5};
+        series9};
             this.chartTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(690, 583);
             this.chartTongNhanVienTheoPhongBan.TabIndex = 5;
             // 
@@ -401,15 +401,15 @@
             // 
             // chartCoCauNhanVienTheoPhongBan
             // 
-            xyDiagram6.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram6.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartCoCauNhanVienTheoPhongBan.Diagram = xyDiagram6;
+            xyDiagram10.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram10.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartCoCauNhanVienTheoPhongBan.Diagram = xyDiagram10;
             this.chartCoCauNhanVienTheoPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartCoCauNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 25);
             this.chartCoCauNhanVienTheoPhongBan.Name = "chartCoCauNhanVienTheoPhongBan";
-            series6.Name = "Series 1";
+            series10.Name = "Series 1";
             this.chartCoCauNhanVienTheoPhongBan.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series6};
+        series10};
             this.chartCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(690, 583);
             this.chartCoCauNhanVienTheoPhongBan.TabIndex = 6;
             // 
@@ -438,15 +438,15 @@
             // 
             // chartTongNhanVienTheoChucVu
             // 
-            xyDiagram7.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram7.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartTongNhanVienTheoChucVu.Diagram = xyDiagram7;
+            xyDiagram11.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram11.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartTongNhanVienTheoChucVu.Diagram = xyDiagram11;
             this.chartTongNhanVienTheoChucVu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartTongNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 25);
             this.chartTongNhanVienTheoChucVu.Name = "chartTongNhanVienTheoChucVu";
-            series7.Name = "Series 1";
+            series11.Name = "Series 1";
             this.chartTongNhanVienTheoChucVu.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series7};
+        series11};
             this.chartTongNhanVienTheoChucVu.Size = new System.Drawing.Size(690, 583);
             this.chartTongNhanVienTheoChucVu.TabIndex = 7;
             // 
@@ -474,15 +474,15 @@
             // 
             // chartCoCauNhanVienTheoChucVu
             // 
-            xyDiagram8.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram8.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartCoCauNhanVienTheoChucVu.Diagram = xyDiagram8;
+            xyDiagram12.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram12.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartCoCauNhanVienTheoChucVu.Diagram = xyDiagram12;
             this.chartCoCauNhanVienTheoChucVu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartCoCauNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 25);
             this.chartCoCauNhanVienTheoChucVu.Name = "chartCoCauNhanVienTheoChucVu";
-            series8.Name = "Series 1";
+            series12.Name = "Series 1";
             this.chartCoCauNhanVienTheoChucVu.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series8};
+        series12};
             this.chartCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(690, 583);
             this.chartCoCauNhanVienTheoChucVu.TabIndex = 6;
             // 
@@ -543,23 +543,23 @@
             this.nafContent.ResumeLayout(false);
             this.navPageTongNhanVienTheoChiNhanh.ResumeLayout(false);
             this.navPageTongNhanVienTheoChiNhanh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoPhongBan)).EndInit();
             this.navPageCoCauNhanVienTheoChiNhanh.ResumeLayout(false);
             this.navPageCoCauNhanVienTheoChiNhanh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNhanVienTheoPhongBan)).EndInit();
             this.navPageTongNhanVienTheoChucVu.ResumeLayout(false);
             this.navPageTongNhanVienTheoChucVu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoChucVu)).EndInit();
             this.navPageCoCauNhanVienTheoChucVu.ResumeLayout(false);
             this.navPageCoCauNhanVienTheoChucVu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNhanVienTheoChucVu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
