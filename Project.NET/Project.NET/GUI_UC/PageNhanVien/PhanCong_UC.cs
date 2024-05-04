@@ -195,7 +195,16 @@ namespace Project.NET.GUI_UC
         {
             try
             {
-
+                int count = 0;
+                foreach(CheckEdit item in dsNgayDiLam)
+                {
+                    if (item.Checked)
+                        count++;
+                }
+                if(count > 6)
+                {
+                    throw new Exception("Vượt quá số giờ quy định ! Tổng số giờ làm không được quá 48 tiếng 1 tuần");
+                }
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
