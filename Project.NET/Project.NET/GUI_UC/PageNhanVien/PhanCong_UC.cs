@@ -65,8 +65,6 @@ namespace Project.NET.GUI_UC
             cboChiNhanh.Properties.ValueMember = "maCN";
             cboChiNhanh.Properties.DisplayMember = "tenCN";
             cboChiNhanh.ItemIndex = 0;
-
-
         }
 
         private void btnLamMoi1_Click(object sender, EventArgs e)
@@ -93,6 +91,23 @@ namespace Project.NET.GUI_UC
                     txtCCCD.Text = nv_Selected.CCCD;
                 }
             }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void cboCaLamViec_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                CaLam_DTO nv_Selected = db_CL.timTheoMa(cboCaLamViec.EditValue.ToString().Trim());
+                if (nv_Selected != null)
+                {
+                    txtGioBD.Text = nv_Selected.GioBD;
+                    txtGioKT.Text = nv_Selected.GioKT;
+                }
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

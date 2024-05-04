@@ -85,12 +85,33 @@ namespace BUS
             }
             return result;
         }
+        /// <summary>
+        /// Tạo mã mới
+        /// </summary>
+        /// <returns></returns>
         public string taoMaMoi()
         {
             try
             {
                 return db.taoMaMoi();
             }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Tìm ca làm việc theo mã
+        /// </summary>
+        /// <param name="maCa"></param>
+        /// <returns></returns>
+        public CaLam_DTO timTheoMa(string maCa)
+        {
+            try
+            {
+
+                return db.timTheoMa(maCa);
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }

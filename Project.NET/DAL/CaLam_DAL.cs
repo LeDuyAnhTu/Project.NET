@@ -168,5 +168,17 @@ namespace DTO
                 return "CL01";
             }
         }
+        public CaLam_DTO timTheoMa(string maCa)
+        {
+            try
+            {
+                CaLam cl = db.DBO.CaLams.Single(d => d.maCa == maCa);
+                return new CaLam_DTO(cl.maCa, cl.tenCa, cl.gioBD, cl.gioKT);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
