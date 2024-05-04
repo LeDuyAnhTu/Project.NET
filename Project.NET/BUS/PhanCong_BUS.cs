@@ -11,7 +11,6 @@ namespace BUS
     public class PhanCong_BUS
     {
         private static PhanCong_DAL db = new PhanCong_DAL();
-
         /// <summary>
         /// Lấy Lịch phân công công việc của các nhân viên
         /// </summary>
@@ -32,13 +31,13 @@ namespace BUS
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public bool Them(PhanCong_DTO o)
+        public bool Them(PhanCong_DTO pc)
         {
             bool result = false;
 
             try
             {
-                result = db.Them(o);
+                result = db.Them(pc);
             }
             catch (Exception ex)
             {
@@ -46,6 +45,26 @@ namespace BUS
             }
 
             return result;
+        }
+        /// <summary>
+        /// Thêm lịch làm nhiều ngày cho nhân viên
+        /// </summary>
+        /// <param name="dsPhanCong"></param>
+        /// <returns></returns>
+        public bool Them(List<PhanCong_DTO> dsPhanCong)
+        {
+            try
+            {
+                bool result = false;
+                foreach(PhanCong_DTO pc in  dsPhanCong )
+                {
+                    result = db.Them(pc);
+                }
+                return result;
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Sửa thông tin phân công
@@ -96,6 +115,21 @@ namespace BUS
             try
             {
                 return db.Xoa(maNV, maCa);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Xóa toàn bộ lịch làm của nhân viên theo mã nhân viên
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
+        public bool XoaLichLam(string maNV)
+        {
+            try
+            {
+                return db.XoaLichLam(maNV);
             }catch(Exception ex)
             {
                 throw ex;

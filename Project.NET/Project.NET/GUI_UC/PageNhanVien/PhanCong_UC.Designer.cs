@@ -547,6 +547,7 @@
             this.btnThem1.StyleController = this.layoutNhanVien;
             this.btnThem1.TabIndex = 16;
             this.btnThem1.Text = "Thêm";
+            this.btnThem1.Click += new System.EventHandler(this.btnThem1_Click);
             // 
             // btnCapNhat1
             // 
