@@ -1,5 +1,7 @@
-﻿using DevExpress.XtraCharts;
+﻿using BUS;
+using DevExpress.XtraCharts;
 using DevExpress.XtraEditors;
+using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,129 +17,81 @@ namespace Project.NET.GUI_UC
 {
     public partial class ThongKeNhanVien_UC : DevExpress.XtraEditors.XtraUserControl
     {
-         
-
-        Loading_UC loading_UC = null;
-
+        ThongKeNhanVien_BUS data = new ThongKeNhanVien_BUS();
+        // Nút bấm menu navbar cuối cùng được nhấn
+        private SimpleButton lastClickButton = null;
 
         public ThongKeNhanVien_UC()
         {
             InitializeComponent();
-
-            // khoi tao loading_uc
-            loading_UC = new Loading_UC();
-            loading_UC.Dock = DockStyle.Fill;
-            loading_UC.Visible = false;
-
-            // them loadinguc vao form
-            this.Controls.Add(loading_UC);
-            this.Controls.SetChildIndex(loading_UC, 0);
-        }
-        
-       
-
-
-        private void btnSoGioDiMuonVeSomTheoTG_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageSoGioDMVSTheoTG;
-        }
-
-
-        private void btnTongNVTheoPB_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageTongNhanVienTheoPhongBan;
-
-            //var result = from nv in db.NhanViens
-            //             group nv by nv.maCN into g
-            //             join vt in db.ChiNhanhs on g.Key equals vt.maCN
-            //             select new { StoreName = vt.tenCN, EmployeeCount = g.Count() };
-
-            //// xóa tất cả danh sách cột
-            //chartTongNhanVienTheoPhongBan.Series.Clear();
-
-            //Series series = new Series("Tổng nhân viên theo Phòng ban", ViewType.Bar);
-
-            //foreach (var item in result)
-            //{
-            //    series.Points.Add(new SeriesPoint(item.StoreName, item.EmployeeCount));
-            //}
-
-            //chartTongNhanVienTheoPhongBan.Series.Add(series);
-        }
-
-        private void btnCoCauNVTheoPB_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageCoCauNhanVienTheoPhongBan;
-        }
-
-        private void btnSoGioDMVS_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageSoGioDMVS;
-        }
-
-        private void btnCoCauTanXuatDMVS_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageSoGioDMVS;
-        }
-
-        private void btnCoCauSoGioDMVS_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageCoCauTanSuatDMVS;
-        }
-
-        private void btnTongNVTheoChucVu_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageTongNhanVienTheoChucVu;
-        }
-
-        private void btnCoCauNVTheoChucVu_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageCoCauNhanVienTheoChucVu;
-        }
-
-        private void btnTanXuatDMVS_Click(object sender, EventArgs e)
-        {
-            navFrameTKNhanVien.SelectedPage = navPageTongNhanVienTheoPhongBan;
         }
 
         private void ThongKeNhanVien_UC_Load(object sender, EventArgs e)
         {
-            //
-            // hien thi man hinh oading
-            //
-            loading_UC.Visible = true;
-            loading_UC.BringToFront();
+            nafContent.SelectedPage = navPageTongNhanVienTheoChiNhanh;
 
-            //
-            // tai du lieu
-            //
-            firstPageOrDefault();
+            var dataPoints = data.ThongKeNhanVienTheoChiNhanh();
 
-            //
-            // an man hih loading
-            //
-            loading_UC.Visible = false;
+            chartTongNhanVienTheoPhongBan.CreateChart(dataPoints,
+                    dp => dp.TenCN,
+                    dp => dp.SoLuongNV,
+                    ViewType.Bar,
+                    "Series Tổng nhân viên theo Chi Nhánh",
+                    "Chi nhánh",
+                    "Tổng số nhân viên",
+                    "Thống kê Tông số NV Theo Chi Nhánh");
         }
-        public void firstPageOrDefault()
+
+        private void Button_Click(object sender, EventArgs e)
         {
-            navFrameTKNhanVien.SelectedPage = navPageTongNhanVienTheoPhongBan;
+            try
+            {
+                // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
+                SimpleButton currentButton = (SimpleButton)sender;
 
-            //var result = from nv in db.NhanViens
-            //             group nv by nv.maCN into g
-            //             join vt in db.ChiNhanhs on g.Key equals vt.maCN
-            //             select new { StoreName = vt.tenCN, EmployeeCount = g.Count() };
-            
-            //// xóa tất cả danh sách cột
-            //chartTongNhanVienTheoPhongBan.Series.Clear();
+                // Cập nhật UI cho nút đang đc nhấn
+                currentButton.UpdateButtonStyle(lastClickButton);
 
-            //Series series = new Series("Tổng nhân viên theo Phòng ban", ViewType.Bar);
+                //
+                // Cập nhật trạng thái cho nút đang được nhấn
+                //
+                lastClickButton = currentButton;
+                switch (currentButton.Name)
+                {
+                    case "btnCoCauNhanVienTheoChucVu":
+                        nafContent.SelectedPage = navPageCoCauNhanVienTheoChucVu;
+                         
+                        break;
+                    case "btnTongNhanVienTheoChucVu":
+                        nafContent.SelectedPage = navPageTongNhanVienTheoChucVu;
+                         
+                        break;
+                    case "btnCoCauNVTheoCN":
+                        nafContent.SelectedPage = navPageCoCauNhanVienTheoChiNhanh;
+                         
+                        break;
+                    case "btnTongNVTheoCN":
+                        nafContent.SelectedPage = navPageTongNhanVienTheoChiNhanh;
+                        var dataPoints = data.ThongKeNhanVienTheoChiNhanh();
 
-            //foreach (var item in result)
-            //{
-            //    series.Points.Add(new SeriesPoint(item.StoreName, item.EmployeeCount));
-            //}
-
-            //chartTongNhanVienTheoPhongBan.Series.Add(series);
+                        chartTongNhanVienTheoPhongBan.CreateChart(dataPoints,
+                                dp => dp.TenCN,
+                                dp => dp.SoLuongNV,
+                                ViewType.Bar,
+                                "Series Tổng nhân viên theo Chi Nhánh",
+                                "Chi nhánh",
+                                "Tổng số nhân viên",
+                                "Thống kê Tông số NV Theo Chi Nhánh");
+                        break;
+                    
+                    default:
+                        throw new Exception("Unknown button.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

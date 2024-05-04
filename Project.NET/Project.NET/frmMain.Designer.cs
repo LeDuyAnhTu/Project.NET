@@ -233,7 +233,7 @@
             this.ClientSize = new System.Drawing.Size(960, 564);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.IconOptions.SvgImage = global::Project.NET.Properties.Resources.logosvg;
+            this.IconOptions.SvgImage = global::Project.NET.Properties.Resources.logosvg32_32;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "frmMain";
