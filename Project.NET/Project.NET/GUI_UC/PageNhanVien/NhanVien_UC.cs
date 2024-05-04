@@ -1,6 +1,7 @@
 ﻿using BUS;
 using DevExpress.Data.Linq.Helpers;
 using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraGrid.Views.Grid;
 using DTO;
 using Project.NET.ExtensionMethods;
@@ -72,7 +73,7 @@ namespace Project.NET.Forms
             //
             //dgvNhanVien 
             //
-            dgvNhanVien.DataSource = db_NV.LayDanhSach();
+            dgvControl.DataSource = db_NV.LayDanhSach();
 
             //
             //Combobox chi nhánh
@@ -111,7 +112,7 @@ namespace Project.NET.Forms
             //
             //Danh sách nhân viên
             //
-            dgvNhanVien.DataSource = db_NV.LayDanhSach();
+            dgvControl.DataSource = db_NV.LayDanhSach();
 
             //
             //Chi nhánh
@@ -154,20 +155,20 @@ namespace Project.NET.Forms
         /// <param name="e"></param>
         private void gridView1_RowCellClick(object sender, RowCellClickEventArgs e)
         {
-            int[] cacDong = gridView1.GetSelectedRows();
+            int[] cacDong = dgvNhanVien.GetSelectedRows();
             foreach (int i in cacDong)
             {
                 if (i >= 0)
                 {
-                    txtMaNV.Text = gridView1.GetRowCellValue(i, "maNV").ToString();
-                    txtHoTen.Text = gridView1.GetRowCellValue(i, "tenNV").ToString();
-                    txtGioiTinh.SelectedIndex = txtGioiTinh.Properties.Items[0].Description == gridView1.GetRowCellValue(i, "gioiTinh").ToString() ? 0 : 1;
-                    txtCCCD.Text = gridView1.GetRowCellValue(i, "CCCD").ToString();
-                    txtLuongNV.Text = gridView1.GetRowCellValue(i, "luong").ToString();
+                    txtMaNV.Text = dgvNhanVien.GetRowCellValue(i, "maNV").ToString();
+                    txtHoTen.Text = dgvNhanVien.GetRowCellValue(i, "tenNV").ToString();
+                    txtGioiTinh.SelectedIndex = txtGioiTinh.Properties.Items[0].Description == dgvNhanVien.GetRowCellValue(i, "gioiTinh").ToString() ? 0 : 1;
+                    txtCCCD.Text = dgvNhanVien.GetRowCellValue(i, "CCCD").ToString();
+                    txtLuongNV.Text = dgvNhanVien.GetRowCellValue(i, "luong").ToString();
 
-                    txtSoDienThoai.Text = Convert.ToString(gridView1.GetRowCellValue(i, "SDT"));
+                    txtSoDienThoai.Text = Convert.ToString(dgvNhanVien.GetRowCellValue(i, "SDT"));
 
-                    txtNgaySinh.Text = Convert.ToDateTime(gridView1.GetRowCellValue(i, "ngaySinh").ToString()).ToShortDateString();
+                    txtNgaySinh.Text = Convert.ToDateTime(dgvNhanVien.GetRowCellValue(i, "ngaySinh").ToString()).ToShortDateString();
 
                     //Lấy chi nhánh của nhân viên đang chọn
                     try
@@ -176,7 +177,7 @@ namespace Project.NET.Forms
                         while (count < db_CN.LayDanhSach().Count())
                         {
                             cboChiNhanh.ItemIndex = count;
-                            if (cboChiNhanh.Text == gridView1.GetRowCellValue(i, "tenCN").ToString())
+                            if (cboChiNhanh.Text == dgvNhanVien.GetRowCellValue(i, "tenCN").ToString())
                                 break;
                             count++;
                         }
@@ -193,7 +194,7 @@ namespace Project.NET.Forms
                         while (count < db_VT.LayDanhSach().Count())
                         {
                             cboViTriChucVuNhanVien.ItemIndex = count;
-                            if (cboViTriChucVuNhanVien.Text == gridView1.GetRowCellValue(i, "tenVT").ToString())
+                            if (cboViTriChucVuNhanVien.Text == dgvNhanVien.GetRowCellValue(i, "tenVT").ToString())
                                 break;
                             count++;
                         }
@@ -278,7 +279,12 @@ namespace Project.NET.Forms
         private void txtHoTen_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
             TextEdit edit = sender as TextEdit;
-            edit.SupportVietnamese(30);
+            edit.SupportVietnamese();
+        }
+
+        private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

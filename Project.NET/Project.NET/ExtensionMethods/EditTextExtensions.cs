@@ -87,12 +87,30 @@ namespace Project.NET.ExtensionMethods
         /// Hỗ trợ nhập số lượng
         /// </summary>
         /// <param name="edit"></param>
-        public static void SupportSoLuong(this TextEdit edit)
+        public static void SupportNumeric(this TextEdit edit)
         {
             // Sự kiện EditValueChanging để hạn chế nhập  
             edit.EditValueChanging += (sender, e) =>
             {
-                string pattern = @"^[0-9]{1,}$";
+                string pattern = @"^[0-9]{1,11}$";
+                Regex regex = new Regex(pattern);
+
+                if (!regex.IsMatch(e.NewValue.ToString()) || Convert.ToInt64(e.NewValue) < 0)
+                {
+                    e.Cancel = true; // Hủy thay đổi nếu giá trị mới không khớp với biểu thức chính quy hoặc là số âm
+                }
+            };
+        }
+        /// <summary>
+        /// Hỗ trợ nhập số điện thoại
+        /// </summary>
+        /// <param name="edit"></param>
+        public static void SupportSoDienThoai(this TextEdit edit, int maxLength = 10)
+        {
+            // Sự kiện EditValueChanging để hạn chế nhập  
+            edit.EditValueChanging += (sender, e) =>
+            {
+                string pattern = @"^[0-9]{0,}$";
                 Regex regex = new Regex(pattern);
 
                 if (!regex.IsMatch(e.NewValue.ToString()))
@@ -100,6 +118,44 @@ namespace Project.NET.ExtensionMethods
                     e.Cancel = true; // Hủy thay đổi nếu giá trị mới không khớp với biểu thức chính quy
                 }
             };
+            edit.Properties.MaxLength = maxLength;
+        }
+        /// <summary>
+        /// Hỗ trợ nhập mã 10 kí tự
+        /// </summary>
+        /// <param name="edit"></param>
+        public static void SupportID(this TextEdit edit)
+        {
+            // Sự kiện EditValueChanging để hạn chế nhập  
+            edit.EditValueChanging += (sender, e) =>
+            {
+                string pattern = @"^\w{10}$";
+                Regex regex = new Regex(pattern);
+
+                if (!regex.IsMatch(e.NewValue.ToString()))
+                {
+                    e.Cancel = true; // Hủy thay đổi nếu giá trị mới không khớp với biểu thức chính quy
+                }
+            };
+        }
+        /// <summary>
+        /// Hỗ trợ nhập mã 10 kí tự hoặc tùy chỉnh
+        /// </summary>
+        /// <param name="edit"></param>
+        public static void SupportIDAny(this TextEdit edit, int maxLength = 10)
+        {
+            // Sự kiện EditValueChanging để hạn chế nhập  
+            edit.EditValueChanging += (sender, e) =>
+            {
+                string pattern = @"^\w$";
+                Regex regex = new Regex(pattern);
+
+                if (!regex.IsMatch(e.NewValue.ToString()))
+                {
+                    e.Cancel = true; // Hủy thay đổi nếu giá trị mới không khớp với biểu thức chính quy
+                }
+            };
+            edit.Properties.MaxLength = maxLength;
         }
     }
 }
