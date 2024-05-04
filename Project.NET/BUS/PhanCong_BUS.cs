@@ -165,5 +165,21 @@ namespace BUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Số giờ làm nhân viên đã đăng ký
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <param name="maCa"></param>
+        /// <returns></returns>
+        public int soGioLamDaDangKy(string maNV, string maCa)
+        {
+            try
+            {
+                return db.soGioLamDaDangKy(maNV, maCa);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

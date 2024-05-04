@@ -239,5 +239,21 @@ namespace DAL
             }
             return ds;
         }
+        public int soGioLamDaDangKy(string maNV, string maCa)
+        {
+            int soGio = 0;
+            try
+            {
+                var ds = (from pc in db.DBO.PhanCongs
+                          where pc.maNV.Equals(maNV) && pc.maCa.Equals(maCa)
+                          select pc).ToList();
+                soGio = ds.Count*8;
+                return soGio;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
