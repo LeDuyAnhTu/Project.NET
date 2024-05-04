@@ -85,6 +85,10 @@ namespace BUS
             }
             return result;
         }
+        /// <summary>
+        /// Tạo mã mới
+        /// </summary>
+        /// <returns></returns>
         public string taoMaMoi()
         {
             try

@@ -130,7 +130,7 @@
             this.nafContent.SelectedPage = this.navPageTKSPTheoLoai;
             this.nafContent.Size = new System.Drawing.Size(641, 620);
             this.nafContent.TabIndex = 4;
-            this.nafContent.Text = "navFrameTKNhanVien";
+            this.nafContent.Text = "navFrame";
             // 
             // navPageTKSPTheoLoai
             // 

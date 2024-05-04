@@ -136,7 +136,7 @@
             this.nafContent.SelectedPage = this.navPageTKLoaiSanPham;
             this.nafContent.Size = new System.Drawing.Size(634, 585);
             this.nafContent.TabIndex = 4;
-            this.nafContent.Text = "navFrameTKNhanVien";
+            this.nafContent.Text = "navFrame";
             this.nafContent.TransitionAnimationProperties.FrameCount = 100;
             this.nafContent.TransitionAnimationProperties.FrameInterval = 1000;
             this.nafContent.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
@@ -207,6 +207,7 @@
             // 
             // navPageTKHanSuDung
             // 
+            this.navPageTKHanSuDung.Caption = "navPageTKHanSuDung";
             this.navPageTKHanSuDung.Controls.Add(this.chartControl3);
             this.navPageTKHanSuDung.Controls.Add(this.labelControl3);
             this.navPageTKHanSuDung.Name = "navPageTKHanSuDung";

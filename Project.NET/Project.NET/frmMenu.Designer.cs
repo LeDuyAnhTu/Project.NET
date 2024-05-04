@@ -1065,7 +1065,7 @@
             this.nafContent.SelectedPage = this.navTaiKhoan;
             this.nafContent.Size = new System.Drawing.Size(946, 728);
             this.nafContent.TabIndex = 6;
-            this.nafContent.Text = "navFrameTKNhanVien";
+            this.nafContent.Text = "navFrame";
             this.nafContent.TransitionAnimationProperties.FrameCount = 1;
             this.nafContent.TransitionAnimationProperties.FrameInterval = 10;
             this.nafContent.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
