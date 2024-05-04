@@ -168,5 +168,36 @@ namespace DTO
                 return "CL01";
             }
         }
+        /// <summary>
+        /// Lấy giờ bắt đầu và kết thúc ca theo mã ca
+        /// </summary>
+        /// <param name="maCa"></param>
+        /// <returns></returns>
+        public string[] gioLamViec(string maCa)
+        {
+            string[] ds = new string[2];
+            try
+            {
+                var caLam = (from cl in db.DBO.CaLams
+                             where cl.maCa.Equals(maCa)
+                             select new
+                             {
+                                 cl.maCa,
+                                 cl.tenCa,
+                                 cl.gioBD,
+                                 cl.gioKT
+                             }).ToList();
+                foreach(var item in caLam)
+                {
+                    ds[0] = item.gioBD;
+                    ds[1] = item.gioKT;
+                }
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

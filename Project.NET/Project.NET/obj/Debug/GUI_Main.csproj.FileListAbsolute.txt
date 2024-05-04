@@ -351,3 +351,19 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csp
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.Up2Date
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmWaiting.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageChiNhanh.ChiNhanh_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageChiNhanh.KhuVuc_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDonChiTiet_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDon_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.KhachHang_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.ThongKeKhachHang_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.ChiTietKhuyenMai_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.KhuyenMai_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.ThongKeKhuyenMai_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhaCungCap.ChiTietCC_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhaCungCap.NhaCungCap_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhanVien.ViTriChucVuNV_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.LoaiSanPham_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.SanPham_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.ThongKeSanPham_UC.resources

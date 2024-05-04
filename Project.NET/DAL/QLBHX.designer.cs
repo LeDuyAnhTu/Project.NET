@@ -72,7 +72,7 @@ namespace DAL
     #endregion
 		
 		public QLBHXDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QLBHXConnectionString1, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QLBHXConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}

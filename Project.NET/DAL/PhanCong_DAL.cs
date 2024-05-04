@@ -133,6 +133,11 @@ namespace DAL
             }
             return result;
         }
+        /// <summary>
+        /// Tìm lịch phân công của nhân viên theo mã nhân viên
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
         public IQueryable timPhanCongTheoMaNV(string maNV)
         {
             IQueryable ds = null;
@@ -157,7 +162,13 @@ namespace DAL
             }
             return ds;
         }
-        public int[] timNgayDiLamTheoMaNV(string maNV)
+        /// <summary>
+        /// Tìm danh sách các ngày đi làm của nhân viên theo mã nhân viên và mã ca
+        /// /// </summary>
+        /// <param name="maNV"></param>
+        /// <param name="maCa"></param>
+        /// <returns></returns>
+        public int[] timNgayDiLamTheoMaNV(string maNV, string maCa)
         {
             int[] ds = new int[7];
             try
@@ -165,7 +176,7 @@ namespace DAL
                 var lichLam = from pc in db.DBO.PhanCongs
                                join cl in db.DBO.CaLams on pc.maCa equals cl.maCa
                                join nv in db.DBO.NhanViens on pc.maNV equals nv.maNV
-                               where pc.maNV.Equals(maNV)
+                               where pc.maNV.Equals(maNV) && pc.maCa.Equals(maCa)
                                orderby nv.tenNV, cl.tenCa
                                select new
                                {
