@@ -9,7 +9,7 @@ namespace DAL
 {
     public class ThongKeSanPham_DAL : BasicMethod<ThongKeSanPham_DTO>
     {
-        
+
         /// <summary>
         /// Thống kê theo loại sản phẩm
         /// </summary>
@@ -42,9 +42,10 @@ namespace DAL
             List<ThongKeSanPham_DTO> danhsach = null;
             try
             {
-               var ds = from sp in db.DBO.SanPhams
-                     group sp by sp.maNSX into g
-                     select new ThongKeSanPham_DTO  { MaNSX = g.Key, SoLuongSanPham = g.Count() };
+                var ds = from sp in db.DBO.SanPhams
+                         join nsx in db.DBO.NhaSanXuats on sp.maNSX equals nsx.maNSX
+                         group nsx by nsx.tenNSX into g
+                         select new ThongKeSanPham_DTO { TenNSX = g.Key, SoLuongSanPham = g.Count() };
 
                 danhsach = ds.ToList();
             }
@@ -55,7 +56,7 @@ namespace DAL
             return danhsach;
         }
         /// <summary>
-        /// Thống kê theo hạn sử dụng
+        /// Thống kê theo hạn sử dụng trong tháng tới (1 tháng tiếp theo)
         /// </summary>
         /// <returns></returns>
         public List<ThongKeSanPham_DTO> StatsByExpiryDate()
@@ -64,9 +65,9 @@ namespace DAL
             try
             {
                 var ds = from sp in db.DBO.SanPhams
-                                    where sp.HSD >= DateTime.Now && sp.HSD <= DateTime.Now.AddMonths(1)
-                                    group sp by sp.HSD into g
-                                    select new ThongKeSanPham_DTO { HSD = g.Key, SoLuongSanPham = g.Count() };
+                         where sp.HSD >= DateTime.Now && sp.HSD <= DateTime.Now.AddMonths(1)
+                         group sp by sp.HSD into g
+                         select new ThongKeSanPham_DTO { HSD = g.Key, SoLuongSanPham = g.Count() };
                 danhsach = ds.ToList();
             }
             catch (Exception ex)
@@ -76,7 +77,7 @@ namespace DAL
             return danhsach;
         }
         /// <summary>
-        /// Thống kê theo giá
+        /// Thống kê theo khoảng giá
         /// </summary>
         /// <returns></returns>
         public List<ThongKeSanPham_DTO> StatsByPrice()
@@ -108,7 +109,7 @@ namespace DAL
                 var ds = from sp in db.DBO.SanPhams
                          group sp by sp.soLuongConLai < 10 ? "Dưới 10" :
                              (sp.soLuongConLai >= 10 && sp.soLuongConLai <= 50 ? "10 - 50" : "Trên 50") into g
-                         select new ThongKeSanPham_DTO { MucDoConLai = g.Key, SoLuongSanPham = g.Count() };
+                         select new ThongKeSanPham_DTO { SoLuongConLai = g.Key, SoLuongSanPham = g.Count() };
                 danhsach = ds.ToList();
             }
             catch (Exception ex)
