@@ -100,18 +100,16 @@ namespace BUS
             }
         }
         /// <summary>
-        /// Tìm ca làm việc theo mã
+        /// Lấy giờ làm việc của ca theo mã ca
         /// </summary>
         /// <param name="maCa"></param>
         /// <returns></returns>
-        public CaLam_DTO timTheoMa(string maCa)
+        public string[] giolamViec(string maCa)
         {
             try
             {
-
-                return db.timTheoMa(maCa);
-            }
-            catch (Exception ex)
+                return db.gioLamViec(maCa);
+            }catch(Exception ex)
             {
                 throw ex;
             }
