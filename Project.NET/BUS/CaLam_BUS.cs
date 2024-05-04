@@ -95,5 +95,20 @@ namespace BUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Lấy giờ làm việc của ca theo mã ca
+        /// </summary>
+        /// <param name="maCa"></param>
+        /// <returns></returns>
+        public string[] giolamViec(string maCa)
+        {
+            try
+            {
+                return db.gioLamViec(maCa);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

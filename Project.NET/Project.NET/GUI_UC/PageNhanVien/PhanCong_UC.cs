@@ -30,9 +30,40 @@ namespace Project.NET.GUI_UC
         }
 
         //Methods
-        public void loadForm()
+        public void taiForm()
         {
 
+        }
+        public void ngayLamViecTheoMaNV(string maNV, string maCa)
+        {
+            try
+            {
+                int[] ds = db_PC.timNgayDiLamTheoMaNV(maNV, maCa);
+                ckThuHai.Checked = ds[0] == 1;
+                ckThuBa.Checked = ds[1] == 1;
+                ckThuTu.Checked = ds[2] == 1;
+                ckThuNam.Checked = ds[3] == 1;
+                ckThuSau.Checked = ds[4] == 1;
+                ckThuBay.Checked = ds[5] == 1;
+                ckChuNhat.Checked = ds[6] == 1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void gioLamViecTheoMaCa(string maCa)
+        {
+            try
+            {
+                string[] gioLam = db_CL.giolamViec(maCa.ToString().Trim());
+                txtGioBD.EditValue = Convert.ToDateTime(gioLam[0].ToString().Trim());
+                txtGioKT.EditValue = Convert.ToDateTime(gioLam[1].ToString().Trim());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         //Events
@@ -44,6 +75,14 @@ namespace Project.NET.GUI_UC
         private void PhanCong_UC_Load(object sender, EventArgs e)
         {
             //
+            //Danh sách nhân viên
+            //
+            cboNhanVien.Properties.DataSource = db_NV.LayDanhSach();
+            cboNhanVien.Properties.ValueMember = "maNV";
+            cboNhanVien.Properties.DisplayMember = "maNV";
+            cboNhanVien.ItemIndex = 0;
+
+            //
             //Danh sách ca làm việc
             //
             cboCaLamViec.Properties.DataSource = db_CL.LayDanhSach();
@@ -51,14 +90,6 @@ namespace Project.NET.GUI_UC
             cboCaLamViec.Properties.DisplayMember = "tenCa";
             cboCaLamViec.ItemIndex = 0;
 
-            //
-            //Danh sách nhân viên
-            //
-            cboNhanVien.Properties.DataSource = db_NV.LayDanhSach();
-            cboNhanVien.Properties.ValueMember = "maNV";
-            cboNhanVien.Properties.DisplayMember = "maNV";
-            cboNhanVien.ItemIndex = 0;
-            
             //
             //Danh sách chi nhánh
             //
@@ -96,11 +127,19 @@ namespace Project.NET.GUI_UC
                     txtNgaySinh.Text = (nv_Selected.NgaySinh).ToShortDateString();
                     txtSoDienThoai.Text = nv_Selected.SDT;
                     txtCCCD.Text = nv_Selected.CCCD;
+                    cboCaLamViec.ItemIndex = 0;
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void cboCaLamViec_EditValueChanged(object sender, EventArgs e)
+        {
+            ngayLamViecTheoMaNV(cboNhanVien.EditValue.ToString(), cboCaLamViec.EditValue.ToString());
+            gioLamViecTheoMaCa(cboCaLamViec.EditValue.ToString());
         }
     }
 }
