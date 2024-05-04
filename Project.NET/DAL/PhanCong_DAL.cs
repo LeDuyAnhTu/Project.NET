@@ -1,7 +1,10 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,8 +22,18 @@ namespace DAL
             try
             {
                 ds = from pc in db.DBO.PhanCongs
-                     select pc;
-            }catch (Exception ex)
+                     join cl in db.DBO.CaLams on pc.maCa equals cl.maCa
+                     join nv in db.DBO.NhanViens on pc.maNV equals nv.maNV
+                     orderby nv.tenNV, cl.tenCa
+                     select new
+                     {
+                         pc.maNV,
+                         nv.tenNV,
+                         cl.tenCa,
+                         pc.ngayDiLam,
+                     };
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -36,7 +49,7 @@ namespace DAL
             bool result = false;
             try
             {
-                PhanCong temp = db.DBO.PhanCongs.Single(d=>d.maNV == obj.MaNV);
+                PhanCong temp = db.DBO.PhanCongs.Single(d => d.maNV == obj.MaNV);
                 temp.maCa = obj.MaCa;
                 temp.ngayDiLam = obj.NgayDiLam.ToShortDateString();
 
@@ -119,6 +132,82 @@ namespace DAL
                 throw ex;
             }
             return result;
+        }
+        public IQueryable timPhanCongTheoMaNV(string maNV)
+        {
+            IQueryable ds = null;
+            try
+            {
+                ds = from pc in db.DBO.PhanCongs
+                     join cl in db.DBO.CaLams on pc.maCa equals cl.maCa
+                     join nv in db.DBO.NhanViens on pc.maNV equals nv.maNV
+                     where pc.maNV.Equals(maNV)
+                     orderby nv.tenNV, cl.tenCa
+                     select new
+                     {
+                         pc.maNV,
+                         nv.tenNV,
+                         cl.tenCa,
+                         pc.ngayDiLam,
+                     };
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+        public int[] timNgayDiLamTheoMaNV(string maNV)
+        {
+            int[] ds = new int[7];
+            try
+            {
+                var lichLam = from pc in db.DBO.PhanCongs
+                               join cl in db.DBO.CaLams on pc.maCa equals cl.maCa
+                               join nv in db.DBO.NhanViens on pc.maNV equals nv.maNV
+                               where pc.maNV.Equals(maNV)
+                               orderby nv.tenNV, cl.tenCa
+                               select new
+                               {
+                                   pc.maNV,
+                                   nv.tenNV,
+                                   cl.tenCa,
+                                   pc.ngayDiLam,
+                               };
+                var a = lichLam.ToList();
+                foreach(var item in a)
+                {
+                   switch(item.ngayDiLam)
+                    {
+                        case "Thứ Hai":
+                            ds[0] = 1;
+                            break;
+                        case "Thứ Ba":
+                            ds[1] = 1;
+                            break;
+                        case "Thứ Tư":
+                            ds[2] = 1;
+                            break;
+                        case "Thứ Năm":
+                            ds[3] = 1;
+                            break;
+                        case "Thứ Sáu":
+                            ds[4] = 1;
+                            break;
+                        case "Thứ Bảy":
+                            ds[5] = 1;
+                            break;
+                        default:
+                            ds[6] = 1;
+                            break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
         }
     }
 }

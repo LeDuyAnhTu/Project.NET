@@ -21,6 +21,7 @@ namespace Project.NET.GUI_UC
         private NhanVien_BUS db_NV = new NhanVien_BUS();
         private ChiNhanh_BUS db_CN = new ChiNhanh_BUS();
         private ViTri_BUS db_VT = new ViTri_BUS();
+        private PhanCong_BUS db_PC = new PhanCong_BUS();
 
         //Constructors
         public PhanCong_UC()
@@ -66,6 +67,10 @@ namespace Project.NET.GUI_UC
             cboChiNhanh.Properties.DisplayMember = "tenCN";
             cboChiNhanh.ItemIndex = 0;
 
+            //
+            //Danh sách phân công
+            //
+            dgvPhanCongCaLamNhanVien.DataSource = db_PC.LayDanhSach();
 
         }
 
