@@ -98,7 +98,6 @@ namespace Project.NET.GUI_UC
                             case "btnTaiKhoan":
                                 nafContent.SelectedPage = navTaiKhoan;
                                 LoadUserControl(null, typeof(TaiKhoan_UC), editFormTaiKhoan);
-
                                 break;
                             case "btnNhanVien":
                                 nafContent.SelectedPage = navNhanVien;
@@ -112,6 +111,27 @@ namespace Project.NET.GUI_UC
                                 nafContent.SelectedPage = navKho;
                                 LoadUserControl(null, typeof(Kho_UC), editFormKho);
                                 LoadUserControl(null, typeof(ThongKeKho_UC), editFormThongKeKho);
+                                break;
+                            case "btnSanPham":
+                                nafContent.SelectedPage = navSanPham;
+                                LoadUserControl(null, typeof(SanPham_UC), editFormSanPham);
+                                LoadUserControl(null, typeof(LoaiSanPham_UC), editFormLoaiSP);
+                                LoadUserControl(null, typeof(ThongKeSanPham_UC), editFormThongKeSanPham);
+                                break;
+                            case "btnKhuyenMai":
+                                nafContent.SelectedPage = navKhuyenMai;
+                                LoadUserControl(null, typeof(KhuyenMai_UC), editFormKhuyenMai);
+                                LoadUserControl(null, typeof(ChiTietKhuyenMai_UC), editFormChiTietKhuyenMai);
+                                LoadUserControl(null, typeof(ThongKeKhuyenMai_UC), editFormThongKeKhuyenMai);
+                                break;
+                            case "btnKhachHang":
+                                nafContent.SelectedPage = navKhachHang;
+                                LoadUserControl(null, typeof(KhachHang_UC), editFormKhachHang);
+                                break;
+                            case "btnHoaDon":
+                                nafContent.SelectedPage = navHoaDon;
+                                LoadUserControl(null, typeof(HoaDon_UC), editFormHoaDon);
+                                LoadUserControl(null, typeof(HoaDonChiTiet_UC), editFormHoaDonChiTiet);
                                 break;
                             case "btnChiNhanh":
                                 nafContent.SelectedPage = navChiNhanh;
@@ -177,92 +197,6 @@ namespace Project.NET.GUI_UC
                     userControl.Dispose();
                 }
             }
-        }
-
-        private async void btnSanPham_Click(object sender, EventArgs e)
-        {
-            WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-            await waitFormManager.ShowWaitForm(() => {
-
-                // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
-                this.Invoke((MethodInvoker)delegate
-                {
-                    nafContent.SelectedPage = navSanPham;
-                    LoadUserControl(null, typeof(SanPham_UC), editFormSanPham);
-                    LoadUserControl(null, typeof(LoaiSanPham_UC), editFormLoaiSP);
-                    LoadUserControl(null, typeof(ThongKeSanPham_UC), editFormThongKeSanPham);
-                    updateCurrentStyleButton(sender, e);
-                });
-                return Task.CompletedTask;
-            });
-            
-        }
-
-        private async void btnKhuyenMai_Click(object sender, EventArgs e)
-        {
-            WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-            await waitFormManager.ShowWaitForm(() => {
-
-                // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
-                this.Invoke((MethodInvoker)delegate
-                {
-                    nafContent.SelectedPage = navKhuyenMai;
-                    LoadUserControl(null, typeof(KhuyenMai_UC), editFormKhuyenMai);
-                    LoadUserControl(null, typeof(ChiTietKhuyenMai_UC), editFormChiTietKhuyenMai);
-                    LoadUserControl(null, typeof(ThongKeKhuyenMai_UC), editFormThongKeKhuyenMai);
-                    updateCurrentStyleButton(sender, e);
-                });
-                return Task.CompletedTask;
-            });
-            
-        }
-
-        private async void btnKhachHang_Click(object sender, EventArgs e)
-        {
-            WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-            await waitFormManager.ShowWaitForm(() => {
-
-                // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
-                this.Invoke((MethodInvoker)delegate
-                {
-                    nafContent.SelectedPage = navKhachHang;
-                    LoadUserControl(null, typeof(KhachHang_UC), editFormKhachHang);
-                    updateCurrentStyleButton(sender, e);
-                });
-                return Task.CompletedTask;
-            });
-           
-        }
-
-        private async void btnHoaDon_Click(object sender, EventArgs e)
-        {
-            WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-            await waitFormManager.ShowWaitForm(() => {
-
-                // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
-                this.Invoke((MethodInvoker)delegate
-                {
-                    nafContent.SelectedPage = navHoaDon;
-                    LoadUserControl(null, typeof(HoaDon_UC), editFormHoaDon);
-                    LoadUserControl(null, typeof(HoaDonChiTiet_UC), editFormHoaDonChiTiet);
-
-                    updateCurrentStyleButton(sender, e);
-                });
-                return Task.CompletedTask;
-            });
-            
-        }
-
-        public void updateCurrentStyleButton(object sender, EventArgs e)
-        {
-            // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
-            SimpleButton currentButton = (SimpleButton)sender;
-            currentButton.UpdateButtonStyle(lastClickButton);
-
-            //
-            // Cập nhật trạng thái cho nút đang được nhấn
-            //
-            lastClickButton = currentButton;
         }
     }
 }

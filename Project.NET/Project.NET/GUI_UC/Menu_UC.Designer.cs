@@ -529,8 +529,7 @@
             this.btnHoaDon.Size = new System.Drawing.Size(136, 48);
             this.btnHoaDon.TabIndex = 9;
             this.btnHoaDon.Text = "Hóa đơn";
-            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
-            this.btnHoaDon.DoubleClick += new System.EventHandler(this.Button_Click);
+            this.btnHoaDon.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnKhachHang
             // 
@@ -588,8 +587,7 @@
             this.btnKhachHang.Size = new System.Drawing.Size(136, 48);
             this.btnKhachHang.TabIndex = 8;
             this.btnKhachHang.Text = "Khách hàng";
-            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
-            this.btnKhachHang.DoubleClick += new System.EventHandler(this.Button_Click);
+            this.btnKhachHang.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnKhuyenMai
             // 
@@ -647,7 +645,7 @@
             this.btnKhuyenMai.Size = new System.Drawing.Size(136, 48);
             this.btnKhuyenMai.TabIndex = 7;
             this.btnKhuyenMai.Text = "Khuyến mãi";
-            this.btnKhuyenMai.Click += new System.EventHandler(this.btnKhuyenMai_Click);
+            this.btnKhuyenMai.Click += new System.EventHandler(this.Button_Click);
             this.btnKhuyenMai.DoubleClick += new System.EventHandler(this.Button_Click);
             // 
             // btnSanPham
@@ -706,7 +704,7 @@
             this.btnSanPham.Size = new System.Drawing.Size(136, 48);
             this.btnSanPham.TabIndex = 6;
             this.btnSanPham.Text = "Sản phẩm";
-            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
+            this.btnSanPham.Click += new System.EventHandler(this.Button_Click);
             this.btnSanPham.DoubleClick += new System.EventHandler(this.Button_Click);
             // 
             // btnKho
