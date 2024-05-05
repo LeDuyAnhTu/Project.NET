@@ -69,9 +69,9 @@ namespace Project.NET.GUI_UC
         {
             try
             {
-                string[] gioLam = db_CL.giolamViec(maCa.ToString().Trim());
-                txtGioBD.EditValue = Convert.ToDateTime(gioLam[0].ToString().Trim());
-                txtGioKT.EditValue = Convert.ToDateTime(gioLam[1].ToString().Trim());
+                CaLam_DTO cl = db_CL.giolamViec(cboCaLamViec.EditValue.ToString().Trim());
+                txtGioBD.Text = cl.GioBD.ToString().Trim();
+                txtGioKT.Text = cl.GioKT.ToString().Trim();
             }
             catch (Exception ex)
             {
@@ -114,8 +114,8 @@ namespace Project.NET.GUI_UC
             //Danh sách nhân viên
             //
             cboNhanVien.Properties.DataSource = db_NV.LayDanhSach();
-            cboNhanVien.Properties.ValueMember = "maNV";
-            cboNhanVien.Properties.DisplayMember = "maNV";
+            cboNhanVien.Properties.ValueMember = "MãSố";
+            cboNhanVien.Properties.DisplayMember = "MãSố";
             cboNhanVien.ItemIndex = 0;
 
             //
@@ -183,8 +183,13 @@ namespace Project.NET.GUI_UC
         /// <param name="e"></param>
         private void cboCaLamViec_EditValueChanged(object sender, EventArgs e)
         {
-            ngayLamViecTheoMaNV(cboNhanVien.EditValue.ToString(), cboCaLamViec.EditValue.ToString());
-            gioLamViecTheoMaCa(cboCaLamViec.EditValue.ToString());
+            string maNV = cboNhanVien.EditValue.ToString();
+            string maCa = cboCaLamViec.EditValue.ToString();
+            if(maNV != null && maCa != null)
+            {
+                ngayLamViecTheoMaNV(maNV, maCa);
+                gioLamViecTheoMaCa(maCa);
+            }
         }
         /// <summary>
         /// Thêm thông tin phân công của nhân viên
