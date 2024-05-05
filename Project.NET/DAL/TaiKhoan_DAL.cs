@@ -19,7 +19,12 @@ namespace DAL
             try
             {
                 ds = from tk in db.DBO.TaiKhoans
-                     select tk;
+                     join nv in db.DBO.NhanViens on tk.maNV equals nv.maNV
+                     select new
+                     {
+                        TênTàiKhoản = tk.tenTK,
+                        TênNhânViên = nv.tenNV,
+                     };
             }
             catch (Exception ex)
             {
