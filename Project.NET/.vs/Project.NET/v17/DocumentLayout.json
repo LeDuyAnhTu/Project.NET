@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagenhanvien\\thongkenhanvien_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagenhanvien\\thongkenhanvien_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagenhanvien\\phancong_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagenhanvien\\phancong_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagesanpham\\thongkesanpham_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagesanpham\\thongkesanpham_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagenhanvien\\phancong_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagenhanvien\\phancong_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\menu_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\menu_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\menu_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\waitformmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\waitformmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,89 +54,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ThongKeSanPham_UC.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\ThongKeSanPham_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageSanPham\\ThongKeSanPham_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\ThongKeSanPham_UC.cs [Design]*",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageSanPham\\ThongKeSanPham_UC.cs [Design]*",
+              "DocumentIndex": 0,
+              "Title": "PhanCong_UC.cs",
+              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
+              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAkwIsAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T12:45:16.101Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-05T13:13:53.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ThongKeNhanVien_UC.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs [Design]*",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs [Design]*",
+              "DocumentIndex": 1,
+              "Title": "PhanCong_UC.cs [Design]",
+              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs",
+              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs [Design]",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageNhanVien\\PhanCong_UC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T12:44:13.274Z",
+              "WhenOpened": "2024-05-05T13:00:23.869Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\frmMain.cs",
-              "RelativeDocumentMoniker": "Project.NET\\frmMain.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\frmMain.cs",
-              "RelativeToolTip": "Project.NET\\frmMain.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T12:42:54.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\frmMain.cs",
-              "RelativeDocumentMoniker": "Project.NET\\frmMain.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\frmMain.cs [Design]",
-              "RelativeToolTip": "Project.NET\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T12:42:45.863Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WaitFormManager.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\WaitFormManager.cs",
-              "RelativeDocumentMoniker": "Project.NET\\WaitFormManager.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\WaitFormManager.cs",
-              "RelativeToolTip": "Project.NET\\WaitFormManager.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T12:39:30.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Menu_UC.cs",
               "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Menu_UC.cs",
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\Menu_UC.cs",
               "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Menu_UC.cs",
               "RelativeToolTip": "Project.NET\\GUI_UC\\Menu_UC.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAADwv5AAAAAcAAAA",
+              "ViewState": "AQIAALwAAAAAAAAAAAAIwMYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T12:38:31.785Z",
+              "WhenOpened": "2024-05-05T12:53:52.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Menu_UC.cs [Design]",
               "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Menu_UC.cs",
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\Menu_UC.cs",
               "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Menu_UC.cs [Design]",
               "RelativeToolTip": "Project.NET\\GUI_UC\\Menu_UC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T12:38:23.203Z",
+              "WhenOpened": "2024-05-05T12:53:50.076Z",
               "EditorCaption": " [Design]"
             }
           ]
