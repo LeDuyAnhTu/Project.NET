@@ -107,8 +107,8 @@ namespace Project.NET.GUI_UC.PageNhanVien
             {
                 if (i >= 0)
                 {
-                    txtMaVT.Text = dgvViTri.GetRowCellValue(i, "maVT").ToString();
-                    txtTenVT.Text = dgvViTri.GetRowCellValue(i, "tenVT").ToString();
+                    txtMaVT.Text = dgvViTri.GetRowCellValue(i, "MãSố").ToString();
+                    txtTenVT.Text = dgvViTri.GetRowCellValue(i, "TênVịTrí").ToString();
                 }
             }
             dangThaoTac(true);

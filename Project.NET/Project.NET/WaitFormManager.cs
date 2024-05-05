@@ -40,7 +40,7 @@ namespace Project.NET
             double seconds = this.stopwatch.Elapsed.TotalSeconds;
 
             // Tạo một khoảng trễ bằng số giây mà tác vụ mất
-            await Task.Delay(TimeSpan.FromSeconds(seconds));
+            // await Task.Delay(TimeSpan.FromSeconds(seconds));
 
             // Đóng WaitForm khi hoàn thành
             SplashScreenManager.CloseForm();
