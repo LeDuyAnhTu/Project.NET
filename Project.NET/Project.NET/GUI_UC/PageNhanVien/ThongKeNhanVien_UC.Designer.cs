@@ -215,7 +215,7 @@
             this.btnCoCauNVTheoCN.Size = new System.Drawing.Size(344, 22);
             this.btnCoCauNVTheoCN.StyleController = this.layoutControl1;
             this.btnCoCauNVTheoCN.TabIndex = 0;
-            this.btnCoCauNVTheoCN.Text = "S";
+            this.btnCoCauNVTheoCN.Text = "Cơ cấu nhân viên theo chi nhánh";
             this.btnCoCauNVTheoCN.Click += new System.EventHandler(this.Button_Click);
             // 
             // btnTongNVTheoCN
@@ -353,10 +353,12 @@
             this.nafContent.Size = new System.Drawing.Size(690, 608);
             this.nafContent.TabIndex = 4;
             this.nafContent.Text = "navFrame";
+            this.nafContent.TransitionAnimationProperties.FrameCount = 100;
+            this.nafContent.TransitionAnimationProperties.FrameInterval = 1000;
+            this.nafContent.TransitionType = DevExpress.Utils.Animation.Transitions.Fade;
             // 
             // navPageTongNhanVienTheoChiNhanh
             // 
-            this.navPageTongNhanVienTheoChiNhanh.Caption = "navPageTongNhanVienTheoChiNhanh";
             this.navPageTongNhanVienTheoChiNhanh.Controls.Add(this.chartTongNhanVienTheoPhongBan);
             this.navPageTongNhanVienTheoChiNhanh.Controls.Add(this.labelControl4);
             this.navPageTongNhanVienTheoChiNhanh.Name = "navPageTongNhanVienTheoChiNhanh";
@@ -467,6 +469,7 @@
             // 
             // navPageCoCauNhanVienTheoChucVu
             // 
+            this.navPageCoCauNhanVienTheoChucVu.Caption = "navPageCoCauNhanVienTheoChucVu";
             this.navPageCoCauNhanVienTheoChucVu.Controls.Add(this.chartCoCauNhanVienTheoChucVu);
             this.navPageCoCauNhanVienTheoChucVu.Controls.Add(this.labelControl8);
             this.navPageCoCauNhanVienTheoChucVu.Name = "navPageCoCauNhanVienTheoChucVu";

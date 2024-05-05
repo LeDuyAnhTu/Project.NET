@@ -1,30 +1,25 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
-using DevExpress.XtraSplashScreen;
-using DevExpress.XtraWaitForm;
-using Project.NET.GUI_UC;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
-namespace Project.NET
+namespace Project.NET.GUI_UC
 {
-    public partial class frmLogin : Form
-    {
+    public partial class Login_UC : DevExpress.XtraEditors.XtraUserControl
+    { 
+
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
-        frmMenu frmMenuu = Application.OpenForms.OfType<frmMenu>().FirstOrDefault();
+    
 
-        public frmLogin()
+        public Login_UC()
         {
             InitializeComponent();
 
@@ -68,23 +63,35 @@ namespace Project.NET
             //chặn bấm liên tục vào nút đăng nhập gây lỗi hệ thống
             btnDangNhap.Enabled = false;
 
-            WaitFormManager waitFormManager = new WaitFormManager(this);
+            WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
             await waitFormManager.ShowWaitForm(() => {
 
                 // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
                 this.Invoke((MethodInvoker)delegate
                 {
-                    frmMenuu = new frmMenu();// khởi tạo frmMenuu
 
-                    frmMenuu.MdiParent = frmMainn;// gan frmMenuu vào frmMain
+                    // Gỡ UserControl khỏi container
+                    frmMainn.Controls.Remove(this);
 
-                    frmMenuu.Show();// hiển thị frmMenuu
+                    // Giải phóng tài nguyên
+                    this.Dispose();
+
+                    LoadUserControl(null, typeof(Menu_UC), frmMainn);
                 });
                 return Task.CompletedTask;
             });
 
             btnDangNhap.Enabled = true;
         }
-
+        private void LoadUserControl(UserControl userControl, Type type, Control container)
+        {
+            if (userControl == null)
+            {
+                userControl = (UserControl)Activator.CreateInstance(type);
+                userControl.Dock = DockStyle.Fill;
+                container.Dock = DockStyle.Fill;
+                container.Controls.Add(userControl);
+            }
+        }
     }
 }

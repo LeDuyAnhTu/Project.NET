@@ -1,13 +1,13 @@
-﻿namespace Project.NET
+﻿namespace Project.NET.GUI_UC
 {
-    partial class frmLogin
+    partial class Login_UC
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,15 +20,15 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_UC));
             this.tableLogin = new DevExpress.Utils.Layout.TablePanel();
             this.layoutLogin = new System.Windows.Forms.TableLayoutPanel();
             this.groupDangNhap = new DevExpress.XtraEditors.GroupControl();
@@ -59,7 +59,7 @@
             // 
             // tableLogin
             // 
-            this.tableLogin.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.tableLogin.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
             this.tableLogin.Appearance.Options.UseBackColor = true;
             this.tableLogin.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10F),
@@ -76,8 +76,8 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 384.4F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F)});
-            this.tableLogin.Size = new System.Drawing.Size(1177, 663);
-            this.tableLogin.TabIndex = 2;
+            this.tableLogin.Size = new System.Drawing.Size(828, 551);
+            this.tableLogin.TabIndex = 3;
             this.tableLogin.UseSkinIndents = true;
             // 
             // layoutLogin
@@ -87,7 +87,7 @@
             this.layoutLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.layoutLogin.Controls.Add(this.groupDangNhap, 0, 1);
             this.layoutLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutLogin.Location = new System.Drawing.Point(711, 139);
+            this.layoutLogin.Location = new System.Drawing.Point(500, 83);
             this.layoutLogin.Margin = new System.Windows.Forms.Padding(0);
             this.layoutLogin.Name = "layoutLogin";
             this.tableLogin.SetRow(this.layoutLogin, 1);
@@ -95,7 +95,7 @@
             this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.34375F));
             this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.35417F));
             this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.5625F));
-            this.layoutLogin.Size = new System.Drawing.Size(363, 384);
+            this.layoutLogin.Size = new System.Drawing.Size(254, 384);
             this.layoutLogin.TabIndex = 5;
             // 
             // groupDangNhap
@@ -117,7 +117,7 @@
             this.groupDangNhap.Location = new System.Drawing.Point(3, 107);
             this.groupDangNhap.Name = "groupDangNhap";
             this.groupDangNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.groupDangNhap.Size = new System.Drawing.Size(357, 171);
+            this.groupDangNhap.Size = new System.Drawing.Size(248, 171);
             this.groupDangNhap.TabIndex = 0;
             this.groupDangNhap.Text = "Đăng nhập";
             // 
@@ -131,7 +131,7 @@
             this.controlsLogin.Name = "controlsLogin";
             this.controlsLogin.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1270, 184, 650, 400);
             this.controlsLogin.Root = this.Root;
-            this.controlsLogin.Size = new System.Drawing.Size(347, 128);
+            this.controlsLogin.Size = new System.Drawing.Size(238, 128);
             this.controlsLogin.TabIndex = 0;
             this.controlsLogin.Text = "layoutControl1";
             // 
@@ -146,7 +146,7 @@
             this.txtTenDangNhap.Properties.Appearance.Options.UseForeColor = true;
             this.txtTenDangNhap.Properties.BeepOnError = true;
             this.txtTenDangNhap.Properties.UseMaskAsDisplayFormat = true;
-            this.txtTenDangNhap.Size = new System.Drawing.Size(187, 26);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(78, 26);
             this.txtTenDangNhap.StyleController = this.controlsLogin;
             this.txtTenDangNhap.TabIndex = 4;
             this.txtTenDangNhap.ToolTipTitle = "Tên đăng nhập";
@@ -182,7 +182,7 @@
             this.btnDangNhap.AppearancePressed.Options.UseForeColor = true;
             this.btnDangNhap.Location = new System.Drawing.Point(6, 74);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(335, 48);
+            this.btnDangNhap.Size = new System.Drawing.Size(226, 48);
             this.btnDangNhap.StyleController = this.controlsLogin;
             this.btnDangNhap.TabIndex = 7;
             this.btnDangNhap.Text = "Đăng nhập";
@@ -202,7 +202,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtMatKhau.Properties.PasswordChar = '*';
             this.txtMatKhau.Properties.UseMaskAsDisplayFormat = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(187, 26);
+            this.txtMatKhau.Size = new System.Drawing.Size(78, 26);
             this.txtMatKhau.StyleController = this.controlsLogin;
             this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.ToolTipTitle = "Mật khẩu";
@@ -220,7 +220,7 @@
             this.layoutTxtMatKhau,
             this.layoutBtnDangNhap});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(347, 128);
+            this.Root.Size = new System.Drawing.Size(238, 128);
             this.Root.TextVisible = false;
             // 
             // layoutTxtTenDangNhap
@@ -233,7 +233,7 @@
             this.layoutTxtTenDangNhap.ImageOptions.Image = global::Project.NET.Properties.Resources.key32_32;
             this.layoutTxtTenDangNhap.Location = new System.Drawing.Point(0, 0);
             this.layoutTxtTenDangNhap.Name = "layoutTxtTenDangNhap";
-            this.layoutTxtTenDangNhap.Size = new System.Drawing.Size(337, 34);
+            this.layoutTxtTenDangNhap.Size = new System.Drawing.Size(228, 34);
             this.layoutTxtTenDangNhap.Text = "Tên đăng nhập";
             this.layoutTxtTenDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutTxtTenDangNhap.TextSize = new System.Drawing.Size(144, 32);
@@ -247,7 +247,7 @@
             this.layoutTxtMatKhau.ImageOptions.Image = global::Project.NET.Properties.Resources.pass32_32;
             this.layoutTxtMatKhau.Location = new System.Drawing.Point(0, 34);
             this.layoutTxtMatKhau.Name = "layoutTxtMatKhau";
-            this.layoutTxtMatKhau.Size = new System.Drawing.Size(337, 34);
+            this.layoutTxtMatKhau.Size = new System.Drawing.Size(228, 34);
             this.layoutTxtMatKhau.Text = "Mật khẩu";
             this.layoutTxtMatKhau.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutTxtMatKhau.TextSize = new System.Drawing.Size(144, 32);
@@ -261,7 +261,7 @@
             this.layoutBtnDangNhap.Location = new System.Drawing.Point(0, 68);
             this.layoutBtnDangNhap.MinSize = new System.Drawing.Size(88, 28);
             this.layoutBtnDangNhap.Name = "layoutBtnDangNhap";
-            this.layoutBtnDangNhap.Size = new System.Drawing.Size(337, 50);
+            this.layoutBtnDangNhap.Size = new System.Drawing.Size(228, 50);
             this.layoutBtnDangNhap.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutBtnDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutBtnDangNhap.TextSize = new System.Drawing.Size(0, 0);
@@ -272,29 +272,23 @@
             this.tableLogin.SetColumn(this.pictureBox1, 1);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(104, 140);
+            this.pictureBox1.Location = new System.Drawing.Point(75, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLogin.SetRow(this.pictureBox1, 1);
-            this.pictureBox1.Size = new System.Drawing.Size(606, 382);
+            this.pictureBox1.Size = new System.Drawing.Size(424, 382);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // frmLogin
+            // Login_UC
             // 
+            this.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(1177, 663);
             this.Controls.Add(this.tableLogin);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmLogin";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogin";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Name = "Login_UC";
+            this.Size = new System.Drawing.Size(828, 551);
             ((System.ComponentModel.ISupportInitialize)(this.tableLogin)).EndInit();
             this.tableLogin.ResumeLayout(false);
             this.layoutLogin.ResumeLayout(false);
@@ -318,15 +312,15 @@
 
         private DevExpress.Utils.Layout.TablePanel tableLogin;
         private System.Windows.Forms.TableLayoutPanel layoutLogin;
-        private DevExpress.XtraLayout.LayoutControl controlsLogin;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.GroupControl groupDangNhap;
+        private DevExpress.XtraLayout.LayoutControl controlsLogin;
         private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
+        private DevExpress.XtraEditors.ButtonEdit txtMatKhau;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtTenDangNhap;
         private DevExpress.XtraLayout.LayoutControlItem layoutTxtMatKhau;
         private DevExpress.XtraLayout.LayoutControlItem layoutBtnDangNhap;
-        private DevExpress.XtraEditors.ButtonEdit txtMatKhau;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
