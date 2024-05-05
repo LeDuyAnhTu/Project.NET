@@ -22,8 +22,8 @@ namespace DAL
                      where vt.maVT != "VT00"
                      select new
                      {
-                         vt.maVT,
-                         vt.tenVT
+                         MãSố = vt.maVT,
+                         TênVịTrí = vt.tenVT
                      };
             }catch(Exception ex)
             {

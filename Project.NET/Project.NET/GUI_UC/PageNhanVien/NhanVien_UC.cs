@@ -87,8 +87,8 @@ namespace Project.NET.Forms
             //Combobox vị trí
             //
             cboViTriChucVuNhanVien.Properties.DataSource = db_VT.LayDanhSach();
-            cboViTriChucVuNhanVien.Properties.ValueMember = "maVT";
-            cboViTriChucVuNhanVien.Properties.DisplayMember = "tenVT";
+            cboViTriChucVuNhanVien.Properties.ValueMember = "MãSố";
+            cboViTriChucVuNhanVien.Properties.DisplayMember = "TênVịTrí";
             cboViTriChucVuNhanVien.ItemIndex = 1; //Chọn vị trí mặc định
 
             //
@@ -126,8 +126,8 @@ namespace Project.NET.Forms
             //Vị trí
             //
             cboViTriChucVuNhanVien.Properties.DataSource = db_VT.LayDanhSach();
-            cboViTriChucVuNhanVien.Properties.ValueMember = "maVT";
-            cboViTriChucVuNhanVien.Properties.DisplayMember = "tenVT";
+            cboViTriChucVuNhanVien.Properties.ValueMember = "MãSố";
+            cboViTriChucVuNhanVien.Properties.DisplayMember = "TênVịTrí";
             cboViTriChucVuNhanVien.ItemIndex = 1; //Chọn vị trí mặc định
 
             //
