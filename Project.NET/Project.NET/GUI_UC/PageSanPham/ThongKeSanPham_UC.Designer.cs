@@ -143,7 +143,6 @@
             // 
             // navPageTKLoaiSanPham
             // 
-            this.navPageTKLoaiSanPham.Caption = "navPageTKLoaiSanPham";
             this.navPageTKLoaiSanPham.Controls.Add(this.chartTKLoaiSanPham);
             this.navPageTKLoaiSanPham.Controls.Add(this.labelControl1);
             this.navPageTKLoaiSanPham.Name = "navPageTKLoaiSanPham";

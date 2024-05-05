@@ -37,7 +37,7 @@ namespace Project.NET
             this.stopwatch.Stop();
 
             // Lấy thời gian đã trôi qua từ lúc bắt đầu đến khi dừng, tính bằng giây
-            double seconds = this.stopwatch.Elapsed.TotalSeconds;
+            //double seconds = this.stopwatch.Elapsed.TotalSeconds;
 
             // Tạo một khoảng trễ bằng số giây mà tác vụ mất
             // await Task.Delay(TimeSpan.FromSeconds(seconds));

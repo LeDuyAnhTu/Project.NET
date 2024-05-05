@@ -8,15 +8,16 @@ namespace Project.NET
 {
     public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
-        
-        frmLogin frmLogin = null;
+
+        //Chuyển đến form khác sau khi đăng nhập thành công
+        frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
+
         /// <summary>
         /// Khởi tạo form
         /// </summary>
         public frmMain()
         {
-            InitializeComponent();
-            this.IsMdiContainer = true;
+            InitializeComponent(); 
         }
         /// <summary>
         /// Tải form
@@ -24,12 +25,8 @@ namespace Project.NET
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void frmMain_Load(object sender, EventArgs e)
-        {  
-            // Tạo và hiển thị frmLogin 
-            frmLogin = new frmLogin();
-            frmLogin.MdiParent = this;
-            frmLogin.Dock = DockStyle.Fill;
-            frmLogin.Show();
+        {
+            LoadUserControl(null, typeof(Login_UC), this);
         }
 
         /// <summary>
@@ -77,28 +74,38 @@ namespace Project.NET
         /// Tắt double click ở title bar
         /// </summary>
         /// <param name="m"></param>
-        protected override void WndProc(ref Message m)
+        //protected override void WndProc(ref Message m)
+        //{
+        //    const int WM_SYSCOMMAND = 0x0112;
+        //    const int SC_MOVE = 0xF010;
+        //    const int WM_NCLBUTTONDBLCLK = 0x00A3; //double click on a title bar a.k.a. non-client area of the form
+
+        //    switch (m.Msg)
+        //    {
+        //        case WM_SYSCOMMAND:             //preventing the form from being moved by the mouse.
+        //            int command = m.WParam.ToInt32() & 0xfff0;
+        //            if (command == SC_MOVE)
+        //                return;
+        //            break;
+        //    }
+
+        //    if (m.Msg == WM_NCLBUTTONDBLCLK)    //preventing the form being resized by the mouse double click on the title bar.
+        //    {
+        //        m.Result = IntPtr.Zero;
+        //        return;
+        //    }
+
+        //    base.WndProc(ref m);
+        //}
+        private void LoadUserControl(UserControl userControl, Type type, Control container)
         {
-            const int WM_SYSCOMMAND = 0x0112;
-            const int SC_MOVE = 0xF010;
-            const int WM_NCLBUTTONDBLCLK = 0x00A3; //double click on a title bar a.k.a. non-client area of the form
-
-            switch (m.Msg)
+            if (userControl == null)
             {
-                case WM_SYSCOMMAND:             //preventing the form from being moved by the mouse.
-                    int command = m.WParam.ToInt32() & 0xfff0;
-                    if (command == SC_MOVE)
-                        return;
-                    break;
+                userControl = (UserControl)Activator.CreateInstance(type);
+                userControl.Dock = DockStyle.Fill;
+                container.Dock = DockStyle.Fill;
+                container.Controls.Add(userControl);
             }
-
-            if (m.Msg == WM_NCLBUTTONDBLCLK)    //preventing the form being resized by the mouse double click on the title bar.
-            {
-                m.Result = IntPtr.Zero;
-                return;
-            }
-
-            base.WndProc(ref m);
         }
     }
 }

@@ -1,6 +1,14 @@
-﻿using Project.NET.Forms;
+﻿using DevExpress.XtraEditors;
+using Project.NET.ExtensionMethods;
+using Project.NET.Forms;
+using Project.NET.GUI_UC.PageChiNhanh;
+using Project.NET.GUI_UC.PageHoaDon;
+using Project.NET.GUI_UC.PageKhachHang;
 using Project.NET.GUI_UC.PageKho;
-using Project.NET.GUI_UC;
+using Project.NET.GUI_UC.PageKhuyenMai;
+using Project.NET.GUI_UC.PageNhaCungCap;
+using Project.NET.GUI_UC.PageNhanVien;
+using Project.NET.GUI_UC.PageSanPham;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,26 +18,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using Project.NET.GUI_UC.PageSanPham;
-using Project.NET.GUI_UC.PageKhuyenMai;
-using BUS;
-using DevExpress.Utils;
-using Project.NET.GUI_UC.PageKhachHang;
-using Project.NET.GUI_UC.PageHoaDon;
-using Project.NET.GUI_UC.PageChiNhanh;
-using Project.NET.GUI_UC.PageNhaCungCap;
-using Project.NET.GUI_UC.PageNhanVien;
-using Project.NET.ExtensionMethods;
 
-namespace Project.NET
+namespace Project.NET.GUI_UC
 {
-    public partial class frmMenu : Form
-    { 
+    public partial class Menu_UC : DevExpress.XtraEditors.XtraUserControl
+    {
+        //Chuyển đến form khác sau khi đăng nhập thành công
+        frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
+        
         // Nút bấm menu navbar cuối cùng được nhấn
         private SimpleButton lastClickButton = null;
+
         
-        private UserControl currentControl = null;
         private NhanVien_UC nhanVien_UC = null;
         private ThongKeNhanVien_UC thongKeNhanVien_UC = null;
         private TaiKhoan_UC taiKhoan_UC = null;
@@ -54,13 +54,13 @@ namespace Project.NET
         private HoaDonChiTiet_UC hoaDonChiTiet_UC = null;
         private KhuVuc_UC khuVuc_UC = null;
         private ChiTietCC_UC chiTietCC_UC = null;
-        public frmMenu()
+        public Menu_UC()
         {
             InitializeComponent();
         }
 
         private void frmMenu_Load(object sender, EventArgs e)
-        { 
+        {
             loadingFirstOrDeFaultNavbarMenuButton();
         }
 
@@ -91,7 +91,7 @@ namespace Project.NET
                 tabSuaTTTaiKhoan.Controls.Add(editFormTaiKhoan);
             }
         }
-        
+
         /// <summary>
         /// Xử lý sự kiện cho các nút bấm trên nav menu buttons
         /// </summary>
@@ -102,11 +102,9 @@ namespace Project.NET
         {
             try
             {
-                WaitFormManager waitFormManager = new WaitFormManager(this);
+                WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
                 await waitFormManager.ShowWaitForm(() =>
                 {
-                    // Giải phóng tài nguyên của UserControl hiện tại
-                    SwitchTab(currentControl);
 
                     // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
                     SimpleButton currentButton = (SimpleButton)sender;
@@ -116,7 +114,10 @@ namespace Project.NET
                     // Cập nhật trạng thái cho nút đang được nhấn
                     //
                     lastClickButton = currentButton;
-
+                    //
+                    // Giải phóng tài nguyên cho NavFrame cũ
+                    //
+                    ReleaseAllResources(nafContent);
                     //
                     // Kiểm tra nút được nhấn là nút nào, chuyển tài nguyên tương ứng
                     //
@@ -203,22 +204,27 @@ namespace Project.NET
                 container.Controls.Add(userControl);
             }
         }
-        private void SwitchTab(UserControl newControl)
+        /// <summary>
+        /// Giải phóng tài nguyên khi thoát chương trình
+        /// </summary>
+        /// <param name="container"></param>
+        private void ReleaseAllResources(Control container)
         {
-            // Dispose the current UserControl if it exists
-            if (currentControl != null)
+            // Duyệt qua tất cả các controls trong container
+            for (int i = container.Controls.Count - 1; i >= 0; i--)
             {
-                if (currentControl is IDisposable disposable)
+                // Kiểm tra xem control hiện tại có phải là UserControl không
+                if (container.Controls[i] is UserControl)
                 {
-                    disposable.Dispose();
+                    UserControl userControl = (UserControl)container.Controls[i];
+
+                    // Gỡ UserControl khỏi container
+                    container.Controls.Remove(userControl);
+
+                    // Giải phóng tài nguyên
+                    userControl.Dispose();
                 }
-                currentControl = null;
             }
-
-            // Switch to the new UserControl
-            currentControl = newControl;
-            // (code to switch to the new UserControl)
         }
-
     }
 }
