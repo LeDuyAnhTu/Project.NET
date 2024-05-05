@@ -104,7 +104,7 @@ namespace BUS
         /// </summary>
         /// <param name="maCa"></param>
         /// <returns></returns>
-        public string[] giolamViec(string maCa)
+        public CaLam_DTO giolamViec(string maCa)
         {
             try
             {

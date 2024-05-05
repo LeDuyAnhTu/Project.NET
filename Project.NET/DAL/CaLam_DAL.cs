@@ -173,26 +173,12 @@ namespace DTO
         /// </summary>
         /// <param name="maCa"></param>
         /// <returns></returns>
-        public string[] gioLamViec(string maCa)
+        public CaLam_DTO gioLamViec(string maCa)
         {
-            string[] ds = new string[2];
             try
             {
-                var caLam = (from cl in db.DBO.CaLams
-                             where cl.maCa.Equals(maCa)
-                             select new
-                             {
-                                 cl.maCa,
-                                 cl.tenCa,
-                                 cl.gioBD,
-                                 cl.gioKT
-                             }).ToList();
-                foreach(var item in caLam)
-                {
-                    ds[0] = item.gioBD;
-                    ds[1] = item.gioKT;
-                }
-                return ds;
+                CaLam cl = db.DBO.CaLams.Single(d => d.maCa.Equals(maCa));
+                return new CaLam_DTO(cl.maCa, cl.tenCa, cl.gioBD, cl.gioKT);
             }
             catch (Exception ex)
             {

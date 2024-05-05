@@ -69,9 +69,9 @@ namespace Project.NET.GUI_UC
         {
             try
             {
-                string[] gioLam = db_CL.giolamViec(maCa.ToString().Trim());
-                txtGioBD.EditValue = Convert.ToDateTime(gioLam[0].ToString().Trim());
-                txtGioKT.EditValue = Convert.ToDateTime(gioLam[1].ToString().Trim());
+                CaLam_DTO cl = db_CL.giolamViec(cboCaLamViec.EditValue.ToString().Trim());
+                txtGioBD.Text = cl.GioBD.ToString().Trim();
+                txtGioKT.Text = cl.GioKT.ToString().Trim();
             }
             catch (Exception ex)
             {

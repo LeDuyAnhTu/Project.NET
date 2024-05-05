@@ -80,7 +80,14 @@ namespace BUS
             }
             catch (Exception ex)
             {
-                throw ex;
+                if (ex.Message.Contains("fk_nhanvien_vitri"))
+                {
+                    throw new Exception("Hiện đang có nhân viên đảm nhiệm vị trí này");
+                }
+                else
+                {
+                    throw ex;
+                }
             }
             return result;
         }
@@ -94,6 +101,20 @@ namespace BUS
             try
             {
                 return db.timTheoMa(maVT);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Tạo mã vị trí cuối
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                return db.taoMaMoi();
             }catch(Exception ex)
             {
                 throw ex;
