@@ -25,11 +25,11 @@ namespace Project.NET.GUI_UC
     {
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
-        
+
         // Nút bấm menu navbar cuối cùng được nhấn
         private SimpleButton lastClickButton = null;
 
-        
+
         private NhanVien_UC nhanVien_UC = null;
         private ThongKeNhanVien_UC thongKeNhanVien_UC = null;
         private TaiKhoan_UC taiKhoan_UC = null;
@@ -57,12 +57,9 @@ namespace Project.NET.GUI_UC
         public Menu_UC()
         {
             InitializeComponent();
-        }
-
-        private void frmMenu_Load(object sender, EventArgs e)
-        {
             loadingFirstOrDeFaultNavbarMenuButton();
         }
+
 
         /// <summary>
         /// Tải mặc định menu đầu tiên là menu tài khoản và tô đậm nút tài khoản menu navbar
@@ -70,25 +67,21 @@ namespace Project.NET.GUI_UC
         private void loadingFirstOrDeFaultNavbarMenuButton()
         {
             // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
-            SimpleButton currentButton = btnTaiKhoan;
-            currentButton.UpdateButtonStyle(lastClickButton);
-            //
-            // Cập nhật trạng thái cho nút đang được nhấn
-            //
-            lastClickButton = currentButton;
-
-            // Loading default tài khoản tab
-            if (taiKhoan_UC == null)
+            if (btnTaiKhoan != null)
             {
-                taiKhoan_UC = new TaiKhoan_UC();
-                taiKhoan_UC.Dock = DockStyle.Fill;
+                SimpleButton currentButton = btnTaiKhoan;
+                currentButton.UpdateButtonStyle(lastClickButton);
+                //
+                // Cập nhật trạng thái cho nút đang được nhấn
+                //
+                lastClickButton = currentButton;
 
-                editFormTaiKhoan.Controls.Add(taiKhoan_UC);
+                // Loading default tài khoản tab
+                LoadUserControl(taiKhoan_UC, typeof(TaiKhoan_UC), editFormTaiKhoan);
             }
-
-            if (editFormTaiKhoan == null)
+            else
             {
-                tabSuaTTTaiKhoan.Controls.Add(editFormTaiKhoan);
+                MessageBox.Show("Khong biet nut nay!");
             }
         }
 
@@ -98,95 +91,69 @@ namespace Project.NET.GUI_UC
         /// <param name="sender"></param>
         /// <param name="e"></param>
         /// <exception cref="Exception"></exception>
-        private async void Button_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
             try
             {
-                WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-                await waitFormManager.ShowWaitForm(() =>
+                // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
+                SimpleButton currentButton = (SimpleButton)sender;
+                currentButton.UpdateButtonStyle(lastClickButton);
+
+                //
+                // Cập nhật trạng thái cho nút đang được nhấn
+                //
+                lastClickButton = currentButton;
+                //
+                // Giải phóng tài nguyên cho NavFrame cũ
+                //
+                ReleaseAllResources(nafContent);
+                //
+                // Kiểm tra nút được nhấn là nút nào, chuyển tài nguyên tương ứng
+                //
+                switch (currentButton.Name)
                 {
+                    case "btnTaiKhoan":
+                        nafContent.SelectedPage = navTaiKhoan;
+                        LoadUserControl(taiKhoan_UC, typeof(TaiKhoan_UC), editFormTaiKhoan);
 
-                    // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
-                    SimpleButton currentButton = (SimpleButton)sender;
-                    currentButton.UpdateButtonStyle(lastClickButton);
+                        break;
+                    case "btnNhanVien":
+                        nafContent.SelectedPage = navNhanVien;
+                        LoadUserControl(nhanVien_UC, typeof(NhanVien_UC), editFormNhanVien);
+                        LoadUserControl(thongKeNhanVien_UC, typeof(ThongKeNhanVien_UC), editFormThongKeNhanVien);
+                        LoadUserControl(caLam_UC, typeof(CaLam_UC), editFormCaLam);
+                        LoadUserControl(phanCong_UC, typeof(PhanCong_UC), editFormPhanCong);
+                        LoadUserControl(viTriChucVuNV_UC, typeof(ViTriChucVuNV_UC), editFormViTriChucVuNV);
+                        break;
+                    case "btnKho":
+                        nafContent.SelectedPage = navKho;
+                        LoadUserControl(kho_UC, typeof(Kho_UC), editFormKho);
+                        LoadUserControl(thongKeKho_UC, typeof(ThongKeKho_UC), editFormThongKeKho);
+                        break;
 
-                    //
-                    // Cập nhật trạng thái cho nút đang được nhấn
-                    //
-                    lastClickButton = currentButton;
-                    //
-                    // Giải phóng tài nguyên cho NavFrame cũ
-                    //
-                    ReleaseAllResources(nafContent);
-                    //
-                    // Kiểm tra nút được nhấn là nút nào, chuyển tài nguyên tương ứng
-                    //
-                    switch (currentButton.Name)
-                    {
-                        case "btnTaiKhoan":
-                            nafContent.SelectedPage = navTaiKhoan;
-                            LoadUserControl(taiKhoan_UC, typeof(TaiKhoan_UC), editFormTaiKhoan);
+                    case "btnChiNhanh":
+                        nafContent.SelectedPage = navChiNhanh;
+                        LoadUserControl(chiNhanh_UC, typeof(ChiNhanh_UC), editFormChiNhanh);
+                        LoadUserControl(khuVuc_UC, typeof(KhuVuc_UC), editFormKhuVuc);
+                        break;
+                    case "btnNhaCungCap":
+                        nafContent.SelectedPage = navNhaCungCap;
+                        LoadUserControl(nhaCungCap_UC, typeof(NhaCungCap_UC), editFormNhaCungCap);
+                        LoadUserControl(chiTietCC_UC, typeof(ChiTietCC_UC), editFormChiTietCC);
+                        break;
+                    case "btnBaoCao":
+                        nafContent.SelectedPage = navBaoCao;
+                        LoadUserControl(baoCao_UC, typeof(BaoCao_UC), editFormBaoCao);
+                        break;
+                    case "btnThongKe":
+                        nafContent.SelectedPage = navThongKe;
+                        LoadUserControl(thongKeMonth_UC, typeof(ThongKeMonth_UC), editFormThongKeMonth);
+                        LoadUserControl(thongKeYear_UC, typeof(ThongKeYear_UC), editFormThongKeYear);
+                        break;
+                    default:
+                        throw new Exception("Unknown button.");
+                }
 
-                            break;
-                        case "btnNhanVien":
-                            nafContent.SelectedPage = navNhanVien;
-                            LoadUserControl(nhanVien_UC, typeof(NhanVien_UC), editFormNhanVien);
-                            LoadUserControl(thongKeNhanVien_UC, typeof(ThongKeNhanVien_UC), editFormThongKeNhanVien);
-                            LoadUserControl(caLam_UC, typeof(CaLam_UC), editFormCaLam);
-                            LoadUserControl(phanCong_UC, typeof(PhanCong_UC), editFormPhanCong);
-                            LoadUserControl(viTriChucVuNV_UC, typeof(ViTriChucVuNV_UC), editFormViTriChucVuNV);
-                            break;
-                        case "btnKho":
-                            nafContent.SelectedPage = navKho;
-                            LoadUserControl(kho_UC, typeof(Kho_UC), editFormKho);
-                            LoadUserControl(thongKeKho_UC, typeof(ThongKeKho_UC), editFormThongKeKho);
-                            break;
-                        case "btnSanPham":
-                            nafContent.SelectedPage = navSanPham;
-                            LoadUserControl(sanPham_UC, typeof(SanPham_UC), editFormSanPham);
-                            LoadUserControl(loaiSanPham_UC, typeof(LoaiSanPham_UC), editFormLoaiSP);
-                            LoadUserControl(thongKeSanPham_UC, typeof(ThongKeSanPham_UC), editFormThongKeSanPham);
-                            break;
-                        case "btnKhuyenMai":
-                            nafContent.SelectedPage = navKhuyenMai;
-                            LoadUserControl(khuyenMai_UC, typeof(KhuyenMai_UC), editFormKhuyenMai);
-                            LoadUserControl(chiTietKhuyenMai_UC, typeof(ChiTietKhuyenMai_UC), editFormChiTietKhuyenMai);
-                            LoadUserControl(thongKeKhuyenMai_UC, typeof(ThongKeKhuyenMai_UC), editFormThongKeKhuyenMai);
-                            break;
-                        case "btnKhachHang":
-                            nafContent.SelectedPage = navKhachHang;
-                            LoadUserControl(khachHang_UC, typeof(KhachHang_UC), editFormKhachHang);
-
-                            break;
-                        case "btnHoaDon":
-                            nafContent.SelectedPage = navHoaDon;
-                            LoadUserControl(hoaDon_UC, typeof(HoaDon_UC), editFormHoaDon);
-                            LoadUserControl(hoaDonChiTiet_UC, typeof(HoaDonChiTiet_UC), editFormHoaDonChiTiet);
-                            break;
-                        case "btnChiNhanh":
-                            nafContent.SelectedPage = navChiNhanh;
-                            LoadUserControl(chiNhanh_UC, typeof(ChiNhanh_UC), editFormChiNhanh);
-                            LoadUserControl(khuVuc_UC, typeof(KhuVuc_UC), editFormKhuVuc);
-                            break;
-                        case "btnNhaCungCap":
-                            nafContent.SelectedPage = navNhaCungCap;
-                            LoadUserControl(nhaCungCap_UC, typeof(NhaCungCap_UC), editFormNhaCungCap);
-                            LoadUserControl(chiTietCC_UC, typeof(ChiTietCC_UC), editFormChiTietCC);
-                            break;
-                        case "btnBaoCao":
-                            nafContent.SelectedPage = navBaoCao;
-                            LoadUserControl(baoCao_UC, typeof(BaoCao_UC), editFormBaoCao);
-                            break;
-                        case "btnThongKe":
-                            nafContent.SelectedPage = navThongKe;
-                            LoadUserControl(thongKeMonth_UC, typeof(ThongKeMonth_UC), editFormThongKeMonth);
-                            LoadUserControl(thongKeYear_UC, typeof(ThongKeYear_UC), editFormThongKeYear);
-                            break;
-                        default:
-                            throw new Exception("Unknown button.");
-                    }
-                    return Task.CompletedTask;
-                });// end waiting
 
             }
             catch (Exception ex)
@@ -225,6 +192,56 @@ namespace Project.NET.GUI_UC
                     userControl.Dispose();
                 }
             }
+        }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+
+
+            nafContent.SelectedPage = navSanPham;
+            LoadUserControl(sanPham_UC, typeof(SanPham_UC), editFormSanPham);
+            LoadUserControl(loaiSanPham_UC, typeof(LoaiSanPham_UC), editFormLoaiSP);
+            LoadUserControl(thongKeSanPham_UC, typeof(ThongKeSanPham_UC), editFormThongKeSanPham);
+            updateCurrentStyleButton(sender, e);
+        }
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
+        {
+
+
+            nafContent.SelectedPage = navKhuyenMai;
+            LoadUserControl(khuyenMai_UC, typeof(KhuyenMai_UC), editFormKhuyenMai);
+            LoadUserControl(chiTietKhuyenMai_UC, typeof(ChiTietKhuyenMai_UC), editFormChiTietKhuyenMai);
+            LoadUserControl(thongKeKhuyenMai_UC, typeof(ThongKeKhuyenMai_UC), editFormThongKeKhuyenMai);
+            updateCurrentStyleButton(sender, e);
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navKhachHang;
+            LoadUserControl(khachHang_UC, typeof(KhachHang_UC), editFormKhachHang);
+            updateCurrentStyleButton(sender, e);
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            nafContent.SelectedPage = navHoaDon;
+            LoadUserControl(hoaDon_UC, typeof(HoaDon_UC), editFormHoaDon);
+            LoadUserControl(hoaDonChiTiet_UC, typeof(HoaDonChiTiet_UC), editFormHoaDonChiTiet);
+
+            updateCurrentStyleButton(sender,e);
+        }
+
+        public void updateCurrentStyleButton(object sender, EventArgs e)
+        {
+            // Tạo hoặc lấy UserControl mới dựa trên nút được nhấn
+            SimpleButton currentButton = (SimpleButton)sender;
+            currentButton.UpdateButtonStyle(lastClickButton);
+
+            //
+            // Cập nhật trạng thái cho nút đang được nhấn
+            //
+            lastClickButton = currentButton;
         }
     }
 }
