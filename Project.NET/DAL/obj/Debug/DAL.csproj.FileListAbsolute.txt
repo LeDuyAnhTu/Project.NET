@@ -38,9 +38,11 @@ D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DAL\obj\Debug\DAL.c
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DAL\obj\Debug\DAL.dll
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\DAL\obj\Debug\DAL.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DAL.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DAL.dll.config
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DAL.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DAL.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DTO.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\bin\Debug\DTO.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DAL\obj\Debug\DAL.csproj.Up2Date
