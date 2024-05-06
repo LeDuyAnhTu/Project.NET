@@ -9,6 +9,7 @@ using Project.NET.GUI_UC.PageKhuyenMai;
 using Project.NET.GUI_UC.PageNhaCungCap;
 using Project.NET.GUI_UC.PageNhanVien;
 using Project.NET.GUI_UC.PageSanPham;
+using Project.NET.GUI_UC.PageBanHang;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -151,6 +152,11 @@ namespace Project.NET.GUI_UC
                                 nafContent.SelectedPage = navThongKe;
                                 LoadUserControl(null, typeof(ThongKeMonth_UC), editFormThongKeMonth);
                                 LoadUserControl(null, typeof(ThongKeYear_UC), editFormThongKeYear);
+                                break;
+                            case "btnBanHang":
+                                nafContent.SelectedPage = navBanHang;
+                                LoadUserControl(null, typeof(BanHang_UC), editFormBanHang);
+                                 
                                 break;
                             default:
                                 throw new Exception("Unknown button.");
