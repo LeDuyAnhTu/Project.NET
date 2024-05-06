@@ -118,190 +118,208 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="card_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\card_logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="horizontalgridlinesminor_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\horizontalgridlinesminor_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="officeWorker32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\officeWorker32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shipment16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shipment16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customerService32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customerService32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="manager16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\manager16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coupon16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coupon16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="factory32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\factory32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bill32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bill32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="assignto_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\assignto_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="usergroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usergroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boproductgroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boproductgroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="supply-chain32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\supply-chain32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="business-card32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\business-card32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="invoice32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\invoice32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="numeric32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\numeric32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pass32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pass32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="assortment32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\assortment32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stand32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stand32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="key16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="assortment32_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\assortment32_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pass16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pass16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="updateKM32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\updateKM32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="svg_card_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\svg_card_logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="marketplace32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marketplace32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="taikhoannhanvien_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\taikhoannhanvien_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customerbirthday32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customerbirthday32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bar-code16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bar-code16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="taikhoannhanvienpacico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\taikhoannhanvienpacico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logosvg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logosvg.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="supplier16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\supplier16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendar32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="assortment16_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\assortment16_161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pos-terminal32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pos-terminal32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="key-to-success16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key-to-success16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="categories32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\categories32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="manager32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\manager32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyeOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyeOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dong-sign16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dong-sign16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coupon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coupon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="supply-chain16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\supply-chain16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shipment32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shipment32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="production32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\production32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eyeClosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyeClosed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="column2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\column2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="key32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="assortment16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\assortment16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dong-sign32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dong-sign32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logosvg32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logosvg32_32.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="key-to-success32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key-to-success32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="numeric16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\numeric16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="factory16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\factory16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pos-terminal16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pos-terminal16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="supplier32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\supplier32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calendar16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="coupon32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coupon32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="numeric32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numeric32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card_logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="factory16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factory16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logosvg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logosvg.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="marketplace32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marketplace32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pos-terminal16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pos-terminal16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horizontalgridlinesminor_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\horizontalgridlinesminor_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warehouse_xanh16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warehouse_xanh16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coupon16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coupon16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warehouse32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warehouse32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="updateKM32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updateKM32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shipment32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shipment32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stand32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stand32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pass16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pass16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assortment16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\assortment16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="factory32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factory32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usergroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usergroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manager32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\manager32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assortment16_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\assortment16_161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyeOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyeOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplier32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplier32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warehouse_xanh32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warehouse_xanh32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dong-sign16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dong-sign16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assignto_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\assignto_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="categories32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\categories32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar-code16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar-code16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manager16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\manager16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pass32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pass32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supply-chain16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supply-chain16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerService32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerService32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taikhoannhanvienpacico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taikhoannhanvienpacico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supply-chain32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supply-chain32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoice32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoice32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplier16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplier16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warehouse_cam16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warehouse_cam16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_card_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg_card_logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="eyeClosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyeClosed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logosvg32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logosvg32_32.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="dong-sign32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dong-sign32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business-card32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business-card32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="warehouse16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warehouse16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="warehouse32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warehouse32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="taikhoannhanvien_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taikhoannhanvien_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shipment16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shipment16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assortment32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\assortment32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key-to-success16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key-to-success16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warehouse_cam32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warehouse_cam32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pos-terminal32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pos-terminal32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerbirthday32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerbirthday32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assortment32_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\assortment32_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numeric16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numeric16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="column2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\column2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coupon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coupon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key-to-success32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key-to-success32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boproductgroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boproductgroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="production32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\production32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="officeWorker32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\officeWorker32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warehouse_nguoi16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warehouse_nguoi16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warehouse_nguoi32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warehouse_nguoi32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
