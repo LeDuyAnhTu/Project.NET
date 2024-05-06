@@ -46,5 +46,49 @@ namespace DAL.Properties {
                 return ((string)(this["QLBHXConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SOKKIMTHANH;Initial Catalog=QLBHX;Integrated Security=True;Encrypt=Tr" +
+            "ue;TrustServerCertificate=True")]
+        public string QLBHXConnectionString1 {
+            get {
+                return ((string)(this["QLBHXConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\sqlexpress;Initial Catalog=QLBHX;Integrated Security=True;Encrypt=T" +
+            "rue;TrustServerCertificate=True")]
+        public string QLBHXConnectionString2 {
+            get {
+                return ((string)(this["QLBHXConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=QLBHX;Integrated Security=True;TrustServerCertifica" +
+            "te=True")]
+        public string QLBHXConnectionString3 {
+            get {
+                return ((string)(this["QLBHXConnectionString3"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=QLBHX;Integrated Security=True;Encrypt=True;TrustSe" +
+            "rverCertificate=True")]
+        public string QLBHXConnectionString4 {
+            get {
+                return ((string)(this["QLBHXConnectionString4"]));
+            }
+        }
     }
 }

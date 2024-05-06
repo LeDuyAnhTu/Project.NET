@@ -19,7 +19,13 @@ namespace DAL
             try
             {
                 ds = from tk in db.DBO.TaiKhoans
-                     select tk;
+                     join nv in db.DBO.NhanViens on tk.maNV equals nv.maNV
+                     where tk.tenTK != "admin"
+                     select new
+                     {
+                        TênTàiKhoản = tk.tenTK,
+                        TênNhânViên = nv.tenNV,
+                     };
             }
             catch (Exception ex)
             {
@@ -102,12 +108,31 @@ namespace DAL
             }
             return result;
         }
-
+        /// <summary>
+        /// Tìm tài khoản theo mã số nhân viên
+        /// </summary>
+        /// <param name="maNV"></param>
+        /// <returns></returns>
         public TaiKhoan TimTaiKhoan_MaNV(string maNV)
         {
             try
             {
                 return db.DBO.TaiKhoans.Single(d=>d.maNV.Equals(maNV));
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Tìm tài khoản theo tên tk
+        /// </summary>
+        /// <param name="tenTK"></param>
+        /// <returns></returns>
+        public TaiKhoan_DTO timTaiKhoan_TenTK(string tenTK)
+        {
+            try{
+                TaiKhoan temp = db.DBO.TaiKhoans.Single(d => d.tenTK.Equals(tenTK));
+                return new TaiKhoan_DTO(temp.tenTK, temp.matKhau, temp.maNV);
             }catch(Exception ex)
             {
                 throw ex;

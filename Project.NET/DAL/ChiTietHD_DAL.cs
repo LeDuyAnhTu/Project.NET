@@ -18,7 +18,16 @@ namespace DAL
             IQueryable ds = null;
             try
             {
-
+                ds = from ct in db.DBO.ChiTietHDs
+                     join hd in db.DBO.HoaDons on ct.maHD equals hd.maHD
+                     join sp in db.DBO.SanPhams on ct.maSP equals sp.maSP
+                     select new
+                     {
+                         ct.maHD,
+                         sp.tenSP,
+                         ct.soLuong,
+                         ThanhTien = ct.soLuong * sp.donGia,
+                     };
             }catch(Exception ex)
             {
                 throw ex;
@@ -32,16 +41,22 @@ namespace DAL
         /// <returns></returns>
         public override bool Sua(ChiTietHD_DTO obj)
         {
-            bool result = false;
             try
             {
+                bool result = false;
 
+                ChiTietHD temp = db.DBO.ChiTietHDs.Single(d => d.maHD == obj.MaHD && d.maSP == obj.MaSP);
+                temp.soLuong = obj.SoLuong;
+
+                db.DBO.SubmitChanges();
+
+                result = true;
+                return result;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            return result;
         }
         /// <summary>
         /// Thêm chi tiết hóa đơn mới
@@ -51,7 +66,27 @@ namespace DAL
         /// <exception cref="NotImplementedException"></exception>
         public override bool Them(ChiTietHD_DTO obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool result = false;
+
+                ChiTietHD temp = new ChiTietHD()
+                {
+                    maHD = obj.MaHD,
+                    maSP = obj.MaSP,
+                    soLuong = obj.SoLuong,
+                };
+
+                db.DBO.ChiTietHDs.InsertOnSubmit(temp);
+                db.DBO.SubmitChanges();
+
+                result = true;
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         /// <summary>
         /// Xóa chi tiết hóa đơn
@@ -61,7 +96,21 @@ namespace DAL
         /// <exception cref="NotImplementedException"></exception>
         public override bool Xoa(string obj)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool result = false;
+
+                //ChiTietHD temp = db.DBO.ChiTietHDs.Single(d=>d.maHD == obj);
+                //db.DBO.ChiTietHDs.DeleteOnSubmit(temp);
+                //db.DBO.SubmitChanges();
+
+                result = true;
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

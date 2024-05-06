@@ -20,8 +20,44 @@ namespace DAL
             try
             {
                 ds = from sp in db.DBO.SanPhams
-                     select sp;
-            }catch (Exception ex)
+                     join lsp in db.DBO.LoaiSPs on sp.maLoai equals lsp.maLoai
+                     join nsx in db.DBO.NhaSanXuats on sp.maNSX equals nsx.maNSX
+                     select new
+                     {
+                         MãSố = sp.maSP,
+                         TênSảnPhẩm = sp.tenSP,
+                         Loại = lsp.tenLoai,
+                         ĐơnGiá = sp.donGia,
+                         TồnKho = sp.soLuongConLai,
+                         NSX = nsx.tenNSX,
+                     };
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+        public IQueryable LayDanhSach_TheoLoai(string maLoai)
+        {
+            IQueryable ds = null;
+            try
+            {
+                ds = from sp in db.DBO.SanPhams
+                     join lsp in db.DBO.LoaiSPs on sp.maLoai equals lsp.maLoai
+                     join nsx in db.DBO.NhaSanXuats on sp.maNSX equals nsx.maNSX
+                     where sp.maLoai.Equals(maLoai)
+                     select new
+                     {
+                         MãSố = sp.maSP,
+                         TênSảnPhẩm = sp.tenSP,
+                         Loại = lsp.tenLoai,
+                         ĐơnGiá = sp.donGia,
+                         TồnKho = sp.soLuongConLai,
+                         NSX = nsx.tenNSX,
+                     };
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -133,6 +169,56 @@ namespace DAL
                 throw ex;
             }
             return result;
+        }
+        /// <summary>
+        /// Tạo mã sản phẩm mới nối tiếp mã sản phẩm cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                //Lấy mã nhân viên cuối
+                IQueryable ds = (from sp in db.DBO.SanPhams
+                                 orderby sp.maSP descending
+                                 select sp.maSP).Take(1);
+                string maSP = "";
+                foreach (var item in ds)
+                {
+                    maSP = item.ToString();
+                }
+
+                //Lấy số tiếp theo msNV cuối
+                string maSo = maSP.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã NV mới
+                maSP = "SP" + String.Format("{0:D8}", soMoi);
+
+                return maSP;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return "SP00000001";
+            }
+        }
+        /// <summary>
+        /// Tìm sản phẩm theo mã sản phẩm
+        /// </summary>
+        /// <param name="maSP"></param>
+        /// <returns></returns>
+        public SanPham_DTO timSanPham_MaSP(string maSP)
+        {
+            try
+            {
+                SanPham temp = db.DBO.SanPhams.Single(d => d.maSP.Equals(maSP));
+                return new SanPham_DTO(temp.maSP, temp.tenSP, temp.HSD, temp.donGia, temp.soLuongConLai, temp.maLoai, temp.maNSX);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
     }
