@@ -18,13 +18,39 @@ namespace DAL
             try
             {
                 IQueryable ds = from cn in db.DBO.ChiNhanhs
+                                join nv in db.DBO.NhanViens on cn.maQL equals nv.maNV
+                                join kv in db.DBO.KhuVucs on cn.maKV equals kv.maKV
                                 select new
                                 {
-                                    cn.maCN,
-                                    cn.tenCN
+                                    MãChiNhánh = cn.maCN,
+                                    TênChiNhánh = cn.tenCN,
+                                    ĐịaChỉ = cn.diaChi,
+                                    QuảnLý = nv.tenNV,
+                                    KhuVực = kv.tenKV,
                                 };
                 return ds;
             }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Lấy danh sách chi nhánh cho các combobox
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable LayDanhSach_Combobox()
+        {
+            try
+            {
+                IQueryable ds = from cn in db.DBO.ChiNhanhs
+                                select new
+                                {
+                                    cn.maCN,
+                                    cn.tenCN,
+                                };
+                return ds;
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -109,6 +135,39 @@ namespace DAL
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+        /// <summary>
+        /// Tạo mã chi nhánh mới nối tiếp mã chi nhánh cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                //Lấy mã nhân viên cuối
+                IQueryable ds = (from cn in db.DBO.ChiNhanhs
+                                 orderby cn.maCN descending
+                                 select cn.maCN).Take(1);
+                string maCN = "";
+                foreach (var item in ds)
+                {
+                    maCN = item.ToString();
+                }
+
+                //Lấy số tiếp theo msNV cuối
+                string maSo = maCN.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã NV mới
+                maCN = "CN" + String.Format("{0:D8}", soMoi);
+
+                return maCN;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return "CN00000001";
             }
         }
     }

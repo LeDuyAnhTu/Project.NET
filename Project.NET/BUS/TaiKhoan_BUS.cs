@@ -84,5 +84,20 @@ namespace BUS
             }
             return result;
         }
+        /// <summary>
+        /// Tìm tài khoản theo tên tài khoản
+        /// </summary>
+        /// <param name="tenTK"></param>
+        /// <returns></returns>
+        public TaiKhoan_DTO timTaiKhoan_TenTK(string tenTK)
+        {
+            try
+            {
+                return db.timTaiKhoan_TenTK(tenTK);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

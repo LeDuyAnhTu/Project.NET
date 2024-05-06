@@ -78,7 +78,7 @@ namespace Project.NET.Forms
             //
             //Combobox chi nhánh
             //
-            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
+            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach_Combobox();
             cboChiNhanh.Properties.ValueMember = "maCN";
             cboChiNhanh.Properties.DisplayMember = "tenCN";
             cboChiNhanh.ItemIndex = 0; //Chọn chi nhánh mặc định
@@ -117,7 +117,7 @@ namespace Project.NET.Forms
             //
             //Chi nhánh
             //
-            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
+            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach_Combobox();
             cboChiNhanh.Properties.ValueMember = "maCN";
             cboChiNhanh.Properties.DisplayMember = "tenCN";
             cboChiNhanh.ItemIndex = 0; //Chọn chi nhánh mặc định
@@ -160,15 +160,15 @@ namespace Project.NET.Forms
             {
                 if (i >= 0)
                 {
-                    txtMaNV.Text = dgvNhanVien.GetRowCellValue(i, "maNV").ToString();
-                    txtHoTen.Text = dgvNhanVien.GetRowCellValue(i, "tenNV").ToString();
-                    txtGioiTinh.SelectedIndex = txtGioiTinh.Properties.Items[0].Description == dgvNhanVien.GetRowCellValue(i, "gioiTinh").ToString() ? 0 : 1;
-                    txtCCCD.Text = dgvNhanVien.GetRowCellValue(i, "CCCD").ToString();
-                    txtLuongNV.Text = dgvNhanVien.GetRowCellValue(i, "luong").ToString();
+                    txtMaNV.Text = dgvNhanVien.GetRowCellValue(i, "MãSố").ToString();
+                    txtHoTen.Text = dgvNhanVien.GetRowCellValue(i, "HọTên").ToString();
+                    txtGioiTinh.SelectedIndex = txtGioiTinh.Properties.Items[0].Description == dgvNhanVien.GetRowCellValue(i, "GiớiTính").ToString() ? 0 : 1;
+                    txtCCCD.Text = dgvNhanVien.GetRowCellValue(i, "CănCước").ToString();
+                    txtLuongNV.Text = dgvNhanVien.GetRowCellValue(i, "MứcLương").ToString();
 
-                    txtSoDienThoai.Text = Convert.ToString(dgvNhanVien.GetRowCellValue(i, "SDT"));
+                    txtSoDienThoai.Text = Convert.ToString(dgvNhanVien.GetRowCellValue(i, "SốĐiệnThoại"));
 
-                    txtNgaySinh.Text = Convert.ToDateTime(dgvNhanVien.GetRowCellValue(i, "ngaySinh").ToString()).ToShortDateString();
+                    txtNgaySinh.Text = Convert.ToDateTime(dgvNhanVien.GetRowCellValue(i, "NgàySinh").ToString()).ToShortDateString();
 
                     //Lấy chi nhánh của nhân viên đang chọn
                     try
@@ -177,7 +177,7 @@ namespace Project.NET.Forms
                         while (count < db_CN.LayDanhSach().Count())
                         {
                             cboChiNhanh.ItemIndex = count;
-                            if (cboChiNhanh.Text == dgvNhanVien.GetRowCellValue(i, "tenCN").ToString())
+                            if (cboChiNhanh.Text == dgvNhanVien.GetRowCellValue(i, "ChiNhánh").ToString())
                                 break;
                             count++;
                         }
@@ -194,7 +194,7 @@ namespace Project.NET.Forms
                         while (count < db_VT.LayDanhSach().Count())
                         {
                             cboViTriChucVuNhanVien.ItemIndex = count;
-                            if (cboViTriChucVuNhanVien.Text == dgvNhanVien.GetRowCellValue(i, "tenVT").ToString())
+                            if (cboViTriChucVuNhanVien.Text == dgvNhanVien.GetRowCellValue(i, "VịTrí").ToString())
                                 break;
                             count++;
                         }

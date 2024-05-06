@@ -42,6 +42,38 @@ namespace DAL
             }
         }
         /// <summary>
+        /// Lấy danh sách các nhân viên theo vị trí
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable LayDanhSach_ViTri(string maVT)
+        {
+            try
+            {
+                IQueryable ds = from nv in db.DBO.NhanViens
+                                join cn in db.DBO.ChiNhanhs on nv.maCN equals cn.maCN
+                                join vt in db.DBO.ViTris on nv.maVT equals vt.maVT
+                                where nv.maNV != "NV0" && nv.maVT.Equals(maVT)
+                                orderby nv.maNV ascending
+                                select new
+                                {
+                                    MãSố = nv.maNV,
+                                    HọTên = nv.tenNV,
+                                    CănCước = nv.CCCD,
+                                    SốĐiệnThoại = nv.SDT,
+                                    GiớiTính = nv.gioiTinh,
+                                    NgàySinh = nv.ngaySinh,
+                                    MứcLương = nv.luong,
+                                    ChiNhánh = cn.tenCN,
+                                    VịTrí = vt.tenVT
+                                };
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
         /// Thêm nhân viên mới
         /// </summary>
         /// <param name="nv"></param>
