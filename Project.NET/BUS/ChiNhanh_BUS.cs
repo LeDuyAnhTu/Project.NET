@@ -43,6 +43,16 @@ namespace BUS
                 throw ex;
             }
         }
+        public IQueryable LayDanhSach_TheoKV(string maKV)
+        {
+            try
+            {
+                return db.LayDanhSach_TheoKV(maKV);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
         /// <summary>
         /// Thêm chi nhánh mới vào hệ thống
         /// </summary>

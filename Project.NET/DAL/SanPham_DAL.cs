@@ -20,7 +20,16 @@ namespace DAL
             try
             {
                 ds = from sp in db.DBO.SanPhams
-                     select sp;
+                     join lsp in db.DBO.LoaiSPs on sp.maLoai equals lsp.maLoai
+                     join nsx in db.DBO.NhaSanXuats on sp.maNSX equals nsx.maNSX
+                     select new
+                     {
+                        MãSố = sp.maSP,
+                        TênSảnPhẩm = sp.tenSP,
+                        Loại = lsp.tenLoai,
+                        TồnKho = sp.soLuongConLai,
+                        NSX = nsx.tenNSX,
+                     };
             }catch (Exception ex)
             {
                 throw ex;

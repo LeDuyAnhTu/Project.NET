@@ -56,6 +56,29 @@ namespace DAL
             }
         }
         /// <summary>
+        /// Lấy danh sách chi nhánh theo mã khu vực
+        /// </summary>
+        /// <param name="maKV"></param>
+        /// <returns></returns>
+        public IQueryable LayDanhSach_TheoKV(string maKV)
+        {
+            try
+            {
+                IQueryable ds = from cn in db.DBO.ChiNhanhs
+                                where cn.maKV.Equals(maKV)
+                                select new
+                                {
+                                    cn.maCN,
+                                    cn.tenCN,
+                                };
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
         /// Sửa thông tin của 1 chi nhánh
         /// </summary>
         /// <param name="obj"></param>

@@ -96,6 +96,16 @@ namespace Project.NET.Forms
             //
             txtLuongNV.Value = 4000000;
 
+            //
+            //Tạo thao tác Thêm
+            //
+            dangThaoTac(false);
+        }
+        private void dangThaoTac(bool check)
+        {
+            btnThem.Enabled = !check;
+            btnCapNhat.Enabled = check;
+            btnXoa.Enabled = check;
         }
 
         //Events
@@ -134,6 +144,7 @@ namespace Project.NET.Forms
             //Mức lương
             //
             txtLuongNV.Properties.MinValue = 4000000;
+            txtLuongNV.Properties.MaxValue = 10000000;
             txtLuongNV.Properties.Increment = 500000;
             txtLuongNV.Value = 4000000;
 
@@ -147,6 +158,11 @@ namespace Project.NET.Forms
             //Giới tính
             //
             txtGioiTinh.SelectedIndex = 0;
+
+            //
+            //Khởi tạo thao tác ban đầu
+            //
+            dangThaoTac(false);
         }
         /// <summary>
         /// Click vào danh sách
@@ -205,6 +221,7 @@ namespace Project.NET.Forms
                     }
                 }
             }
+            dangThaoTac(true);
         }
         /// <summary>
         /// Nút làm mới danh sách dữ liệu đã nhập

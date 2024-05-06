@@ -56,6 +56,11 @@ namespace Project.NET.GUI_UC
             //Giờ tan ca
             //
             txtGioKT.EditValue = new DateTime(1, 1, 1, 12, 0, 0);
+
+            //
+            //Tạo thao tác ban đầu
+            //
+            dangThaotac(false);
         }
         /// <summary>
         /// Chuyển các dữ liệu trên form thành đối tượng CaLam_DTO
@@ -83,6 +88,12 @@ namespace Project.NET.GUI_UC
         private void taoIDMoi()
         {
             txtMaCaLam.Text = db_CL.taoMaMoi();
+        }
+        private void dangThaotac(bool check)
+        {
+            btnThem.Enabled = !check;
+            btnCapNhat.Enabled = check;
+            btnXoa.Enabled = check;
         }
 
         //Events
@@ -136,6 +147,7 @@ namespace Project.NET.GUI_UC
                     txtGioKT.EditValue = Convert.ToDateTime(gridView1.GetRowCellValue(i, "gioKT").ToString());
                 }
             }
+            dangThaotac(true);
         }
         /// <summary>
         /// làm mới danh sách ca làm, tạo mã ca mới và xóa dữ liệu tên, giờ vào ca, giờ tan ca

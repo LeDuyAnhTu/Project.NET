@@ -83,8 +83,8 @@
   </Table>
   <Table Name="dbo.KhoCN" Member="KhoCNs">
     <Type Name="KhoCN">
-      <Column Name="maCN" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
-      <Column Name="maSP" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maCN" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maSP" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="soLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="ChiNhanh_KhoCN" Member="ChiNhanh" ThisKey="maCN" OtherKey="maCN" Type="ChiNhanh" IsForeignKey="true" />
       <Association Name="SanPham_KhoCN" Member="SanPham" ThisKey="maSP" OtherKey="maSP" Type="SanPham" IsForeignKey="true" />
