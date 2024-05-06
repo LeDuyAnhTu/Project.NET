@@ -143,6 +143,39 @@ namespace DAL
             }
             return result;
         }
+        /// <summary>
+        /// Tạo mã sản phẩm mới nối tiếp mã sản phẩm cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                //Lấy mã nhân viên cuối
+                IQueryable ds = (from sp in db.DBO.SanPhams
+                                 orderby sp.maSP descending
+                                 select sp.maSP).Take(1);
+                string maSP = "";
+                foreach (var item in ds)
+                {
+                    maSP = item.ToString();
+                }
+
+                //Lấy số tiếp theo msNV cuối
+                string maSo = maSP.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã NV mới
+                maSP = "SP" + String.Format("{0:D8}", soMoi);
+
+                return maSP;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return "SP00000001";
+            }
+        }
 
     }
 }

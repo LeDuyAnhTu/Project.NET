@@ -11,7 +11,10 @@ namespace BUS
     public class SanPham_BUS
     {
         private static SanPham_DAL db = new SanPham_DAL();
-
+        /// <summary>
+        /// Lấy danh sách sản phẩm
+        /// </summary>
+        /// <returns></returns>
         public IQueryable LayDanhSach()
         {
             try
@@ -23,7 +26,11 @@ namespace BUS
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Thêm thông tin sản phẩm mới
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Them(SanPham_DTO o)
         {
             bool result = false;
@@ -39,7 +46,11 @@ namespace BUS
 
             return result;
         }
-
+        /// <summary>
+        /// Sửa thông tin sản phẩm
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Sua(SanPham_DTO o)
         {
             bool result = false;
@@ -54,7 +65,11 @@ namespace BUS
             }
             return result;
         }
-
+        /// <summary>
+        /// Xóa thông tin sản phẩm
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool Xoa(string id)
         {
             bool result = false;
@@ -68,6 +83,21 @@ namespace BUS
                 throw ex;
             }
             return result;
+        }
+        /// <summary>
+        /// Tạo mã sản phẩm mới
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                return db.taoMaMoi();
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+                
         }
     }
 }

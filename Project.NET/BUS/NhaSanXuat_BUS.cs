@@ -11,7 +11,10 @@ namespace BUS
     public class NhaSanXuat_BUS
     {
         private static NhaSanXuat_DAL db = new NhaSanXuat_DAL();
-
+        /// <summary>
+        /// Lấy danh sách nhà sản xuất
+        /// </summary>
+        /// <returns></returns>
         public IQueryable LayDanhSach()
         {
             try
@@ -23,7 +26,22 @@ namespace BUS
                 throw ex;
             }
         }
-
+        public IQueryable LayDanhSach_Combobox()
+        {
+            try
+            {
+                return db.LayDanhSach_Combobox();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Thêm thông tin nhà sản xuất mới
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Them(NhaSanXuat_DTO o)
         {
             bool result = false;
@@ -39,7 +57,11 @@ namespace BUS
 
             return result;
         }
-
+        /// <summary>
+        /// Sửa thông tin nhà sản xuất
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Sua(NhaSanXuat_DTO o)
         {
             bool result = false;
@@ -54,7 +76,11 @@ namespace BUS
             }
             return result;
         }
-
+        /// <summary>
+        /// Xóa thông tin nhà sản xuất
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool Xoa(string id)
         {
             bool result = false;

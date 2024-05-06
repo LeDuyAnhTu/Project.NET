@@ -26,6 +26,24 @@ namespace DAL
             }
             return ds;
         }
+        public IQueryable LayDanhSach_Combobox()
+        {
+            IQueryable ds = null;
+            try
+            {
+                ds = from nsx in db.DBO.NhaSanXuats
+                     select new
+                     {
+                         MãSố = nsx.maNSX,
+                         Tên = nsx.tenNSX,
+                     };
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
         /// <summary>
         /// Sửa thông tin của 1 nhà sản xuất
         /// </summary>

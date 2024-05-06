@@ -19,7 +19,11 @@ namespace DAL
             try
             {
                 ds = from loai in db.DBO.LoaiSPs
-                     select loai;
+                     select new
+                     {
+                         MãLoại = loai.maLoai,
+                         TênLoại = loai.tenLoai,
+                     };
             }catch (Exception ex)
             {
                 throw ex;
