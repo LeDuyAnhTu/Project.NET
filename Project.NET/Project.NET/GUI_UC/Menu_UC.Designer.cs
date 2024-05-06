@@ -46,18 +46,18 @@
             this.btnNhanVien = new DevExpress.XtraEditors.SimpleButton();
             this.btnKho = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutTaiKhoan = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutThongKe = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutBaoCao = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutNhanVien = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutKho = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutSanPham = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutKhuyenMai = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutKhachHang = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutHoaDon = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutChiNhanh = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutNhaCungCap = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutBanHang = new DevExpress.XtraLayout.LayoutControlItem();
             this.nafContent = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navThongKe = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabThongKe = new DevExpress.XtraTab.XtraTabControl();
@@ -151,18 +151,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.navbarButtonLayout)).BeginInit();
             this.navbarButtonLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutTaiKhoan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutThongKe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutBaoCao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutKho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutSanPham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutKhuyenMai)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutHoaDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutNhaCungCap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutBanHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nafContent)).BeginInit();
             this.nafContent.SuspendLayout();
             this.navThongKe.SuspendLayout();
@@ -475,7 +475,7 @@
             this.editFormThongKeNhaCungCap.SetBoundPropertyName(this.btnBanHang, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnBanHang, "");
             this.btnBanHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBanHang.ImageOptions.Image")));
-            this.btnBanHang.Location = new System.Drawing.Point(6, 218);
+            this.btnBanHang.Location = new System.Drawing.Point(6, 377);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(151, 51);
             this.btnBanHang.StyleController = this.navbarButtonLayout;
@@ -731,7 +731,7 @@
             this.editFormThongKeNhaCungCap.SetBoundPropertyName(this.btnHoaDon, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnHoaDon, "");
             this.btnHoaDon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHoaDon.ImageOptions.Image")));
-            this.btnHoaDon.Location = new System.Drawing.Point(6, 377);
+            this.btnHoaDon.Location = new System.Drawing.Point(6, 324);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(151, 51);
             this.btnHoaDon.StyleController = this.navbarButtonLayout;
@@ -923,7 +923,7 @@
             this.editFormThongKeNhaCungCap.SetBoundPropertyName(this.btnKhachHang, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnKhachHang, "");
             this.btnKhachHang.ImageOptions.Image = global::Project.NET.Properties.Resources.customerService32_32;
-            this.btnKhachHang.Location = new System.Drawing.Point(6, 324);
+            this.btnKhachHang.Location = new System.Drawing.Point(6, 271);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(151, 51);
             this.btnKhachHang.StyleController = this.navbarButtonLayout;
@@ -987,7 +987,7 @@
             this.editFormThongKeNhaCungCap.SetBoundPropertyName(this.btnKhuyenMai, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnKhuyenMai, "");
             this.btnKhuyenMai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKhuyenMai.ImageOptions.Image")));
-            this.btnKhuyenMai.Location = new System.Drawing.Point(6, 271);
+            this.btnKhuyenMai.Location = new System.Drawing.Point(6, 218);
             this.btnKhuyenMai.Name = "btnKhuyenMai";
             this.btnKhuyenMai.Size = new System.Drawing.Size(151, 51);
             this.btnKhuyenMai.StyleController = this.navbarButtonLayout;
@@ -1114,7 +1114,7 @@
             this.editFormKho.SetBoundPropertyName(this.btnNhanVien, "");
             this.editFormThongKeNhaCungCap.SetBoundPropertyName(this.btnNhanVien, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnNhanVien, "");
-            this.btnNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.ImageOptions.Image")));
+            this.btnNhanVien.ImageOptions.Image = global::Project.NET.Properties.Resources.officeWorker32_32;
             this.btnNhanVien.Location = new System.Drawing.Point(6, 59);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(151, 51);
@@ -1178,7 +1178,7 @@
             this.editFormKho.SetBoundPropertyName(this.btnKho, "");
             this.editFormThongKeNhaCungCap.SetBoundPropertyName(this.btnKho, "");
             this.editFormCaLam.SetBoundPropertyName(this.btnKho, "");
-            this.btnKho.ImageOptions.Image = global::Project.NET.Properties.Resources.warehouse32_32;
+            this.btnKho.ImageOptions.Image = global::Project.NET.Properties.Resources.warehouse_nguoi32_32;
             this.btnKho.Location = new System.Drawing.Point(6, 112);
             this.btnKho.Name = "btnKho";
             this.btnKho.Size = new System.Drawing.Size(151, 51);
@@ -1192,166 +1192,166 @@
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root.GroupBordersVisible = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem3,
-            this.layoutControlItem16,
-            this.layoutControlItem2,
-            this.layoutControlItem19,
-            this.layoutControlItem20,
-            this.layoutControlItem18,
-            this.layoutControlItem17,
-            this.layoutControlItem8,
-            this.layoutControlItem15,
-            this.layoutControlItem14,
-            this.layoutControlItem13,
-            this.layoutControlItem12});
+            this.layoutTaiKhoan,
+            this.layoutThongKe,
+            this.layoutBaoCao,
+            this.layoutNhanVien,
+            this.layoutKho,
+            this.layoutSanPham,
+            this.layoutKhuyenMai,
+            this.layoutKhachHang,
+            this.layoutHoaDon,
+            this.layoutChiNhanh,
+            this.layoutNhaCungCap,
+            this.layoutBanHang});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(163, 646);
             this.Root.TextVisible = false;
             // 
-            // layoutControlItem12
+            // layoutTaiKhoan
             // 
-            this.layoutControlItem12.Control = this.btnBanHang;
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 212);
-            this.layoutControlItem12.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem12.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem12.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem12.Text = "lcBanHang";
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem12.TextVisible = false;
+            this.layoutTaiKhoan.Control = this.btnTaiKhoan;
+            this.layoutTaiKhoan.Location = new System.Drawing.Point(0, 0);
+            this.layoutTaiKhoan.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutTaiKhoan.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutTaiKhoan.Name = "layoutTaiKhoan";
+            this.layoutTaiKhoan.Size = new System.Drawing.Size(153, 53);
+            this.layoutTaiKhoan.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutTaiKhoan.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutTaiKhoan.TextVisible = false;
             // 
-            // layoutControlItem13
+            // layoutThongKe
             // 
-            this.layoutControlItem13.Control = this.btnNhaCungCap;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 477);
-            this.layoutControlItem13.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem13.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem13.TextVisible = false;
+            this.layoutThongKe.Control = this.btnThongKe;
+            this.layoutThongKe.Location = new System.Drawing.Point(0, 583);
+            this.layoutThongKe.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutThongKe.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutThongKe.Name = "layoutThongKe";
+            this.layoutThongKe.Size = new System.Drawing.Size(153, 53);
+            this.layoutThongKe.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutThongKe.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutThongKe.TextVisible = false;
             // 
-            // layoutControlItem14
+            // layoutBaoCao
             // 
-            this.layoutControlItem14.Control = this.btnChiNhanh;
-            this.layoutControlItem14.Location = new System.Drawing.Point(0, 424);
-            this.layoutControlItem14.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem14.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem14.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem14.TextVisible = false;
+            this.layoutBaoCao.Control = this.btnBaoCao;
+            this.layoutBaoCao.Location = new System.Drawing.Point(0, 530);
+            this.layoutBaoCao.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutBaoCao.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutBaoCao.Name = "layoutBaoCao";
+            this.layoutBaoCao.Size = new System.Drawing.Size(153, 53);
+            this.layoutBaoCao.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutBaoCao.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutBaoCao.TextVisible = false;
             // 
-            // layoutControlItem15
+            // layoutNhanVien
             // 
-            this.layoutControlItem15.Control = this.btnHoaDon;
-            this.layoutControlItem15.Location = new System.Drawing.Point(0, 371);
-            this.layoutControlItem15.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem15.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem15.Name = "layoutControlItem15";
-            this.layoutControlItem15.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem15.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem15.TextVisible = false;
+            this.layoutNhanVien.Control = this.btnNhanVien;
+            this.layoutNhanVien.Location = new System.Drawing.Point(0, 53);
+            this.layoutNhanVien.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutNhanVien.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutNhanVien.Name = "layoutNhanVien";
+            this.layoutNhanVien.Size = new System.Drawing.Size(153, 53);
+            this.layoutNhanVien.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutNhanVien.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutNhanVien.TextVisible = false;
             // 
-            // layoutControlItem3
+            // layoutKho
             // 
-            this.layoutControlItem3.Control = this.btnTaiKhoan;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem3.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
+            this.layoutKho.Control = this.btnKho;
+            this.layoutKho.Location = new System.Drawing.Point(0, 106);
+            this.layoutKho.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutKho.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutKho.Name = "layoutKho";
+            this.layoutKho.Size = new System.Drawing.Size(153, 53);
+            this.layoutKho.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutKho.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutKho.TextVisible = false;
             // 
-            // layoutControlItem8
+            // layoutSanPham
             // 
-            this.layoutControlItem8.Control = this.btnKhachHang;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 318);
-            this.layoutControlItem8.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem8.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem8.TextVisible = false;
+            this.layoutSanPham.Control = this.btnSanPham;
+            this.layoutSanPham.Location = new System.Drawing.Point(0, 159);
+            this.layoutSanPham.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutSanPham.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutSanPham.Name = "layoutSanPham";
+            this.layoutSanPham.Size = new System.Drawing.Size(153, 53);
+            this.layoutSanPham.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutSanPham.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutSanPham.TextVisible = false;
             // 
-            // layoutControlItem17
+            // layoutKhuyenMai
             // 
-            this.layoutControlItem17.Control = this.btnKhuyenMai;
-            this.layoutControlItem17.Location = new System.Drawing.Point(0, 265);
-            this.layoutControlItem17.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem17.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem17.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem17.TextVisible = false;
+            this.layoutKhuyenMai.Control = this.btnKhuyenMai;
+            this.layoutKhuyenMai.Location = new System.Drawing.Point(0, 212);
+            this.layoutKhuyenMai.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutKhuyenMai.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutKhuyenMai.Name = "layoutKhuyenMai";
+            this.layoutKhuyenMai.Size = new System.Drawing.Size(153, 53);
+            this.layoutKhuyenMai.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutKhuyenMai.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutKhuyenMai.TextVisible = false;
             // 
-            // layoutControlItem18
+            // layoutKhachHang
             // 
-            this.layoutControlItem18.Control = this.btnSanPham;
-            this.layoutControlItem18.Location = new System.Drawing.Point(0, 159);
-            this.layoutControlItem18.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem18.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem18.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem18.TextVisible = false;
+            this.layoutKhachHang.Control = this.btnKhachHang;
+            this.layoutKhachHang.Location = new System.Drawing.Point(0, 265);
+            this.layoutKhachHang.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutKhachHang.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutKhachHang.Name = "layoutKhachHang";
+            this.layoutKhachHang.Size = new System.Drawing.Size(153, 53);
+            this.layoutKhachHang.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutKhachHang.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutKhachHang.TextVisible = false;
             // 
-            // layoutControlItem19
+            // layoutHoaDon
             // 
-            this.layoutControlItem19.Control = this.btnNhanVien;
-            this.layoutControlItem19.Location = new System.Drawing.Point(0, 53);
-            this.layoutControlItem19.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem19.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem19.Name = "layoutControlItem19";
-            this.layoutControlItem19.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem19.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem19.TextVisible = false;
+            this.layoutHoaDon.Control = this.btnHoaDon;
+            this.layoutHoaDon.Location = new System.Drawing.Point(0, 318);
+            this.layoutHoaDon.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutHoaDon.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutHoaDon.Name = "layoutHoaDon";
+            this.layoutHoaDon.Size = new System.Drawing.Size(153, 53);
+            this.layoutHoaDon.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutHoaDon.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutHoaDon.TextVisible = false;
             // 
-            // layoutControlItem16
+            // layoutChiNhanh
             // 
-            this.layoutControlItem16.Control = this.btnThongKe;
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 583);
-            this.layoutControlItem16.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem16.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem16.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem16.TextVisible = false;
+            this.layoutChiNhanh.Control = this.btnChiNhanh;
+            this.layoutChiNhanh.Location = new System.Drawing.Point(0, 424);
+            this.layoutChiNhanh.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutChiNhanh.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutChiNhanh.Name = "layoutChiNhanh";
+            this.layoutChiNhanh.Size = new System.Drawing.Size(153, 53);
+            this.layoutChiNhanh.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutChiNhanh.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutChiNhanh.TextVisible = false;
             // 
-            // layoutControlItem20
+            // layoutNhaCungCap
             // 
-            this.layoutControlItem20.Control = this.btnKho;
-            this.layoutControlItem20.Location = new System.Drawing.Point(0, 106);
-            this.layoutControlItem20.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem20.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem20.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem20.TextVisible = false;
+            this.layoutNhaCungCap.Control = this.btnNhaCungCap;
+            this.layoutNhaCungCap.Location = new System.Drawing.Point(0, 477);
+            this.layoutNhaCungCap.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutNhaCungCap.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutNhaCungCap.Name = "layoutNhaCungCap";
+            this.layoutNhaCungCap.Size = new System.Drawing.Size(153, 53);
+            this.layoutNhaCungCap.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutNhaCungCap.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutNhaCungCap.TextVisible = false;
             // 
-            // layoutControlItem2
+            // layoutBanHang
             // 
-            this.layoutControlItem2.Control = this.btnBaoCao;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 530);
-            this.layoutControlItem2.MaxSize = new System.Drawing.Size(0, 53);
-            this.layoutControlItem2.MinSize = new System.Drawing.Size(1, 53);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(153, 53);
-            this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
+            this.layoutBanHang.Control = this.btnBanHang;
+            this.layoutBanHang.Location = new System.Drawing.Point(0, 371);
+            this.layoutBanHang.MaxSize = new System.Drawing.Size(0, 53);
+            this.layoutBanHang.MinSize = new System.Drawing.Size(1, 53);
+            this.layoutBanHang.Name = "layoutBanHang";
+            this.layoutBanHang.Size = new System.Drawing.Size(153, 53);
+            this.layoutBanHang.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutBanHang.Text = "lcBanHang";
+            this.layoutBanHang.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutBanHang.TextVisible = false;
             // 
             // nafContent
             // 
@@ -3476,7 +3476,7 @@
             this.tabNhapTTHoaDon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNhapTTHoaDon.ImageOptions.Image")));
             this.tabNhapTTHoaDon.Name = "tabNhapTTHoaDon";
             this.tabNhapTTHoaDon.Size = new System.Drawing.Size(671, 569);
-            this.tabNhapTTHoaDon.Text = "Nhập thông tin hóa đơn";
+            this.tabNhapTTHoaDon.Text = "Nhập thông tin Bán Hàng";
             // 
             // editFormHoaDon
             // 
@@ -4350,18 +4350,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.navbarButtonLayout)).EndInit();
             this.navbarButtonLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutTaiKhoan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutThongKe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutBaoCao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutKho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutSanPham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutKhuyenMai)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutKhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutNhaCungCap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutBanHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nafContent)).EndInit();
             this.nafContent.ResumeLayout(false);
             this.navThongKe.ResumeLayout(false);
@@ -4517,29 +4517,29 @@
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
         private DevExpress.XtraEditors.SimpleButton btnBanHang;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraLayout.LayoutControlItem layoutBanHang;
         private DevExpress.XtraEditors.SimpleButton btnNhaCungCap;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
+        private DevExpress.XtraLayout.LayoutControlItem layoutNhaCungCap;
         private DevExpress.XtraEditors.SimpleButton btnTaiKhoan;
         private DevExpress.XtraEditors.SimpleButton btnChiNhanh;
         private DevExpress.XtraEditors.SimpleButton btnHoaDon;
         private DevExpress.XtraEditors.SimpleButton btnThongKe;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private DevExpress.XtraLayout.LayoutControlItem layoutTaiKhoan;
+        private DevExpress.XtraLayout.LayoutControlItem layoutChiNhanh;
+        private DevExpress.XtraLayout.LayoutControlItem layoutHoaDon;
+        private DevExpress.XtraLayout.LayoutControlItem layoutThongKe;
         private DevExpress.XtraEditors.SimpleButton btnBaoCao;
         private DevExpress.XtraEditors.SimpleButton btnKhachHang;
         private DevExpress.XtraEditors.SimpleButton btnKhuyenMai;
         private DevExpress.XtraEditors.SimpleButton btnSanPham;
         private DevExpress.XtraEditors.SimpleButton btnNhanVien;
         private DevExpress.XtraEditors.SimpleButton btnKho;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
+        private DevExpress.XtraLayout.LayoutControlItem layoutBaoCao;
+        private DevExpress.XtraLayout.LayoutControlItem layoutKhachHang;
+        private DevExpress.XtraLayout.LayoutControlItem layoutKhuyenMai;
+        private DevExpress.XtraLayout.LayoutControlItem layoutSanPham;
+        private DevExpress.XtraLayout.LayoutControlItem layoutNhanVien;
+        private DevExpress.XtraLayout.LayoutControlItem layoutKho;
         private DevExpress.XtraGrid.Views.Grid.EditFormUserControl editFormBanHang;
         private DevExpress.XtraBars.Navigation.NavigationPage navBanHang;
         private DevExpress.XtraTab.XtraTabControl tabBanHang;
