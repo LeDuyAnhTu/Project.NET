@@ -8,15 +8,16 @@ namespace Project.NET
 {
     public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
-        
-        frmLogin frmLogin = null;
+
+        //Chuyển đến form khác sau khi đăng nhập thành công
+        frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
+
         /// <summary>
         /// Khởi tạo form
         /// </summary>
         public frmMain()
         {
-            InitializeComponent();
-            this.IsMdiContainer = true;
+            InitializeComponent(); 
         }
         /// <summary>
         /// Tải form
@@ -24,12 +25,8 @@ namespace Project.NET
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void frmMain_Load(object sender, EventArgs e)
-        {  
-            // Tạo và hiển thị frmLogin 
-            frmLogin = new frmLogin();
-            frmLogin.MdiParent = this;
-            frmLogin.Dock = DockStyle.Fill;
-            frmLogin.Show();
+        {
+            LoadUserControl(null, typeof(Login_UC), this);
         }
 
         /// <summary>
@@ -99,6 +96,16 @@ namespace Project.NET
             }
 
             base.WndProc(ref m);
+        }
+        private void LoadUserControl(UserControl userControl, Type type, Control container)
+        {
+            if (userControl == null)
+            {
+                userControl = (UserControl)Activator.CreateInstance(type);
+                userControl.Dock = DockStyle.Fill;
+                container.Dock = DockStyle.Fill;
+                container.Controls.Add(userControl);
+            }
         }
     }
 }

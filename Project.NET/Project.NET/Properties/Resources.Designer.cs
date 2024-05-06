@@ -73,6 +73,46 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap assortment16_16 {
+            get {
+                object obj = ResourceManager.GetObject("assortment16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap assortment16_161 {
+            get {
+                object obj = ResourceManager.GetObject("assortment16_161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap assortment32_32 {
+            get {
+                object obj = ResourceManager.GetObject("assortment32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap assortment32_321 {
+            get {
+                object obj = ResourceManager.GetObject("assortment32_321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bar_code16_16 {
             get {
                 object obj = ResourceManager.GetObject("bar-code16_16", resourceCulture);
@@ -313,6 +353,26 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap key_to_success16_16 {
+            get {
+                object obj = ResourceManager.GetObject("key-to-success16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap key_to_success32_32 {
+            get {
+                object obj = ResourceManager.GetObject("key-to-success32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key16_16 {
             get {
                 object obj = ResourceManager.GetObject("key16_16", resourceCulture);
@@ -453,6 +513,26 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pos_terminal16_16 {
+            get {
+                object obj = ResourceManager.GetObject("pos-terminal16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pos_terminal32_32 {
+            get {
+                object obj = ResourceManager.GetObject("pos-terminal32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap production32_32 {
             get {
                 object obj = ResourceManager.GetObject("production32_32", resourceCulture);
@@ -486,6 +566,26 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap stand32_32 {
             get {
                 object obj = ResourceManager.GetObject("stand32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap supplier16_16 {
+            get {
+                object obj = ResourceManager.GetObject("supplier16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap supplier32_32 {
+            get {
+                object obj = ResourceManager.GetObject("supplier32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -556,6 +656,26 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap usergroup_32x32 {
             get {
                 object obj = ResourceManager.GetObject("usergroup_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warehouse16_16 {
+            get {
+                object obj = ResourceManager.GetObject("warehouse16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warehouse32_32 {
+            get {
+                object obj = ResourceManager.GetObject("warehouse32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -53,11 +53,14 @@
             this.layoutTxtHoTen = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtNgaySinh = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutSDT = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutChiNhanh = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutViTri = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutLuong = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTxtGioiTinh = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutCCCD = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutLuong = new DevExpress.XtraLayout.LayoutControlItem();
+            this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
+            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
+            this.layoutChiNhanh = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutViTri = new DevExpress.XtraLayout.LayoutControlItem();
+            this.splitterItem3 = new DevExpress.XtraLayout.SplitterItem();
             this.CRUD = new DevExpress.XtraLayout.LayoutControlGroup();
             this.Them = new DevExpress.XtraLayout.LayoutControlItem();
             this.CapNhat = new DevExpress.XtraLayout.LayoutControlItem();
@@ -65,9 +68,6 @@
             this.Xoa = new DevExpress.XtraLayout.LayoutControlItem();
             this.LIST = new DevExpress.XtraLayout.LayoutControlItem();
             this.TITLE = new DevExpress.XtraLayout.LayoutControlItem();
-            this.splitterItem1 = new DevExpress.XtraLayout.SplitterItem();
-            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
-            this.splitterItem3 = new DevExpress.XtraLayout.SplitterItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupDanhSachNhanVien)).BeginInit();
@@ -90,11 +90,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutSDT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).BeginInit();
@@ -102,9 +105,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TITLE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // TieuDeUC
@@ -304,6 +304,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboViTriChucVuNhanVien.Properties.NullText = "";
             this.cboViTriChucVuNhanVien.Properties.PopupSizeable = false;
+            this.cboViTriChucVuNhanVien.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboViTriChucVuNhanVien.Size = new System.Drawing.Size(838, 26);
             this.cboViTriChucVuNhanVien.StyleController = this.layoutNhanVien;
             this.cboViTriChucVuNhanVien.TabIndex = 14;
@@ -583,6 +584,54 @@
             this.layoutSDT.Text = "Số Điện thoại:";
             this.layoutSDT.TextSize = new System.Drawing.Size(125, 32);
             // 
+            // layoutTxtGioiTinh
+            // 
+            this.layoutTxtGioiTinh.Control = this.txtGioiTinh;
+            this.layoutTxtGioiTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtGioiTinh.ImageOptions.Image")));
+            this.layoutTxtGioiTinh.Location = new System.Drawing.Point(250, 68);
+            this.layoutTxtGioiTinh.Name = "layoutTxtGioiTinh";
+            this.layoutTxtGioiTinh.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutTxtGioiTinh.Size = new System.Drawing.Size(259, 34);
+            this.layoutTxtGioiTinh.Text = "Giới tính:";
+            this.layoutTxtGioiTinh.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // layoutCCCD
+            // 
+            this.layoutCCCD.Control = this.txtCCCD;
+            this.layoutCCCD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutCCCD.ImageOptions.Image")));
+            this.layoutCCCD.Location = new System.Drawing.Point(517, 68);
+            this.layoutCCCD.Name = "layoutCCCD";
+            this.layoutCCCD.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutCCCD.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutCCCD.Size = new System.Drawing.Size(225, 34);
+            this.layoutCCCD.Text = "CCCD:";
+            this.layoutCCCD.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // layoutLuong
+            // 
+            this.layoutLuong.Control = this.txtLuongNV;
+            this.layoutLuong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutLuong.ImageOptions.Image")));
+            this.layoutLuong.Location = new System.Drawing.Point(750, 68);
+            this.layoutLuong.Name = "layoutLuong";
+            this.layoutLuong.OptionsTableLayoutItem.RowIndex = 2;
+            this.layoutLuong.Size = new System.Drawing.Size(219, 34);
+            this.layoutLuong.Text = "Lương";
+            this.layoutLuong.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // splitterItem1
+            // 
+            this.splitterItem1.AllowHotTrack = true;
+            this.splitterItem1.Location = new System.Drawing.Point(242, 68);
+            this.splitterItem1.Name = "splitterItem1";
+            this.splitterItem1.Size = new System.Drawing.Size(8, 34);
+            // 
+            // splitterItem2
+            // 
+            this.splitterItem2.AllowHotTrack = true;
+            this.splitterItem2.Location = new System.Drawing.Point(509, 68);
+            this.splitterItem2.Name = "splitterItem2";
+            this.splitterItem2.Size = new System.Drawing.Size(8, 34);
+            // 
             // layoutChiNhanh
             // 
             this.layoutChiNhanh.Control = this.cboChiNhanh;
@@ -607,39 +656,12 @@
             this.layoutViTri.Text = "Vị trí (Chức vụ NV)";
             this.layoutViTri.TextSize = new System.Drawing.Size(125, 32);
             // 
-            // layoutLuong
+            // splitterItem3
             // 
-            this.layoutLuong.Control = this.txtLuongNV;
-            this.layoutLuong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutLuong.ImageOptions.Image")));
-            this.layoutLuong.Location = new System.Drawing.Point(750, 68);
-            this.layoutLuong.Name = "layoutLuong";
-            this.layoutLuong.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutLuong.Size = new System.Drawing.Size(219, 34);
-            this.layoutLuong.Text = "Lương";
-            this.layoutLuong.TextSize = new System.Drawing.Size(125, 32);
-            // 
-            // layoutTxtGioiTinh
-            // 
-            this.layoutTxtGioiTinh.Control = this.txtGioiTinh;
-            this.layoutTxtGioiTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtGioiTinh.ImageOptions.Image")));
-            this.layoutTxtGioiTinh.Location = new System.Drawing.Point(250, 68);
-            this.layoutTxtGioiTinh.Name = "layoutTxtGioiTinh";
-            this.layoutTxtGioiTinh.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutTxtGioiTinh.Size = new System.Drawing.Size(259, 34);
-            this.layoutTxtGioiTinh.Text = "Giới tính:";
-            this.layoutTxtGioiTinh.TextSize = new System.Drawing.Size(125, 32);
-            // 
-            // layoutCCCD
-            // 
-            this.layoutCCCD.Control = this.txtCCCD;
-            this.layoutCCCD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutCCCD.ImageOptions.Image")));
-            this.layoutCCCD.Location = new System.Drawing.Point(517, 68);
-            this.layoutCCCD.Name = "layoutCCCD";
-            this.layoutCCCD.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutCCCD.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutCCCD.Size = new System.Drawing.Size(225, 34);
-            this.layoutCCCD.Text = "CCCD:";
-            this.layoutCCCD.TextSize = new System.Drawing.Size(125, 32);
+            this.splitterItem3.AllowHotTrack = true;
+            this.splitterItem3.Location = new System.Drawing.Point(742, 68);
+            this.splitterItem3.Name = "splitterItem3";
+            this.splitterItem3.Size = new System.Drawing.Size(8, 34);
             // 
             // CRUD
             // 
@@ -728,27 +750,6 @@
             this.TITLE.TextSize = new System.Drawing.Size(0, 0);
             this.TITLE.TextVisible = false;
             // 
-            // splitterItem1
-            // 
-            this.splitterItem1.AllowHotTrack = true;
-            this.splitterItem1.Location = new System.Drawing.Point(242, 68);
-            this.splitterItem1.Name = "splitterItem1";
-            this.splitterItem1.Size = new System.Drawing.Size(8, 34);
-            // 
-            // splitterItem2
-            // 
-            this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(509, 68);
-            this.splitterItem2.Name = "splitterItem2";
-            this.splitterItem2.Size = new System.Drawing.Size(8, 34);
-            // 
-            // splitterItem3
-            // 
-            this.splitterItem3.AllowHotTrack = true;
-            this.splitterItem3.Location = new System.Drawing.Point(742, 68);
-            this.splitterItem3.Name = "splitterItem3";
-            this.splitterItem3.Size = new System.Drawing.Size(8, 34);
-            // 
             // NhanVien_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -779,11 +780,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtHoTen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtNgaySinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutSDT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTxtGioiTinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCCCD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutLuong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutChiNhanh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViTri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).EndInit();
@@ -791,9 +795,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Xoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LIST)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TITLE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem3)).EndInit();
             this.ResumeLayout(false);
 
         }
