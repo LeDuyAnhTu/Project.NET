@@ -1,5 +1,7 @@
-﻿using DevExpress.XtraEditors;
+﻿using BUS;
+using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +15,12 @@ using System.Windows.Forms;
 namespace Project.NET.GUI_UC
 {
     public partial class Login_UC : DevExpress.XtraEditors.XtraUserControl
-    { 
-
+    {
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
     
+        //Properties
+        private TaiKhoan_BUS db_TK = new TaiKhoan_BUS();
 
         public Login_UC()
         {
@@ -53,6 +56,8 @@ namespace Project.NET.GUI_UC
                 }
             };
         }
+
+        //Events
         /// <summary>
         /// Hiệu ứng fade cho việc đăng nhập
         /// </summary>
@@ -63,24 +68,40 @@ namespace Project.NET.GUI_UC
             //chặn bấm liên tục vào nút đăng nhập gây lỗi hệ thống
             btnDangNhap.Enabled = false;
 
-            WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-            await waitFormManager.ShowWaitForm(() => {
 
-                // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
-                this.Invoke((MethodInvoker)delegate
+            try
+            {
+                TaiKhoan_DTO tk = db_TK.timTaiKhoan_TenTK(txtTenDangNhap.Text);
+                if (txtMatKhau.Text.Equals(tk.MatKhau.Trim()))
                 {
+                    WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
+                    await waitFormManager.ShowWaitForm(() => {
 
-                    // Gỡ UserControl khỏi container
-                    frmMainn.Controls.Remove(this);
+                        // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
+                        this.Invoke((MethodInvoker)delegate
+                        {
 
-                    // Giải phóng tài nguyên
-                    this.Dispose();
+                            // Gỡ UserControl khỏi container
+                            frmMainn.Controls.Remove(this);
 
-                    LoadUserControl(null, typeof(Menu_UC), frmMainn);
-                });
-                return Task.CompletedTask;
-            });
+                            // Giải phóng tài nguyên
+                            this.Dispose();
 
+                            LoadUserControl(null, typeof(Menu_UC), frmMainn);
+                        });
+                        frmMain.maNV = tk.MaNV;
+                        return Task.CompletedTask;
+                    });
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Đăng nhập thất bại","Thông báo");
+            }
             btnDangNhap.Enabled = true;
         }
         private void LoadUserControl(UserControl userControl, Type type, Control container)
@@ -92,6 +113,15 @@ namespace Project.NET.GUI_UC
                 container.Dock = DockStyle.Fill;
                 container.Controls.Add(userControl);
             }
+        }
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter)
+            {
+                btnDangNhap.PerformClick();
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 }
