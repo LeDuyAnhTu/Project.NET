@@ -24,10 +24,16 @@ namespace DTO
             try
             {
                 IQueryable ds = from cl in db.DBO.CaLams
-                                select cl;
+                                select new
+                                {
+                                    cl.maCa,
+                                    cl.tenCa,
+                                    cl.gioBD,
+                                    cl.gioKT
+                                };
                 return ds;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -52,9 +58,21 @@ namespace DTO
                 flg = true;
                 return flg;
 
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
-                throw ex;
+                if (ex.Message.Contains("contains no elements"))
+                {
+                    throw new Exception("Ca làm " + obj.MaCa + " không có trong hệ thống");
+                }
+                else if (ex.Message.Contains("UNIQUE"))
+                {
+                    throw new Exception("Ca làm " + obj.MaCa + " có giờ làm trùng với ca làm khác trong danh sách");
+                }
+                else
+                {
+                    throw ex;
+                }
             }
         }
         /// <summary>
@@ -84,7 +102,14 @@ namespace DTO
             }
             catch (Exception ex)
             {
-                throw ex;
+                if (ex.Message.Contains("PRIMARY"))
+                {
+                    throw new Exception("Đã có ca làm mã " + obj.MaCa.Trim() + " trong danh sách");
+                }
+                else
+                {
+                    throw ex;
+                }
             }
         }
         /// <summary>
@@ -104,6 +129,56 @@ namespace DTO
 
                 flg = true;
                 return flg;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Tạo mã ca mới nối tiếp mã ca cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                //Lấy mã nhân viên cuối
+                IQueryable ds = (from cl in db.DBO.CaLams
+                                 orderby cl.maCa descending
+                                 select cl.maCa).Take(1);
+                string maCa = "";
+                foreach (var item in ds)
+                {
+                    maCa = item.ToString();
+                }
+
+                //Lấy số tiếp theo msNV cuối
+                string maSo = maCa.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã NV mới
+                maCa = "CL" + String.Format("{0:D2}", soMoi);
+
+                return maCa;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return "CL01";
+            }
+        }
+        /// <summary>
+        /// Lấy giờ bắt đầu và kết thúc ca theo mã ca
+        /// </summary>
+        /// <param name="maCa"></param>
+        /// <returns></returns>
+        public CaLam_DTO gioLamViec(string maCa)
+        {
+            try
+            {
+                CaLam cl = db.DBO.CaLams.Single(d => d.maCa.Equals(maCa));
+                return new CaLam_DTO(cl.maCa, cl.tenCa, cl.gioBD, cl.gioKT);
             }
             catch (Exception ex)
             {

@@ -172,6 +172,9 @@ add constraint pk_khuyenmai primary key (maKM)
 go
 alter table ChiTietCC
 add constraint pk_chitietcc primary key (maCC)
+go
+alter table KhoCN
+add constraint pk_KhoCN primary key (maCN,maSP)
 
 ------------------------------fOREIGN KEYS------------------------------
 go 
@@ -239,6 +242,12 @@ add constraint uk_taikhoan unique (maNV)
 go
 alter table NhanVien
 add constraint uk_nhanvien unique (CCCD)
+go
+alter table CaLam
+add constraint uk_calam unique (gioBD,gioKT)
+--go
+--alter table KhoCn
+--add constraint uk_kho unique (maCN,maSP)
 
 ------------------------------CHECK KEYS------------------------------
 go

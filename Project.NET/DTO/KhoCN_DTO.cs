@@ -70,6 +70,10 @@ namespace DTO
             get => soLuong;
             set
             {
+                if(value == null)
+                {
+                    throw new Exception("Vui lòng nhập số lượng");
+                }
                 if (value < 0)
                 {
                     throw new ArgumentOutOfRangeException("Số lượng không thể nhỏ hơn 0!");

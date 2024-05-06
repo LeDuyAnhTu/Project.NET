@@ -68,14 +68,11 @@ namespace DTO
             {
                 if (value != null)
                 {
-                    if (!checkTimeFormat(value))
-                    {
-                        throw new Exception("Giờ bắt đầu không hợp lệ (ví dụ: 16:00 hoặc 1600) ");
-                    }
-                    else
-                    {
-                        gioBD = toTimeFormat(value);
-                    }
+                    gioBD = value;
+                }
+                else
+                {
+                    throw new Exception("Vui lòng chọn giờ vào ca");
                 }
             }
         }
@@ -86,77 +83,14 @@ namespace DTO
             {
                 if (value != null)
                 {
-                    if (!checkTimeFormat(value))
-                    {
-                        throw new Exception("Giờ bắt đầu không hợp lệ (ví dụ: 16:00 hoặc 1600) ");
-                    }
-                    else
-                    {
-                        gioBD = toTimeFormat(value);
-                    }
+                    gioKT = value;
                 }
-                gioKT = value;
+                else
+                {
+                    throw new Exception("Vui lòng chọn giờ tan ca");
+                }
             }
         }
 
-        //Methods
-        private bool checkTimeFormat(string time)
-        {
-            bool isTime = true;
-            if (time.Length == 5)
-            {
-                for (int i = 0; i < time.Length; i++)
-                {
-                    if (i == 2)
-                    {
-                        if (time[i] == ':')
-                        {
-                            continue;
-                        }
-                        else
-                        {
-                            isTime = false;
-                            break;
-                        }
-                    }
-                    if (!char.IsDigit(time[i]))
-                    {
-                        isTime = false;
-                        break;
-                    }
-                }
-            }
-            else if (time.Length == 4)
-            {
-                foreach (char item in time)
-                {
-                    if (!char.IsDigit(item))
-                    {
-                        isTime = false;
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                isTime = false;
-            }
-            return isTime;
-        }
-        private string toTimeFormat(string value)
-        {
-            if (checkTimeFormat(value))
-            {
-                if (value.Length == 4)
-                {
-                    return value.Substring(0, 2) + ":" + value.Substring(2, 2);
-                }
-                return value;
-            }
-            else
-            {
-                throw new Exception("Giờ bắt đầu không hợp lệ (ví dụ: 16:00 hoặc 1600) ");
-            }
-        }
     }
 }

@@ -13,10 +13,9 @@ namespace DTO
 {
     public class PhanCong_DTO
     {
-        private string maNV , maCa;
-        private DateTime ngayDiLam;
+        private string maNV , maCa, ngayDiLam;
 
-        public PhanCong_DTO(string maNV, DateTime ngayDiLam, string maCa)
+        public PhanCong_DTO(string maNV, string ngayDiLam, string maCa)
         {
             MaNV = maNV;
             NgayDiLam = ngayDiLam;
@@ -43,25 +42,11 @@ namespace DTO
             }
         }
 
-        public DateTime NgayDiLam
+        public string NgayDiLam
         {
             get => ngayDiLam;
             set
             {
-                try
-                {
-                    // Kiểm tra xem giá trị có phải là ngày tháng hợp lệ không
-                    if (value.Year < 1 || value.Year > 9999)
-                        throw new ArgumentOutOfRangeException("Năm không hợp lệ!");
-                    else if (value.Month < 1 || value.Month > 12)
-                        throw new ArgumentOutOfRangeException("Tháng không hợp lệ!");
-                    else if (value.Day < 1 || value.Day > 31)
-                        throw new ArgumentOutOfRangeException("Ngày không hợp lệ!");
-                }
-                catch (ArgumentOutOfRangeException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
                 ngayDiLam = value;
             }
         }

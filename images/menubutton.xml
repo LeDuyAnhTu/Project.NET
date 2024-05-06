@@ -1,0 +1,39 @@
+﻿<XtraSerializer version="1.0" application="Appearances">
+  <property name="AppearanceDisabled" iskey="true" value="AppearanceDisabled">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+      <property name="UseFont">true</property>
+    </property>
+    <property name="ForeColor">@Warning</property>
+    <property name="BorderColor">GradientActiveCaption</property>
+    <property name="BackColor">Highlight</property>
+    <property name="Font">Tahoma, 12pt, style=Bold</property>
+    <property name="FontStyleDelta">Bold</property>
+  </property>
+  <property name="AppearancePressed" iskey="true" value="AppearancePressed">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+      <property name="UseFont">true</property>
+    </property>
+    <property name="ForeColor">@WindowText</property>
+    <property name="BorderColor">ActiveCaption</property>
+    <property name="BackColor">Highlight</property>
+    <property name="Font">Tahoma, 12pt, style=Bold</property>
+  </property>
+  <property name="AppearanceHovered" iskey="true" value="AppearanceHovered">
+    <property name="Options" isnull="true" iskey="true">
+      <property name="UseForeColor">true</property>
+      <property name="UseBorderColor">true</property>
+      <property name="UseBackColor">true</property>
+      <property name="UseFont">true</property>
+    </property>
+    <property name="ForeColor">@Warning</property>
+    <property name="BorderColor">ActiveCaption</property>
+    <property name="BackColor">Highlight</property>
+    <property name="Font">Tahoma, 12pt, style=Bold</property>
+  </property>
+</XtraSerializer>
