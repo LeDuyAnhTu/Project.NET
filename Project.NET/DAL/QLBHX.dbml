@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLBHX" Class="QLBHXDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=QLBHX;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QLBHXConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=QLBHX;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QLBHXConnectionString2" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CaLam" Member="CaLams">
     <Type Name="CaLam">
       <Column Name="maCa" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -83,8 +83,8 @@
   </Table>
   <Table Name="dbo.KhoCN" Member="KhoCNs">
     <Type Name="KhoCN">
-      <Column Name="maCN" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
-      <Column Name="maSP" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maCN" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maSP" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="soLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="ChiNhanh_KhoCN" Member="ChiNhanh" ThisKey="maCN" OtherKey="maCN" Type="ChiNhanh" IsForeignKey="true" />
       <Association Name="SanPham_KhoCN" Member="SanPham" ThisKey="maSP" OtherKey="maSP" Type="SanPham" IsForeignKey="true" />

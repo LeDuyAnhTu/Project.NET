@@ -18,8 +18,13 @@ namespace DAL
             IQueryable ds = null;
             try
             {
-                ds = from qtc in db.DBO.ViTris
-                     select qtc;
+                ds = from vt in db.DBO.ViTris
+                     where vt.maVT != "VT00"
+                     select new
+                     {
+                         MãSố = vt.maVT,
+                         TênVịTrí = vt.tenVT
+                     };
             }catch(Exception ex)
             {
                 throw ex;
@@ -94,6 +99,53 @@ namespace DAL
                 throw ex;
             }
             return result;
+        }
+        /// <summary>
+        /// Tìm vị trí làm việc trong hệ thống theo mã vị trí
+        /// </summary>
+        /// <param name="maVT"></param>
+        /// <returns></returns>
+        public ViTri_DTO timTheoMa(string maVT)
+        {
+            try
+            {
+                ViTri vt = db.DBO.ViTris.Single(d=>d.maVT.Equals(maVT));
+                return new ViTri_DTO(vt.maVT, vt.tenVT);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Tạo mã vị trí mới 
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            string maVT = "VT01";
+            try
+            {
+                //Lấy mã vị trí cuối
+                IQueryable ds = (from vt in db.DBO.ViTris
+                                 orderby vt.maVT descending
+                                 select vt.maVT).Take(1);
+                foreach (var item in ds)
+                {
+                    maVT = item.ToString();
+                }
+
+                //Lấy số tiếp theo maVT cuối
+                string maSo = maVT.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã vị trí mới
+                maVT = "VT" + String.Format("{0:D2}", soMoi);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return maVT;
         }
     }
 }

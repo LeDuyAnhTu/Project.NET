@@ -74,18 +74,7 @@ namespace DTO
             get => gioiTinh;
             set
             {
-                if (value != null && value.Length != 3)
-                {
-                    throw new Exception("Giới tính phải có 3 ký tự !");
-                }
-                else if (value == null)
-                {
-                    throw new Exception("Vui lòng nhập giới tính !");
-                }
-                else
-                {
-                    gioiTinh = value;
-                }
+                gioiTinh = value;
             }
         }
 
@@ -122,10 +111,6 @@ namespace DTO
                 if (value != null && value.Length != 10)
                 {
                     throw new Exception("SDT phải có 10 ký tự !");
-                }
-                else if (value == null)
-                {
-                    throw new Exception("Vui lòng nhập SDT !");
                 }
                 else
                 {
@@ -175,18 +160,7 @@ namespace DTO
             get => maCN;
             set
             {
-                if (value != null && value.Length > 10)
-                {
-                    throw new Exception("Mã CN tối đa 10 ký tự !");
-                }
-                else if (value == null)
-                {
-                    throw new Exception("Vui lòng nhập mã CN !");
-                }
-                else
-                {
-                    maCN = value;
-                }
+                maCN = value;
             }
         }
 
