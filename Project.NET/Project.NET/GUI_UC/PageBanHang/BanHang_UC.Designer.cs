@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "BanHang_UC";
-            this.Size = new System.Drawing.Size(861, 598);
+            this.Size = new System.Drawing.Size(823, 617);
             this.ResumeLayout(false);
 
         }
