@@ -28,6 +28,22 @@ namespace BUS
             }
         }
         /// <summary>
+        /// Lấy danh sách nhân viên theo mã vị trí
+        /// </summary>
+        /// <param name="maVT"></param>
+        /// <returns></returns>
+        public IQueryable LayDanhSach_ViTri(string maVT)
+        {
+            try
+            {
+                return nv.LayDanhSach_ViTri(maVT);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
         /// Thêm nhân viên mới vào hệ thống và tạo tài khoản mới cho nhân viên đó
         /// </summary>
         /// <param name="nhanVien"></param>
