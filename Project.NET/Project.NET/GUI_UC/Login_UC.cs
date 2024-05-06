@@ -164,6 +164,7 @@ namespace Project.NET.GUI_UC
                     catch (Exception ex)
                     {
                         // Xử lý lỗi ở đây
+                        MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 MessageBox.Show("Đã lấy được danh sách database name", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
