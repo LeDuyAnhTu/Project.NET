@@ -39,7 +39,7 @@ namespace Project.NET.GUI_UC
                     "Series Tổng nhân viên theo Chi Nhánh",
                     "Chi nhánh",
                     "Tổng số nhân viên",
-                    "Thống kê Tông số NV Theo Chi Nhánh");
+                    "Thống kê tổng số NV Theo Chi Nhánh");
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace Project.NET.GUI_UC
                                 "Series Tổng nhân viên theo Chi Nhánh",
                                 "Chi nhánh",
                                 "Tổng số nhân viên",
-                                "Thống kê Tông số NV Theo Chi Nhánh");
+                                "Thống kê tổng số NV Theo Chi Nhánh");
                         break;
                     
                     default:

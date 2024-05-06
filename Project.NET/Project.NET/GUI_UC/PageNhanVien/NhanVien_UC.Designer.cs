@@ -311,7 +311,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboViTriChucVuNhanVien.Properties.NullText = "";
             this.cboViTriChucVuNhanVien.Properties.PopupSizeable = false;
-            this.cboViTriChucVuNhanVien.Size = new System.Drawing.Size(979, 30);
+            this.cboViTriChucVuNhanVien.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboViTriChucVuNhanVien.Size = new System.Drawing.Size(838, 26);
             this.cboViTriChucVuNhanVien.StyleController = this.layoutNhanVien;
             this.cboViTriChucVuNhanVien.TabIndex = 14;
             // 
@@ -639,6 +640,54 @@
             this.splitterItem2.Name = "splitterItem2";
             this.splitterItem2.Size = new System.Drawing.Size(8, 38);
             // 
+            // layoutTxtGioiTinh
+            // 
+            this.layoutTxtGioiTinh.Control = this.txtGioiTinh;
+            this.layoutTxtGioiTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutTxtGioiTinh.ImageOptions.Image")));
+            this.layoutTxtGioiTinh.Location = new System.Drawing.Point(250, 68);
+            this.layoutTxtGioiTinh.Name = "layoutTxtGioiTinh";
+            this.layoutTxtGioiTinh.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutTxtGioiTinh.Size = new System.Drawing.Size(259, 34);
+            this.layoutTxtGioiTinh.Text = "Giới tính:";
+            this.layoutTxtGioiTinh.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // layoutCCCD
+            // 
+            this.layoutCCCD.Control = this.txtCCCD;
+            this.layoutCCCD.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutCCCD.ImageOptions.Image")));
+            this.layoutCCCD.Location = new System.Drawing.Point(517, 68);
+            this.layoutCCCD.Name = "layoutCCCD";
+            this.layoutCCCD.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutCCCD.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutCCCD.Size = new System.Drawing.Size(225, 34);
+            this.layoutCCCD.Text = "CCCD:";
+            this.layoutCCCD.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // layoutLuong
+            // 
+            this.layoutLuong.Control = this.txtLuongNV;
+            this.layoutLuong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutLuong.ImageOptions.Image")));
+            this.layoutLuong.Location = new System.Drawing.Point(750, 68);
+            this.layoutLuong.Name = "layoutLuong";
+            this.layoutLuong.OptionsTableLayoutItem.RowIndex = 2;
+            this.layoutLuong.Size = new System.Drawing.Size(219, 34);
+            this.layoutLuong.Text = "Lương";
+            this.layoutLuong.TextSize = new System.Drawing.Size(125, 32);
+            // 
+            // splitterItem1
+            // 
+            this.splitterItem1.AllowHotTrack = true;
+            this.splitterItem1.Location = new System.Drawing.Point(242, 68);
+            this.splitterItem1.Name = "splitterItem1";
+            this.splitterItem1.Size = new System.Drawing.Size(8, 34);
+            // 
+            // splitterItem2
+            // 
+            this.splitterItem2.AllowHotTrack = true;
+            this.splitterItem2.Location = new System.Drawing.Point(509, 68);
+            this.splitterItem2.Name = "splitterItem2";
+            this.splitterItem2.Size = new System.Drawing.Size(8, 34);
+            // 
             // layoutChiNhanh
             // 
             this.layoutChiNhanh.Control = this.cboChiNhanh;
@@ -661,14 +710,14 @@
             this.layoutViTri.OptionsTableLayoutItem.RowIndex = 3;
             this.layoutViTri.Size = new System.Drawing.Size(1130, 34);
             this.layoutViTri.Text = "Vị trí (Chức vụ NV)";
-            this.layoutViTri.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutViTri.TextSize = new System.Drawing.Size(125, 32);
             // 
             // splitterItem3
             // 
             this.splitterItem3.AllowHotTrack = true;
-            this.splitterItem3.Location = new System.Drawing.Point(864, 68);
+            this.splitterItem3.Location = new System.Drawing.Point(742, 68);
             this.splitterItem3.Name = "splitterItem3";
-            this.splitterItem3.Size = new System.Drawing.Size(8, 38);
+            this.splitterItem3.Size = new System.Drawing.Size(8, 34);
             // 
             // CRUD
             // 

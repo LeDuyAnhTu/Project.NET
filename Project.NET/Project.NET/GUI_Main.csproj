@@ -118,18 +118,6 @@
     <Compile Include="ExtensionMethods\ChartControlExtensions.cs" />
     <Compile Include="ExtensionMethods\EditTextExtensions.cs" />
     <Compile Include="ExtensionMethods\SimpleButtonExtensions.cs" />
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMenu.Designer.cs">
-      <DependentUpon>frmMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmWaiting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +129,24 @@
     </Compile>
     <Compile Include="GUI_UC\Loading_UC.Designer.cs">
       <DependentUpon>Loading_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\Login_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\Login_UC.Designer.cs">
+      <DependentUpon>Login_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\Menu_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\Menu_UC.Designer.cs">
+      <DependentUpon>Menu_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_UC\PageBanHang\BanHang_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageBanHang\BanHang_UC.Designer.cs">
+      <DependentUpon>BanHang_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.cs">
       <SubType>UserControl</SubType>
@@ -307,17 +313,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WaitFormManager.cs" />
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMenu.resx">
-      <DependentUpon>frmMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmWaiting.resx">
       <DependentUpon>frmWaiting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\Loading_UC.resx">
       <DependentUpon>Loading_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\Login_UC.resx">
+      <DependentUpon>Login_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\Menu_UC.resx">
+      <DependentUpon>Menu_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageBanHang\BanHang_UC.resx">
+      <DependentUpon>BanHang_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
       <DependentUpon>BaoCao_UC.cs</DependentUpon>
@@ -586,6 +595,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\taikhoannhanvienpacico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos-terminal16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos-terminal32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-to-success16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-to-success32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment16_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment32_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

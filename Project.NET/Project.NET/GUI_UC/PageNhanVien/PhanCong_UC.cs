@@ -137,7 +137,7 @@ namespace Project.NET.GUI_UC
             //
             //Danh sách phân công
             //
-            dgvPhanCongCaLamNhanVien.DataSource = db_PC.LayDanhSach();
+            //dgvPhanCongCaLamNhanVien.DataSource = db_PC.LayDanhSach();
 
         }
         /// <summary>
