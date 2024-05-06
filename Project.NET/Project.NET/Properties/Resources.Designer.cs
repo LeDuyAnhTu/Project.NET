@@ -183,6 +183,26 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carts16_16 {
+            get {
+                object obj = ResourceManager.GetObject("carts16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carts32_32 {
+            get {
+                object obj = ResourceManager.GetObject("carts32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap categories32_32 {
             get {
                 object obj = ResourceManager.GetObject("categories32_32", resourceCulture);
@@ -536,6 +556,86 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap production32_32 {
             get {
                 object obj = ResourceManager.GetObject("production32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception_cam16_16 {
+            get {
+                object obj = ResourceManager.GetObject("reception_cam16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception_cam32_32 {
+            get {
+                object obj = ResourceManager.GetObject("reception_cam32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception_tim16_16 {
+            get {
+                object obj = ResourceManager.GetObject("reception_tim16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception_tim32_32 {
+            get {
+                object obj = ResourceManager.GetObject("reception_tim32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception16_16 {
+            get {
+                object obj = ResourceManager.GetObject("reception16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception32_32 {
+            get {
+                object obj = ResourceManager.GetObject("reception32_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_cart16_16 {
+            get {
+                object obj = ResourceManager.GetObject("remove-cart16_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_cart32_32 {
+            get {
+                object obj = ResourceManager.GetObject("remove-cart32_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

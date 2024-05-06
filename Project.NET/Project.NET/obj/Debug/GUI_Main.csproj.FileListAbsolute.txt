@@ -288,8 +288,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.D
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraCharts.v22.2.Extensions.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\BUS.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DTO.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Charts.v22.2.Core.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Data.v22.2.xml
@@ -323,7 +321,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.X
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.SqlServer.xml
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll.config
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
