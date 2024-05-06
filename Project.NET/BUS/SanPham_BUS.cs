@@ -26,6 +26,16 @@ namespace BUS
                 throw ex;
             }
         }
+        public IQueryable LayDanhSach_TheoLoai(string maLoai)
+        {
+            try
+            {
+                return db.LayDanhSach_TheoLoai(maLoai);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
         /// <summary>
         /// Thêm thông tin sản phẩm mới
         /// </summary>

@@ -29,116 +29,59 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_UC));
-            this.tableLogin = new DevExpress.Utils.Layout.TablePanel();
-            this.layoutLogin = new System.Windows.Forms.TableLayoutPanel();
-            this.groupDangNhap = new DevExpress.XtraEditors.GroupControl();
-            this.controlsLogin = new DevExpress.XtraLayout.LayoutControl();
             this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
-            this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.txtMatKhau = new DevExpress.XtraEditors.ButtonEdit();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutTxtTenDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutTxtMatKhau = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutBtnDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
+            this.Login_UClayoutControl1ConvertedLayout = new DevExpress.XtraLayout.LayoutControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLogin)).BeginInit();
-            this.tableLogin.SuspendLayout();
-            this.layoutLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupDangNhap)).BeginInit();
-            this.groupDangNhap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.controlsLogin)).BeginInit();
-            this.controlsLogin.SuspendLayout();
+            this.btnConnect = new DevExpress.XtraEditors.SimpleButton();
+            this.txtMatKhau = new DevExpress.XtraEditors.ButtonEdit();
+            this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.cbDatabases = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.cboServerName = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.groupDangNhapitem = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.groupControl1item = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.groupControl2item = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.txtConnectionStringitem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnConnectitem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutDatabase = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.groupControl3item = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.txtTenDangNhapitem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtMatKhauitem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnDangNhapitem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Login_UClayoutControl1ConvertedLayout)).BeginInit();
+            this.Login_UClayoutControl1ConvertedLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbDatabases.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboServerName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupDangNhapitem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1item)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2item)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtConnectionStringitem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnConnectitem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutDatabase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3item)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhapitem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauitem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDangNhapitem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tableLogin
-            // 
-            this.tableLogin.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.tableLogin.Appearance.Options.UseBackColor = true;
-            this.tableLogin.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 62.58F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 37.42F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10F)});
-            this.tableLogin.Controls.Add(this.layoutLogin);
-            this.tableLogin.Controls.Add(this.pictureBox1);
-            this.tableLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLogin.Location = new System.Drawing.Point(0, 0);
-            this.tableLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLogin.Name = "tableLogin";
-            this.tableLogin.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 384.4F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F)});
-            this.tableLogin.Size = new System.Drawing.Size(828, 551);
-            this.tableLogin.TabIndex = 3;
-            this.tableLogin.UseSkinIndents = true;
-            // 
-            // layoutLogin
-            // 
-            this.tableLogin.SetColumn(this.layoutLogin, 2);
-            this.layoutLogin.ColumnCount = 1;
-            this.layoutLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layoutLogin.Controls.Add(this.groupDangNhap, 0, 1);
-            this.layoutLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutLogin.Location = new System.Drawing.Point(500, 83);
-            this.layoutLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.layoutLogin.Name = "layoutLogin";
-            this.tableLogin.SetRow(this.layoutLogin, 1);
-            this.layoutLogin.RowCount = 3;
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.34375F));
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.35417F));
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.5625F));
-            this.layoutLogin.Size = new System.Drawing.Size(254, 384);
-            this.layoutLogin.TabIndex = 5;
-            // 
-            // groupDangNhap
-            // 
-            this.groupDangNhap.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.groupDangNhap.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupDangNhap.Appearance.Options.UseBackColor = true;
-            this.groupDangNhap.Appearance.Options.UseFont = true;
-            this.groupDangNhap.AppearanceCaption.BackColor = System.Drawing.Color.Transparent;
-            this.groupDangNhap.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupDangNhap.AppearanceCaption.Options.UseBackColor = true;
-            this.groupDangNhap.AppearanceCaption.Options.UseFont = true;
-            this.groupDangNhap.AutoSize = true;
-            this.groupDangNhap.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupDangNhap.CaptionImageOptions.Image")));
-            this.groupDangNhap.CaptionLocation = DevExpress.Utils.Locations.Top;
-            this.groupDangNhap.Controls.Add(this.controlsLogin);
-            this.groupDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupDangNhap.GroupStyle = DevExpress.Utils.GroupStyle.Card;
-            this.groupDangNhap.Location = new System.Drawing.Point(3, 107);
-            this.groupDangNhap.Name = "groupDangNhap";
-            this.groupDangNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.groupDangNhap.Size = new System.Drawing.Size(248, 171);
-            this.groupDangNhap.TabIndex = 0;
-            this.groupDangNhap.Text = "Đăng nhập";
-            // 
-            // controlsLogin
-            // 
-            this.controlsLogin.Controls.Add(this.txtTenDangNhap);
-            this.controlsLogin.Controls.Add(this.btnDangNhap);
-            this.controlsLogin.Controls.Add(this.txtMatKhau);
-            this.controlsLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlsLogin.Location = new System.Drawing.Point(5, 38);
-            this.controlsLogin.Name = "controlsLogin";
-            this.controlsLogin.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1270, 184, 650, 400);
-            this.controlsLogin.Root = this.Root;
-            this.controlsLogin.Size = new System.Drawing.Size(238, 128);
-            this.controlsLogin.TabIndex = 0;
-            this.controlsLogin.Text = "layoutControl1";
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.EditValue = "";
-            this.txtTenDangNhap.Location = new System.Drawing.Point(154, 6);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(671, 402);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
@@ -146,15 +89,95 @@
             this.txtTenDangNhap.Properties.Appearance.Options.UseForeColor = true;
             this.txtTenDangNhap.Properties.BeepOnError = true;
             this.txtTenDangNhap.Properties.UseMaskAsDisplayFormat = true;
-            this.txtTenDangNhap.Size = new System.Drawing.Size(78, 26);
-            this.txtTenDangNhap.StyleController = this.controlsLogin;
+            this.txtTenDangNhap.Size = new System.Drawing.Size(385, 26);
+            this.txtTenDangNhap.StyleController = this.Login_UClayoutControl1ConvertedLayout;
             this.txtTenDangNhap.TabIndex = 4;
             this.txtTenDangNhap.ToolTipTitle = "Tên đăng nhập";
             // 
+            // Login_UClayoutControl1ConvertedLayout
+            // 
+            this.Login_UClayoutControl1ConvertedLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.pictureBox1);
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.btnConnect);
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.txtTenDangNhap);
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.txtMatKhau);
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.btnDangNhap);
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.cbDatabases);
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.checkEdit1);
+            this.Login_UClayoutControl1ConvertedLayout.Controls.Add(this.cboServerName);
+            this.Login_UClayoutControl1ConvertedLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Login_UClayoutControl1ConvertedLayout.Location = new System.Drawing.Point(0, 0);
+            this.Login_UClayoutControl1ConvertedLayout.Name = "Login_UClayoutControl1ConvertedLayout";
+            this.Login_UClayoutControl1ConvertedLayout.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1270, 259, 650, 400);
+            this.Login_UClayoutControl1ConvertedLayout.Root = this.layoutControlGroup1;
+            this.Login_UClayoutControl1ConvertedLayout.Size = new System.Drawing.Size(1074, 551);
+            this.Login_UClayoutControl1ConvertedLayout.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(530, 539);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnConnect.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnConnect.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnConnect.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnConnect.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnConnect.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnConnect.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnConnect.AppearanceDisabled.Options.UseFont = true;
+            this.btnConnect.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnConnect.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnConnect.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnConnect.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnConnect.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnConnect.AppearanceHovered.Options.UseBackColor = true;
+            this.btnConnect.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnConnect.AppearanceHovered.Options.UseFont = true;
+            this.btnConnect.AppearanceHovered.Options.UseForeColor = true;
+            this.btnConnect.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnConnect.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnConnect.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnConnect.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnConnect.AppearancePressed.Options.UseBackColor = true;
+            this.btnConnect.AppearancePressed.Options.UseBorderColor = true;
+            this.btnConnect.AppearancePressed.Options.UseFont = true;
+            this.btnConnect.AppearancePressed.Options.UseForeColor = true;
+            this.btnConnect.Location = new System.Drawing.Point(550, 179);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(506, 51);
+            this.btnConnect.StyleController = this.Login_UClayoutControl1ConvertedLayout;
+            this.btnConnect.TabIndex = 9;
+            this.btnConnect.Text = "Test Connection";
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.EditValue = "";
+            this.txtMatKhau.Location = new System.Drawing.Point(671, 430);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
+            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
+            this.txtMatKhau.Properties.Appearance.Options.UseForeColor = true;
+            this.txtMatKhau.Properties.BeepOnError = true;
+            this.txtMatKhau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtMatKhau.Properties.PasswordChar = '*';
+            this.txtMatKhau.Properties.UseMaskAsDisplayFormat = true;
+            this.txtMatKhau.Size = new System.Drawing.Size(385, 26);
+            this.txtMatKhau.StyleController = this.Login_UClayoutControl1ConvertedLayout;
+            this.txtMatKhau.TabIndex = 5;
+            this.txtMatKhau.ToolTipTitle = "Mật khẩu";
+            // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Appearance.Options.UseFont = true;
             this.btnDangNhap.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnDangNhap.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnDangNhap.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
@@ -180,105 +203,218 @@
             this.btnDangNhap.AppearancePressed.Options.UseBorderColor = true;
             this.btnDangNhap.AppearancePressed.Options.UseFont = true;
             this.btnDangNhap.AppearancePressed.Options.UseForeColor = true;
-            this.btnDangNhap.Location = new System.Drawing.Point(6, 74);
+            this.btnDangNhap.Location = new System.Drawing.Point(550, 458);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(226, 48);
-            this.btnDangNhap.StyleController = this.controlsLogin;
+            this.btnDangNhap.Size = new System.Drawing.Size(506, 51);
+            this.btnDangNhap.StyleController = this.Login_UClayoutControl1ConvertedLayout;
             this.btnDangNhap.TabIndex = 7;
             this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
-            // txtMatKhau
+            // cbDatabases
             // 
-            this.txtMatKhau.EditValue = "";
-            this.txtMatKhau.Location = new System.Drawing.Point(154, 40);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
-            this.txtMatKhau.Properties.Appearance.Options.UseForeColor = true;
-            this.txtMatKhau.Properties.BeepOnError = true;
-            this.txtMatKhau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtMatKhau.Properties.PasswordChar = '*';
-            this.txtMatKhau.Properties.UseMaskAsDisplayFormat = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(78, 26);
-            this.txtMatKhau.StyleController = this.controlsLogin;
-            this.txtMatKhau.TabIndex = 5;
-            this.txtMatKhau.ToolTipTitle = "Mật khẩu";
+            this.cbDatabases.Location = new System.Drawing.Point(671, 145);
+            this.cbDatabases.Name = "cbDatabases";
+            this.cbDatabases.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbDatabases.Properties.Appearance.Options.UseFont = true;
+            this.cbDatabases.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbDatabases.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cbDatabases.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbDatabases.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cbDatabases.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbDatabases.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cbDatabases.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbDatabases.Size = new System.Drawing.Size(385, 26);
+            this.cbDatabases.StyleController = this.Login_UClayoutControl1ConvertedLayout;
+            this.cbDatabases.TabIndex = 11;
             // 
-            // Root
+            // checkEdit1
             // 
-            this.Root.AppearanceGroup.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Root.AppearanceGroup.Options.UseFont = true;
-            this.Root.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Root.AppearanceItemCaption.Options.UseFont = true;
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutTxtTenDangNhap,
-            this.layoutTxtMatKhau,
-            this.layoutBtnDangNhap});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(238, 128);
-            this.Root.TextVisible = false;
+            this.checkEdit1.Location = new System.Drawing.Point(550, 124);
+            this.checkEdit1.Name = "checkEdit1";
+            this.checkEdit1.Properties.Caption = "Trust Server Ceritificated";
+            this.checkEdit1.Size = new System.Drawing.Size(506, 19);
+            this.checkEdit1.StyleController = this.Login_UClayoutControl1ConvertedLayout;
+            this.checkEdit1.TabIndex = 12;
             // 
-            // layoutTxtTenDangNhap
+            // cboServerName
             // 
-            this.layoutTxtTenDangNhap.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutTxtTenDangNhap.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutTxtTenDangNhap.Control = this.txtTenDangNhap;
-            this.layoutTxtTenDangNhap.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutTxtTenDangNhap.CustomizationFormText = "Tên đăng nhập";
-            this.layoutTxtTenDangNhap.ImageOptions.Image = global::Project.NET.Properties.Resources.key32_32;
-            this.layoutTxtTenDangNhap.Location = new System.Drawing.Point(0, 0);
-            this.layoutTxtTenDangNhap.Name = "layoutTxtTenDangNhap";
-            this.layoutTxtTenDangNhap.Size = new System.Drawing.Size(228, 34);
-            this.layoutTxtTenDangNhap.Text = "Tên đăng nhập";
-            this.layoutTxtTenDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutTxtTenDangNhap.TextSize = new System.Drawing.Size(144, 32);
+            this.cboServerName.Location = new System.Drawing.Point(671, 90);
+            this.cboServerName.Name = "cboServerName";
+            this.cboServerName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboServerName.Properties.Appearance.Options.UseFont = true;
+            this.cboServerName.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboServerName.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.cboServerName.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboServerName.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cboServerName.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cboServerName.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.cboServerName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboServerName.Size = new System.Drawing.Size(385, 26);
+            this.cboServerName.StyleController = this.Login_UClayoutControl1ConvertedLayout;
+            this.cboServerName.TabIndex = 8;
+            this.cboServerName.EditValueChanged += new System.EventHandler(this.cboServerName_EditValueChanged);
             // 
-            // layoutTxtMatKhau
+            // layoutControlGroup1
             // 
-            this.layoutTxtMatKhau.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutTxtMatKhau.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutTxtMatKhau.Control = this.txtMatKhau;
-            this.layoutTxtMatKhau.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutTxtMatKhau.ImageOptions.Image = global::Project.NET.Properties.Resources.pass32_32;
-            this.layoutTxtMatKhau.Location = new System.Drawing.Point(0, 34);
-            this.layoutTxtMatKhau.Name = "layoutTxtMatKhau";
-            this.layoutTxtMatKhau.Size = new System.Drawing.Size(228, 34);
-            this.layoutTxtMatKhau.Text = "Mật khẩu";
-            this.layoutTxtMatKhau.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutTxtMatKhau.TextSize = new System.Drawing.Size(144, 32);
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.groupDangNhapitem,
+            this.layoutControlItem1});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1074, 551);
+            this.layoutControlGroup1.TextVisible = false;
             // 
-            // layoutBtnDangNhap
+            // groupDangNhapitem
             // 
-            this.layoutBtnDangNhap.Control = this.btnDangNhap;
-            this.layoutBtnDangNhap.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutBtnDangNhap.CustomizationFormText = "Nút đăng nhập";
-            this.layoutBtnDangNhap.ImageOptions.Image = global::Project.NET.Properties.Resources.logo;
-            this.layoutBtnDangNhap.Location = new System.Drawing.Point(0, 68);
-            this.layoutBtnDangNhap.MinSize = new System.Drawing.Size(88, 28);
-            this.layoutBtnDangNhap.Name = "layoutBtnDangNhap";
-            this.layoutBtnDangNhap.Size = new System.Drawing.Size(228, 50);
-            this.layoutBtnDangNhap.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutBtnDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutBtnDangNhap.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutBtnDangNhap.TextVisible = false;
+            this.groupDangNhapitem.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupDangNhapitem.CaptionImageOptions.Image")));
+            this.groupDangNhapitem.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.groupControl1item});
+            this.groupDangNhapitem.Location = new System.Drawing.Point(532, 0);
+            this.groupDangNhapitem.Name = "groupDangNhapitem";
+            this.groupDangNhapitem.Size = new System.Drawing.Size(532, 541);
+            this.groupDangNhapitem.Text = "Đăng nhập";
             // 
-            // pictureBox1
+            // groupControl1item
             // 
-            this.tableLogin.SetColumn(this.pictureBox1, 1);
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.tableLogin.SetRow(this.pictureBox1, 1);
-            this.pictureBox1.Size = new System.Drawing.Size(424, 382);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.groupControl1item.GroupBordersVisible = false;
+            this.groupControl1item.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.groupControl2item,
+            this.groupControl3item,
+            this.emptySpaceItem1});
+            this.groupControl1item.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1item.Name = "groupControl1item";
+            this.groupControl1item.Size = new System.Drawing.Size(520, 493);
+            this.groupControl1item.Text = "Root";
+            // 
+            // groupControl2item
+            // 
+            this.groupControl2item.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl2item.CaptionImageOptions.Image")));
+            this.groupControl2item.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.txtConnectionStringitem,
+            this.btnConnectitem,
+            this.layoutDatabase,
+            this.layoutControlItem2});
+            this.groupControl2item.Location = new System.Drawing.Point(0, 0);
+            this.groupControl2item.Name = "groupControl2item";
+            this.groupControl2item.Size = new System.Drawing.Size(520, 190);
+            this.groupControl2item.Text = "Kết nối tới máy chủ";
+            // 
+            // txtConnectionStringitem
+            // 
+            this.txtConnectionStringitem.Control = this.cboServerName;
+            this.txtConnectionStringitem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("txtConnectionStringitem.ImageOptions.Image")));
+            this.txtConnectionStringitem.Location = new System.Drawing.Point(0, 0);
+            this.txtConnectionStringitem.Name = "txtConnectionStringitem";
+            this.txtConnectionStringitem.Size = new System.Drawing.Size(508, 34);
+            this.txtConnectionStringitem.Text = "Server Name:";
+            this.txtConnectionStringitem.TextLocation = DevExpress.Utils.Locations.Left;
+            this.txtConnectionStringitem.TextSize = new System.Drawing.Size(117, 32);
+            // 
+            // btnConnectitem
+            // 
+            this.btnConnectitem.Control = this.btnConnect;
+            this.btnConnectitem.Location = new System.Drawing.Point(0, 89);
+            this.btnConnectitem.MaxSize = new System.Drawing.Size(0, 53);
+            this.btnConnectitem.MinSize = new System.Drawing.Size(1, 53);
+            this.btnConnectitem.Name = "btnConnectitem";
+            this.btnConnectitem.Size = new System.Drawing.Size(508, 53);
+            this.btnConnectitem.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.btnConnectitem.Text = "btnConect";
+            this.btnConnectitem.TextLocation = DevExpress.Utils.Locations.Top;
+            this.btnConnectitem.TextSize = new System.Drawing.Size(0, 0);
+            this.btnConnectitem.TextVisible = false;
+            // 
+            // layoutDatabase
+            // 
+            this.layoutDatabase.Control = this.cbDatabases;
+            this.layoutDatabase.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutDatabase.ImageOptions.Image")));
+            this.layoutDatabase.Location = new System.Drawing.Point(0, 55);
+            this.layoutDatabase.Name = "layoutDatabase";
+            this.layoutDatabase.Size = new System.Drawing.Size(508, 34);
+            this.layoutDatabase.Text = "Database Name:";
+            this.layoutDatabase.TextSize = new System.Drawing.Size(117, 32);
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.checkEdit1;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 34);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(508, 21);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // groupControl3item
+            // 
+            this.groupControl3item.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl3item.CaptionImageOptions.Image")));
+            this.groupControl3item.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.txtTenDangNhapitem,
+            this.txtMatKhauitem,
+            this.btnDangNhapitem,
+            this.emptySpaceItem2});
+            this.groupControl3item.Location = new System.Drawing.Point(0, 312);
+            this.groupControl3item.Name = "groupControl3item";
+            this.groupControl3item.Size = new System.Drawing.Size(520, 181);
+            this.groupControl3item.Text = "Đăng nhập";
+            // 
+            // txtTenDangNhapitem
+            // 
+            this.txtTenDangNhapitem.Control = this.txtTenDangNhap;
+            this.txtTenDangNhapitem.Location = new System.Drawing.Point(0, 0);
+            this.txtTenDangNhapitem.Name = "txtTenDangNhapitem";
+            this.txtTenDangNhapitem.Size = new System.Drawing.Size(508, 28);
+            this.txtTenDangNhapitem.Text = "Tên đăng nhập";
+            this.txtTenDangNhapitem.TextLocation = DevExpress.Utils.Locations.Left;
+            this.txtTenDangNhapitem.TextSize = new System.Drawing.Size(117, 13);
+            // 
+            // txtMatKhauitem
+            // 
+            this.txtMatKhauitem.Control = this.txtMatKhau;
+            this.txtMatKhauitem.Location = new System.Drawing.Point(0, 28);
+            this.txtMatKhauitem.Name = "txtMatKhauitem";
+            this.txtMatKhauitem.Size = new System.Drawing.Size(508, 28);
+            this.txtMatKhauitem.Text = "Mật khẩu";
+            this.txtMatKhauitem.TextLocation = DevExpress.Utils.Locations.Left;
+            this.txtMatKhauitem.TextSize = new System.Drawing.Size(117, 13);
+            // 
+            // btnDangNhapitem
+            // 
+            this.btnDangNhapitem.Control = this.btnDangNhap;
+            this.btnDangNhapitem.Location = new System.Drawing.Point(0, 56);
+            this.btnDangNhapitem.MaxSize = new System.Drawing.Size(0, 53);
+            this.btnDangNhapitem.MinSize = new System.Drawing.Size(1, 53);
+            this.btnDangNhapitem.Name = "btnDangNhapitem";
+            this.btnDangNhapitem.Size = new System.Drawing.Size(508, 53);
+            this.btnDangNhapitem.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.btnDangNhapitem.TextSize = new System.Drawing.Size(0, 0);
+            this.btnDangNhapitem.TextVisible = false;
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 109);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(508, 24);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 190);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(520, 122);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.pictureBox1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(532, 541);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
             // 
             // Login_UC
             // 
@@ -286,41 +422,61 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLogin);
+            this.Controls.Add(this.Login_UClayoutControl1ConvertedLayout);
             this.Name = "Login_UC";
-            this.Size = new System.Drawing.Size(828, 551);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLogin)).EndInit();
-            this.tableLogin.ResumeLayout(false);
-            this.layoutLogin.ResumeLayout(false);
-            this.layoutLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupDangNhap)).EndInit();
-            this.groupDangNhap.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.controlsLogin)).EndInit();
-            this.controlsLogin.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1074, 551);
+            this.Load += new System.EventHandler(this.Login_UC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Login_UClayoutControl1ConvertedLayout)).EndInit();
+            this.Login_UClayoutControl1ConvertedLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbDatabases.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboServerName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupDangNhapitem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1item)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2item)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtConnectionStringitem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnConnectitem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutDatabase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3item)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhapitem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauitem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDangNhapitem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.Utils.Layout.TablePanel tableLogin;
-        private System.Windows.Forms.TableLayoutPanel layoutLogin;
-        private DevExpress.XtraEditors.GroupControl groupDangNhap;
-        private DevExpress.XtraLayout.LayoutControl controlsLogin;
         private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
         private DevExpress.XtraEditors.ButtonEdit txtMatKhau;
-        private DevExpress.XtraLayout.LayoutControlGroup Root;
-        private DevExpress.XtraLayout.LayoutControlItem layoutTxtTenDangNhap;
-        private DevExpress.XtraLayout.LayoutControlItem layoutTxtMatKhau;
-        private DevExpress.XtraLayout.LayoutControlItem layoutBtnDangNhap;
+        private DevExpress.XtraEditors.SimpleButton btnConnect;
+        private DevExpress.XtraLayout.LayoutControl Login_UClayoutControl1ConvertedLayout;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private DevExpress.XtraLayout.LayoutControlGroup groupDangNhapitem;
+        private DevExpress.XtraLayout.LayoutControlGroup groupControl1item;
+        private DevExpress.XtraLayout.LayoutControlGroup groupControl2item;
+        private DevExpress.XtraLayout.LayoutControlItem btnConnectitem;
+        private DevExpress.XtraLayout.LayoutControlItem txtConnectionStringitem;
+        private DevExpress.XtraLayout.LayoutControlGroup groupControl3item;
+        private DevExpress.XtraLayout.LayoutControlItem txtTenDangNhapitem;
+        private DevExpress.XtraLayout.LayoutControlItem txtMatKhauitem;
+        private DevExpress.XtraLayout.LayoutControlItem btnDangNhapitem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutDatabase;
+        private DevExpress.XtraEditors.ComboBoxEdit cbDatabases;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraEditors.ComboBoxEdit cboServerName;
     }
 }

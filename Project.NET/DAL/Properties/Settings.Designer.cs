@@ -79,5 +79,16 @@ namespace DAL.Properties {
                 return ((string)(this["QLBHXConnectionString3"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=QLBHX;Integrated Security=True;Encrypt=True;TrustSe" +
+            "rverCertificate=True")]
+        public string QLBHXConnectionString4 {
+            get {
+                return ((string)(this["QLBHXConnectionString4"]));
+            }
+        }
     }
 }
