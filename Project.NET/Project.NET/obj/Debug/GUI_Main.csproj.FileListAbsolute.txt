@@ -284,8 +284,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.X
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DTO.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.SqlServer.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
@@ -324,8 +322,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.X
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraRichEdit.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.xml
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.SqlServer.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll.config
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
