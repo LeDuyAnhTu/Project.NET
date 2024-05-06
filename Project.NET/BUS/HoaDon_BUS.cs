@@ -8,10 +8,13 @@ using System.Threading.Tasks;
 
 namespace BUS
 {
-    internal class HoaDon_BUS
+    public class HoaDon_BUS
     {
         private static HoaDon_DAL db = new HoaDon_DAL();
-
+        /// <summary>
+        /// lấy danh sách các hóa đơn
+        /// </summary>
+        /// <returns></returns>
         public IQueryable LayDanhSach()
         {
             try
@@ -23,7 +26,11 @@ namespace BUS
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Thêm hóa đơn mới
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Them(HoaDon_DTO o)
         {
             bool result = false;
@@ -39,7 +46,11 @@ namespace BUS
 
             return result;
         }
-
+        /// <summary>
+        /// Sửa thông tin hóa đơn
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Sua(HoaDon_DTO o)
         {
             bool result = false;
@@ -54,7 +65,11 @@ namespace BUS
             }
             return result;
         }
-
+        /// <summary>
+        /// Xóa thông tin hóa đơn
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool Xoa(string id)
         {
             bool result = false;
@@ -68,6 +83,16 @@ namespace BUS
                 throw ex;
             }
             return result;
+        }
+        public string taoMaMoi()
+        {
+            try
+            {
+                return db.taoMaMoi();
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
