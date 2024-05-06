@@ -1,11 +1,11 @@
-﻿using BUS;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
-using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,11 +16,10 @@ namespace Project.NET.GUI_UC
 {
     public partial class Login_UC : DevExpress.XtraEditors.XtraUserControl
     {
+
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
-    
-        //Properties
-        private TaiKhoan_BUS db_TK = new TaiKhoan_BUS();
+
 
         public Login_UC()
         {
@@ -56,8 +55,6 @@ namespace Project.NET.GUI_UC
                 }
             };
         }
-
-        //Events
         /// <summary>
         /// Hiệu ứng fade cho việc đăng nhập
         /// </summary>
@@ -67,39 +64,26 @@ namespace Project.NET.GUI_UC
         {
             //chặn bấm liên tục vào nút đăng nhập gây lỗi hệ thống
             btnDangNhap.Enabled = false;
-            try
+
+            WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
+            await waitFormManager.ShowWaitForm(() =>
             {
-                TaiKhoan_DTO tk = db_TK.timTaiKhoan_TenTK(txtTenDangNhap.Text);
-                if (txtMatKhau.Text.Equals(tk.MatKhau.Trim()))
+
+                // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
+                this.Invoke((MethodInvoker)delegate
                 {
-                    WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-                    await waitFormManager.ShowWaitForm(() => {
 
-                        // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
-                        this.Invoke((MethodInvoker)delegate
-                        {
+                    // Gỡ UserControl khỏi container
+                    frmMainn.Controls.Remove(this);
 
-                            // Gỡ UserControl khỏi container
-                            frmMainn.Controls.Remove(this);
+                    // Giải phóng tài nguyên
+                    this.Dispose();
 
-                            // Giải phóng tài nguyên
-                            this.Dispose();
+                    LoadUserControl(null, typeof(Menu_UC), frmMainn);
+                });
+                return Task.CompletedTask;
+            });
 
-                            LoadUserControl(null, typeof(Menu_UC), frmMainn);
-                        });
-                        frmMain.maNV = tk.MaNV;
-                        return Task.CompletedTask;
-                    });
-                }
-                else
-                {
-                    throw new Exception();
-                }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Đăng nhập thất bại","Thông báo");
-            }
             btnDangNhap.Enabled = true;
         }
         private void LoadUserControl(UserControl userControl, Type type, Control container)
@@ -112,14 +96,90 @@ namespace Project.NET.GUI_UC
                 container.Controls.Add(userControl);
             }
         }
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        string connectionString = null;
+        private void btnConnect_Click(object sender, EventArgs e)
         {
-            if (keyData == Keys.Enter)
+            try
             {
-                btnDangNhap.PerformClick();
-                return true;
+                if (cbDatabases.SelectedItem != null)
+                {
+                    connectionString = $"data source={cboServerName.Text};initial catalog={cbDatabases.SelectedItem};integrated security=True;encrypt=True;trustservercertificate=True;";
+                }
+
+                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                if (config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"] != null)
+                {
+                    config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = connectionString;
+                    config.Save(ConfigurationSaveMode.Modified);
+                    ConfigurationManager.RefreshSection("connectionStrings");
+
+                    // Kiểm tra kết nối
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open(); // Thử mở kết nối
+                        connection.Close();
+                    }
+
+                    MessageBox.Show("Cập nhật chuỗi kết nối thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtTenDangNhap.Enabled = true;
+                    txtMatKhau.Enabled = true;
+                    btnDangNhap.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Chuỗi kết nối 'QLBHXConnectionString' không tồn tại trong file cấu hình.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            return base.ProcessCmdKey(ref msg, keyData);
+            catch (Exception ex)
+            {
+                // Hiển thị thông báo lỗi
+                MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void cboServerName_EditValueChanged(object sender, EventArgs e)
+        {
+            if (cboServerName.Text.Length >= 1) // Kiểm tra nếu ít nhất 1 ký tự đã được nhập
+            {
+                connectionString = $"data source={cboServerName.Text};initial catalog=;integrated security=True;encrypt=True;trustservercertificate=True;";
+
+             
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        connection.Open();
+                        using (SqlCommand command = new SqlCommand("SELECT name FROM sys.databases", connection))
+                        {
+                            using (SqlDataReader reader = command.ExecuteReader())
+                            {
+                                cbDatabases.Properties.Items.Clear();
+                                while (reader.Read())
+                                {
+                                    cbDatabases.Properties.Items.Add(reader.GetString(0));
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Xử lý lỗi ở đây
+                        MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                MessageBox.Show("Đã lấy được danh sách database name", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnConnect.Enabled = true;
+            }
+        }
+
+        private void Login_UC_Load(object sender, EventArgs e)
+        {
+            txtTenDangNhap.Enabled = false;
+            txtMatKhau.Enabled = false;
+            btnDangNhap.Enabled = false;
+            btnConnect.Enabled = false;
+            btnConnect.Click += btnConnect_Click;
+            btnDangNhap.Click += btnDangNhap_Click;
         }
     }
 }

@@ -70,7 +70,7 @@ namespace DTO
             get => soLuong;
             set
             {
-                if(value == null)
+                if(string.IsNullOrEmpty(value.ToString()))
                 {
                     throw new Exception("Vui lòng nhập số lượng");
                 }
