@@ -38,6 +38,31 @@ namespace DAL
             }
             return ds;
         }
+        public IQueryable LayDanhSach_TheoLoai(string maLoai)
+        {
+            IQueryable ds = null;
+            try
+            {
+                ds = from sp in db.DBO.SanPhams
+                     join lsp in db.DBO.LoaiSPs on sp.maLoai equals lsp.maLoai
+                     join nsx in db.DBO.NhaSanXuats on sp.maNSX equals nsx.maNSX
+                     where sp.maLoai.Equals(maLoai)
+                     select new
+                     {
+                         MãSố = sp.maSP,
+                         TênSảnPhẩm = sp.tenSP,
+                         Loại = lsp.tenLoai,
+                         ĐơnGiá = sp.donGia,
+                         TồnKho = sp.soLuongConLai,
+                         NSX = nsx.tenNSX,
+                     };
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
         /// <summary>
         /// Sửa thông tin của 1 sản phẩm
         /// </summary>

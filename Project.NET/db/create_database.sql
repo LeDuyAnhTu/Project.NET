@@ -173,6 +173,9 @@ go
 alter table ChiTietCC
 add constraint pk_chitietcc primary key (maCC)
 go
+alter table ChiTietHD
+add constraint pk_chitiethd primary key (maHD,maSP)
+go
 alter table KhoCN
 add constraint pk_KhoCN primary key (maCN,maSP)
 
