@@ -201,7 +201,6 @@
             0});
             this.txtThanhTien.Properties.MaskSettings.Set("mask", "c");
             this.txtThanhTien.Size = new System.Drawing.Size(585, 26);
-            this.txtThanhTien.StyleController = this.dataLayout;
             this.txtThanhTien.TabIndex = 12;
             // 
             // btnCapNhat
@@ -347,7 +346,6 @@
             this.txtDiemDung.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtDiemDung.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.txtDiemDung.Size = new System.Drawing.Size(585, 26);
-            this.txtDiemDung.StyleController = this.dataLayout;
             this.txtDiemDung.TabIndex = 25;
             // 
             // cboNhanVien
@@ -391,7 +389,6 @@
             this.cboKhachHang.Properties.NullText = "";
             this.cboKhachHang.Properties.PopupSizeable = false;
             this.cboKhachHang.Size = new System.Drawing.Size(585, 26);
-            this.cboKhachHang.StyleController = this.dataLayout;
             this.cboKhachHang.TabIndex = 27;
             // 
             // OUTLINE

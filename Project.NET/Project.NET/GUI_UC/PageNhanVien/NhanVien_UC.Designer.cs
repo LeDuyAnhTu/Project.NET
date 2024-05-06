@@ -193,7 +193,7 @@
             this.dgvNhanVien.OptionsBehavior.ReadOnly = true;
             this.dgvNhanVien.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             // 
-            // txtHoTen
+            // txtNhanVienTrucQuay
             // 
             this.txtHoTen.Location = new System.Drawing.Point(163, 128);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -311,7 +311,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboViTriChucVuNhanVien.Properties.NullText = "";
             this.cboViTriChucVuNhanVien.Properties.PopupSizeable = false;
-            this.cboViTriChucVuNhanVien.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboViTriChucVuNhanVien.Size = new System.Drawing.Size(838, 26);
             this.cboViTriChucVuNhanVien.StyleController = this.layoutNhanVien;
             this.cboViTriChucVuNhanVien.TabIndex = 14;

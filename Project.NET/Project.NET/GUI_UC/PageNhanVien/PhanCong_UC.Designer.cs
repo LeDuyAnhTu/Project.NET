@@ -197,11 +197,11 @@
             this.labelControl.TabIndex = 34;
             this.labelControl.Text = "Phân công";
             // 
-            // txtHoTen
+            // txtNhanVienTrucQuay
             // 
             this.txtHoTen.Location = new System.Drawing.Point(147, 228);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Name = "txtNhanVienTrucQuay";
             this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Properties.Appearance.Options.UseFont = true;
             this.txtHoTen.Properties.ReadOnly = true;
