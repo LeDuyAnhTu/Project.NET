@@ -24,13 +24,15 @@ namespace DAL
                      join nsx in db.DBO.NhaSanXuats on sp.maNSX equals nsx.maNSX
                      select new
                      {
-                        MãSố = sp.maSP,
-                        TênSảnPhẩm = sp.tenSP,
-                        Loại = lsp.tenLoai,
-                        TồnKho = sp.soLuongConLai,
-                        NSX = nsx.tenNSX,
+                         MãSố = sp.maSP,
+                         TênSảnPhẩm = sp.tenSP,
+                         Loại = lsp.tenLoai,
+                         ĐơnGiá = sp.donGia,
+                         TồnKho = sp.soLuongConLai,
+                         NSX = nsx.tenNSX,
                      };
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -174,6 +176,23 @@ namespace DAL
             {
                 Console.WriteLine(ex.Message);
                 return "SP00000001";
+            }
+        }
+        /// <summary>
+        /// Tìm sản phẩm theo mã sản phẩm
+        /// </summary>
+        /// <param name="maSP"></param>
+        /// <returns></returns>
+        public SanPham_DTO timSanPham_MaSP(string maSP)
+        {
+            try
+            {
+                SanPham temp = db.DBO.SanPhams.Single(d => d.maSP.Equals(maSP));
+                return new SanPham_DTO(temp.maSP, temp.tenSP, temp.HSD, temp.donGia, temp.soLuongConLai, temp.maLoai, temp.maNSX);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
