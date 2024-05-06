@@ -93,11 +93,21 @@ namespace BUS
             try
             {
                 return db.taoMaMoi();
+            } catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public SanPham_DTO timSanPham_MaSP(string maSP)
+        {
+            try
+            {
+                return db.timSanPham_MaSP(maSP);
             }catch(Exception ex)
             {
                 throw ex;
             }
-                
         }
     }
 }
