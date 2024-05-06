@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using BUS;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,15 @@ namespace Project.NET.GUI_UC.PageHoaDon
 {
     public partial class HoaDonChiTiet_UC : DevExpress.XtraEditors.XtraUserControl
     {
+        private ChiTietHD_BUS db_ct_HD = new ChiTietHD_BUS();
         public HoaDonChiTiet_UC()
         {
             InitializeComponent();
+        }
+
+        private void HoaDonChiTiet_UC_Load(object sender, EventArgs e)
+        {
+            dgvGrid.DataSource = db_ct_HD.LayDanhSach();
         }
     }
 }

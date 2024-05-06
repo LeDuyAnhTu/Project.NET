@@ -67,8 +67,6 @@ namespace Project.NET.GUI_UC
         {
             //chặn bấm liên tục vào nút đăng nhập gây lỗi hệ thống
             btnDangNhap.Enabled = false;
-
-
             try
             {
                 TaiKhoan_DTO tk = db_TK.timTaiKhoan_TenTK(txtTenDangNhap.Text);

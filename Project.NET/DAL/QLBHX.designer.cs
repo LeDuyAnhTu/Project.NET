@@ -42,12 +42,18 @@ namespace DAL
     partial void InsertChiTietCC(ChiTietCC instance);
     partial void UpdateChiTietCC(ChiTietCC instance);
     partial void DeleteChiTietCC(ChiTietCC instance);
+    partial void InsertChiTietHD(ChiTietHD instance);
+    partial void UpdateChiTietHD(ChiTietHD instance);
+    partial void DeleteChiTietHD(ChiTietHD instance);
     partial void InsertHoaDon(HoaDon instance);
     partial void UpdateHoaDon(HoaDon instance);
     partial void DeleteHoaDon(HoaDon instance);
     partial void InsertKhachHang(KhachHang instance);
     partial void UpdateKhachHang(KhachHang instance);
     partial void DeleteKhachHang(KhachHang instance);
+    partial void InsertKhoCN(KhoCN instance);
+    partial void UpdateKhoCN(KhoCN instance);
+    partial void DeleteKhoCN(KhoCN instance);
     partial void InsertKhuVuc(KhuVuc instance);
     partial void UpdateKhuVuc(KhuVuc instance);
     partial void DeleteKhuVuc(KhuVuc instance);
@@ -72,7 +78,7 @@ namespace DAL
     #endregion
 		
 		public QLBHXDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QLBHXConnectionString4, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QLBHXConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
@@ -502,6 +508,8 @@ namespace DAL
 		
 		private string _maQL;
 		
+		private EntitySet<KhoCN> _KhoCNs;
+		
 		private EntitySet<NhanVien> _NhanViens;
 		
 		private EntityRef<KhuVuc> _KhuVuc;
@@ -526,6 +534,7 @@ namespace DAL
 		
 		public ChiNhanh()
 		{
+			this._KhoCNs = new EntitySet<KhoCN>(new Action<KhoCN>(this.attach_KhoCNs), new Action<KhoCN>(this.detach_KhoCNs));
 			this._NhanViens = new EntitySet<NhanVien>(new Action<NhanVien>(this.attach_NhanViens), new Action<NhanVien>(this.detach_NhanViens));
 			this._KhuVuc = default(EntityRef<KhuVuc>);
 			this._NhanVien = default(EntityRef<NhanVien>);
@@ -640,6 +649,19 @@ namespace DAL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChiNhanh_KhoCN", Storage="_KhoCNs", ThisKey="maCN", OtherKey="maCN")]
+		public EntitySet<KhoCN> KhoCNs
+		{
+			get
+			{
+				return this._KhoCNs;
+			}
+			set
+			{
+				this._KhoCNs.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChiNhanh_NhanVien", Storage="_NhanViens", ThisKey="maCN", OtherKey="maCN")]
 		public EntitySet<NhanVien> NhanViens
 		{
@@ -739,6 +761,18 @@ namespace DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_KhoCNs(KhoCN entity)
+		{
+			this.SendPropertyChanging();
+			entity.ChiNhanh = this;
+		}
+		
+		private void detach_KhoCNs(KhoCN entity)
+		{
+			this.SendPropertyChanging();
+			entity.ChiNhanh = null;
 		}
 		
 		private void attach_NhanViens(NhanVien entity)
@@ -995,8 +1029,10 @@ namespace DAL
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiTietHD")]
-	public partial class ChiTietHD
+	public partial class ChiTietHD : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _maHD;
 		
@@ -1004,11 +1040,30 @@ namespace DAL
 		
 		private int _soLuong;
 		
+		private EntityRef<HoaDon> _HoaDon;
+		
+		private EntityRef<SanPham> _SanPham;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnmaHDChanging(string value);
+    partial void OnmaHDChanged();
+    partial void OnmaSPChanging(string value);
+    partial void OnmaSPChanged();
+    partial void OnsoLuongChanging(int value);
+    partial void OnsoLuongChanged();
+    #endregion
+		
 		public ChiTietHD()
 		{
+			this._HoaDon = default(EntityRef<HoaDon>);
+			this._SanPham = default(EntityRef<SanPham>);
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maHD", DbType="Char(10) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maHD", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string maHD
 		{
 			get
@@ -1019,12 +1074,20 @@ namespace DAL
 			{
 				if ((this._maHD != value))
 				{
+					if (this._HoaDon.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnmaHDChanging(value);
+					this.SendPropertyChanging();
 					this._maHD = value;
+					this.SendPropertyChanged("maHD");
+					this.OnmaHDChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maSP", DbType="Char(10) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maSP", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string maSP
 		{
 			get
@@ -1035,7 +1098,15 @@ namespace DAL
 			{
 				if ((this._maSP != value))
 				{
+					if (this._SanPham.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnmaSPChanging(value);
+					this.SendPropertyChanging();
 					this._maSP = value;
+					this.SendPropertyChanged("maSP");
+					this.OnmaSPChanged();
 				}
 			}
 		}
@@ -1051,8 +1122,100 @@ namespace DAL
 			{
 				if ((this._soLuong != value))
 				{
+					this.OnsoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._soLuong = value;
+					this.SendPropertyChanged("soLuong");
+					this.OnsoLuongChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDon_ChiTietHD", Storage="_HoaDon", ThisKey="maHD", OtherKey="maHD", IsForeignKey=true)]
+		public HoaDon HoaDon
+		{
+			get
+			{
+				return this._HoaDon.Entity;
+			}
+			set
+			{
+				HoaDon previousValue = this._HoaDon.Entity;
+				if (((previousValue != value) 
+							|| (this._HoaDon.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._HoaDon.Entity = null;
+						previousValue.ChiTietHDs.Remove(this);
+					}
+					this._HoaDon.Entity = value;
+					if ((value != null))
+					{
+						value.ChiTietHDs.Add(this);
+						this._maHD = value.maHD;
+					}
+					else
+					{
+						this._maHD = default(string);
+					}
+					this.SendPropertyChanged("HoaDon");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_ChiTietHD", Storage="_SanPham", ThisKey="maSP", OtherKey="maSP", IsForeignKey=true)]
+		public SanPham SanPham
+		{
+			get
+			{
+				return this._SanPham.Entity;
+			}
+			set
+			{
+				SanPham previousValue = this._SanPham.Entity;
+				if (((previousValue != value) 
+							|| (this._SanPham.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._SanPham.Entity = null;
+						previousValue.ChiTietHDs.Remove(this);
+					}
+					this._SanPham.Entity = value;
+					if ((value != null))
+					{
+						value.ChiTietHDs.Add(this);
+						this._maSP = value.maSP;
+					}
+					else
+					{
+						this._maSP = default(string);
+					}
+					this.SendPropertyChanged("SanPham");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -1138,6 +1301,8 @@ namespace DAL
 		
 		private System.Nullable<int> _thanhTien;
 		
+		private EntitySet<ChiTietHD> _ChiTietHDs;
+		
 		private EntityRef<KhachHang> _KhachHang;
 		
 		private EntityRef<NhanVien> _NhanVien;
@@ -1162,6 +1327,7 @@ namespace DAL
 		
 		public HoaDon()
 		{
+			this._ChiTietHDs = new EntitySet<ChiTietHD>(new Action<ChiTietHD>(this.attach_ChiTietHDs), new Action<ChiTietHD>(this.detach_ChiTietHDs));
 			this._KhachHang = default(EntityRef<KhachHang>);
 			this._NhanVien = default(EntityRef<NhanVien>);
 			OnCreated();
@@ -1295,6 +1461,19 @@ namespace DAL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDon_ChiTietHD", Storage="_ChiTietHDs", ThisKey="maHD", OtherKey="maHD")]
+		public EntitySet<ChiTietHD> ChiTietHDs
+		{
+			get
+			{
+				return this._ChiTietHDs;
+			}
+			set
+			{
+				this._ChiTietHDs.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_HoaDon", Storage="_KhachHang", ThisKey="maKH", OtherKey="maKH", IsForeignKey=true)]
 		public KhachHang KhachHang
 		{
@@ -1381,6 +1560,18 @@ namespace DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_ChiTietHDs(ChiTietHD entity)
+		{
+			this.SendPropertyChanging();
+			entity.HoaDon = this;
+		}
+		
+		private void detach_ChiTietHDs(ChiTietHD entity)
+		{
+			this.SendPropertyChanging();
+			entity.HoaDon = null;
 		}
 	}
 	
@@ -1571,8 +1762,10 @@ namespace DAL
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.KhoCN")]
-	public partial class KhoCN
+	public partial class KhoCN : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _maCN;
 		
@@ -1580,11 +1773,30 @@ namespace DAL
 		
 		private int _soLuong;
 		
+		private EntityRef<ChiNhanh> _ChiNhanh;
+		
+		private EntityRef<SanPham> _SanPham;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnmaCNChanging(string value);
+    partial void OnmaCNChanged();
+    partial void OnmaSPChanging(string value);
+    partial void OnmaSPChanged();
+    partial void OnsoLuongChanging(int value);
+    partial void OnsoLuongChanged();
+    #endregion
+		
 		public KhoCN()
 		{
+			this._ChiNhanh = default(EntityRef<ChiNhanh>);
+			this._SanPham = default(EntityRef<SanPham>);
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maCN", DbType="Char(10) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maCN", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string maCN
 		{
 			get
@@ -1595,12 +1807,20 @@ namespace DAL
 			{
 				if ((this._maCN != value))
 				{
+					if (this._ChiNhanh.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnmaCNChanging(value);
+					this.SendPropertyChanging();
 					this._maCN = value;
+					this.SendPropertyChanged("maCN");
+					this.OnmaCNChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maSP", DbType="Char(10) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maSP", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string maSP
 		{
 			get
@@ -1611,7 +1831,15 @@ namespace DAL
 			{
 				if ((this._maSP != value))
 				{
+					if (this._SanPham.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnmaSPChanging(value);
+					this.SendPropertyChanging();
 					this._maSP = value;
+					this.SendPropertyChanged("maSP");
+					this.OnmaSPChanged();
 				}
 			}
 		}
@@ -1627,8 +1855,100 @@ namespace DAL
 			{
 				if ((this._soLuong != value))
 				{
+					this.OnsoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._soLuong = value;
+					this.SendPropertyChanged("soLuong");
+					this.OnsoLuongChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChiNhanh_KhoCN", Storage="_ChiNhanh", ThisKey="maCN", OtherKey="maCN", IsForeignKey=true)]
+		public ChiNhanh ChiNhanh
+		{
+			get
+			{
+				return this._ChiNhanh.Entity;
+			}
+			set
+			{
+				ChiNhanh previousValue = this._ChiNhanh.Entity;
+				if (((previousValue != value) 
+							|| (this._ChiNhanh.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ChiNhanh.Entity = null;
+						previousValue.KhoCNs.Remove(this);
+					}
+					this._ChiNhanh.Entity = value;
+					if ((value != null))
+					{
+						value.KhoCNs.Add(this);
+						this._maCN = value.maCN;
+					}
+					else
+					{
+						this._maCN = default(string);
+					}
+					this.SendPropertyChanged("ChiNhanh");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_KhoCN", Storage="_SanPham", ThisKey="maSP", OtherKey="maSP", IsForeignKey=true)]
+		public SanPham SanPham
+		{
+			get
+			{
+				return this._SanPham.Entity;
+			}
+			set
+			{
+				SanPham previousValue = this._SanPham.Entity;
+				if (((previousValue != value) 
+							|| (this._SanPham.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._SanPham.Entity = null;
+						previousValue.KhoCNs.Remove(this);
+					}
+					this._SanPham.Entity = value;
+					if ((value != null))
+					{
+						value.KhoCNs.Add(this);
+						this._maSP = value.maSP;
+					}
+					else
+					{
+						this._maSP = default(string);
+					}
+					this.SendPropertyChanged("SanPham");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -2642,6 +2962,10 @@ namespace DAL
 		
 		private EntitySet<ChiTietCC> _ChiTietCCs;
 		
+		private EntitySet<ChiTietHD> _ChiTietHDs;
+		
+		private EntitySet<KhoCN> _KhoCNs;
+		
 		private EntityRef<LoaiSP> _LoaiSP;
 		
 		private EntityRef<NhaSanXuat> _NhaSanXuat;
@@ -2669,6 +2993,8 @@ namespace DAL
 		public SanPham()
 		{
 			this._ChiTietCCs = new EntitySet<ChiTietCC>(new Action<ChiTietCC>(this.attach_ChiTietCCs), new Action<ChiTietCC>(this.detach_ChiTietCCs));
+			this._ChiTietHDs = new EntitySet<ChiTietHD>(new Action<ChiTietHD>(this.attach_ChiTietHDs), new Action<ChiTietHD>(this.detach_ChiTietHDs));
+			this._KhoCNs = new EntitySet<KhoCN>(new Action<KhoCN>(this.attach_KhoCNs), new Action<KhoCN>(this.detach_KhoCNs));
 			this._LoaiSP = default(EntityRef<LoaiSP>);
 			this._NhaSanXuat = default(EntityRef<NhaSanXuat>);
 			OnCreated();
@@ -2835,6 +3161,32 @@ namespace DAL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_ChiTietHD", Storage="_ChiTietHDs", ThisKey="maSP", OtherKey="maSP")]
+		public EntitySet<ChiTietHD> ChiTietHDs
+		{
+			get
+			{
+				return this._ChiTietHDs;
+			}
+			set
+			{
+				this._ChiTietHDs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_KhoCN", Storage="_KhoCNs", ThisKey="maSP", OtherKey="maSP")]
+		public EntitySet<KhoCN> KhoCNs
+		{
+			get
+			{
+				return this._KhoCNs;
+			}
+			set
+			{
+				this._KhoCNs.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiSP_SanPham", Storage="_LoaiSP", ThisKey="maLoai", OtherKey="maLoai", IsForeignKey=true)]
 		public LoaiSP LoaiSP
 		{
@@ -2930,6 +3282,30 @@ namespace DAL
 		}
 		
 		private void detach_ChiTietCCs(ChiTietCC entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = null;
+		}
+		
+		private void attach_ChiTietHDs(ChiTietHD entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = this;
+		}
+		
+		private void detach_ChiTietHDs(ChiTietHD entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = null;
+		}
+		
+		private void attach_KhoCNs(KhoCN entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = this;
+		}
+		
+		private void detach_KhoCNs(KhoCN entity)
 		{
 			this.SendPropertyChanging();
 			entity.SanPham = null;
