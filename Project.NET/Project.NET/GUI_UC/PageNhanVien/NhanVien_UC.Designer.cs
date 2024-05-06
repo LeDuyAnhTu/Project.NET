@@ -188,10 +188,10 @@
             this.dgvNhanVien.OptionsBehavior.ReadOnly = true;
             this.dgvNhanVien.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
             // 
-            // txtHoTen
+            // txtNhanVienTrucQuay
             // 
             this.txtHoTen.Location = new System.Drawing.Point(141, 116);
-            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Name = "txtNhanVienTrucQuay";
             this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Properties.Appearance.Options.UseFont = true;
             this.txtHoTen.Properties.BeepOnError = true;
@@ -304,7 +304,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboViTriChucVuNhanVien.Properties.NullText = "";
             this.cboViTriChucVuNhanVien.Properties.PopupSizeable = false;
-            this.cboViTriChucVuNhanVien.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboViTriChucVuNhanVien.Size = new System.Drawing.Size(838, 26);
             this.cboViTriChucVuNhanVien.StyleController = this.layoutNhanVien;
             this.cboViTriChucVuNhanVien.TabIndex = 14;

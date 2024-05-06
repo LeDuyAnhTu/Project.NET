@@ -24,5 +24,11 @@ namespace Project.NET.GUI_UC.PageSanPham
             TextEdit editText = sender as TextEdit;
             editText.SupportVietnamese(30);
         }
+
+        private void txtSoLuongConLai_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            TextEdit editText = sender as TextEdit;
+            editText.SupportNumeric();
+        }
     }
 }

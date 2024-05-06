@@ -45,9 +45,7 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DTO.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.dll.config
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DTO.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.csproj.AssemblyReference.cache

@@ -312,11 +312,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLBHXDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLBHXDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="WaitFormManager.cs" />
     <EmbeddedResource Include="frmWaiting.resx">
       <DependentUpon>frmWaiting.cs</DependentUpon>
@@ -458,17 +453,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="QLBHXDataSet.xsc">
-      <DependentUpon>QLBHXDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QLBHXDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLBHXDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLBHXDataSet.xss">
-      <DependentUpon>QLBHXDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Resources\assignto_32x32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -665,6 +649,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\warehouse_nguoi32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carts16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carts32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_cam16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_cam32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_tim16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_tim32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-cart16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-cart32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
