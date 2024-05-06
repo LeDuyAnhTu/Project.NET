@@ -47,9 +47,12 @@ D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\BUS\obj\Debug\BUS.c
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\BUS\obj\Debug\BUS.dll
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\BUS\obj\Debug\BUS.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\BUS.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\BUS.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DTO.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.dll.config
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DTO.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.Up2Date
