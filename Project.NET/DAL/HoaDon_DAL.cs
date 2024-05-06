@@ -110,5 +110,34 @@ namespace DAL
             }
             return result;
         }
+        public string taoMaMoi()
+        {
+            try
+            {
+                //Lấy mã nhân viên cuối
+                IQueryable ds = (from hd in db.DBO.HoaDons
+                                 orderby hd.maHD descending
+                                 select hd.maHD).Take(1);
+                string maHD = "";
+                foreach (var item in ds)
+                {
+                    maHD = item.ToString();
+                }
+
+                //Lấy số tiếp theo msNV cuối
+                string maSo = maHD.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã NV mới
+                maHD = "HD" + String.Format("{0:D8}", soMoi);
+
+                return maHD;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return "HD00000001";
+            }
+        }
     }
 }

@@ -8,6 +8,8 @@ namespace Project.NET
 {
     public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
+        //Properties
+        public static string maNV = "";
 
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
@@ -51,7 +53,6 @@ namespace Project.NET
                 }
             }
         }
-
 
         /// <summary>
         /// Trước khi đóng form

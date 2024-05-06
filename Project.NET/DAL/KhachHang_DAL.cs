@@ -26,6 +26,25 @@ namespace DAL
             }
             return ds;
         }
+        public IQueryable LayDanHSach_Combobox()
+        {
+            IQueryable ds = null;
+            try
+            {
+                ds = from kh in db.DBO.KhachHangs
+                     select new
+                     {
+                         Mã = kh.maKH,
+                         HọTên = kh.tenKH,
+                         SĐT = kh.SDT,
+                     };
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
         /// <summary>
         /// Sửa thông tin khách hàng
         /// </summary>
@@ -100,6 +119,16 @@ namespace DAL
                 throw ex;
             }
             return result;
+        }
+        public KhachHang_DTO timKH_TheoMa(string maKH)
+        {
+            try{
+                KhachHang temp = db.DBO.KhachHangs.Single(d => d.maKH.Equals(maKH));
+                return new KhachHang_DTO(temp.maKH, temp.tenKH, temp.SDT, temp.ngaySinh, (int)temp.diemTichLuy);
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
