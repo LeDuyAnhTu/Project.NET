@@ -142,6 +142,12 @@
     <Compile Include="GUI_UC\Menu_UC.Designer.cs">
       <DependentUpon>Menu_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageBanHang\BanHang_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageBanHang\BanHang_UC.Designer.cs">
+      <DependentUpon>BanHang_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageChiNhanh\ChiNhanh_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -318,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\Menu_UC.resx">
       <DependentUpon>Menu_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageBanHang\BanHang_UC.resx">
+      <DependentUpon>BanHang_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageBaoCao\BaoCao_UC.resx">
       <DependentUpon>BaoCao_UC.cs</DependentUpon>
@@ -586,6 +595,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\taikhoannhanvienpacico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos-terminal16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos-terminal32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-to-success16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-to-success32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment16_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assortment32_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse16_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse32_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
