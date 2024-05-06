@@ -12,7 +12,7 @@ namespace DAL
 
         public Database()
         {
-            dbo = new QLBHXDataContext();
+            dbo = new QLBHXDataContext();            
         }
 
         public QLBHXDataContext DBO { get => dbo; }
