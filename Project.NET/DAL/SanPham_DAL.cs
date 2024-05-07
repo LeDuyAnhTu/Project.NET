@@ -178,7 +178,7 @@ namespace DAL
         {
             try
             {
-                //Lấy mã nhân viên cuối
+                //Lấy mã sản phẩm cuối
                 IQueryable ds = (from sp in db.DBO.SanPhams
                                  orderby sp.maSP descending
                                  select sp.maSP).Take(1);
@@ -188,7 +188,7 @@ namespace DAL
                     maSP = item.ToString();
                 }
 
-                //Lấy số tiếp theo msNV cuối
+                //Lấy số tiếp theo maSP cuối
                 string maSo = maSP.Substring(2);
                 int soMoi = Convert.ToInt32(maSo) + 1;
 

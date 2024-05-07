@@ -363,6 +363,8 @@ namespace Project.NET.GUI_UC.PageBanHang
                 dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
                 dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                 dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
+                //Quay lại lựa sản phẩm
+                dangLua(true);
             }
             catch (Exception ex)
             {
@@ -393,6 +395,8 @@ namespace Project.NET.GUI_UC.PageBanHang
                     dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
                     dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                     dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
+                    //Quay lại lựa sản phẩm
+                    dangLua(true);
                 }
                 catch(Exception ex)
                 {
@@ -486,48 +490,55 @@ namespace Project.NET.GUI_UC.PageBanHang
         {
             try
             {
-                //Tạo hóa đơn mới
-                HoaDon_DTO hd = layDuLieu();
-
-                //Thêm hóa đơn
-                db_HD.Them(hd);
-
-                //Tạo chi tiết giỏ hàng
-                foreach(SanPhamMua_DTO item in dsMuaHang)
+                if(dsMuaHang.Count > 0)
                 {
-                    ChiTietHD_DTO cthd = new ChiTietHD_DTO(hd.MaHD, item.MaSP, item.SoLuong);
-                    db_ct_HD.Them(cthd);
-                }
+                    //Tạo hóa đơn mới
+                    HoaDon_DTO hd = layDuLieu();
 
-                //Cập nhật số lượng tồn kho
-                foreach (SanPhamMua_DTO item in dsMuaHang)
+                    //Thêm hóa đơn
+                    db_HD.Them(hd);
+
+                    //Tạo chi tiết giỏ hàng
+                    foreach (SanPhamMua_DTO item in dsMuaHang)
+                    {
+                        ChiTietHD_DTO cthd = new ChiTietHD_DTO(hd.MaHD, item.MaSP, item.SoLuong);
+                        db_ct_HD.Them(cthd);
+                    }
+
+                    //Cập nhật số lượng tồn kho
+                    foreach (SanPhamMua_DTO item in dsMuaHang)
+                    {
+                        SanPham_DTO sp = db_SP.timSanPham_MaSP(item.MaSP);
+                        sp.SoLuongConLai -= item.SoLuong;
+                        db_SP.Sua(sp);
+                    }
+
+
+                    /*
+                        In hóa đơn (report) 
+                    */
+
+
+                    //Xóa giỏ hàng
+                    dsMuaHang.Clear();
+
+                    //Reset datasource để hiển thị các sản phẩm đang chọn mua
+                    dgvGioHangGrid.DataSource = null;
+                    dgvGioHangGrid.DataSource = dsMuaHang;
+                    dgvGioHang.Columns["MaSP"].Caption = "Mã";
+                    dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
+                    dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
+                    dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
+                    dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
+                    //Tải lại form
+                    taiForm();
+                    //Thông báo
+                    MessageBox.Show("Thanh toán thành công", "Thông báo");
+                }
+                else
                 {
-                    SanPham_DTO sp = db_SP.timSanPham_MaSP(item.MaSP);
-                    sp.SoLuongConLai -= item.SoLuong;
-                    db_SP.Sua(sp);
+                    throw new Exception("Vui lòng chọn mua sản phẩm trước khi thanh toán");
                 }
-
-
-                /*
-                    In hóa đơn (report) 
-                */
-
-
-                //Xóa giỏ hàng
-                dsMuaHang.Clear();
-
-                //Reset datasource để hiển thị các sản phẩm đang chọn mua
-                dgvGioHangGrid.DataSource = null;
-                dgvGioHangGrid.DataSource = dsMuaHang;
-                dgvGioHang.Columns["MaSP"].Caption = "Mã";
-                dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
-                dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
-                dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
-                //Tải lại form
-                taiForm();
-                //Thông báo
-                MessageBox.Show("Thanh toán thành công", "Thông báo");
             }
             catch(Exception ex)
             {
