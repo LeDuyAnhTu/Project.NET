@@ -1,24 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\login_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\login_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\login_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\login_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,20 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -53,55 +24,8 @@
               "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login_UC.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Login_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\Login_UC.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Login_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\Login_UC.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAgwLAAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:49:59.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\App.config",
-              "RelativeDocumentMoniker": "Project.NET\\App.config",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\App.config",
-              "RelativeToolTip": "Project.NET\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAB4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-07T03:49:29.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login_UC.cs [Design]",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Login_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\Login_UC.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\Login_UC.cs [Design]",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\Login_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:44:25.111Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BanHang_UC.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAswHYBAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:04:38.903Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }
