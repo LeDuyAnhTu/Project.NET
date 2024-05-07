@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
+using Project.NET.RP;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,11 +20,10 @@ namespace Project.NET.GUI_UC
             InitializeComponent();
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
+        private void btnBaoCaoBanHangTheoNgay_Click(object sender, EventArgs e)
         {
-
-            //ReportPrintTool printTool = new ReportPrintTool(new XtraReport1());
-            //printTool.ShowRibbonPreview();
+            ReportPrintTool printTool = new ReportPrintTool(new BanHangTheoNgay_RP());
+            printTool.ShowRibbonPreview();
         }
     }
 }
