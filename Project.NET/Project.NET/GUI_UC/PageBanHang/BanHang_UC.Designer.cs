@@ -179,7 +179,7 @@
             this.dataLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayout.Location = new System.Drawing.Point(0, 0);
             this.dataLayout.Name = "dataLayout";
-            this.dataLayout.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1078, 565, 650, 400);
+            this.dataLayout.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 328, 650, 400);
             this.dataLayout.Root = this.OUTLINE;
             this.dataLayout.Size = new System.Drawing.Size(1156, 820);
             this.dataLayout.TabIndex = 5;
@@ -658,7 +658,7 @@
             // 
             // cboMaLoaiSP
             // 
-            this.cboMaLoaiSP.Location = new System.Drawing.Point(157, 315);
+            this.cboMaLoaiSP.Location = new System.Drawing.Point(157, 318);
             this.cboMaLoaiSP.Name = "cboMaLoaiSP";
             this.cboMaLoaiSP.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cboMaLoaiSP.Properties.Appearance.Options.UseFont = true;
@@ -960,6 +960,7 @@
             // 
             // layoutMaLoai
             // 
+            this.layoutMaLoai.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
             this.layoutMaLoai.Control = this.cboMaLoaiSP;
             this.layoutMaLoai.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutMaLoai.CustomizationFormText = "Mã Loại SP:";

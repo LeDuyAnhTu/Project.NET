@@ -24,6 +24,8 @@ namespace Project.NET.GUI_UC
 
         //Properties
         private TaiKhoan_BUS db_TK = new TaiKhoan_BUS();
+        private string databaseName = "QLBHX";
+        private string[] serverNames = new string[] { ".", ".\\sqlexpress" };
 
         public Login_UC()
         {
@@ -76,7 +78,8 @@ namespace Project.NET.GUI_UC
                 if (txtMatKhau.Text.Equals(tk.MatKhau.Trim()))
                 {
                     WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-                    await waitFormManager.ShowWaitForm(() => {
+                    await waitFormManager.ShowWaitForm(() =>
+                    {
 
                         // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
                         this.Invoke((MethodInvoker)delegate
@@ -127,42 +130,7 @@ namespace Project.NET.GUI_UC
         string connectionString = null;
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (cbDatabases.SelectedItem != null)
-                {
-                    connectionString = $"data source={cboServerName.Text};initial catalog={cbDatabases.SelectedItem};integrated security=True;encrypt=True;trustservercertificate=True;";
-                }
 
-                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                if (config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"] != null)
-                {
-                    config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = connectionString;
-                    config.Save(ConfigurationSaveMode.Modified);
-                    ConfigurationManager.RefreshSection("connectionStrings");
-
-                    // Kiểm tra kết nối
-                    using (var connection = new SqlConnection(connectionString))
-                    {
-                        connection.Open(); // Thử mở kết nối
-                        connection.Close();
-                    }
-
-                    MessageBox.Show("Cập nhật chuỗi kết nối thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtTenDangNhap.Enabled = true;
-                    txtMatKhau.Enabled = true;
-                    btnDangNhap.Enabled = true;
-                }
-                else
-                {
-                    MessageBox.Show("Chuỗi kết nối 'QLBHXConnectionString' không tồn tại trong file cấu hình.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                // Hiển thị thông báo lỗi
-                MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
         private void cboServerName_EditValueChanged(object sender, EventArgs e)
         {
@@ -170,7 +138,7 @@ namespace Project.NET.GUI_UC
             {
                 connectionString = $"data source={cboServerName.Text};initial catalog=;integrated security=True;encrypt=True;trustservercertificate=True;";
 
-             
+
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -188,6 +156,8 @@ namespace Project.NET.GUI_UC
                                 }
                             }
                         }
+                        MessageBox.Show("Đã lấy được danh sách database name", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnConnect.Enabled = true;
                     }
                     catch (Exception ex)
                     {
@@ -195,11 +165,8 @@ namespace Project.NET.GUI_UC
                         MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                MessageBox.Show("Đã lấy được danh sách database name", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnConnect.Enabled = true;
             }
         }
-
         private void Login_UC_Load(object sender, EventArgs e)
         {
             txtTenDangNhap.Enabled = false;
@@ -208,6 +175,47 @@ namespace Project.NET.GUI_UC
             btnConnect.Enabled = false;
             btnConnect.Click += btnConnect_Click;
             btnDangNhap.Click += btnDangNhap_Click;
+            bool connected = false;
+            foreach (string serverName in serverNames)
+            {
+                try
+                {
+                    connectionString = $"data source={serverName};initial catalog={databaseName};integrated security=True;encrypt=True;trustservercertificate=True;";
+
+
+                    var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                    if (config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"] != null)
+                    {
+                        config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = connectionString;
+                        config.Save(ConfigurationSaveMode.Modified);
+                        ConfigurationManager.RefreshSection("connectionStrings");
+
+                        // Kiểm tra kết nối
+                        using (var connection = new SqlConnection(connectionString))
+                        {
+                            connection.Open(); // Thử mở kết nối
+                            connection.Close();
+                        }
+
+                        MessageBox.Show("Cập nhật chuỗi kết nối thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtTenDangNhap.Enabled = true;
+                        txtMatKhau.Enabled = true;
+                        btnDangNhap.Enabled = true;
+                        connected = true;
+                    }
+                    //else
+                    //{
+                    //    MessageBox.Show("Chuỗi kết nối 'QLBHXConnectionString' không tồn tại trong file cấu hình.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //}
+                }
+                catch (Exception ex)
+                {
+                    // Hiển thị thông báo lỗi
+                    //MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                if (connected)
+                    break;
+            }
         }
     }
 }
