@@ -46,18 +46,6 @@ D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\BUS\obj\Debug\BUS.c
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.Up2Date
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\BUS\obj\Debug\BUS.dll
 D:\School\HK4\ADO.Net\Code\PROJ\MAIN\Project.NET\Project.NET\BUS\obj\Debug\BUS.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\BUS.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\BUS.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DTO.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.dll.config
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DTO.pdb
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.Up2Date
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.pdb
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\BUS\bin\Debug\BUS.dll
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\BUS\bin\Debug\BUS.pdb
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\BUS\bin\Debug\DAL.dll
@@ -70,3 +58,15 @@ D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.CoreCompil
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.Up2Date
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\BUS\obj\Debug\BUS.dll
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\BUS\obj\Debug\BUS.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\BUS.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\BUS.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DTO.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DAL.dll.config
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\bin\Debug\DTO.pdb
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.csproj.Up2Date
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\BUS\obj\Debug\BUS.pdb
