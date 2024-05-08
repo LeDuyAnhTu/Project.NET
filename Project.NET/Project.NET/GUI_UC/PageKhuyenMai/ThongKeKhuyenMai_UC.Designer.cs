@@ -42,6 +42,7 @@
             this.btnTKKhuyenMai = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.TABLE_UC)).BeginInit();
             this.TABLE_UC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CHARTS)).BeginInit();
@@ -58,6 +59,7 @@
             this.BUTTONS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // TABLE_UC
@@ -81,24 +83,24 @@
             this.TABLE_UC.SetColumn(this.CHARTS, 0);
             this.CHARTS.Controls.Add(this.nafContent);
             this.CHARTS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CHARTS.Location = new System.Drawing.Point(13, 64);
+            this.CHARTS.Location = new System.Drawing.Point(7, 58);
             this.CHARTS.Name = "CHARTS";
             this.CHARTS.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(993, 414, 650, 400);
             this.CHARTS.Root = this.groupFrame;
             this.TABLE_UC.SetRow(this.CHARTS, 1);
-            this.CHARTS.Size = new System.Drawing.Size(702, 596);
+            this.CHARTS.Size = new System.Drawing.Size(714, 608);
             this.CHARTS.TabIndex = 1;
             this.CHARTS.Text = "dataLayoutControl1";
             // 
             // nafContent
             // 
             this.nafContent.Controls.Add(this.navPageTKKhuyenMai);
-            this.nafContent.Location = new System.Drawing.Point(12, 12);
+            this.nafContent.Location = new System.Drawing.Point(6, 6);
             this.nafContent.Name = "nafContent";
             this.nafContent.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navPageTKKhuyenMai});
             this.nafContent.SelectedPage = this.navPageTKKhuyenMai;
-            this.nafContent.Size = new System.Drawing.Size(678, 572);
+            this.nafContent.Size = new System.Drawing.Size(702, 547);
             this.nafContent.TabIndex = 4;
             this.nafContent.Text = "navFrame";
             this.nafContent.TransitionAnimationProperties.FrameCount = 100;
@@ -111,7 +113,7 @@
             this.navPageTKKhuyenMai.Controls.Add(this.chartTKKhuyenMai);
             this.navPageTKKhuyenMai.Controls.Add(this.labelControl1);
             this.navPageTKKhuyenMai.Name = "navPageTKKhuyenMai";
-            this.navPageTKKhuyenMai.Size = new System.Drawing.Size(678, 572);
+            this.navPageTKKhuyenMai.Size = new System.Drawing.Size(702, 547);
             // 
             // chartTKKhuyenMai
             // 
@@ -124,7 +126,7 @@
             series1.Name = "Series 1";
             this.chartTKKhuyenMai.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartTKKhuyenMai.Size = new System.Drawing.Size(678, 547);
+            this.chartTKKhuyenMai.Size = new System.Drawing.Size(702, 522);
             this.chartTKKhuyenMai.TabIndex = 1;
             // 
             // labelControl1
@@ -147,9 +149,10 @@
             this.groupFrame.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.groupFrame.GroupBordersVisible = false;
             this.groupFrame.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutChart});
+            this.layoutChart,
+            this.emptySpaceItem1});
             this.groupFrame.Name = "groupFrame";
-            this.groupFrame.Size = new System.Drawing.Size(702, 596);
+            this.groupFrame.Size = new System.Drawing.Size(714, 608);
             this.groupFrame.TextVisible = false;
             // 
             // layoutChart
@@ -157,7 +160,7 @@
             this.layoutChart.Control = this.nafContent;
             this.layoutChart.Location = new System.Drawing.Point(0, 0);
             this.layoutChart.Name = "layoutChart";
-            this.layoutChart.Size = new System.Drawing.Size(682, 576);
+            this.layoutChart.Size = new System.Drawing.Size(704, 549);
             this.layoutChart.TextSize = new System.Drawing.Size(0, 0);
             this.layoutChart.TextVisible = false;
             // 
@@ -166,12 +169,12 @@
             this.TABLE_UC.SetColumn(this.BUTTONS, 0);
             this.BUTTONS.Controls.Add(this.btnTKKhuyenMai);
             this.BUTTONS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BUTTONS.Location = new System.Drawing.Point(13, 12);
+            this.BUTTONS.Location = new System.Drawing.Point(7, 6);
             this.BUTTONS.Name = "BUTTONS";
             this.BUTTONS.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(381, 527, 650, 400);
             this.BUTTONS.Root = this.Root;
             this.TABLE_UC.SetRow(this.BUTTONS, 0);
-            this.BUTTONS.Size = new System.Drawing.Size(702, 48);
+            this.BUTTONS.Size = new System.Drawing.Size(714, 50);
             this.BUTTONS.TabIndex = 0;
             this.BUTTONS.Text = "layoutControl1";
             // 
@@ -202,9 +205,9 @@
             this.btnTKKhuyenMai.AppearancePressed.Options.UseBorderColor = true;
             this.btnTKKhuyenMai.AppearancePressed.Options.UseFont = true;
             this.btnTKKhuyenMai.AppearancePressed.Options.UseForeColor = true;
-            this.btnTKKhuyenMai.Location = new System.Drawing.Point(12, 12);
+            this.btnTKKhuyenMai.Location = new System.Drawing.Point(6, 6);
             this.btnTKKhuyenMai.Name = "btnTKKhuyenMai";
-            this.btnTKKhuyenMai.Size = new System.Drawing.Size(678, 22);
+            this.btnTKKhuyenMai.Size = new System.Drawing.Size(702, 22);
             this.btnTKKhuyenMai.StyleController = this.BUTTONS;
             this.btnTKKhuyenMai.TabIndex = 4;
             this.btnTKKhuyenMai.Text = "Thống kê Khuyến Mãi ";
@@ -217,7 +220,7 @@
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(702, 48);
+            this.Root.Size = new System.Drawing.Size(714, 50);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -225,9 +228,17 @@
             this.layoutControlItem1.Control = this.btnTKKhuyenMai;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(682, 28);
+            this.layoutControlItem1.Size = new System.Drawing.Size(704, 40);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 549);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(704, 49);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // ThongKeKhuyenMai_UC
             // 
@@ -253,6 +264,7 @@
             this.BUTTONS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,5 +283,6 @@
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraEditors.SimpleButton btnTKKhuyenMai;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }

@@ -60,6 +60,7 @@
             this.layoutTKSoLuongSpConLai = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTKDonGia = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTKLoaiSanPham = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.TABLE_UC)).BeginInit();
             this.TABLE_UC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CHARTS)).BeginInit();
@@ -86,12 +87,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKSoLuongSpConLai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKDonGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKLoaiSanPham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // TABLE_UC
             // 
             this.TABLE_UC.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.AutoSize, 55F)});
             this.TABLE_UC.Controls.Add(this.CHARTS);
             this.TABLE_UC.Controls.Add(this.BUTTONS);
             this.TABLE_UC.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -134,7 +136,7 @@
             this.navPageTKDonGia,
             this.navPageTKSoLuongSpConLai});
             this.nafContent.SelectedPage = this.navPageTKLoaiSanPham;
-            this.nafContent.Size = new System.Drawing.Size(634, 585);
+            this.nafContent.Size = new System.Drawing.Size(634, 537);
             this.nafContent.TabIndex = 4;
             this.nafContent.Text = "navFrame";
             this.nafContent.TransitionAnimationProperties.FrameCount = 100;
@@ -143,10 +145,11 @@
             // 
             // navPageTKLoaiSanPham
             // 
+            this.navPageTKLoaiSanPham.Caption = "navPageTKLoaiSanPham";
             this.navPageTKLoaiSanPham.Controls.Add(this.chartTKLoaiSanPham);
             this.navPageTKLoaiSanPham.Controls.Add(this.labelControl1);
             this.navPageTKLoaiSanPham.Name = "navPageTKLoaiSanPham";
-            this.navPageTKLoaiSanPham.Size = new System.Drawing.Size(634, 585);
+            this.navPageTKLoaiSanPham.Size = new System.Drawing.Size(634, 537);
             // 
             // chartTKLoaiSanPham
             // 
@@ -154,7 +157,7 @@
             this.chartTKLoaiSanPham.Location = new System.Drawing.Point(0, 25);
             this.chartTKLoaiSanPham.Name = "chartTKLoaiSanPham";
             this.chartTKLoaiSanPham.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartTKLoaiSanPham.Size = new System.Drawing.Size(634, 560);
+            this.chartTKLoaiSanPham.Size = new System.Drawing.Size(634, 512);
             this.chartTKLoaiSanPham.TabIndex = 1;
             // 
             // labelControl1
@@ -178,7 +181,7 @@
             this.navPageTKNSX.Controls.Add(this.chartControl2);
             this.navPageTKNSX.Controls.Add(this.labelControl2);
             this.navPageTKNSX.Name = "navPageTKNSX";
-            this.navPageTKNSX.Size = new System.Drawing.Size(634, 585);
+            this.navPageTKNSX.Size = new System.Drawing.Size(634, 537);
             // 
             // chartControl2
             // 
@@ -186,7 +189,7 @@
             this.chartControl2.Location = new System.Drawing.Point(0, 25);
             this.chartControl2.Name = "chartControl2";
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl2.Size = new System.Drawing.Size(634, 560);
+            this.chartControl2.Size = new System.Drawing.Size(634, 512);
             this.chartControl2.TabIndex = 2;
             // 
             // labelControl2
@@ -210,7 +213,7 @@
             this.navPageTKHanSuDung.Controls.Add(this.chartControl3);
             this.navPageTKHanSuDung.Controls.Add(this.labelControl3);
             this.navPageTKHanSuDung.Name = "navPageTKHanSuDung";
-            this.navPageTKHanSuDung.Size = new System.Drawing.Size(634, 585);
+            this.navPageTKHanSuDung.Size = new System.Drawing.Size(634, 537);
             // 
             // chartControl3
             // 
@@ -218,7 +221,7 @@
             this.chartControl3.Location = new System.Drawing.Point(0, 25);
             this.chartControl3.Name = "chartControl3";
             this.chartControl3.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl3.Size = new System.Drawing.Size(634, 560);
+            this.chartControl3.Size = new System.Drawing.Size(634, 512);
             this.chartControl3.TabIndex = 2;
             // 
             // labelControl3
@@ -242,7 +245,7 @@
             this.navPageTKDonGia.Controls.Add(this.chartControl4);
             this.navPageTKDonGia.Controls.Add(this.labelControl4);
             this.navPageTKDonGia.Name = "navPageTKDonGia";
-            this.navPageTKDonGia.Size = new System.Drawing.Size(634, 585);
+            this.navPageTKDonGia.Size = new System.Drawing.Size(634, 537);
             // 
             // chartControl4
             // 
@@ -250,7 +253,7 @@
             this.chartControl4.Location = new System.Drawing.Point(0, 25);
             this.chartControl4.Name = "chartControl4";
             this.chartControl4.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl4.Size = new System.Drawing.Size(634, 560);
+            this.chartControl4.Size = new System.Drawing.Size(634, 512);
             this.chartControl4.TabIndex = 2;
             // 
             // labelControl4
@@ -274,7 +277,7 @@
             this.navPageTKSoLuongSpConLai.Controls.Add(this.chartControl5);
             this.navPageTKSoLuongSpConLai.Controls.Add(this.labelControl5);
             this.navPageTKSoLuongSpConLai.Name = "navPageTKSoLuongSpConLai";
-            this.navPageTKSoLuongSpConLai.Size = new System.Drawing.Size(634, 585);
+            this.navPageTKSoLuongSpConLai.Size = new System.Drawing.Size(634, 537);
             // 
             // chartControl5
             // 
@@ -282,7 +285,7 @@
             this.chartControl5.Location = new System.Drawing.Point(0, 25);
             this.chartControl5.Name = "chartControl5";
             this.chartControl5.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl5.Size = new System.Drawing.Size(634, 560);
+            this.chartControl5.Size = new System.Drawing.Size(634, 512);
             this.chartControl5.TabIndex = 2;
             // 
             // labelControl5
@@ -305,7 +308,8 @@
             this.groupFrame.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.groupFrame.GroupBordersVisible = false;
             this.groupFrame.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutChart});
+            this.layoutChart,
+            this.emptySpaceItem1});
             this.groupFrame.Name = "groupFrame";
             this.groupFrame.Size = new System.Drawing.Size(646, 597);
             this.groupFrame.TextVisible = false;
@@ -315,7 +319,7 @@
             this.layoutChart.Control = this.nafContent;
             this.layoutChart.Location = new System.Drawing.Point(0, 0);
             this.layoutChart.Name = "layoutChart";
-            this.layoutChart.Size = new System.Drawing.Size(636, 587);
+            this.layoutChart.Size = new System.Drawing.Size(636, 539);
             this.layoutChart.TextSize = new System.Drawing.Size(0, 0);
             this.layoutChart.TextVisible = false;
             // 
@@ -550,6 +554,14 @@
             this.layoutTKLoaiSanPham.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTKLoaiSanPham.TextVisible = false;
             // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 539);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(636, 48);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // ThongKeSanPham_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -588,6 +600,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKSoLuongSpConLai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKDonGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKLoaiSanPham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -626,5 +639,6 @@
         private DevExpress.XtraCharts.ChartControl chartControl4;
         private DevExpress.XtraCharts.ChartControl chartControl5;
         private DevExpress.XtraCharts.ChartControl chartControl2;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }

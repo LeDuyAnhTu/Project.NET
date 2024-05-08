@@ -85,7 +85,7 @@ GROUP BY tenLoai;
         {
 
             List<ThongKeSanPham_DTO> dataPoints = db.StatsByProductType(); // Replace this with your data source
-            chart.CreateChart(dataPoints,
+            chart.SuportCreateChart(dataPoints,
                 dp => dp.TenLoai,
                 dp => dp.SoLuongSanPham,
                 ViewType.Bar,
@@ -112,7 +112,7 @@ GROUP BY maNSX;
         {
 
             List<ThongKeSanPham_DTO> dataPoints = db.StatsByManufacturer(); // Replace this with your data source
-            chart.CreateChart(dataPoints,
+            chart.SuportCreateChart(dataPoints,
                 dp => dp.TenNSX,
                 dp => dp.SoLuongSanPham,
                 ViewType.Bar,
@@ -139,7 +139,7 @@ GROUP BY sp.HSD;
         private void btnClickTKHanSuDung(ChartControl chart, List<ThongKeSanPham_DTO> dataPoints)
         {
 
-            chart.CreateChart(dataPoints,
+            chart.SuportCreateChart(dataPoints,
                           dp => dp.HSD,
                           dp => dp.SoLuongSanPham,
                           ViewType.Line,
@@ -162,7 +162,7 @@ FROM SanPham;
         private void btnClickTKSoLuongSPTheoKhoangGia(ChartControl chart, List<ThongKeSanPham_DTO> dataPoints)
         {
 
-            chart.CreateChart(dataPoints,
+            chart.SuportCreateChart(dataPoints,
                 dp => dp.KhoangGia,
                 dp => dp.SoLuongSanPham,
                 ViewType.Bar,
@@ -185,7 +185,7 @@ FROM SanPham;
         private void btnClickTKSoLuongSPConLai(ChartControl chart, List<ThongKeSanPham_DTO> dataPoints)
         {
 
-            chart.CreateChart(dataPoints,
+            chart.SuportCreateChart(dataPoints,
                 dp => dp.SoLuongConLai,
                 dp => dp.SoLuongSanPham,
                 ViewType.Bar,

@@ -11,7 +11,20 @@ namespace Project.NET.ExtensionMethods
 {
     public static class ChartControlExtensions
     {
-        public static void CreateChart<T>(this ChartControl chart, List<T> dataPoints, Func<T, object> argumentSelector, Func<T, object> valueSelector, ViewType viewType, string seriesName, string xAxisTitle, string yAxisTitle, string chartTitle)
+        /// <summary>
+        /// Hỗ trợ tạo thống kê nhanh chóng với các tham số truyền vào cụ thể
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="chart">biểu đồ cần tạo thống kê</param>
+        /// <param name="dataPoints">Nguồn dữ liệu</param>
+        /// <param name="argumentSelector">Cột thành viên</param>
+        /// <param name="valueSelector">Giá trị của từng cột thành viên</param>
+        /// <param name="viewType">Biểu đồ cột hoặc tròn tùy chỉnh</param>
+        /// <param name="seriesName">Tên biểu đồ</param>
+        /// <param name="xAxisTitle">Tên cột đứng</param>
+        /// <param name="yAxisTitle">Tên cột ngang</param>
+        /// <param name="chartTitle">Tiêu đề thống kê biểu đồ</param>
+        public static void SuportCreateChart<T>(this ChartControl chart, List<T> dataPoints, Func<T, object> argumentSelector, Func<T, object> valueSelector, ViewType viewType, string seriesName, string xAxisTitle, string yAxisTitle, string chartTitle)
         {
             // Clear existing series
             if (chart.Series.Count > 0)

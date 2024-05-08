@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.Data.Linq.SqlClient;
 using System.Linq;
@@ -9,30 +10,73 @@ namespace DAL
 {
     public class ThongKe_DAL : Database
     {
-        public IQueryable doanhThu_Thang(DateTime ngayBD, DateTime ngayKT, string tenSP)
+        /// <summary>
+        /// Nguồn dữ liệu vẽ biểu đồ doanh thu theo tháng
+        /// </summary>
+        /// <param name="ngayBD"></param>
+        /// <param name="ngayKT"></param>
+        /// <param name="tenSP"></param>
+        /// <returns></returns>
+        public List<ThongKe_DTO> ThongKeDoanhThuTheo_Thang(DateTime ngayBD, DateTime ngayKT, string tenSP)
         {
-            IQueryable ds = null;
+            List<ThongKe_DTO> list = null;
             try
             {
-                ds = from hd in DBO.HoaDons
-                     join cthd in DBO.ChiTietHDs on hd.maHD equals cthd.maHD
-                     join sp in DBO.SanPhams on cthd.maSP equals sp.maSP
-                     where hd.ngayLap <= ngayKT && hd.ngayLap >= ngayBD && sp.tenSP.Contains(tenSP)
-                     orderby hd.ngayLap.Month
-                     group hd by new { cthd.maSP, sp.tenSP, hd.ngayLap.Month } into kq
-                     select new
-                     {
-                         Mã_SP = kq.Key.maSP,
-                         Tên_SP = kq.Key.tenSP,
-                         Tổng_Tiền = kq.Sum(d => d.thanhTien),
-                         Tháng = kq.Key.Month
-                     };
+                var ds = from hd in DBO.HoaDons
+                         join cthd in DBO.ChiTietHDs on hd.maHD equals cthd.maHD
+                         join sp in DBO.SanPhams on cthd.maSP equals sp.maSP
+                         where hd.ngayLap.Date <= ngayKT.Date && hd.ngayLap.Date >= ngayBD.Date && sp.tenSP.Contains(tenSP)
+                         orderby hd.ngayLap.Year, hd.ngayLap.Month
+                         group new { hd, cthd } by new { cthd.maSP, sp.tenSP, Month = hd.ngayLap.Month, Year = hd.ngayLap.Year } into kq
+                         select new ThongKe_DTO
+                         {
+                             MaSP = kq.Key.maSP,
+                             TenSP = kq.Key.tenSP,
+                             TongTien = kq.Sum(d => d.hd.thanhTien),
+                             Thang = kq.Key.Month,
+                             Nam = kq.Key.Year
+                         };
+                list = ds.ToList();
+            }
+            catch (Exception ex)
+            { 
+                throw new Exception(ex.Message);
+            }
+            return list;
+        }
+        /// <summary>
+        /// Nguồn dữ liệu doanh thu theo năm
+        /// </summary>
+        /// <param name="namThongKe"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKe_DTO> ThongKeDoanhThuTheo_Nam(DateTime namThongKe)
+        {
+            List<ThongKe_DTO> list = null;
+            try
+            {
+                var ds = from hd in DBO.HoaDons
+                         join cthd in DBO.ChiTietHDs on hd.maHD equals cthd.maHD
+                         join sp in DBO.SanPhams on cthd.maSP equals sp.maSP
+                         where hd.ngayLap.Year == namThongKe.Year
+                         orderby hd.ngayLap.Month
+                         group new { hd, cthd } by new { cthd.maSP, sp.tenSP, Month = hd.ngayLap.Month } into kq
+                         select new ThongKe_DTO
+                         {
+                             MaSP = kq.Key.maSP,
+                             TenSP = kq.Key.tenSP,
+                             TongTien = kq.Sum(d => d.hd.thanhTien),
+                             Thang = kq.Key.Month,
+                             Nam = namThongKe.Year
+                         };
+                list = ds.ToList();
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.Message);
             }
-            return ds;
+            return list;
         }
+
     }
 }
