@@ -32,7 +32,7 @@ namespace Project.NET.GUI_UC
 
             var dataPoints = data.ThongKeNhanVienTheoChiNhanh();
 
-            chartTongNhanVienTheoPhongBan.CreateChart(dataPoints,
+            chartTongNhanVienTheoPhongBan.SuportCreateChart(dataPoints,
                     dp => dp.TenCN,
                     dp => dp.SoLuongNV,
                     ViewType.Bar,
@@ -74,7 +74,7 @@ namespace Project.NET.GUI_UC
                         nafContent.SelectedPage = navPageTongNhanVienTheoChiNhanh;
                         var dataPoints = data.ThongKeNhanVienTheoChiNhanh();
 
-                        chartTongNhanVienTheoPhongBan.CreateChart(dataPoints,
+                        chartTongNhanVienTheoPhongBan.SuportCreateChart(dataPoints,
                                 dp => dp.TenCN,
                                 dp => dp.SoLuongNV,
                                 ViewType.Bar,

@@ -1,7 +1,9 @@
 ﻿using BUS;
 using DevExpress.XtraCharts;
 using DevExpress.XtraEditors;
+using DevExpress.XtraRichEdit.API.Native;
 using DTO;
+using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,34 +58,35 @@ namespace Project.NET.GUI_UC.PageKhuyenMai
             // buoc 1 : tao nguon du lieu
             //
             var statsByKhuyenMai = data.LayDanhSachThongKeKM();
+            chartTKKhuyenMai.SuportCreateChart(statsByKhuyenMai, d => d.SoLuongConLaiSauKM, d => d.SoLuongKM, ViewType.Bar,
+                "Thống kê Khuyến Mãi", "Số lượng còn lại sau khuyến mãi", "Số lượng Khuyến Mãi", "Số lượng còn lại sau khuyến mãi");
+            ////
+            //// buoc 2: Cau hinh bieu do cot
+            //// 
+            //// Cấu hình tiêu đề
+            //chartTKKhuyenMai.Titles.Add(new ChartTitle() { Text = "Thống kê khuyến mãi" });
 
-            //
-            // buoc 2: Cau hinh bieu do cot
-            // 
-            // Cấu hình tiêu đề
-            chartTKKhuyenMai.Titles.Add(new ChartTitle() { Text = "Thống kê khuyến mãi" });
+            //// Cấu hình trục X
+            //XYDiagram diagram = (XYDiagram)chartTKKhuyenMai.Diagram;
+            //diagram.AxisX.Title.Text = "Số lượng còn lại sau khuyến mãi";
+            //diagram.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
 
-            // Cấu hình trục X
-            XYDiagram diagram = (XYDiagram)chartTKKhuyenMai.Diagram;
-            diagram.AxisX.Title.Text = "Mã sản phẩm";
-            diagram.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            //// Cấu hình trục Y
+            //diagram.AxisY.Title.Text = "Số lượng khuyến mãi";
+            //diagram.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
 
-            // Cấu hình trục Y
-            diagram.AxisY.Title.Text = "Số lượng khuyến mãi";
-            diagram.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
-
-            //
-            // buoc 3: them du lieu vao bieu do
-            // 
-            Series series = new Series("Số lượng khuyến mãi", ViewType.Bar);
-            Series seriesSLConLaiSauKM = new Series("Số lượng còn lại sau khuyến mãi", ViewType.Bar);
-            foreach (ThongKeKhuyenMai_DTO data in statsByKhuyenMai)
-            {
-                series.Points.Add(new SeriesPoint(data.MaSP, data.SoLuongKM));
-                seriesSLConLaiSauKM.Points.Add(new SeriesPoint(data.MaSP, data.SoLuongConLaiSauKM));
-            }
-            chartTKKhuyenMai.Series.Add(series);
-            chartTKKhuyenMai.Series.Add(seriesSLConLaiSauKM);
+            ////
+            //// buoc 3: them du lieu vao bieu do
+            //// 
+            //Series series = new Series("Số lượng khuyến mãi", ViewType.Bar);
+            //Series seriesSLConLaiSauKM = new Series("Số lượng còn lại sau khuyến mãi", ViewType.Bar);
+            //foreach (ThongKeKhuyenMai_DTO data in statsByKhuyenMai)
+            //{
+            //    series.Points.Add(new SeriesPoint(data.MaSP, data.SoLuongKM));
+            //    seriesSLConLaiSauKM.Points.Add(new SeriesPoint(data.MaSP, data.SoLuongConLaiSauKM));
+            //}
+            //chartTKKhuyenMai.Series.Add(series);
+            //chartTKKhuyenMai.Series.Add(seriesSLConLaiSauKM);
         } 
 
         public void sql()

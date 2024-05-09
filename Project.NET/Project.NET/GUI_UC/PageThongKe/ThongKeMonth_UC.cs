@@ -9,11 +9,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project.NET.ExtensionMethods;
+using BUS;
 
+using DevExpress.XtraRichEdit.API.Native;
+using DevExpress.XtraCharts;
 namespace Project.NET.GUI_UC
 {
     public partial class ThongKeMonth_UC : DevExpress.XtraEditors.XtraUserControl
     {
+        ThongKe_BUS data = new ThongKe_BUS();
         public ThongKeMonth_UC()
         {
             InitializeComponent();
@@ -23,6 +28,29 @@ namespace Project.NET.GUI_UC
         {
             TextEdit editText = sender as TextEdit;
             editText.SupportVietnamese(30);
+        }
+
+        private void btnThongKeThang_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var stats = data.ThongKeDoanhThuTheo_Thang(txtNgayLapHoaDonTu.DateTime, txtNgayLapHoaDonDen.DateTime, txtTKTenSP.Text);
+                dgvTongTienMatHang.DataSource = stats;
+                chartDoanhThuThang.SuportCreateChart(
+                    stats,
+                    d => d.Thang,
+                    d => d.TongTien,
+                    ViewType.Bar,
+                    "Doanh Thu theo tháng",
+                    "Tháng",
+                    "Tổng tiền",
+                    "Tình hình kinh doanh theo tháng"
+                    );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

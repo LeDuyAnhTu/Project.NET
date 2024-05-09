@@ -65,9 +65,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="QLBHX.cs">
-      <DependentUpon>QLBHX.dbml</DependentUpon>
-    </Compile>
     <Compile Include="QLBHX.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

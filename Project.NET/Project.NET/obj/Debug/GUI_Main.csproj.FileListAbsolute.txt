@@ -381,6 +381,7 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.D
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Images.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Office.v22.2.Core.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.PivotGrid.v22.2.Core.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Printing.v22.2.Core.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
@@ -391,6 +392,7 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.U
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Xpo.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraBars.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraCharts.v22.2.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraCharts.v22.2.Extensions.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraCharts.v22.2.UI.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraCharts.v22.2.Wizard.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraDiagram.v22.2.dll
@@ -398,8 +400,10 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.X
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraGauges.v22.2.Core.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraGrid.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraLayout.v22.2.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraPivotGrid.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraPrinting.v22.2.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.CodeCompletion.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.Extensions.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraRichEdit.v22.2.dll
@@ -409,11 +413,10 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.X
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DTO.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.dll
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.SqlServer.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraCharts.v22.2.Extensions.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\BUS.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DTO.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Charts.v22.2.Core.xml
@@ -424,6 +427,7 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.D
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Diagram.v22.2.Core.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Office.v22.2.Core.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.PivotGrid.v22.2.Core.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Utils.v22.2.xml
@@ -440,9 +444,11 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.P
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraGauges.v22.2.Core.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraGrid.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraLayout.v22.2.xml
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraPivotGrid.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraPrinting.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.xml
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.CodeCompletion.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.Extensions.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraRichEdit.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.xml
@@ -450,10 +456,10 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.X
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.Desktop.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.xml
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.SqlServer.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll.config
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.AssemblyReference.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmWaiting.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Loading_UC.resources
@@ -487,6 +493,7 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeNhanVien_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeYear_UC.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Properties.Resources.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RP.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.GenerateResource.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe.licenses
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.CoreCompileInputs.cache
