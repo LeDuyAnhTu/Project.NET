@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhanCong_UC));
             this.layoutNhanVien = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.txtGioiTinh = new DevExpress.XtraEditors.TextEdit();
@@ -79,12 +80,11 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutGroupThaoTacCSDL1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem25 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutNhanVien)).BeginInit();
             this.layoutNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
@@ -132,11 +132,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutNhanVien
@@ -174,6 +174,19 @@
             this.layoutNhanVien.Size = new System.Drawing.Size(995, 766);
             this.layoutNhanVien.TabIndex = 4;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 532);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(971, 222);
+            this.tableLayoutPanel1.TabIndex = 35;
+            // 
             // labelControl
             // 
             this.labelControl.AllowHtmlString = true;
@@ -197,11 +210,11 @@
             this.labelControl.TabIndex = 34;
             this.labelControl.Text = "Phân công";
             // 
-            // txtNhanVienTrucQuay
+            // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(147, 228);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHoTen.Name = "txtNhanVienTrucQuay";
+            this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Properties.Appearance.Options.UseFont = true;
             this.txtHoTen.Properties.ReadOnly = true;
@@ -416,9 +429,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboChiNhanh.Properties.NullText = "";
             this.cboChiNhanh.Properties.PopupSizeable = false;
+            this.cboChiNhanh.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoComplete;
+            this.cboChiNhanh.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cboChiNhanh.Size = new System.Drawing.Size(181, 26);
             this.cboChiNhanh.StyleController = this.layoutNhanVien;
             this.cboChiNhanh.TabIndex = 13;
+            this.cboChiNhanh.EditValueChanged += new System.EventHandler(this.cboChiNhanh_EditValueChanged);
             // 
             // btnThem1
             // 
@@ -908,6 +924,19 @@
             this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem23.TextVisible = false;
             // 
+            // layoutControlItem25
+            // 
+            this.layoutControlItem25.Control = this.btnLamMoi1;
+            this.layoutControlItem25.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem25.CustomizationFormText = "layoutControlItem13";
+            this.layoutControlItem25.Location = new System.Drawing.Point(487, 0);
+            this.layoutControlItem25.Name = "layoutControlItem25";
+            this.layoutControlItem25.OptionsTableLayoutItem.RowIndex = 1;
+            this.layoutControlItem25.Size = new System.Drawing.Size(486, 40);
+            this.layoutControlItem25.Text = "layoutControlItem13";
+            this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem25.TextVisible = false;
+            // 
             // layoutControlItem24
             // 
             this.layoutControlItem24.Control = this.btnCapNhat1;
@@ -922,19 +951,6 @@
             this.layoutControlItem24.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem24.TextVisible = false;
             // 
-            // layoutControlItem25
-            // 
-            this.layoutControlItem25.Control = this.btnLamMoi1;
-            this.layoutControlItem25.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem25.CustomizationFormText = "layoutControlItem13";
-            this.layoutControlItem25.Location = new System.Drawing.Point(487, 0);
-            this.layoutControlItem25.Name = "layoutControlItem25";
-            this.layoutControlItem25.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem25.Size = new System.Drawing.Size(486, 40);
-            this.layoutControlItem25.Text = "layoutControlItem13";
-            this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem25.TextVisible = false;
-            // 
             // layoutControlItem26
             // 
             this.layoutControlItem26.Control = this.btnXoa1;
@@ -948,6 +964,15 @@
             this.layoutControlItem26.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem26.TextVisible = false;
             // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.tableLayoutPanel1;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 80);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(973, 224);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
+            // 
             // layoutControlItem10
             // 
             this.layoutControlItem10.Control = this.labelControl;
@@ -957,28 +982,6 @@
             this.layoutControlItem10.Text = "Tiêu đề:";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 532);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(971, 222);
-            this.tableLayoutPanel1.TabIndex = 35;
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.tableLayoutPanel1;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 80);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(973, 224);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
             // 
             // PhanCong_UC
             // 
@@ -1035,11 +1038,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutGroupThaoTacCSDL1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             this.ResumeLayout(false);
 
         }
