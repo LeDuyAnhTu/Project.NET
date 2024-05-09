@@ -1,66 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\",
+  "WorkspaceRootPath": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagethongke\\thongkeyear_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagethongke\\thongkeyear_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\pagekho\\thongkekho_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagekho\\thongkekho_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagethongke\\thongkeyear_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagethongke\\thongkeyear_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\dal\\thongkekho_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\thongkekho_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagethongke\\thongkemonth_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagethongke\\thongkemonth_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\bus\\thongkekho_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D212014-ECE4-462A-B4C8-6051A15575AC}|BUS\\BUS.csproj|solutionrelative:bus\\thongkekho_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagethongke\\thongkemonth_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagethongke\\thongkemonth_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{287994D4-E772-4644-A37E-F0749107F83F}|DTO\\DTO.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\dto\\thongke_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{287994D4-E772-4644-A37E-F0749107F83F}|DTO\\DTO.csproj|solutionrelative:dto\\thongke_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagekhachhang\\thongkekhachhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagekhachhang\\thongkekhachhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagekhuyenmai\\thongkekhuyenmai_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagekhuyenmai\\thongkekhuyenmai_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagenhanvien\\thongkenhanvien_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagenhanvien\\thongkenhanvien_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\extensionmethods\\chartcontrolextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\extensionmethods\\chartcontrolextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagekhuyenmai\\thongkekhuyenmai_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagekhuyenmai\\thongkekhuyenmai_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\dal\\thongkekhuyenmai_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\thongkekhuyenmai_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|e:\\tdc_hk4\\.net letho\\project.net\\project.net\\project.net\\gui_uc\\pagebaocao\\baocao_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebaocao\\baocao_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\project.net\\gui_uc\\pagebaocao\\baocao_uc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebaocao\\baocao_uc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\project.net\\gui_uc\\pagebaocao\\baocao_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebaocao\\baocao_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{287994D4-E772-4644-A37E-F0749107F83F}|DTO\\DTO.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\dto\\thongkekho_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287994D4-E772-4644-A37E-F0749107F83F}|DTO\\DTO.csproj|solutionrelative:dto\\thongkekho_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,8 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -85,195 +53,55 @@
               "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThongKeKho_UC.cs [Design]",
+              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKho\\ThongKeKho_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageKho\\ThongKeKho_UC.cs",
+              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKho\\ThongKeKho_UC.cs [Design]",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageKho\\ThongKeKho_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T02:23:11.723Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ThongKeYear_UC.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAowCYAAAAgAAAA",
+              "DocumentIndex": 2,
+              "Title": "ThongKeKho_BUS.cs",
+              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ThongKeKho_BUS.cs",
+              "RelativeDocumentMoniker": "BUS\\ThongKeKho_BUS.cs",
+              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\BUS\\ThongKeKho_BUS.cs",
+              "RelativeToolTip": "BUS\\ThongKeKho_BUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:49:49.761Z",
+              "WhenOpened": "2024-05-09T02:17:45.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ThongKeMonth_UC.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAIwDQAAAANAAAA",
+              "Title": "ThongKeKho_DTO.cs",
+              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\DTO\\ThongKeKho_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ThongKeKho_DTO.cs",
+              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\DTO\\ThongKeKho_DTO.cs",
+              "RelativeToolTip": "DTO\\ThongKeKho_DTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:42:08.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ThongKeMonth_UC.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs [Design]",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeMonth_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:31:42.517Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ThongKe_DTO.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\DTO\\ThongKe_DTO.cs",
-              "RelativeDocumentMoniker": "DTO\\ThongKe_DTO.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\DTO\\ThongKe_DTO.cs",
-              "RelativeToolTip": "DTO\\ThongKe_DTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:46:40.962Z",
+              "WhenOpened": "2024-05-09T02:13:44.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ThongKeYear_UC.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs [Design]",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageThongKe\\ThongKeYear_UC.cs [Design]",
+              "Title": "ThongKeKho_DAL.cs",
+              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\DAL\\ThongKeKho_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ThongKeKho_DAL.cs",
+              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\DAL\\ThongKeKho_DAL.cs",
+              "RelativeToolTip": "DAL\\ThongKeKho_DAL.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswAsAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:35:29.552Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ThongKeKhachHang_UC.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhachHang\\ThongKeKhachHang_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageKhachHang\\ThongKeKhachHang_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhachHang\\ThongKeKhachHang_UC.cs [Design]",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageKhachHang\\ThongKeKhachHang_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:21:08.27Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ThongKeNhanVien_UC.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageNhanVien\\ThongKeNhanVien_UC.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAowCIAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:13:55.587Z",
+              "WhenOpened": "2024-05-09T02:13:14.645Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChartControlExtensions.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\ExtensionMethods\\ChartControlExtensions.cs",
-              "RelativeDocumentMoniker": "Project.NET\\ExtensionMethods\\ChartControlExtensions.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\ExtensionMethods\\ChartControlExtensions.cs",
-              "RelativeToolTip": "Project.NET\\ExtensionMethods\\ChartControlExtensions.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBoAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:05:08.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ThongKeKhuyenMai_UC.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAgwEAAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T11:59:42.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ThongKeKhuyenMai_DAL.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\DAL\\ThongKeKhuyenMai_DAL.cs",
-              "RelativeDocumentMoniker": "DAL\\ThongKeKhuyenMai_DAL.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\DAL\\ThongKeKhuyenMai_DAL.cs",
-              "RelativeToolTip": "DAL\\ThongKeKhuyenMai_DAL.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T11:59:06.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ThongKeKhuyenMai_UC.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs [Design]",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageKhuyenMai\\ThongKeKhuyenMai_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T11:57:50.03Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Database.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\DAL\\Database.cs",
-              "RelativeDocumentMoniker": "DAL\\Database.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\DAL\\Database.cs",
-              "RelativeToolTip": "DAL\\Database.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T11:19:16.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BaoCao_UC.Designer.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.Designer.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.Designer.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.Designer.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.Designer.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowDsAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T11:15:31.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BaoCao_UC.cs",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAowBAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T11:15:14.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BaoCao_UC.cs [Design]",
-              "DocumentMoniker": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs",
-              "ToolTip": "E:\\TDC_HK4\\.net letho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs [Design]",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageBaoCao\\BaoCao_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T11:14:36.795Z"
             }
           ]
         }
