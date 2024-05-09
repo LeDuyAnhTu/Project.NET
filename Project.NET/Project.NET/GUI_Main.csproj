@@ -197,17 +197,17 @@
     <Compile Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.Designer.cs">
       <DependentUpon>ThongKeKhachHang_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_UC\PageKho\ThongKeKho_UC.cs">
+    <Compile Include="GUI_UC\PageKhoCN\ThongKeKhoCN_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI_UC\PageKho\ThongKeKho_UC.Designer.cs">
-      <DependentUpon>ThongKeKho_UC.cs</DependentUpon>
+    <Compile Include="GUI_UC\PageKhoCN\ThongKeKhoCN_UC.Designer.cs">
+      <DependentUpon>ThongKeKhoCN_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_UC\PageKho\Kho_UC.cs">
+    <Compile Include="GUI_UC\PageKhoCN\KhoCN_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI_UC\PageKho\Kho_UC.Designer.cs">
-      <DependentUpon>Kho_UC.cs</DependentUpon>
+    <Compile Include="GUI_UC\PageKhoCN\KhoCN_UC.Designer.cs">
+      <DependentUpon>KhoCN_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_UC\PageKhuyenMai\ChiTietKhuyenMai_UC.cs">
       <SubType>UserControl</SubType>
@@ -362,11 +362,11 @@
     <EmbeddedResource Include="GUI_UC\PageKhachHang\ThongKeKhachHang_UC.resx">
       <DependentUpon>ThongKeKhachHang_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_UC\PageKho\Kho_UC.resx">
-      <DependentUpon>Kho_UC.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_UC\PageKhoCN\KhoCN_UC.resx">
+      <DependentUpon>KhoCN_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_UC\PageKho\ThongKeKho_UC.resx">
-      <DependentUpon>ThongKeKho_UC.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_UC\PageKhoCN\ThongKeKhoCN_UC.resx">
+      <DependentUpon>ThongKeKhoCN_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageKhuyenMai\ChiTietKhuyenMai_UC.resx">
       <DependentUpon>ChiTietKhuyenMai_UC.cs</DependentUpon>

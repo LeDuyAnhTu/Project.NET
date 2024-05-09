@@ -48,6 +48,7 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.groupFrame = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutChart = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.BUTTONS = new DevExpress.XtraLayout.LayoutControl();
             this.btnTKLoaiSanPham = new DevExpress.XtraEditors.SimpleButton();
             this.btnTKNSX = new DevExpress.XtraEditors.SimpleButton();
@@ -60,7 +61,6 @@
             this.layoutTKSoLuongSpConLai = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTKDonGia = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutTKLoaiSanPham = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.TABLE_UC)).BeginInit();
             this.TABLE_UC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CHARTS)).BeginInit();
@@ -79,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupFrame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BUTTONS)).BeginInit();
             this.BUTTONS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -87,7 +88,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKSoLuongSpConLai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKDonGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKLoaiSanPham)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // TABLE_UC
@@ -323,6 +323,14 @@
             this.layoutChart.TextSize = new System.Drawing.Size(0, 0);
             this.layoutChart.TextVisible = false;
             // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 539);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(636, 48);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // BUTTONS
             // 
             this.TABLE_UC.SetColumn(this.BUTTONS, 0);
@@ -554,14 +562,6 @@
             this.layoutTKLoaiSanPham.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTKLoaiSanPham.TextVisible = false;
             // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 539);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(636, 48);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // ThongKeSanPham_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -592,6 +592,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupFrame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BUTTONS)).EndInit();
             this.BUTTONS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -600,7 +601,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKSoLuongSpConLai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKDonGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutTKLoaiSanPham)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }

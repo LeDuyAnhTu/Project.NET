@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace Project.NET.GUI_UC.PageKho
 {
-    public partial class Kho_UC : DevExpress.XtraEditors.XtraUserControl
+    public partial class KhoCN_UC : DevExpress.XtraEditors.XtraUserControl
     {
         //Properties
         private KhuVuc_BUS db_KV = new KhuVuc_BUS();
@@ -23,7 +23,7 @@ namespace Project.NET.GUI_UC.PageKho
         private KhoCN_BUS db_Kho = new KhoCN_BUS();
 
         //Constructor
-        public Kho_UC()
+        public KhoCN_UC()
         {
             InitializeComponent();
         }
