@@ -1,18 +1,8 @@
 ﻿using DevExpress.XtraEditors;
 using Project.NET.ExtensionMethods;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Project.NET.ExtensionMethods;
 using BUS;
-
-using DevExpress.XtraRichEdit.API.Native;
 using DevExpress.XtraCharts;
 namespace Project.NET.GUI_UC
 {

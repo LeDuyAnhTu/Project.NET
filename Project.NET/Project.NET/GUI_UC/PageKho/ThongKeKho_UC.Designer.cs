@@ -97,6 +97,7 @@
             this.tableTKKho.Name = "tableTKKho";
             this.tableTKKho.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 76F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 634F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
             this.tableTKKho.Size = new System.Drawing.Size(691, 745);
             this.tableTKKho.TabIndex = 2;
@@ -107,12 +108,12 @@
             this.tableTKKho.SetColumn(this.dataLayoutTkKho, 0);
             this.dataLayoutTkKho.Controls.Add(this.nafContent);
             this.dataLayoutTkKho.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataLayoutTkKho.Location = new System.Drawing.Point(13, 88);
+            this.dataLayoutTkKho.Location = new System.Drawing.Point(7, 82);
             this.dataLayoutTkKho.Name = "dataLayoutTkKho";
             this.dataLayoutTkKho.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(993, 414, 650, 400);
             this.dataLayoutTkKho.Root = this.layoutControlGroup1;
             this.tableTKKho.SetRow(this.dataLayoutTkKho, 1);
-            this.dataLayoutTkKho.Size = new System.Drawing.Size(665, 644);
+            this.dataLayoutTkKho.Size = new System.Drawing.Size(677, 632);
             this.dataLayoutTkKho.TabIndex = 1;
             this.dataLayoutTkKho.Text = "dataLayoutControl1";
             // 
@@ -121,14 +122,14 @@
             this.nafContent.Controls.Add(this.navPageTKSPTheoLoai);
             this.nafContent.Controls.Add(this.navPageTKGiaTriKho);
             this.nafContent.Controls.Add(this.navPageTKTonKho);
-            this.nafContent.Location = new System.Drawing.Point(12, 12);
+            this.nafContent.Location = new System.Drawing.Point(6, 6);
             this.nafContent.Name = "nafContent";
             this.nafContent.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navPageTKSPTheoLoai,
             this.navPageTKGiaTriKho,
             this.navPageTKTonKho});
             this.nafContent.SelectedPage = this.navPageTKSPTheoLoai;
-            this.nafContent.Size = new System.Drawing.Size(641, 620);
+            this.nafContent.Size = new System.Drawing.Size(665, 620);
             this.nafContent.TabIndex = 4;
             this.nafContent.Text = "navFrame";
             // 
@@ -138,7 +139,7 @@
             this.navPageTKSPTheoLoai.Controls.Add(this.chartTKSPTheoLoai);
             this.navPageTKSPTheoLoai.Controls.Add(this.labelControl1);
             this.navPageTKSPTheoLoai.Name = "navPageTKSPTheoLoai";
-            this.navPageTKSPTheoLoai.Size = new System.Drawing.Size(641, 620);
+            this.navPageTKSPTheoLoai.Size = new System.Drawing.Size(665, 620);
             // 
             // chartTKSPTheoLoai
             // 
@@ -151,7 +152,7 @@
             series1.Name = "Series 1";
             this.chartTKSPTheoLoai.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartTKSPTheoLoai.Size = new System.Drawing.Size(641, 595);
+            this.chartTKSPTheoLoai.Size = new System.Drawing.Size(665, 595);
             this.chartTKSPTheoLoai.TabIndex = 9;
             // 
             // labelControl1
@@ -175,7 +176,7 @@
             this.navPageTKGiaTriKho.Controls.Add(this.chartTKGiaTriKho);
             this.navPageTKGiaTriKho.Controls.Add(this.labelControl2);
             this.navPageTKGiaTriKho.Name = "navPageTKGiaTriKho";
-            this.navPageTKGiaTriKho.Size = new System.Drawing.Size(641, 620);
+            this.navPageTKGiaTriKho.Size = new System.Drawing.Size(665, 620);
             // 
             // chartTKGiaTriKho
             // 
@@ -188,7 +189,7 @@
             series2.Name = "Series 1";
             this.chartTKGiaTriKho.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-            this.chartTKGiaTriKho.Size = new System.Drawing.Size(641, 595);
+            this.chartTKGiaTriKho.Size = new System.Drawing.Size(665, 595);
             this.chartTKGiaTriKho.TabIndex = 9;
             // 
             // labelControl2
@@ -212,7 +213,7 @@
             this.navPageTKTonKho.Controls.Add(this.chartTKTonKho);
             this.navPageTKTonKho.Controls.Add(this.labelControl3);
             this.navPageTKTonKho.Name = "navPageTKTonKho";
-            this.navPageTKTonKho.Size = new System.Drawing.Size(641, 620);
+            this.navPageTKTonKho.Size = new System.Drawing.Size(665, 620);
             // 
             // chartTKTonKho
             // 
@@ -225,7 +226,7 @@
             series3.Name = "Series 1";
             this.chartTKTonKho.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series3};
-            this.chartTKTonKho.Size = new System.Drawing.Size(641, 595);
+            this.chartTKTonKho.Size = new System.Drawing.Size(665, 595);
             this.chartTKTonKho.TabIndex = 9;
             // 
             // labelControl3
@@ -250,7 +251,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem10});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(665, 644);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(677, 632);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem10
@@ -258,7 +259,7 @@
             this.layoutControlItem10.Control = this.nafContent;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(645, 624);
+            this.layoutControlItem10.Size = new System.Drawing.Size(667, 622);
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
@@ -271,12 +272,12 @@
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutCoCauNhanVienTheoChucVu});
-            this.layoutControl1.Location = new System.Drawing.Point(13, 12);
+            this.layoutControl1.Location = new System.Drawing.Point(7, 6);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(381, 527, 650, 400);
             this.layoutControl1.Root = this.Root;
             this.tableTKKho.SetRow(this.layoutControl1, 0);
-            this.layoutControl1.Size = new System.Drawing.Size(665, 72);
+            this.layoutControl1.Size = new System.Drawing.Size(677, 74);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -307,9 +308,9 @@
             this.btnTKTonKho.AppearancePressed.Options.UseBorderColor = true;
             this.btnTKTonKho.AppearancePressed.Options.UseFont = true;
             this.btnTKTonKho.AppearancePressed.Options.UseForeColor = true;
-            this.btnTKTonKho.Location = new System.Drawing.Point(12, 38);
+            this.btnTKTonKho.Location = new System.Drawing.Point(6, 30);
             this.btnTKTonKho.Name = "btnTKTonKho";
-            this.btnTKTonKho.Size = new System.Drawing.Size(641, 22);
+            this.btnTKTonKho.Size = new System.Drawing.Size(665, 22);
             this.btnTKTonKho.StyleController = this.layoutControl1;
             this.btnTKTonKho.TabIndex = 0;
             this.btnTKTonKho.Text = "Thống kê tồn kho";
@@ -341,9 +342,9 @@
             this.btnTKGiaTriKho.AppearancePressed.Options.UseBorderColor = true;
             this.btnTKGiaTriKho.AppearancePressed.Options.UseFont = true;
             this.btnTKGiaTriKho.AppearancePressed.Options.UseForeColor = true;
-            this.btnTKGiaTriKho.Location = new System.Drawing.Point(334, 12);
+            this.btnTKGiaTriKho.Location = new System.Drawing.Point(339, 6);
             this.btnTKGiaTriKho.Name = "btnTKGiaTriKho";
-            this.btnTKGiaTriKho.Size = new System.Drawing.Size(319, 22);
+            this.btnTKGiaTriKho.Size = new System.Drawing.Size(332, 22);
             this.btnTKGiaTriKho.StyleController = this.layoutControl1;
             this.btnTKGiaTriKho.TabIndex = 0;
             this.btnTKGiaTriKho.Text = "Thống kê giá trị Kho - Chi Nhánh";
@@ -375,9 +376,9 @@
             this.btnTKSPTheoLoai.AppearancePressed.Options.UseBorderColor = true;
             this.btnTKSPTheoLoai.AppearancePressed.Options.UseFont = true;
             this.btnTKSPTheoLoai.AppearancePressed.Options.UseForeColor = true;
-            this.btnTKSPTheoLoai.Location = new System.Drawing.Point(12, 12);
+            this.btnTKSPTheoLoai.Location = new System.Drawing.Point(6, 6);
             this.btnTKSPTheoLoai.Name = "btnTKSPTheoLoai";
-            this.btnTKSPTheoLoai.Size = new System.Drawing.Size(318, 22);
+            this.btnTKSPTheoLoai.Size = new System.Drawing.Size(331, 22);
             this.btnTKSPTheoLoai.StyleController = this.layoutControl1;
             this.btnTKSPTheoLoai.TabIndex = 0;
             this.btnTKSPTheoLoai.Text = "Thống kê sản phẩm theo loại sản phẩm";
@@ -401,7 +402,7 @@
             this.layoutCoCauNhanVienTheoPhongBan,
             this.layoutTongNhanVienTheoChucVu});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(665, 72);
+            this.Root.Size = new System.Drawing.Size(677, 74);
             this.Root.TextVisible = false;
             // 
             // layoutTongNhanVienTheoPhongBan
@@ -409,27 +410,27 @@
             this.layoutTongNhanVienTheoPhongBan.Control = this.btnTKSPTheoLoai;
             this.layoutTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 0);
             this.layoutTongNhanVienTheoPhongBan.Name = "layoutTongNhanVienTheoPhongBan";
-            this.layoutTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(322, 26);
+            this.layoutTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(333, 24);
             this.layoutTongNhanVienTheoPhongBan.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTongNhanVienTheoPhongBan.TextVisible = false;
             // 
             // layoutCoCauNhanVienTheoPhongBan
             // 
             this.layoutCoCauNhanVienTheoPhongBan.Control = this.btnTKGiaTriKho;
-            this.layoutCoCauNhanVienTheoPhongBan.Location = new System.Drawing.Point(322, 0);
+            this.layoutCoCauNhanVienTheoPhongBan.Location = new System.Drawing.Point(333, 0);
             this.layoutCoCauNhanVienTheoPhongBan.Name = "layoutCoCauNhanVienTheoPhongBan";
             this.layoutCoCauNhanVienTheoPhongBan.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(323, 26);
+            this.layoutCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(334, 24);
             this.layoutCoCauNhanVienTheoPhongBan.TextSize = new System.Drawing.Size(0, 0);
             this.layoutCoCauNhanVienTheoPhongBan.TextVisible = false;
             // 
             // layoutTongNhanVienTheoChucVu
             // 
             this.layoutTongNhanVienTheoChucVu.Control = this.btnTKTonKho;
-            this.layoutTongNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 26);
+            this.layoutTongNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 24);
             this.layoutTongNhanVienTheoChucVu.Name = "layoutTongNhanVienTheoChucVu";
             this.layoutTongNhanVienTheoChucVu.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutTongNhanVienTheoChucVu.Size = new System.Drawing.Size(645, 26);
+            this.layoutTongNhanVienTheoChucVu.Size = new System.Drawing.Size(667, 40);
             this.layoutTongNhanVienTheoChucVu.TextSize = new System.Drawing.Size(0, 0);
             this.layoutTongNhanVienTheoChucVu.TextVisible = false;
             // 
