@@ -38,9 +38,9 @@
             DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnCoCauNhanVienTheoChucVu = new DevExpress.XtraEditors.SimpleButton();
-            this.btnTongNhanVienTheoChucVu = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCoCauNVTheoCN = new DevExpress.XtraEditors.SimpleButton();
-            this.btnTongNVTheoCN = new DevExpress.XtraEditors.SimpleButton();
+            this.btnTongNhanVienTheoTuoi = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCoCauNVTheoGioiTinh = new DevExpress.XtraEditors.SimpleButton();
+            this.btnTongNhanVienTheoChiNhanh = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutTongNhanVienTheoPhongBan = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutCoCauNhanVienTheoPhongBan = new DevExpress.XtraLayout.LayoutControlItem();
@@ -50,17 +50,17 @@
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.nafContent = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navPageTongNhanVienTheoChiNhanh = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.chartTongNhanVienTheoPhongBan = new DevExpress.XtraCharts.ChartControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.navPageCoCauNhanVienTheoChiNhanh = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.chartCoCauNhanVienTheoPhongBan = new DevExpress.XtraCharts.ChartControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.navPageTongNhanVienTheoChucVu = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.chartTongNhanVienTheoChucVu = new DevExpress.XtraCharts.ChartControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.chartTongNhanVienTheoChiNhanh = new DevExpress.XtraCharts.ChartControl();
+            this.lblTongNhanVienTheoChiNhanh = new DevExpress.XtraEditors.LabelControl();
+            this.navPageTongNhanVienTheoTuoi = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.chartTongNhanVienTheoTuoi = new DevExpress.XtraCharts.ChartControl();
+            this.lblTongNhanVienTheoTuoi = new DevExpress.XtraEditors.LabelControl();
+            this.navPageCoCauNVTheoGioiTinh = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.chartCoCauNVTheoGioiTinh = new DevExpress.XtraCharts.ChartControl();
+            this.lblCoCauNVTheoGioiTinh = new DevExpress.XtraEditors.LabelControl();
             this.navPageCoCauNhanVienTheoChucVu = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.chartCoCauNhanVienTheoChucVu = new DevExpress.XtraCharts.ChartControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.lblCoCauNhanVienTheoChucVu = new DevExpress.XtraEditors.LabelControl();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
@@ -78,15 +78,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.nafContent)).BeginInit();
             this.nafContent.SuspendLayout();
             this.navPageTongNhanVienTheoChiNhanh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoPhongBan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoChiNhanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            this.navPageCoCauNhanVienTheoChiNhanh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNhanVienTheoPhongBan)).BeginInit();
+            this.navPageTongNhanVienTheoTuoi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoTuoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            this.navPageTongNhanVienTheoChucVu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoChucVu)).BeginInit();
+            this.navPageCoCauNVTheoGioiTinh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNVTheoGioiTinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
             this.navPageCoCauNhanVienTheoChucVu.SuspendLayout();
@@ -102,9 +102,9 @@
             // 
             this.tableTKNV.SetColumn(this.layoutControl1, 0);
             this.layoutControl1.Controls.Add(this.btnCoCauNhanVienTheoChucVu);
-            this.layoutControl1.Controls.Add(this.btnTongNhanVienTheoChucVu);
-            this.layoutControl1.Controls.Add(this.btnCoCauNVTheoCN);
-            this.layoutControl1.Controls.Add(this.btnTongNVTheoCN);
+            this.layoutControl1.Controls.Add(this.btnTongNhanVienTheoTuoi);
+            this.layoutControl1.Controls.Add(this.btnCoCauNVTheoGioiTinh);
+            this.layoutControl1.Controls.Add(this.btnTongNhanVienTheoChiNhanh);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(7, 6);
             this.layoutControl1.Name = "layoutControl1";
@@ -147,113 +147,113 @@
             this.btnCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(344, 22);
             this.btnCoCauNhanVienTheoChucVu.StyleController = this.layoutControl1;
             this.btnCoCauNhanVienTheoChucVu.TabIndex = 0;
-            this.btnCoCauNhanVienTheoChucVu.Text = "Cơ Cấu nhân viên theo chức vụ";
+            this.btnCoCauNhanVienTheoChucVu.Text = "Cơ Cấu nhân viên theo Vị Trí (Chức vụ)";
             this.btnCoCauNhanVienTheoChucVu.Click += new System.EventHandler(this.Button_Click);
             // 
-            // btnTongNhanVienTheoChucVu
+            // btnTongNhanVienTheoTuoi
             // 
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.Options.UseFont = true;
-            this.btnTongNhanVienTheoChucVu.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.Options.UseBackColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.Options.UseFont = true;
-            this.btnTongNhanVienTheoChucVu.AppearanceHovered.Options.UseForeColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.Options.UseBackColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.Options.UseBorderColor = true;
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.Options.UseFont = true;
-            this.btnTongNhanVienTheoChucVu.AppearancePressed.Options.UseForeColor = true;
-            this.btnTongNhanVienTheoChucVu.Location = new System.Drawing.Point(6, 30);
-            this.btnTongNhanVienTheoChucVu.Name = "btnTongNhanVienTheoChucVu";
-            this.btnTongNhanVienTheoChucVu.Size = new System.Drawing.Size(344, 22);
-            this.btnTongNhanVienTheoChucVu.StyleController = this.layoutControl1;
-            this.btnTongNhanVienTheoChucVu.TabIndex = 0;
-            this.btnTongNhanVienTheoChucVu.Text = "Tổng nhân viên theo chức vụ";
-            this.btnTongNhanVienTheoChucVu.Click += new System.EventHandler(this.Button_Click);
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.Options.UseFont = true;
+            this.btnTongNhanVienTheoTuoi.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.Options.UseBackColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.Options.UseFont = true;
+            this.btnTongNhanVienTheoTuoi.AppearanceHovered.Options.UseForeColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.Options.UseBackColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.Options.UseBorderColor = true;
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.Options.UseFont = true;
+            this.btnTongNhanVienTheoTuoi.AppearancePressed.Options.UseForeColor = true;
+            this.btnTongNhanVienTheoTuoi.Location = new System.Drawing.Point(6, 30);
+            this.btnTongNhanVienTheoTuoi.Name = "btnTongNhanVienTheoTuoi";
+            this.btnTongNhanVienTheoTuoi.Size = new System.Drawing.Size(344, 22);
+            this.btnTongNhanVienTheoTuoi.StyleController = this.layoutControl1;
+            this.btnTongNhanVienTheoTuoi.TabIndex = 0;
+            this.btnTongNhanVienTheoTuoi.Text = "Cơ cấu nhân viên theo Tuổi";
+            this.btnTongNhanVienTheoTuoi.Click += new System.EventHandler(this.Button_Click);
             // 
-            // btnCoCauNVTheoCN
+            // btnCoCauNVTheoGioiTinh
             // 
-            this.btnCoCauNVTheoCN.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCoCauNVTheoCN.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnCoCauNVTheoCN.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCoCauNVTheoCN.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnCoCauNVTheoCN.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnCoCauNVTheoCN.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnCoCauNVTheoCN.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnCoCauNVTheoCN.AppearanceDisabled.Options.UseFont = true;
-            this.btnCoCauNVTheoCN.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnCoCauNVTheoCN.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCoCauNVTheoCN.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCoCauNVTheoCN.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCoCauNVTheoCN.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnCoCauNVTheoCN.AppearanceHovered.Options.UseBackColor = true;
-            this.btnCoCauNVTheoCN.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnCoCauNVTheoCN.AppearanceHovered.Options.UseFont = true;
-            this.btnCoCauNVTheoCN.AppearanceHovered.Options.UseForeColor = true;
-            this.btnCoCauNVTheoCN.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCoCauNVTheoCN.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCoCauNVTheoCN.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCoCauNVTheoCN.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnCoCauNVTheoCN.AppearancePressed.Options.UseBackColor = true;
-            this.btnCoCauNVTheoCN.AppearancePressed.Options.UseBorderColor = true;
-            this.btnCoCauNVTheoCN.AppearancePressed.Options.UseFont = true;
-            this.btnCoCauNVTheoCN.AppearancePressed.Options.UseForeColor = true;
-            this.btnCoCauNVTheoCN.Location = new System.Drawing.Point(352, 6);
-            this.btnCoCauNVTheoCN.Name = "btnCoCauNVTheoCN";
-            this.btnCoCauNVTheoCN.Size = new System.Drawing.Size(344, 22);
-            this.btnCoCauNVTheoCN.StyleController = this.layoutControl1;
-            this.btnCoCauNVTheoCN.TabIndex = 0;
-            this.btnCoCauNVTheoCN.Text = "Cơ cấu nhân viên theo chi nhánh";
-            this.btnCoCauNVTheoCN.Click += new System.EventHandler(this.Button_Click);
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.Options.UseFont = true;
+            this.btnCoCauNVTheoGioiTinh.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.Options.UseBackColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.Options.UseFont = true;
+            this.btnCoCauNVTheoGioiTinh.AppearanceHovered.Options.UseForeColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.Options.UseBackColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.Options.UseBorderColor = true;
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.Options.UseFont = true;
+            this.btnCoCauNVTheoGioiTinh.AppearancePressed.Options.UseForeColor = true;
+            this.btnCoCauNVTheoGioiTinh.Location = new System.Drawing.Point(352, 6);
+            this.btnCoCauNVTheoGioiTinh.Name = "btnCoCauNVTheoGioiTinh";
+            this.btnCoCauNVTheoGioiTinh.Size = new System.Drawing.Size(344, 22);
+            this.btnCoCauNVTheoGioiTinh.StyleController = this.layoutControl1;
+            this.btnCoCauNVTheoGioiTinh.TabIndex = 0;
+            this.btnCoCauNVTheoGioiTinh.Text = "Cơ cấu nhân viên theo Giới Tính";
+            this.btnCoCauNVTheoGioiTinh.Click += new System.EventHandler(this.Button_Click);
             // 
-            // btnTongNVTheoCN
+            // btnTongNhanVienTheoChiNhanh
             // 
-            this.btnTongNVTheoCN.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnTongNVTheoCN.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnTongNVTheoCN.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTongNVTheoCN.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.btnTongNVTheoCN.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnTongNVTheoCN.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnTongNVTheoCN.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnTongNVTheoCN.AppearanceDisabled.Options.UseFont = true;
-            this.btnTongNVTheoCN.AppearanceDisabled.Options.UseForeColor = true;
-            this.btnTongNVTheoCN.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnTongNVTheoCN.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTongNVTheoCN.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTongNVTheoCN.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
-            this.btnTongNVTheoCN.AppearanceHovered.Options.UseBackColor = true;
-            this.btnTongNVTheoCN.AppearanceHovered.Options.UseBorderColor = true;
-            this.btnTongNVTheoCN.AppearanceHovered.Options.UseFont = true;
-            this.btnTongNVTheoCN.AppearanceHovered.Options.UseForeColor = true;
-            this.btnTongNVTheoCN.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnTongNVTheoCN.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTongNVTheoCN.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTongNVTheoCN.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
-            this.btnTongNVTheoCN.AppearancePressed.Options.UseBackColor = true;
-            this.btnTongNVTheoCN.AppearancePressed.Options.UseBorderColor = true;
-            this.btnTongNVTheoCN.AppearancePressed.Options.UseFont = true;
-            this.btnTongNVTheoCN.AppearancePressed.Options.UseForeColor = true;
-            this.btnTongNVTheoCN.Location = new System.Drawing.Point(6, 6);
-            this.btnTongNVTheoCN.Name = "btnTongNVTheoCN";
-            this.btnTongNVTheoCN.Size = new System.Drawing.Size(344, 22);
-            this.btnTongNVTheoCN.StyleController = this.layoutControl1;
-            this.btnTongNVTheoCN.TabIndex = 0;
-            this.btnTongNVTheoCN.Text = "Tổng NV Theo Chi Nhánh";
-            this.btnTongNVTheoCN.Click += new System.EventHandler(this.Button_Click);
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.Options.UseFont = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceDisabled.Options.UseForeColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.Warning;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.Options.UseBackColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.Options.UseFont = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearanceHovered.Options.UseForeColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.ForeColor = DevExpress.LookAndFeel.DXSkinColors.ForeColors.WindowText;
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.Options.UseBackColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.Options.UseBorderColor = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.Options.UseFont = true;
+            this.btnTongNhanVienTheoChiNhanh.AppearancePressed.Options.UseForeColor = true;
+            this.btnTongNhanVienTheoChiNhanh.Location = new System.Drawing.Point(6, 6);
+            this.btnTongNhanVienTheoChiNhanh.Name = "btnTongNhanVienTheoChiNhanh";
+            this.btnTongNhanVienTheoChiNhanh.Size = new System.Drawing.Size(344, 22);
+            this.btnTongNhanVienTheoChiNhanh.StyleController = this.layoutControl1;
+            this.btnTongNhanVienTheoChiNhanh.TabIndex = 0;
+            this.btnTongNhanVienTheoChiNhanh.Text = "Tổng NV Theo Chi Nhánh";
+            this.btnTongNhanVienTheoChiNhanh.Click += new System.EventHandler(this.Button_Click);
             // 
             // Root
             // 
@@ -270,7 +270,7 @@
             // 
             // layoutTongNhanVienTheoPhongBan
             // 
-            this.layoutTongNhanVienTheoPhongBan.Control = this.btnTongNVTheoCN;
+            this.layoutTongNhanVienTheoPhongBan.Control = this.btnTongNhanVienTheoChiNhanh;
             this.layoutTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 0);
             this.layoutTongNhanVienTheoPhongBan.Name = "layoutTongNhanVienTheoPhongBan";
             this.layoutTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(346, 24);
@@ -279,7 +279,7 @@
             // 
             // layoutCoCauNhanVienTheoPhongBan
             // 
-            this.layoutCoCauNhanVienTheoPhongBan.Control = this.btnCoCauNVTheoCN;
+            this.layoutCoCauNhanVienTheoPhongBan.Control = this.btnCoCauNVTheoGioiTinh;
             this.layoutCoCauNhanVienTheoPhongBan.Location = new System.Drawing.Point(346, 0);
             this.layoutCoCauNhanVienTheoPhongBan.Name = "layoutCoCauNhanVienTheoPhongBan";
             this.layoutCoCauNhanVienTheoPhongBan.OptionsTableLayoutItem.ColumnIndex = 1;
@@ -289,7 +289,7 @@
             // 
             // layoutTongNhanVienTheoChucVu
             // 
-            this.layoutTongNhanVienTheoChucVu.Control = this.btnTongNhanVienTheoChucVu;
+            this.layoutTongNhanVienTheoChucVu.Control = this.btnTongNhanVienTheoTuoi;
             this.layoutTongNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 24);
             this.layoutTongNhanVienTheoChucVu.Name = "layoutTongNhanVienTheoChucVu";
             this.layoutTongNhanVienTheoChucVu.OptionsTableLayoutItem.RowIndex = 1;
@@ -341,15 +341,15 @@
             // nafContent
             // 
             this.nafContent.Controls.Add(this.navPageTongNhanVienTheoChiNhanh);
-            this.nafContent.Controls.Add(this.navPageCoCauNhanVienTheoChiNhanh);
-            this.nafContent.Controls.Add(this.navPageTongNhanVienTheoChucVu);
+            this.nafContent.Controls.Add(this.navPageTongNhanVienTheoTuoi);
+            this.nafContent.Controls.Add(this.navPageCoCauNVTheoGioiTinh);
             this.nafContent.Controls.Add(this.navPageCoCauNhanVienTheoChucVu);
             this.nafContent.Location = new System.Drawing.Point(6, 6);
             this.nafContent.Name = "nafContent";
             this.nafContent.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navPageTongNhanVienTheoChiNhanh,
-            this.navPageCoCauNhanVienTheoChiNhanh,
-            this.navPageTongNhanVienTheoChucVu,
+            this.navPageTongNhanVienTheoTuoi,
+            this.navPageCoCauNVTheoGioiTinh,
             this.navPageCoCauNhanVienTheoChucVu});
             this.nafContent.SelectedPage = this.navPageTongNhanVienTheoChiNhanh;
             this.nafContent.Size = new System.Drawing.Size(690, 561);
@@ -362,119 +362,119 @@
             // navPageTongNhanVienTheoChiNhanh
             // 
             this.navPageTongNhanVienTheoChiNhanh.Caption = "navPageTongNhanVienTheoChiNhanh";
-            this.navPageTongNhanVienTheoChiNhanh.Controls.Add(this.chartTongNhanVienTheoPhongBan);
-            this.navPageTongNhanVienTheoChiNhanh.Controls.Add(this.labelControl4);
+            this.navPageTongNhanVienTheoChiNhanh.Controls.Add(this.chartTongNhanVienTheoChiNhanh);
+            this.navPageTongNhanVienTheoChiNhanh.Controls.Add(this.lblTongNhanVienTheoChiNhanh);
             this.navPageTongNhanVienTheoChiNhanh.Name = "navPageTongNhanVienTheoChiNhanh";
             this.navPageTongNhanVienTheoChiNhanh.Size = new System.Drawing.Size(690, 561);
             // 
-            // chartTongNhanVienTheoPhongBan
+            // chartTongNhanVienTheoChiNhanh
             // 
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartTongNhanVienTheoPhongBan.Diagram = xyDiagram1;
-            this.chartTongNhanVienTheoPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartTongNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 25);
-            this.chartTongNhanVienTheoPhongBan.Name = "chartTongNhanVienTheoPhongBan";
+            this.chartTongNhanVienTheoChiNhanh.Diagram = xyDiagram1;
+            this.chartTongNhanVienTheoChiNhanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartTongNhanVienTheoChiNhanh.Location = new System.Drawing.Point(0, 25);
+            this.chartTongNhanVienTheoChiNhanh.Name = "chartTongNhanVienTheoChiNhanh";
             series1.Name = "Series 1";
-            this.chartTongNhanVienTheoPhongBan.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+            this.chartTongNhanVienTheoChiNhanh.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartTongNhanVienTheoPhongBan.Size = new System.Drawing.Size(690, 536);
-            this.chartTongNhanVienTheoPhongBan.TabIndex = 5;
+            this.chartTongNhanVienTheoChiNhanh.Size = new System.Drawing.Size(690, 536);
+            this.chartTongNhanVienTheoChiNhanh.TabIndex = 5;
             // 
-            // labelControl4
+            // lblTongNhanVienTheoChiNhanh
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Appearance.Options.UseTextOptions = true;
-            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl4.Location = new System.Drawing.Point(0, 0);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(271, 25);
-            this.labelControl4.TabIndex = 2;
-            this.labelControl4.Text = "Tổng nhân viên theo phòng ban";
+            this.lblTongNhanVienTheoChiNhanh.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.lblTongNhanVienTheoChiNhanh.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.lblTongNhanVienTheoChiNhanh.Appearance.Options.UseFont = true;
+            this.lblTongNhanVienTheoChiNhanh.Appearance.Options.UseForeColor = true;
+            this.lblTongNhanVienTheoChiNhanh.Appearance.Options.UseTextOptions = true;
+            this.lblTongNhanVienTheoChiNhanh.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lblTongNhanVienTheoChiNhanh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTongNhanVienTheoChiNhanh.Location = new System.Drawing.Point(0, 0);
+            this.lblTongNhanVienTheoChiNhanh.Name = "lblTongNhanVienTheoChiNhanh";
+            this.lblTongNhanVienTheoChiNhanh.Size = new System.Drawing.Size(271, 25);
+            this.lblTongNhanVienTheoChiNhanh.TabIndex = 2;
+            this.lblTongNhanVienTheoChiNhanh.Text = "Tổng nhân viên theo phòng ban";
             // 
-            // navPageCoCauNhanVienTheoChiNhanh
+            // navPageTongNhanVienTheoTuoi
             // 
-            this.navPageCoCauNhanVienTheoChiNhanh.Caption = "navPageCoCauNhanVienTheoChiNhanh";
-            this.navPageCoCauNhanVienTheoChiNhanh.Controls.Add(this.chartCoCauNhanVienTheoPhongBan);
-            this.navPageCoCauNhanVienTheoChiNhanh.Controls.Add(this.labelControl5);
-            this.navPageCoCauNhanVienTheoChiNhanh.Name = "navPageCoCauNhanVienTheoChiNhanh";
-            this.navPageCoCauNhanVienTheoChiNhanh.Size = new System.Drawing.Size(690, 561);
+            this.navPageTongNhanVienTheoTuoi.Caption = "navPageTongNhanVienTheoTuoi";
+            this.navPageTongNhanVienTheoTuoi.Controls.Add(this.chartTongNhanVienTheoTuoi);
+            this.navPageTongNhanVienTheoTuoi.Controls.Add(this.lblTongNhanVienTheoTuoi);
+            this.navPageTongNhanVienTheoTuoi.Name = "navPageTongNhanVienTheoTuoi";
+            this.navPageTongNhanVienTheoTuoi.Size = new System.Drawing.Size(690, 561);
             // 
-            // chartCoCauNhanVienTheoPhongBan
+            // chartTongNhanVienTheoTuoi
             // 
             xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartCoCauNhanVienTheoPhongBan.Diagram = xyDiagram2;
-            this.chartCoCauNhanVienTheoPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartCoCauNhanVienTheoPhongBan.Location = new System.Drawing.Point(0, 25);
-            this.chartCoCauNhanVienTheoPhongBan.Name = "chartCoCauNhanVienTheoPhongBan";
+            this.chartTongNhanVienTheoTuoi.Diagram = xyDiagram2;
+            this.chartTongNhanVienTheoTuoi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartTongNhanVienTheoTuoi.Location = new System.Drawing.Point(0, 25);
+            this.chartTongNhanVienTheoTuoi.Name = "chartTongNhanVienTheoTuoi";
             series2.Name = "Series 1";
-            this.chartCoCauNhanVienTheoPhongBan.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+            this.chartTongNhanVienTheoTuoi.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-            this.chartCoCauNhanVienTheoPhongBan.Size = new System.Drawing.Size(690, 536);
-            this.chartCoCauNhanVienTheoPhongBan.TabIndex = 6;
+            this.chartTongNhanVienTheoTuoi.Size = new System.Drawing.Size(690, 536);
+            this.chartTongNhanVienTheoTuoi.TabIndex = 6;
             // 
-            // labelControl5
+            // lblTongNhanVienTheoTuoi
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Appearance.Options.UseTextOptions = true;
-            this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl5.Location = new System.Drawing.Point(0, 0);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(286, 25);
-            this.labelControl5.TabIndex = 2;
-            this.labelControl5.Text = "Cơ cấu nhân viên theo phòng ban";
+            this.lblTongNhanVienTheoTuoi.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.lblTongNhanVienTheoTuoi.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.lblTongNhanVienTheoTuoi.Appearance.Options.UseFont = true;
+            this.lblTongNhanVienTheoTuoi.Appearance.Options.UseForeColor = true;
+            this.lblTongNhanVienTheoTuoi.Appearance.Options.UseTextOptions = true;
+            this.lblTongNhanVienTheoTuoi.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lblTongNhanVienTheoTuoi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTongNhanVienTheoTuoi.Location = new System.Drawing.Point(0, 0);
+            this.lblTongNhanVienTheoTuoi.Name = "lblTongNhanVienTheoTuoi";
+            this.lblTongNhanVienTheoTuoi.Size = new System.Drawing.Size(286, 25);
+            this.lblTongNhanVienTheoTuoi.TabIndex = 2;
+            this.lblTongNhanVienTheoTuoi.Text = "Cơ cấu nhân viên theo phòng ban";
             // 
-            // navPageTongNhanVienTheoChucVu
+            // navPageCoCauNVTheoGioiTinh
             // 
-            this.navPageTongNhanVienTheoChucVu.Caption = "navPageTongNhanVienTheoChucVu";
-            this.navPageTongNhanVienTheoChucVu.Controls.Add(this.chartTongNhanVienTheoChucVu);
-            this.navPageTongNhanVienTheoChucVu.Controls.Add(this.labelControl7);
-            this.navPageTongNhanVienTheoChucVu.Name = "navPageTongNhanVienTheoChucVu";
-            this.navPageTongNhanVienTheoChucVu.Size = new System.Drawing.Size(690, 561);
+            this.navPageCoCauNVTheoGioiTinh.Caption = "navPageCoCauNVTheoGioiTinh";
+            this.navPageCoCauNVTheoGioiTinh.Controls.Add(this.chartCoCauNVTheoGioiTinh);
+            this.navPageCoCauNVTheoGioiTinh.Controls.Add(this.lblCoCauNVTheoGioiTinh);
+            this.navPageCoCauNVTheoGioiTinh.Name = "navPageCoCauNVTheoGioiTinh";
+            this.navPageCoCauNVTheoGioiTinh.Size = new System.Drawing.Size(690, 561);
             // 
-            // chartTongNhanVienTheoChucVu
+            // chartCoCauNVTheoGioiTinh
             // 
             xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartTongNhanVienTheoChucVu.Diagram = xyDiagram3;
-            this.chartTongNhanVienTheoChucVu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartTongNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 25);
-            this.chartTongNhanVienTheoChucVu.Name = "chartTongNhanVienTheoChucVu";
+            this.chartCoCauNVTheoGioiTinh.Diagram = xyDiagram3;
+            this.chartCoCauNVTheoGioiTinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartCoCauNVTheoGioiTinh.Location = new System.Drawing.Point(0, 25);
+            this.chartCoCauNVTheoGioiTinh.Name = "chartCoCauNVTheoGioiTinh";
             series3.Name = "Series 1";
-            this.chartTongNhanVienTheoChucVu.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+            this.chartCoCauNVTheoGioiTinh.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series3};
-            this.chartTongNhanVienTheoChucVu.Size = new System.Drawing.Size(690, 536);
-            this.chartTongNhanVienTheoChucVu.TabIndex = 7;
+            this.chartCoCauNVTheoGioiTinh.Size = new System.Drawing.Size(690, 536);
+            this.chartCoCauNVTheoGioiTinh.TabIndex = 7;
             // 
-            // labelControl7
+            // lblCoCauNVTheoGioiTinh
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Appearance.Options.UseTextOptions = true;
-            this.labelControl7.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl7.Location = new System.Drawing.Point(0, 0);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(244, 25);
-            this.labelControl7.TabIndex = 2;
-            this.labelControl7.Text = "Tổng nhân viên theo chức vụ";
+            this.lblCoCauNVTheoGioiTinh.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.lblCoCauNVTheoGioiTinh.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.lblCoCauNVTheoGioiTinh.Appearance.Options.UseFont = true;
+            this.lblCoCauNVTheoGioiTinh.Appearance.Options.UseForeColor = true;
+            this.lblCoCauNVTheoGioiTinh.Appearance.Options.UseTextOptions = true;
+            this.lblCoCauNVTheoGioiTinh.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lblCoCauNVTheoGioiTinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCoCauNVTheoGioiTinh.Location = new System.Drawing.Point(0, 0);
+            this.lblCoCauNVTheoGioiTinh.Name = "lblCoCauNVTheoGioiTinh";
+            this.lblCoCauNVTheoGioiTinh.Size = new System.Drawing.Size(244, 25);
+            this.lblCoCauNVTheoGioiTinh.TabIndex = 2;
+            this.lblCoCauNVTheoGioiTinh.Text = "Tổng nhân viên theo chức vụ";
             // 
             // navPageCoCauNhanVienTheoChucVu
             // 
             this.navPageCoCauNhanVienTheoChucVu.Caption = "navPageCoCauNhanVienTheoChucVu";
             this.navPageCoCauNhanVienTheoChucVu.Controls.Add(this.chartCoCauNhanVienTheoChucVu);
-            this.navPageCoCauNhanVienTheoChucVu.Controls.Add(this.labelControl8);
+            this.navPageCoCauNhanVienTheoChucVu.Controls.Add(this.lblCoCauNhanVienTheoChucVu);
             this.navPageCoCauNhanVienTheoChucVu.Name = "navPageCoCauNhanVienTheoChucVu";
             this.navPageCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(690, 561);
             // 
@@ -492,20 +492,20 @@
             this.chartCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(690, 536);
             this.chartCoCauNhanVienTheoChucVu.TabIndex = 6;
             // 
-            // labelControl8
+            // lblCoCauNhanVienTheoChucVu
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Appearance.Options.UseTextOptions = true;
-            this.labelControl8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl8.Location = new System.Drawing.Point(0, 0);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(259, 25);
-            this.labelControl8.TabIndex = 2;
-            this.labelControl8.Text = "Cơ cấu nhân viên theo chức vụ";
+            this.lblCoCauNhanVienTheoChucVu.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.lblCoCauNhanVienTheoChucVu.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.lblCoCauNhanVienTheoChucVu.Appearance.Options.UseFont = true;
+            this.lblCoCauNhanVienTheoChucVu.Appearance.Options.UseForeColor = true;
+            this.lblCoCauNhanVienTheoChucVu.Appearance.Options.UseTextOptions = true;
+            this.lblCoCauNhanVienTheoChucVu.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lblCoCauNhanVienTheoChucVu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCoCauNhanVienTheoChucVu.Location = new System.Drawing.Point(0, 0);
+            this.lblCoCauNhanVienTheoChucVu.Name = "lblCoCauNhanVienTheoChucVu";
+            this.lblCoCauNhanVienTheoChucVu.Size = new System.Drawing.Size(259, 25);
+            this.lblCoCauNhanVienTheoChucVu.TabIndex = 2;
+            this.lblCoCauNhanVienTheoChucVu.Text = "Cơ cấu nhân viên theo chức vụ";
             // 
             // layoutControlGroup1
             // 
@@ -560,17 +560,17 @@
             this.navPageTongNhanVienTheoChiNhanh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoPhongBan)).EndInit();
-            this.navPageCoCauNhanVienTheoChiNhanh.ResumeLayout(false);
-            this.navPageCoCauNhanVienTheoChiNhanh.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoChiNhanh)).EndInit();
+            this.navPageTongNhanVienTheoTuoi.ResumeLayout(false);
+            this.navPageTongNhanVienTheoTuoi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNhanVienTheoPhongBan)).EndInit();
-            this.navPageTongNhanVienTheoChucVu.ResumeLayout(false);
-            this.navPageTongNhanVienTheoChucVu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoTuoi)).EndInit();
+            this.navPageCoCauNVTheoGioiTinh.ResumeLayout(false);
+            this.navPageCoCauNVTheoGioiTinh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTongNhanVienTheoChucVu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCoCauNVTheoGioiTinh)).EndInit();
             this.navPageCoCauNhanVienTheoChucVu.ResumeLayout(false);
             this.navPageCoCauNhanVienTheoChucVu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
@@ -584,9 +584,9 @@
         }
 
         #endregion
-        private DevExpress.XtraEditors.SimpleButton btnTongNVTheoCN;
-        private DevExpress.XtraEditors.SimpleButton btnCoCauNVTheoCN;
-        private DevExpress.XtraEditors.SimpleButton btnTongNhanVienTheoChucVu;
+        private DevExpress.XtraEditors.SimpleButton btnTongNhanVienTheoChiNhanh;
+        private DevExpress.XtraEditors.SimpleButton btnCoCauNVTheoGioiTinh;
+        private DevExpress.XtraEditors.SimpleButton btnTongNhanVienTheoTuoi;
         private DevExpress.XtraEditors.SimpleButton btnCoCauNhanVienTheoChucVu;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.Utils.Layout.TablePanel tableTKNV;
@@ -600,17 +600,17 @@
         private DevExpress.XtraBars.Navigation.NavigationFrame nafContent;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraBars.Navigation.NavigationPage navPageTongNhanVienTheoChiNhanh;
-        private DevExpress.XtraBars.Navigation.NavigationPage navPageCoCauNhanVienTheoChiNhanh;
-        private DevExpress.XtraBars.Navigation.NavigationPage navPageTongNhanVienTheoChucVu;
+        private DevExpress.XtraBars.Navigation.NavigationPage navPageTongNhanVienTheoTuoi;
+        private DevExpress.XtraBars.Navigation.NavigationPage navPageCoCauNVTheoGioiTinh;
         private DevExpress.XtraBars.Navigation.NavigationPage navPageCoCauNhanVienTheoChucVu;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraCharts.ChartControl chartTongNhanVienTheoPhongBan;
-        private DevExpress.XtraCharts.ChartControl chartCoCauNhanVienTheoPhongBan;
+        private DevExpress.XtraEditors.LabelControl lblTongNhanVienTheoChiNhanh;
+        private DevExpress.XtraEditors.LabelControl lblTongNhanVienTheoTuoi;
+        private DevExpress.XtraEditors.LabelControl lblCoCauNVTheoGioiTinh;
+        private DevExpress.XtraEditors.LabelControl lblCoCauNhanVienTheoChucVu;
+        private DevExpress.XtraCharts.ChartControl chartTongNhanVienTheoChiNhanh;
+        private DevExpress.XtraCharts.ChartControl chartTongNhanVienTheoTuoi;
         private DevExpress.XtraCharts.ChartControl chartCoCauNhanVienTheoChucVu;
-        private DevExpress.XtraCharts.ChartControl chartTongNhanVienTheoChucVu;
+        private DevExpress.XtraCharts.ChartControl chartCoCauNVTheoGioiTinh;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }

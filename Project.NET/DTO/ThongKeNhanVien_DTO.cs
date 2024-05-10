@@ -10,6 +10,8 @@ namespace DTO
     {
         public string TenCN { get; set; }
         public int SoLuongNV { get; set; }
-
+        public string TenChucVu { get; set; }
+        public string KhoangTuoiNV { get; set; }
+        public string GioiTinh { get; set; }
     }
 }

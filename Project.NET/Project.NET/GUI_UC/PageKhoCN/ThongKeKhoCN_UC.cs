@@ -147,7 +147,5 @@ namespace Project.NET.GUI_UC.PageKho
                 "Số lượng sản phẩm",
                 "Thống kê sản phẩm theo loại");
         }
-
-       
     }
 }
