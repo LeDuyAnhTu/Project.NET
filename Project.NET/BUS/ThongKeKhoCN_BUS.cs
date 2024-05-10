@@ -8,31 +8,19 @@ using System.Threading.Tasks;
 
 namespace BUS
 {
-    public class ThongKeNhanVien_BUS
+    public class ThongKeKhoCN_BUS
     {
-        ThongKeNhanVien_DAL data = new ThongKeNhanVien_DAL();
-        public List<ThongKeNhanVien_DTO> ThongKeNhanVienTheoChiNhanh()
-        {
-            try
-            {
-                return data.ThongKeNhanVienTheoChiNhanh();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
+        ThongKeKhoCN_DAL data = new ThongKeKhoCN_DAL();
         /// <summary>
-        /// Thong ke nhan vien chi nhanh theo gioi tinh
+        /// Thống kê sản phẩm theo kho chi nhánh
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public List<ThongKeNhanVien_DTO> ThongKeNhanVienTheoGioiTinh()
+        public List<ThongKeKhoCN_DTO> ThongKeTheoKhoChiNhanh()
         {
             try
             {
-                return data.ThongKeNhanVienTheoGioiTinh();
+                return data.ThongKeTheoKhoChiNhanh();
             }
             catch (Exception ex)
             {
@@ -40,39 +28,48 @@ namespace BUS
             }
 
         }
-
         /// <summary>
-        /// Thong ke nhan vien chi nhanh theo tuoi
+        /// Thống kê giá trị sản phẩm theo kho chi nhánh
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public List<ThongKeNhanVien_DTO> ThongKeNhanVienTheoTuoi()
+        public List<ThongKeKhoCN_DTO> ThongKeGiaTriSanPhamTheoKhoChiNhanh()
         {
-             
             try
             {
-                return data.ThongKeNhanVienTheoTuoi();
-
+                return data.ThongKeGiaTriSanPhamTheoKhoChiNhanh();
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-
-
-
         /// <summary>
-        /// Thong ke nhan vien chi nhanh theo vi tri chuc vu
+        /// Thống kê tồn kho theo chi nhánh
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public List<ThongKeNhanVien_DTO> ThongKeNhanVienTheoViTriChucVuNhanVien()
+        public List<ThongKeKhoCN_DTO> ThongKeTonKhoTheoChiNhanh()
         {
-             
             try
             {
-                return data.ThongKeNhanVienTheoViTriChucVuNhanVien();
+                return data.ThongKeTonKhoTheoChiNhanh();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Thống kê sản phẩm theo loại
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeKhoCN_DTO> ThongKeSanPhamTheoLoai()
+        {
+            try
+            {
+                return data.ThongKeSanPhamTheoLoai();
             }
             catch (Exception ex)
             {
@@ -80,6 +77,4 @@ namespace BUS
             }
         }
     }
-
-
 }

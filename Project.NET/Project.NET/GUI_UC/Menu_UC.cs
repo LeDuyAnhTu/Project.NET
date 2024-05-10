@@ -110,8 +110,8 @@ namespace Project.NET.GUI_UC
                                 break;
                             case "btnKho":
                                 nafContent.SelectedPage = navKho;
-                                LoadUserControl(null, typeof(Kho_UC), editFormKho);
-                                LoadUserControl(null, typeof(ThongKeKho_UC), editFormThongKeKho);
+                                LoadUserControl(null, typeof(KhoCN_UC), editFormKho);
+                                LoadUserControl(null, typeof(ThongKeKhoCN_UC), editFormThongKeKho);
                                 break;
                             case "btnSanPham":
                                 nafContent.SelectedPage = navSanPham;

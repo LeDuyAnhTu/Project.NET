@@ -256,7 +256,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                 dgvGioHangGrid.DataSource = dsMuaHang;
                 dgvGioHang.Columns["MaSP"].Caption = "Mã";
                 dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
+                dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
                 dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                 dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
             }
@@ -314,7 +314,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                         txtMaSP.Text = sp.MaSP;
                         txtTenSP.Text = sp.TenSP;
                         txtSoLuongTonKho.Text = sp.SoLuongConLai.ToString().Trim();
-                        txtSoLuongMua.Text = dgvGioHang.GetRowCellValue(i, "SoLuong").ToString().Trim();
+                        txtSoLuongMua.Text = dgvGioHang.GetRowCellValue(i, "SoLuongTrongKho").ToString().Trim();
                     }
                     catch (Exception ex)
                     {
@@ -360,7 +360,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                 dgvGioHangGrid.DataSource = dsMuaHang;
                 dgvGioHang.Columns["MaSP"].Caption = "Mã";
                 dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
+                dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
                 dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                 dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                 //Quay lại lựa sản phẩm
@@ -392,7 +392,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                     dgvGioHangGrid.DataSource = dsMuaHang;
                     dgvGioHang.Columns["MaSP"].Caption = "Mã";
                     dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                    dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
+                    dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
                     dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                     dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                     //Quay lại lựa sản phẩm
@@ -435,7 +435,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                     dgvGioHangGrid.DataSource = dsMuaHang;
                     dgvGioHang.Columns["MaSP"].Caption = "Mã";
                     dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                    dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
+                    dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
                     dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                     dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                 }
@@ -527,7 +527,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                     dgvGioHangGrid.DataSource = dsMuaHang;
                     dgvGioHang.Columns["MaSP"].Caption = "Mã";
                     dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                    dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
+                    dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
                     dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                     dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                     //Tải lại form

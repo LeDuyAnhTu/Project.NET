@@ -72,7 +72,7 @@
     </Compile>
     <Compile Include="SanPham_DAL.cs" />
     <Compile Include="TaiKhoan_DAL.cs" />
-    <Compile Include="ThongKeKho_DAL.cs" />
+    <Compile Include="ThongKeKhoCN_DAL.cs" />
     <Compile Include="ThongKeKhuyenMai_DAL.cs" />
     <Compile Include="ThongKeNhanVien_DAL.cs" />
     <Compile Include="ThongKeSanPham_DAL.cs" />

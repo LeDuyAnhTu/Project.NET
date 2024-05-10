@@ -1,6 +1,6 @@
 ﻿namespace Project.NET.GUI_UC.PageKho
 {
-    partial class Kho_UC
+    partial class KhoCN_UC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kho_UC));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KhoCN_UC));
             this.layoutKho = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.groupNhapKho = new DevExpress.XtraEditors.GroupControl();
