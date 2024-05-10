@@ -59,9 +59,11 @@
     <Compile Include="ChiNhanh_DTO.cs" />
     <Compile Include="NhanVien_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThongKeKhoCN_DTO.cs" />
     <Compile Include="ThongKeKhuyenMai_DTO.cs" />
     <Compile Include="ThongKeNhanVien_DTO.cs" />
     <Compile Include="ThongKeSanPham_DTO.cs" />
+    <Compile Include="ThongKe_DTO.cs" />
     <Compile Include="ViTri_DTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

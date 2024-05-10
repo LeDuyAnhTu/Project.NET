@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupDangNhap.CaptionImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="groupControl1.CaptionImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAZ0RVh0VGl0
         bGUAqO7SJwAABd1JREFUWEellnlMVFcUxp02xNaAMsMAarRqVEyIFdyb9g+1S1I1xKXRulBcsNgiUVux
@@ -149,7 +149,47 @@
         M72J137sctnqo8v/mUD6911oPZsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="DevExpress.Data.v22.2" name="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lblTenDangNhap.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi4z
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHUHAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
+        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5HcmVlbntmaWxsOiMwMzlD
+        MjM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQoJLnN0MXtkaXNwbGF5Om5vbmU7fQoJLnN0MntkaXNwbGF5OmlubGluZTtmaWxsOiMw
+        MzlDMjM7fQoJLnN0M3tkaXNwbGF5OmlubGluZTtmaWxsOiNEMTFDMUM7fQoJLnN0NHtkaXNwbGF5Omlu
+        bGluZTtmaWxsOiM3MjcyNzI7fQo8L3N0eWxlPg0KICA8ZyBpZD0iQ2hhbmdlVGV4dENhc2UiPg0KICAg
+        IDxwYXRoIGQ9Ik0xMi42LDZsNS44LDE2aC0zLjZsLTEuMi0zLjZINy44TDYuNiwyMkgzLjFMOS4xLDZI
+        MTIuNnogTTEyLjgsMTUuOGwtMi01LjloMGwtMiw1LjlIMTIuOHogTTE5LjcsMTQgICBjMC0wLjcsMC4y
+        LTEuNCwwLjUtMS45czAuNy0wLjksMS4yLTEuMmMwLjUtMC4zLDEuMS0wLjUsMS43LTAuNmMwLjYtMC4x
+        LDEuMi0wLjIsMS45LTAuMmMwLjYsMCwxLjEsMCwxLjcsMC4xICAgYzAuNiwwLjEsMS4xLDAuMiwxLjYs
+        MC41YzAuNSwwLjIsMC45LDAuNiwxLjIsMWMwLjMsMC40LDAuNSwxLDAuNSwxLjd2NmMwLDAuNSwwLDEs
+        MC4xLDEuNWMwLjEsMC41LDAuMiwwLjgsMC4zLDEuMWgtMy4yICAgYy0wLjEtMC4yLTAuMS0wLjQtMC4x
+        LTAuNWMwLTAuMi0wLjEtMC40LTAuMS0wLjZjLTAuNSwwLjUtMS4xLDAuOS0xLjgsMS4xYy0wLjcsMC4y
+        LTEuNCwwLjMtMi4xLDAuM2MtMC41LDAtMS0wLjEtMS41LTAuMiAgIGMtMC41LTAuMS0wLjktMC4zLTEu
+        Mi0wLjZjLTAuMy0wLjMtMC42LTAuNi0wLjgtMS4xYy0wLjItMC40LTAuMy0xLTAuMy0xLjVjMC0wLjcs
+        MC4xLTEuMiwwLjMtMS42YzAuMi0wLjQsMC41LTAuOCwwLjktMSAgIGMwLjQtMC4zLDAuOC0wLjQsMS4y
+        LTAuNmMwLjUtMC4xLDAuOS0wLjIsMS40LTAuM2MwLjUtMC4xLDAuOS0wLjEsMS40LTAuMmMwLjUsMCww
+        LjktMC4xLDEuMi0wLjJjMC4zLTAuMSwwLjYtMC4yLDAuOC0wLjQgICBjMC4yLTAuMiwwLjMtMC40LDAu
+        My0wLjhjMC0wLjMtMC4xLTAuNi0wLjItMC44Yy0wLjEtMC4yLTAuMy0wLjQtMC40LTAuNWMtMC4yLTAu
+        MS0wLjQtMC4yLTAuNi0wLjJjLTAuMiwwLTAuNS0wLjEtMC44LTAuMSAgIGMtMC42LDAtMS4xLDAuMS0x
+        LjQsMC40cy0wLjYsMC43LTAuNiwxLjNIMTkuN3ogTTI2LjksMTYuM2MtMC4xLDAuMS0wLjMsMC4yLTAu
+        NSwwLjNjLTAuMiwwLjEtMC40LDAuMS0wLjYsMC4yICAgYy0wLjIsMC0wLjUsMC4xLTAuNywwLjFjLTAu
+        MiwwLTAuNSwwLjEtMC43LDAuMWMtMC4yLDAtMC41LDAuMS0wLjcsMC4yYy0wLjIsMC4xLTAuNCwwLjIt
+        MC42LDAuM2MtMC4yLDAuMS0wLjMsMC4zLTAuNCwwLjUgICBjLTAuMSwwLjItMC4yLDAuNC0wLjIsMC43
+        YzAsMC4zLDAuMSwwLjUsMC4yLDAuN2MwLjEsMC4yLDAuMiwwLjMsMC40LDAuNWMwLjIsMC4xLDAuNCww
+        LjIsMC42LDAuMmMwLjIsMCwwLjUsMC4xLDAuNywwLjEgICBjMC42LDAsMS4xLTAuMSwxLjQtMC4zYzAu
+        My0wLjIsMC42LTAuNSwwLjctMC44YzAuMi0wLjMsMC4zLTAuNiwwLjMtMC45YzAtMC4zLDAuMS0wLjUs
+        MC4xLTAuN1YxNi4zeiIgY2xhc3M9IkJsdWUiIC8+DQogIDwvZz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="LogoPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
         AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB

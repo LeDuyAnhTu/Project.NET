@@ -29,132 +29,149 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_UC));
-            this.tableLogin = new DevExpress.Utils.Layout.TablePanel();
-            this.layoutLogin = new System.Windows.Forms.TableLayoutPanel();
-            this.groupDangNhap = new DevExpress.XtraEditors.GroupControl();
-            this.controlsLogin = new DevExpress.XtraLayout.LayoutControl();
-            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
+            this.Login_UC_layout = new DevExpress.XtraLayout.LayoutControl();
+            this.marginTOPBOTTOM = new System.Windows.Forms.TableLayoutPanel();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.marginLoginLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTenDangNhap = new DevExpress.XtraEditors.LabelControl();
+            this.lblNhapMatKhau = new DevExpress.XtraEditors.LabelControl();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.marginTenDangNhap = new System.Windows.Forms.TableLayoutPanel();
+            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtMatKhau = new DevExpress.XtraEditors.ButtonEdit();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutTxtTenDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutTxtMatKhau = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutBtnDangNhap = new DevExpress.XtraLayout.LayoutControlItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.tableLogin)).BeginInit();
-            this.tableLogin.SuspendLayout();
-            this.layoutLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupDangNhap)).BeginInit();
-            this.groupDangNhap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.controlsLogin)).BeginInit();
-            this.controlsLogin.SuspendLayout();
+            this.LogoPicture = new System.Windows.Forms.PictureBox();
+            this.groupLogin = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.logoLayout = new DevExpress.XtraLayout.LayoutControlItem();
+            this.loginLayout = new DevExpress.XtraLayout.LayoutControlItem();
+            this.marginRIGHTLEFT = new System.Windows.Forms.TableLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.Login_UC_layout)).BeginInit();
+            this.Login_UC_layout.SuspendLayout();
+            this.marginTOPBOTTOM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            this.marginLoginLayout.SuspendLayout();
+            this.marginTenDangNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoLayout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginLayout)).BeginInit();
+            this.marginRIGHTLEFT.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLogin
+            // Login_UC_layout
             // 
-            this.tableLogin.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.tableLogin.Appearance.Options.UseBackColor = true;
-            this.tableLogin.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 62.58F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 37.42F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 10F)});
-            this.tableLogin.Controls.Add(this.layoutLogin);
-            this.tableLogin.Controls.Add(this.pictureBox1);
-            this.tableLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLogin.Location = new System.Drawing.Point(0, 0);
-            this.tableLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLogin.Name = "tableLogin";
-            this.tableLogin.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 384.4F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F)});
-            this.tableLogin.Size = new System.Drawing.Size(828, 551);
-            this.tableLogin.TabIndex = 3;
-            this.tableLogin.UseSkinIndents = true;
+            this.Login_UC_layout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
+            this.Login_UC_layout.Controls.Add(this.marginTOPBOTTOM);
+            this.Login_UC_layout.Controls.Add(this.LogoPicture);
+            this.Login_UC_layout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Login_UC_layout.Location = new System.Drawing.Point(20, 0);
+            this.Login_UC_layout.Margin = new System.Windows.Forms.Padding(0);
+            this.Login_UC_layout.Name = "Login_UC_layout";
+            this.Login_UC_layout.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1221, 328, 650, 400);
+            this.Login_UC_layout.Root = this.groupLogin;
+            this.Login_UC_layout.Size = new System.Drawing.Size(1034, 847);
+            this.Login_UC_layout.TabIndex = 4;
             // 
-            // layoutLogin
+            // marginTOPBOTTOM
             // 
-            this.tableLogin.SetColumn(this.layoutLogin, 2);
-            this.layoutLogin.ColumnCount = 1;
-            this.layoutLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layoutLogin.Controls.Add(this.groupDangNhap, 0, 1);
-            this.layoutLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutLogin.Location = new System.Drawing.Point(500, 83);
-            this.layoutLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.layoutLogin.Name = "layoutLogin";
-            this.tableLogin.SetRow(this.layoutLogin, 1);
-            this.layoutLogin.RowCount = 3;
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.34375F));
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.35417F));
-            this.layoutLogin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.5625F));
-            this.layoutLogin.Size = new System.Drawing.Size(254, 384);
-            this.layoutLogin.TabIndex = 5;
+            this.marginTOPBOTTOM.ColumnCount = 3;
+            this.marginTOPBOTTOM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.779454F));
+            this.marginTOPBOTTOM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.43916F));
+            this.marginTOPBOTTOM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.781391F));
+            this.marginTOPBOTTOM.Controls.Add(this.groupControl1, 1, 1);
+            this.marginTOPBOTTOM.Location = new System.Drawing.Point(620, 6);
+            this.marginTOPBOTTOM.Margin = new System.Windows.Forms.Padding(0);
+            this.marginTOPBOTTOM.Name = "marginTOPBOTTOM";
+            this.marginTOPBOTTOM.RowCount = 3;
+            this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.marginTOPBOTTOM.Size = new System.Drawing.Size(408, 835);
+            this.marginTOPBOTTOM.TabIndex = 11;
             // 
-            // groupDangNhap
+            // groupControl1
             // 
-            this.groupDangNhap.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.groupDangNhap.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupDangNhap.Appearance.Options.UseBackColor = true;
-            this.groupDangNhap.Appearance.Options.UseFont = true;
-            this.groupDangNhap.AppearanceCaption.BackColor = System.Drawing.Color.Transparent;
-            this.groupDangNhap.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupDangNhap.AppearanceCaption.Options.UseBackColor = true;
-            this.groupDangNhap.AppearanceCaption.Options.UseFont = true;
-            this.groupDangNhap.AutoSize = true;
-            this.groupDangNhap.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupDangNhap.CaptionImageOptions.Image")));
-            this.groupDangNhap.CaptionLocation = DevExpress.Utils.Locations.Top;
-            this.groupDangNhap.Controls.Add(this.controlsLogin);
-            this.groupDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupDangNhap.GroupStyle = DevExpress.Utils.GroupStyle.Card;
-            this.groupDangNhap.Location = new System.Drawing.Point(3, 107);
-            this.groupDangNhap.Name = "groupDangNhap";
-            this.groupDangNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.groupDangNhap.Size = new System.Drawing.Size(248, 171);
-            this.groupDangNhap.TabIndex = 0;
-            this.groupDangNhap.Text = "Đăng nhập";
+            this.groupControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.groupControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.groupControl1.Appearance.Options.UseFont = true;
+            this.groupControl1.Appearance.Options.UseForeColor = true;
+            this.groupControl1.Appearance.Options.UseTextOptions = true;
+            this.groupControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.groupControl1.AutoSize = true;
+            this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
+            this.groupControl1.Controls.Add(this.marginLoginLayout);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Title;
+            this.groupControl1.Location = new System.Drawing.Point(15, 292);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(377, 250);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "Khu Vực Đăng Nhập";
             // 
-            // controlsLogin
+            // marginLoginLayout
             // 
-            this.controlsLogin.Controls.Add(this.txtTenDangNhap);
-            this.controlsLogin.Controls.Add(this.btnDangNhap);
-            this.controlsLogin.Controls.Add(this.txtMatKhau);
-            this.controlsLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlsLogin.Location = new System.Drawing.Point(5, 38);
-            this.controlsLogin.Name = "controlsLogin";
-            this.controlsLogin.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1270, 184, 650, 400);
-            this.controlsLogin.Root = this.Root;
-            this.controlsLogin.Size = new System.Drawing.Size(238, 128);
-            this.controlsLogin.TabIndex = 0;
-            this.controlsLogin.Text = "layoutControl1";
+            this.marginLoginLayout.ColumnCount = 4;
+            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.2809F));
+            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.7191F));
+            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.marginLoginLayout.Controls.Add(this.lblTenDangNhap, 1, 0);
+            this.marginLoginLayout.Controls.Add(this.lblNhapMatKhau, 1, 1);
+            this.marginLoginLayout.Controls.Add(this.btnDangNhap, 1, 2);
+            this.marginLoginLayout.Controls.Add(this.marginTenDangNhap, 2, 0);
+            this.marginLoginLayout.Controls.Add(this.tableLayoutPanel1, 2, 1);
+            this.marginLoginLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.marginLoginLayout.Location = new System.Drawing.Point(0, 34);
+            this.marginLoginLayout.Margin = new System.Windows.Forms.Padding(0);
+            this.marginLoginLayout.Name = "marginLoginLayout";
+            this.marginLoginLayout.RowCount = 3;
+            this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.marginLoginLayout.Size = new System.Drawing.Size(377, 216);
+            this.marginLoginLayout.TabIndex = 0;
             // 
-            // txtTenDangNhap
+            // lblTenDangNhap
             // 
-            this.txtTenDangNhap.EditValue = "";
-            this.txtTenDangNhap.Location = new System.Drawing.Point(154, 6);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
-            this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
-            this.txtTenDangNhap.Properties.Appearance.Options.UseForeColor = true;
-            this.txtTenDangNhap.Properties.BeepOnError = true;
-            this.txtTenDangNhap.Properties.UseMaskAsDisplayFormat = true;
-            this.txtTenDangNhap.Size = new System.Drawing.Size(78, 26);
-            this.txtTenDangNhap.StyleController = this.controlsLogin;
-            this.txtTenDangNhap.TabIndex = 4;
-            this.txtTenDangNhap.ToolTipTitle = "Tên đăng nhập";
+            this.lblTenDangNhap.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.lblTenDangNhap.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.lblTenDangNhap.Appearance.Options.UseFont = true;
+            this.lblTenDangNhap.Appearance.Options.UseForeColor = true;
+            this.lblTenDangNhap.Appearance.Options.UseTextOptions = true;
+            this.lblTenDangNhap.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lblTenDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTenDangNhap.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.lblTenDangNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblTenDangNhap.ImageOptions.SvgImage")));
+            this.lblTenDangNhap.Location = new System.Drawing.Point(13, 3);
+            this.lblTenDangNhap.Name = "lblTenDangNhap";
+            this.lblTenDangNhap.Size = new System.Drawing.Size(173, 66);
+            this.lblTenDangNhap.TabIndex = 5;
+            this.lblTenDangNhap.Text = "Tên Đăng Nhập:";
+            // 
+            // lblNhapMatKhau
+            // 
+            this.lblNhapMatKhau.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.lblNhapMatKhau.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.lblNhapMatKhau.Appearance.Options.UseFont = true;
+            this.lblNhapMatKhau.Appearance.Options.UseForeColor = true;
+            this.lblNhapMatKhau.Appearance.Options.UseTextOptions = true;
+            this.lblNhapMatKhau.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lblNhapMatKhau.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNhapMatKhau.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.lblNhapMatKhau.ImageOptions.Image = global::Project.NET.Properties.Resources.hide_32x32;
+            this.lblNhapMatKhau.Location = new System.Drawing.Point(13, 75);
+            this.lblNhapMatKhau.Name = "lblNhapMatKhau";
+            this.lblNhapMatKhau.Size = new System.Drawing.Size(173, 66);
+            this.lblNhapMatKhau.TabIndex = 6;
+            this.lblNhapMatKhau.Text = "Mật Khẩu:";
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Appearance.Options.UseFont = true;
             this.btnDangNhap.AppearanceDisabled.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnDangNhap.AppearanceDisabled.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnDangNhap.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
@@ -180,105 +197,136 @@
             this.btnDangNhap.AppearancePressed.Options.UseBorderColor = true;
             this.btnDangNhap.AppearancePressed.Options.UseFont = true;
             this.btnDangNhap.AppearancePressed.Options.UseForeColor = true;
-            this.btnDangNhap.Location = new System.Drawing.Point(6, 74);
+            this.marginLoginLayout.SetColumnSpan(this.btnDangNhap, 2);
+            this.btnDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDangNhap.Location = new System.Drawing.Point(13, 147);
+            this.btnDangNhap.MaximumSize = new System.Drawing.Size(0, 53);
+            this.btnDangNhap.MinimumSize = new System.Drawing.Size(0, 53);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(226, 48);
-            this.btnDangNhap.StyleController = this.controlsLogin;
-            this.btnDangNhap.TabIndex = 7;
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.btnDangNhap.Size = new System.Drawing.Size(350, 53);
+            this.btnDangNhap.TabIndex = 0;
+            this.btnDangNhap.Text = "Đăng Nhập";
+            // 
+            // marginTenDangNhap
+            // 
+            this.marginTenDangNhap.ColumnCount = 1;
+            this.marginTenDangNhap.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.marginTenDangNhap.Controls.Add(this.txtTenDangNhap, 0, 1);
+            this.marginTenDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.marginTenDangNhap.Location = new System.Drawing.Point(189, 0);
+            this.marginTenDangNhap.Margin = new System.Windows.Forms.Padding(0);
+            this.marginTenDangNhap.Name = "marginTenDangNhap";
+            this.marginTenDangNhap.RowCount = 2;
+            this.marginTenDangNhap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.marginTenDangNhap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.marginTenDangNhap.Size = new System.Drawing.Size(177, 72);
+            this.marginTenDangNhap.TabIndex = 7;
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTenDangNhap.Location = new System.Drawing.Point(3, 21);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
+            this.txtTenDangNhap.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTenDangNhap.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.txtTenDangNhap.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTenDangNhap.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtTenDangNhap.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTenDangNhap.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.txtTenDangNhap.Size = new System.Drawing.Size(171, 26);
+            this.txtTenDangNhap.TabIndex = 4;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.txtMatKhau, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(189, 72);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(177, 72);
+            this.tableLayoutPanel1.TabIndex = 8;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.EditValue = "";
-            this.txtMatKhau.Location = new System.Drawing.Point(154, 40);
+            this.txtMatKhau.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMatKhau.Location = new System.Drawing.Point(3, 21);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
+            this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
-            this.txtMatKhau.Properties.Appearance.Options.UseForeColor = true;
-            this.txtMatKhau.Properties.BeepOnError = true;
+            this.txtMatKhau.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtMatKhau.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.txtMatKhau.Properties.AppearanceFocused.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtMatKhau.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtMatKhau.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtMatKhau.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.txtMatKhau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtMatKhau.Properties.PasswordChar = '*';
-            this.txtMatKhau.Properties.UseMaskAsDisplayFormat = true;
-            this.txtMatKhau.Size = new System.Drawing.Size(78, 26);
-            this.txtMatKhau.StyleController = this.controlsLogin;
+            this.txtMatKhau.Size = new System.Drawing.Size(171, 26);
             this.txtMatKhau.TabIndex = 5;
-            this.txtMatKhau.ToolTipTitle = "Mật khẩu";
             // 
-            // Root
+            // LogoPicture
             // 
-            this.Root.AppearanceGroup.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Root.AppearanceGroup.Options.UseFont = true;
-            this.Root.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Root.AppearanceItemCaption.Options.UseFont = true;
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutTxtTenDangNhap,
-            this.layoutTxtMatKhau,
-            this.layoutBtnDangNhap});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(238, 128);
-            this.Root.TextVisible = false;
+            this.LogoPicture.Image = ((System.Drawing.Image)(resources.GetObject("LogoPicture.Image")));
+            this.LogoPicture.Location = new System.Drawing.Point(6, 6);
+            this.LogoPicture.Name = "LogoPicture";
+            this.LogoPicture.Size = new System.Drawing.Size(612, 835);
+            this.LogoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.LogoPicture.TabIndex = 10;
+            this.LogoPicture.TabStop = false;
             // 
-            // layoutTxtTenDangNhap
+            // groupLogin
             // 
-            this.layoutTxtTenDangNhap.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutTxtTenDangNhap.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutTxtTenDangNhap.Control = this.txtTenDangNhap;
-            this.layoutTxtTenDangNhap.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutTxtTenDangNhap.CustomizationFormText = "Tên đăng nhập";
-            this.layoutTxtTenDangNhap.ImageOptions.Image = global::Project.NET.Properties.Resources.key32_32;
-            this.layoutTxtTenDangNhap.Location = new System.Drawing.Point(0, 0);
-            this.layoutTxtTenDangNhap.Name = "layoutTxtTenDangNhap";
-            this.layoutTxtTenDangNhap.Size = new System.Drawing.Size(228, 34);
-            this.layoutTxtTenDangNhap.Text = "Tên đăng nhập";
-            this.layoutTxtTenDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutTxtTenDangNhap.TextSize = new System.Drawing.Size(144, 32);
+            this.groupLogin.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.groupLogin.GroupBordersVisible = false;
+            this.groupLogin.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.logoLayout,
+            this.loginLayout});
+            this.groupLogin.Name = "groupLogin";
+            this.groupLogin.Size = new System.Drawing.Size(1034, 847);
+            this.groupLogin.TextVisible = false;
             // 
-            // layoutTxtMatKhau
+            // logoLayout
             // 
-            this.layoutTxtMatKhau.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutTxtMatKhau.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutTxtMatKhau.Control = this.txtMatKhau;
-            this.layoutTxtMatKhau.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutTxtMatKhau.ImageOptions.Image = global::Project.NET.Properties.Resources.pass32_32;
-            this.layoutTxtMatKhau.Location = new System.Drawing.Point(0, 34);
-            this.layoutTxtMatKhau.Name = "layoutTxtMatKhau";
-            this.layoutTxtMatKhau.Size = new System.Drawing.Size(228, 34);
-            this.layoutTxtMatKhau.Text = "Mật khẩu";
-            this.layoutTxtMatKhau.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutTxtMatKhau.TextSize = new System.Drawing.Size(144, 32);
+            this.logoLayout.Control = this.LogoPicture;
+            this.logoLayout.Location = new System.Drawing.Point(0, 0);
+            this.logoLayout.Name = "logoLayout";
+            this.logoLayout.Size = new System.Drawing.Size(614, 837);
+            this.logoLayout.Text = "PictureLayout";
+            this.logoLayout.TextSize = new System.Drawing.Size(0, 0);
+            this.logoLayout.TextVisible = false;
             // 
-            // layoutBtnDangNhap
+            // loginLayout
             // 
-            this.layoutBtnDangNhap.Control = this.btnDangNhap;
-            this.layoutBtnDangNhap.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutBtnDangNhap.CustomizationFormText = "Nút đăng nhập";
-            this.layoutBtnDangNhap.ImageOptions.Image = global::Project.NET.Properties.Resources.logo;
-            this.layoutBtnDangNhap.Location = new System.Drawing.Point(0, 68);
-            this.layoutBtnDangNhap.MinSize = new System.Drawing.Size(88, 28);
-            this.layoutBtnDangNhap.Name = "layoutBtnDangNhap";
-            this.layoutBtnDangNhap.Size = new System.Drawing.Size(228, 50);
-            this.layoutBtnDangNhap.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutBtnDangNhap.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutBtnDangNhap.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutBtnDangNhap.TextVisible = false;
+            this.loginLayout.Control = this.marginTOPBOTTOM;
+            this.loginLayout.Location = new System.Drawing.Point(614, 0);
+            this.loginLayout.Name = "loginLayout";
+            this.loginLayout.Size = new System.Drawing.Size(410, 837);
+            this.loginLayout.TextSize = new System.Drawing.Size(0, 0);
+            this.loginLayout.TextVisible = false;
             // 
-            // pictureBox1
+            // marginRIGHTLEFT
             // 
-            this.tableLogin.SetColumn(this.pictureBox1, 1);
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.tableLogin.SetRow(this.pictureBox1, 1);
-            this.pictureBox1.Size = new System.Drawing.Size(424, 382);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.marginRIGHTLEFT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
+            this.marginRIGHTLEFT.ColumnCount = 3;
+            this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.marginRIGHTLEFT.Controls.Add(this.Login_UC_layout, 1, 0);
+            this.marginRIGHTLEFT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.marginRIGHTLEFT.Location = new System.Drawing.Point(0, 0);
+            this.marginRIGHTLEFT.Margin = new System.Windows.Forms.Padding(0);
+            this.marginRIGHTLEFT.Name = "marginRIGHTLEFT";
+            this.marginRIGHTLEFT.RowCount = 1;
+            this.marginRIGHTLEFT.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.marginRIGHTLEFT.Size = new System.Drawing.Size(1074, 847);
+            this.marginRIGHTLEFT.TabIndex = 12;
             // 
             // Login_UC
             // 
@@ -286,41 +334,48 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLogin);
+            this.Controls.Add(this.marginRIGHTLEFT);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Login_UC";
-            this.Size = new System.Drawing.Size(828, 551);
-            ((System.ComponentModel.ISupportInitialize)(this.tableLogin)).EndInit();
-            this.tableLogin.ResumeLayout(false);
-            this.layoutLogin.ResumeLayout(false);
-            this.layoutLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupDangNhap)).EndInit();
-            this.groupDangNhap.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.controlsLogin)).EndInit();
-            this.controlsLogin.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1074, 847);
+            this.Load += new System.EventHandler(this.Login_UC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Login_UC_layout)).EndInit();
+            this.Login_UC_layout.ResumeLayout(false);
+            this.marginTOPBOTTOM.ResumeLayout(false);
+            this.marginTOPBOTTOM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.marginLoginLayout.ResumeLayout(false);
+            this.marginLoginLayout.PerformLayout();
+            this.marginTenDangNhap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtTenDangNhap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutTxtMatKhau)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutBtnDangNhap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoLayout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginLayout)).EndInit();
+            this.marginRIGHTLEFT.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.Utils.Layout.TablePanel tableLogin;
-        private System.Windows.Forms.TableLayoutPanel layoutLogin;
-        private DevExpress.XtraEditors.GroupControl groupDangNhap;
-        private DevExpress.XtraLayout.LayoutControl controlsLogin;
-        private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
+        private DevExpress.XtraLayout.LayoutControl Login_UC_layout;
+        private DevExpress.XtraLayout.LayoutControlGroup groupLogin;
+        private System.Windows.Forms.PictureBox LogoPicture;
+        private DevExpress.XtraLayout.LayoutControlItem logoLayout;
+        private System.Windows.Forms.TableLayoutPanel marginTOPBOTTOM;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraLayout.LayoutControlItem loginLayout;
+        private System.Windows.Forms.TableLayoutPanel marginLoginLayout;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
+        private DevExpress.XtraEditors.LabelControl lblTenDangNhap;
+        private DevExpress.XtraEditors.LabelControl lblNhapMatKhau;
+        private System.Windows.Forms.TableLayoutPanel marginRIGHTLEFT;
+        private System.Windows.Forms.TableLayoutPanel marginTenDangNhap;
+        private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraEditors.ButtonEdit txtMatKhau;
-        private DevExpress.XtraLayout.LayoutControlGroup Root;
-        private DevExpress.XtraLayout.LayoutControlItem layoutTxtTenDangNhap;
-        private DevExpress.XtraLayout.LayoutControlItem layoutTxtMatKhau;
-        private DevExpress.XtraLayout.LayoutControlItem layoutBtnDangNhap;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

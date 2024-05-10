@@ -1,6 +1,7 @@
 ﻿using BUS;
 using DevExpress.XtraCharts;
 using DevExpress.XtraEditors;
+using DTO;
 using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
@@ -28,11 +29,17 @@ namespace Project.NET.GUI_UC
 
         private void ThongKeNhanVien_UC_Load(object sender, EventArgs e)
         {
+            //
+            // First loading
+            //
+            SimpleButton clickedButton = btnTongNhanVienTheoChiNhanh;
+            clickedButton.UpdateButtonStyle(lastClickButton);
+            lastClickButton = clickedButton;
             nafContent.SelectedPage = navPageTongNhanVienTheoChiNhanh;
 
             var dataPoints = data.ThongKeNhanVienTheoChiNhanh();
 
-            chartTongNhanVienTheoPhongBan.CreateChart(dataPoints,
+            chartTongNhanVienTheoChiNhanh.SuportCreateChart(dataPoints,
                     dp => dp.TenCN,
                     dp => dp.SoLuongNV,
                     ViewType.Bar,
@@ -56,34 +63,47 @@ namespace Project.NET.GUI_UC
                 // Cập nhật trạng thái cho nút đang được nhấn
                 //
                 lastClickButton = currentButton;
+
+                List<ThongKeNhanVien_DTO> dataPoints = null;
                 switch (currentButton.Name)
                 {
+                    case "btnTongNhanVienTheoChiNhanh":
+                        nafContent.SelectedPage = navPageTongNhanVienTheoChiNhanh;
+                        dataPoints = data.ThongKeNhanVienTheoChiNhanh();
+                        lblTongNhanVienTheoChiNhanh.Text = "Thống kê tổng số NV Theo Chi Nhánh";
+                        chartTongNhanVienTheoChiNhanh.SuportCreateChart(dataPoints,
+                                dp => dp.TenCN, dp => dp.SoLuongNV,
+                                ViewType.Bar,
+                                "Tổng nhân viên", "Chi nhánh",
+                                "Tổng số nhân viên", "Thống kê tổng số NV Theo Chi Nhánh");
+                        break;
+                    case "btnCoCauNVTheoGioiTinh":
+                        nafContent.SelectedPage = navPageCoCauNVTheoGioiTinh;
+                        dataPoints = data.ThongKeNhanVienTheoGioiTinh();
+                        lblCoCauNVTheoGioiTinh.Text = "Thống kê Nhân viên theo giới tính";
+                        chartCoCauNVTheoGioiTinh.SuportCreateChart(dataPoints,
+                            d => d.TenCN, d => d.SoLuongNV, d => d.GioiTinh,
+                            ViewType.Bar,
+                             "Giới tính", "Tổng số nhân viên", "Thống kê Nhân viên theo giới tính");
+                        break;
+                    case "btnTongNhanVienTheoTuoi":
+                        nafContent.SelectedPage = navPageTongNhanVienTheoTuoi;
+                        dataPoints = data.ThongKeNhanVienTheoTuoi();
+                        lblTongNhanVienTheoTuoi.Text = "Thống kê Nhân viên theo độ tuổi";
+                        chartTongNhanVienTheoTuoi.SuportCreateChart(dataPoints,
+                                dp => dp.TenCN, dp => dp.SoLuongNV, d => d.KhoangTuoiNV,
+                                ViewType.Bar,
+                                "Khoảng Tuổi", "Tổng số nhân viên", "Thống kê Nhân viên theo độ tuổi");
+                        break;
                     case "btnCoCauNhanVienTheoChucVu":
                         nafContent.SelectedPage = navPageCoCauNhanVienTheoChucVu;
-                         
-                        break;
-                    case "btnTongNhanVienTheoChucVu":
-                        nafContent.SelectedPage = navPageTongNhanVienTheoChucVu;
-                         
-                        break;
-                    case "btnCoCauNVTheoCN":
-                        nafContent.SelectedPage = navPageCoCauNhanVienTheoChiNhanh;
-                         
-                        break;
-                    case "btnTongNVTheoCN":
-                        nafContent.SelectedPage = navPageTongNhanVienTheoChiNhanh;
-                        var dataPoints = data.ThongKeNhanVienTheoChiNhanh();
-
-                        chartTongNhanVienTheoPhongBan.CreateChart(dataPoints,
-                                dp => dp.TenCN,
-                                dp => dp.SoLuongNV,
+                        dataPoints = data.ThongKeNhanVienTheoViTriChucVuNhanVien();
+                        lblCoCauNhanVienTheoChucVu.Text = "Thống kê Nhân viên theo chức vụ";
+                        chartCoCauNhanVienTheoChucVu.SuportCreateChart(dataPoints,
+                                dp => dp.TenCN, dp => dp.SoLuongNV, d => d.TenChucVu,
                                 ViewType.Bar,
-                                "Series Tổng nhân viên theo Chi Nhánh",
-                                "Chi nhánh",
-                                "Tổng số nhân viên",
-                                "Thống kê tổng số NV Theo Chi Nhánh");
+                                "Chức vụ", "Tổng số nhân viên", "Thống kê Nhân viên theo chức vụ");
                         break;
-                    
                     default:
                         throw new Exception("Unknown button.");
                 }

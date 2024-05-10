@@ -47,6 +47,8 @@
             this.layoutBtnXemTK = new DevExpress.XtraLayout.LayoutControlItem();
             this.dgvTongTienMatHang = new System.Windows.Forms.DataGridView();
             this.chartDoanhThuThang = new DevExpress.XtraCharts.ChartControl();
+            this.marginbottom = new System.Windows.Forms.Panel();
+            this.marrginbottomtable = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.chartmonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartmonth.Panel1)).BeginInit();
             this.chartmonth.Panel1.SuspendLayout();
@@ -74,6 +76,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThuThang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            this.marginbottom.SuspendLayout();
+            this.marrginbottomtable.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartmonth
@@ -81,7 +85,7 @@
             this.chartmonth.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.chartmonth.Appearance.Options.UseBackColor = true;
             this.chartmonth.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartmonth.Location = new System.Drawing.Point(0, 0);
+            this.chartmonth.Location = new System.Drawing.Point(3, 3);
             this.chartmonth.Name = "chartmonth";
             // 
             // chartmonth.Panel1
@@ -93,7 +97,7 @@
             // 
             this.chartmonth.Panel2.Controls.Add(this.chartDoanhThuThang);
             this.chartmonth.Panel2.Text = "Panel2";
-            this.chartmonth.Size = new System.Drawing.Size(752, 627);
+            this.chartmonth.Size = new System.Drawing.Size(746, 575);
             this.chartmonth.SplitterPosition = 494;
             this.chartmonth.TabIndex = 1;
             // 
@@ -103,7 +107,7 @@
             this.groupLocKetqua.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupLocKetqua.Location = new System.Drawing.Point(0, 0);
             this.groupLocKetqua.Name = "groupLocKetqua";
-            this.groupLocKetqua.Size = new System.Drawing.Size(494, 627);
+            this.groupLocKetqua.Size = new System.Drawing.Size(494, 575);
             this.groupLocKetqua.TabIndex = 0;
             this.groupLocKetqua.Text = "Lọc kết quả tìm kiếm";
             // 
@@ -115,12 +119,12 @@
             this.tableLocKetQua.Controls.Add(this.layoutGroupLocKQ);
             this.tableLocKetQua.Controls.Add(this.dgvTongTienMatHang);
             this.tableLocKetQua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLocKetQua.Location = new System.Drawing.Point(2, 23);
+            this.tableLocKetQua.Location = new System.Drawing.Point(2, 16);
             this.tableLocKetQua.Name = "tableLocKetQua";
             this.tableLocKetQua.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 248F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.AutoSize, 26F)});
-            this.tableLocKetQua.Size = new System.Drawing.Size(490, 602);
+            this.tableLocKetQua.Size = new System.Drawing.Size(490, 557);
             this.tableLocKetQua.TabIndex = 1;
             this.tableLocKetQua.UseSkinIndents = true;
             // 
@@ -132,23 +136,23 @@
             this.layoutGroupLocKQ.Controls.Add(this.txtNgayLapHoaDonDen);
             this.layoutGroupLocKQ.Controls.Add(this.btnThongKeThang);
             this.layoutGroupLocKQ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutGroupLocKQ.Location = new System.Drawing.Point(13, 12);
+            this.layoutGroupLocKQ.Location = new System.Drawing.Point(7, 6);
             this.layoutGroupLocKQ.Name = "layoutGroupLocKQ";
             this.layoutGroupLocKQ.Root = this.layoutThaoTac;
             this.tableLocKetQua.SetRow(this.layoutGroupLocKQ, 0);
-            this.layoutGroupLocKQ.Size = new System.Drawing.Size(464, 244);
+            this.layoutGroupLocKQ.Size = new System.Drawing.Size(476, 246);
             this.layoutGroupLocKQ.TabIndex = 1;
             this.layoutGroupLocKQ.Text = "layoutControl2";
             // 
             // txtTKTenSP
             // 
-            this.txtTKTenSP.Location = new System.Drawing.Point(24, 61);
+            this.txtTKTenSP.Location = new System.Drawing.Point(12, 42);
             this.txtTKTenSP.Name = "txtTKTenSP";
             this.txtTKTenSP.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTKTenSP.Properties.Appearance.Options.UseFont = true;
             this.txtTKTenSP.Properties.BeepOnError = true;
             this.txtTKTenSP.Properties.UseMaskAsDisplayFormat = true;
-            this.txtTKTenSP.Size = new System.Drawing.Size(416, 26);
+            this.txtTKTenSP.Size = new System.Drawing.Size(452, 26);
             this.txtTKTenSP.StyleController = this.layoutGroupLocKQ;
             this.txtTKTenSP.TabIndex = 4;
             this.txtTKTenSP.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTKTenSP_EditValueChanging);
@@ -156,7 +160,7 @@
             // txtNgayLapHoaDonTu
             // 
             this.txtNgayLapHoaDonTu.EditValue = null;
-            this.txtNgayLapHoaDonTu.Location = new System.Drawing.Point(24, 107);
+            this.txtNgayLapHoaDonTu.Location = new System.Drawing.Point(12, 86);
             this.txtNgayLapHoaDonTu.Name = "txtNgayLapHoaDonTu";
             this.txtNgayLapHoaDonTu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayLapHoaDonTu.Properties.Appearance.Options.UseFont = true;
@@ -164,14 +168,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtNgayLapHoaDonTu.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtNgayLapHoaDonTu.Size = new System.Drawing.Size(416, 26);
+            this.txtNgayLapHoaDonTu.Size = new System.Drawing.Size(452, 26);
             this.txtNgayLapHoaDonTu.StyleController = this.layoutGroupLocKQ;
             this.txtNgayLapHoaDonTu.TabIndex = 5;
             // 
             // txtNgayLapHoaDonDen
             // 
             this.txtNgayLapHoaDonDen.EditValue = null;
-            this.txtNgayLapHoaDonDen.Location = new System.Drawing.Point(24, 153);
+            this.txtNgayLapHoaDonDen.Location = new System.Drawing.Point(12, 130);
             this.txtNgayLapHoaDonDen.Name = "txtNgayLapHoaDonDen";
             this.txtNgayLapHoaDonDen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayLapHoaDonDen.Properties.Appearance.Options.UseFont = true;
@@ -179,7 +183,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtNgayLapHoaDonDen.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtNgayLapHoaDonDen.Size = new System.Drawing.Size(416, 26);
+            this.txtNgayLapHoaDonDen.Size = new System.Drawing.Size(452, 26);
             this.txtNgayLapHoaDonDen.StyleController = this.layoutGroupLocKQ;
             this.txtNgayLapHoaDonDen.TabIndex = 6;
             // 
@@ -211,13 +215,14 @@
             this.btnThongKeThang.AppearancePressed.Options.UseFont = true;
             this.btnThongKeThang.AppearancePressed.Options.UseForeColor = true;
             this.btnThongKeThang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThongKeThang.ImageOptions.SvgImage")));
-            this.btnThongKeThang.Location = new System.Drawing.Point(12, 195);
+            this.btnThongKeThang.Location = new System.Drawing.Point(6, 164);
             this.btnThongKeThang.Margin = new System.Windows.Forms.Padding(0);
             this.btnThongKeThang.Name = "btnThongKeThang";
-            this.btnThongKeThang.Size = new System.Drawing.Size(440, 36);
+            this.btnThongKeThang.Size = new System.Drawing.Size(464, 38);
             this.btnThongKeThang.StyleController = this.layoutGroupLocKQ;
             this.btnThongKeThang.TabIndex = 7;
             this.btnThongKeThang.Text = "Xem thống kê";
+            this.btnThongKeThang.Click += new System.EventHandler(this.btnThongKeThang_Click);
             // 
             // layoutThaoTac
             // 
@@ -227,7 +232,7 @@
             this.groupThaoTacPanel,
             this.layoutBtnXemTK});
             this.layoutThaoTac.Name = "Root";
-            this.layoutThaoTac.Size = new System.Drawing.Size(464, 244);
+            this.layoutThaoTac.Size = new System.Drawing.Size(476, 246);
             this.layoutThaoTac.TextVisible = false;
             // 
             // groupThaoTacPanel
@@ -238,16 +243,16 @@
             this.layoutTxtTenSP});
             this.groupThaoTacPanel.Location = new System.Drawing.Point(0, 0);
             this.groupThaoTacPanel.Name = "groupThaoTacPanel";
-            this.groupThaoTacPanel.Size = new System.Drawing.Size(444, 183);
+            this.groupThaoTacPanel.Size = new System.Drawing.Size(466, 158);
             this.groupThaoTacPanel.Text = "Thao tác nhập thông tin";
             // 
             // layoutNgayNhapTu
             // 
             this.layoutNgayNhapTu.Control = this.txtNgayLapHoaDonTu;
-            this.layoutNgayNhapTu.Location = new System.Drawing.Point(0, 46);
+            this.layoutNgayNhapTu.Location = new System.Drawing.Point(0, 44);
             this.layoutNgayNhapTu.Name = "layoutNgayNhapTu";
             this.layoutNgayNhapTu.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutNgayNhapTu.Size = new System.Drawing.Size(420, 46);
+            this.layoutNgayNhapTu.Size = new System.Drawing.Size(454, 44);
             this.layoutNgayNhapTu.Text = "Ngày lập phiếu thanh toán từ";
             this.layoutNgayNhapTu.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutNgayNhapTu.TextSize = new System.Drawing.Size(148, 13);
@@ -256,10 +261,10 @@
             // 
             this.layoutNgayNhapDen.Control = this.txtNgayLapHoaDonDen;
             this.layoutNgayNhapDen.CustomizationFormText = "Ngày lập phiếu thanh toán đến";
-            this.layoutNgayNhapDen.Location = new System.Drawing.Point(0, 92);
+            this.layoutNgayNhapDen.Location = new System.Drawing.Point(0, 88);
             this.layoutNgayNhapDen.Name = "layoutNgayNhapDen";
             this.layoutNgayNhapDen.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutNgayNhapDen.Size = new System.Drawing.Size(420, 46);
+            this.layoutNgayNhapDen.Size = new System.Drawing.Size(454, 44);
             this.layoutNgayNhapDen.Text = "Ngày lập phiếu thanh toán đến";
             this.layoutNgayNhapDen.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutNgayNhapDen.TextSize = new System.Drawing.Size(148, 13);
@@ -269,7 +274,7 @@
             this.layoutTxtTenSP.Control = this.txtTKTenSP;
             this.layoutTxtTenSP.Location = new System.Drawing.Point(0, 0);
             this.layoutTxtTenSP.Name = "layoutTxtTenSP";
-            this.layoutTxtTenSP.Size = new System.Drawing.Size(420, 46);
+            this.layoutTxtTenSP.Size = new System.Drawing.Size(454, 44);
             this.layoutTxtTenSP.Text = "Nhập tên sản phẩm";
             this.layoutTxtTenSP.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutTxtTenSP.TextSize = new System.Drawing.Size(148, 13);
@@ -277,11 +282,11 @@
             // layoutBtnXemTK
             // 
             this.layoutBtnXemTK.Control = this.btnThongKeThang;
-            this.layoutBtnXemTK.Location = new System.Drawing.Point(0, 183);
+            this.layoutBtnXemTK.Location = new System.Drawing.Point(0, 158);
             this.layoutBtnXemTK.Name = "layoutBtnXemTK";
             this.layoutBtnXemTK.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutBtnXemTK.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutBtnXemTK.Size = new System.Drawing.Size(444, 41);
+            this.layoutBtnXemTK.Size = new System.Drawing.Size(466, 78);
             this.layoutBtnXemTK.TextSize = new System.Drawing.Size(0, 0);
             this.layoutBtnXemTK.TextVisible = false;
             // 
@@ -290,10 +295,10 @@
             this.tableLocKetQua.SetColumn(this.dgvTongTienMatHang, 0);
             this.dgvTongTienMatHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTongTienMatHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvTongTienMatHang.Location = new System.Drawing.Point(13, 260);
+            this.dgvTongTienMatHang.Location = new System.Drawing.Point(7, 254);
             this.dgvTongTienMatHang.Name = "dgvTongTienMatHang";
             this.tableLocKetQua.SetRow(this.dgvTongTienMatHang, 1);
-            this.dgvTongTienMatHang.Size = new System.Drawing.Size(464, 329);
+            this.dgvTongTienMatHang.Size = new System.Drawing.Size(476, 296);
             this.dgvTongTienMatHang.TabIndex = 0;
             // 
             // chartDoanhThuThang
@@ -308,14 +313,37 @@
             series1.Name = "Series 1";
             this.chartDoanhThuThang.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartDoanhThuThang.Size = new System.Drawing.Size(248, 627);
+            this.chartDoanhThuThang.Size = new System.Drawing.Size(244, 575);
             this.chartDoanhThuThang.TabIndex = 0;
+            // 
+            // marginbottom
+            // 
+            this.marginbottom.Controls.Add(this.marrginbottomtable);
+            this.marginbottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.marginbottom.Location = new System.Drawing.Point(0, 0);
+            this.marginbottom.Name = "marginbottom";
+            this.marginbottom.Size = new System.Drawing.Size(752, 627);
+            this.marginbottom.TabIndex = 2;
+            // 
+            // marrginbottomtable
+            // 
+            this.marrginbottomtable.ColumnCount = 1;
+            this.marrginbottomtable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.marrginbottomtable.Controls.Add(this.chartmonth, 0, 0);
+            this.marrginbottomtable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.marrginbottomtable.Location = new System.Drawing.Point(0, 0);
+            this.marrginbottomtable.Name = "marrginbottomtable";
+            this.marrginbottomtable.RowCount = 2;
+            this.marrginbottomtable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.7989F));
+            this.marrginbottomtable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.201101F));
+            this.marrginbottomtable.Size = new System.Drawing.Size(752, 627);
+            this.marrginbottomtable.TabIndex = 0;
             // 
             // ThongKeMonth_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.chartmonth);
+            this.Controls.Add(this.marginbottom);
             this.Name = "ThongKeMonth_UC";
             this.Size = new System.Drawing.Size(752, 627);
             ((System.ComponentModel.ISupportInitialize)(this.chartmonth.Panel1)).EndInit();
@@ -345,6 +373,8 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThuThang)).EndInit();
+            this.marginbottom.ResumeLayout(false);
+            this.marrginbottomtable.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -367,5 +397,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutBtnXemTK;
         private System.Windows.Forms.DataGridView dgvTongTienMatHang;
         private DevExpress.XtraCharts.ChartControl chartDoanhThuThang;
+        private System.Windows.Forms.Panel marginbottom;
+        private System.Windows.Forms.TableLayoutPanel marrginbottomtable;
     }
 }

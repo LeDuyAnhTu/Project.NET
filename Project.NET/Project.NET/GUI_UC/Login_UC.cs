@@ -5,7 +5,9 @@ using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,11 +18,15 @@ namespace Project.NET.GUI_UC
 {
     public partial class Login_UC : DevExpress.XtraEditors.XtraUserControl
     {
+
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
-    
+
         //Properties
         private TaiKhoan_BUS db_TK = new TaiKhoan_BUS();
+        private string databaseName = "QLBHX";
+        private string[] serverNames = new string[] { ".", ".\\sqlexpress" };
+        string connectionString = null;
 
         public Login_UC()
         {
@@ -29,6 +35,7 @@ namespace Project.NET.GUI_UC
             // Tạo một TextEdit với PasswordChar là '*' 
             txtMatKhau.Properties.PasswordChar = '*';
             EditorButton customButton = new EditorButton();
+            lblNhapMatKhau.ImageOptions.Image = Properties.Resources.hide_32x32;
             customButton.Image = Properties.Resources.eyeOpen;
 
             txtMatKhau.Properties.Buttons.RemoveAt(0);
@@ -45,6 +52,7 @@ namespace Project.NET.GUI_UC
                     {
                         txtMatKhau.Properties.PasswordChar = '\0';
                         e.Button.Image = Properties.Resources.eyeClosed; // Biểu tượng mắt đóng
+                        lblNhapMatKhau.ImageOptions.Image = Properties.Resources.show_32x32;
                     }
                     // Ngược lại, đặt PasswordChar thành '*' để ẩn mật khẩu
                     // và thay đổi biểu tượng thành mắt mở
@@ -52,6 +60,7 @@ namespace Project.NET.GUI_UC
                     {
                         txtMatKhau.Properties.PasswordChar = '*';
                         e.Button.Image = Properties.Resources.eyeOpen; // Biểu tượng mắt mở
+                        lblNhapMatKhau.ImageOptions.Image = Properties.Resources.hide_32x32;
                     }
                 }
             };
@@ -73,7 +82,8 @@ namespace Project.NET.GUI_UC
                 if (txtMatKhau.Text.Equals(tk.MatKhau.Trim()))
                 {
                     WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-                    await waitFormManager.ShowWaitForm(() => {
+                    await waitFormManager.ShowWaitForm(() =>
+                    {
 
                         // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
                         this.Invoke((MethodInvoker)delegate
@@ -96,9 +106,10 @@ namespace Project.NET.GUI_UC
                     throw new Exception();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Đăng nhập thất bại","Thông báo");
+                MessageBox.Show("Đăng nhập thất bại", "Thông báo");
+                Console.WriteLine(ex.Message);
             }
             btnDangNhap.Enabled = true;
         }
@@ -120,6 +131,47 @@ namespace Project.NET.GUI_UC
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+        
+       
+        
+        private void Login_UC_Load(object sender, EventArgs e)
+        { 
+            btnDangNhap.Click += btnDangNhap_Click;
+            bool connected = false;
+            foreach (string serverName in serverNames)
+            {
+                try
+                {
+                    connectionString = $"data source={serverName};initial catalog={databaseName};integrated security=True;encrypt=True;trustservercertificate=True;";
+
+
+                    var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                    if (config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"] != null)
+                    {
+                        config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = connectionString;
+                        config.Save(ConfigurationSaveMode.Modified);
+                        ConfigurationManager.RefreshSection("connectionStrings");
+
+                        // Kiểm tra kết nối
+                        using (var connection = new SqlConnection(connectionString))
+                        {
+                            connection.Open(); // Thử mở kết nối
+                            connection.Close();
+                        } 
+                        connected = true;
+                    } 
+                }
+                catch (Exception ex)
+                {
+                    // Hiển thị thông báo lỗi
+                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                if (connected)
+                {
+                    break;
+                }
+            }
         }
     }
 }

@@ -130,8 +130,8 @@ namespace Project.NET.GUI_UC
             //Danh sách chi nhánh
             //
             cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
-            cboChiNhanh.Properties.ValueMember = "maCN";
-            cboChiNhanh.Properties.DisplayMember = "tenCN";
+            cboChiNhanh.Properties.ValueMember = "MãChiNhánh";
+            cboChiNhanh.Properties.DisplayMember = "TênChiNhánh";
             cboChiNhanh.ItemIndex = 0;
 
             //
@@ -214,6 +214,11 @@ namespace Project.NET.GUI_UC
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void cboChiNhanh_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -6,7 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -187,7 +186,7 @@ namespace Project.NET.GUI_UC
             try
             {
                 DialogResult luaChon = MessageBox.Show("Bạn có muốn xóa ca làm " + txtMaCaLam.Text.Trim() + " ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if(luaChon == DialogResult.Yes)
+                if (luaChon == DialogResult.Yes)
                 {
                     if (db_CL.Xoa(txtMaCaLam.Text))
                         MessageBox.Show("Xóa ca làm thành công !", "Thông báo");

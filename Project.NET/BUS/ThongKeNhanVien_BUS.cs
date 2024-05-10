@@ -22,5 +22,64 @@ namespace BUS
                 throw new Exception(ex.Message);
             }
         }
+
+        /// <summary>
+        /// Thong ke nhan vien chi nhanh theo gioi tinh
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeNhanVien_DTO> ThongKeNhanVienTheoGioiTinh()
+        {
+            try
+            {
+                return data.ThongKeNhanVienTheoGioiTinh();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        /// <summary>
+        /// Thong ke nhan vien chi nhanh theo tuoi
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeNhanVien_DTO> ThongKeNhanVienTheoTuoi()
+        {
+             
+            try
+            {
+                return data.ThongKeNhanVienTheoTuoi();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+
+        /// <summary>
+        /// Thong ke nhan vien chi nhanh theo vi tri chuc vu
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeNhanVien_DTO> ThongKeNhanVienTheoViTriChucVuNhanVien()
+        {
+             
+            try
+            {
+                return data.ThongKeNhanVienTheoViTriChucVuNhanVien();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
+
+
 }

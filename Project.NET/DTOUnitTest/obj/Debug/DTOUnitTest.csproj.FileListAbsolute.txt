@@ -35,6 +35,26 @@ D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\DTOUnitTest\obj\Deb
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitT.3749FC66.Up2Date
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.dll
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.pdb
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DTOUnitTest.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DTOUnitTest.pdb
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DTO.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.pdb
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DAL.dll.config
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\DTO.pdb
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.csproj.AssemblyReference.cache
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.csproj.CoreCompileInputs.cache
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitT.3749FC66.Up2Date
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.dll
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\DTOUnitTest\obj\Debug\DTOUnitTest.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\DTOUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
