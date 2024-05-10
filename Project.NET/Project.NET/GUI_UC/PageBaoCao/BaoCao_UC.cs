@@ -22,7 +22,7 @@ namespace Project.NET.GUI_UC
 
         private void btnBaoCaoBanHangTheoNgay_Click(object sender, EventArgs e)
         {
-            ReportPrintTool printTool = new ReportPrintTool(new BanHangTheoNgay_RP());
+            ReportPrintTool printTool = new ReportPrintTool(new BanHangTheoNgay_RPT());
             printTool.ShowRibbonPreview();
         }
     }

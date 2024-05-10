@@ -6,9 +6,9 @@ using System.Drawing;
 
 namespace Project.NET.RP
 {
-    public partial class BanHangTheoNgay_RP : DevExpress.XtraReports.UI.XtraReport
+    public partial class BanHangTheoNgay_RPT : DevExpress.XtraReports.UI.XtraReport
     {
-        public BanHangTheoNgay_RP()
+        public BanHangTheoNgay_RPT()
         {
             InitializeComponent();
         }
