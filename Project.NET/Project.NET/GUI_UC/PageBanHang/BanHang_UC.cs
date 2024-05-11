@@ -1,7 +1,9 @@
 ﻿using BUS;
 using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using DTO;
 using Project.NET.ExtensionMethods;
+using Project.NET.RP;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -544,6 +546,12 @@ namespace Project.NET.GUI_UC.PageBanHang
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            ReportPrintTool printTool = new ReportPrintTool(new InHoaDon_RPT());
+            printTool.ShowRibbonPreview();
         }
     }
 }

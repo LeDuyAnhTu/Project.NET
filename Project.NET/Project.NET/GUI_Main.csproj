@@ -319,11 +319,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RP\BanHangTheoNgay_RP.cs">
+    <Compile Include="RPT\BanHangTheoNgay_RPT.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RP\BanHangTheoNgay_RP.Designer.cs">
-      <DependentUpon>BanHangTheoNgay_RP.cs</DependentUpon>
+    <Compile Include="RPT\BanHangTheoNgay_RPT.Designer.cs">
+      <DependentUpon>BanHangTheoNgay_RPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\InHoaDon_RPT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\InHoaDon_RPT.Designer.cs">
+      <DependentUpon>InHoaDon_RPT.cs</DependentUpon>
     </Compile>
     <Compile Include="WaitFormManager.cs" />
     <EmbeddedResource Include="frmWaiting.resx">
@@ -430,8 +436,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RP\BanHangTheoNgay_RP.resx">
-      <DependentUpon>BanHangTheoNgay_RP.cs</DependentUpon>
+    <EmbeddedResource Include="RPT\BanHangTheoNgay_RPT.resx">
+      <DependentUpon>BanHangTheoNgay_RPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\InHoaDon_RPT.resx">
+      <DependentUpon>InHoaDon_RPT.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Document\Đồ án%28update%29.docx" />
@@ -702,7 +711,15 @@
   <ItemGroup>
     <None Include="Resources\hide_32x32.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\boorderitem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorder_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency_32x32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
