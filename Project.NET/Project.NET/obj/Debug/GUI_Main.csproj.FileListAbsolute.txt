@@ -207,8 +207,6 @@ D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Deb
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.AssemblyReference.cache
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Loading_UC.resources
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.BaoCao_UC.resources
-D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.Kho_UC.resources
-D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.ThongKeKho_UC.resources
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.CaLam_UC.resources
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Forms.NhanVien_UC.resources
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PhanCong_UC.resources
@@ -514,3 +512,15 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.InHoaDon_RPT.resources
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RPT.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.CodeCompletion.dll
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.Desktop.dll
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.dll
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.dll
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraReports.v22.2.CodeCompletion.xml
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.xml
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.xml
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.Desktop.xml
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.KhoCN_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.ThongKeKhoCN_UC.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RPT.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.InHoaDon_RPT.resources
