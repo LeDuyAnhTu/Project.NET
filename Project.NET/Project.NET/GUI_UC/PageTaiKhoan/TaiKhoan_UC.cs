@@ -43,8 +43,23 @@ namespace Project.NET.Forms
         //Events
         private void TaiKhoan_UC_Load(object sender, EventArgs e)
         {
-            dgvTaiKhoanNhanVien.DataSource = db_TK.LayDanhSach();
-            gridView1.SelectRow(0);
+            try
+            {
+                dgvTaiKhoanNhanVien.DataSource = db_TK.LayDanhSach();
+                TaiKhoan_DTO tk = db_TK.timTaiKhoan_TenTK(gridView1.GetRowCellValue(0, "TênTàiKhoản").ToString());
+                NhanVien_DTO nv = db_NV.timTheoMa(tk.MaNV);
+                ViTri_DTO vt = db_VT.timTheoMa(nv.MaVT);
+
+                txtMatKhauTK.Text = tk.MatKhau;
+                txtTenTK.Text = tk.TenTK;
+                txtViTriCuaHang.Text = vt.TenVT;
+                cboNhanVien.Text = nv.TenNV;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)

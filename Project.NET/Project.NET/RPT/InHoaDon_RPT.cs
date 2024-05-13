@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using DevExpress.Charts.Native;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -8,9 +9,11 @@ namespace Project.NET.RP
 {
     public partial class InHoaDon_RPT : DevExpress.XtraReports.UI.XtraReport
     {
-        public InHoaDon_RPT()
+        private string maHD = "";
+        public InHoaDon_RPT(string maHD)
         {
             InitializeComponent();
+            this.maHD = maHD;
         }
 
     }

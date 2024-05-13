@@ -68,12 +68,12 @@
             this.Login_UC_layout.Controls.Add(this.marginTOPBOTTOM);
             this.Login_UC_layout.Controls.Add(this.LogoPicture);
             this.Login_UC_layout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Login_UC_layout.Location = new System.Drawing.Point(20, 0);
+            this.Login_UC_layout.Location = new System.Drawing.Point(23, 0);
             this.Login_UC_layout.Margin = new System.Windows.Forms.Padding(0);
             this.Login_UC_layout.Name = "Login_UC_layout";
             this.Login_UC_layout.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1221, 328, 650, 400);
             this.Login_UC_layout.Root = this.groupLogin;
-            this.Login_UC_layout.Size = new System.Drawing.Size(1034, 847);
+            this.Login_UC_layout.Size = new System.Drawing.Size(1207, 1042);
             this.Login_UC_layout.TabIndex = 4;
             // 
             // marginTOPBOTTOM
@@ -83,14 +83,14 @@
             this.marginTOPBOTTOM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.43916F));
             this.marginTOPBOTTOM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.781391F));
             this.marginTOPBOTTOM.Controls.Add(this.groupControl1, 1, 1);
-            this.marginTOPBOTTOM.Location = new System.Drawing.Point(620, 6);
+            this.marginTOPBOTTOM.Location = new System.Drawing.Point(724, 7);
             this.marginTOPBOTTOM.Margin = new System.Windows.Forms.Padding(0);
             this.marginTOPBOTTOM.Name = "marginTOPBOTTOM";
             this.marginTOPBOTTOM.RowCount = 3;
             this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.marginTOPBOTTOM.Size = new System.Drawing.Size(408, 835);
+            this.marginTOPBOTTOM.Size = new System.Drawing.Size(476, 1028);
             this.marginTOPBOTTOM.TabIndex = 11;
             // 
             // groupControl1
@@ -106,34 +106,34 @@
             this.groupControl1.Controls.Add(this.marginLoginLayout);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Title;
-            this.groupControl1.Location = new System.Drawing.Point(15, 292);
+            this.groupControl1.Location = new System.Drawing.Point(17, 359);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(377, 250);
+            this.groupControl1.Size = new System.Drawing.Size(440, 308);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Khu Vực Đăng Nhập";
             // 
             // marginLoginLayout
             // 
             this.marginLoginLayout.ColumnCount = 4;
-            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.2809F));
             this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.7191F));
-            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.marginLoginLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.marginLoginLayout.Controls.Add(this.lblTenDangNhap, 1, 0);
             this.marginLoginLayout.Controls.Add(this.lblNhapMatKhau, 1, 1);
             this.marginLoginLayout.Controls.Add(this.btnDangNhap, 1, 2);
             this.marginLoginLayout.Controls.Add(this.marginTenDangNhap, 2, 0);
             this.marginLoginLayout.Controls.Add(this.tableLayoutPanel1, 2, 1);
             this.marginLoginLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.marginLoginLayout.Location = new System.Drawing.Point(0, 34);
+            this.marginLoginLayout.Location = new System.Drawing.Point(0, 36);
             this.marginLoginLayout.Margin = new System.Windows.Forms.Padding(0);
             this.marginLoginLayout.Name = "marginLoginLayout";
             this.marginLoginLayout.RowCount = 3;
             this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.marginLoginLayout.Size = new System.Drawing.Size(377, 216);
+            this.marginLoginLayout.Size = new System.Drawing.Size(440, 272);
             this.marginLoginLayout.TabIndex = 0;
             // 
             // lblTenDangNhap
@@ -147,9 +147,10 @@
             this.lblTenDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTenDangNhap.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.lblTenDangNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblTenDangNhap.ImageOptions.SvgImage")));
-            this.lblTenDangNhap.Location = new System.Drawing.Point(13, 3);
+            this.lblTenDangNhap.Location = new System.Drawing.Point(16, 4);
+            this.lblTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(173, 66);
+            this.lblTenDangNhap.Size = new System.Drawing.Size(200, 82);
             this.lblTenDangNhap.TabIndex = 5;
             this.lblTenDangNhap.Text = "Tên Đăng Nhập:";
             // 
@@ -164,9 +165,10 @@
             this.lblNhapMatKhau.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNhapMatKhau.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.lblNhapMatKhau.ImageOptions.Image = global::Project.NET.Properties.Resources.hide_32x32;
-            this.lblNhapMatKhau.Location = new System.Drawing.Point(13, 75);
+            this.lblNhapMatKhau.Location = new System.Drawing.Point(16, 94);
+            this.lblNhapMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblNhapMatKhau.Name = "lblNhapMatKhau";
-            this.lblNhapMatKhau.Size = new System.Drawing.Size(173, 66);
+            this.lblNhapMatKhau.Size = new System.Drawing.Size(200, 82);
             this.lblNhapMatKhau.TabIndex = 6;
             this.lblNhapMatKhau.Text = "Mật Khẩu:";
             // 
@@ -199,11 +201,12 @@
             this.btnDangNhap.AppearancePressed.Options.UseForeColor = true;
             this.marginLoginLayout.SetColumnSpan(this.btnDangNhap, 2);
             this.btnDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDangNhap.Location = new System.Drawing.Point(13, 147);
-            this.btnDangNhap.MaximumSize = new System.Drawing.Size(0, 53);
-            this.btnDangNhap.MinimumSize = new System.Drawing.Size(0, 53);
+            this.btnDangNhap.Location = new System.Drawing.Point(16, 184);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangNhap.MaximumSize = new System.Drawing.Size(0, 65);
+            this.btnDangNhap.MinimumSize = new System.Drawing.Size(0, 65);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(350, 53);
+            this.btnDangNhap.Size = new System.Drawing.Size(406, 65);
             this.btnDangNhap.TabIndex = 0;
             this.btnDangNhap.Text = "Đăng Nhập";
             // 
@@ -213,19 +216,20 @@
             this.marginTenDangNhap.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.marginTenDangNhap.Controls.Add(this.txtTenDangNhap, 0, 1);
             this.marginTenDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.marginTenDangNhap.Location = new System.Drawing.Point(189, 0);
+            this.marginTenDangNhap.Location = new System.Drawing.Point(220, 0);
             this.marginTenDangNhap.Margin = new System.Windows.Forms.Padding(0);
             this.marginTenDangNhap.Name = "marginTenDangNhap";
             this.marginTenDangNhap.RowCount = 2;
             this.marginTenDangNhap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.marginTenDangNhap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.marginTenDangNhap.Size = new System.Drawing.Size(177, 72);
+            this.marginTenDangNhap.Size = new System.Drawing.Size(206, 90);
             this.marginTenDangNhap.TabIndex = 7;
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTenDangNhap.Location = new System.Drawing.Point(3, 21);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(4, 26);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
@@ -235,7 +239,7 @@
             this.txtTenDangNhap.Properties.AppearanceFocused.Options.UseFont = true;
             this.txtTenDangNhap.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTenDangNhap.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.txtTenDangNhap.Size = new System.Drawing.Size(171, 26);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(198, 32);
             this.txtTenDangNhap.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -244,19 +248,20 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.txtMatKhau, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(189, 72);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(220, 90);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(177, 72);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(206, 90);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMatKhau.Location = new System.Drawing.Point(3, 21);
+            this.txtMatKhau.Location = new System.Drawing.Point(4, 26);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
@@ -268,15 +273,16 @@
             this.txtMatKhau.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.txtMatKhau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtMatKhau.Size = new System.Drawing.Size(171, 26);
+            this.txtMatKhau.Size = new System.Drawing.Size(198, 32);
             this.txtMatKhau.TabIndex = 5;
             // 
             // LogoPicture
             // 
             this.LogoPicture.Image = ((System.Drawing.Image)(resources.GetObject("LogoPicture.Image")));
-            this.LogoPicture.Location = new System.Drawing.Point(6, 6);
+            this.LogoPicture.Location = new System.Drawing.Point(7, 7);
+            this.LogoPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LogoPicture.Name = "LogoPicture";
-            this.LogoPicture.Size = new System.Drawing.Size(612, 835);
+            this.LogoPicture.Size = new System.Drawing.Size(715, 1028);
             this.LogoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.LogoPicture.TabIndex = 10;
             this.LogoPicture.TabStop = false;
@@ -289,7 +295,7 @@
             this.logoLayout,
             this.loginLayout});
             this.groupLogin.Name = "groupLogin";
-            this.groupLogin.Size = new System.Drawing.Size(1034, 847);
+            this.groupLogin.Size = new System.Drawing.Size(1207, 1042);
             this.groupLogin.TextVisible = false;
             // 
             // logoLayout
@@ -297,7 +303,7 @@
             this.logoLayout.Control = this.LogoPicture;
             this.logoLayout.Location = new System.Drawing.Point(0, 0);
             this.logoLayout.Name = "logoLayout";
-            this.logoLayout.Size = new System.Drawing.Size(614, 837);
+            this.logoLayout.Size = new System.Drawing.Size(717, 1030);
             this.logoLayout.Text = "PictureLayout";
             this.logoLayout.TextSize = new System.Drawing.Size(0, 0);
             this.logoLayout.TextVisible = false;
@@ -305,9 +311,9 @@
             // loginLayout
             // 
             this.loginLayout.Control = this.marginTOPBOTTOM;
-            this.loginLayout.Location = new System.Drawing.Point(614, 0);
+            this.loginLayout.Location = new System.Drawing.Point(717, 0);
             this.loginLayout.Name = "loginLayout";
-            this.loginLayout.Size = new System.Drawing.Size(410, 837);
+            this.loginLayout.Size = new System.Drawing.Size(478, 1030);
             this.loginLayout.TextSize = new System.Drawing.Size(0, 0);
             this.loginLayout.TextVisible = false;
             // 
@@ -315,9 +321,9 @@
             // 
             this.marginRIGHTLEFT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(117)))), ((int)(((byte)(187)))));
             this.marginRIGHTLEFT.ColumnCount = 3;
-            this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.marginRIGHTLEFT.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.marginRIGHTLEFT.Controls.Add(this.Login_UC_layout, 1, 0);
             this.marginRIGHTLEFT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.marginRIGHTLEFT.Location = new System.Drawing.Point(0, 0);
@@ -325,19 +331,19 @@
             this.marginRIGHTLEFT.Name = "marginRIGHTLEFT";
             this.marginRIGHTLEFT.RowCount = 1;
             this.marginRIGHTLEFT.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.marginRIGHTLEFT.Size = new System.Drawing.Size(1074, 847);
+            this.marginRIGHTLEFT.Size = new System.Drawing.Size(1253, 1042);
             this.marginRIGHTLEFT.TabIndex = 12;
             // 
             // Login_UC
             // 
             this.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.marginRIGHTLEFT);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Login_UC";
-            this.Size = new System.Drawing.Size(1074, 847);
+            this.Size = new System.Drawing.Size(1253, 1042);
             this.Load += new System.EventHandler(this.Login_UC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Login_UC_layout)).EndInit();
             this.Login_UC_layout.ResumeLayout(false);
