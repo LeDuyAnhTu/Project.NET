@@ -537,6 +537,7 @@ namespace Project.NET.GUI_UC.PageBanHang
 
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
+
         }
     }
 }
