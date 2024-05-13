@@ -54,7 +54,6 @@ namespace Project.NET.Forms
                 txtTenTK.Text = tk.TenTK;
                 txtViTriCuaHang.Text = vt.TenVT;
                 cboNhanVien.Text = nv.TenNV;
-
             }
             catch (Exception ex)
             {
