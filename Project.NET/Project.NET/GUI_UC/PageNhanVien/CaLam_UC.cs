@@ -16,7 +16,7 @@ namespace Project.NET.GUI_UC
 {
     public partial class CaLam_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //Properties
+        //Fields
         private CaLam_BUS db_CL = new CaLam_BUS();
 
         //Constructors

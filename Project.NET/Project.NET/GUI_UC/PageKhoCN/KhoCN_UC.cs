@@ -16,7 +16,7 @@ namespace Project.NET.GUI_UC.PageKho
 {
     public partial class KhoCN_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //Properties
+        //Fields
         private KhuVuc_BUS db_KV = new KhuVuc_BUS();
         private ChiNhanh_BUS db_CN = new ChiNhanh_BUS();
         private SanPham_BUS db_SP = new SanPham_BUS();

@@ -17,7 +17,7 @@ namespace Project.NET.GUI_UC.PageSanPham
 {
     public partial class SanPham_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //Properties
+        //Fields
         private SanPham_BUS db_SP = new SanPham_BUS();
         private LoaiSP_BUS db_LSP = new LoaiSP_BUS();
         private NhaSanXuat_BUS db_NSX = new NhaSanXuat_BUS();

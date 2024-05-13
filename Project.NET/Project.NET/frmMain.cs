@@ -8,7 +8,7 @@ namespace Project.NET
 {
     public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
-        //Properties
+        //Fields
         public static string maNV = "";
 
         //Chuyển đến form khác sau khi đăng nhập thành công

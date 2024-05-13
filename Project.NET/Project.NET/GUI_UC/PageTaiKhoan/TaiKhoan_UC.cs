@@ -15,7 +15,7 @@ namespace Project.NET.Forms
 {
     public partial class TaiKhoan_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //Properties
+        //Fields
         private TaiKhoan_BUS db_TK = new TaiKhoan_BUS();
         private ViTri_BUS db_VT = new ViTri_BUS();
         private NhanVien_BUS db_NV = new NhanVien_BUS();

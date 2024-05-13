@@ -83,14 +83,14 @@
             this.marginTOPBOTTOM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.43916F));
             this.marginTOPBOTTOM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.781391F));
             this.marginTOPBOTTOM.Controls.Add(this.groupControl1, 1, 1);
-            this.marginTOPBOTTOM.Location = new System.Drawing.Point(724, 7);
+            this.marginTOPBOTTOM.Location = new System.Drawing.Point(724, 6);
             this.marginTOPBOTTOM.Margin = new System.Windows.Forms.Padding(0);
             this.marginTOPBOTTOM.Name = "marginTOPBOTTOM";
             this.marginTOPBOTTOM.RowCount = 3;
             this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.marginTOPBOTTOM.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.marginTOPBOTTOM.Size = new System.Drawing.Size(476, 1028);
+            this.marginTOPBOTTOM.Size = new System.Drawing.Size(477, 1030);
             this.marginTOPBOTTOM.TabIndex = 11;
             // 
             // groupControl1
@@ -106,10 +106,10 @@
             this.groupControl1.Controls.Add(this.marginLoginLayout);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Title;
-            this.groupControl1.Location = new System.Drawing.Point(17, 359);
+            this.groupControl1.Location = new System.Drawing.Point(18, 360);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(440, 308);
+            this.groupControl1.Size = new System.Drawing.Size(440, 309);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Khu Vực Đăng Nhập";
             // 
@@ -133,7 +133,7 @@
             this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.marginLoginLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.marginLoginLayout.Size = new System.Drawing.Size(440, 272);
+            this.marginLoginLayout.Size = new System.Drawing.Size(440, 273);
             this.marginLoginLayout.TabIndex = 0;
             // 
             // lblTenDangNhap
@@ -148,9 +148,9 @@
             this.lblTenDangNhap.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.lblTenDangNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblTenDangNhap.ImageOptions.SvgImage")));
             this.lblTenDangNhap.Location = new System.Drawing.Point(16, 4);
-            this.lblTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTenDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(200, 82);
+            this.lblTenDangNhap.Size = new System.Drawing.Size(200, 83);
             this.lblTenDangNhap.TabIndex = 5;
             this.lblTenDangNhap.Text = "Tên Đăng Nhập:";
             // 
@@ -165,10 +165,10 @@
             this.lblNhapMatKhau.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNhapMatKhau.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.lblNhapMatKhau.ImageOptions.Image = global::Project.NET.Properties.Resources.hide_32x32;
-            this.lblNhapMatKhau.Location = new System.Drawing.Point(16, 94);
-            this.lblNhapMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblNhapMatKhau.Location = new System.Drawing.Point(16, 95);
+            this.lblNhapMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.lblNhapMatKhau.Name = "lblNhapMatKhau";
-            this.lblNhapMatKhau.Size = new System.Drawing.Size(200, 82);
+            this.lblNhapMatKhau.Size = new System.Drawing.Size(200, 83);
             this.lblNhapMatKhau.TabIndex = 6;
             this.lblNhapMatKhau.Text = "Mật Khẩu:";
             // 
@@ -201,8 +201,8 @@
             this.btnDangNhap.AppearancePressed.Options.UseForeColor = true;
             this.marginLoginLayout.SetColumnSpan(this.btnDangNhap, 2);
             this.btnDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDangNhap.Location = new System.Drawing.Point(16, 184);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangNhap.Location = new System.Drawing.Point(16, 186);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangNhap.MaximumSize = new System.Drawing.Size(0, 65);
             this.btnDangNhap.MinimumSize = new System.Drawing.Size(0, 65);
             this.btnDangNhap.Name = "btnDangNhap";
@@ -222,14 +222,14 @@
             this.marginTenDangNhap.RowCount = 2;
             this.marginTenDangNhap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.marginTenDangNhap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.marginTenDangNhap.Size = new System.Drawing.Size(206, 90);
+            this.marginTenDangNhap.Size = new System.Drawing.Size(206, 91);
             this.marginTenDangNhap.TabIndex = 7;
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTenDangNhap.Location = new System.Drawing.Point(4, 26);
-            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTenDangNhap.Properties.Appearance.Options.UseFont = true;
@@ -248,20 +248,20 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.txtMatKhau, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(220, 90);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(220, 91);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(206, 90);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(206, 91);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMatKhau.Location = new System.Drawing.Point(4, 26);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMatKhau.Properties.Appearance.Options.UseFont = true;
@@ -279,10 +279,10 @@
             // LogoPicture
             // 
             this.LogoPicture.Image = ((System.Drawing.Image)(resources.GetObject("LogoPicture.Image")));
-            this.LogoPicture.Location = new System.Drawing.Point(7, 7);
-            this.LogoPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogoPicture.Location = new System.Drawing.Point(6, 6);
+            this.LogoPicture.Margin = new System.Windows.Forms.Padding(4);
             this.LogoPicture.Name = "LogoPicture";
-            this.LogoPicture.Size = new System.Drawing.Size(715, 1028);
+            this.LogoPicture.Size = new System.Drawing.Size(716, 1030);
             this.LogoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.LogoPicture.TabIndex = 10;
             this.LogoPicture.TabStop = false;
@@ -303,7 +303,7 @@
             this.logoLayout.Control = this.LogoPicture;
             this.logoLayout.Location = new System.Drawing.Point(0, 0);
             this.logoLayout.Name = "logoLayout";
-            this.logoLayout.Size = new System.Drawing.Size(717, 1030);
+            this.logoLayout.Size = new System.Drawing.Size(718, 1032);
             this.logoLayout.Text = "PictureLayout";
             this.logoLayout.TextSize = new System.Drawing.Size(0, 0);
             this.logoLayout.TextVisible = false;
@@ -311,9 +311,9 @@
             // loginLayout
             // 
             this.loginLayout.Control = this.marginTOPBOTTOM;
-            this.loginLayout.Location = new System.Drawing.Point(717, 0);
+            this.loginLayout.Location = new System.Drawing.Point(718, 0);
             this.loginLayout.Name = "loginLayout";
-            this.loginLayout.Size = new System.Drawing.Size(478, 1030);
+            this.loginLayout.Size = new System.Drawing.Size(479, 1032);
             this.loginLayout.TextSize = new System.Drawing.Size(0, 0);
             this.loginLayout.TextVisible = false;
             // 
