@@ -74,7 +74,7 @@ namespace DTO
                 {
                     throw new Exception("Vui lòng nhập số lượng");
                 }
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException("Số lượng không thể nhỏ hơn 0!");
                 }

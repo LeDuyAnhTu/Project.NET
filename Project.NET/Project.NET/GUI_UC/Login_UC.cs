@@ -137,6 +137,7 @@ namespace Project.NET.GUI_UC
         private void Login_UC_Load(object sender, EventArgs e)
         { 
             btnDangNhap.Click += btnDangNhap_Click;
+            txtTenDangNhap.Focus();
         }
     }
 }

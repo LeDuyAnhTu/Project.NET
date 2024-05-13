@@ -56,7 +56,7 @@ namespace DTO
                 {
                     throw new Exception("tenSP tối đa 30 ký tự !");
                 }
-                else if (value == null)
+                else if (value == null || value == "")
                 {
                     throw new Exception("Vui lòng nhập tenSP !");
                 }
@@ -94,7 +94,7 @@ namespace DTO
             get => donGia;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException("Đơn giá không thể nhỏ hơn 0!");
                 }
@@ -108,7 +108,7 @@ namespace DTO
             get => soLuongConLai;
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException("Số lượng còn lại không thể nhỏ hơn 0!");
                 }

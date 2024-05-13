@@ -48,11 +48,16 @@ namespace Project.NET.GUI_UC
         }
 
         //Methods
+        /// <summary>
+        /// Khởi động các nút trong danh sách
+        /// </summary>
+        /// <param name="list">Danh sách các nút</param>
+        /// <param name="check">Trạng thái</param>
         private void listButtonsVision(List<SimpleButton> list, bool check)
         {
             foreach(SimpleButton button in list)
             {
-                button.Visible = check;
+                button.Enabled = check;
             }
         }
 
@@ -226,21 +231,24 @@ namespace Project.NET.GUI_UC
                 }
             }
         }
-
         private void editFormTaiKhoan_Load(object sender, EventArgs e)
         {
             try
             {
-                listButtonsVision(list_btnQuanLy, true);
+                //Tìm thông tin nhân viên vừa đăng nhập
                 NhanVien_DTO nv = db_NV.timTheoMa(frmMain.maNV);
                 if (nv != null)
                 {
-                    switch (nv.MaVT)
+                    //Tắt tất cả các nút
+                    listButtonsVision(list_btnQuanLy, false);
+                    //Mở các nút mà nhân viên trên được phép sử dụng
+                    switch (nv.MaVT.Trim())
                     {
-                        case "VT01":
+                        case "VT00":
+                        case "VT01": //Quản lý
                             listButtonsVision(list_btnQuanLy, true);
                             break;
-                        default:
+                        default: //Nhân viên
                             listButtonsVision(list_btnNhanVien, true);
                             break;
                     }

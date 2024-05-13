@@ -313,6 +313,7 @@ namespace Project.NET.Forms
         {
             TextEdit edit = sender as TextEdit;
             //support cccd
+            edit.SupportNumeric();
         }
     }
 }
