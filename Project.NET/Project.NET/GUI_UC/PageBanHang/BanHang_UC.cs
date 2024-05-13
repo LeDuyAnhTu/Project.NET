@@ -18,7 +18,7 @@ namespace Project.NET.GUI_UC.PageBanHang
 {
     public partial class BanHang_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //Properties
+        //Fields
         private NhanVien_BUS db_NV = new NhanVien_BUS();
         private HoaDon_BUS db_HD = new HoaDon_BUS();
         private KhachHang_BUS db_KH = new KhachHang_BUS();

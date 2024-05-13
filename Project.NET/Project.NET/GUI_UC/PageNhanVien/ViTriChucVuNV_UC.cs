@@ -15,7 +15,7 @@ namespace Project.NET.GUI_UC.PageNhanVien
 {
     public partial class ViTriChucVuNV_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //Properties
+        //Fields
         private ViTri_BUS db_VT = new ViTri_BUS();
 
         //Constructor

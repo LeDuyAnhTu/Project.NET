@@ -13,7 +13,7 @@ namespace DTO
 {
     public class ViTri_DTO
     {
-        //Properties
+        //Fields
         private string maVT, tenVT;
 
         //Constructor

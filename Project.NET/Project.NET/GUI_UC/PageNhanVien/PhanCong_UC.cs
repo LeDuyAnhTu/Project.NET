@@ -16,7 +16,7 @@ namespace Project.NET.GUI_UC
 {
     public partial class PhanCong_UC : DevExpress.XtraEditors.XtraUserControl
     {
-        //Properties
+        //Fields
         private CaLam_BUS db_CL = new CaLam_BUS();
         private NhanVien_BUS db_NV = new NhanVien_BUS();
         private ChiNhanh_BUS db_CN = new ChiNhanh_BUS();
