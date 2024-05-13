@@ -47,7 +47,7 @@ namespace DTO
             get => tenCa;
             set
             {
-                if (value != null && value.Length > 10)
+                if (value != null && value.Length > 30)
                 {
                     throw new Exception("Tên ca tối đa 30 ký tự !");
                 }

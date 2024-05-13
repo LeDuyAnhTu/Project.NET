@@ -256,11 +256,6 @@ namespace Project.NET.GUI_UC.PageBanHang
                 //Reset datasource để hiển thị các sản phẩm đang chọn mua
                 dgvGioHangGrid.DataSource = null;
                 dgvGioHangGrid.DataSource = dsMuaHang;
-                dgvGioHang.Columns["MaSP"].Caption = "Mã";
-                dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
-                dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
-                dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
             }
             catch (Exception ex)
             {
@@ -300,6 +295,14 @@ namespace Project.NET.GUI_UC.PageBanHang
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Lỗi");
+            }
+            finally
+            {
+                dgvGioHang.Columns["MaSP"].Caption = "Mã";
+                dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
+                dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
+                dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
+                dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
             }
         }
 
@@ -392,11 +395,6 @@ namespace Project.NET.GUI_UC.PageBanHang
                     //Reset datasource để hiển thị các sản phẩm đang chọn mua
                     dgvGioHangGrid.DataSource = null;
                     dgvGioHangGrid.DataSource = dsMuaHang;
-                    dgvGioHang.Columns["MaSP"].Caption = "Mã";
-                    dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                    dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
-                    dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
-                    dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                     //Quay lại lựa sản phẩm
                     dangLua(true);
                 }
@@ -435,11 +433,6 @@ namespace Project.NET.GUI_UC.PageBanHang
                     //Reset datasource để hiển thị các sản phẩm đang chọn mua
                     dgvGioHangGrid.DataSource = null;
                     dgvGioHangGrid.DataSource = dsMuaHang;
-                    dgvGioHang.Columns["MaSP"].Caption = "Mã";
-                    dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                    dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
-                    dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
-                    dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                 }
                 catch (Exception ex)
                 {
@@ -515,10 +508,9 @@ namespace Project.NET.GUI_UC.PageBanHang
                         db_SP.Sua(sp);
                     }
 
-
-                    /*
-                        In hóa đơn (report) 
-                    */
+                    //In hóa đơn (report) 
+                    ReportPrintTool printTool = new ReportPrintTool(new InHoaDon_RPT(hd.MaHD));
+                    printTool.ShowRibbonPreview();
 
 
                     //Xóa giỏ hàng
@@ -527,11 +519,6 @@ namespace Project.NET.GUI_UC.PageBanHang
                     //Reset datasource để hiển thị các sản phẩm đang chọn mua
                     dgvGioHangGrid.DataSource = null;
                     dgvGioHangGrid.DataSource = dsMuaHang;
-                    dgvGioHang.Columns["MaSP"].Caption = "Mã";
-                    dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                    dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
-                    dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
-                    dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                     //Tải lại form
                     taiForm();
                     //Thông báo
@@ -550,8 +537,7 @@ namespace Project.NET.GUI_UC.PageBanHang
 
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
-            ReportPrintTool printTool = new ReportPrintTool(new InHoaDon_RPT());
-            printTool.ShowRibbonPreview();
+
         }
     }
 }

@@ -133,12 +133,11 @@ namespace Project.NET.GUI_UC
             return base.ProcessCmdKey(ref msg, keyData);
         }
         
-       
-        
         private void Login_UC_Load(object sender, EventArgs e)
         { 
             btnDangNhap.Click += btnDangNhap_Click;
             bool connected = false;
+            string errorMessage = "";
             foreach (string serverName in serverNames)
             {
                 try
@@ -164,13 +163,22 @@ namespace Project.NET.GUI_UC
                 }
                 catch (Exception ex)
                 {
-                    // Hiển thị thông báo lỗi
-                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    errorMessage = ex.Message;
                 }
                 if (connected)
                 {
                     break;
                 }
+            }
+            if (!connected)
+            {
+                // Hiển thị thông báo lỗi
+                MessageBox.Show($"Có lỗi xảy ra: {errorMessage}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                // Hiển thị thông báo thành công
+                MessageBox.Show($"Kết nối thành công", "Thông báo");
             }
         }
     }
