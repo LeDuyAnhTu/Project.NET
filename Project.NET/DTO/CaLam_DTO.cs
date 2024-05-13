@@ -51,7 +51,7 @@ namespace DTO
                 {
                     throw new Exception("Tên ca tối đa 30 ký tự !");
                 }
-                else if (value == null)
+                else if (value == null || value == "")
                 {
                     throw new Exception("Vui lòng nhập tên ca !");
                 }

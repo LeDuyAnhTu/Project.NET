@@ -1,5 +1,8 @@
 ﻿using Project.NET.GUI_UC;
 using System;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -10,10 +13,69 @@ namespace Project.NET
     {
         //Fields
         public static string maNV = "";
+        private string databaseName = "QLBHX";
+        private string[] serverNames = new string[] { ".", ".\\sqlexpress" };
+        private string filePath = Directory.GetCurrentDirectory() + "\\ct.bin";
+        string connectionString = null;
 
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
 
+        //Methods
+        private bool connectingToServer()
+        {
+            bool connected = false;
+            try
+            {
+                using (BinaryReader binReader = new BinaryReader(File.Open(filePath, FileMode.Open)))
+                {
+                    var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                    config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = binReader.ReadString();
+                    connected = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                using (BinaryWriter binWriter = new BinaryWriter(File.Open(filePath, FileMode.OpenOrCreate)))
+                {
+                    string errorMessage = "";
+                    foreach (string serverName in serverNames)
+                    {
+                        try
+                        {
+                            connectionString = $"data source={serverName};initial catalog={databaseName};integrated security=True;encrypt=True;trustservercertificate=True;";
+
+
+                            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                            if (config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"] != null)
+                            {
+                                config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = connectionString;
+                                config.Save(ConfigurationSaveMode.Modified);
+                                ConfigurationManager.RefreshSection("connectionStrings");
+
+                                // Kiểm tra kết nối
+                                using (var connection = new SqlConnection(connectionString))
+                                {
+                                    connection.Open(); // Thử mở kết nối
+                                    connection.Close();
+                                }
+                                connected = true;
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            errorMessage = e.Message;
+                        }
+                        if (connected)
+                        {
+                            break;
+                        }
+                    }
+                    binWriter.Write(connectionString);
+                }
+            }
+            return connected;
+        }
         /// <summary>
         /// Khởi tạo form
         /// </summary>
@@ -29,6 +91,23 @@ namespace Project.NET
         private void frmMain_Load(object sender, EventArgs e)
         {
             LoadUserControl(null, typeof(Login_UC), this);
+            int attempt = 1;
+            int maxAttempt = 2;
+            /*
+             * Kết nối với database có trong máy
+             * Tạo mới database lên server của máy hiện tại nếu không thể kết nối và thử kết nối lại
+             * số lần thử tối đa là 2
+             */
+
+            while (!connectingToServer() && attempt <= maxAttempt)
+            {
+                //Tạo database
+
+                //Tạo dữ liệu ban đầu (nếu cần thiết)
+
+                //Tăng số lần thử
+                attempt++;
+            }
         }
 
         /// <summary>

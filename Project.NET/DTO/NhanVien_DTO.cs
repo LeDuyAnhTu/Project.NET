@@ -8,12 +8,14 @@ namespace DTO
 {
     public class NhanVien_DTO
     {
+        //Fields
         private string maNV, tenNV, gioiTinh;
         private DateTime ngaySinh;
         private string soDT, cCCD;
         private int luong;
         private string maVT, maCN;
 
+        //Constructor
         public NhanVien_DTO(string maNV, string tenNV, string gioiTinh, DateTime ngaySinh, string sDT, string cCCD, int luong, string maVT, string maCN)
         {
             MaNV = maNV;
@@ -27,6 +29,7 @@ namespace DTO
             MaVT = maVT;
         }
 
+        //Properties
         public string MaNV
         {
             get => maNV;
@@ -46,7 +49,6 @@ namespace DTO
                 }
             }
         }
-
 
         public string TenNV
         {
@@ -68,7 +70,6 @@ namespace DTO
             }
         }
 
-
         public string GioiTinh
         {
             get => gioiTinh;
@@ -77,7 +78,6 @@ namespace DTO
                 gioiTinh = value;
             }
         }
-
 
         public DateTime NgaySinh
         {
@@ -102,7 +102,6 @@ namespace DTO
             }
         }
 
-
         public string SDT
         {
             get => soDT;
@@ -119,17 +118,16 @@ namespace DTO
             }
         }
 
-
         public string CCCD
         {
             get => cCCD;
             set
             {
-                if (value != null && value.Length != 11)
+                if (value != null && value.Length != 11 && !checkNumeric(value))
                 {
-                    throw new Exception("CCCD phải có 11 ký tự !");
+                    throw new Exception("CCCD phải có 11 ký tự số !");
                 }
-                else if (value == null)
+                else if (value == null || value == "")
                 {
                     throw new Exception("Vui lòng nhập CCCD !");
                 }
@@ -139,7 +137,6 @@ namespace DTO
                 }
             }
         }
-
 
         public int Luong
         {
@@ -154,7 +151,6 @@ namespace DTO
             }
         }
 
-
         public string MaCN
         {
             get => maCN;
@@ -165,5 +161,18 @@ namespace DTO
         }
 
         public string MaVT { get => maVT; set => maVT = value; }
+
+        //Methods 
+        private bool checkNumeric(string str)
+        {
+            foreach(char c in str)
+            {
+                if(!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

@@ -19,26 +19,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace Project.NET.GUI_UC
 {
     public partial class Menu_UC : DevExpress.XtraEditors.XtraUserControl
     {
+        //Fields
+        private List<SimpleButton> list_btnQuanLy;
+        private List<SimpleButton> list_btnNhanVien;
+        private NhanVien_BUS db_NV = new NhanVien_BUS();
+
         //Chuyển đến form khác sau khi đăng nhập thành công
         frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
 
         // Nút bấm menu navbar cuối cùng được nhấn
         private SimpleButton lastClickButton = null;
 
-
-        
+        //Constructor
         public Menu_UC()
         {
             InitializeComponent();
             loadingFirstOrDeFaultNavbarMenuButton();
+            list_btnNhanVien = new List<SimpleButton>() { btnKho, btnHoaDon, btnKhachHang, btnBanHang, btnThongKe, btnBaoCao, btnSanPham };
+            list_btnQuanLy = new List<SimpleButton>() { btnTaiKhoan, btnNhanVien, btnChiNhanh, btnNhaCungCap, btnKhuyenMai };
+            list_btnQuanLy.AddRange(list_btnNhanVien);
         }
 
+        //Methods
+        private void listButtonsVision(List<SimpleButton> list, bool check)
+        {
+            foreach(SimpleButton button in list)
+            {
+                button.Visible = check;
+            }
+        }
 
+        //Events
         /// <summary>
         /// Tải mặc định menu đầu tiên là menu tài khoản và tô đậm nút tài khoản menu navbar
         /// </summary>
@@ -158,6 +176,10 @@ namespace Project.NET.GUI_UC
                                 LoadUserControl(null, typeof(BanHang_UC), editFormBanHang);
                                  
                                 break;
+                            case "btnDangXuat":
+                                //Quay lại màn hình login
+
+                                break;
                             default:
                                 throw new Exception("Unknown button.");
                         }
@@ -202,6 +224,34 @@ namespace Project.NET.GUI_UC
                     // Giải phóng tài nguyên
                     userControl.Dispose();
                 }
+            }
+        }
+
+        private void editFormTaiKhoan_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                listButtonsVision(list_btnQuanLy, true);
+                NhanVien_DTO nv = db_NV.timTheoMa(frmMain.maNV);
+                if (nv != null)
+                {
+                    switch (nv.MaVT)
+                    {
+                        case "VT01":
+                            listButtonsVision(list_btnQuanLy, true);
+                            break;
+                        default:
+                            listButtonsVision(list_btnNhanVien, true);
+                            break;
+                    }
+                }
+                else
+                {
+                    throw new Exception("Không tìm thấy nhân viên " + frmMain.maNV);
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
