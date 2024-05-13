@@ -25,10 +25,6 @@ namespace Project.NET.GUI_UC
 
         //Fields
         private TaiKhoan_BUS db_TK = new TaiKhoan_BUS();
-        private string databaseName = "QLBHX";
-        private string[] serverNames = new string[] { ".", ".\\sqlexpress" };
-        private string filePath = Directory.GetCurrentDirectory() +"\\ct.bin";
-        string connectionString = null;
 
         //Constructor
         public Login_UC()
@@ -69,60 +65,6 @@ namespace Project.NET.GUI_UC
             };
         }
 
-        //Methods
-        private bool connectingToServer()
-        {
-            bool connected = false;
-            try
-            {
-                using (BinaryReader binReader = new BinaryReader(File.Open(filePath, FileMode.Open)))
-                {
-                    var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                    config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = binReader.ReadString();
-                    connected = true;
-                }
-            }catch(Exception ex)
-            {
-                using(BinaryWriter binWriter = new BinaryWriter(File.Open(filePath, FileMode.OpenOrCreate)))
-                {
-                    string errorMessage = "";
-                    foreach (string serverName in serverNames)
-                    {
-                        try
-                        {
-                            connectionString = $"data source={serverName};initial catalog={databaseName};integrated security=True;encrypt=True;trustservercertificate=True;";
-
-
-                            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                            if (config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"] != null)
-                            {
-                                config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = connectionString;
-                                config.Save(ConfigurationSaveMode.Modified);
-                                ConfigurationManager.RefreshSection("connectionStrings");
-
-                                // Kiểm tra kết nối
-                                using (var connection = new SqlConnection(connectionString))
-                                {
-                                    connection.Open(); // Thử mở kết nối
-                                    connection.Close();
-                                }
-                                connected = true;
-                            }
-                        }
-                        catch (Exception e)
-                        {
-                            errorMessage = e.Message;
-                        }
-                        if (connected)
-                        {
-                            break;
-                        }
-                    }
-                    binWriter.Write(connectionString);
-                }
-            }
-            return connected;
-        }
 
         //Events
         /// <summary>
@@ -167,7 +109,9 @@ namespace Project.NET.GUI_UC
             catch (Exception ex)
             {
                 MessageBox.Show("Đăng nhập thất bại", "Thông báo");
-                Console.WriteLine(ex.Message);
+                txtTenDangNhap.EditValue = "";
+                txtMatKhau.EditValue = "";
+                txtTenDangNhap.Focus();
             }
             btnDangNhap.Enabled = true;
         }
@@ -194,22 +138,6 @@ namespace Project.NET.GUI_UC
         private void Login_UC_Load(object sender, EventArgs e)
         { 
             btnDangNhap.Click += btnDangNhap_Click;
-            int attempt = 1;
-            int maxAttempt = 2;
-            /*
-             * Kết nối với database có trong máy
-             * Tạo mới database lên server của máy hiện tại nếu không thể kết nối và thử kết nối lại
-             * số lần thử tối đa là 2
-             */
-
-            while (!connectingToServer() && attempt <= maxAttempt) {
-                //Tạo database
-
-                //Tạo dữ liệu ban đầu (nếu cần thiết)
-
-                //Tăng số lần thử
-                attempt++;
-            }
         }
     }
 }

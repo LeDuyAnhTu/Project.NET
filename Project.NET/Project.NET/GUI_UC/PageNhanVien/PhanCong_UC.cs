@@ -147,7 +147,7 @@ namespace Project.NET.GUI_UC
         /// <param name="e"></param>
         private void btnLamMoi1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(cboNhanVien.EditValue.ToString());
+            cboNhanVien.ItemIndex = 0;
         }
         /// <summary>
         /// Hiện thị thông tin nhân viên được chọn

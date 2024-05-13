@@ -122,8 +122,13 @@ namespace DAL
             bool result = false;
             try
             {
-                PhanCong temp = db.DBO.PhanCongs.Single(d => d.maNV == maNV && d.maCa == maCa);
-                db.DBO.PhanCongs.DeleteOnSubmit(temp);
+                List<PhanCong> tempList = (from pc in db.DBO.PhanCongs
+                                           where pc.maNV.Equals(maNV) && pc.maCa.Equals(maCa)
+                                           select pc).ToList();
+                foreach(PhanCong phanCong in tempList)
+                {
+                    db.DBO.PhanCongs.DeleteOnSubmit(phanCong);
+                }
                 db.DBO.SubmitChanges();
                 result = true;
             }

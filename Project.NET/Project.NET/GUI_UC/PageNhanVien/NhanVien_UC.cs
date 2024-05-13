@@ -248,6 +248,11 @@ namespace Project.NET.Forms
             }
             catch (Exception ex)
             {
+                if (ex.Message.Contains("CCCD"))
+                {
+                    txtCCCD.EditValue = "";
+                    txtCCCD.Focus();
+                }
                 MessageBox.Show(ex.Message);
             }
         }
@@ -302,6 +307,12 @@ namespace Project.NET.Forms
         private void txtGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void txtCCCD_EditValueChanged(object sender, EventArgs e)
+        {
+            TextEdit edit = sender as TextEdit;
+            //support cccd
         }
     }
 }
