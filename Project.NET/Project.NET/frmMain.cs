@@ -44,7 +44,7 @@ namespace Project.NET
                     connected = true;
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 // ghi đường dẫn vào file
                 using (BinaryWriter binWriter = new BinaryWriter(File.Open(filePath, FileMode.OpenOrCreate)))
@@ -155,7 +155,7 @@ namespace Project.NET
                                 command.CommandType = System.Data.CommandType.Text;
                                 command.ExecuteNonQuery();
                                 Console.WriteLine($"Database '{databaseName}' Created DATABASE successfully.");
-                            } 
+                            }
 
                         }
 
