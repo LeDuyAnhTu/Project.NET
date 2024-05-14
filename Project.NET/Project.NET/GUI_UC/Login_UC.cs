@@ -84,7 +84,7 @@ namespace Project.NET.GUI_UC
                     WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
                     await waitFormManager.ShowWaitForm(() =>
                     {
-
+                        frmMain.maNV = tk.MaNV;
                         // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
                         this.Invoke((MethodInvoker)delegate
                         {
@@ -97,7 +97,6 @@ namespace Project.NET.GUI_UC
 
                             LoadUserControl(null, typeof(Menu_UC), frmMainn);
                         });
-                        frmMain.maNV = tk.MaNV;
                         return Task.CompletedTask;
                     });
                 }

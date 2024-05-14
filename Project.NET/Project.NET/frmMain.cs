@@ -1,4 +1,5 @@
-﻿using Project.NET.GUI_UC;
+﻿using DevExpress.Xpo.DB.Helpers;
+using Project.NET.GUI_UC;
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -16,10 +17,12 @@ namespace Project.NET
         private string databaseName = "QLBHX";
         private string[] serverNames = new string[] { ".", ".\\sqlexpress" };
         private string filePath = Directory.GetCurrentDirectory() + "\\ct.bin";
-        string connectionString = null;
+        private string sqlCreateDBFilePath = Directory.GetCurrentDirectory() + "\\db\\create_db.txt";
+        private string sqlCreateTableFilePath = Directory.GetCurrentDirectory() + "\\db\\create_table.txt";
+        private string sqlInsertKeyFilePath = Directory.GetCurrentDirectory() + "\\db\\create_key.txt";
+        private string sqlInsertDataFilePath = Directory.GetCurrentDirectory() + "\\db\\insert_datas.txt";
 
-        //Chuyển đến form khác sau khi đăng nhập thành công
-        frmMain frmMainn = Application.OpenForms.OfType<frmMain>().FirstOrDefault();
+        string connectionString = null;
 
         //Methods
         private bool connectingToServer()
@@ -29,13 +32,21 @@ namespace Project.NET
             {
                 using (BinaryReader binReader = new BinaryReader(File.Open(filePath, FileMode.Open)))
                 {
+                    connectionString = binReader.ReadString();
+                    // Kiểm tra kết nối
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open(); // Thử mở kết nối
+                        connection.Close();
+                    }
                     var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                    config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = binReader.ReadString();
+                    config.ConnectionStrings.ConnectionStrings["QLBHXConnectionString"].ConnectionString = connectionString;
                     connected = true;
                 }
             }
             catch (Exception ex)
             {
+                // ghi đường dẫn vào file
                 using (BinaryWriter binWriter = new BinaryWriter(File.Open(filePath, FileMode.OpenOrCreate)))
                 {
                     string errorMessage = "";
@@ -81,7 +92,7 @@ namespace Project.NET
         /// </summary>
         public frmMain()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
         /// <summary>
         /// Tải form
@@ -101,10 +112,98 @@ namespace Project.NET
 
             while (!connectingToServer() && attempt <= maxAttempt)
             {
-                //Tạo database
 
-                //Tạo dữ liệu ban đầu (nếu cần thiết)
+                try
+                {
+                    bool connected = false;
+                    string serverName = "";
+                    foreach (string ct in serverNames)
+                    {
+                        try
+                        {
+                            connectionString = $"data source={ct};initial catalog=master;integrated security=True;encrypt=True;trustservercertificate=True;";
+                            // Kiểm tra kết nối
+                            using (var connection = new SqlConnection(connectionString))
+                            {
+                                connection.Open(); // Thử mở kết nối
+                                connection.Close();
+                            }
+                            connected = true;
+                            serverName = ct;
+                        }
+                        catch
+                        {
+                        }
+                        if (connected)
+                        {
+                            break;
+                        }
+                    }
 
+                    connectionString = $"data source={serverName};initial catalog=master;integrated security=True;encrypt=True;trustservercertificate=True;";
+                    string query = "";
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        using (StreamReader binSqlCreateReader = new StreamReader(File.Open(sqlCreateDBFilePath, FileMode.Open)))
+                        {
+                            query = binSqlCreateReader.ReadToEnd();
+
+                            // Tạo database
+                            using (SqlCommand command = new SqlCommand(query, connection))
+                            {
+                                command.CommandType = System.Data.CommandType.Text;
+                                command.ExecuteNonQuery();
+                                Console.WriteLine($"Database '{databaseName}' Created DATABASE successfully.");
+                            } 
+
+                        }
+
+                    }
+                    connectionString = $"data source=.;initial catalog=QLBHX;integrated security=True;encrypt=True;trustservercertificate=True;";
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        // Tạo table
+                        using (StreamReader binSqlInsertReader = new StreamReader(File.Open(sqlCreateTableFilePath, FileMode.Open)))
+                        {
+                            query = binSqlInsertReader.ReadToEnd();
+                            using (SqlCommand command = new SqlCommand(query, connection))
+                            {
+                                command.CommandType = System.Data.CommandType.Text;
+                                command.ExecuteNonQuery();
+                                Console.WriteLine($"Database '{databaseName}' Created TABLE successfully.");
+                            }
+                        }
+                        // Tạo key cho table
+                        using (StreamReader binSqlInsertReader = new StreamReader(File.Open(sqlInsertKeyFilePath, FileMode.Open)))
+                        {
+                            query = binSqlInsertReader.ReadToEnd();
+                            using (SqlCommand command = new SqlCommand(query, connection))
+                            {
+                                command.CommandType = System.Data.CommandType.Text;
+                                command.ExecuteNonQuery();
+                                Console.WriteLine($"Database '{databaseName}' Created KEY successfully.");
+                            }
+                        }
+                        //Tạo dữ liệu ban đầu (nếu cần thiết)
+                        using (StreamReader binSqlInsertReader = new StreamReader(File.Open(sqlInsertDataFilePath, FileMode.Open)))
+                        {
+                            query = binSqlInsertReader.ReadToEnd();
+                            using (SqlCommand command = new SqlCommand(query, connection))
+                            {
+                                command.CommandType = System.Data.CommandType.Text;
+                                command.ExecuteNonQuery();
+                                Console.WriteLine($"Database '{databaseName}' Created DATA successfully.");
+                            }
+                        }
+                    }
+                }
+                catch
+                {
+                    throw;
+                }
                 //Tăng số lần thử
                 attempt++;
             }
