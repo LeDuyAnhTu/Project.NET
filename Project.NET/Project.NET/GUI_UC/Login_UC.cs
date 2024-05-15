@@ -93,7 +93,7 @@ namespace Project.NET.GUI_UC
                             frmMainn.Controls.Remove(this);
 
                             // Giải phóng tài nguyên
-                            //this.Dispose();
+                            this.Dispose();
 
                             LoadUserControl(null, typeof(Menu_UC), frmMainn);
                         });
@@ -105,7 +105,7 @@ namespace Project.NET.GUI_UC
                     throw new Exception();
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Đăng nhập thất bại", "Thông báo");
                 txtTenDangNhap.EditValue = "";
@@ -133,9 +133,9 @@ namespace Project.NET.GUI_UC
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
-        
+
         private void Login_UC_Load(object sender, EventArgs e)
-        { 
+        {
             btnDangNhap.Click += btnDangNhap_Click;
             txtTenDangNhap.Focus();
         }
