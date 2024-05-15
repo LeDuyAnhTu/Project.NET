@@ -142,9 +142,9 @@
   </Table>
   <Table Name="dbo.PhanCong" Member="PhanCongs">
     <Type Name="PhanCong">
-      <Column Name="maNV" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
-      <Column Name="ngayDiLam" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="maCa" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maNV" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ngayDiLam" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maCa" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Association Name="CaLam_PhanCong" Member="CaLam" ThisKey="maCa" OtherKey="maCa" Type="CaLam" IsForeignKey="true" />
       <Association Name="NhanVien_PhanCong" Member="NhanVien" ThisKey="maNV" OtherKey="maNV" Type="NhanVien" IsForeignKey="true" />
     </Type>

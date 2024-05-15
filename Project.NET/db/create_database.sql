@@ -176,6 +176,9 @@ go
 alter table ChiTietHD
 add constraint pk_chitiethd primary key (maHD,maSP)
 go
+alter table PhanCong
+add constraint pk_phancong primary key (maNV,maCa,ngayDiLam)
+go
 alter table KhoCN
 add constraint pk_KhoCN primary key (maCN,maSP)
 

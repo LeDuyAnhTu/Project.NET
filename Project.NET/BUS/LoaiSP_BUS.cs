@@ -11,7 +11,10 @@ namespace BUS
     public class LoaiSP_BUS
     {
         private static LoaiSP_DAL db = new LoaiSP_DAL();
-
+        /// <summary>
+        /// Lấy danh sách loại sản phẩm
+        /// </summary>
+        /// <returns></returns>
         public IQueryable LayDanhSach()
         {
             try
@@ -23,7 +26,11 @@ namespace BUS
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// THêm loại mới
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Them(LoaiSP_DTO o)
         {
             bool result = false;
@@ -39,7 +46,11 @@ namespace BUS
 
             return result;
         }
-
+        /// <summary>
+        /// Sửa thông tin loại sản phẩm 
+        /// </summary>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public bool Sua(LoaiSP_DTO o)
         {
             bool result = false;
@@ -54,7 +65,11 @@ namespace BUS
             }
             return result;
         }
-
+        /// <summary>
+        /// Xóa thông tin loại sản phẩm 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool Xoa(string id)
         {
             bool result = false;
@@ -68,6 +83,16 @@ namespace BUS
                 throw ex;
             }
             return result;
+        }
+        public string taoMaMoi()
+        {
+            try
+            {
+                return db.taoMaMoi();
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
