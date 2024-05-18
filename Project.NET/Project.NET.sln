@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QLBXH", "QLBXH\QLBXH.vdproj", "{B8C9FF91-C55E-4DB4-836F-0F29B79F29E1}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QLBHX", "QLBHX\QLBHX.vdproj", "{C8086ED2-01C5-4967-8FD6-10E81069C954}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,8 +46,8 @@ Global
 		{57005505-AB68-45D7-8DB8-6A0B3841A0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57005505-AB68-45D7-8DB8-6A0B3841A0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57005505-AB68-45D7-8DB8-6A0B3841A0FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8C9FF91-C55E-4DB4-836F-0F29B79F29E1}.Debug|Any CPU.ActiveCfg = Debug
-		{B8C9FF91-C55E-4DB4-836F-0F29B79F29E1}.Release|Any CPU.ActiveCfg = Release
+		{C8086ED2-01C5-4967-8FD6-10E81069C954}.Debug|Any CPU.ActiveCfg = Debug
+		{C8086ED2-01C5-4967-8FD6-10E81069C954}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
