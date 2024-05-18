@@ -37,7 +37,9 @@ namespace Project.NET.GUI_UC
         /// </summary>
         public void taiForm()
         {
-
+            cboChiNhanh.ItemIndex = 0;
+            cboNhanVien.ItemIndex = 0;
+            cboCaLamViec.ItemIndex = 0;
         }
         /// <summary>
         /// Lấy danh sách ngày làm việc của nhân viên theo ca làm và mã nhân viên 
@@ -185,7 +187,7 @@ namespace Project.NET.GUI_UC
         {
             string maNV = cboNhanVien.EditValue.ToString();
             string maCa = cboCaLamViec.EditValue.ToString();
-            if(maNV != null && maCa != null)
+            if (maNV != null && maCa != null)
             {
                 ngayLamViecTheoMaNV(maNV, maCa);
                 gioLamViecTheoMaCa(maCa);
@@ -196,29 +198,60 @@ namespace Project.NET.GUI_UC
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnThem1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int count = 0;
-                foreach(CheckEdit item in dsNgayDiLam)
-                {
-                    if (item.Checked)
-                        count++;
-                }
-                if(count > 6)
-                {
-                    throw new Exception("Vượt quá số giờ quy định ! Tổng số giờ làm không được quá 48 tiếng 1 tuần");
-                }
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void cboChiNhanh_EditValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Xóa bảng phân công cũ
+                db_PC.Xoa(cboNhanVien.EditValue.ToString().Trim(), cboCaLamViec.EditValue.ToString().Trim());
+                //Thêm phân công mới theo ca hiện tại cho nhân viên txtHoTen
+                foreach (CheckEdit ngay in dsNgayDiLam)
+                {
+                    if (ngay.Checked)
+                    {
+                        PhanCong_DTO pc_temp = new PhanCong_DTO(cboNhanVien.EditValue.ToString().Trim(), ngay.Text, cboCaLamViec.EditValue.ToString().Trim());
+                        db_PC.Them(pc_temp);
+                    }
+                }
+                //Thông báo
+                MessageBox.Show("Phân công hoàn tất !");
+
+                //Tải lại dữ liệu (làm mới form)
+                taiForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi");
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult luaChon = MessageBox.Show("Bạn có muốn hủy phân công " + cboCaLamViec.Text.Trim() + " của nhân viên " + txtHoTen.Text.Trim() + " ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (luaChon == DialogResult.Yes)
+            {
+                try
+                {
+                    //Xóa bảng phân công cũ
+                    db_PC.Xoa(cboNhanVien.EditValue.ToString().Trim(), cboCaLamViec.EditValue.ToString().Trim());
+
+                    //Thông báo
+                    MessageBox.Show("Phân công hoàn tất !");
+
+                    //Tải lại dữ liệu (làm mới form)
+                    taiForm();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Lỗi");
+                }
+            }
         }
     }
 }

@@ -21,8 +21,8 @@ namespace DAL
                 ds = from loai in db.DBO.LoaiSPs
                      select new
                      {
-                         MãLoại = loai.maLoai,
-                         TênLoại = loai.tenLoai,
+                         loai.maLoai,
+                         loai.tenLoai,
                      };
             }catch (Exception ex)
             {
@@ -96,6 +96,40 @@ namespace DAL
                 throw ex;
             }
             return result;
+        }
+        /// <summary>
+        /// Tạo mã loại sản phẩm mới nối tiếp mã loại cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                //Lấy mã nhân viên cuối
+                IQueryable ds = (from loai in db.DBO.LoaiSPs
+                                 orderby loai.maLoai descending
+                                 select loai.maLoai).Take(1);
+                string maLoai = "";
+                foreach (var item in ds)
+                {
+                    maLoai = item.ToString();
+                }
+
+                //Lấy số tiếp theo msNV cuối
+                string maSo = maLoai.Substring(2);
+                int soMoi = Convert.ToInt32(maSo) + 1;
+
+                //Tạo mã NV mới
+                maLoai = "LS" + String.Format("{0:D8}", soMoi);
+
+                return maLoai;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                //Mã mặc định
+                return "LS00000001";
+            }
         }
     }
 }
