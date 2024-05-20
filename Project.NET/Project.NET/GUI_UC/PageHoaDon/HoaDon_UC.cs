@@ -24,5 +24,10 @@ namespace Project.NET.GUI_UC.PageHoaDon
         {
             dgvGrid.DataSource = db_HD.LayDanhSach();
         }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("In hoa don");
+        }
     }
 }
