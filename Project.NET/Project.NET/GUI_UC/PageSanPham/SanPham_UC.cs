@@ -236,7 +236,7 @@ namespace Project.NET.GUI_UC.PageSanPham
                 if (re == DialogResult.Yes)
                 {
                     db_SP.Xoa(sp.MaSP);
-                    MessageBox.Show("Thêm sản phẩm mới thành công !", "Thông báo");
+                    MessageBox.Show("Xóa sản phẩm mới thành công !", "Thông báo");
                     taiForm();
                 }
             }

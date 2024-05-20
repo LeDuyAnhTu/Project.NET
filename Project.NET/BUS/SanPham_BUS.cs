@@ -31,7 +31,8 @@ namespace BUS
             try
             {
                 return db.LayDanhSach_TheoLoai(maLoai);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -103,18 +104,19 @@ namespace BUS
             try
             {
                 return db.taoMaMoi();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
-
         }
         public SanPham_DTO timSanPham_MaSP(string maSP)
         {
             try
             {
                 return db.timSanPham_MaSP(maSP);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }

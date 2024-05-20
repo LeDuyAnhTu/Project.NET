@@ -69,5 +69,32 @@ namespace BUS
             }
             return result;
         }
+        /// <summary>
+        /// Tạo mã khuyến mãi mới nối tiếp mã khuyến mãi cuối cùng trong database
+        /// </summary>
+        /// <returns></returns>
+        public string taoMaMoi()
+        {
+            try
+            {
+                return db.taoMaMoi();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public KhuyenMai_DTO timKhuyenMai_MaKM(string maKM)
+        {
+            try
+            {
+                return db.timKhuyenMai_MaKM(maKM);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
