@@ -4,6 +4,7 @@ using DevExpress.XtraReports.UI;
 using DTO;
 using Project.NET.ExtensionMethods;
 using Project.NET.RP;
+using Project.NET.RPT;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -509,7 +510,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                     }
 
                     //In hóa đơn (report) 
-                    ReportPrintTool printTool = new ReportPrintTool(new InHoaDon_RPT(hd.MaHD));
+                    ReportPrintTool printTool = new ReportPrintTool(new rptInHoaDon(hd.MaHD));
                     printTool.ShowRibbonPreview();
 
 

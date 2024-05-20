@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\project.net\\rpt\\rptinhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\rpt\\rptinhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\project.net\\rpt\\rptinhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\rpt\\rptinhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "HoaDon_UC.cs",
               "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
               "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
               "RelativeToolTip": "Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAmwCUAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T16:36:31.941Z",
               "IsPinned": true,
@@ -36,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HoaDon_UC.cs [Design]",
               "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
@@ -78,6 +94,56 @@
             {
               "$type": "Bookmark",
               "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "rptInHoaDon.cs [Design]",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Main\\Project.NET\\Project.NET\\Project.NET\\RPT\\rptInHoaDon.cs",
+              "RelativeDocumentMoniker": "Project.NET\\RPT\\rptInHoaDon.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Main\\Project.NET\\Project.NET\\Project.NET\\RPT\\rptInHoaDon.cs [Design]",
+              "RelativeToolTip": "Project.NET\\RPT\\rptInHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:24:11.092Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "rptInHoaDon.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Main\\Project.NET\\Project.NET\\Project.NET\\RPT\\rptInHoaDon.cs",
+              "RelativeDocumentMoniker": "Project.NET\\RPT\\rptInHoaDon.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\Main\\Project.NET\\Project.NET\\Project.NET\\RPT\\rptInHoaDon.cs",
+              "RelativeToolTip": "Project.NET\\RPT\\rptInHoaDon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:21:20.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BanHang_UC.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
+              "ViewState": "AQIAAOUBAAAAAAAAAAAAwAACAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:20:55.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BanHang_UC.cs [Design]",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs [Design]",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:20:50.774Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -384,7 +384,6 @@ D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\bin\Deb
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.KhoCN_UC.resources
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.ThongKeKhoCN_UC.resources
 D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RPT.resources
-D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.InHoaDon_RPT.resources
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.KhoCN_UC.resources
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.ThongKeKhoCN_UC.resources
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RPT.resources
@@ -525,3 +524,4 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csp
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.Up2Date
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RPT.rptInHoaDon.resources

@@ -326,6 +326,12 @@
     <Compile Include="RPT\BanHangTheoNgay_RPT.Designer.cs">
       <DependentUpon>BanHangTheoNgay_RPT.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\rptInHoaDon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rptInHoaDon.Designer.cs">
+      <DependentUpon>rptInHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="WaitFormManager.cs" />
     <EmbeddedResource Include="frmWaiting.resx">
       <DependentUpon>frmWaiting.cs</DependentUpon>
@@ -433,6 +439,9 @@
     </Compile>
     <EmbeddedResource Include="RPT\BanHangTheoNgay_RPT.resx">
       <DependentUpon>BanHangTheoNgay_RPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rptInHoaDon.resx">
+      <DependentUpon>rptInHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Document\Đồ án%28update%29.docx" />
