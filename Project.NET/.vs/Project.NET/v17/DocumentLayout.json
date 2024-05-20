@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagesanpham\\sanpham_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\dal\\qlbhx.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\qlbhx.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\dal\\loaisp_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\loaisp_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\project.net\\gui_uc\\pagesanpham\\sanpham_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagesanpham\\sanpham_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{287994D4-E772-4644-A37E-F0749107F83F}|DTO\\DTO.csproj|d:\\school\\hk4\\ado.net\\code\\proj\\main\\project.net\\project.net\\dto\\sanpham_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{287994D4-E772-4644-A37E-F0749107F83F}|DTO\\DTO.csproj|solutionrelative:dto\\sanpham_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SanPham_DTO.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DTO\\SanPham_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\SanPham_DTO.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DTO\\SanPham_DTO.cs",
+              "RelativeToolTip": "DTO\\SanPham_DTO.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAAFwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:55:19.118Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SanPham_UC.cs",
+              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
+              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAwwNMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:52:18.941Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -59,56 +79,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoaiSP_DAL.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DAL\\LoaiSP_DAL.cs",
-              "RelativeDocumentMoniker": "DAL\\LoaiSP_DAL.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DAL\\LoaiSP_DAL.cs",
-              "RelativeToolTip": "DAL\\LoaiSP_DAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T12:53:50.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SanPham_UC.cs",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAWwGQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T12:52:18.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QLBHX.dbml",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DAL\\QLBHX.dbml",
-              "RelativeDocumentMoniker": "DAL\\QLBHX.dbml",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\DAL\\QLBHX.dbml",
-              "RelativeToolTip": "DAL\\QLBHX.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-05-20T12:50:26.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SanPham_UC.cs [Design]",
-              "DocumentMoniker": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
-              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs",
-              "ToolTip": "D:\\School\\HK4\\ADO.Net\\Code\\PROJ\\MAIN\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs [Design]",
-              "RelativeToolTip": "Project.NET\\GUI_UC\\PageSanPham\\SanPham_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T12:47:24.496Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

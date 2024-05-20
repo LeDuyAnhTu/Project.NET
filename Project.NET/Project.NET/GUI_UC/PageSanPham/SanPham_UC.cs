@@ -245,5 +245,11 @@ namespace Project.NET.GUI_UC.PageSanPham
                 MessageBox.Show(ex.Message, "Lỗi");
             }
         }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            taiForm();
+            dangThaoTac(false);
+        }
     }
 }
