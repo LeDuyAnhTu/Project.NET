@@ -40,8 +40,8 @@ namespace Project.NET.GUI_UC.PageSanPham
             //Tải dữ liệu danh sách các loại
             //
             dgvGrid.DataSource = db_Loai.LayDanhSach();
-            dgvLoaiSanPham.Columns["MaLoai"].Caption = "Mã loại";
-            dgvLoaiSanPham.Columns["TenLoai"].Caption = "Tên loại";
+            dgvLoaiSanPham.Columns["maLoai"].Caption = "Mã loại";
+            dgvLoaiSanPham.Columns["tenLoai"].Caption = "Tên loại";
 
             //
             //Khởi tạo thao tác
