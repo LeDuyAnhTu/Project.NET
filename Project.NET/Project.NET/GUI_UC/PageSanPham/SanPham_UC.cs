@@ -40,8 +40,8 @@ namespace Project.NET.GUI_UC.PageSanPham
             //Danh sách loại sản phẩm
             //
             cboMaLoaiSP.Properties.DataSource = db_LSP.LayDanhSach();
-            cboMaLoaiSP.Properties.DisplayMember = "TênLoại";
-            cboMaLoaiSP.Properties.ValueMember = "MãLoại";
+            cboMaLoaiSP.Properties.DisplayMember = "tenLoai";
+            cboMaLoaiSP.Properties.ValueMember = "maLoai";
             cboMaLoaiSP.ItemIndex = 0;
 
             //
@@ -198,6 +198,16 @@ namespace Project.NET.GUI_UC.PageSanPham
                 taiForm();
             }catch(Exception ex)
             {
+                if (ex.Message.ToLower().Contains("tên"))
+                {
+                    txtTenSP.Focus();
+                }else if(ex.Message.ToLower().Contains("đơn giá"))
+                {
+                    txtDonGia.Focus();
+                }else if(ex.Message.ToLower().Contains("số lượng"))
+                {
+                    txtSoLuongConLai.Focus();
+                }
                 MessageBox.Show(ex.Message, "Lỗi");
             }
         }

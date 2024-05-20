@@ -13,6 +13,7 @@ namespace DTO
 {
     public class SanPham_DTO
     {
+        //Fields
         private string maSP, tenSP;
         private DateTime hSD;
         private int donGia, soLuongConLai;
@@ -29,6 +30,7 @@ namespace DTO
             MaNSX = maNSX;
         }
 
+        //Properties
         public string MaSP
         {
             get => maSP; set
@@ -54,11 +56,11 @@ namespace DTO
             {
                 if (value != null && value.Length > 30)
                 {
-                    throw new Exception("tenSP tối đa 30 ký tự !");
+                    throw new Exception("Tên sản phẩm tối đa 30 ký tự !");
                 }
                 else if (value == null || value == "")
                 {
-                    throw new Exception("Vui lòng nhập tenSP !");
+                    throw new Exception("Vui lòng nhập tên sản phẩm !");
                 }
                 else
                 {
@@ -88,7 +90,6 @@ namespace DTO
                 hSD = value;
             }
         }
-
         public int DonGia
         {
             get => donGia;
@@ -96,13 +97,11 @@ namespace DTO
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Đơn giá không thể nhỏ hơn 0!");
+                    throw new Exception("Vui lòng nhập đơn giá > 0đ");
                 }
                 donGia = value;
             }
         }
-
-
         public int SoLuongConLai
         {
             get => soLuongConLai;
@@ -116,8 +115,6 @@ namespace DTO
                 soLuongConLai = value;
             }
         }
-
-
         public string MaLoai
         {
             get => maLoai;
@@ -138,8 +135,6 @@ namespace DTO
 
             }
         }
-
-
         public string MaNSX
         {
             get => maNSX;
