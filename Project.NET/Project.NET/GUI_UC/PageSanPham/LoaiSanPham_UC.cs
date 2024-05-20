@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using DTO;
 using Project.NET.ExtensionMethods;
 using System;
@@ -66,36 +67,8 @@ namespace Project.NET.GUI_UC.PageSanPham
             //Tải dữ liệu khi tải user control
             taiForm();
         }
+         
 
-        private void dgvLoaiSanPham_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
-        {
-            try
-            {
-                int[] cacDong = dgvLoaiSanPham.GetSelectedRows();
-                foreach (int i in cacDong)
-                {
-                    try
-                    {
-                        if (i >= 0)
-                        {
-                            LoaiSP_DTO o = db_Loai.timLoaiSP_MaLoaiSP(dgvLoaiSanPham.GetRowCellValue(i, "MãSố").ToString().Trim());
-                            txtMaLoaiSP.Text = o.MaLoai;
-                            txtTenLoaiSP.Text = o.TenLoai;
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Lỗi");
-                    }
-
-                }
-                dangThaoTac(true);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Lỗi");
-            }
-        }
         private LoaiSP_DTO layDuLieu()
         {
             try
@@ -164,6 +137,27 @@ namespace Project.NET.GUI_UC.PageSanPham
         {
             taiForm();
             dangThaoTac(false);
+        }
+
+        private void dgvLoaiSanPham_RowCellClick(object sender, RowCellClickEventArgs e)
+        {
+            try
+            {
+                int[] cacDong = dgvLoaiSanPham.GetSelectedRows();
+                foreach (int i in cacDong)
+                {
+                    if (i >= 0)
+                    {
+                        txtMaLoaiSP.Text = dgvLoaiSanPham.GetRowCellValue(i, "maLoai").ToString();
+                        txtTenLoaiSP.Text = dgvLoaiSanPham.GetRowCellValue(i, "tenLoai").ToString();
+                    }
+                }
+                dangThaoTac(true);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi");
+            }
         }
     }
 }
