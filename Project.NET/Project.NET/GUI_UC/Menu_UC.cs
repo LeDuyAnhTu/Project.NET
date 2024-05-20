@@ -55,7 +55,7 @@ namespace Project.NET.GUI_UC
         /// <param name="check">Trạng thái</param>
         private void listButtonsVision(List<SimpleButton> list, bool check)
         {
-            foreach(SimpleButton button in list)
+            foreach (SimpleButton button in list)
             {
                 button.Enabled = check;
             }
@@ -97,7 +97,8 @@ namespace Project.NET.GUI_UC
             try
             {
                 WaitFormManager waitFormManager = new WaitFormManager(frmMainn);
-                await waitFormManager.ShowWaitForm(() => {
+                await waitFormManager.ShowWaitForm(() =>
+                {
 
                     // Sử dụng Invoke để đảm bảo rằng mã được thực thi trên thread chính
                     this.Invoke((MethodInvoker)delegate
@@ -179,11 +180,22 @@ namespace Project.NET.GUI_UC
                             case "btnBanHang":
                                 nafContent.SelectedPage = navBanHang;
                                 LoadUserControl(null, typeof(BanHang_UC), editFormBanHang);
-                                 
+
                                 break;
                             case "btnDangXuat":
                                 //Quay lại màn hình login
+                                if (DialogResult.OK == MessageBox.Show("Xác nhận đăng xuất", "Thông báo"))
+                                {
+                                    frmMain.maNV = "";
 
+                                    // Gỡ UserControl khỏi container
+                                    frmMainn.Controls.Remove(this);
+
+                                    // Giải phóng tài nguyên
+                                    this.Dispose();
+
+                                    LoadUserControl(null, typeof(Login_UC), frmMainn);
+                                }
                                 break;
                             default:
                                 throw new Exception("Unknown button.");
@@ -200,7 +212,7 @@ namespace Project.NET.GUI_UC
         private void LoadUserControl(UserControl userControl, Type type, Control container)
         {
             ReleaseAllResources(container);
-            
+
             if (userControl == null)
             {
                 userControl = (UserControl)Activator.CreateInstance(type);
@@ -257,7 +269,8 @@ namespace Project.NET.GUI_UC
                 {
                     throw new Exception("Không tìm thấy nhân viên " + frmMain.maNV);
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
