@@ -319,7 +319,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                         txtMaSP.Text = sp.MaSP;
                         txtTenSP.Text = sp.TenSP;
                         txtSoLuongTonKho.Text = sp.SoLuongConLai.ToString().Trim();
-                        txtSoLuongMua.Text = dgvGioHang.GetRowCellValue(i, "SoLuongTrongKho").ToString().Trim();
+                        txtSoLuongMua.Text = dgvGioHang.GetRowCellValue(i, "SoLuong").ToString().Trim();
                     }
                     catch (Exception ex)
                     {
