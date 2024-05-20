@@ -21,10 +21,11 @@ namespace DAL
                 ds = from loai in db.DBO.LoaiSPs
                      select new
                      {
-                         loai.maLoai,
-                         loai.tenLoai,
+                         MãSố = loai.maLoai,
+                         TênLoại = loai.tenLoai,
                      };
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -129,6 +130,23 @@ namespace DAL
                 Console.WriteLine(ex.Message);
                 //Mã mặc định
                 return "LS00000001";
+            }
+        }
+        /// <summary>
+        /// Tìm loại sản phẩm theo mã loại sản phẩm
+        /// </summary>
+        /// <param name="maLoai"></param>
+        /// <returns></returns>
+        public LoaiSP_DTO timLoaiSP_MaLoaiSP(string maLoai)
+        {
+            try
+            {
+                LoaiSP temp = db.DBO.LoaiSPs.Single(d => d.maLoai.Equals(maLoai));
+                return new LoaiSP_DTO(temp.maLoai, temp.tenLoai);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
     }

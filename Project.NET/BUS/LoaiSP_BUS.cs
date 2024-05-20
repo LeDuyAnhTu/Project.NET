@@ -89,7 +89,25 @@ namespace BUS
             try
             {
                 return db.taoMaMoi();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// Tìm loại sản phẩm theo mã loại sản phẩm
+        /// </summary>
+        /// <param name="maLoai"></param>
+        /// <returns></returns>
+        public LoaiSP_DTO timLoaiSP_MaLoaiSP(string maLoai)
+        {
+            try
+            {
+                return db.timLoaiSP_MaLoaiSP(maLoai);
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }

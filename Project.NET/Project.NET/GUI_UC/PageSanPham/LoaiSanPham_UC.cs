@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DevExpress.XtraEditors;
+using DTO;
 using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
@@ -40,9 +41,7 @@ namespace Project.NET.GUI_UC.PageSanPham
             //Tải dữ liệu danh sách các loại
             //
             dgvGrid.DataSource = db_Loai.LayDanhSach();
-            dgvLoaiSanPham.Columns["maLoai"].Caption = "Mã loại";
-            dgvLoaiSanPham.Columns["tenLoai"].Caption = "Tên loại";
-
+           
             //
             //Khởi tạo thao tác
             //
@@ -83,9 +82,100 @@ namespace Project.NET.GUI_UC.PageSanPham
                 }
                 dangThaoTac(true);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Lỗi");
+            }
+        }
+        private LoaiSP_DTO layDuLieu()
+        {
+            try
+            {
+                LoaiSP_DTO temp = new LoaiSP_DTO(
+                    txtMaLoaiSP.Text
+                    , txtTenLoaiSP.Text);
+                return temp;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LoaiSP_DTO sp = layDuLieu();
+                db_Loai.Them(sp);
+                MessageBox.Show("Thêm loại sản phẩm mới thành công!", "Thông báo");
+                taiForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi");
+            }
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LoaiSP_DTO sp = layDuLieu();
+                db_Loai.Sua(sp);
+                MessageBox.Show("Sửa thông tin loại sản phẩm thành công !", "Thông báo");
+                taiForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi");
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LoaiSP_DTO loaiSP = layDuLieu();
+                DialogResult re = MessageBox.Show("Bạn có muốn xóa thông tin loại sản phẩm " + loaiSP.TenLoai + " không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (re == DialogResult.Yes)
+                {
+                    db_Loai.Xoa(loaiSP.MaLoai);
+                    MessageBox.Show("Xóa loại sản phẩm thành công!", "Thông báo");
+                    taiForm();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi");
+            }
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            taiForm();
+            dangThaoTac(false);
+        }
+
+        private void dgvGrid_Click(object sender, EventArgs e)
+        {
+            int[] dong = dgvLoaiSanPham.GetSelectedRows();
+            foreach (int i in dong)
+            {
+                if (i >= 0)
+                {
+                    try
+                    {
+                        LoaiSP_DTO km = db_Loai.timLoaiSP_MaLoaiSP(dgvLoaiSanPham.GetRowCellValue(i, "MãSố").ToString().Trim());
+                        txtMaLoaiSP.Text = km.MaLoai;
+                        txtTenLoaiSP.Text = km.TenLoai;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Lỗi");
+                    }
+                    dangThaoTac(true);
+                }
             }
         }
     }
