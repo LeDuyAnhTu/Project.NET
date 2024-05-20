@@ -134,7 +134,7 @@
             this.dgvGrid.TabIndex = 0;
             this.dgvGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgvLoaiSanPham});
-            this.dgvGrid.Click += new System.EventHandler(this.dgvGrid_Click);
+            
             // 
             // dgvLoaiSanPham
             // 

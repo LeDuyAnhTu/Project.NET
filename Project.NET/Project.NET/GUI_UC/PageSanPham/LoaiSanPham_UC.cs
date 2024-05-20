@@ -41,7 +41,7 @@ namespace Project.NET.GUI_UC.PageSanPham
             //Tải dữ liệu danh sách các loại
             //
             dgvGrid.DataSource = db_Loai.LayDanhSach();
-           
+
             //
             //Khởi tạo thao tác
             //
@@ -74,11 +74,20 @@ namespace Project.NET.GUI_UC.PageSanPham
                 int[] cacDong = dgvLoaiSanPham.GetSelectedRows();
                 foreach (int i in cacDong)
                 {
-                    if (i >= 0)
+                    try
                     {
-                        txtMaLoaiSP.Text = dgvLoaiSanPham.GetRowCellValue(i, "MaLoai").ToString();
-                        txtTenLoaiSP.Text = dgvLoaiSanPham.GetRowCellValue(i, "TenLoai").ToString();
+                        if (i >= 0)
+                        {
+                            LoaiSP_DTO o = db_Loai.timLoaiSP_MaLoaiSP(dgvLoaiSanPham.GetRowCellValue(i, "MãSố").ToString().Trim());
+                            txtMaLoaiSP.Text = o.MaLoai;
+                            txtTenLoaiSP.Text = o.TenLoai;
+                        }
                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Lỗi");
+                    }
+
                 }
                 dangThaoTac(true);
             }
@@ -155,28 +164,6 @@ namespace Project.NET.GUI_UC.PageSanPham
         {
             taiForm();
             dangThaoTac(false);
-        }
-
-        private void dgvGrid_Click(object sender, EventArgs e)
-        {
-            int[] dong = dgvLoaiSanPham.GetSelectedRows();
-            foreach (int i in dong)
-            {
-                if (i >= 0)
-                {
-                    try
-                    {
-                        LoaiSP_DTO km = db_Loai.timLoaiSP_MaLoaiSP(dgvLoaiSanPham.GetRowCellValue(i, "MãSố").ToString().Trim());
-                        txtMaLoaiSP.Text = km.MaLoai;
-                        txtTenLoaiSP.Text = km.TenLoai;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Lỗi");
-                    }
-                    dangThaoTac(true);
-                }
-            }
         }
     }
 }

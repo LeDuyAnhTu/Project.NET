@@ -60,7 +60,7 @@ namespace Project.NET.GUI_UC.PageKho
             //
             //Danh sách các sản phẩm trong kho
             //
-            dgvKho.DataSource = db_Kho.LayDanhSach_TheoCN(cboChiNhanh.EditValue.ToString().Trim());
+            dgvGrid.DataSource = db_Kho.LayDanhSach_TheoCN(cboChiNhanh.EditValue.ToString().Trim());
 
         }
         private void dangThaoTac(bool check)
@@ -105,7 +105,7 @@ namespace Project.NET.GUI_UC.PageKho
             //
             //Danh sách các sản phẩm trong kho
             //
-            dgvKho.DataSource = db_Kho.LayDanhSach_TheoCN(cboChiNhanh.EditValue.ToString().Trim());
+            dgvGrid.DataSource = db_Kho.LayDanhSach_TheoCN(cboChiNhanh.EditValue.ToString().Trim());
         }
 
         private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
@@ -113,7 +113,7 @@ namespace Project.NET.GUI_UC.PageKho
             //ChiNhánh = cn.tenCN,
             //                SảnPhẩm = sp.tenSP,
             //                SốLượng = kho.soLuong,
-            int[] dong = gridView1.GetSelectedRows();
+            int[] dong = dgvKhoCN.GetSelectedRows();
             foreach (int i in dong)
             {
                 if (i >= 0)
@@ -125,7 +125,7 @@ namespace Project.NET.GUI_UC.PageKho
                         while (count < db_SP.LayDanhSach().Count())
                         {
                             cboSanPham.ItemIndex = count;
-                            if (cboSanPham.Text == gridView1.GetRowCellValue(i, "SảnPhẩm").ToString())
+                            if (cboSanPham.Text == dgvKhoCN.GetRowCellValue(i, "SảnPhẩm").ToString())
                                 break;
                             count++;
                         }
@@ -134,7 +134,7 @@ namespace Project.NET.GUI_UC.PageKho
                     {
                         MessageBox.Show(ex.Message);
                     }
-                    txtSoLuong.Text = gridView1.GetRowCellValue(i, "SốLượng").ToString();
+                    txtSoLuong.Text = dgvKhoCN.GetRowCellValue(i, "SốLượng").ToString();
                 }
             }
             dangThaoTac(true);
