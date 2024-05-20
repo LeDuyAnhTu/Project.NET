@@ -1,0 +1,12 @@
+taikhoan
+- chưa chọn dòng đầu tiên khi load file
+nhanvien
+- fixed khoang trang ho ten gioi tinh
+nhanvien_vitri
+- ok
+CaLam_uc
+- chọn dòng dgvCalam bị lỗi: System.FormatException: 'The string was not recognized as a valid DateTime. There is an unknown word starting at index 2.'
+PhanCong_uc
+- cboChiNhanh editValueChanged
+
+

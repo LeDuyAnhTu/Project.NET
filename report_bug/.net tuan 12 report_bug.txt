@@ -1,0 +1,59 @@
+*trang dang nhap
+	- khong co nut quay về trang đăng nhập để chọn tài khoản khác
+	- nhập admin 124578 lỗi System.TypeInitializationException: 'The type initializer for 'DAL.BasicMethod`1' threw an exception.'
+	
+*Trang tài khoản
+	- tai khoản ok
+*Trang nhân viên
+	- CCCD chưa chặn nhập 11 chữ (sử dụng hàm supportNhapCCCD)
+	- Chưa hiển thị màu xanh lá cây khi chọn giới tính
+*Trang Nhân viên _ ca làm việc
+	- Quên bắt lỗi nhập tên ca làm việc nhưng lại thêm thành công
+	- Quên bắt lỗi nhập tên ca làm việc nhưng lại cập nhật thành công
+*Trang Nhân viên_phân công
+	- Không có danh sách nên không hiểu chuyển gì đã xảy ra với hệ thống phân công
+	- Không hiểu bấm nút thêm để làm gì
+	- Không hiểu bấm Xóa để làm gì
+	- Không hiểu bấm cập nhật để làm gì
+	- Không hiểu bấm làm mới để làm gì
+	- Nhập tên vào combobonhan viên gặp lỗi sequence contains no elements	
+*Trang thống kê nhân vien
+	- Hiển thị đầy đủ dữ liệu - ok
+*Trang Kho
+	- Quên chặn nhập số lượng = 0 khi bấm thêm/cập nhật
+*Trang Kho thống kê
+	- Chưa hiển thị được thông tin theo cơ cấu tổng sản phẩm theo chi nhánh bằng phần trăm
+*Trang sản phẩm
+	- Quên chặn nhập rỗng tên sản phẩm khi bấm thêm mới/ cập nhật
+	- Quên chặn nhập 0 đơn giá/ số lượng khi bấm thêm mới/ cập nhật
+	- Quên chặn nhập rỗng giá trị ngày tháng khi bấm thêm mới cập nhật
+*Trang sản phẩm _ loại sản phẩm
+	- Chưa thực hiện mã id tự tăng cuối khi bấm làm mới
+	- Chưa thực hiện chặn nhập rỗng tên loại sản phẩm khi thêm mới / cập nhật
+	- Chưa thực hiện chức năng thêm/ xóa sửa / cập nhật/ hiển thị danh sách
+	- Chưa chặn nút thêm mới sau khi bấm thêm thành công
+	- Chưa mở nút thêm mới khi bấm làm mới
+	- Chưa xóa/đặt lại mặc định dữ liệu ô nhập khi bấm làm mới
+
+*Trang Sản phẩm _ thống kê
+	- hiển thị thông tin biểu đồ - ok
+
+*Trang khuyến mãi
+	- Chưa thực hiện mã id tự tăng cuối khi bấm làm mới
+	- Chưa thực hiện chặn nhập rỗng ghi chú khi thêm mới / cập nhật
+	- Chưa thực hiện chức năng thêm/ xóa sửa / cập nhật/ hiển thị danh sách
+	- Chưa chặn nút thêm mới sau khi bấm thêm thành công
+	- Chưa mở nút thêm mới/xóa/cập nhật khi bấm làm mới
+	- Chưa xóa/đặt lại mặc định dữ liệu ô nhập khi bấm làm mới
+*Trang khuyến mãi _ Chi Tiết Khuyến Mãi
+	- Chưa thực hiện mã id tự tăng cuối khi bấm làm mới
+	- Chưa thực hiện chặn nhập 0 vào ô số lượng khi thêm mới / cập nhật
+	- Chưa thực hiện load dữ liệu cho combobox Khuyến Mãi
+	- Chưa thực hiện load dữ liệu cho combobox sản phẩm
+	- Chưa thực hiện chức năng thêm/ xóa sửa / cập nhật/ hiển thị danh sách
+	- Chưa chặn nút thêm mới sau khi bấm thêm thành công
+	- Chưa mở nút thêm mới/xóa/cập nhật khi bấm làm mới
+	- Chưa xóa/đặt lại mặc định dữ liệu ô nhập khi bấm làm mới
+*Trang Khuyến mãi _Thống kê
+	- Chưa hiển thị biểu đồ thống kê thông tin khuyến mãi có ghi chú
+*Trang Khách hàng

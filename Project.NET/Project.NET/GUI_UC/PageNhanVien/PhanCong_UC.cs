@@ -201,7 +201,9 @@ namespace Project.NET.GUI_UC
 
         private void cboChiNhanh_EditValueChanged(object sender, EventArgs e)
         {
-
+            LookUpEdit edit = (LookUpEdit)sender;
+            string maCN = edit.EditValue.ToString();
+            cboNhanVien.Properties.DataSource = db_NV.LayDanhSach_ChiNhanh_NhanVien(maCN);
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
