@@ -71,8 +71,8 @@ namespace Project.NET.GUI_UC.PageBanHang
             //Danh sách loại sản phẩm
             //
             cboMaLoaiSP.Properties.DataSource = db_LSP.LayDanhSach();
-            cboMaLoaiSP.Properties.DisplayMember = "TênLoại";
-            cboMaLoaiSP.Properties.ValueMember = "MãLoại";
+            cboMaLoaiSP.Properties.DisplayMember = "tenLoai";
+            cboMaLoaiSP.Properties.ValueMember = "maLoai";
             cboMaLoaiSP.ItemIndex = 0;
 
             //

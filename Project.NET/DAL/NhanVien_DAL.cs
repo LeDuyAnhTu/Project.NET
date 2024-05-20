@@ -56,15 +56,15 @@ namespace DAL
                                 orderby nv.maNV ascending
                                 select new
                                 {
-                                    MãSố = nv.maNV,
-                                    HọTên = nv.tenNV,
-                                    CănCước = nv.CCCD,
-                                    SốĐiệnThoại = nv.SDT,
-                                    GiớiTính = nv.gioiTinh,
-                                    NgàySinh = nv.ngaySinh,
-                                    MứcLương = nv.luong,
-                                    ChiNhánh = cn.tenCN,
-                                    VịTrí = vt.tenVT
+                                    nv.maNV,
+                                    nv.tenNV,
+                                    nv.CCCD,
+                                    nv.SDT,
+                                    nv.gioiTinh,
+                                    nv.ngaySinh,
+                                    nv.luong,
+                                    cn.tenCN,
+                                    vt.tenVT
                                 };
                 return ds;
             }

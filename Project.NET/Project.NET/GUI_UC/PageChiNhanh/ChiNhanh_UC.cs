@@ -126,6 +126,14 @@ namespace Project.NET.GUI_UC.PageChiNhanh
             //Hiển thị danh sách các quản lý
             //
             cboNhanVien.Properties.DataSource = db_NV.LayDanhSach_ViTri("VT01");
+            cboNhanVien.Properties.DisplayMember = "tenNV";
+            cboNhanVien.Properties.ValueMember = "maNV";
+            cboNhanVien.ItemIndex = 0;
+
+            //
+            //Hiển thị danh sách các khu vực
+            //
+
         }
     }
 }
