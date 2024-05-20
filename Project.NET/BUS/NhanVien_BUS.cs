@@ -22,7 +22,7 @@ namespace BUS
             {
                 return nv.LayDanhSach();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -55,7 +55,8 @@ namespace BUS
             try
             {
                 result = nv.Them(nhanVien);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -64,8 +65,9 @@ namespace BUS
             {
                 string tenTK = nhanVien.MaNV;
                 // Tài khoản mặc định có tên tài khoản là msNV, mật khẩu là 123456
-                result = tk.Them(new TaiKhoan_DTO(tenTK,"123456",nhanVien.MaNV));
-            }catch(Exception ex)
+                result = tk.Them(new TaiKhoan_DTO(tenTK, "123456", nhanVien.MaNV));
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -102,7 +104,8 @@ namespace BUS
             try
             {
                 result = tk.Xoa(tk.TimTaiKhoan_MaNV(maNV).tenTK);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -135,7 +138,24 @@ namespace BUS
             try
             {
                 return nv.timTheoMa(maNV);
-            }catch( Exception ex)
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Lấy danh sách các nhân viên theo vị trí
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable LayDanhSach_ChiNhanh_NhanVien(string maCN)
+        {
+            try
+            {
+
+                return nv.LayDanhSach_ChiNhanh_NhanVien(maCN);
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }

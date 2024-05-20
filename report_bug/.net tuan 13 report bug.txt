@@ -1,0 +1,43 @@
+*nhanvien
+ - gioi tinh chua chuyen mau xanh
+*phancong
+ - Chú ý: BUG!! chọn thao tác chi nhánh, chọn thao tác nhân viên, chọn ngày, bấm cập nhật, thông báo hiện lên "cannot add an entity with a key that is already in use"
+ - Chú ý: BUG!! chi nhánh không lọc được nhân viên theo chi nhánh
+*sanpham
+ - Bấm tab sản phẩm, Bấm thêm, hệ thống hiện thông báo: "OBject reference not set to an instance of an object"
+ - combobox loai san pham khong the chọn
+ - dateTime hạn sử dụng không được nhập trong quá khứ ( ngày nhập trong tương lai hoặc hiện tại)
+*loaisanpham
+ - Chú ý: BUG! Không thể khởi động được tab loai san pham
+*khuyenmai
+ - chua thuc hien chuc nang crud
+*chitietkhuyenmai
+ - chua thuc hien chuc nang crud
+*khachhang
+ - chua thuc hien chuc nang crud
+*hoadon
+ - chua thuc hien chuc nang crud
+--------------------------------------
+//
+//*banhang
+//
+ - Chú ý: BUG! bấm tim kiem vang ra lỗi "unhandle exception has occurred in your application"
+ - CHú ý: BUG! Bấm chọn loại sản phẩm không được
+ - Chú ý: BUG! nhập hơn 11 chữ số vào số lượng tồn kho, bấm thêm, hệ thống báo:"value was either too large or small for an Int32.
+ - Chú ý: BUG! Không thể chọn vào datagridview giỏ hàng "object reference not to an instance of an object."
+ - CHú ý: BUG! Thành tiền/ tổng tiền không cho phép nhập số Âm
+ - Chú ý: BUG! BUG! nặng không thể hiển thị dữ liệu lên phiếu in hóa đơn
+--------------------------------------
+*chinhanh
+ - Chú ý: BUG!! Hiển thị nhân viên quản lý không đúng định dạng
+ - chua thuc hien chuc nang crud
+*khuvuc
+ - chua thuc hien chuc nang crud
+*nhacungcap
+ - chua thuc hien chuc nang crud
+*chitietnhacungcap
+ - chua thuc hien chuc nang crud
+*dangxuat
+ - chua thuc hien chuc nang đăng xuất
+
+

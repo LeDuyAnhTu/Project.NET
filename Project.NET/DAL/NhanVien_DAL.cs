@@ -148,7 +148,7 @@ namespace DAL
             try
             {
                 NhanVien temp = db.DBO.NhanViens.Single(d => d.maNV == maNV);
-                
+
                 db.DBO.NhanViens.DeleteOnSubmit(temp);
                 db.DBO.SubmitChanges();
 
@@ -170,10 +170,10 @@ namespace DAL
             {
                 //Lấy mã nhân viên cuối
                 IQueryable ds = (from nv in db.DBO.NhanViens
-                                orderby nv.maNV descending
-                                select nv.maNV).Take(1);
+                                 orderby nv.maNV descending
+                                 select nv.maNV).Take(1);
                 string msNV = "";
-                foreach(var item in ds)
+                foreach (var item in ds)
                 {
                     msNV = item.ToString();
                 }
@@ -197,9 +197,38 @@ namespace DAL
         {
             try
             {
-                NhanVien nv = db.DBO.NhanViens.Single(d=>d.maNV == maNV);
+                NhanVien nv = db.DBO.NhanViens.Single(d => d.maNV == maNV);
                 return new NhanVien_DTO(nv.maNV, nv.tenNV, nv.gioiTinh, nv.ngaySinh, nv.SDT, nv.CCCD, (int)nv.luong, nv.maVT, nv.maCN);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Lấy danh sách các nhân viên theo vị trí
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable LayDanhSach_ChiNhanh_NhanVien(string maCN)
+        {
+            try
+            {
+                IQueryable ds = from nv in db.DBO.NhanViens
+                                where nv.maCN.Equals(maCN)
+                                orderby nv.maNV ascending
+                                select new
+                                {
+                                    MãSố = nv.maNV,
+                                    HọTên = nv.tenNV,
+                                    CănCước = nv.CCCD,
+                                    SốĐiệnThoại = nv.SDT,
+                                    GiớiTính = nv.gioiTinh,
+                                    NgàySinh = nv.ngaySinh,
+                                    MứcLương = nv.luong,
+                                };
+                return ds;
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
