@@ -22,12 +22,20 @@ namespace Project.NET.GUI_UC.PageHoaDon
 
         private void dgvGrid_Load(object sender, EventArgs e)
         {
-            dgvGrid.DataSource = db_HD.LayDanhSach();
         }
 
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
             MessageBox.Show("In hoa don");
+        }
+
+        private void HoaDon_UC_Load(object sender, EventArgs e)
+        {
+            //
+            //Hiển thị danh sách hóa đơn
+            //
+            dgvGrid.DataSource = db_HD.LayDanhSach();
+
         }
     }
 }
