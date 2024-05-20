@@ -47,6 +47,7 @@ gioKT char(10))
 
 go
 create table PhanCong(
+maPC int not null primary key identity(0,1),
 maNV char(10) not null,
 ngayDiLam nvarchar(10) not null,
 maCa char(10) not null
@@ -175,9 +176,6 @@ add constraint pk_chitietcc primary key (maCC)
 go
 alter table ChiTietHD
 add constraint pk_chitiethd primary key (maHD,maSP)
-go
-alter table PhanCong
-add constraint pk_phancong primary key (maNV,maCa,ngayDiLam)
 go
 alter table KhoCN
 add constraint pk_KhoCN primary key (maCN,maSP)
