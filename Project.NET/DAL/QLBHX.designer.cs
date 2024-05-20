@@ -2942,6 +2942,8 @@ namespace DAL
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+		private int _maPC;
+		
 		private string _maNV;
 		
 		private string _ngayDiLam;
@@ -2956,6 +2958,8 @@ namespace DAL
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+    partial void OnmaPCChanging(int value);
+    partial void OnmaPCChanged();
     partial void OnmaNVChanging(string value);
     partial void OnmaNVChanged();
     partial void OnngayDiLamChanging(string value);
@@ -2971,7 +2975,27 @@ namespace DAL
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maNV", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maPC", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int maPC
+		{
+			get
+			{
+				return this._maPC;
+			}
+			set
+			{
+				if ((this._maPC != value))
+				{
+					this.OnmaPCChanging(value);
+					this.SendPropertyChanging();
+					this._maPC = value;
+					this.SendPropertyChanged("maPC");
+					this.OnmaPCChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maNV", DbType="Char(10) NOT NULL", CanBeNull=false)]
 		public string maNV
 		{
 			get
@@ -2995,7 +3019,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayDiLam", DbType="NVarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayDiLam", DbType="NVarChar(10) NOT NULL", CanBeNull=false)]
 		public string ngayDiLam
 		{
 			get
@@ -3015,7 +3039,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maCa", DbType="Char(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maCa", DbType="Char(10) NOT NULL", CanBeNull=false)]
 		public string maCa
 		{
 			get

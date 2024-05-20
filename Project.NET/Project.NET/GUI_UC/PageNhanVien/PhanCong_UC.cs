@@ -37,9 +37,36 @@ namespace Project.NET.GUI_UC
         /// </summary>
         public void taiForm()
         {
-            cboChiNhanh.ItemIndex = 0;
+            //
+            //Danh sách chi nhánh
+            //
+            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
+            cboChiNhanh.Properties.ValueMember = "MãChiNhánh";
+            cboChiNhanh.Properties.DisplayMember = "TênChiNhánh";
+
+            //
+            //Danh sách nhân viên
+            //
+            cboNhanVien.Properties.DataSource = db_NV.LayDanhSach();
+            cboNhanVien.Properties.ValueMember = "MãSố";
+            cboNhanVien.Properties.DisplayMember = "MãSố";
             cboNhanVien.ItemIndex = 0;
+
+            //
+            //Danh sách ca làm việc
+            //
+            cboCaLamViec.Properties.DataSource = db_CL.LayDanhSach();
+            cboCaLamViec.Properties.ValueMember = "maCa";
+            cboCaLamViec.Properties.DisplayMember = "tenCa";
             cboCaLamViec.ItemIndex = 0;
+
+            //cboChiNhanh.ItemIndex = 0;
+            //cboChiNhanh.ItemIndex = 1;
+            //cboChiNhanh.ItemIndex = 0;
+            //cboNhanVien.ItemIndex = 1;
+            //cboNhanVien.ItemIndex = 0;
+            //cboCaLamViec.ItemIndex = 1;
+            //cboCaLamViec.ItemIndex = 0;
         }
         /// <summary>
         /// Lấy danh sách ngày làm việc của nhân viên theo ca làm và mã nhân viên 
@@ -113,6 +140,14 @@ namespace Project.NET.GUI_UC
         private void PhanCong_UC_Load(object sender, EventArgs e)
         {
             //
+            //Danh sách chi nhánh
+            //
+            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
+            cboChiNhanh.Properties.ValueMember = "MãChiNhánh";
+            cboChiNhanh.Properties.DisplayMember = "TênChiNhánh";
+            cboChiNhanh.ItemIndex = 0;
+
+            //
             //Danh sách nhân viên
             //
             cboNhanVien.Properties.DataSource = db_NV.LayDanhSach();
@@ -127,14 +162,6 @@ namespace Project.NET.GUI_UC
             cboCaLamViec.Properties.ValueMember = "maCa";
             cboCaLamViec.Properties.DisplayMember = "tenCa";
             cboCaLamViec.ItemIndex = 0;
-
-            //
-            //Danh sách chi nhánh
-            //
-            cboChiNhanh.Properties.DataSource = db_CN.LayDanhSach();
-            cboChiNhanh.Properties.ValueMember = "MãChiNhánh";
-            cboChiNhanh.Properties.DisplayMember = "TênChiNhánh";
-            cboChiNhanh.ItemIndex = 0;
 
             //
             //Danh sách phân công
@@ -194,18 +221,21 @@ namespace Project.NET.GUI_UC
             }
         }
         /// <summary>
-        /// Thêm thông tin phân công của nhân viên
+        /// Lọc nhân viên theo chi nhánh đã chọn
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
         private void cboChiNhanh_EditValueChanged(object sender, EventArgs e)
         {
             LookUpEdit edit = (LookUpEdit)sender;
             string maCN = edit.EditValue.ToString();
             cboNhanVien.Properties.DataSource = db_NV.LayDanhSach_ChiNhanh_NhanVien(maCN);
         }
-
+        /// <summary>
+        /// Cập nhật thông tin phân công
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             try
@@ -232,7 +262,11 @@ namespace Project.NET.GUI_UC
                 MessageBox.Show(ex.Message, "Lỗi");
             }
         }
-
+        /// <summary>
+        /// Xóa thông tin phân công của nhân viên đang chọn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnXoa_Click(object sender, EventArgs e)
         {
             DialogResult luaChon = MessageBox.Show("Bạn có muốn hủy phân công " + cboCaLamViec.Text.Trim() + " của nhân viên " + txtHoTen.Text.Trim() + " ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

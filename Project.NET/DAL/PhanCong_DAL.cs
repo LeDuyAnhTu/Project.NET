@@ -128,8 +128,8 @@ namespace DAL
                 foreach(PhanCong phanCong in tempList)
                 {
                     db.DBO.PhanCongs.DeleteOnSubmit(phanCong);
+                    db.DBO.SubmitChanges();
                 }
-                db.DBO.SubmitChanges();
                 result = true;
             }
             catch (Exception ex)
