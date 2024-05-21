@@ -184,7 +184,7 @@ namespace Project.NET.GUI_UC
                                 break;
                             case "btnDangXuat":
                                 //Quay lại màn hình login
-                                if (DialogResult.OK == MessageBox.Show("Xác nhận đăng xuất", "Thông báo"))
+                                if (DialogResult.Yes == MessageBox.Show("Xác nhận đăng xuất", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                                 {
                                     frmMain.maNV = "";
 

@@ -1,11 +1,12 @@
 ﻿using BUS;
 using DevExpress.Data.Linq.Helpers;
 using DevExpress.XtraEditors;
+using DTO;
 using Project.NET.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data; 
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -40,23 +41,7 @@ namespace Project.NET.GUI_UC.PageChiNhanh
         }
 
         //Events
-        private void txtTenCN_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
-        {
-            TextEdit edit = sender as TextEdit;
-            edit.SupportVietnamese();
-        }
-
-        private void txtDiaChi_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
-        {
-            TextEdit edit = sender as TextEdit;
-            edit.SupportVietnamese();
-        }
-
-        private void txtMaCN_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
-        {
-            TextEdit edit = sender as TextEdit;
-            edit.SupportID();
-        }
+        
 
         private void dgvChiNhanh_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
@@ -65,9 +50,10 @@ namespace Project.NET.GUI_UC.PageChiNhanh
             {
                 if (i >= 0)
                 {
-                    txtMaCN.Text = dgvChiNhanh.GetRowCellValue(i, "MãChiNhánh").ToString();
-                    txtTenCN.Text = dgvChiNhanh.GetRowCellValue(i, "TênChiNhánh").ToString();
-                    txtDiaChi.Text = dgvChiNhanh.GetRowCellValue(i, "ĐịaChỉ").ToString();
+                    txtMaCN.EditValue = dgvChiNhanh.GetRowCellValue(i, "MãChiNhánh").ToString();
+                    txtTenCN.EditValue = dgvChiNhanh.GetRowCellValue(i, "TênChiNhánh").ToString();
+                    txtDiaChi.EditValue = dgvChiNhanh.GetRowCellValue(i, "ĐịaChỉ").ToString();
+
                     //Lấy người quản lý của chi nhánh đã chọn
                     try
                     {
@@ -103,6 +89,7 @@ namespace Project.NET.GUI_UC.PageChiNhanh
                     }
                 }
             }
+            dangThaoTac(true);
         }
 
         private void ChiNhanh_UC_Load(object sender, EventArgs e)
@@ -133,7 +120,135 @@ namespace Project.NET.GUI_UC.PageChiNhanh
             //
             //Hiển thị danh sách các khu vực
             //
+            cboKhuVuc.Properties.DataSource = db_KV.LayDanhSach();
+            cboKhuVuc.Properties.DisplayMember = "tenKV";
+            cboKhuVuc.Properties.ValueMember = "maKV";
+            cboKhuVuc.ItemIndex = 0;
+        }
+        private ChiNhanh_DTO layDuLieu()
+        {
+            try
+            {
+                return new ChiNhanh_DTO(
+                    txtMaCN.Text
+                    , txtTenCN.Text.Trim()
+                    , txtDiaChi.Text.Trim()
+                    , cboKhuVuc.EditValue.ToString().Trim()
+                    , cboNhanVien.EditValue.ToString().Trim()
+                    );
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void loadForm()
+        {
+            //
+            //Tạo mã chi nhánh mới
+            //
+            taoIDMoi();
 
+            //
+            //Chỉnh trạng thái thao tác
+            //
+            dangThaoTac(false);
+
+            //
+            //Hiển thị danh sách các chi nhánh
+            //
+            dgvGrid.DataSource = db_CN.LayDanhSach();
+
+            //
+            //Hiển thị danh sách các quản lý
+            //
+            cboNhanVien.Properties.DataSource = db_NV.LayDanhSach_ViTri("VT01");
+            cboNhanVien.Properties.DisplayMember = "tenNV";
+            cboNhanVien.Properties.ValueMember = "maNV";
+            cboNhanVien.ItemIndex = 0;
+
+            //
+            //Hiển thị danh sách các khu vực
+            //
+            cboKhuVuc.Properties.DataSource = db_KV.LayDanhSach();
+            cboKhuVuc.Properties.DisplayMember = "tenKV";
+            cboKhuVuc.Properties.ValueMember = "maKV";
+            cboKhuVuc.ItemIndex = 0;
+
+            //
+            //Khởi tạo dữ liệu cho các field
+            //
+            txtDiaChi.Text = "";
+            txtTenCN.Text = "";
+        }
+        /// <summary>
+        /// Nút làm mới danh sách dữ liệu đã nhập
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            loadForm();
+        }
+        /// <summary>
+        /// Thực hiện thêm chi nhánh dựa theo dữ liệu đã nhập
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ChiNhanh_DTO CN_Moi = layDuLieu();
+                if (db_CN.Them(CN_Moi))
+                    MessageBox.Show("Thêm chi nhánh mới thành công !", "Thông báo");
+                loadForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Thực hiện sửa thông tin của chi nhánh đang chọn dựa theo dữ liệu vừa sửa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ChiNhanh_DTO CN_Moi = layDuLieu();
+                if (db_CN.Sua(CN_Moi))
+                    MessageBox.Show("Sửa thông tin chi nhánh thành công !", "Thông báo");
+                loadForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Thực hiện xóa thông tin chi nhánh đang chọn và tài khoản của họ trong hệ thống
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult luaChon = MessageBox.Show("Bạn có muốn xóa nhân viên " + txtMaCN.Text.Trim() + " ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (luaChon == DialogResult.Yes)
+                {
+                    if (db_CN.Xoa(txtMaCN.Text))
+                        MessageBox.Show("Xóa thông tin chi nhánh thành công !", "Thông báo");
+                    loadForm();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

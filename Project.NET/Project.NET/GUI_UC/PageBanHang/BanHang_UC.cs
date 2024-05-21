@@ -52,7 +52,7 @@ namespace Project.NET.GUI_UC.PageBanHang
             //
             //Ngày lập hóa đơn
             //
-            txtNgayLapHD.Text = DateTime.Now.ToShortDateString();
+            txtNgayLapHD.EditValue = DateTime.Now;
 
             //
             //Danh sách khách hàng
@@ -366,7 +366,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                 dgvGioHangGrid.DataSource = dsMuaHang;
                 dgvGioHang.Columns["MaSP"].Caption = "Mã";
                 dgvGioHang.Columns["TenSP"].Caption = "Tên sản phẩm";
-                dgvGioHang.Columns["SoLuongTrongKho"].Caption = "Số lượng mua";
+                dgvGioHang.Columns["SoLuong"].Caption = "Số lượng mua";
                 dgvGioHang.Columns["DonGia"].Caption = "Đơn giá";
                 dgvGioHang.Columns["ThanhTien"].Caption = "Thành tiền";
                 //Quay lại lựa sản phẩm
@@ -523,7 +523,7 @@ namespace Project.NET.GUI_UC.PageBanHang
                     //Tải lại form
                     taiForm();
                     //Thông báo
-                    MessageBox.Show("Thanh toán thành công", "Thông báo");
+                    //MessageBox.Show("Thanh toán thành công", "Thông báo");
                 }
                 else
                 {

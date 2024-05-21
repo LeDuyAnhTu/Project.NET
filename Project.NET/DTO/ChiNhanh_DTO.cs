@@ -21,35 +21,48 @@ namespace DTO
 
         public string MaCN
         {
-            get => maCN; set
+            get => maCN; 
+            set
             {
                 maCN = value;
             }
         }
         public string TenCN
         {
-            get => tenCN; set
+            get => tenCN; 
+            set
             {
+                if (value == null || value == "")
+                {
+                    throw new Exception("Vui lòng nhập tên chi nhánh");
+                }
                 tenCN = value;
             }
         }
         public string DiaChi
         {
-            get => diaChi; set
+            get => diaChi; 
+            set
             {
+                if (value == null || value == "")
+                {
+                    throw new Exception("Vui lòng nhập tên địa chỉ");
+                }
                 diaChi = value;
             }
         }
         public string MaKV
         {
-            get => maKV; set
+            get => maKV; 
+            set
             {
                 maKV = value;
             }
         }
         public string MaQL
         {
-            get => maQL; set
+            get => maQL; 
+            set
             {
                 maQL = value;
             }

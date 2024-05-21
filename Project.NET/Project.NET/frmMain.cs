@@ -20,8 +20,8 @@ namespace Project.NET
         private string sqlCreateDBFilePath = Directory.GetCurrentDirectory() + "\\db\\create_db.txt";
         private string sqlCreateTableFilePath = Directory.GetCurrentDirectory() + "\\db\\create_table.txt";
         private string sqlInsertKeyFilePath = Directory.GetCurrentDirectory() + "\\db\\create_key.txt";
-        private string sqlInsertDataFilePath = Directory.GetCurrentDirectory() + "\\db\\insert_datas.txt";
-
+        private string sqlInsertDataFilePath = Directory.GetCurrentDirectory() + "\\db\\insert_datas.sql";
+         private string sqlCreateDatabaseFilePath = Directory.GetCurrentDirectory() + "\\db\\create_database.sql";
         string connectionString = null;
 
         //Methods
@@ -145,18 +145,37 @@ namespace Project.NET
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         connection.Open();
-                        using (StreamReader binSqlCreateReader = new StreamReader(File.Open(sqlCreateDBFilePath, FileMode.Open)))
+                        using (StreamReader binSqlCreateReader = new StreamReader(File.Open(sqlCreateDatabaseFilePath, FileMode.Open)))
                         {
                             query = binSqlCreateReader.ReadToEnd();
+                            string[] queryLines = query.Split('\n');
+                            query = "";
+                            foreach(string line in queryLines)
+                            {
+                                query += line.Trim() == "go" ? "\n" : line.Trim();
+                                query += "\n";
+                            }
+                            string[] doc = query.Replace("use QLBHX", "@").Split('@');
 
                             // Tạo database
-                            using (SqlCommand command = new SqlCommand(query, connection))
+                            using (SqlCommand command = new SqlCommand(doc[0], connection))
                             {
                                 command.CommandType = System.Data.CommandType.Text;
                                 command.ExecuteNonQuery();
                                 Console.WriteLine($"Database '{databaseName}' Created DATABASE successfully.");
                             }
-
+                            connectionString = $"data source=.;initial catalog=QLBHX;integrated security=True;encrypt=True;trustservercertificate=True;";
+                            using (SqlConnection connection_Table = new SqlConnection(connectionString))
+                            {
+                                connection_Table.Open();
+                                // Tạo table
+                                using (SqlCommand command = new SqlCommand(doc[1], connection_Table))
+                                {
+                                    command.CommandType = System.Data.CommandType.Text;
+                                    command.ExecuteNonQuery();
+                                    Console.WriteLine($"Database '{databaseName}' Created TABLE successfully.");
+                                }
+                            }
                         }
 
                     }
@@ -165,32 +184,20 @@ namespace Project.NET
                     {
                         connection.Open();
 
-                        // Tạo table
-                        using (StreamReader binSqlInsertReader = new StreamReader(File.Open(sqlCreateTableFilePath, FileMode.Open)))
-                        {
-                            query = binSqlInsertReader.ReadToEnd();
-                            using (SqlCommand command = new SqlCommand(query, connection))
-                            {
-                                command.CommandType = System.Data.CommandType.Text;
-                                command.ExecuteNonQuery();
-                                Console.WriteLine($"Database '{databaseName}' Created TABLE successfully.");
-                            }
-                        }
-                        // Tạo key cho table
-                        using (StreamReader binSqlInsertReader = new StreamReader(File.Open(sqlInsertKeyFilePath, FileMode.Open)))
-                        {
-                            query = binSqlInsertReader.ReadToEnd();
-                            using (SqlCommand command = new SqlCommand(query, connection))
-                            {
-                                command.CommandType = System.Data.CommandType.Text;
-                                command.ExecuteNonQuery();
-                                Console.WriteLine($"Database '{databaseName}' Created KEY successfully.");
-                            }
-                        }
                         //Tạo dữ liệu ban đầu (nếu cần thiết)
                         using (StreamReader binSqlInsertReader = new StreamReader(File.Open(sqlInsertDataFilePath, FileMode.Open)))
                         {
+                            // 1. Đọc file query
                             query = binSqlInsertReader.ReadToEnd();
+                            string[] queryLines = query.Split('\n');
+                            query = "";
+                            // 2. Thay thế các từ khóa trong file query
+                            foreach (string line in queryLines)
+                            {
+                                query += line.Trim() == "go" ? "\n" : line.Trim();
+                                query += "\n";
+                            }
+                            // 3. Thực thi query
                             using (SqlCommand command = new SqlCommand(query, connection))
                             {
                                 command.CommandType = System.Data.CommandType.Text;

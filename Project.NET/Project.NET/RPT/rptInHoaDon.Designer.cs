@@ -84,6 +84,7 @@
             this.vendorAddressRow = new DevExpress.XtraReports.UI.XRTableRow();
             this.vendorAddress = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.thankYouLabel = new DevExpress.XtraReports.UI.XRLabel();
             this.totalTable = new DevExpress.XtraReports.UI.XRTable();
             this.totalRow = new DevExpress.XtraReports.UI.XRTableRow();
             this.totalCaption = new DevExpress.XtraReports.UI.XRTableCell();
@@ -96,7 +97,6 @@
             this.unitPriceCaption = new DevExpress.XtraReports.UI.XRTableCell();
             this.lineTotalCaption = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupFooter2 = new DevExpress.XtraReports.UI.GroupFooterBand();
-            this.thankYouLabel = new DevExpress.XtraReports.UI.XRLabel();
             this.baseControlStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.maHD = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
@@ -375,6 +375,19 @@
             this.GroupFooter1.Name = "GroupFooter1";
             this.GroupFooter1.StyleName = "baseControlStyle";
             // 
+            // thankYouLabel
+            // 
+            this.thankYouLabel.CanShrink = true;
+            this.thankYouLabel.Font = new DevExpress.Drawing.DXFont("Segoe UI", 12F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.thankYouLabel.LocationFloat = new DevExpress.Utils.PointFloat(0.1810964F, 65.14191F);
+            this.thankYouLabel.Name = "thankYouLabel";
+            this.thankYouLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.thankYouLabel.SizeF = new System.Drawing.SizeF(648.8189F, 24.99998F);
+            this.thankYouLabel.StylePriority.UseFont = false;
+            this.thankYouLabel.StylePriority.UseTextAlignment = false;
+            this.thankYouLabel.Text = "Chúc quý khách một ngày tốt lành và hẹn gặp lại!";
+            this.thankYouLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
             // totalTable
             // 
             this.totalTable.ForeColor = System.Drawing.Color.Black;
@@ -417,7 +430,7 @@
             this.total.StylePriority.UseFont = false;
             this.total.StylePriority.UseTextAlignment = false;
             this.total.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.total.TextFormatString = "{0:0đ}";
+            this.total.TextFormatString = "{0:#.### đ}";
             this.total.Weight = 1.9324343109159379D;
             // 
             // GroupHeader1
@@ -506,19 +519,6 @@
             this.GroupFooter2.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBandExceptLastEntry;
             this.GroupFooter2.PrintAtBottom = true;
             this.GroupFooter2.StyleName = "baseControlStyle";
-            // 
-            // thankYouLabel
-            // 
-            this.thankYouLabel.CanShrink = true;
-            this.thankYouLabel.Font = new DevExpress.Drawing.DXFont("Segoe UI", 12F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.thankYouLabel.LocationFloat = new DevExpress.Utils.PointFloat(0.1810964F, 65.14191F);
-            this.thankYouLabel.Name = "thankYouLabel";
-            this.thankYouLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.thankYouLabel.SizeF = new System.Drawing.SizeF(648.8189F, 24.99998F);
-            this.thankYouLabel.StylePriority.UseFont = false;
-            this.thankYouLabel.StylePriority.UseTextAlignment = false;
-            this.thankYouLabel.Text = "Chúc quý khách một ngày tốt lành và hẹn gặp lại!";
-            this.thankYouLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // baseControlStyle
             // 
