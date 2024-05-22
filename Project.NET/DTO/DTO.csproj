@@ -62,6 +62,9 @@
     <Compile Include="ThongKeKhoCN_DTO.cs" />
     <Compile Include="ThongKeKhuyenMai_DTO.cs" />
     <Compile Include="ThongKeNhanVien_DTO.cs" />
+    <Compile Include="ThongKeSanPhamBanIt_DTO.cs" />
+    <Compile Include="ThongKeSanPhamBanNhieu_DTO.cs" />
+    <Compile Include="ThongKeSanPhamTonKho_DTO.cs" />
     <Compile Include="ThongKeSanPham_DTO.cs" />
     <Compile Include="ThongKe_DTO.cs" />
     <Compile Include="ViTri_DTO.cs" />

@@ -21,6 +21,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
+using Project.NET.GUI_UC.PageThongKe;
 
 namespace Project.NET.GUI_UC
 {
@@ -176,6 +177,7 @@ namespace Project.NET.GUI_UC
                                 nafContent.SelectedPage = navThongKe;
                                 LoadUserControl(null, typeof(ThongKeMonth_UC), editFormThongKeMonth);
                                 LoadUserControl(null, typeof(ThongKeYear_UC), editFormThongKeYear);
+                                LoadUserControl(null, typeof(ThongKeDoanhThuSanPham_UC), editFormDoanhThuSanPham);
                                 break;
                             case "btnBanHang":
                                 nafContent.SelectedPage = navBanHang;

@@ -119,6 +119,87 @@ namespace DAL
             return danhsach;
         }
 
+        /// <summary>
+        /// Thống kê top 10 sản phẩm bán chạy
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeSanPhamBanNhieu_DTO> ThongkeTop10SanPhamBanChay()
+        {
+            List<ThongKeSanPhamBanNhieu_DTO> danhsach = null;
+            try
+            {
+                var ds = (from orderDetail in db.DBO.ChiTietHDs
+                          group orderDetail by orderDetail.SanPham.tenSP into g
+                          select new ThongKeSanPhamBanNhieu_DTO
+                          {
+                              TenSP = g.Key,
+                              TotalSold = g.Sum(x => x.soLuong)
+                          }).OrderByDescending(x => x.TotalSold).Take(10);
+                danhsach = ds.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return danhsach;
+        }
+        /// <summary>
+        /// Thống kê top 10 sản phẩm bán ế
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeSanPhamBanIt_DTO> ThongkeTop10SanPhamBanE()
+        {
+            List<ThongKeSanPhamBanIt_DTO> danhsach = null;
+
+            try
+            {
+                var ds = (from orderDetail in db.DBO.ChiTietHDs
+                          group orderDetail by orderDetail.SanPham.tenSP into g
+                          select new ThongKeSanPhamBanIt_DTO
+                          {
+                              TenSP = g.Key,
+                              TotalSold = g.Sum(x => x.soLuong)
+                          }).OrderBy(x => x.TotalSold).Take(10);
+                danhsach = ds.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return danhsach;
+        }
+        /// <summary>
+        /// Thống kê số lượng tồn kho
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeSanPhamTonKho_DTO> ThongkeSanPhamTonKho()
+        {
+            List<ThongKeSanPhamTonKho_DTO> danhsach = null;
+
+
+            try
+            {
+                var ds = from sanpham in db.DBO.SanPhams
+                         select new ThongKeSanPhamTonKho_DTO
+                         {
+                             MaSP = sanpham.maSP,
+                             TenSP = sanpham.tenSP,
+                             SoLuongTonKho = sanpham.soLuongConLai
+                         };
+                danhsach = ds.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return danhsach;
+        }
+
+
+
         public override IQueryable LayDanhSach()
         {
             throw new NotImplementedException();

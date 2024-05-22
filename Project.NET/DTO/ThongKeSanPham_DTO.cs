@@ -10,17 +10,15 @@ namespace DTO
     {
         public string TenLoai { get; set; }
         public int SoLuongSanPham { get; set; }
-
         public string MaNSX { get; set; }
-        
         public string TenNSX { get; set; }
-
         public DateTime HSD { get; set; }
-
         public string KhoangGia { get; set; }
-
         public string SoLuongConLai { get; set; }
-
+        public string MaSP { get; set; }
         public string TenSP { get; set; }
+        public string MaHD { get; set; }
+        public double TotalSold { get; set; }
+        public int SoLuongTonKho { get; set; }
     }
 }

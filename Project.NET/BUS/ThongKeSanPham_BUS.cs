@@ -94,5 +94,60 @@ namespace BUS
                 throw ex;
             }
         }
+        /// <summary>
+        /// Thống kê top 10 sản phẩm bán chạy
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeSanPhamBanNhieu_DTO> ThongkeTop10SanPhamBanChay()
+        {
+
+            try
+            {
+                return db.ThongkeTop10SanPhamBanChay();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+        /// <summary>
+        /// Thống kê top 10 sản phẩm bán ế
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeSanPhamBanIt_DTO> ThongkeTop10SanPhamBanE()
+        {
+
+            try
+            {
+                return db.ThongkeTop10SanPhamBanE();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+        /// <summary>
+        /// Thống kê số lượng tồn kho
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<ThongKeSanPhamTonKho_DTO> ThongkeSanPhamTonKho()
+        {
+
+            try
+            {
+                return db.ThongkeSanPhamTonKho();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
     }
 }

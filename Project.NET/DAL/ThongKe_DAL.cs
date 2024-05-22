@@ -39,7 +39,7 @@ namespace DAL
                 list = ds.ToList();
             }
             catch (Exception ex)
-            { 
+            {
                 throw new Exception(ex.Message);
             }
             return list;
@@ -77,6 +77,6 @@ namespace DAL
             }
             return list;
         }
-
+        
     }
 }

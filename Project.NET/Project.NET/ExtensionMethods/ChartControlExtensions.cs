@@ -38,8 +38,16 @@ namespace Project.NET.ExtensionMethods
             // Add data points to series
             foreach (var dataPoint in dataPoints)
             {
-                series.Points.Add(new SeriesPoint(argumentSelector(dataPoint), valueSelector(dataPoint)));
+                var argument = argumentSelector(dataPoint);
+                var value = valueSelector(dataPoint);
+
+                if (argument != null && !string.IsNullOrEmpty(argument.ToString()) &&
+                    value != null && !string.IsNullOrEmpty(value.ToString()))
+                {
+                    series.Points.Add(new SeriesPoint(argument, value));
+                }
             }
+
 
             // Add series to chart
             chart.Series.Add(series);

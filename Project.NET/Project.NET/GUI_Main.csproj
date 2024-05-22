@@ -312,6 +312,12 @@
     <Compile Include="GUI_UC\PageNhanVien\ThongKeNhanVien_UC.Designer.cs">
       <DependentUpon>ThongKeNhanVien_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_UC\PageThongKe\ThongKeDoanhThuSanPham_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_UC\PageThongKe\ThongKeDoanhThuSanPham_UC.Designer.cs">
+      <DependentUpon>ThongKeDoanhThuSanPham_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_UC\PageThongKe\ThongKeYear_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -422,6 +428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageNhanVien\ThongKeNhanVien_UC.resx">
       <DependentUpon>ThongKeNhanVien_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_UC\PageThongKe\ThongKeDoanhThuSanPham_UC.resx">
+      <DependentUpon>ThongKeDoanhThuSanPham_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_UC\PageThongKe\ThongKeYear_UC.resx">
       <DependentUpon>ThongKeYear_UC.cs</DependentUpon>

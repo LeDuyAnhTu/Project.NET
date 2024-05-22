@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class ThongKe_DTO
+    public class ThongKeSanPhamTonKho_DTO
     {
         public string MaSP { get; set; }
         public string TenSP { get; set; }
-        public int? TongTien { get; set; }
-        public int Thang { get; set; }
-        public int Nam { get; set; }
-        
+        public int SoLuongTonKho { get; set; }
     }
 }

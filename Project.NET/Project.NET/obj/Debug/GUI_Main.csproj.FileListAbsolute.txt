@@ -387,6 +387,47 @@ D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Deb
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.KhoCN_UC.resources
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.ThongKeKhoCN_UC.resources
 D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RPT.resources
+D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RPT.rptInHoaDon.resources
+D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RPT.rptInHoaDon.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.AssemblyReference.cache
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmWaiting.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Loading_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Login_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Menu_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageBanHang.BanHang_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.BaoCao_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageChiNhanh.ChiNhanh_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageChiNhanh.KhuVuc_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDonChiTiet_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDon_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.KhachHang_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.ThongKeKhachHang_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.KhoCN_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.ThongKeKhoCN_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.ChiTietKhuyenMai_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.KhuyenMai_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.ThongKeKhuyenMai_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhaCungCap.ChiTietCC_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhaCungCap.NhaCungCap_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.CaLam_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Forms.NhanVien_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PhanCong_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhanVien.ViTriChucVuNV_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.LoaiSanPham_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.SanPham_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.ThongKeSanPham_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Forms.TaiKhoan_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmMain.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeMonth_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeNhanVien_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageThongKe.ThongKeDoanhThuSanPham_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeYear_UC.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Properties.Resources.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RPT.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RPT.rptInHoaDon.resources
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.GenerateResource.cache
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe.licenses
+E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.CoreCompileInputs.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\Project.NET.exe.config
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\Project.NET.exe
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\Project.NET.pdb
@@ -482,46 +523,6 @@ E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramew
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\EntityFramework.SqlServer.xml
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.pdb
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\bin\Debug\DAL.dll.config
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.AssemblyReference.cache
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmWaiting.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Loading_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Login_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.Menu_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageBanHang.BanHang_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.BaoCao_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageChiNhanh.ChiNhanh_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageChiNhanh.KhuVuc_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDonChiTiet_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageHoaDon.HoaDon_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.KhachHang_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhachHang.ThongKeKhachHang_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.KhoCN_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKho.ThongKeKhoCN_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.ChiTietKhuyenMai_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.KhuyenMai_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageKhuyenMai.ThongKeKhuyenMai_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhaCungCap.ChiTietCC_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhaCungCap.NhaCungCap_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.CaLam_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Forms.NhanVien_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PhanCong_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageNhanVien.ViTriChucVuNV_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.LoaiSanPham_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.SanPham_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.PageSanPham.ThongKeSanPham_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Forms.TaiKhoan_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.frmMain.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeMonth_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeNhanVien_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.GUI_UC.ThongKeYear_UC.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.Properties.Resources.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.BanHangTheoNgay_RPT.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RP.InHoaDon_RPT.resources
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.GenerateResource.cache
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe.licenses
-E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.CoreCompileInputs.cache
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\GUI_Main.csproj.Up2Date
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.exe
 E:\TDC_HK4\.net letho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.pdb
-D:\School\HK4\ADO.Net\Code\PROJ\Main\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RPT.rptInHoaDon.resources
-D:\TDC_HK4\.netLeTho\Project.NET\Project.NET\Project.NET\obj\Debug\Project.NET.RPT.rptInHoaDon.resources
