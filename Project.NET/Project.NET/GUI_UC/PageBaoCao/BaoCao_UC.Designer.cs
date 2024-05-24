@@ -31,6 +31,8 @@
             this.btnBaoCaoBanHangTheoNgay = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.svgImageBox1 = new DevExpress.XtraEditors.SvgImageBox();
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBaoCaoBanHangTheoNgay
@@ -60,7 +62,7 @@
             this.labelControl.Location = new System.Drawing.Point(0, 0);
             this.labelControl.Name = "labelControl";
             this.labelControl.Padding = new System.Windows.Forms.Padding(10, 5, 0, 0);
-            this.labelControl.Size = new System.Drawing.Size(391, 33);
+            this.labelControl.Size = new System.Drawing.Size(759, 33);
             this.labelControl.TabIndex = 4;
             this.labelControl.Text = "Báo Cáo Doanh Thu";
             // 
@@ -71,16 +73,28 @@
             this.simpleButton1.Size = new System.Drawing.Size(255, 41);
             this.simpleButton1.TabIndex = 5;
             this.simpleButton1.Text = "Xuất báo cáo doanh thu của từng nhân viên";
+            this.simpleButton1.Click += new System.EventHandler(this.btnDoanhThuTungNhanVien_Click);
+            // 
+            // svgImageBox1
+            // 
+            this.svgImageBox1.Location = new System.Drawing.Point(32, 289);
+            this.svgImageBox1.Name = "svgImageBox1";
+            this.svgImageBox1.Size = new System.Drawing.Size(693, 120);
+            this.svgImageBox1.SvgImage = global::Project.NET.Properties.Resources.BachhoaXanhNgang;
+            this.svgImageBox1.TabIndex = 6;
+            this.svgImageBox1.Text = "svgImageBox1";
             // 
             // BaoCao_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.svgImageBox1);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.labelControl);
             this.Controls.Add(this.btnBaoCaoBanHangTheoNgay);
             this.Name = "BaoCao_UC";
-            this.Size = new System.Drawing.Size(391, 216);
+            this.Size = new System.Drawing.Size(759, 427);
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,5 +103,6 @@
         private DevExpress.XtraEditors.SimpleButton btnBaoCaoBanHangTheoNgay;
         private DevExpress.XtraEditors.LabelControl labelControl;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SvgImageBox svgImageBox1;
     }
 }

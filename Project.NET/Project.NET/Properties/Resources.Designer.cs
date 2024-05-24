@@ -111,6 +111,16 @@ namespace Project.NET.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage BachhoaXanhNgang {
+            get {
+                object obj = ResourceManager.GetObject("BachhoaXanhNgang", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap backward_32x32 {
@@ -496,6 +506,26 @@ namespace Project.NET.Properties {
         internal static DevExpress.Utils.Svg.SvgImage logosvg32_32 {
             get {
                 object obj = ResourceManager.GetObject("logosvg32_32", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage logoTeam {
+            get {
+                object obj = ResourceManager.GetObject("logoTeam", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage logoTeam_1 {
+            get {
+                object obj = ResourceManager.GetObject("logoTeam-1", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

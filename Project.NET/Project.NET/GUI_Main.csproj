@@ -338,6 +338,12 @@
     <Compile Include="RPT\rptInHoaDon.Designer.cs">
       <DependentUpon>rptInHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\rptDoanhThuTungNhanVien.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rptDoanhThuTungNhanVien.Designer.cs">
+      <DependentUpon>rptDoanhThuTungNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="WaitFormManager.cs" />
     <EmbeddedResource Include="frmWaiting.resx">
       <DependentUpon>frmWaiting.cs</DependentUpon>
@@ -451,6 +457,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\rptInHoaDon.resx">
       <DependentUpon>rptInHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rptDoanhThuTungNhanVien.resx">
+      <DependentUpon>rptDoanhThuTungNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Document\Đồ án%28update%29.docx" />
@@ -732,6 +741,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BachhoaXanhNgang.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoTeam.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoTeam-1.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

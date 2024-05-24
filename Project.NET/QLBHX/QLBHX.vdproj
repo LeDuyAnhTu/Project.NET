@@ -2086,12 +2086,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_52CFF9D26B9DBF33FC709E4E8163A6F9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_69F0929DF6D14CE1BBE7D5995ABC440E"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -2395,6 +2389,12 @@
         "OwnerKey" = "8:_D03CCED0FD18A81F97163FEFC5F219F3"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_52CFF9D26B9DBF33FC709E4E8163A6F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -2413,6 +2413,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -2429,6 +2445,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -4116,7 +4140,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QLBHX"
         "ProductCode" = "8:{7435CE9A-9044-4375-B27F-BF04F852D398}"
-        "PackageCode" = "8:{114AE3E8-331D-4CB9-B42C-1A9F9CE068E3}"
+        "PackageCode" = "8:{F0543048-CF16-4035-B0A7-E940C51384CD}"
         "UpgradeCode" = "8:{E8250D05-7950-4EA2-AA84-D89C2C223F65}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -4124,14 +4148,14 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:thanhsk1991@gmail.com"
+        "Manufacturer" = "8:nhom13"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:QLBHX"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:thanhsk1991@gmail.com"
+        "ARPCONTACT" = "8:nhom13"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:LeDuyAnhTuSokKimThanh"
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"

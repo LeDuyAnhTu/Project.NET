@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraReports.UI;
 using Project.NET.RP;
+using Project.NET.RPT;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,12 @@ namespace Project.NET.GUI_UC
         private void btnBaoCaoBanHangTheoNgay_Click(object sender, EventArgs e)
         {
             ReportPrintTool printTool = new ReportPrintTool(new BanHangTheoNgay_RPT());
+            printTool.ShowRibbonPreview();
+        }
+
+        private void btnDoanhThuTungNhanVien_Click(object sender, EventArgs e)
+        {
+            ReportPrintTool printTool = new ReportPrintTool(new rptDoanhThuTungNhanVien());
             printTool.ShowRibbonPreview();
         }
     }
