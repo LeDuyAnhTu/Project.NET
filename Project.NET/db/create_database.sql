@@ -266,3 +266,31 @@ add constraint ck_chitietcc_soluong check (soLuong >= 1)
 go
 alter table ChiTietKM
 add constraint ck_chitietkm_soluong check (soLuong >= 1)
+GO
+
+------------------------------------------------------------
+----------KIEM TRA TRUNG TEN LOAI SAN PHAM------------------
+------------------------------------------------------------
+-- Thêm điều kiện CHECK vào bảng LoaiSP
+CREATE PROCEDURE CheckUniqueLoaiSPName
+AS
+BEGIN
+    DECLARE @Count INT;
+    SELECT @Count = COUNT(*)
+    FROM (
+        SELECT tenLoai
+        FROM LoaiSP
+        GROUP BY tenLoai
+        HAVING COUNT(*) > 1
+    ) AS DuplicateLoaiSP;
+    
+    IF @Count > 0
+    BEGIN
+        RAISERROR ('Duplicate LoaiSP names found', 16, 1);
+    END
+    ELSE
+    BEGIN
+        PRINT 'No duplicate LoaiSP names found';
+    END
+END;
+go 
