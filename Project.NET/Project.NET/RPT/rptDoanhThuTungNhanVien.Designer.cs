@@ -269,6 +269,10 @@
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.baseControlStyle});
             this.Version = "22.2";
+            this.Watermark.Font = new DevExpress.Drawing.DXFont("Verdana", 105F);
+            this.Watermark.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Watermark.Text = "Bách Hóa Xanh";
+            this.Watermark.TextTransparency = 213;
             ((System.ComponentModel.ISupportInitialize)(this.detailTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.headerTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

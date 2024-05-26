@@ -133,10 +133,10 @@
             // 
             this.dgvGroup.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("dgvGroup.CaptionImageOptions.Image")));
             this.dgvGroup.Controls.Add(this.dgvGrid);
-            this.dgvGroup.Location = new System.Drawing.Point(6, 386);
+            this.dgvGroup.Location = new System.Drawing.Point(6, 318);
             this.dgvGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvGroup.Name = "dgvGroup";
-            this.dgvGroup.Size = new System.Drawing.Size(802, 277);
+            this.dgvGroup.Size = new System.Drawing.Size(802, 345);
             this.dgvGroup.TabIndex = 22;
             this.dgvGroup.Text = "Danh sách Khách Hàng";
             // 
@@ -146,7 +146,7 @@
             this.dgvGrid.Location = new System.Drawing.Point(2, 35);
             this.dgvGrid.MainView = this.dgvKhachHang;
             this.dgvGrid.Name = "dgvGrid";
-            this.dgvGrid.Size = new System.Drawing.Size(798, 240);
+            this.dgvGrid.Size = new System.Drawing.Size(798, 308);
             this.dgvGrid.TabIndex = 0;
             this.dgvGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgvKhachHang});
@@ -164,7 +164,7 @@
             this.txtTenKH.Properties.Appearance.Options.UseFont = true;
             this.txtTenKH.Properties.BeepOnError = true;
             this.txtTenKH.Properties.UseMaskAsDisplayFormat = true;
-            this.txtTenKH.Size = new System.Drawing.Size(667, 26);
+            this.txtTenKH.Size = new System.Drawing.Size(271, 26);
             this.txtTenKH.StyleController = this.dataLayout;
             this.txtTenKH.TabIndex = 4;
             this.txtTenKH.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTenKH_EditValueChanging);
@@ -172,7 +172,7 @@
             // txtNgaySinh
             // 
             this.txtNgaySinh.EditValue = null;
-            this.txtNgaySinh.Location = new System.Drawing.Point(135, 150);
+            this.txtNgaySinh.Location = new System.Drawing.Point(531, 116);
             this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,7 +184,7 @@
             this.txtNgaySinh.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Classic;
             this.txtNgaySinh.Properties.MaskSettings.Set("mask", "d");
             this.txtNgaySinh.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.txtNgaySinh.Size = new System.Drawing.Size(667, 26);
+            this.txtNgaySinh.Size = new System.Drawing.Size(271, 26);
             this.txtNgaySinh.StyleController = this.dataLayout;
             this.txtNgaySinh.TabIndex = 10;
             // 
@@ -216,7 +216,7 @@
             this.btnThem.AppearancePressed.Options.UseFont = true;
             this.btnThem.AppearancePressed.Options.UseForeColor = true;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
-            this.btnThem.Location = new System.Drawing.Point(12, 300);
+            this.btnThem.Location = new System.Drawing.Point(12, 232);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(394, 38);
@@ -252,7 +252,7 @@
             this.btnCapNhat.AppearancePressed.Options.UseFont = true;
             this.btnCapNhat.AppearancePressed.Options.UseForeColor = true;
             this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.ImageOptions.Image")));
-            this.btnCapNhat.Location = new System.Drawing.Point(408, 300);
+            this.btnCapNhat.Location = new System.Drawing.Point(408, 232);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(394, 38);
@@ -288,7 +288,7 @@
             this.btnLamMoi.AppearancePressed.Options.UseFont = true;
             this.btnLamMoi.AppearancePressed.Options.UseForeColor = true;
             this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.ImageOptions.Image")));
-            this.btnLamMoi.Location = new System.Drawing.Point(12, 340);
+            this.btnLamMoi.Location = new System.Drawing.Point(12, 272);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(394, 38);
@@ -324,7 +324,7 @@
             this.btnXoa.AppearancePressed.Options.UseFont = true;
             this.btnXoa.AppearancePressed.Options.UseForeColor = true;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(408, 340);
+            this.btnXoa.Location = new System.Drawing.Point(408, 272);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(394, 38);
@@ -356,7 +356,7 @@
             // 
             // txtDiemTichLuy
             // 
-            this.txtDiemTichLuy.Location = new System.Drawing.Point(135, 184);
+            this.txtDiemTichLuy.Location = new System.Drawing.Point(135, 150);
             this.txtDiemTichLuy.Name = "txtDiemTichLuy";
             this.txtDiemTichLuy.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtDiemTichLuy.Properties.Appearance.Options.UseFont = true;
@@ -366,14 +366,14 @@
             this.txtDiemTichLuy.Properties.AppearanceFocused.Options.UseFont = true;
             this.txtDiemTichLuy.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtDiemTichLuy.Properties.AppearanceReadOnly.Options.UseFont = true;
-            this.txtDiemTichLuy.Size = new System.Drawing.Size(667, 26);
+            this.txtDiemTichLuy.Size = new System.Drawing.Size(271, 26);
             this.txtDiemTichLuy.StyleController = this.dataLayout;
             this.txtDiemTichLuy.TabIndex = 25;
             this.txtDiemTichLuy.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtDiemTichLuy_EditValueChanging);
             // 
             // txtSoDienThoai
             // 
-            this.txtSoDienThoai.Location = new System.Drawing.Point(135, 218);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(531, 150);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSoDienThoai.Properties.Appearance.Options.UseFont = true;
@@ -385,7 +385,7 @@
             this.txtSoDienThoai.Properties.AppearanceReadOnly.Options.UseFont = true;
             this.txtSoDienThoai.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtSoDienThoai.Properties.MaskSettings.Set("mask", "[0-9]{0,10}");
-            this.txtSoDienThoai.Size = new System.Drawing.Size(667, 26);
+            this.txtSoDienThoai.Size = new System.Drawing.Size(271, 26);
             this.txtSoDienThoai.StyleController = this.dataLayout;
             this.txtSoDienThoai.TabIndex = 27;
             this.txtSoDienThoai.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtSoDienThoai_EditValueChanging);
@@ -412,13 +412,13 @@
             this.BUTTONS.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutMaKH,
             this.layoutTenKH,
-            this.layoutNgaySinh,
             this.layoutDiemTichLuy,
-            this.layoutSoDienThoai});
+            this.layoutSoDienThoai,
+            this.layoutNgaySinh});
             this.BUTTONS.Location = new System.Drawing.Point(0, 34);
             this.BUTTONS.Name = "BUTTONS";
             this.BUTTONS.OptionsItemText.TextToControlDistance = 3;
-            this.BUTTONS.Size = new System.Drawing.Size(804, 218);
+            this.BUTTONS.Size = new System.Drawing.Size(804, 150);
             this.BUTTONS.Text = "Cập nhật thông tin Khách Hàng";
             // 
             // layoutMaKH
@@ -437,7 +437,7 @@
             this.layoutTenKH.ImageOptions.Image = global::Project.NET.Properties.Resources.business_card32_32;
             this.layoutTenKH.Location = new System.Drawing.Point(0, 34);
             this.layoutTenKH.Name = "layoutTenKH";
-            this.layoutTenKH.Size = new System.Drawing.Size(792, 34);
+            this.layoutTenKH.Size = new System.Drawing.Size(396, 34);
             this.layoutTenKH.Text = "Tên Khách Hàng:";
             this.layoutTenKH.TextLocation = DevExpress.Utils.Locations.Left;
             this.layoutTenKH.TextSize = new System.Drawing.Size(119, 32);
@@ -446,11 +446,11 @@
             // 
             this.layoutNgaySinh.Control = this.txtNgaySinh;
             this.layoutNgaySinh.ImageOptions.Image = global::Project.NET.Properties.Resources.customerbirthday32_32;
-            this.layoutNgaySinh.Location = new System.Drawing.Point(0, 68);
+            this.layoutNgaySinh.Location = new System.Drawing.Point(396, 34);
             this.layoutNgaySinh.Name = "layoutNgaySinh";
             this.layoutNgaySinh.OptionsTableLayoutItem.ColumnIndex = 1;
             this.layoutNgaySinh.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutNgaySinh.Size = new System.Drawing.Size(792, 34);
+            this.layoutNgaySinh.Size = new System.Drawing.Size(396, 34);
             this.layoutNgaySinh.Text = "Ngày Sinh:";
             this.layoutNgaySinh.TextSize = new System.Drawing.Size(119, 32);
             // 
@@ -458,9 +458,9 @@
             // 
             this.layoutDiemTichLuy.Control = this.txtDiemTichLuy;
             this.layoutDiemTichLuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutDiemTichLuy.ImageOptions.Image")));
-            this.layoutDiemTichLuy.Location = new System.Drawing.Point(0, 102);
+            this.layoutDiemTichLuy.Location = new System.Drawing.Point(0, 68);
             this.layoutDiemTichLuy.Name = "layoutDiemTichLuy";
-            this.layoutDiemTichLuy.Size = new System.Drawing.Size(792, 34);
+            this.layoutDiemTichLuy.Size = new System.Drawing.Size(396, 34);
             this.layoutDiemTichLuy.Text = "Điểm Tích Lũy:";
             this.layoutDiemTichLuy.TextSize = new System.Drawing.Size(119, 32);
             // 
@@ -468,9 +468,9 @@
             // 
             this.layoutSoDienThoai.Control = this.txtSoDienThoai;
             this.layoutSoDienThoai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutSoDienThoai.ImageOptions.Image")));
-            this.layoutSoDienThoai.Location = new System.Drawing.Point(0, 136);
+            this.layoutSoDienThoai.Location = new System.Drawing.Point(396, 68);
             this.layoutSoDienThoai.Name = "layoutSoDienThoai";
-            this.layoutSoDienThoai.Size = new System.Drawing.Size(792, 34);
+            this.layoutSoDienThoai.Size = new System.Drawing.Size(396, 34);
             this.layoutSoDienThoai.Text = "Số Điện Thoại:";
             this.layoutSoDienThoai.TextSize = new System.Drawing.Size(119, 32);
             // 
@@ -483,7 +483,7 @@
             this.CapNhat,
             this.LamMoi,
             this.Xoa});
-            this.CRUD.Location = new System.Drawing.Point(0, 252);
+            this.CRUD.Location = new System.Drawing.Point(0, 184);
             this.CRUD.Name = "CRUD";
             this.CRUD.OptionsItemText.TextToControlDistance = 3;
             this.CRUD.Size = new System.Drawing.Size(804, 128);
@@ -543,9 +543,9 @@
             // LIST
             // 
             this.LIST.Control = this.dgvGroup;
-            this.LIST.Location = new System.Drawing.Point(0, 380);
+            this.LIST.Location = new System.Drawing.Point(0, 312);
             this.LIST.Name = "LIST";
-            this.LIST.Size = new System.Drawing.Size(804, 279);
+            this.LIST.Size = new System.Drawing.Size(804, 347);
             this.LIST.Text = "DGV Nhân Viên:";
             this.LIST.TextSize = new System.Drawing.Size(0, 0);
             this.LIST.TextVisible = false;
