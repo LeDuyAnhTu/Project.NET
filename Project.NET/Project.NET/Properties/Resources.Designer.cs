@@ -153,6 +153,16 @@ namespace Project.NET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bolocalization_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("bolocalization_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boorder_32x32 {
             get {
                 object obj = ResourceManager.GetObject("boorder_32x32", resourceCulture);
@@ -166,6 +176,16 @@ namespace Project.NET.Properties {
         internal static System.Drawing.Bitmap boorderitem_32x32 {
             get {
                 object obj = ResourceManager.GetObject("boorderitem_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boproduct_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("boproduct_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

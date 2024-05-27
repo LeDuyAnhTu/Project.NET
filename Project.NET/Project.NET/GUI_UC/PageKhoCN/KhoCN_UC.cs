@@ -19,6 +19,7 @@ namespace Project.NET.GUI_UC.PageKho
         //Fields
         private KhuVuc_BUS db_KV = new KhuVuc_BUS();
         private ChiNhanh_BUS db_CN = new ChiNhanh_BUS();
+        private LoaiSP_BUS db_LoaiSP = new LoaiSP_BUS();
         private SanPham_BUS db_SP = new SanPham_BUS();
         private KhoCN_BUS db_Kho = new KhoCN_BUS();
 
@@ -38,7 +39,13 @@ namespace Project.NET.GUI_UC.PageKho
             cboKhuVuc.Properties.ValueMember = "maKV";
             cboKhuVuc.Properties.DisplayMember = "tenKV";
             cboKhuVuc.ItemIndex = 0;
-
+            //
+            //Danh sách loai sản phẩm
+            //
+            cboLoaiSanPham.Properties.DataSource = db_LoaiSP.LayDanhSach();
+            cboLoaiSanPham.Properties.ValueMember = "maLoai";
+            cboLoaiSanPham.Properties.DisplayMember = "tenLoai";
+            cboLoaiSanPham.ItemIndex = 0;
             //
             //Danh sách sản phẩm
             //
@@ -73,11 +80,12 @@ namespace Project.NET.GUI_UC.PageKho
         {
             KhoCN_DTO kho = null;
             try
-            { 
+            {
                 kho = new KhoCN_DTO(cboChiNhanh.EditValue.ToString().Trim(), cboSanPham.EditValue.ToString().Trim(), Convert.ToInt32(txtSoLuong.Text));
                 return kho;
             }
-            catch(Exception ex){
+            catch (Exception ex)
+            {
                 throw ex;
             }
         }
@@ -148,23 +156,25 @@ namespace Project.NET.GUI_UC.PageKho
                 db_Kho.Them(temp);
                 MessageBox.Show("Thêm thông tin thành công", "Thông báo");
                 taiForm();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Lỗi");
+                MessageBox.Show(ex.Message, "Lỗi");
             }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             DialogResult re = MessageBox.Show("Bạn có muốn xóa thông tin trên", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if(re == DialogResult.Yes)
+            if (re == DialogResult.Yes)
             {
                 try
                 {
-                    db_Kho.Xoa(cboChiNhanh.EditValue.ToString().Trim(),cboSanPham.EditValue.ToString().Trim());
+                    db_Kho.Xoa(cboChiNhanh.EditValue.ToString().Trim(), cboSanPham.EditValue.ToString().Trim());
                     MessageBox.Show("Xóa thông tin thành công", "Thông báo");
                     taiForm();
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Lỗi");
                 }
@@ -189,6 +199,17 @@ namespace Project.NET.GUI_UC.PageKho
             {
                 MessageBox.Show(ex.Message, "Lỗi");
             }
+        }
+
+        private void cboLoaiSanPham_EditValueChanged(object sender, EventArgs e)
+        {
+            //
+            //Danh sách sản phẩm theo loại sản phẩm
+            //
+            cboSanPham.Properties.DataSource = db_SP.LayDanhSach_TheoLoai(cboLoaiSanPham.EditValue.ToString());
+            cboSanPham.Properties.ValueMember = "MãSố";
+            cboSanPham.Properties.DisplayMember = "TênSảnPhẩm";
+            cboSanPham.ItemIndex = 0;
         }
     }
 }

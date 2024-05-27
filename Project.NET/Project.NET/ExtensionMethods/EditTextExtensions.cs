@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -34,7 +35,7 @@ namespace Project.NET.ExtensionMethods
             // Sự kiện EditValueChanging để hạn chế kí tự không phải tiếng việt
             edit.EditValueChanging += (sender, e) =>
             {
-                string pattern = @"^[a-zA-Z\u00C0-\u1EF9\s]*$"; // Biểu thức chính quy cho kí tự tiếng Việt
+                string pattern = @"^[a-zA-Z\u00C0-\u1EF90-9\s]*$"; // Biểu thức chính quy cho kí tự tiếng Việt
                 Regex regex = new Regex(pattern);
 
                 if (!regex.IsMatch(e.NewValue.ToString()))
@@ -156,6 +157,28 @@ namespace Project.NET.ExtensionMethods
                 }
             };
             edit.Properties.MaxLength = maxLength;
+        }
+        /// <summary>
+        /// Hỗ trợ nhập số tiền 10 chữ số và tăng/giảm đơn vị 200₫ khi lăn chuột
+        /// </summary>
+        /// <param name="edit"></param>
+        public static void SupportMoneyVND(this TextEdit edit)
+        {
+            // Xử lý sự kiện lăn chuột để tăng/giảm giá trị
+            edit.MouseWheel += (sender, e) =>
+            {
+                if (long.TryParse(edit.EditValue.ToString(), out long value))
+                {
+                    if (e.Delta > 0)
+                    {
+                        value += 200; // Tăng thêm 200₫ khi lăn chuột lên
+                    }
+                    else if (e.Delta < 0)
+                    {
+                        value -= 200; // Giảm 200₫ khi lăn chuột xuống
+                    }
+                }
+            };
         }
     }
 }

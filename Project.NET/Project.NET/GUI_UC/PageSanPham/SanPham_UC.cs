@@ -65,10 +65,9 @@ namespace Project.NET.GUI_UC.PageSanPham
 
             //
             //Đơn giá tối thiểu
-            //
-            txtDonGia.Properties.Increment = 200;
-            txtDonGia.EditValue = 1000;
-
+            //             
+            txtDonGia.SupportMoneyVND();
+            txtDonGia.EditValue = 10000;
             //
             //Danh sách sản phẩm
             //
@@ -98,16 +97,20 @@ namespace Project.NET.GUI_UC.PageSanPham
         {
             try
             {
+                // Loại bỏ ký hiệu tiền tệ và dấu phân cách hàng nghìn hiện tại
+                string donGia = txtDonGia.Text.Replace(",", "").Replace(".", "").Replace("₫", "").Trim();
+
                 SanPham_DTO temp = new SanPham_DTO(
                     txtMaSP.Text
                     , txtTenSP.Text
                     , Convert.ToDateTime(txtHSD.Text)
-                    , Convert.ToInt32(txtDonGia.Text)
+                    , Convert.ToInt32(donGia)
                     , Convert.ToInt32(txtSoLuongConLai.Text)
                     , cboMaLoaiSP.EditValue.ToString().Trim()
                     , cboMaNSX.EditValue.ToString().Trim());
                 return temp;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -119,7 +122,7 @@ namespace Project.NET.GUI_UC.PageSanPham
             TextEdit editText = sender as TextEdit;
             editText.SupportVietnamese(30);
         }
-        
+
         private void SanPham_UC_Load(object sender, EventArgs e)
         {
             taiForm();
@@ -134,9 +137,9 @@ namespace Project.NET.GUI_UC.PageSanPham
         private void dgvSanPham_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
             int[] dong = dgvSanPham.GetSelectedRows();
-            foreach(int i in dong)
+            foreach (int i in dong)
             {
-                if(i >= 0)
+                if (i >= 0)
                 {
                     try
                     {
@@ -179,7 +182,7 @@ namespace Project.NET.GUI_UC.PageSanPham
                             throw ex;
                         }
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Lỗi");
                     }
@@ -196,15 +199,18 @@ namespace Project.NET.GUI_UC.PageSanPham
                 db_SP.Them(sp);
                 MessageBox.Show("Thêm sản phẩm mới thành công !", "Thông báo");
                 taiForm();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 if (ex.Message.ToLower().Contains("tên"))
                 {
                     txtTenSP.Focus();
-                }else if(ex.Message.ToLower().Contains("đơn giá"))
+                }
+                else if (ex.Message.ToLower().Contains("đơn giá"))
                 {
                     txtDonGia.Focus();
-                }else if(ex.Message.ToLower().Contains("số lượng"))
+                }
+                else if (ex.Message.ToLower().Contains("số lượng"))
                 {
                     txtSoLuongConLai.Focus();
                 }

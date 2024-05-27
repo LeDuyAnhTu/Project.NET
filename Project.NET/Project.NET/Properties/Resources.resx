@@ -139,6 +139,9 @@
   <data name="hide_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hide_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bolocalization_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bolocalization_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logosvg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosvg.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="key32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplier16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplier16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="warehouse32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warehouse32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,6 +265,9 @@
   <data name="taikhoannhanvienpacico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taikhoannhanvienpacico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logoTeam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoTeam.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="shipment16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shipment16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,8 +277,8 @@
   <data name="reception_cam32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reception_cam32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="supplier16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\supplier16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BachhoaXanhNgang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BachhoaXanhNgang.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="home_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -282,6 +291,9 @@
   </data>
   <data name="eyeClosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyeClosed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boproductgroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boproductgroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logosvg32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logosvg32_32.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -331,8 +343,8 @@
   <data name="boorderitem_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boorderitem_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boproductgroup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boproductgroup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoTeam-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoTeam-1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="carts16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carts16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,13 +382,7 @@
   <data name="officeWorker32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\officeWorker32_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BachhoaXanhNgang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BachhoaXanhNgang.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="logoTeam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoTeam.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="logoTeam-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoTeam-1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="boproduct_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boproduct_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -45,9 +45,9 @@
             this.OUTLINE = new DevExpress.XtraLayout.LayoutControlGroup();
             this.BUTTONS = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutMaHD = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutNgayLapHoaDon = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutThanhTien = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutDiemDung = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutThanhTien = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutNgayLapHoaDon = new DevExpress.XtraLayout.LayoutControlItem();
             this.CRUD = new DevExpress.XtraLayout.LayoutControlGroup();
             this.Them = new DevExpress.XtraLayout.LayoutControlItem();
             this.CapNhat = new DevExpress.XtraLayout.LayoutControlItem();
@@ -68,9 +68,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.OUTLINE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BUTTONS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutMaHD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutNgayLapHoaDon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutThanhTien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutDiemDung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutThanhTien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutNgayLapHoaDon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).BeginInit();
@@ -331,6 +331,11 @@
             this.txtSDTNSX.Properties.AppearanceFocused.Options.UseFont = true;
             this.txtSDTNSX.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSDTNSX.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.txtSDTNSX.Properties.BeepOnError = true;
+            this.txtSDTNSX.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtSDTNSX.Properties.MaskSettings.Set("mask", "[0-9]{0,10}");
+            this.txtSDTNSX.Properties.MaskSettings.Set("placeholder", '\0');
+            this.txtSDTNSX.Properties.UseMaskAsDisplayFormat = true;
             this.txtSDTNSX.Size = new System.Drawing.Size(204, 26);
             this.txtSDTNSX.StyleController = this.dataLayout;
             this.txtSDTNSX.TabIndex = 25;
@@ -343,10 +348,15 @@
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
-            this.txtDiaChi.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtDiaChi.Properties.BeepOnError = true;
+            this.txtDiaChi.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtDiaChi.Properties.MaskSettings.Set("mask", "[a-zA-Z\\u00C0-\\u1EF90-9\\s]*");
+            this.txtDiaChi.Properties.MaskSettings.Set("placeholder", '\0');
+            this.txtDiaChi.Properties.UseMaskAsDisplayFormat = true;
             this.txtDiaChi.Size = new System.Drawing.Size(204, 26);
             this.txtDiaChi.StyleController = this.dataLayout;
             this.txtDiaChi.TabIndex = 12;
+            this.txtDiaChi.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtDiaChi_EditValueChanging);
             // 
             // txtTenNSX
             // 
@@ -359,11 +369,13 @@
             this.txtTenNSX.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtTenNSX.Properties.EditFormat.FormatString = "d";
             this.txtTenNSX.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtTenNSX.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtTenNSX.Properties.MaskSettings.Set("mask", "d");
+            this.txtTenNSX.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtTenNSX.Properties.MaskSettings.Set("mask", "[a-zA-Z\\u00C0-\\u1EF90-9\\s]*");
+            this.txtTenNSX.Properties.MaskSettings.Set("placeholder", '\0');
             this.txtTenNSX.Size = new System.Drawing.Size(204, 26);
             this.txtTenNSX.StyleController = this.dataLayout;
             this.txtTenNSX.TabIndex = 10;
+            this.txtTenNSX.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.txtTenNSX_EditValueChanging);
             // 
             // OUTLINE
             // 
@@ -406,17 +418,15 @@
             this.layoutMaHD.Text = "Mã Nhà Sản Xuất:";
             this.layoutMaHD.TextSize = new System.Drawing.Size(127, 32);
             // 
-            // layoutNgayLapHoaDon
+            // layoutDiemDung
             // 
-            this.layoutNgayLapHoaDon.Control = this.txtTenNSX;
-            this.layoutNgayLapHoaDon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutNgayLapHoaDon.ImageOptions.Image")));
-            this.layoutNgayLapHoaDon.Location = new System.Drawing.Point(337, 0);
-            this.layoutNgayLapHoaDon.Name = "layoutNgayLapHoaDon";
-            this.layoutNgayLapHoaDon.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutNgayLapHoaDon.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutNgayLapHoaDon.Size = new System.Drawing.Size(337, 34);
-            this.layoutNgayLapHoaDon.Text = "Tên Nhà Sản Xuất:";
-            this.layoutNgayLapHoaDon.TextSize = new System.Drawing.Size(127, 32);
+            this.layoutDiemDung.Control = this.txtSDTNSX;
+            this.layoutDiemDung.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutDiemDung.ImageOptions.Image")));
+            this.layoutDiemDung.Location = new System.Drawing.Point(0, 34);
+            this.layoutDiemDung.Name = "layoutDiemDung";
+            this.layoutDiemDung.Size = new System.Drawing.Size(337, 34);
+            this.layoutDiemDung.Text = "Số Điện Thoại:";
+            this.layoutDiemDung.TextSize = new System.Drawing.Size(127, 32);
             // 
             // layoutThanhTien
             // 
@@ -429,15 +439,17 @@
             this.layoutThanhTien.Text = "Địa Chỉ:";
             this.layoutThanhTien.TextSize = new System.Drawing.Size(127, 32);
             // 
-            // layoutDiemDung
+            // layoutNgayLapHoaDon
             // 
-            this.layoutDiemDung.Control = this.txtSDTNSX;
-            this.layoutDiemDung.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutDiemDung.ImageOptions.Image")));
-            this.layoutDiemDung.Location = new System.Drawing.Point(0, 34);
-            this.layoutDiemDung.Name = "layoutDiemDung";
-            this.layoutDiemDung.Size = new System.Drawing.Size(337, 34);
-            this.layoutDiemDung.Text = "Số Điện Thoại:";
-            this.layoutDiemDung.TextSize = new System.Drawing.Size(127, 32);
+            this.layoutNgayLapHoaDon.Control = this.txtTenNSX;
+            this.layoutNgayLapHoaDon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutNgayLapHoaDon.ImageOptions.Image")));
+            this.layoutNgayLapHoaDon.Location = new System.Drawing.Point(337, 0);
+            this.layoutNgayLapHoaDon.Name = "layoutNgayLapHoaDon";
+            this.layoutNgayLapHoaDon.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutNgayLapHoaDon.OptionsTableLayoutItem.RowIndex = 3;
+            this.layoutNgayLapHoaDon.Size = new System.Drawing.Size(337, 34);
+            this.layoutNgayLapHoaDon.Text = "Tên Nhà Sản Xuất:";
+            this.layoutNgayLapHoaDon.TextSize = new System.Drawing.Size(127, 32);
             // 
             // CRUD
             // 
@@ -546,9 +558,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.OUTLINE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BUTTONS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutMaHD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutNgayLapHoaDon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutThanhTien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutDiemDung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutThanhTien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutNgayLapHoaDon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Them)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CapNhat)).EndInit();

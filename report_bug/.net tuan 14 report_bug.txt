@@ -1,0 +1,26 @@
+*taikhoan
+	-nhap mat khau bi khoang trang khi click vao inputtext
+	-nhập mật khẩu không được phép nhập tiếng việt
+	-luu khoang trang vao csdl
+*kho
+	-chua co thong tin loai san pham
+	-o loai san pham khong the autocomplete
+*sanpham
+	-o san pham khong the autocomplete
+	-o nsx khong the autocomplete
+	-o ten san pham khong cho phep nhap so
+*khuyenmai
+	-o ghi chu khong the nhap so
+*khachhang
+	-chua thuc hien crud
+*hoadon
+	-chua thuc hien crud
+*chinhanh
+	-co qua it nhan vien quan ly
+	-nhanvienquanly khong the autocomplete
+	-khu vuc khong the autocomplete
+*nhacungcap
+	-so dien thoai khong cho phép nhập chữ
+	-địa chỉ đang nhập theo số thực
+	-tên nhà sản xuất đang là ô nhập ngày
+	-chưa thực hiện crud

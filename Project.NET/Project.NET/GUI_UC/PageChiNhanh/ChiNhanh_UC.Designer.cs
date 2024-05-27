@@ -366,6 +366,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboNhanVien.Properties.NullText = "";
             this.cboNhanVien.Properties.PopupSizeable = false;
+            this.cboNhanVien.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cboNhanVien.Size = new System.Drawing.Size(197, 26);
             this.cboNhanVien.StyleController = this.dataLayout;
             this.cboNhanVien.TabIndex = 26;
@@ -388,6 +389,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboKhuVuc.Properties.NullText = "";
             this.cboKhuVuc.Properties.PopupSizeable = false;
+            this.cboKhuVuc.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cboKhuVuc.Size = new System.Drawing.Size(197, 26);
             this.cboKhuVuc.StyleController = this.dataLayout;
             this.cboKhuVuc.TabIndex = 27;
