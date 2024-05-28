@@ -167,7 +167,7 @@
             // 
             this.vendorLogo.AnchorHorizontal = DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right;
             this.vendorLogo.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.vendorLogo.ImageUrl = "C:\\Users\\thanh\\Downloads\\LOGO\\BCDoanhThuTungNhanvien.svg";
+            this.vendorLogo.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource(global::Project.NET.Properties.Resources.BCDoanhThuTungNhanvien, true);
             this.vendorLogo.LocationFloat = new DevExpress.Utils.PointFloat(0.291748F, 72.50001F);
             this.vendorLogo.Name = "vendorLogo";
             this.vendorLogo.SizeF = new System.Drawing.SizeF(671.7084F, 119.7917F);

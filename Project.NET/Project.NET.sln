@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QLBHX", "QLBHX\QLBHX.vdproj", "{C8086ED2-01C5-4967-8FD6-10E81069C954}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QLBHX", "QLBHX.vdproj", "{C8086ED2-01C5-4967-8FD6-10E81069C954}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

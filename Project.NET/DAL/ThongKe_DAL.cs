@@ -27,12 +27,12 @@ namespace DAL
                          join sp in DBO.SanPhams on cthd.maSP equals sp.maSP
                          where hd.ngayLap.Date <= ngayKT.Date && hd.ngayLap.Date >= ngayBD.Date && sp.tenSP.Contains(tenSP)
                          orderby hd.ngayLap.Year, hd.ngayLap.Month
-                         group new { hd, cthd } by new { cthd.maSP, sp.tenSP, Month = hd.ngayLap.Month, Year = hd.ngayLap.Year } into kq
+                         group new { hd, cthd, sp } by new { cthd.maSP, sp.tenSP, Month = hd.ngayLap.Month, Year = hd.ngayLap.Year } into kq
                          select new ThongKe_DTO
                          {
                              MaSP = kq.Key.maSP,
                              TenSP = kq.Key.tenSP,
-                             TongTien = kq.Sum(d => d.hd.thanhTien),
+                             TongTien = kq.Sum(d => d.cthd.soLuong * d.sp.donGia),
                              Thang = kq.Key.Month,
                              Nam = kq.Key.Year
                          };
@@ -60,12 +60,12 @@ namespace DAL
                          join sp in DBO.SanPhams on cthd.maSP equals sp.maSP
                          where hd.ngayLap.Year == namThongKe.Year
                          orderby hd.ngayLap.Month
-                         group new { hd, cthd } by new { cthd.maSP, sp.tenSP, Month = hd.ngayLap.Month } into kq
+                         group new { hd, cthd, sp } by new { cthd.maSP, sp.tenSP, Month = hd.ngayLap.Month } into kq
                          select new ThongKe_DTO
                          {
                              MaSP = kq.Key.maSP,
                              TenSP = kq.Key.tenSP,
-                             TongTien = kq.Sum(d => d.hd.thanhTien),
+                             TongTien = kq.Sum(d => d.cthd.soLuong * d.sp.donGia),
                              Thang = kq.Key.Month,
                              Nam = namThongKe.Year
                          };
@@ -77,6 +77,6 @@ namespace DAL
             }
             return list;
         }
-        
+
     }
 }

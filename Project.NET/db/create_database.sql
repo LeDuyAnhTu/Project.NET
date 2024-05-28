@@ -1,6 +1,5 @@
 go
 use master
-drop database QLBHX
 
 go
 create database QLBHX

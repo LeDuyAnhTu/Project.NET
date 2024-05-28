@@ -532,7 +532,7 @@
             0,
             0,
             0});
-            this.txtTongTien.Properties.MaskSettings.Set("mask", "c");
+            this.txtTongTien.Properties.MaskSettings.Set("mask", "n");
             this.txtTongTien.Properties.ReadOnly = true;
             this.txtTongTien.Properties.UseMaskAsDisplayFormat = true;
             this.txtTongTien.Size = new System.Drawing.Size(137, 26);
@@ -609,7 +609,7 @@
             // txtThanhTien1
             // 
             this.txtThanhTien1.EditValue = new decimal(new int[] {
-            4000000,
+            400000,
             0,
             0,
             0});
@@ -634,7 +634,7 @@
             0,
             0,
             0});
-            this.txtThanhTien1.Properties.MaskSettings.Set("mask", "c");
+            this.txtThanhTien1.Properties.MaskSettings.Set("mask", "n");
             this.txtThanhTien1.Properties.ReadOnly = true;
             this.txtThanhTien1.Properties.UseMaskAsDisplayFormat = true;
             this.txtThanhTien1.Size = new System.Drawing.Size(134, 26);
