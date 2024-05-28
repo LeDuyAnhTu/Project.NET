@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AE5C8CA-73C3-4BE7-914A-5DBB59A77B6D}|DAL\\DAL.csproj|solutionrelative:dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\rpt\\rptdoanhthutungnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\rpt\\rptdoanhthutungnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagehoadon\\hoadon_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagebanhang\\banhang_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|d:\\tdc_hk4\\.netletho\\project.net\\project.net\\project.net\\gui_uc\\pagekhocn\\khocn_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E217610-50B2-4270-AE51-3FFE1D42393E}|Project.NET\\GUI_Main.csproj|solutionrelative:project.net\\gui_uc\\pagekhocn\\khocn_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,52 +66,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "rptDoanhThuTungNhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\RPT\\rptDoanhThuTungNhanVien.cs",
-              "RelativeDocumentMoniker": "Project.NET\\RPT\\rptDoanhThuTungNhanVien.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\RPT\\rptDoanhThuTungNhanVien.cs [Design]",
-              "RelativeToolTip": "Project.NET\\RPT\\rptDoanhThuTungNhanVien.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "KhoCN_UC.cs [Design]",
+              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhoCN\\KhoCN_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageKhoCN\\KhoCN_UC.cs",
+              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageKhoCN\\KhoCN_UC.cs [Design]",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageKhoCN\\KhoCN_UC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T03:33:10.701Z",
+              "WhenOpened": "2024-05-28T04:04:25.765Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ThongKe_DAL.cs",
-              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\DAL\\ThongKe_DAL.cs",
-              "RelativeDocumentMoniker": "DAL\\ThongKe_DAL.cs",
-              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\DAL\\ThongKe_DAL.cs",
-              "RelativeToolTip": "DAL\\ThongKe_DAL.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAxwBMAAABpAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T02:35:52.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "BanHang_UC.cs",
               "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
               "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
               "RelativeToolTip": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
-              "ViewState": "AQIAAA8CAAAAAAAAAAAgwBkCAAAAAAAA",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAcwBYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T02:19:47.383Z",
+              "WhenOpened": "2024-05-28T04:00:03.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BanHang_UC.cs [Design]",
               "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
               "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs",
               "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs [Design]",
               "RelativeToolTip": "Project.NET\\GUI_UC\\PageBanHang\\BanHang_UC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T02:19:27.403Z",
+              "WhenOpened": "2024-05-28T03:59:55.15Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HoaDon_UC.cs",
+              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
+              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAxwC8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T03:59:42.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HoaDon_UC.cs [Design]",
+              "DocumentMoniker": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
+              "RelativeDocumentMoniker": "Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs",
+              "ToolTip": "D:\\TDC_HK4\\.netLeTho\\Project.NET\\Project.NET\\Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs [Design]",
+              "RelativeToolTip": "Project.NET\\GUI_UC\\PageHoaDon\\HoaDon_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T03:59:38.327Z",
               "EditorCaption": " [Design]"
             }
           ]
